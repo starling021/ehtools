@@ -44,7 +44,7 @@ cd
 #############DEFAULTS###############
 function defaults_l
 {
-#path for
+#path for firmware
 	EPATH="/root/ehtools"
 	export EPATH
 #path for keyboard shortcuts
