@@ -8247,7 +8247,7 @@ function select_interface
 		fi
 	done
 }
-function donate_option
+function about_option
 {
 	while true
 	do
@@ -8290,7 +8290,18 @@ function donate_option
               rm /root/ehtools/eht41
               rm /root/ehtools/eht42
               rm /root/ehtools/eht43
-              rm /root/ehtools/install.sh  
+              rm /root/ehtools/install.sh 
+              rm /bin/ehtools/ehtools
+              rm /bin/ehtools/eht1
+              rm /bin/ehtools/eht2
+              rm /bin/ehtools/eht3
+              rm /bin/ehtools/eht4
+              rm /bin/ehtools/eht21
+              rm /bin/ehtools/eht31
+              rm /bin/ehtools/eht41
+              rm /bin/ehtools/eht42
+              rm /bin/ehtools/eht43
+              rm /bin/ehtools/install.sh   
         fi
         done
 }
@@ -9038,9 +9049,11 @@ function settings_menu
 		echo -e ""$YS" 5"$CE") MAC to change to,when starting monitor       $STARTMAC"	
 		echo -e ""$YS" 6"$CE") Interface for arp-scan                       $ARPIN"
 		echo -e ""$YS" 7"$CE") Interface for iftop(show bandwidth)          $iftopint"
-		echo -e ""$YS" b"$CE") Go back"
-		echo -e ""$YS" o"$CE") Exit"
-		echo -e "Choose: "
+		echo -e ""$RS" e"$CE") Delete EPATH firmware ("$RS"DANGER!"$CE")"
+                echo -e ""$YS" b"$CE") Go back"
+		echo -e ""$YS" 0"$CE") Exit"
+		echo -e ""$RS" IF YOU DELETE EPATH FIRMWARE - SYSTEM WILL CRASHED!!!"$CE""
+                echo -e "Choose: "
 		read SET
 		clear
 		if [[ "$SET" = "back" || "$SET" = "b" || "$SET" = "00" ]]
@@ -9050,7 +9063,31 @@ function settings_menu
 		elif [[ "$SET" = 0 ]]
 		then
 			exit
-		elif [[ "$SET" = 7 ]]
+		elif [[ "$SET" = e ]]
+                then
+                        rm /root/ehtools/ehtools
+                        rm /root/ehtools/eht1
+                        rm /root/ehtools/eht2
+                        rm /root/ehtools/eht3
+                        rm /root/ehtools/eht4
+                        rm /root/ehtools/eht21
+                        rm /root/ehtools/eht31
+                        rm /root/ehtools/eht41
+                        rm /root/ehtools/eht42
+                        rm /root/ehtools/eht43
+                        rm /root/ehtools/install.sh 
+                        rm /bin/ehtools/ehtools
+                        rm /bin/ehtools/eht1
+                        rm /bin/ehtools/eht2
+                        rm /bin/ehtools/eht3
+                        rm /bin/ehtools/eht4
+                        rm /bin/ehtools/eht21
+                        rm /bin/ehtools/eht31
+                        rm /bin/ehtools/eht41
+                        rm /bin/ehtools/eht42
+                        rm /bin/ehtools/eht43
+                        rm /bin/ehtools/install.sh   
+                elif [[ "$SET" = 7 ]]
 		then
 			clear
 			echo -e ""$BS"Interface to be used for iftop: "$CE""
@@ -9450,9 +9487,9 @@ function main_options
 	then
 		ngrok_option
 		BACKL=1
-	elif [[ "$YORNAA" = "donate" || "$YORNAA" = "e" ]]
+	elif [[ "$YORNAA" = "entynetproject" || "$YORNAA" = "e" ]]
 	then
-		donate_option
+		about_option
 #------services
 	elif [[ "$YORNAA" = "pstart" ]]
 	then
