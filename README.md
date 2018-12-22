@@ -1,7 +1,7 @@
-# EnynetHackerTools (ehtools framework)
+# EnynetHackerTools ™ (ehtools framework)
 
                                               ███████╗██╗  ██╗████████╗
-                                              ██╔════╝██║  ██║╚══██╔══╝
+                                              ██╔════╝██║  ██║╚══██╔══╝ 
                                               █████╗  ███████║   ██║   
                                               ██╔══╝  ██╔══██║   ██║   
                                               ███████╗██║  ██║   ██║   
