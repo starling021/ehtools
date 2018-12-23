@@ -9407,8 +9407,8 @@ function main_options
 		sqlmap_menu
 	elif [[ "$YORNAA" = "19" ]]
 	then
-		echo -e ""$BS"IP:"$CE" "
-		read IPG
+		echo -e ""$BS"Whois console:"$CE" "
+		read -p $'\e[4;34mseen\e[0m\en> ' IPG
 		clear
 		geolocate_ip "$IPG"
 	elif [[ "$YORNAA" = "18" ]]
