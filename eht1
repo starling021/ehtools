@@ -242,7 +242,7 @@ function remove_temps
 }
 function autoapselect
 {
-file="/root/EntynetHackerTools/tempairodump-01.csv"
+file="/root/ehtools/tempairodump-01.csv"
 if [[ -f "$file" ]]
 then
 	lines=$(cat $file | awk '/WPA|WPA2|OPN|WEP/ {print}' | awk 'END{print NR}')
