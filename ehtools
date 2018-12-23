@@ -6112,7 +6112,7 @@ function metasploit_menu
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") EXIT"
 	echo -e "Choose: "
-	read -e METASP
+	read -p $'(\e[4;35mmetasploit\e[0m)> ' METASP
 	clear
 	if [[ "$METASP" = "1" ]]
 	then
@@ -6510,7 +6510,7 @@ function tools_menu
 	#~ echo -e ""$YS"00"$CE") Main menu"
 	echo -e ""$YS" 0"$CE") EXIT"
 	echo "Choose: "
-	read -e CATEG
+	read -p $'(\e[4;32mtools\e[0m)> ' CATEG
 	clear
 		if [[ "$CATEG" = "1" ]]
 		then
