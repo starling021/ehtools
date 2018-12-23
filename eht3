@@ -601,7 +601,7 @@ function pixie_loop
 	do
 		trap 'break' SIGINT
 		echo "" > "$EPATH"/wpslogloop
-		reaver -i $WLANNM -b $BSSIDT -c $CHANT -N -K 1 -f -vvv <<< $'y\n' | tee /root/EntynetHackerTools/wpslogloop
+		reaver -i $WLANNM -b $BSSIDT -c $CHANT -N -K 1 -f -vvv <<< $'y\n' | tee /root/ehtools/wpslogloop
 		if [[ -f "$EPATH"/wpslog ]]
 		then
 			TTT=$(cat "$EPATH"/wpslogloop | grep "WPS pin not found!")
