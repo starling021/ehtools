@@ -8259,10 +8259,10 @@ function about_option
 	echo -e "Welcome to ehtools framework PRO free trial!"
 	echo -e ""$YS" 1"$CE") Open our site"
 	echo -e ""$YS" 2"$CE") Open github repo of ehtools PRO"
-	echo -e ""$RS" e"$CE") Delete EPATH firmware ("$RS"DANGER!"$CE")"
+	echo -e ""$RS" e"$CE") Delete EPATH firmware (\e[5;77mDANGER!\e[0m)"
         echo -e ""$YS" b"$CE") I'm not interested about it! :P"
 	echo -e "Choose: "
-	read DON
+	read -p $'(\e[4;34mabout\e[0m)> ' DON
 	if [[ "$DON" = "1" ]]
 	then
 		gio open "http://entynetproject.simplesite.com/"
@@ -9048,12 +9048,12 @@ function settings_menu
 		echo -e ""$YS" 5"$CE") MAC to change to,when starting monitor       $STARTMAC"	
 		echo -e ""$YS" 6"$CE") Interface for arp-scan                       $ARPIN"
 		echo -e ""$YS" 7"$CE") Interface for iftop(show bandwidth)          $iftopint"
-		echo -e ""$RS" e"$CE") Delete EPATH firmware ("$RS"DANGER!"$CE")"
+		echo -e ""$RS" e"$CE") Delete EPATH firmware (\e[5;77mDANGER!\e[0m)"
                 echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS" 0"$CE") Exit"
 		echo -e ""$RS" IF YOU DELETE EPATH FIRMWARE - SYSTEM WILL CRASHED!!!"$CE""
                 echo -e "Choose: "
-		read SET
+		read -p $'(\e[101m\e[1;77msettings\e[0m)> ' SET
 		clear
 		if [[ "$SET" = "back" || "$SET" = "b" || "$SET" = "00" ]]
 		then
