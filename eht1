@@ -882,10 +882,9 @@ echo -e ""$YS" 4"$CE") Verify a handshake"
 echo -e ""$YS" 5"$CE") Clean a handshake"
 echo -e ""$YS" 6"$CE") Remove .csv and .netxml files"
 echo -e ""$YS" 0"$CE") Exit"
-echo -e "Choose: "
 sleep 1
 CH=0
-read -e AA
+read -p $'(\e[4;31mhandshake\e[0m)> ' AA
 clear
 if [[ "$AA" = "1" ]]
 then
