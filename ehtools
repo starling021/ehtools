@@ -401,8 +401,7 @@ fi
 echo -e ""$YS" 3"$CE") "$ETH""
 echo -e ""$YS" b"$CE") Main menu"
 echo -e ""$YS" 0"$CE") EXIT"
-echo -e "Choose: "
-read -e MYINT
+read -p $'(\e[4;31mmenu\e[0m)> ' MYINT
 if [[ "$MYINT" = "2" ]]
 then
 	if [[ "$WLANMCHECKING" = "" ]]
@@ -1074,8 +1073,7 @@ done
 	#~ echo -e ""$YS"20"$CE") Websploit    "$YS"40"$CE") Geany         "$YS"60"$CE") Dr0p1t"
 	#~ echo -e ""$YS" b"$CE") Go back"
 	#~ echo -e ""$YS" 0"$CE") Exit"
-	#~ echo -e "Choose: "
-	#~ read REIN
+	#~ read -p $'(\e[4;31minstall/reinstall\e[0m)> ' REIN
 	#~ clear
 	#~ if [[ "$REIN" = "1" ]]
 	#~ then
@@ -1463,7 +1461,7 @@ echo -e ""$YS" 2"$CE") See hidden shortcuts"
 echo -e ""$YS" b"$CE") Go back"
 #~ echo -e ""$YS"00"$CE") Main menu"
 echo -e ""$YS" 0"$CE") EXIT"
-read KS
+read -p $'(\e[4;31mksconsole\e[0m)> ' KS
 clear
 if [[ "$KS" = "1" ]]
 then
@@ -1566,7 +1564,7 @@ echo -e ""$YS" 1"$CE") Password sniff-sslstrip"
 echo -e ""$YS" 2"$CE") SET + mitm + dnsspoofing"
 echo -e ""$YS" b"$CE") Go back"
 echo -e ""$YS" 0"$CE") EXIT"
-read MITMATT
+read -p $'(\e[5;32mmitm\e[0m)> ' MITMATT
 clear
 if [[ "$MITMATT" = "1" ]]
 then
@@ -2167,8 +2165,7 @@ $YS 32$CE) umbraco_crack  : Crack Umbraco HMAC-SHA1 password hashes
 EOF
 )
 	echo -e "$pttr"
-	echo -e "Choose: "
-	read PT
+	read -p $'(\e[4;33mpatator\e[0m)> ' PT
 	if [[ "$PT" = 1 ]]
 	then
 		XPT="ftp_login"
@@ -2396,8 +2393,7 @@ function eaphammer_automation
 				echo -e ""$YS"start"$CE") Start "
 				echo -e ""$YS"00"$CE") Main menu"
 				echo -e ""$YS" back"$CE") Go back"
-				echo -e "Choose: "
-				read EAPH
+				read -p $'(\e[4;33meaphammer\e[0m)> ' EAPH
 				clear
 				if [[ "$EAPH" = 1 ]]
 				then
@@ -2432,8 +2428,7 @@ function eaphammer_automation
 					echo -e ""$YS" 1"$CE") Open"
 					echo -e ""$YS" 2"$CE") ttls"
 					echo -e ""$YS" 3"$CE") peap"
-					echo -e "Choose: "
-					read PAUTH
+					read -p $'(\e[4;33mcheck\e[0m)> ' PAUTH
 					if [[ "$PAUTH" = 1 ]]
 					then
 						EAPHAUTH="open"
@@ -2711,8 +2706,7 @@ do
 	echo -e ""$YS" u"$CE") Check for updates"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"start"$CE") Generate"
-	echo -e "Choose: "
-	read DR
+	read -p $'(\e[4;33mdropit\e[0m)> ' DR
 	clear
 	if [[ "$DR" = "o" ]]
 	then
