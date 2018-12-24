@@ -9375,7 +9375,7 @@ function main_options
 	elif [[ "$YORNAA" = "19" ]]
 	then
 		echo -e ""$BS"Whois console:"$CE" "
-		read -p $'\e[4;34mseen\e[0m\en> ' IPG
+		read -p $'(\e[4;34mseen\e[0m\en)> ' IPG
 		clear
 		geolocate_ip "$IPG"
 	elif [[ "$YORNAA" = "18" ]]
