@@ -6111,7 +6111,6 @@ function metasploit_menu
 	echo -e ""$YS" 7"$CE") Findsploit"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") EXIT"
-	echo -e "Choose: "
 	read -p $'(\e[4;35mmetasploit\e[0m)> ' METASP
 	clear
 	if [[ "$METASP" = "1" ]]
@@ -6509,7 +6508,6 @@ function tools_menu
 	echo -e ""$YS" b"$CE") Go back"
 	#~ echo -e ""$YS"00"$CE") Main menu"
 	echo -e ""$YS" 0"$CE") EXIT"
-	echo "Choose: "
 	read -p $'(\e[4;32mtools\e[0m)> ' CATEG
 	clear
 		if [[ "$CATEG" = "1" ]]
@@ -6779,7 +6777,7 @@ do
 	echo -e ""$YS" 4"$CE") Fix email failed"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") EXIT"
-	read SMTP
+	read -p $'(\e[4;33mspoof\e[0m)> ' SMTP
 	if [[ "$SMTP" = "1" ]]
 	then
 		clear
@@ -7240,8 +7238,7 @@ do
 		echo -e ""$YS" s"$CE") Start"
 	fi
 	echo -e ""$YS" b"$CE") Go back"
-	echo -e "Choose: "
-	read SQ
+	read -p $'(\e[4;36mSQconsole\e[0m)> ' SQ
 	clear
 	if [[ "$SQ" = 1 ]]
 	then
@@ -7871,8 +7868,7 @@ do
 	echo -e ""$YS"bu"$CE") Burpsuite automated tool"
 	echo -e ""$YS" i"$CE") Info"
 	echo -e ""$YS" b"$CE") Go back"
-	echo -n "Choose: "
-	read BR
+	read -p $'(\e[4;33mbruteforce\e[0m)> ' BR
 	clear
 	if [[ "$BR" = "b" || "$BR" = 00 || "$BR" = "back" ]]
 	then
@@ -8259,9 +8255,8 @@ function about_option
 	echo -e "Welcome to ehtools framework PRO free trial!"
 	echo -e ""$YS" 1"$CE") Open our site"
 	echo -e ""$YS" 2"$CE") Open github repo of ehtools PRO"
-	echo -e ""$RS" e"$CE") Delete EPATH firmware (\e[5;77mDANGER!\e[0m)"
+	echo -e ""$RS" e"$CE") Delete EPATH firmware (\e[5;31mDANGER!\e[0m)"
         echo -e ""$YS" b"$CE") I'm not interested about it! :P"
-	echo -e "Choose: "
 	read -p $'(\e[4;34mabout\e[0m)> ' DON
 	if [[ "$DON" = "1" ]]
 	then
@@ -8733,8 +8728,7 @@ function browser_exploiting
 		#~ echo -e ""$YS" 4"$CE") Close all windows"
 		echo -e ""$YS" i"$CE") Info"
 		echo -e ""$YS" b"$CE") Go back"
-		echo -e "Choose: "
-		read AEB
+		read -p $'(\e[4;35mbrowser\e[0m)> ' AEB
 		clear
 		if [[ "$AEB" = "b" || "$AEB" = 00 ]]
 		then
@@ -9048,11 +9042,10 @@ function settings_menu
 		echo -e ""$YS" 5"$CE") MAC to change to,when starting monitor       $STARTMAC"	
 		echo -e ""$YS" 6"$CE") Interface for arp-scan                       $ARPIN"
 		echo -e ""$YS" 7"$CE") Interface for iftop(show bandwidth)          $iftopint"
-		echo -e ""$RS" e"$CE") Delete EPATH firmware (\e[5;77mDANGER!\e[0m)"
+		echo -e ""$RS" e"$CE") Delete EPATH firmware (\e[5;31mDANGER!\e[0m)"
                 echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS" 0"$CE") Exit"
 		echo -e ""$RS" IF YOU DELETE EPATH FIRMWARE - SYSTEM WILL CRASHED!!!"$CE""
-                echo -e "Choose: "
 		read -p $'(\e[101m\e[1;77msettings\e[0m)> ' SET
 		clear
 		if [[ "$SET" = "back" || "$SET" = "b" || "$SET" = "00" ]]
@@ -9261,8 +9254,7 @@ function settings_menu
 			echo -e ""$YS"14"$CE") Brown                   "$BRS"SAMPLE"$CE""
 			echo -e ""$YS"15"$CE") White                   "$WHS"SAMPLE"$CE""
 			echo -e ""$YS"16"$CE") Black                   "$BLS"SAMPLE"$CE""
-			echo -e "Choose: "
-			read LC
+			read -p $'\e[4;34mcolor\e[0m)> ' LC
 			if [[ "$LC" = 1 ]]
 			then
 				echo -e "\e[1;31m" > "$EPATH"/settings/logocolor.txt
