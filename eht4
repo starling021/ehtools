@@ -365,8 +365,7 @@ do
 	echo -e ""$YS" 6"$CE") Aircrack the ivs"
 	echo -e ""$YS" 7"$CE") WiFi autopwner - automated tool"
 	echo -e ""$YS" 0"$CE") Exit"
-	echo -e "Choose: "
-	read WEP
+	read -p $'(\e[4;31mWEP\e[0m)> ' WEP
 	clear
 	if [[ "$WEP" = "1" ]]
 	then
