@@ -8156,8 +8156,7 @@ function select_interface
 		fi
 		echo -e ""$YS" 3"$CE") Manually type an interface"
 		echo -e ""$YS" b"$CE") Go back"
-		echo -e "Choose: "
-		read CI
+		read -p $'(\e[4;31mmenu\e[0m)> ' CI
 		if [[ "$CI" = 1 ]]
 		then
 			TT=$(ifconfig | grep "$WLANN:")
