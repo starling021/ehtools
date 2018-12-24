@@ -688,8 +688,7 @@ do
 	echo -e ""$YS" 2"$CE") Set another BSSID and CHANNEL"
 	echo -e ""$YS" r"$CE") Scan again"
 	echo -e ""$YS" b"$CE") Go back"
-	echo -e "Choose: "
-	read CAPTH
+	read -p $'(\e[4;31mhandshake\e[0m)> ' CAPTH
 	if [[ "$CAPTH" = "back" || "$CAPTH" = "b" ]]
 	then
 		break
@@ -936,8 +935,7 @@ then
 		echo -e ""$BS"Validate with: "$CE""
 		echo -e ""$YS" 1"$CE") Pyrit"
 		echo -e ""$YS" 2"$CE") Cowpatty"
-		echo -e "Choose: "
-		read VLD
+		read -p $'(\e[4;33mcheck\e[0m)> ' VLD
 		if [[ "$VLD" = 1 ]]
 		then
 			validate_with_pyrit
