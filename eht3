@@ -337,8 +337,7 @@ function scan_wash
 				echo -e ""$YS" 4"$CE") Bully"
 				echo -e ""$YS" r"$CE") Rescan"
 				echo -e ""$YS" b"$CE") Go back"
-				echo -e "Choose: "
-				read WPSL
+				read -p $'(\e[4;31mPIN\e[0m)> ' WPSL
 				if [[ "$WPSL" = "r" ]]
 				then
 					RESCAN=1
@@ -398,8 +397,7 @@ do
 	#~ echo -e ""$YS" 3"$CE") Cause Michael failure (only TKIP / AES+TKIP)"
 	#~ echo -e ""$YS" 4"$CE") "
 	echo -e ""$YS" b"$CE") Go back"
-	echo -e "Choose:"
-	read UNL
+	read -p $'(\e[4;31munlock\e[0m)> ' UNL
 	clear
 	if [[ "$UNL" = "b" || "$UNL" = 00 || "$UNL" = 0 ]]
 	then
@@ -895,8 +893,7 @@ do
 	echo -e ""$YS"11"$CE") Ignore lockout              CURRENT:"$IGNORELOCKOUT""
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"start"$CE") Start"
-	echo -e "Choose: "
-	read B
+	read -p $'(\e[4;31mbully\e[0m)> ' B
 	clear
 	if [[ "$B" = "back" || "$B" = "b" ]]
 	then
@@ -1070,8 +1067,7 @@ else
 fi
 echo -e ""$YS"11"$CE") See latest log"
 echo -e ""$YS" 0"$CE") Exit"
-echo -e "Choose: "
-read -e YN
+read -p $'(\e[4;31mWPS\e[0m)> ' YN
 clear
 if [[ "$YN" = "1" ]]
 then
