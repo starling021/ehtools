@@ -366,7 +366,7 @@ function banner
 	echo -e ""$YS"13"$CE") MITM              "$YS"19"$CE") Geolocate an IP"
 	echo -e ""$YS"14"$CE") Metasploit        "$YS"20"$CE") Bruteforce login"   
 	echo -e ""$YS" 0"$CE") Exit              "$YS"21"$CE") Sqlmap automated"
-	read -p $'\e[4;93mehtools\e[0m\en> ' YORNAA
+	read -p $'(\e[4;93mehtools\e[0m\en)> ' YORNAA
 	#~ echo "$YORNNA"
 	#~ history -s "$YORNNA"
 	clear
@@ -1344,8 +1344,7 @@ echo -e ""$YS" 8"$CE") Complete fix for apache2 service failed to start"
 echo -e ""$YS" 9"$CE") Cannot capture handshake-pyrit verification always bad"
 echo -e ""$YS" b"$CE") Go back"
 echo -e ""$YS" 0"$CE") EXIT"
-echo -e " Choose: "
-read ERRS
+read -p $'(\e[4;31merrors\e[0m)> ' ERRS
 clear
 if [[ "$ERRS" = "1" ]]
 then
@@ -1581,8 +1580,7 @@ then
 	echo -e ""$YS" 4"$CE") Open the sslstrip log"            # "$YS"44"$CE") Filter credentials"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") EXIT"
-	echo -e "Choose: "
-	read -e MITMCH
+	read -p $'(\e[4;31mmitm\e[0m) => (\e[5;33mCH\e[0m)> ' MITMCH
 	if [[ "$MITMCH" = "1" ]]
 	then
 		echo "1" > /proc/sys/net/ipv4/ip_forward
@@ -1725,8 +1723,7 @@ then
 	echo -e ""$YS" 5"$CE") Start DNSspoofing"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") EXIT"
-	echo -e "Choose: "
-	read -e MITMSET
+	read -p $'(\e[4;31mmitm\e[0m) => (\e[5;32mSET\e[0m)> ' MITMSET
 	clear
 	if [[ "$MITMSET" = "1" ]]
 	then
@@ -1919,8 +1916,7 @@ do
 	echo -e "------------------------------------------------"
 	echo -e ""$YS" b"$CE") Go back              "$YS"update"$CE") Update dagon"
 	echo -e ""$YS"start"$CE") Start"
-	echo -e "Choose: "
-	read DAGON
+	read -p $'(\e[5;33DAGON\e[0m)> ' DAGON
 	clear
 	if [[ "$DAGON" = "back" || "$DAGON" = "b" ]]
 	then
@@ -1994,8 +1990,7 @@ do
 		echo -e ""$YS" 2"$CE") Select multiple disctionaries"
 		echo -e ""$YS" 3"$CE") Select a folder with disctionaries"
 		echo -e ""$YS" b"$CE") Go back"
-		echo -e "Choose: "
-		read DICTSEL
+		read -p $'(\e[4;32mdictsel\e[0m)> ' DICTSEL
 		clear
 		if [[ "$DICTSEL" = 1 ]]
 		then
@@ -2070,8 +2065,7 @@ do
 		echo -e ""$YS" 2"$CE") Type multiple hashes"
 		echo -e ""$YS" 3"$CE") Select a file with hashes"
 		echo -e ""$YS" b"$CE") Go back"
-		echo -e "Choose: "
-		read HASHES
+		read -p $'(\e[4;33mhashes\e[0m)> ' HASHES
 		clear
 		if [[ "$HASHES" = "back" || "$HASHES" = "b" ]]
 		then
@@ -3358,8 +3352,7 @@ function wifi_tools
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
 	#echo -e ""$YS" 0"$CE") EXIT"
-	echo -e "Choose: "
-	read -e APPP
+	read -p $'(\e[4;31mWiFi\e[0m)> ' APPP
 	clear
 	if [[ "$APPP" = "1" ]]
 	then
@@ -4203,8 +4196,7 @@ function remote_access
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
 	#echo -e ""$YS" 0"$CE") EXIT"
-	echo -e "Choose: "
-	read -e KEYLOG
+	read -p $'(\e[4;33mremote-access\e[0m)> ' KEYLOG
 	clear
 	if [[ "$KEYLOG" = "1" ]]
 	then
@@ -5022,8 +5014,7 @@ function remote_access
 				echo -e ""$YS" 5"$CE") Add additional permissions         CURRENT:$APKPERM"
 				echo -e ""$YS" b"$CE") Go back"
 				echo -e ""$YS" run"$CE") Infect apk"
-				echo -e "Choose: "
-				read APKK
+				read -p $'(\e[4;31minfection\e[0m)> ' APKK
 				clear
 				if [[ "$APKK" = 1 ]]
 				then
@@ -5335,8 +5326,7 @@ function information_gathering
 		fi
 		echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS"00"$CE") Main menu"
-		echo -e "Choose: "
-		read INFOG
+		read -p $'(\e[4;33minfog\e[0m)> ' INFOG
 		clear
 		if [[ "$INFOG" = 1 ]]
 		then
@@ -5616,8 +5606,7 @@ function website_tools
 		fi
 		echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS"00"$CE") Main menu"
-		echo -e "Choose: "
-		read WEB
+		read -p $'(\e[4;34mwebsite\e[0m)> ' WEB
 		clear
 		if [[ "$WEB" = 1 ]]
 		then
@@ -5771,7 +5760,7 @@ function website_tools
 					echo -e " "$YS"3"$CE") View cracked passwords"
 					echo -e " "$YS"4"$CE") Create configuration"
 					echo -e " "$YS"b"$CE") Go back"
-					read C
+					read -p $'(\e[4;34minstahack\e[0m)> ' C
 					clear
 					if [[ "$C" == 1 ]]
 					then
@@ -5946,8 +5935,7 @@ do
 	fi
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") EXIT"
-	echo -e "Choose: "
-	read -e OTHERT
+	read -p $'(\e[4;33mothertools\e[0m)> ' OTHERT
 	clear
 	if [[ "$OTHERT" = 1 ]]
 	then
@@ -7676,8 +7664,7 @@ function cromos_menu
 			echo -e " "$YS"5"$CE") Upload to dropbox"
 			echo -e " "$YS"b"$CE") Go back"
 			echo -e " "$YS"0"$CE") Exit"
-			echo -e "Choose: "
-			read CROM
+			read -p $'(\e[4;34mcromos\e[0m)> ' CROM
 			clear
 			if [[ "$CROM" == 1 ]]
 			then
@@ -8762,8 +8749,7 @@ function browser_exploiting
 			echo -e ""$YS" 3"$CE") MITMf error: Could not resolve Gateway's MAC"
 			echo -e ""$YS" 4"$CE") MITMf error: [Errno 98] Address already in use"
 			echo -e ""$YS" b"$CE") Go back"
-			echo -e "Choose: "
-			read AE
+			read -p $'(\e[4;31merrors\e[0m)> ' AE
 			clear
 			if [[ "$AE" = 1 ]]
 			then
@@ -8854,8 +8840,7 @@ function browser_exploiting
 					echo -e ""$YS" 2"$CE") Type target's IP"
 						echo -e ""$YS" 3"$CE") Target the whole network"
 					echo -e ""$YS" b"$CE") Go back"
-					echo -e "Choose: "
-					read TARR
+					read -p $'(\e[4;33mtarget\e[0m)> ' TARR
 					clear
 					if [[ "$TARR" = "b" ]]
 					then
@@ -9186,8 +9171,7 @@ function settings_menu
 				echo -e ""$YS" 4"$CE") Number of answers to return               "$numofans""
 				echo -e ""$YS" 5"$CE") Clear the cache"
 				echo -e ""$YS" b"$CE") Go back"
-				echo -e "Choose: "
-				read HOWCH
+				read -p $'(\e[4;31mhowdoi\e[0m)> ' HOWCH
 				if [[ "$HOWCH" = 1 ]]
 				then
 					if [[ "$dispfull" = "false" ]]
@@ -9254,7 +9238,7 @@ function settings_menu
 			echo -e ""$YS"14"$CE") Brown                   "$BRS"SAMPLE"$CE""
 			echo -e ""$YS"15"$CE") White                   "$WHS"SAMPLE"$CE""
 			echo -e ""$YS"16"$CE") Black                   "$BLS"SAMPLE"$CE""
-			read -p $'\e[4;34mcolor\e[0m)> ' LC
+			read -p $'(\e[4;34mcolor\e[0m)> ' LC
 			if [[ "$LC" = 1 ]]
 			then
 				echo -e "\e[1;31m" > "$EPATH"/settings/logocolor.txt
