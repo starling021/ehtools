@@ -8297,8 +8297,7 @@ function ngrok_option
 			echo -e ""$YS" 4"$CE") Intergrate with Shellter"
 			echo -e ""$YS" 5"$CE") Set your ngrok authtoken"
 			echo -e ""$YS" b"$CE") Go back"
-			echo -e "Choose: "
-			read NG
+			read -p $'(<\e[4;31mports\e[0m@\e[5;37ngrok\e[0m>#) ' NG
 			clear
 			if [[ "$NG" = "help" || "$NG" = "h" ]]
 			then
@@ -8337,8 +8336,7 @@ function ngrok_option
 					echo -e ""$YS" 1"$CE") Make a raw tcp payload for Shellter"
 					echo -e ""$YS" 2"$CE") How to intergrate it"
 					echo -e ""$YS" b"$CE") Go back"
-					echo -e "Choose:"
-					read SHINT
+					read -p $'(\e[5;37mpayload\e[0m)> ' SHINT
 					clear
 					if [[ "$SHINT" = 1 ]]
 					then
@@ -8353,8 +8351,7 @@ function ngrok_option
 							#~ echo -e ""$YS" 2"$CE") Set your local tcp port             CURRENT:"$EPORT""
 							echo -e ""$YS" b"$CE") Go back"
 							echo -e ""$YS"run"$CE") Make the payload"
-							echo -e "Choose: "
-							read RP
+							read -p $'(\e[5;37mconsole\e[0m)> ' RP
 							if [[ "$RP" = 1 ]]
 							then
 								echo -e "Ngrok port: "
