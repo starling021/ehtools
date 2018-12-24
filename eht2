@@ -151,8 +151,7 @@ do
 	echo -e ""$YS" m"$CE") Manually type a MAC to deauth"
 	echo -e ""$YS" r"$CE") Refresh"
 	echo -e ""$YS" b"$CE") Go back"
-	echo -e "Choose: "
-	read STATION
+	read -p $'(\e[4;31mkill\e[0m)> ' STATION
 	clear
 	if [[ "$STATION" = "m" ]]
 	then
@@ -368,8 +367,7 @@ do
 				echo -e ""$YS" 1"$CE") Check with pyrit"
 				echo -e ""$YS" 2"$CE") Check with cowpatty"
 				echo -e ""$YS" b"$CE") Go back"
-				echo -e "Choose: "
-				read CHW
+				read -p $'(\e[4;33mcheck\e[0m)> ' CHW
 				if [[ "$CHW" = 1 ]]
 				then
 					pyrit_hand_check
