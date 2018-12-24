@@ -8297,7 +8297,7 @@ function ngrok_option
 			echo -e ""$YS" 4"$CE") Intergrate with Shellter"
 			echo -e ""$YS" 5"$CE") Set your ngrok authtoken"
 			echo -e ""$YS" b"$CE") Go back"
-			read -p $'(<\e[4;31mports\e[0m@\e[5;37ngrok\e[0m>#) ' NG
+			read -p $'(<\e[4;31mports\e[0m@\e[5;32mngrok\e[0m>#) ' NG
 			clear
 			if [[ "$NG" = "help" || "$NG" = "h" ]]
 			then
