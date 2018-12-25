@@ -8486,7 +8486,7 @@ function geolocate_ip()
 			echo -e ""$YS" m"$CE") Open google maps location"
 		fi
 		echo -e ""$YS" *"$CE") Go back"
-		read -p &'(\e[5;34mconsole\e[0m)> ' ge
+		read -p $'(\e[5;34mconsole\e[0m)> ' ge
 		if [[ "$ge" = "m" ]]
 		then
 			if [[ "$locbool" = 0 ]]
