@@ -25,8 +25,6 @@ echo -e "\e[4;33mDJ Mobley\e[0m - Ascii Designer"
 sleep 3
 echo -e "\e[4;32mEgor Egorich\e[0m - Color Designer"
 sleep 3
-echo -e "[\e[5;31mBased on lscript\e[0m]"
-sleep 3
 echo -e "Press \e[1;33many key\e[0m to install ehtools"
 read -n 1
 clear
