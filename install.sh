@@ -31,15 +31,51 @@ clear
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [[ "$DIR" != "/root/ehtools" ]]
 then
-	echo -e "\e[101m\e[1;77meht1 returned an error code (1)\e[0m"
+	echo -e "\e[44mChecking compatibility...\e[0m"
+        sleep 20
+        echo -e "\e[4;31meht1 returned an error code (1)\e[0m"
+        sleep 4
+        echo -e "\e[4;31meht2 returned an error code (2)\e[0m"
 	sleep 4
-	echo -e "\e[101m\e[1;77meht2 returned an error code (2)\e[0m"
+        echo -e "\e[1;34mInstalling library...\e[0m"
+        sleep 1
+        echo -e "\e[1;34mFixing permissions...\e[0m"
+        sleep 2
+        echo -e "\e[44mConnecting to server...\e[0m"
+        sleep 10
+        echo -e "\e[4;31m141.152.251.19: connection refused!\e[0m"
+        sleep 3
+        echo -e "\e[1;34mCreating /bin/ehtools...\e[0m"
         sleep 4
-        echo -e "\e[101m\e[1;77meht3 returned an error code (3)\e[0m"
+        echo -e "\e[4;31mcan't build ehtools because:\e[0m"
+        echo -e "\e[4;31mepath tree not found\e[0m"
+        sleep 3
+        echo -e "\e[1;34mSaving results...\e[0m"
+        sleep 10
+        echo -e "\e[1;34mCreating API...\e[0m"
+        sleep 30
+        echo -e "\e[4;31mcan't build API key:\e[0m"
+        echo -e "\e[4;31mpermission denied!\e[0m"
+        sleep 3
+        echo -e "\e[44mDownloading EPATH firmware...\e[0m"
+        sleep 20
+        echo -e "\e[4;31mepath packager: connection refused!\e[0m"
+        sleep 3
+        echo -e "\e[44mEditing Ehtools EPATH...\e[0m"
+        sleep 10
+        echo -e "\e[4;31mcan't build ehtools because:\e[0m"
+        echo -e "\e[4;31mepath firmware not found\e[0m"
+	sleep 3
+	echo -e "\e[101m\e[1;77meht1 returned an error code (101)\e[0m"
+	sleep 4
+	echo -e "\e[101m\e[1;77meht2 returned an error code (342)\e[0m"
         sleep 4
-        echo -e "\e[101m\e[1;77mserver error (connection refused)\e[0m"
+        echo -e "\e[101m\e[1;77meht3 returned an error code (319)\e[0m"
         sleep 4
-	echo -e "\e[101m\e[1;77mepath packager error (can't install firmware)\e[0m
+        echo -e "\e[101m\e[1;77mreloading installation process...\e[0m"
+        sleep 20
+	echo -e "\e[101m\e[1;77merror exiting (error_epath_tree_bin)\e[0m"
+	sleep 3
         if [[ -d /root/ehtools ]]
 	then
 		rm -r /root/ehtools
