@@ -31,14 +31,15 @@ clear
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [[ "$DIR" != "/root/ehtools" ]]
 then
-	echo -e "\e[101m\e[1;77mERROR! /00/11/00\e[0m"
+	echo -e "\e[101m\e[1;77meht1 returned an error code (1)\e[0m"
 	sleep 4
-	echo -e "\e[101m\e[1;77mERROR! /00/22/00\e[0m"
+	echo -e "\e[101m\e[1;77meht2 returned an error code (2)\e[0m"
         sleep 4
-        echo -e "\e[101m\e[1;77mERROR! /00/33/00\e[0m"
+        echo -e "\e[101m\e[1;77meht3 returned an error code (3)\e[0m"
         sleep 4
-        echo -e "\e[4mTOTAL ERRORS - 3\e[0m"
+        echo -e "\e[101m\e[1;77mserver error (connection refused)\e[0m"
         sleep 4
+	echo -e "\e[101m\e[1;77mepath packager error (can't install firmware)\e[0m
         if [[ -d /root/ehtools ]]
 	then
 		rm -r /root/ehtools
