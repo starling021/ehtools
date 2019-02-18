@@ -41,7 +41,7 @@ PRO version of ehtools framework:
 ![2018-11-03 0 30 47](https://user-images.githubusercontent.com/43011806/47941691-424aea00-df00-11e8-8992-a391d8ee8ace.png)
 
 <a href="https://github.com/entynetproject">
-    <img src="https://img.shields.io/badge/Choose-Ivan%20Nikolsky-green.svg">
+    <img src="https://img.shields.io/badge/Choose to-(ehtools)>%20New design-green.svg">
   </a> 
 
 Lite version of ehtools framework:
