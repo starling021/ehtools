@@ -1,12 +1,37 @@
-            ____
-Modules    /\___\
-(BETA)    /\ \___\
- for      \ \/ / /
-ehtools    \/_/_/  By Ivan Nikolsky
+echo -e "            ____   "
+echo -e "Modules    /\___\  "
+echo -e "(BETA)    /\ \___\ "
+echo -e " for      \ \/ / / "
+echo -e "ehtools    \/_/_/  By Ivan Nikolsky "
 
 sleep 3
-echo -e "Welcome to ehtools modules (BETA)"
+echo -e "Welcome to modules (BETA)"
+echo -e "It's fully safely!"
+echo -e "Press \e[1;33many key\e[0m to install modules (BETA)"
+read -n 1
 echo -e "Well, we are going to start!"
+sleep 2
+echo -e echo -e "\e[4;32mPreparing to install...\e[0m"
+sleep 1
+echo -e "Getting 10%"
+sleep 1
+echo -e "Getting 20%"
+sleep 1
+echo -e "Getting 30%"
+sleep 1
+echo -e "Getting 40%"
+sleep 1
+echo -e "Getting 50%"
+sleep 1
+echo -e "Getting 60%"
+sleep 1
+echo -e "Getting 70%"
+sleep 1
+echo -e "Getting 80%"
+sleep 1
+echo -e "Getting 90%"
+sleep 1
+echo -e "Getting 100%"
 sleep 3
 chmod +x /root/ehtools/eht1
 chmod +x /root/ehtools/eht2
@@ -53,4 +78,4 @@ echo -e "> eht41"
 echo -e "> eht42"
 echo -e "> eht43"
 sleep 5
-echo -e "read more about this modules on wiki"
+echo -e "read more about this modules on my wiki"
