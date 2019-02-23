@@ -5,7 +5,7 @@ echo -e " for      \ \/ / / "
 echo -e "ehtools    \/_/_/  By Ivan Nikolsky "
 
 sleep 3
-echo -e "Welcome to modules (BETA)"
+echo -e "Welcome to Modules (BETA)"
 echo -e "It's fully safely!"
 echo -e "Press \e[1;33many key\e[0m to install modules (BETA)"
 read -n 1
