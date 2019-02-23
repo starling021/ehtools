@@ -32,121 +32,161 @@
 #    Project's site : https://entynethacker.wixsite.com/ehtools
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
-function defaults_l
-{
-#path for firmware
-	EPATH="/root/ehtools"
-	export EPATH
-}
+#! /bin/bash
+clear
+printf '\033]2;ehtools INSTALLER\a'
 
-function update_ehtools
-{
-	echo -e "Checking for updates..."
-	TESTINTERNETCONNECTION=$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')
-	if [[ "$TESTINTERNETCONNECTION" != "" ]]
+echo -e "                                                           "
+echo -e "███████╗██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ███████╗ \e[1;33mv2.1.6\e[0m"
+echo -e "██╔════╝██║  ██║╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝"
+echo -e "█████╗  ███████║   ██║   ██║   ██║██║   ██║██║     ███████╗"
+echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
+echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
+echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
+echo -e "\e[1;33mBy Entynetproject corp\e[0m"
+sleep 3
+echo -e "More on our site:"
+sleep 3
+echo -e "==> \e[1;33mhttps://entynethacker.wixsite.com/ehtools\e[0m"                                                           
+sleep 3
+echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com/\e[0m"
+sleep 3
+echo -e "Creators of Ehtools Framework:"
+sleep 3
+echo -e "\e[4;34mIvan Nikolsky (Enty)\e[0m - Main Coder"
+sleep 3
+echo -e "\e[4;33mDJ Mobley\e[0m - Ascii Designer"
+sleep 3
+echo -e "\e[4;32mEgor Egorich\e[0m - Color Designer"
+sleep 3
+echo -e "Press \e[1;33many key\e[0m to install ehtools"
+read -n 1
+clear
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+if [[ "$DIR" != "/bin" ]]
+then
+	echo -e "\e[44mSetting up ehtools certs...\e[0m"
+        sleep 20
+        echo -e "\e[4;31m/root/ehtools/eht1 returned an error code (/bin/euh not found!) "segmentation fault!"\e[0m"
+        echo -e "\e[4;31m/root/ehtools/eht1 returned an error code (/bin/euh not found!) "segmentation fault!"\e[0m"
+	sleep 4
+        echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
+	sleep 4
+        echo -e "\e[1;34mReloading...\e[0m"
+        sleep 1
+        echo -e "\e[1;34mSetting up ehtools certs...\e[0m"
+        sleep 2
+        echo -e "\e[44mConnecting to server...\e[0m"
+        sleep 10
+        echo -e "\e[4;31m141.152.251.19: connection refused! server not found!\e[0m"
+        sleep 3
+        echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
+        echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
+        echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
+        echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
+	sleep 3
+        echo -e "\e[1;34mReloading...\e[0m"
+        sleep 4
+        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
+        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
+        sleep 3
+        echo -e "\e[1;34mReloading...\e[0m"
+        sleep 10
+        echo -e "\e[1;34mSetting up ehtools certs...\e[0m"
+        sleep 30
+        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
+        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
+        sleep 3
+        echo -e "\e[1;34mReloading...\e[0m"
+        sleep 20
+        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
+        sleep 3
+        echo -e "\e[1;34mReloading...\e[0m"
+        sleep 10
+        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
+        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
+	sleep 3
+	echo -e "\e[101m\e[1;77m/root/ehtools/eht1 returned an error code (101)\e[0m"
+	sleep 4
+	echo -e "\e[101m\e[1;77m/bin/euh returned fatal error!\e[0m"
+        sleep 4
+        echo -e "\e[101m\e[1;77m/root/ehtools/eht1 returned an error code (319)\e[0m"
+        sleep 4
+        echo -e "\e[1;34mReloading...\e[0m"
+        sleep 20
+	echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
+	sleep 3
+        echo -e "\e[1;34mReloading...\e[0m"
+	if [[ -d /bin ]]
 	then
-		VER=$(timeout -s SIGTERM 20 curl "https://raw.githubusercontent.com/entynetproject/ehtools/master/version.txt" 2>/dev/null)
-		if [[ "$VERSION" != "$VER" ]]
-		then
-			clear
-			echo -e "There is an update available."
-			echo -e "Current version: $VERSION"
-			echo -e "Updated version: $VER"
-			echo -e "$PAKTC"
-			$READAK
-			clear
-			echo -e "Do you want to update?"$YNONLY": "
-			read UPDATEYN
-			if [[ "$UPDATEYN" = "y" ]]
-			then
-				clear
-				#~ echo -e "Making new directory for the old ehtools (will pass it to /root/ehtold)"
-				sleep 1
-				if [[ -d /root/ehtold ]]
-				then
-					rm -r /root/ehtold
-				fi
-				mkdir /root/ehtold
-				echo -e ""
-				#~ echo -e "Moving ehtools to ehtold"
-				sleep 1
-				mv "$EPATH" /root/ehtold
-				#~ echo -e "Cloning the latest github version to new "$EPATH""
-				sleep 1
-				cd
-				git clone https://github.com/entynetproject/ehtools.git
-				cd "$EPATH"
-				chmod +x install.sh
-				clear
-				sleep 1
-				if [[ -f /root/ehtold/ehtools/IAGREE.txt ]]
-				then
-					cp /root/ehtold/ehtools/IAGREE.txt "$EPATH"
-				fi
-				if [[ -d /root/ehtold/ehtools/ks ]]
-				then
-					echo -e "Copying your shortcuts"
-					cp -r /root/ehtold/ehtools/ks "$EPATH"
-					echo -e "Done."
-					sleep 0.2
-				fi
-				if [[ -d /root/ehtold/ehtools/settings ]]
-				then
-					echo -e "Copying your settings"
-					cp -r /root/ehtold/ehtools/settings "$EPATH"
-					echo -e "Done."
-					sleep 0.2
-				fi
-				if [[ -f /root/ehtold/ehtools/wlanmon.txt ]]
-				then
-					echo -e "Copying your interfaces"
-					cp /root/ehtold/ehtools/wlanmon.txt "$EPATH"
-					echo -e "Done."
-					sleep 0.2
-				fi
-				echo -e ""
-				if [[ -f /root/ehtold/ehtools/wlan.txt ]]
-				then
-					cp /root/ehtold/ehtools/wlan.txt "$EPATH"
-					echo -e "Done."
-					sleep 0.2
-					clear
-				fi
-				echo -e "$PAKTC"
-				$READAK
-				cd "$EPATH"
-				gnome-terminal -e ./install.sh
-				clear 
-				sleep 1
-				rm -rf /root/ehtold
-				echo -e "Exiting..."
-				sleep 1
-				kill -9 $PPID
-			else 
-				clear
-				echo -e "You didnt select "y" so you go back..."
-				sleep 3
-				exec bash "$0"
-			fi
-		else
-			echo -e "There is no update available"
-			sleep 1
-			echo -e "Installed version: $VERSION"
-			sleep 1
-			echo -e "Github version:    $VER"
-			sleep 1
-			echo -e "$PAKTGB"
-			$READAK	
-			exec bash "$0"
-		fi
-	else
-		clear
-		echo -e "There is no connection."
-		sleep 1
-		echo -e "Maybe you should type 'stop' in the main menu to gain internet access again"
-		echo -e ""
-		echo -e "$PAKTGB"
-		$READAK
-		exec bash "$0"
-	fi	
-}
+		rm /root/ehtools/euh
+	fi
+	mkdir /root/euh
+	cp -r "$DIR"/* /root/euh
+	gnome-terminal -- "bash /bin/euh"
+fi
+
+sleep 3
+echo -e "chmod +x /root/ehtools/eht1" 
+echo -e "chmod +x /root/ehtools/eht1"
+echo -e "chmod +x /root/ehtools/eht1" 
+echo -e "chmod +x /root/ehtools/eht1" 
+echo -e "chmod +x /root/ehtools/eht1"
+echo -e "chmod +x /root/ehtools/eht1"
+echo -e "chmod +x /root/ehtools/eht1"
+echo -e "chmod +x /root/ehtools/eht1"
+sleep 5
+echo -e "\e[44mOK...\e[0m"
+sleep 10
+echo -e "\e[4;32mSuccess!\e[0m"
+sleep 3
+chmod +x /root/ehtools/eht1
+chmod +x /root/ehtools/eht2
+chmod +x /root/ehtools/eht3
+chmod +x /root/ehtools/eht21
+chmod +x /root/ehtools/eht31
+chmod +x /root/ehtools/ehtools
+chmod +x /root/ehtools/eht4
+chmod +x /root/ehtools/eht41
+chmod +x /root/ehtools/eht42
+chmod +x /root/ehtools/eht43
+chmod +x /root/ehtools/ls/l131.sh
+chmod +x /root/ehtools/ls/l132.sh
+chmod +x /root/ehtools/ls/l133.sh
+chmod +x /root/ehtools/uninstall.sh
+chmod +x /root/ehtools/euh
+clear
+echo -e "Copying script to /bin/ehtools"
+sleep 1
+mkdir /bin/ehtools
+cd /root/ehtools
+cp /root/ehtools/ehtools /bin/ehtools
+cp /root/ehtools/eht1 /bin/ehtools
+cp /root/ehtools/eht2 /bin/ehtools
+cp /root/ehtools/eht3 /bin/ehtools
+cp /root/ehtools/eht31 /bin/ehtools
+cp /root/ehtools/eht4 /bin/ehtools
+cp /root/ehtools/eht41 /bin/ehtools
+cp /root/ehtools/eht42 /bin/ehtools
+cp /root/ehtools/eht43 /bin/ehtools
+cp /root/ehtools/euh /bin
+chmod +x /bin/euh
+cp /root/ehtools/eht1 /bin
+chmod +x /bin/eht1
+cp /root/ehtools/eht2 /bin
+chmod +x /bin/eht2
+cp /root/ehtools/eht3 /bin
+chmod +x /bin/eht3
+cp /root/ehtools/eht31 /bin
+chmod +x /bin/eht31
+cp /root/ehtools/eht4 /bin
+chmod +x /bin/eht4
+cp /root/ehtools/eht41 /bin
+chmod +x /bin/eht41
+cp /root/ehtools/eht42 /bin
+chmod +x /bin/eht42
+cp /root/ehtools/eht43 /bin
+chmod +x /bin/eht43
+cp /root/ehtools/eht21 /bin
+chmod +x /bin/eht21
+clear
