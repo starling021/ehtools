@@ -174,6 +174,17 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 If you have some problems with update use our "Ehtools update helper"
 Last time, configuration errors of our program occur and it can not be updated by itself.
 
-> cd /ehtools
+> euh
 
-> ./euh
+if not working:
+
+> euh --update or euh -u
+
+# Modules (eht21, eht1...) #
+
+You can use ehtools's module such as commands:
+
+> eht21
+............... resieved a segmentation fault!
+
+Try it if ehtools'main code not working :)
