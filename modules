@@ -1,0 +1,49 @@
+echo -e "Welcome to ehtools modules (BETA)"
+echo -e "Well, we are going to start!"
+sleep 3
+chmod +x /root/ehtools/eht1
+chmod +x /root/ehtools/eht2
+chmod +x /root/ehtools/eht3
+chmod +x /root/ehtools/eht21
+chmod +x /root/ehtools/eht31
+chmod +x /root/ehtools/eht4
+chmod +x /root/ehtools/eht41
+chmod +x /root/ehtools/eht42
+chmod +x /root/ehtools/eht43
+chmod +x /root/ehtools/euh
+sleep 5 
+echo -e "Setting up permissions..."
+sleep 5
+cp /root/ehtools/euh /bin
+chmod +x /bin/euh
+cp /root/ehtools/eht1 /bin
+chmod +x /bin/eht1
+cp /root/ehtools/eht2 /bin
+chmod +x /bin/eht2
+cp /root/ehtools/eht3 /bin
+chmod +x /bin/eht3
+cp /root/ehtools/eht31 /bin
+chmod +x /bin/eht31
+cp /root/ehtools/eht4 /bin
+chmod +x /bin/eht4
+cp /root/ehtools/eht41 /bin
+chmod +x /bin/eht41
+cp /root/ehtools/eht42 /bin
+chmod +x /bin/eht42
+cp /root/ehtools/eht43 /bin
+chmod +x /bin/eht43
+cp /root/ehtools/eht21 /bin
+chmod +x /bin/eht21
+sleep 5
+echo -e "Good job! You can open modules with commands:"
+echo -e "> eht1"
+echo -e "> eht2"
+echo -e "> eht3"
+echo -e "> eht4"
+echo -e "> eht21"
+echo -e "> eht31"
+echo -e "> eht41"
+echo -e "> eht42"
+echo -e "> eht43"
+sleep 5
+echo -e "read more about this modules on wiki"
