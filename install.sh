@@ -226,7 +226,7 @@ then
       clear
       echo -e "OK..."
       sleep 2
-      echo -e "Loading modules.."
+      echo -e "Loading modules..."
       sleep 2
       echo -e "Uploading Modules (BETA)..."
       sleep 2
