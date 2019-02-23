@@ -36,25 +36,6 @@
 
 EntynetHackerTools for linux with gnome-terminal (PRO or lite!)
 
-# We update our choose string in the bottom of ehtools menu and now it's not a "Choose:" it's "(ehtools)>"
-
-<a href="https://github.com/entynetproject">
-    <img src="https://img.shields.io/badge/Choose:-(ehtools)>%20New design-green.svg">
-  </a> 
-
-
-
-PRO version of ehtools framework (with new design):
-
-![img_6049](https://user-images.githubusercontent.com/43011806/50402183-9d34eb00-07a5-11e9-9847-579e1cfbfbf5.JPG)
-
-PRO version of ehtools framework:
-
-![2018-11-03 0 30 47](https://user-images.githubusercontent.com/43011806/47941691-424aea00-df00-11e8-8992-a391d8ee8ace.png)
-
-Lite version of ehtools framework:
-
-![i284008264540267243 _szw1280h1280_ jpg](https://user-images.githubusercontent.com/43011806/48487945-a76fdb00-e830-11e8-8b10-0aca0f1e131f.png)
 
 # To start our HackerTools PRO free trial: #
 
