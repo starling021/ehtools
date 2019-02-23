@@ -180,11 +180,6 @@ if not working:
 
 > euh --update or euh -u
 
-# Modules (eht21, eht1...) #
+# Modules (BETA) #
 
-You can use ehtools's module such as commands:
-
-> eht21
-............... resieved a segmentation fault!
-
-Try it if ehtools'main code not working :)
+UNDER CONSTRUCTION!!!
