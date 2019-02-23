@@ -1,3 +1,10 @@
+            ____
+Modules    /\___\
+(BETA)    /\ \___\
+ for      \ \/ / /
+ehtools    \/_/_/  By Ivan Nikolsky
+
+sleep 3
 echo -e "Welcome to ehtools modules (BETA)"
 echo -e "Well, we are going to start!"
 sleep 3
