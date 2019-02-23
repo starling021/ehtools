@@ -172,14 +172,14 @@ while true
 do
 clear
 echo -e "Are you \e[1;33md\e[0meliting or \e[1;33mi\e[0mnstalling the script?(\e[1;33md\e[0m/\e[1;33mi\e[0m): "
-echo -e "Only use 'i' for the first time."
-read UORI
+echo -e "Only use 'i' to install ehtools."
+read -p $'(\e[4;93minstall\e[0m\en)> ' UORI
 if [[ "$UORI" = "d" ]]
 then 
 	clear
-	echo -e "? GO OUT OF THIS PLACE ?"
+	echo -e "OK..."
 	sleep 3
-	break
+	clear
 elif [[ "$UORI" = "i" ]]
 then
 	clear
@@ -225,6 +225,7 @@ elif [[ "$UORI" = "yes" ]]
 then
       clear
       echo -e "OK..."
+      sleep 2
       echo -e "Loading modules.."
       sleep 2
       echo -e "Uploading Modules (BETA)..."
