@@ -220,6 +220,6 @@ sleep 1
 clear
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
 sleep 4
-echo -e "To install module (BETA) run 'modules --install'"
+echo -e "To install Modules (BETA) run 'modules --install'"
 sleep 5
 exit
