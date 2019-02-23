@@ -138,6 +138,7 @@ chmod +x /root/ehtools/ls/l131.sh
 chmod +x /root/ehtools/ls/l132.sh
 chmod +x /root/ehtools/ls/l133.sh
 chmod +x /root/ehtools/uninstall.sh
+chmod +x /root/ehtools/modules
 chmod +x /root/ehtools/euh
 clear
 echo -e "Copying script to /bin/ehtools"
@@ -155,6 +156,8 @@ cp /root/ehtools/eht42 /bin/ehtools
 cp /root/ehtools/eht43 /bin/ehtools
 cp /root/ehtools/euh /bin
 chmod +x /bin/euh
+cp /root/ehtools/modules /bin
+chmod +x /bin/modules
 clear
 #required for gui
 apt-get -y install ncurses-dev
