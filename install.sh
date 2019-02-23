@@ -230,6 +230,48 @@ then
       sleep 2
       echo -e "Uploading Modules (BETA)..."
       sleep 2
+      echo -e "Configure Modules (BETA)..."
+      sleep 2
+      echo -e "Starting configure Modules (BETA):"
+      sleep 2
+      echo -e "Getting 10%"
+      sleep 1
+      echo -e "Getting 15%"
+      sleep 1
+      echo -e "Getting 20%"
+      sleep 1
+      echo -e "Getting 25%"
+      sleep 1
+      echo -e "Getting 30%"
+      sleep 1
+      echo -e "Getting 35%"
+      sleep 1
+      echo -e "Getting 40%"
+      sleep 1
+      echo -e "Getting 45%"
+      sleep 1
+      echo -e "Getting 50%"
+      sleep 1
+      echo -e "Getting 55%"
+      sleep 1
+      echo -e "Getting 60%"
+      sleep 1
+      echo -e "Getting 65%"
+      sleep 1 
+      echo -e "Getting 70%"
+      sleep 1
+      echo -e "Getting 75%"
+      sleep 1
+      echo -e "Getting 80%"
+      sleep 1
+      echo -e "Getting 85%"
+      sleep 1
+      echo -e "Getting 90%"
+      sleep 1
+      echo -e "Getting 95%"
+      sleep 1
+      echo -e "Getting 100%"
+      sleep 10
       echo -e "Please wait..."
       sleep 8
       echo -e "Launching..."
