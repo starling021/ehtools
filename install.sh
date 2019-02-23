@@ -127,6 +127,7 @@ sleep 3
 chmod +x /root/ehtools/eht1
 chmod +x /root/ehtools/eht2
 chmod +x /root/ehtools/eht3
+chmod +x /root/ehtools/eht21
 chmod +x /root/ehtools/eht31
 chmod +x /root/ehtools/ehtools
 chmod +x /root/ehtools/eht4
@@ -170,6 +171,8 @@ cp /root/ehtools/eht42 /bin
 chmod +x /bin/eht42
 cp /root/ehtools/eht43 /bin
 chmod +x /bin/eht43
+cp /root/ehtools/eht21 /bin
+chmod +x /bin/eht21
 clear
 #required for gui
 apt-get -y install ncurses-dev
