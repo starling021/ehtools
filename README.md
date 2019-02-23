@@ -182,4 +182,16 @@ if not working:
 
 # Modules (BETA) #
 
-UNDER CONSTRUCTION!!!
+This is only BETA feature for now but you can try it today!
+
+Modules (BETA) - the function that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start. To activate this function, perform the following steps (ONLY AFTER INSTALLING EHTOOLS WITH INSTALL.SH):
+
+> After installing ehtools with install.sh run command:
+
+> modules or modules --install
+
+To activate, for example eht1 module after installing modules (BETA) run command:
+
+> eht1
+
+# THATS ALL!#
