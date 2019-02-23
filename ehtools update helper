@@ -1,3 +1,4 @@
+
 function update_ehtools
 {
 	echo -e "Checking for updates..."
