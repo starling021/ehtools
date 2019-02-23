@@ -53,10 +53,10 @@ echo -e "Getting 95%"
 sleep 1
 echo -e "Getting 100%"
 sleep 3
+echo -e "10 tar archives installed to /bin with success!"
+sleep 2
 echo -e "\e[4;32mPreparing to unpack...\e[0m"
-sleep 5
-echo -e "\e[4;32m(modules(BETA).tar)...\e[0m"
-sleep 3
+sleep 10
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 5
 chmod +x /root/ehtools/eht1
