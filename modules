@@ -52,7 +52,9 @@ sleep 1
 echo -e "Getting 100%"
 sleep 3
 echo -e "\e[4;32mPreparing to unpack...\e[0m"
+sleep 5
 echo -e "\e[4;32m(com.entynetproject.modules:ehtools.tar.gz)...\e[0m"
+sleep 3
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 5
 chmod +x /root/ehtools/eht1
