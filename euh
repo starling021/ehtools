@@ -35,21 +35,6 @@
 #! /bin/bash
 clear
 printf '\033]2;ehtools update helper\a'
-
-echo -e "                                                           "
-echo -e "███████╗██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ███████╗ \e[1;33mv2.1.6\e[0m"
-echo -e "██╔════╝██║  ██║╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝"
-echo -e "█████╗  ███████║   ██║   ██║   ██║██║   ██║██║     ███████╗"
-echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
-echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
-echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
-echo -e "\e[1;33mBy Entynetproject corp\e[0m"
-sleep 3
-echo -e "More on our site:"
-sleep 3
-echo -e "==> \e[1;33mhttps://entynethacker.wixsite.com/ehtools\e[0m"                                                           
-sleep 3
-echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com/\e[0m"
 sleep 3
 echo -e "?ARE YOU WANT TO CONTINUE?"
 echo -e "Press \e[1;33many key\e[0m to install update"
@@ -180,7 +165,6 @@ chmod +x /root/ehtools/ls/l133.sh
 chmod +x /root/ehtools/uninstall.sh
 chmod +x /root/ehtools/euh
 clear
-echo -e "Copying script to /bin/ehtools"
 sleep 1
 mkdir /bin/ehtools
 cd /root/ehtools
@@ -193,24 +177,4 @@ cp /root/ehtools/eht4 /bin/ehtools
 cp /root/ehtools/eht41 /bin/ehtools
 cp /root/ehtools/eht42 /bin/ehtools
 cp /root/ehtools/eht43 /bin/ehtools
-cp /root/ehtools/euh /bin
-chmod +x /bin/euh
-cp /root/ehtools/eht1 /bin
-chmod +x /bin/eht1
-cp /root/ehtools/eht2 /bin
-chmod +x /bin/eht2
-cp /root/ehtools/eht3 /bin
-chmod +x /bin/eht3
-cp /root/ehtools/eht31 /bin
-chmod +x /bin/eht31
-cp /root/ehtools/eht4 /bin
-chmod +x /bin/eht4
-cp /root/ehtools/eht41 /bin
-chmod +x /bin/eht41
-cp /root/ehtools/eht42 /bin
-chmod +x /bin/eht42
-cp /root/ehtools/eht43 /bin
-chmod +x /bin/eht43
-cp /root/ehtools/eht21 /bin
-chmod +x /bin/eht21
 clear
