@@ -169,11 +169,11 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 > ./uninstall.sh
 
-# Ehtools update helper#
+# Ehtools update helper (euh)#
 
 If you have some problems with update use our "Ehtools update helper"
 Last time, configuration errors of our program occur and it can not be updated by itself.
 
 > cd /ehtools
 
-> ./ehtools_update_helper --update
+> ./euh
