@@ -146,14 +146,6 @@ sleep 1
 mkdir /bin/ehtools
 cd /root/ehtools
 cp /root/ehtools/ehtools /bin/ehtools
-cp /root/ehtools/eht1 /bin/ehtools
-cp /root/ehtools/eht2 /bin/ehtools
-cp /root/ehtools/eht3 /bin/ehtools
-cp /root/ehtools/eht31 /bin/ehtools
-cp /root/ehtools/eht4 /bin/ehtools
-cp /root/ehtools/eht41 /bin/ehtools
-cp /root/ehtools/eht42 /bin/ehtools
-cp /root/ehtools/eht43 /bin/ehtools
 cp /root/ehtools/euh /bin
 chmod +x /bin/euh
 cp /root/ehtools/modules /bin
@@ -216,8 +208,9 @@ fi
 done
 clear
 echo -e "DONE"
+clear
 echo -e "Are you Are you want to install modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m): "
-echo -e "Only use 'i' for the first time."
+echo -e "Only use 'yes' for the ehtools."
 read UORI
 if [[ "$UORI" = "no" ]]
 then 
@@ -225,6 +218,7 @@ then
 	echo -e "OK..."
 	sleep 3
 	break
+
 elif [[ "$UORI" = "yes" ]]
 then
        modules
