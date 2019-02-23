@@ -209,7 +209,7 @@ done
 clear
 echo -e "DONE"
 clear
-echo -e "Are you Are you want to install modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m): "
+echo -e "Are you want to install modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m): "
 echo -e "Only use 'yes' for the ehtools."
 read -p $'(\e[4;93mmodules\e[0m\en)> ' UORI
 
