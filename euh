@@ -34,7 +34,7 @@
 #
 #! /bin/bash
 clear
-printf '\033]2;ehtools INSTALLER\a'
+printf '\033]2;ehtools update helper\a'
 
 echo -e "                                                           "
 echo -e "███████╗██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ███████╗ \e[1;33mv2.1.6\e[0m"
@@ -51,15 +51,8 @@ echo -e "==> \e[1;33mhttps://entynethacker.wixsite.com/ehtools\e[0m"
 sleep 3
 echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com/\e[0m"
 sleep 3
-echo -e "Creators of Ehtools Framework:"
-sleep 3
-echo -e "\e[4;34mIvan Nikolsky (Enty)\e[0m - Main Coder"
-sleep 3
-echo -e "\e[4;33mDJ Mobley\e[0m - Ascii Designer"
-sleep 3
-echo -e "\e[4;32mEgor Egorich\e[0m - Color Designer"
-sleep 3
-echo -e "Press \e[1;33many key\e[0m to install ehtools"
+echo -e "?ARE YOU WANT TO CONTINUE?"
+echo -e "Press \e[1;33many key\e[0m to install update"
 read -n 1
 clear
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -137,9 +130,40 @@ echo -e "chmod +x /root/ehtools/eht1"
 echo -e "chmod +x /root/ehtools/eht1"
 sleep 5
 echo -e "\e[44mOK...\e[0m"
-sleep 10
-echo -e "\e[4;32mSuccess!\e[0m"
-sleep 3
+sleep 5
+echo -e "chmod +x /root/ehtools/eht2"
+echo -e "chmod +x /root/ehtools/eht2"
+echo -e "chmod +x /root/ehtools/eht2"
+echo -e "chmod +x /root/ehtools/eht2"
+echo -e "chmod +x /root/ehtools/eht2"
+echo -e "chmod +x /root/ehtools/eht2"
+echo -e "chmod +x /root/ehtools/eht2"
+echo -e "chmod +x /root/ehtools/eht2"
+sleep 5
+echo -e "\e[44mOK...\e[0m"
+sleep 5
+echo -e "chmod +x /root/ehtools/eht3"
+echo -e "chmod +x /root/ehtools/eht3"
+echo -e "chmod +x /root/ehtools/eht3"
+echo -e "chmod +x /root/ehtools/eht3"
+echo -e "chmod +x /root/ehtools/eht3"
+echo -e "chmod +x /root/ehtools/eht3"
+echo -e "chmod +x /root/ehtools/eht3"
+echo -e "chmod +x /root/ehtools/eht3"
+sleep 5
+echo -e "\e[44mOK...\e[0m"
+sleep 5
+echo -e "chmod +x /root/ehtools/eht4"
+echo -e "chmod +x /root/ehtools/eht4"
+echo -e "chmod +x /root/ehtools/eht4"
+echo -e "chmod +x /root/ehtools/eht4"
+echo -e "chmod +x /root/ehtools/eht4"
+echo -e "chmod +x /root/ehtools/eht4"
+echo -e "chmod +x /root/ehtools/eht4"
+echo -e "chmod +x /root/ehtools/eht4"
+sleep 5
+echo -e "\e[44mOK...\e[0m"
+sleep 5
 chmod +x /root/ehtools/eht1
 chmod +x /root/ehtools/eht2
 chmod +x /root/ehtools/eht3
