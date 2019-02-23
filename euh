@@ -32,8 +32,12 @@
 #    Project's site : https://entynethacker.wixsite.com/ehtools
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
-
-
+function defaults_l
+{
+#path for firmware
+	EPATH="/root/ehtools"
+	export EPATH
+}
 
 function update_ehtools
 {
