@@ -216,17 +216,27 @@ if [[ "$UORI" = "no" ]]
 then 
 	clear
 	echo -e "OK..."
+	echo -e "To install Modules (BETA) run 'modules'"
 	sleep 3
-	break
+	clear
         
 elif [[ "$UORI" = "yes" ]]
 then
-       modules
+      clear
+      echo -e "OK..."
+      echo -e "Loading modules.."
+      sleep 2
+      echo -e "Uploading Modules (BETA)..."
+      sleep 2
+      echo -e "Please wait..."
+      sleep 8
+      echo -e "Launching..."
+      sleep 1
+      clear
+      modules
 fi
 sleep 1
 clear
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
-sleep 4
-echo -e "To install Modules (BETA) run 'modules'"
 sleep 5
 exit
