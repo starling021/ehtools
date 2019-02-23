@@ -216,10 +216,23 @@ fi
 done
 clear
 echo -e "DONE"
+echo -e "Are you Are you want to install modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m): "
+echo -e "Only use 'i' for the first time."
+read UORI
+if [[ "$UORI" = "no" ]]
+then 
+	clear
+	echo -e "OK..."
+	sleep 3
+	break
+elif [[ "$UORI" = "yes" ]]
+then
+       modules
+fi
 sleep 1
 clear
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
 sleep 4
-echo -e "To install Modules (BETA) run 'modules --install'"
+echo -e "To install Modules (BETA) run 'modules'"
 sleep 5
 exit
