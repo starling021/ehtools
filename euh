@@ -32,7 +32,7 @@
 #    Project's site : https://entynethacker.wixsite.com/ehtools
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
-#! /bin/bash
+
 clear
 printf '\033]2;ehtools update helper\a'
 echo -e "            ____   "
