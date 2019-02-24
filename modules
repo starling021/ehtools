@@ -6,6 +6,8 @@ echo -e "ehtools    \/_/_/  By Ivan Nikolsky "
 sleep 3
 echo -e "Welcome to Modules (BETA)"
 sleep 1
+echo -e "Instrument to add eht modules to /bin"
+sleep 1
 echo -e "It's fully safely!"
 sleep 1
 echo -e "Press \e[1;33many key\e[0m to install modules (BETA)"
