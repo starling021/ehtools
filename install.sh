@@ -226,6 +226,7 @@ if [[ "$UORI" = "no" ]]
 then 
 	clear
 	echo -e "OK..."
+	sleep 3
 	echo -e "To install Modules (BETA) run 'modules'"
 	sleep 3
 	clear
