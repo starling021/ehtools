@@ -35,146 +35,135 @@
 #! /bin/bash
 clear
 printf '\033]2;ehtools update helper\a'
+echo -e "            ____   "
+echo -e "ehtools    /\___\  "
+echo -e "update    /\ \___\ "
+echo -e "helper    \ \/ / / "
+echo -e "v1.0       \/_/_/  By Ivan Nikolsky "
 sleep 3
-echo -e "?ARE YOU WANT TO CONTINUE?"
+echo -e "Welcome to ehtools update helper"
+sleep 1
+echo -e "Unfortunately, ehtools cannot be updated on its own :("
+sleep 1
+echo -e "I created this tool to help ehtools update!"
+sleep 1
 echo -e "Press \e[1;33many key\e[0m to install update"
 read -n 1
 clear
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-if [[ "$DIR" != "/bin" ]]
-then
-	echo -e "\e[44mSetting up ehtools certs...\e[0m"
-        sleep 20
-        echo -e "\e[4;31m/root/ehtools/eht1 returned an error code (/bin/euh not found!) "segmentation fault!"\e[0m"
-        echo -e "\e[4;31m/root/ehtools/eht1 returned an error code (/bin/euh not found!) "segmentation fault!"\e[0m"
-	sleep 4
-        echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
-	sleep 4
-        echo -e "\e[1;34mReloading...\e[0m"
-        sleep 1
-        echo -e "\e[1;34mSetting up ehtools certs...\e[0m"
-        sleep 2
-        echo -e "\e[44mConnecting to server...\e[0m"
-        sleep 10
-        echo -e "\e[4;31m141.152.251.19: connection refused! server not found!\e[0m"
-        sleep 3
-        echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
-        echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
-        echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
-        echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
-	sleep 3
-        echo -e "\e[1;34mReloading...\e[0m"
-        sleep 4
-        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
-        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
-        sleep 3
-        echo -e "\e[1;34mReloading...\e[0m"
-        sleep 10
-        echo -e "\e[1;34mSetting up ehtools certs...\e[0m"
-        sleep 30
-        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
-        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
-        sleep 3
-        echo -e "\e[1;34mReloading...\e[0m"
-        sleep 20
-        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
-        sleep 3
-        echo -e "\e[1;34mReloading...\e[0m"
-        sleep 10
-        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
-        echo -e "\e[4;31m/bin/euh returned fatal error!\e[0m"
-	sleep 3
-	echo -e "\e[101m\e[1;77m/root/ehtools/eht1 returned an error code (101)\e[0m"
-	sleep 4
-	echo -e "\e[101m\e[1;77m/bin/euh returned fatal error!\e[0m"
-        sleep 4
-        echo -e "\e[101m\e[1;77m/root/ehtools/eht1 returned an error code (319)\e[0m"
-        sleep 4
-        echo -e "\e[1;34mReloading...\e[0m"
-        sleep 20
-	echo -e "\e[4;31m/bin/euh returned fatal error\e[0m"
-	sleep 3
-        echo -e "\e[1;34mReloading...\e[0m"
-	if [[ -d /bin ]]
-	then
-		rm /root/ehtools/euh
-	fi
-	mkdir /root/euh
-	cp -r "$DIR"/* /root/euh
-	gnome-terminal -- "bash /bin/euh"
-fi
-
 sleep 3
-echo -e "chmod +x /root/ehtools/eht1" 
-echo -e "chmod +x /root/ehtools/eht1"
-echo -e "chmod +x /root/ehtools/eht1" 
-echo -e "chmod +x /root/ehtools/eht1" 
-echo -e "chmod +x /root/ehtools/eht1"
-echo -e "chmod +x /root/ehtools/eht1"
-echo -e "chmod +x /root/ehtools/eht1"
-echo -e "chmod +x /root/ehtools/eht1"
-sleep 5
-echo -e "\e[44mOK...\e[0m"
-sleep 5
-echo -e "chmod +x /root/ehtools/eht2"
-echo -e "chmod +x /root/ehtools/eht2"
-echo -e "chmod +x /root/ehtools/eht2"
-echo -e "chmod +x /root/ehtools/eht2"
-echo -e "chmod +x /root/ehtools/eht2"
-echo -e "chmod +x /root/ehtools/eht2"
-echo -e "chmod +x /root/ehtools/eht2"
-echo -e "chmod +x /root/ehtools/eht2"
-sleep 5
-echo -e "\e[44mOK...\e[0m"
-sleep 5
-echo -e "chmod +x /root/ehtools/eht3"
-echo -e "chmod +x /root/ehtools/eht3"
-echo -e "chmod +x /root/ehtools/eht3"
-echo -e "chmod +x /root/ehtools/eht3"
-echo -e "chmod +x /root/ehtools/eht3"
-echo -e "chmod +x /root/ehtools/eht3"
-echo -e "chmod +x /root/ehtools/eht3"
-echo -e "chmod +x /root/ehtools/eht3"
-sleep 5
-echo -e "\e[44mOK...\e[0m"
-sleep 5
-echo -e "chmod +x /root/ehtools/eht4"
-echo -e "chmod +x /root/ehtools/eht4"
-echo -e "chmod +x /root/ehtools/eht4"
-echo -e "chmod +x /root/ehtools/eht4"
-echo -e "chmod +x /root/ehtools/eht4"
-echo -e "chmod +x /root/ehtools/eht4"
-echo -e "chmod +x /root/ehtools/eht4"
-echo -e "chmod +x /root/ehtools/eht4"
-sleep 5
-echo -e "\e[44mOK...\e[0m"
-sleep 5
-chmod +x /root/ehtools/eht1
-chmod +x /root/ehtools/eht2
-chmod +x /root/ehtools/eht3
-chmod +x /root/ehtools/eht21
-chmod +x /root/ehtools/eht31
-chmod +x /root/ehtools/ehtools
-chmod +x /root/ehtools/eht4
-chmod +x /root/ehtools/eht41
-chmod +x /root/ehtools/eht42
-chmod +x /root/ehtools/eht43
-chmod +x /root/ehtools/ls/l131.sh
-chmod +x /root/ehtools/ls/l132.sh
-chmod +x /root/ehtools/ls/l133.sh
-chmod +x /root/ehtools/uninstall.sh
-chmod +x /root/ehtools/euh
+echo -e "\e[4;31m?ARE YOU WANT TO CONTINUE?\e[0m"
+sleep 2
+echo -e "\e[4;31mIf something goes wrong, all the data, the framework's system and configuration files will be erased!!!\e[0m"
+
+echo -e "Press \e[1;33many key\e[0m to install update"
+read -n 1
 clear
-sleep 1
-mkdir /bin/ehtools
-cd /root/ehtools
-cp /root/ehtools/ehtools /bin/ehtools
-cp /root/ehtools/eht1 /bin/ehtools
-cp /root/ehtools/eht2 /bin/ehtools
-cp /root/ehtools/eht3 /bin/ehtools
-cp /root/ehtools/eht31 /bin/ehtools
-cp /root/ehtools/eht4 /bin/ehtools
-cp /root/ehtools/eht41 /bin/ehtools
-cp /root/ehtools/eht42 /bin/ehtools
-cp /root/ehtools/eht43 /bin/ehtools
-clear
+echo -e "Rewrite all ehtools data?(\e[1;33myes\e[0m/\e[1;33mno\e[0m): "
+echo -e "Only use 'yes' for the update."
+read -p $'(\e[4;93mupdate\e[0m\en)> ' UORI
+
+if [[ "$UORI" = "no" ]]
+then 
+	clear
+	echo -e "OK..."
+	sleep 3
+	echo -e "To install update run 'euh'"
+	sleep 3
+	echo -e "Exiting..."
+	sleep 3
+	clear
+        
+elif [[ "$UORI" = "yes" ]]
+then
+      clear
+      echo -e "OK..."
+      sleep 2
+      echo -e "Loading..."
+      sleep 2
+      echo -e "Uploading..."
+      sleep 2
+      echo -e "Configuring..."
+      sleep 2
+      echo -e "Getting /root/ehtools/eht1"
+      chmod +x /root/ehtools/eht1
+      sleep 1
+      echo -e "Getting /root/ehtools/eht2"
+      chmod +x /root/ehtools/eht2
+      sleep 1
+      echo -e "Getting /root/ehtools/eht3"
+      chmod +x /root/ehtools/eht3
+      sleep 1
+      echo -e "Getting /root/ehtools/eht4"
+      chmod +x /root/ehtools/eht4
+      sleep 1
+      echo -e "Getting /root/ehtools/eht21"
+      chmod +x /root/ehtools/eht21
+      sleep 1
+      echo -e "Getting /root/ehtools/eht31"
+      chmod +x /root/ehtools/eht31
+      sleep 1
+      echo -e "Getting /root/ehtools/eht41"
+      chmod +x /root/ehtools/eht41
+      sleep 1
+      echo -e "Getting /root/ehtools/eht42"
+      chmod +x /root/ehtools/eht42
+      sleep 1
+      echo -e "Getting /root/ehtools/eht43"
+      chmod +x /root/ehtools/eht43
+      sleep 10
+      echo -e "Please wait..."
+      sleep 8
+      echo -e "Launching..."
+      sleep 1
+      clear
+      if [[ -d /root/ehtold ]]
+	then
+		rm -r /root/ehtold
+	fi
+	        mkdir /root/ehtold
+		sleep 1
+		mv "$EPATH" /root/ehtold
+		sleep 1
+		cd
+		git clone https://github.com/entynetproject/ehtools.git
+		cd "$EPATH"
+		chmod +x install.sh
+		clear
+		sleep 1
+	if [[ -f /root/ehtold/ehtools/IAGREE.txt ]]
+	  then
+		cp /root/ehtold/ehtools/IAGREE.txt "$EPATH"
+	  fi
+	if [[ -d /root/ehtold/ehtools/ks ]]
+          then
+		echo -e "Copying your shortcuts"
+		cp -r /root/ehtold/ehtools/ks "$EPATH"
+		echo -e "Done."
+		sleep 0.2
+	   fi
+	if [[ -d /root/ehtold/ehtools/settings ]]
+          then
+		echo -e "Copying your settings"
+		cp -r /root/ehtold/ehtools/settings "$EPATH"
+		echo -e "Done."
+		sleep 0.2
+	  fi
+	if [[ -f /root/ehtold/ehtools/wlanmon.txt ]]
+	  then
+		echo -e "Copying your interfaces"
+		cp /root/ehtold/ehtools/wlanmon.txt "$EPATH"
+		echo -e "Done."
+		sleep 0.2
+	   fi
+		
+	if [[ -f /root/ehtold/ehtools/wlan.txt ]]
+	   then
+		cp /root/ehtold/ehtools/wlan.txt "$EPATH"
+		echo -e "Done."
+		sleep 0.2
+		clear
+                echo -e "Well, let's start install.sh!"
+		cd /root/ehtools
+		./install.sh
+  fi
+fi
