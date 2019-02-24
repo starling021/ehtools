@@ -95,6 +95,8 @@ chmod +x /bin/eht43
 cp /root/ehtools/eht21 /bin
 chmod +x /bin/eht21
 sleep 5
+echo -e "Modules added to /bin with success!"
+sleep 1
 echo -e "Good job! You can open modules with commands:"
 sleep 1
 echo -e "> eht1"
