@@ -186,7 +186,7 @@ function local_ips()
 		fi
 		if [[ "$n" = 0 ]]
 		then
-			echo -e ""$RS"No known interfaces found available"$CE""
+			echo -e ""$RS"ehtools returned a fatal error (No known interfaces found available)"$CE""
 		fi
 		echo -e ""
 		find_gateways
@@ -212,7 +212,7 @@ function give_ip_take_zero()
 	GI2="$2"
 	if [[ "$GI1" = "" ]]
 	then
-		echo -e ""$RS"eht1 returned an error (7) (No parameters passed)"$CE""
+		echo -e ""$RS"ehtools returned an error (7) (No parameters passed)"$CE""
 		sleep 3
 	else
 		ip1=$(echo -e "$GI1" | cut -d '.' -f1)
@@ -233,7 +233,7 @@ function is_it_an_ip()
 	IIAI=${#IIA}
 	if [[ "$IIA" = "" ]]
 	then
-		echo -e ""$RS"eht1 returned an error (9) (No parameteres passed)"$CE""
+		echo -e ""$RS"ehtools returned an error (9) (No parameteres passed)"$CE""
 		sleep 2
 	else
 		if [[ "$IIAI" -le 15 && "$IIAI" -ge 7 ]]
@@ -444,7 +444,7 @@ function change_mac
 	clear
 	if [[ "$MYINT" = "OFF" ]]
 	then
-		echo -e ""$RS"eht1 returned an error (0) (Interface not available)"$CE""
+		echo -e ""$RS"ehtools returned a fatal error (Interface not available)"$CE""
 		sleep 2
 	else
 		echo -e "Change it to a random or specific?("$YS"r"$CE"/"$YS"s"$CE")("$YS"Enter"$CE"=r): "
@@ -1365,7 +1365,7 @@ then
 	echo -e "I mean...Try to see if you have audio."
 	sleep 3
 	echo -e " "
-	echo -e "That's all i can do :/"
+	echo -e "That's all ehtools can do :/"
 	sleep 2
 	echo -e " "
 	echo -e "If it wasn't fix , then try rebooting"
