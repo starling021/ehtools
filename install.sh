@@ -53,7 +53,7 @@ echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com/\e[0m"
 sleep 3
 echo -e "Creators of Ehtools Framework:"
 sleep 3
-echo -e "\e[4;34mIvan Nikolsky (Enty)\e[0m - Main Coder"
+echo -e "\e[4;34mIvan Nikolsky (Enty)\e[0m - Main Developer"
 sleep 3
 echo -e "\e[4;33mDJ Mobley\e[0m - Ascii Designer"
 sleep 3
