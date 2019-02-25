@@ -122,11 +122,11 @@ then
 	fi
 	        mkdir /root/ehtold
 		sleep 1
-		mv "$EPATH" /root/ehtold
+		mv /root/ehtools /root/ehtold
 		sleep 1
-		cd
+		cd /root
 		git clone https://github.com/entynetproject/ehtools.git
-		cd "$EPATH"
+		cd /root/ehtools
 		chmod +x install.sh
 		clear
 		sleep 1
