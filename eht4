@@ -322,7 +322,7 @@ then
 		n3=$((n3+1))
 	done
 else
-	echo -e ""$RS"No networks found nearby."$CE""
+	echo -e ""$RS"eht4 returned a fatal error (No networks found nearby)"$CE""
 fi
 echo -e ""$YS" r"$CE") rescan"
 echo -e ""$YS" b"$CE") Go back"
