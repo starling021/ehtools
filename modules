@@ -109,6 +109,17 @@ chmod +x /root/ehtools/euh
 sleep 5 
 echo -e "Setting up permissions..."
 sleep 5
+echo -e "Moving ehtools modules to /bin..."
+sleep 5
+cp /root/ehtools/eht1 /bin/ehtools
+cp /root/ehtools/eht2 /bin/ehtools
+cp /root/ehtools/eht3 /bin/ehtools
+cp /root/ehtools/eht4 /bin/ehtools
+cp /root/ehtools/eht21 /bin/ehtools
+cp /root/ehtools/eht31 /bin/ehtools
+cp /root/ehtools/eht41 /bin/ehtools
+cp /root/ehtools/eht42 /bin/ehtools
+cp /root/ehtools/eht43 /bin/ehtools
 cp /root/ehtools/euh /bin
 chmod +x /bin/euh
 cp /root/ehtools/eht1 /bin
