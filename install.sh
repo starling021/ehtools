@@ -213,6 +213,11 @@ then
 	clear
 	echo -e "OK..."
 	sleep 3
+	echo -e "running uninstall.sh..."
+	sleep 10
+	cd /root/ehtools
+	chmod +x uninstall.sh
+	./uninstall.sh
 	clear
 elif [[ "$UORI" = "i" ]]
 then
