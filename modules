@@ -32,7 +32,8 @@
 #    Project's site : https://entynethacker.wixsite.com/ehtools
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
-
+clear
+printf '\033]2;Modules (BETA)\a'
 echo -e "            ____   "
 echo -e "Modules    /\___\  "
 echo -e "(BETA)    /\ \___\ "
