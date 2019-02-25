@@ -212,7 +212,7 @@ function give_ip_take_zero()
 	GI2="$2"
 	if [[ "$GI1" = "" ]]
 	then
-		echo -e ""$RS"Error 7. No parameters passed"$CE""
+		echo -e ""$RS"eht1 returned an error (7) (No parameters passed)"$CE""
 		sleep 3
 	else
 		ip1=$(echo -e "$GI1" | cut -d '.' -f1)
@@ -233,7 +233,7 @@ function is_it_an_ip()
 	IIAI=${#IIA}
 	if [[ "$IIA" = "" ]]
 	then
-		echo -e ""$RS"Error 9. No parameteres passed"
+		echo -e ""$RS"eht1 returned an error (9) (No parameteres passed)"$CE""
 		sleep 2
 	else
 		if [[ "$IIAI" -le 15 && "$IIAI" -ge 7 ]]
@@ -444,7 +444,7 @@ function change_mac
 	clear
 	if [[ "$MYINT" = "OFF" ]]
 	then
-		echo -e "Interface not available"
+		echo -e ""$RS"eht1 returned an error (0) (Interface not available)"$CE""
 		sleep 2
 	else
 		echo -e "Change it to a random or specific?("$YS"r"$CE"/"$YS"s"$CE")("$YS"Enter"$CE"=r): "
