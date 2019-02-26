@@ -272,9 +272,9 @@ then
       sleep 2
       echo -e "Uploading Modules (BETA)..."
       sleep 2
-      echo -e "Configure Modules (BETA)..."
+      echo -e "Configuring Modules (BETA)..."
       sleep 2
-      echo -e "Starting configure Modules (BETA):"
+      echo -e "Starting configuring Modules (BETA):"
       sleep 2
       echo -e "Getting 10%"
       sleep 1
