@@ -67,9 +67,9 @@ if [[ "$DIR" != "/root/ehtools" ]]
 then
 	echo -e "\e[44mChecking compatibility...\e[0m"
         sleep 20
-        echo -e "\e[4;31meht1 returned an error code (1)\e[0m"
+        echo -e "\e[4;31minstall.sh returned an error (101)\e[0m"
         sleep 4
-        echo -e "\e[4;31meht2 returned an error code (2)\e[0m"
+        echo -e "\e[4;31minstall.sh returned an error (202)\e[0m"
 	sleep 4
         echo -e "\e[1;34mInstalling library...\e[0m"
         sleep 1
@@ -100,11 +100,11 @@ then
         echo -e "\e[4;31mcan't build ehtools because:\e[0m"
         echo -e "\e[4;31mepath firmware not found\e[0m"
 	sleep 3
-	echo -e "\e[101m\e[1;77meht1 returned an error code (101)\e[0m"
+	echo -e "\e[101m\e[1;77minstall.sh returned an error (101)\e[0m"
 	sleep 4
-	echo -e "\e[101m\e[1;77meht2 returned an error code (342)\e[0m"
+	echo -e "\e[101m\e[1;77minstall.sh returned an error (342)\e[0m"
         sleep 4
-        echo -e "\e[101m\e[1;77meht3 returned an error code (319)\e[0m"
+        echo -e "\e[101m\e[1;77minstall.sh returned an error (319)\e[0m"
         sleep 4
         echo -e "\e[101m\e[1;77mreloading installation process...\e[0m"
         sleep 20
