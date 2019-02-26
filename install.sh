@@ -325,6 +325,6 @@ sleep 1
 clear
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
 sleep 3
-echo -e "If you want to update ehtoolslite, run '\e[4;44meuh\e[0m'"
+echo -e "If you want to update ehtools, run '\e[4;44meuh\e[0m'"
 sleep 5
 exit
