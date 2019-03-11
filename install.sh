@@ -324,7 +324,9 @@ fi
 
 clear
 
+echo -e "Set ehtools password"
 echo -e "Let's make ehtools password!"
+echo -e "Ehtools protect:"
 read -p $'(\e[4;93mlogin\e[0m\en)> ' logins
 touch login
 echo $logins >> /etc/login
