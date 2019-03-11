@@ -123,6 +123,8 @@ cp /root/ehtools/eht42 /bin/ehtools
 cp /root/ehtools/eht43 /bin/ehtools
 cp /root/ehtools/euh /bin
 chmod +x /bin/euh
+cp /root/ehtools/epasswd /bin
+chmod +x /bin/epasswd
 cp /root/ehtools/eht1 /bin
 chmod +x /bin/eht1
 cp /root/ehtools/eht2 /bin
