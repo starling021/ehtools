@@ -308,6 +308,8 @@ function check_wlans
 
 clear
 
+echo -e "$YS"Ehtools Authentication"$CE"
+
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 logins=$(cat /etc/login)
 while [ "$loginer" != "$logins" ]
