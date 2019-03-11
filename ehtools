@@ -311,7 +311,7 @@ clear
 echo -e "$YS"Ehtools Authentication"$CE"
 
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
-logins=$(cat /etc/login)
+logins=$(cat /etc/ehtools/login)
 while [ "$loginer" != "$logins" ]
 do
 echo -e "$RS"Wrong login!"$CE"
@@ -323,7 +323,7 @@ read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 done
 
 read -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
-passwords=$(cat /etc/password)
+passwords=$(cat /etc/ehtools/password)
 while [ "$passworder" != "$passwords" ]
 do
 echo -e "$RS"Wrong password"$CE"
