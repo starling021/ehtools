@@ -307,18 +307,41 @@ function check_wlans
 	#~ WLANMCHECKING=$(ifconfig | awk -v c1="$CC" '$0 ~ c1 {print}')
 clear
 
-read -p "Enter your login: " loginer
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 logins=$(cat /etc/login)
 while [ "$loginer" != "$logins" ]
 do
-read -p "Enter your login: " $loginer 
+echo -e "$RS"Wrong login!"$CE"
+sleep 3
+echo -e "("$YS"1"$CE"/"YS"3"$CE")"
+sleep 2
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+logins=$(cat /etc/login)
+while [ "$loginer" != "$logins" ]
+do
+echo -e "$RS"Wrong login!"$CE"
+sleep 3
+echo -e "("$YS"2"$CE"/"YS"3"$CE")"
+sleep 2
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+logins=$(cat /etc/login)
+while [ "$loginer" != "$logins" ]
+do
+echo -e "$RS"Wrong login!"$CE"
+sleep 3
+echo -e "("$YS"3"$CE"/"YS"3"$CE")"
+sleep 2
+exit
 done
 
-read -p "Enter your password: " passworder
+read -p $'(\e[4;93mlogin\e[0m\en)> ' passworder
 passwords=$(cat /etc/password)
 while [ "$passworder" != "$passwords" ]
 do
-read -p "Enter your password: " $passworder
+echo -e "$RS"Wrong password"$CE"
+sleep 3
+echo -e "("$RS"3"$CE"/"RS"3"$CE")"
+exit
 done
 
 sleep 5
