@@ -1,0 +1,50 @@
+  
+#! /bin/bash
+
+# 
+#            --------------------------------------------------
+#                            Ehtools Framework          
+#            --------------------------------------------------
+#        Copyright (C) <2015>  <Entynetproject (Ivan Nikolsky)>
+#
+#        This program is free software: you can redistribute it and/or modify
+#        it under the terms of the GNU General Public License as published by
+#        the Free Software Foundation, either version 3 of the License, or
+#        any later version.
+#
+#        This program is distributed in the hope that it will be useful,
+#       but WITHOUT ANY WARRANTY; without even the implied warranty of
+#       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#       GNU General Public License for more details.
+#
+#        You should have received a copy of the GNU General Public License
+#        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#
+#
+#    Ehtools framework [based on lscript]
+#    
+#    
+#    About Author :
+#    
+#    Founder : Entynetproject (Ivan Nikolsky)
+#    Instagram : @entynetproject | @ehtools_framework
+#    Email : entynetproject@gmail.com
+#    Project's site : https://entynethacker.wixsite.com/ehtools
+#    Entynetproject's site : http://entynetproject.simplesite.com/
+#
+
+clear
+printf '\033]2;ehtools password changer\a'
+echo -e "            ____   "
+echo -e "ehtools    /\___\  "
+echo -e "password  /\ \___\ "
+echo -e "changer   \ \/ / / "
+echo -e "v1.0       \/_/_/  By Ivan Nikolsky "
+sleep 3
+echo -e "Welcome to ehtools password changer"
+sleep 1
+echo -e "I created this tool to help you change ehtool's password!"
+sleep 1
+echo -e "Press \e[1;33many key\e[0m to change password"
+read -n 1
