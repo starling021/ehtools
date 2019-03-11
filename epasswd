@@ -77,3 +77,22 @@ read -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 
 done
 
+clear
+
+echo -e "Are you want to change password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "So, select 'yes' but remember it!"
+read -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
+
+if [[ "$UORI" = "no" ]]
+then 
+	clear
+	echo -e "OK..."
+	sleep 3
+	echo -e "To change password run 'epasswd'"
+	sleep 3
+	clear
+        
+elif [[ "$UORI" = "yes" ]]
+then
+rm /etc/ehtools/login
+rm /etc/ehtools/password
