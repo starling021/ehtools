@@ -144,15 +144,6 @@ sleep 3
 echo -e "\e[44mDownloading EPATH firmware...\e[0m"
 sleep 20
 echo -e "\e[4;32mSuccess!\e[0m"
-sleep 3
-echo -e "+---------------------------------+" 
-echo -e "|    WELCOME TO EPATH FIRMWARE!   |"
-echo -e "|   EPATH FIRMWARE IS EHTOOLS     |" 
-echo -e "|           FIRMWARE!             |" 
-echo -e "|                                 |"
-echo -e "|  - Ivan Nikolsky (Enty)         |"
-echo -e "|                                 |"
-echo -e "+---------------------------------+"
 sleep 5
 echo -e "\e[44mEditing Ehtools EPATH...\e[0m"
 sleep 10
