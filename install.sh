@@ -321,6 +321,21 @@ then
       clear
       modules
 fi
+done
+clear
+
+read -p "Make your login: " logins
+touch login
+echo $logins >> /etc/login
+
+read -p "Make your password: " passwords
+touch password
+echo $passwords >> /etc/password
+
+sleep 5
+
+clear
+
 sleep 1
 clear
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
