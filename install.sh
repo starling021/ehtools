@@ -184,6 +184,7 @@ cp /root/ehtools/euh /bin
 chmod +x /bin/euh
 cp /root/ehtools/modules /bin
 chmod +x /bin/modules
+mkdir /etc/ehtools
 clear
 #required for gui
 apt-get -y install ncurses-dev
@@ -329,11 +330,11 @@ echo -e "Let's make ehtools password!"
 echo -e "Ehtools protect:"
 read -p $'(\e[4;93mlogin\e[0m\en)> ' logins
 touch login
-echo $logins >> /etc/login
+echo $logins >> /etc/ehtools/login
 
 read -p $'(\e[4;93mpassword\e[0m\en)> ' passwords
 touch password
-echo $passwords >> /etc/password
+echo $passwords >> /etc/ehtools/password
 
 sleep 5
 
