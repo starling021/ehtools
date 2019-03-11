@@ -321,14 +321,15 @@ then
       clear
       modules
 fi
-done
+
 clear
 
-read -p "Make your login: " logins
+echo -e "Let's make ehtools password!"
+read -p $'(\e[4;93mlogin\e[0m\en)> ' logins
 touch login
 echo $logins >> /etc/login
 
-read -p "Make your password: " passwords
+read -p $'(\e[4;93mpassword\e[0m\en)> ' passwords
 touch password
 echo $passwords >> /etc/password
 
