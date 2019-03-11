@@ -305,6 +305,26 @@ function check_wlans
 	CC=$WLANNM
 	WLANMCHECKING=$(ifconfig | grep "$WLANNM" )
 	#~ WLANMCHECKING=$(ifconfig | awk -v c1="$CC" '$0 ~ c1 {print}')
+clear
+
+read -p "Enter your login: " loginer
+logins=$(cat /etc/login)
+while [ "$loginer" != "$logins" ]
+do
+read -p "Enter your login: " $loginer 
+done
+
+read -p "Enter your password: " passworder
+passwords=$(cat /etc/password)
+while [ "$passworder" != "$passwords" ]
+do
+read -p "Enter your password: " $passworder
+done
+
+sleep 5
+
+clear
+
 }
 function banner
 {
