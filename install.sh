@@ -182,6 +182,8 @@ cd /root/ehtools
 cp /root/ehtools/ehtools /bin/ehtools
 cp /root/ehtools/euh /bin
 chmod +x /bin/euh
+cp /root/ehtools/epasswd /bin
+chmod +x /bin/epasswd
 cp /root/ehtools/modules /bin
 chmod +x /bin/modules
 mkdir /etc/ehtools
@@ -345,5 +347,7 @@ clear
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
 sleep 3
 echo -e "If you want to update ehtools, run '\e[4;44meuh\e[0m'"
+sleep 3
+echo -e "If you want to change password, run '\e[4;44mepasswd\e[0m'"
 sleep 5
 exit
