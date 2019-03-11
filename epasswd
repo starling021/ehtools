@@ -110,3 +110,4 @@ touch password
 echo $passwords >> /etc/ehtools/password
 
 sleep 5
+fi
