@@ -106,7 +106,7 @@ chmod +x /root/ehtools/eht4
 chmod +x /root/ehtools/eht41
 chmod +x /root/ehtools/eht42
 chmod +x /root/ehtools/eht43
-chmod +x /root/ehtools/euh
+chmod +x /root/ehtools/bin/euh
 sleep 5 
 echo -e "Setting up permissions..."
 sleep 5
@@ -121,9 +121,9 @@ cp /root/ehtools/eht31 /bin/ehtools
 cp /root/ehtools/eht41 /bin/ehtools
 cp /root/ehtools/eht42 /bin/ehtools
 cp /root/ehtools/eht43 /bin/ehtools
-cp /root/ehtools/euh /bin
+cp /root/ehtools/bin/euh /bin
 chmod +x /bin/euh
-cp /root/ehtools/epasswd /bin
+cp /root/ehtools/bin/epasswd /bin
 chmod +x /bin/epasswd
 cp /root/ehtools/eht1 /bin
 chmod +x /bin/eht1
