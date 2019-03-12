@@ -321,11 +321,11 @@ clear
 echo -e "Set ehtools password"
 echo -e "Let's make ehtools password!"
 echo -e "Ehtools protect:"
-read -p $'(\e[4;93mlogin\e[0m\en)> ' logins
+read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
 touch login
 echo $logins >> /etc/ehtools/login
 
-read -p $'(\e[4;93mpassword\e[0m\en)> ' passwords
+read -p $'(\e[4;93m(new)password\e[0m\en)> ' passwords
 touch password
 echo $passwords >> /etc/ehtools/password
 
