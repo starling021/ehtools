@@ -50,6 +50,36 @@ sleep 1
 echo -e "Press \e[1;33many key\e[0m to install update"
 read -n 1
 clear
+
+echo -e "$YS"Ehtools Authentication"$CE"
+
+sleep 0.5
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+logins=$(cat /etc/ehtools/login)
+while [ "$loginer" != "$logins" ]
+do
+echo -e "$RS"Wrong login!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+
+done
+
+sleep 0.5
+read -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
+passwords=$(cat /etc/ehtools/password)
+while [ "$passworder" != "$passwords" ]
+do
+echo -e "$RS"Wrong password!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
+
+done
+
+clear
 sleep 3
 echo -e "\e[4;31m?ARE YOU WANT TO CONTINUE?\e[0m"
 sleep 2
