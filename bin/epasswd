@@ -126,6 +126,7 @@ then
 	echo -e "To change password run 'epasswd'"
 	sleep 3
 	clear
+	exit
         
 elif [[ "$UORI" = "yes" ]]
 then
