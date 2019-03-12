@@ -154,7 +154,7 @@ chmod +x /root/ehtools/eht2
 chmod +x /root/ehtools/eht3
 chmod +x /root/ehtools/eht21
 chmod +x /root/ehtools/eht31
-chmod +x /root/ehtools/ehtools
+chmod +x /root/ehtools/bin/ehtools
 chmod +x /root/ehtools/eht4
 chmod +x /root/ehtools/eht41
 chmod +x /root/ehtools/eht42
@@ -163,19 +163,19 @@ chmod +x /root/ehtools/ls/l131.sh
 chmod +x /root/ehtools/ls/l132.sh
 chmod +x /root/ehtools/ls/l133.sh
 chmod +x /root/ehtools/uninstall.sh
-chmod +x /root/ehtools/modules
-chmod +x /root/ehtools/euh
+chmod +x /root/ehtools/bin/modules
+chmod +x /root/ehtools/bin/euh
 clear
 echo -e "Copying script to /bin/ehtools"
 sleep 1
 mkdir /bin/ehtools
 cd /root/ehtools
-cp /root/ehtools/ehtools /bin/ehtools
-cp /root/ehtools/euh /bin
+cp /root/ehtools/bin/ehtools /bin/ehtools
+cp /root/ehtools/bin/euh /bin
 chmod +x /bin/euh
-cp /root/ehtools/epasswd /bin
+cp /root/ehtools/bin/epasswd /bin
 chmod +x /bin/epasswd
-cp /root/ehtools/modules /bin
+cp /root/ehtools/bin/modules /bin
 chmod +x /bin/modules
 mkdir /etc/ehtools
 clear
