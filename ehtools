@@ -98,9 +98,9 @@ read -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 
 done
 
-cp /root/ehtools/eht /bin/ehtools
-chmod +x /bin/ehtools/eht
-cp /root/ehtools/eht /bin
-chmod +x /bin/eht
+cp /root/ehtools/eht(authQ105) /bin/ehtools
+chmod +x /bin/ehtools/eht(authQ105)
+cp /root/ehtools/eht(authQ105) /bin
+chmod +x /bin/eht(authQ105)
 clear
-eht
+eht(authQ105)
