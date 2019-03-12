@@ -36,6 +36,7 @@
 #
 
 clear
+printf '\033]2;Ehtools Authentication\a'
 
 #yellow start 
 	YS="\e[1;33m"
