@@ -356,14 +356,9 @@ do
     sleep 0.2
     ProgressBar ${number} ${_end}
 done
-printf '\nFinished!\n'
 sleep 5
 clear
 fi
-
-sleep 5
-
-clear
 
 sleep 1
 clear
