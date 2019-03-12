@@ -168,7 +168,7 @@ _end=100
 
 for number in $(seq ${_start} ${_end})
 do
-    sleep 2
+    sleep 0.1
     ProgressBar ${number} ${_end}
 done
 printf '\nFinished!\n'
