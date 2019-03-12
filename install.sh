@@ -321,10 +321,13 @@ printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools password"
 echo -e "Let's make ehtools password!"
 echo -e "Ehtools protect:"
+
+sleep 0.5
 read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
 touch login
 echo $logins >> /etc/ehtools/login
 
+sleep 0.5
 read -p $'(\e[4;93m(new)password\e[0m\en)> ' passwords
 touch password
 echo $passwords >> /etc/ehtools/password
