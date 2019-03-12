@@ -75,6 +75,7 @@ printf '\033]2;Ehtools Authentication\a'
 
 echo -e "$YS"Ehtools Authentication"$CE"
 
+sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 logins=$(cat /etc/ehtools/login)
 while [ "$loginer" != "$logins" ]
@@ -87,6 +88,7 @@ read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 
 done
 
+sleep 0.5
 read -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 passwords=$(cat /etc/ehtools/password)
 while [ "$passworder" != "$passwords" ]
