@@ -1,0 +1,34 @@
+clear
+
+echo -e "$YS"Ehtools Authentication"$CE"
+
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+logins=$(cat /etc/ehtools/login)
+while [ "$loginer" != "$logins" ]
+do
+echo -e "$RS"Wrong login!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+
+done
+
+read -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
+passwords=$(cat /etc/ehtools/password)
+while [ "$passworder" != "$passwords" ]
+do
+echo -e "$RS"Wrong password!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
+
+done
+
+cp /root/ehtools/eht /bin/ehtools
+chmod +x /bin/ehtools/eht
+cp /root/ehtools/eht /bin
+chmod +x /bin/eht
+clear
+eht
