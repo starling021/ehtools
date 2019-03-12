@@ -317,7 +317,7 @@ then
 fi
 
 clear
-
+printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools password"
 echo -e "Let's make ehtools password!"
 echo -e "Ehtools protect:"
@@ -356,11 +356,8 @@ do
     sleep 0.2
     ProgressBar ${number} ${_end}
 done
-sleep 5
-clear
-fi
 
-sleep 1
+sleep 5
 clear
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
 sleep 3
