@@ -62,7 +62,7 @@ sleep 3
 echo -e "Press \e[1;33many key\e[0m to install ehtools"
 read -n 1
 clear
-sleep 5
+sleep 1
 chmod +x /root/ehtools/eht/eht1
 chmod +x /root/ehtools/eht/eht2
 chmod +x /root/ehtools/eht/eht3
@@ -286,9 +286,9 @@ uiecache
 sleep 5
 clear
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
-sleep 3
+sleep 0.5
 echo -e "If you want to update ehtools, run '\e[4;44meuh\e[0m'"
-sleep 3
+sleep 0.5
 echo -e "If you want to change password, run '\e[4;44mepasswd\e[0m'"
-sleep 5
+sleep 1
 exit
