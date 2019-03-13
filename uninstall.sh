@@ -120,7 +120,22 @@ then
 	then
 		echo -e "Ok, uninstalling everything that has to do with ehtools on your system"
 		sleep 4
-		rm -r /bin/ehtools
+	      rm -r /root/ehtools
+	      rm -r /bin/ehtools
+	      rm -r /etc/ehtools
+	      rm /bin/eht1
+	      rm /bin/eht2
+	      rm /bin/eht3
+	      rm /bin/eht4
+	      rm /bin/eht21
+	      rm /bin/eht31
+	      rm /bin/eht41
+	      rm /bin/eht42
+	      rm /bin/eht43
+	      rm /bin/epasswd
+	      rm /bin/modules
+	      rm /bin/euh
+	      rm /bin/ehtconsole
 		echo -e "Done."
 		sleep 1
 		echo -e "You need to manually delete the ehtools folder from your /root/ directory though..."
