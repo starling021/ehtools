@@ -86,10 +86,11 @@ read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 done
 
 sleep 0.5
-read -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
+read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 passwords=$(cat /etc/ehtools/password)
 while [ "$passworder" != "$passwords" ]
 do
+echo -e
 echo -e "$RS"Wrong password!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
