@@ -149,16 +149,16 @@ echo -e "\e[44mEditing Ehtools EPATH...\e[0m"
 sleep 10
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 3
-chmod +x /root/ehtools/eht1
-chmod +x /root/ehtools/eht2
-chmod +x /root/ehtools/eht3
-chmod +x /root/ehtools/eht21
-chmod +x /root/ehtools/eht31
+chmod +x /root/ehtools/eht/eht1
+chmod +x /root/ehtools/eht/eht2
+chmod +x /root/ehtools/eht/eht3
+chmod +x /root/ehtools/eht/eht21
+chmod +x /root/ehtools/eht/eht31
 chmod +x /root/ehtools/bin/ehtools
-chmod +x /root/ehtools/eht4
-chmod +x /root/ehtools/eht41
-chmod +x /root/ehtools/eht42
-chmod +x /root/ehtools/eht43
+chmod +x /root/ehtools/eht/eht4
+chmod +x /root/ehtools/eht/eht41
+chmod +x /root/ehtools/eht/eht42
+chmod +x /root/ehtools/eht/eht43
 chmod +x /root/ehtools/ls/l131.sh
 chmod +x /root/ehtools/ls/l132.sh
 chmod +x /root/ehtools/ls/l133.sh
