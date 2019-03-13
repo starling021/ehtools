@@ -151,33 +151,6 @@ then
       echo -e "Uploading..."
       sleep 2
       echo -e "Configuring..."
-      sleep 2
-      echo -e "Getting /root/ehtools/eht1"
-      chmod +x /root/ehtools/eht1
-      sleep 1
-      echo -e "Getting /root/ehtools/eht2"
-      chmod +x /root/ehtools/eht2
-      sleep 1
-      echo -e "Getting /root/ehtools/eht3"
-      chmod +x /root/ehtools/eht3
-      sleep 1
-      echo -e "Getting /root/ehtools/eht4"
-      chmod +x /root/ehtools/eht4
-      sleep 1
-      echo -e "Getting /root/ehtools/eht21"
-      chmod +x /root/ehtools/eht21
-      sleep 1
-      echo -e "Getting /root/ehtools/eht31"
-      chmod +x /root/ehtools/eht31
-      sleep 1
-      echo -e "Getting /root/ehtools/eht41"
-      chmod +x /root/ehtools/eht41
-      sleep 1
-      echo -e "Getting /root/ehtools/eht42"
-      chmod +x /root/ehtools/eht42
-      sleep 1
-      echo -e "Getting /root/ehtools/eht43"
-      chmod +x /root/ehtools/eht43
       sleep 10
       echo -e "Please wait..."
       sleep 8
