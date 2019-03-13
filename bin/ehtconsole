@@ -8235,28 +8235,22 @@ function about_option
 		exit
 	elif [[ "$DON" = "e" ]]
         then
-              rm /root/ehtools/ehtools
-              rm /root/ehtools/eht1
-              rm /root/ehtools/eht2
-              rm /root/ehtools/eht3
-              rm /root/ehtools/eht4
-              rm /root/ehtools/eht21
-              rm /root/ehtools/eht31
-              rm /root/ehtools/eht41
-              rm /root/ehtools/eht42
-              rm /root/ehtools/eht43
-              rm /root/ehtools/install.sh 
-              rm /bin/ehtools/ehtools
-              rm /bin/ehtools/eht1
-              rm /bin/ehtools/eht2
-              rm /bin/ehtools/eht3
-              rm /bin/ehtools/eht4
-              rm /bin/ehtools/eht21
-              rm /bin/ehtools/eht31
-              rm /bin/ehtools/eht41
-              rm /bin/ehtools/eht42
-              rm /bin/ehtools/eht43
-              rm /bin/ehtools/install.sh   
+              rm -r /root/ehtools
+	      rm -r /bin/ehtools
+	      rm -r /etc/ehtools
+	      rm /bin/eht1
+	      rm /bin/eht2
+	      rm /bin/eht3
+	      rm /bin/eht4
+	      rm /bin/eht21
+	      rm /bin/eht31
+	      rm /bin/eht41
+	      rm /bin/eht42
+	      rm /bin/eht43
+	      rm /bin/epasswd
+	      rm /bin/modules
+	      rm /bin/euh
+	      rm /bin/ehtconsole
         fi
         done
 }
@@ -9011,28 +9005,22 @@ function settings_menu
 			exit
 		elif [[ "$SET" = e ]]
                 then
-                        rm /root/ehtools/ehtools
-                        rm /root/ehtools/eht1
-                        rm /root/ehtools/eht2
-                        rm /root/ehtools/eht3
-                        rm /root/ehtools/eht4
-                        rm /root/ehtools/eht21
-                        rm /root/ehtools/eht31
-                        rm /root/ehtools/eht41
-                        rm /root/ehtools/eht42
-                        rm /root/ehtools/eht43
-                        rm /root/ehtools/install.sh 
-                        rm /bin/ehtools/ehtools
-                        rm /bin/ehtools/eht1
-                        rm /bin/ehtools/eht2
-                        rm /bin/ehtools/eht3
-                        rm /bin/ehtools/eht4
-                        rm /bin/ehtools/eht21
-                        rm /bin/ehtools/eht31
-                        rm /bin/ehtools/eht41
-                        rm /bin/ehtools/eht42
-                        rm /bin/ehtools/eht43
-                        rm /bin/ehtools/install.sh   
+                         rm -r /root/ehtools
+	                 rm -r /bin/ehtools
+	                 rm -r /etc/ehtools
+	                 rm /bin/eht1
+	                 rm /bin/eht2
+	                 rm /bin/eht3
+	                 rm /bin/eht4
+	                 rm /bin/eht21
+	                 rm /bin/eht31
+	                 rm /bin/eht41
+	                 rm /bin/eht42
+	                 rm /bin/eht43
+	                 rm /bin/epasswd
+	                 rm /bin/modules
+	                 rm /bin/euh
+	                 rm /bin/ehtconsole
                 elif [[ "$SET" = 7 ]]
 		then
 			clear
