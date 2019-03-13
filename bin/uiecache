@@ -69,3 +69,5 @@ do
     sleep 0.2
     ProgressBar ${number} ${_end}
 done
+
+echo -e
