@@ -100,6 +100,7 @@ echo -e
 clear
 done
 
+{
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
 	      rm -r /etc/ehtools
@@ -119,15 +120,37 @@ done
 	      rm /bin/euh
 	      rm /bin/ehtconsole
 	      rm /bin/uiecache
-		
+} &> /dev/null
+
+function ProgressBar {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rUninstalling: [${_fill// /\#}${_empty// /-}] ${_progress}%%"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.2
+    ProgressBar ${number} ${_end}
+done
+
+echo -e
 		echo -e "Done..."
 		sleep 2
 		echo -e "Press any key to exit..."
 		read
 		exit
-	else
-		nounistall
-	fi
-else
-	nounistall
-fi
