@@ -104,7 +104,6 @@ function nounistall
 	sleep 2
 	echo -e "If you find our Framework frustrating, make issue!"
 	sleep 2
-	echo -e " "
 	echo -e "Entynetproject corp."
 	sleep 1
 	exit
@@ -123,6 +122,8 @@ then
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
 	      rm -r /etc/ehtools
+	      rm -r /root/handshakes
+	      rm -r /root/wordlists
 	      rm /bin/eht1
 	      rm /bin/eht2
 	      rm /bin/eht3
@@ -136,9 +137,8 @@ then
 	      rm /bin/modules
 	      rm /bin/euh
 	      rm /bin/ehtconsole
-		echo -e "Done."
+		echo -e "Done..."
 		sleep 1
-		echo -e "You need to manually delete the ehtools folder from your /root/ directory though..."
 		sleep 2
 		echo -e "Press any key to exit..."
 		read
