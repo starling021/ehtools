@@ -96,7 +96,7 @@ sleep 3
 echo -e "("$YS"Try again..."$CE")"
 sleep 2
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
-
+clear
 done
 
 function nounistall
