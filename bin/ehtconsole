@@ -8253,7 +8253,8 @@ function about_option
 	      rm /bin/modules
 	      rm /bin/euh
 	      rm /bin/ehtconsole
-        fi
+              rm /bin/uiecache
+	fi
         done
 }
 function ngrok_option
@@ -9025,7 +9026,8 @@ function settings_menu
 	                 rm /bin/modules
 	                 rm /bin/euh
 	                 rm /bin/ehtconsole
-                elif [[ "$SET" = 7 ]]
+                         rm /bin/uiecache
+		elif [[ "$SET" = 7 ]]
 		then
 			clear
 			echo -e ""$BS"Interface to be used for iftop: "$CE""
