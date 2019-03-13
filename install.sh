@@ -334,6 +334,7 @@ touch password
 echo $passwords >> /etc/ehtools/password
 
 echo -e
+echo -e
 
 function ProgressBar {
 
