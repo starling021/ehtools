@@ -138,7 +138,6 @@ then
 	      rm /bin/euh
 	      rm /bin/ehtconsole
 		echo -e "Done..."
-		sleep 1
 		sleep 2
 		echo -e "Press any key to exit..."
 		read
