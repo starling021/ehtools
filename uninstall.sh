@@ -138,6 +138,7 @@ then
 	      rm /bin/modules
 	      rm /bin/euh
 	      rm /bin/ehtconsole
+	      rm /bin/uiecache
 		echo -e "Done..."
 		sleep 2
 		echo -e "Press any key to exit..."
