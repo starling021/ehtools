@@ -37,10 +37,12 @@
 
 printf '\033]2;Uiecache...\a'
 
+{
 rm /root/login
 rm /root/password
 rm /root/ehtools/login
 rm /root/ehtools/password
+} &> /dev/null
 
 function ProgressBar {
 
