@@ -70,7 +70,7 @@
 	WHS="\e[1;37m"
 
 
-echo -e "$YS"Ehtools Authentication"$CE"
+echo -e "$YS"Ehtools Authentication:"$CE"
 
 sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
