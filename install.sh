@@ -177,6 +177,8 @@ cp /root/ehtools/bin/epasswd /bin
 chmod +x /bin/epasswd
 cp /root/ehtools/bin/modules /bin
 chmod +x /bin/modules
+cp /root/ehtools/bin/uiecache /bin
+chmod +x /bin/uiecache
 mkdir /etc/ehtools
 clear
 #required for gui
@@ -361,6 +363,8 @@ do
     sleep 0.2
     ProgressBar ${number} ${_end}
 done
+
+uiecache
 
 sleep 5
 clear
