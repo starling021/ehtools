@@ -364,6 +364,9 @@ do
     ProgressBar ${number} ${_end}
 done
 
+echo -e
+echo -e
+
 uiecache
 
 sleep 5
