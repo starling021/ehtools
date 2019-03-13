@@ -180,6 +180,8 @@ do
     ProgressBar ${number} ${_end}
 done
 
+uiecache
+
 sleep 5
 clear
 fi
