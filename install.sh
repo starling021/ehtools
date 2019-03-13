@@ -57,12 +57,12 @@ echo -e "\e[4;34mIvan Nikolsky (Enty)\e[0m - Main Developer"
 sleep 3
 echo -e "\e[4;33mDJ Mobley\e[0m            - Ascii Designer"
 sleep 3
-echo -e "\e[4;32mEgor Egorich\e[0m         - Color Designer"
+echo -e "\e[4;32mTheCakeIsAFalse\e[0m      - Modules Developer"
 sleep 3
 echo -e "Press \e[1;33many key\e[0m to install ehtools"
 read -n 1
 clear
-sleep 1
+sleep 0.1
 chmod +x /root/ehtools/eht/eht1
 chmod +x /root/ehtools/eht/eht2
 chmod +x /root/ehtools/eht/eht3
