@@ -223,7 +223,7 @@ then
       echo -e "Getting 95%"
       sleep 0.1
       echo -e "Getting 100%"
-      sleep 10
+      sleep 5
       echo -e "Please wait..."
       sleep 5
       echo -e "Launching..."
