@@ -62,93 +62,7 @@ sleep 3
 echo -e "Press \e[1;33many key\e[0m to install ehtools"
 read -n 1
 clear
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-if [[ "$DIR" != "/root/ehtools" ]]
-then
-	echo -e "\e[44mChecking compatibility...\e[0m"
-        sleep 20
-        echo -e "\e[4;31minstall.sh returned an error (101)\e[0m"
-        sleep 4
-        echo -e "\e[4;31minstall.sh returned an error (202)\e[0m"
-	sleep 4
-        echo -e "\e[1;34mInstalling library...\e[0m"
-        sleep 1
-        echo -e "\e[1;34mFixing permissions...\e[0m"
-        sleep 2
-        echo -e "\e[44mConnecting to server...\e[0m"
-        sleep 10
-        echo -e "\e[4;31m141.152.251.19: connection refused!\e[0m"
-        sleep 3
-        echo -e "\e[1;34mCreating /bin/ehtools...\e[0m"
-        sleep 4
-        echo -e "\e[4;31mcan't build ehtools because:\e[0m"
-        echo -e "\e[4;31mepath tree not found\e[0m"
-        sleep 3
-        echo -e "\e[1;34mSaving results...\e[0m"
-        sleep 10
-        echo -e "\e[1;34mCreating API...\e[0m"
-        sleep 30
-        echo -e "\e[4;31mcan't build API key:\e[0m"
-        echo -e "\e[4;31mpermission denied!\e[0m"
-        sleep 3
-        echo -e "\e[44mDownloading EPATH firmware...\e[0m"
-        sleep 20
-        echo -e "\e[4;31mepath packager: connection refused!\e[0m"
-        sleep 3
-        echo -e "\e[44mEditing Ehtools EPATH...\e[0m"
-        sleep 10
-        echo -e "\e[4;31mcan't build ehtools because:\e[0m"
-        echo -e "\e[4;31mepath firmware not found\e[0m"
-	sleep 3
-	echo -e "\e[101m\e[1;77minstall.sh returned an error (101)\e[0m"
-	sleep 4
-	echo -e "\e[101m\e[1;77minstall.sh returned an error (342)\e[0m"
-        sleep 4
-        echo -e "\e[101m\e[1;77minstall.sh returned an error (319)\e[0m"
-        sleep 4
-        echo -e "\e[101m\e[1;77mreloading installation process...\e[0m"
-        sleep 20
-	echo -e "\e[101m\e[1;77merror exiting (error_epath_tree_bin)\e[0m"
-	sleep 3
-        if [[ -d /root/ehtools ]]
-	then
-		rm -r /root/ehtools
-	fi
-	mkdir /root/ehtools
-	cp -r "$DIR"/* /root/ehtools
-	chmod +x /root/ehtools/install.sh
-	gnome-terminal -- "bash /root/ehtools/install.sh"
-fi
-echo -e "\e[44mChecking compatibility...\e[0m"
-sleep 20
-echo -e "\e[4;32mSuccess!\e[0m"
-sleep 3
-echo -e "\e[1;34mInstalling library...\e[0m"
-sleep 1
-echo -e "\e[1;34mFixing permissions...\e[0m"
-sleep 2
-echo -e "\e[44mConnecting to server...\e[0m"
-sleep 10
-echo -e "\e[4;32mSuccess!\e[0m"
-sleep 3
-echo -e "\e[1;34mCreating /bin/ehtools...\e[0m"
-sleep 4
-echo -e "\e[4;32mSuccess!\e[0m"
-sleep 3
-echo -e "\e[1;34mSaving results...\e[0m"
-sleep 10
-echo -e "\e[1;34mCreating API...\e[0m"
-sleep 10
-echo -e "\e[4;32mSuccess!\e[0m"
-sleep 3
-echo -e "\e[44mDownloading EPATH firmware...\e[0m"
-sleep 20
-echo -e "\e[4;32mSuccess!\e[0m"
 sleep 5
-echo -e "\e[44mEditing Ehtools EPATH...\e[0m"
-sleep 10
-echo -e "\e[4;32mSuccess!\e[0m"
-sleep 3
 chmod +x /root/ehtools/eht/eht1
 chmod +x /root/ehtools/eht/eht2
 chmod +x /root/ehtools/eht/eht3
@@ -166,7 +80,6 @@ chmod +x /root/ehtools/uninstall.sh
 chmod +x /root/ehtools/bin/modules
 chmod +x /root/ehtools/bin/euh
 clear
-echo -e "Copying script to /bin/ehtools"
 sleep 1
 mkdir /bin/ehtools
 cd /root/ehtools
@@ -210,7 +123,7 @@ then
 	echo -e "OK..."
 	sleep 3
 	echo -e "Running uninstall.sh..."
-	sleep 10
+	sleep 2
 	clear
 	cd /root/ehtools
 	chmod +x uninstall.sh
@@ -274,45 +187,45 @@ then
       echo -e "Starting configuring Modules (BETA):"
       sleep 2
       echo -e "Getting 10%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 15%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 20%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 25%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 30%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 35%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 40%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 45%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 50%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 55%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 60%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 65%"
-      sleep 1 
+      sleep 0.1
       echo -e "Getting 70%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 75%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 80%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 85%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 90%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 95%"
-      sleep 1
+      sleep 0.1
       echo -e "Getting 100%"
       sleep 10
       echo -e "Please wait..."
-      sleep 8
+      sleep 5
       echo -e "Launching..."
       sleep 1
       clear
