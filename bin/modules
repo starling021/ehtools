@@ -97,51 +97,51 @@ echo -e "\e[4;32mPreparing to unpack...\e[0m"
 sleep 10
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 5
-chmod +x /root/ehtools/eht1
-chmod +x /root/ehtools/eht2
-chmod +x /root/ehtools/eht3
-chmod +x /root/ehtools/eht21
-chmod +x /root/ehtools/eht31
-chmod +x /root/ehtools/eht4
-chmod +x /root/ehtools/eht41
-chmod +x /root/ehtools/eht42
-chmod +x /root/ehtools/eht43
+chmod +x /root/ehtools/eht/eht1
+chmod +x /root/ehtools/eht/eht2
+chmod +x /root/ehtools/eht/eht3
+chmod +x /root/ehtools/eht/eht21
+chmod +x /root/ehtools/eht/eht31
+chmod +x /root/ehtools/eht/eht4
+chmod +x /root/ehtools/eht/eht41
+chmod +x /root/ehtools/eht/eht42
+chmod +x /root/ehtools/eht/eht43
 chmod +x /root/ehtools/bin/euh
 sleep 5 
 echo -e "Setting up permissions..."
 sleep 5
 echo -e "Moving ehtools modules to /bin..."
 sleep 5
-cp /root/ehtools/eht1 /bin/ehtools
-cp /root/ehtools/eht2 /bin/ehtools
-cp /root/ehtools/eht3 /bin/ehtools
-cp /root/ehtools/eht4 /bin/ehtools
-cp /root/ehtools/eht21 /bin/ehtools
-cp /root/ehtools/eht31 /bin/ehtools
-cp /root/ehtools/eht41 /bin/ehtools
-cp /root/ehtools/eht42 /bin/ehtools
-cp /root/ehtools/eht43 /bin/ehtools
+cp /root/ehtools/eht/eht1 /bin/ehtools
+cp /root/ehtools/eht/eht2 /bin/ehtools
+cp /root/ehtools/eht/eht3 /bin/ehtools
+cp /root/ehtools/eht/eht4 /bin/ehtools
+cp /root/ehtools/eht/eht21 /bin/ehtools
+cp /root/ehtools/eht/eht31 /bin/ehtools
+cp /root/ehtools/eht/eht41 /bin/ehtools
+cp /root/ehtools/eht/eht42 /bin/ehtools
+cp /root/ehtools/eht/eht43 /bin/ehtools
 cp /root/ehtools/bin/euh /bin
 chmod +x /bin/euh
 cp /root/ehtools/bin/epasswd /bin
 chmod +x /bin/epasswd
-cp /root/ehtools/eht1 /bin
+cp /root/ehtools/eht/eht1 /bin
 chmod +x /bin/eht1
-cp /root/ehtools/eht2 /bin
+cp /root/ehtools/eht/eht2 /bin
 chmod +x /bin/eht2
-cp /root/ehtools/eht3 /bin
+cp /root/ehtools/eht/eht3 /bin
 chmod +x /bin/eht3
-cp /root/ehtools/eht31 /bin
+cp /root/ehtools/eht/eht31 /bin
 chmod +x /bin/eht31
-cp /root/ehtools/eht4 /bin
+cp /root/ehtools/eht/eht4 /bin
 chmod +x /bin/eht4
-cp /root/ehtools/eht41 /bin
+cp /root/ehtools/eht/eht41 /bin
 chmod +x /bin/eht41
-cp /root/ehtools/eht42 /bin
+cp /root/ehtools/eht/eht42 /bin
 chmod +x /bin/eht42
-cp /root/ehtools/eht43 /bin
+cp /root/ehtools/eht/eht43 /bin
 chmod +x /bin/eht43
-cp /root/ehtools/eht21 /bin
+cp /root/ehtools/eht/eht21 /bin
 chmod +x /bin/eht21
 sleep 5
 echo -e "Modules added to /bin with success!"
