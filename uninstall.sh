@@ -122,6 +122,8 @@ done
 	      rm /bin/uiecache
 } &> /dev/null
 
+echo -e
+
 function ProgressBar {
 
     let _progress=(${1}*100/${2}*100)/100
