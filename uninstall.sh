@@ -123,6 +123,7 @@ done
 } &> /dev/null
 
 echo -e
+echo -e
 
 function ProgressBar {
 
@@ -155,4 +156,5 @@ echo -e
 		sleep 2
 		echo -e "Press any key to exit..."
 		read
+		clear
 		exit
