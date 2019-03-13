@@ -364,6 +364,7 @@ do
     ProgressBar ${number} ${_end}
 done
 
+sleep 5
 echo -e
 echo -e
 
