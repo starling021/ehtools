@@ -136,14 +136,16 @@ then
 	if [[ "$BASHCHECK" != "i" ]]
 	then
 		echo -e "\e[4;44mCongratulations you have successfully installed our Framework\e[0m"
-		sleep 3
+		sleep 0.5
 	fi
 	echo -e "Adding EntynetHackerTools to PATH so you can access it from anywhere"
-	sleep 3
+	sleep 0.5
         echo -e "\e[4;44mWelcome to EntynetHackerTools PRO free trial :)\e[0m"
-	sleep 3
+	sleep 0.5
         echo -e "More information about PRO or other plans on our site"
-	sleep 1
+	sleep 0.5
+	echo -e "\e[4;44mA few more steps and you're done\e[0m"
+	sleep 3
 
 
 
