@@ -121,9 +121,9 @@ if [[ "$UORI" = "d" ]]
 then 
 	clear
 	echo -e "OK..."
-	sleep 3
+	sleep 1
 	echo -e "Running uninstall.sh..."
-	sleep 2
+	sleep 3
 	clear
 	cd /root/ehtools
 	chmod +x uninstall.sh
@@ -168,7 +168,7 @@ if [[ "$UORI" = "no" ]]
 then 
 	clear
 	echo -e "OK..."
-	sleep 3
+	sleep 1
 	echo -e "To install Modules (BETA) run 'modules'"
 	sleep 3
 	clear
@@ -177,15 +177,15 @@ elif [[ "$UORI" = "yes" ]]
 then
       clear
       echo -e "OK..."
-      sleep 2
+      sleep 1
       echo -e "Loading modules..."
-      sleep 2
+      sleep 0.5
       echo -e "Uploading Modules (BETA)..."
-      sleep 2
+      sleep 0.5
       echo -e "Configuring Modules (BETA)..."
-      sleep 2
+      sleep 0.5
       echo -e "Starting configuring Modules (BETA):"
-      sleep 2
+      sleep 0.5
       echo -e "Getting 10%"
       sleep 0.1
       echo -e "Getting 15%"
@@ -223,9 +223,9 @@ then
       echo -e "Getting 95%"
       sleep 0.1
       echo -e "Getting 100%"
-      sleep 5
+      sleep 0.5
       echo -e "Please wait..."
-      sleep 5
+      sleep 0.5
       echo -e "Launching..."
       sleep 1
       clear
