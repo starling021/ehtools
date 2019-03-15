@@ -57,7 +57,7 @@ echo -e "\e[4;34mIvan Nikolsky (Enty)\e[0m - Main Developer"
 sleep 3
 echo -e "\e[4;33mDJ Mobley\e[0m            - Ascii Designer"
 sleep 3
-echo -e "\e[4;32mTheCakeIsAFalse\e[0m      - Modules Developer"
+echo -e "\e[4;32mTheCakeIsFalse\e[0m       - Modules Developer"
 sleep 3
 echo -e "Press \e[1;33many key\e[0m to install ehtools"
 read -n 1
