@@ -87,7 +87,7 @@ sleep 1
 echo -e "Press \e[1;33many key\e[0m to install update"
 read -n 1
 clear
-
+printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
 sleep 0.5
@@ -118,6 +118,7 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 done
 
 clear
+printf '\033]2;ehtools update helper\a'
 sleep 3
 echo -e "\e[4;31m?ARE YOU WANT TO CONTINUE?\e[0m"
 sleep 2
