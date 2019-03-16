@@ -164,7 +164,9 @@ then
 	        mkdir /root/ehtold
 		sleep 1
 		mv /root/ehtools /root/ehtold
-		sleep 1
+		rm -r /bin/ehtools
+		rm -r /etc/ehtools
+	        sleep 1
 		cd /root
 		git clone https://github.com/entynetproject/ehtools.git
 		cd /root/ehtools
