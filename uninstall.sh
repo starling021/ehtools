@@ -70,6 +70,7 @@
 	WHS="\e[1;37m"
 
 clear
+printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
 sleep 0.5
@@ -97,6 +98,8 @@ echo -e "("$YS"Try again..."$CE")"
 sleep 2
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 done
+
+printf '\033]2;Uninstalling...\a'
 
 {
 	      rm -r /root/ehtools
