@@ -221,7 +221,7 @@ then
 		sleep 0.2
 		clear
                 echo -e "Running install.sh..."
-		sleep 1
+		sleep 3
 		cd /root/ehtools
 		./install.sh
   fi
