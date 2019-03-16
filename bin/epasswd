@@ -85,7 +85,7 @@ echo -e "Press \e[1;33many key\e[0m to change password"
 read -n 1
 
 clear
-
+printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
 sleep 0.5
@@ -116,7 +116,7 @@ sleep 5
 done
 
 clear
-
+printf '\033]2;ehtools password changer\a'
 echo -e "Are you want to change password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So, select 'yes' but remember it!"
 read -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
