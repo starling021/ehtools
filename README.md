@@ -53,6 +53,8 @@ EntynetHackerTools for linux with gnome-terminal (PRO or lite!)
 
 # To start our HackerTools Lite:
 
+> cd /root
+
 > git clone https://github.com/entynetproject/ehtoolslite.git
 
 > cd ehtoolslite
