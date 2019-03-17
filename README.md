@@ -39,6 +39,8 @@ EntynetHackerTools for linux with gnome-terminal (PRO or lite!)
 
 # To start our HackerTools PRO free trial: #
 
+> cd /root
+
 > git clone https://github.com/entynetproject/ehtools.git
 
 > cd ehtools
