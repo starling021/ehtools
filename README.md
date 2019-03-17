@@ -142,9 +142,9 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 # System requirements 
 
-> Linux with /root/ (Kali linux)
+> Full root access
 
-> Gnome-terminal shell (sudo apt-get install gnome-terminal)
+> Bourne-again shell or Gnome-terminal shell
 
 # To uninstall ehtools 
 
