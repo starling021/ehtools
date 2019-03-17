@@ -253,6 +253,7 @@ function latest_changelog
 	cat "$EPATH"/info | head -n $LATESTCHANGELOGLINES
 	echo -e "$PAKTC"
 	$READAK
+        clear
 }
 function finish 
 {
