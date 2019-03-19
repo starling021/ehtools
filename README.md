@@ -148,7 +148,7 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 > Full root access and access to /root folder
 
-> Bourne-again shell or Gnome-terminal shell
+> Bourne-again shell and Gnome-terminal shell
 
 # To uninstall ehtools 
 
