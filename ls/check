@@ -1,0 +1,13 @@
+DIR="$( whoami )"
+
+if [[ "$DIR" != "root" ]]
+then
+
+sleep 1
+echo -e “run it as root”
+sleep 1
+echo -e "or use sudo"
+sleep 1
+exit
+
+fi
