@@ -1,4 +1,42 @@
 
+#! /bin/bash
+
+# 
+#            --------------------------------------------------
+#                            Ehtools Framework          
+#            --------------------------------------------------
+#        Copyright (C) <2015>  <Entynetproject (Ivan Nikolsky)>
+#
+#        This program is free software: you can redistribute it and/or modify
+#        it under the terms of the GNU General Public License as published by
+#        the Free Software Foundation, either version 3 of the License, or
+#        any later version.
+#
+#        This program is distributed in the hope that it will be useful,
+#       but WITHOUT ANY WARRANTY; without even the implied warranty of
+#       MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#       GNU General Public License for more details.
+#
+#        You should have received a copy of the GNU General Public License
+#        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+#
+#
+#    Ehtools framework [based on lscript]
+#    
+#    
+#    About Author :
+#    
+#    Founder : Entynetproject (Ivan Nikolsky)
+#    Instagram : @entynetproject | @ehtools_framework
+#    Email : entynetproject@gmail.com
+#    Project's site : https://entynethacker.wixsite.com/ehtools
+#    Entynetproject's site : http://entynetproject.simplesite.com/
+#
+
+clear
+printf '\033]2;Checking...\a'
+
 #yellow start 
 	YS="\e[1;33m"
 #blue start 
@@ -40,9 +78,9 @@ if [[ "$DIR" != "root" ]]
 then
 
 sleep 1
-echo -e “run it as root”
+echo -e "$RS"run it as"$CE" "$YS"root"$CE"
 sleep 1
-echo -e "or use sudo"
+echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
 sleep 1
 exit
 
