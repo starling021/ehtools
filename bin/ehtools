@@ -35,9 +35,8 @@
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
 
-chmod +x /ehtools/ls/check
 cd /root/ehtools/ls
-./check
+sh check
 
 clear
 printf '\033]2;Ehtools Authentication\a'
