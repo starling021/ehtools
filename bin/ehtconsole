@@ -340,7 +340,7 @@ function banner
        echo -e "$YS"Yellow colour - installed"$CE"              
        echo -e "$YS"To change interface run - interface"$CE"                                                      
        echo -e "                                                                                "
-	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$BS") Local IPs & gateways "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
+	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE")"$BS" Local IPs & gateways"$CE" "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
 		echo -e ""$RS" 1"$CE") Enable "$RS"$WLANN"$CE"${SPACESN}"$RS"d1"$CE") Disable "$RS"$WLANN"$CE"${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
