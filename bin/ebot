@@ -1,0 +1,159 @@
+#!/bin/bash
+
+#yellow start 
+	YS="\e[1;33m"
+#blue start 
+	BS="\e[0;34m"
+#color end
+	CE="\e[0m"
+#red start
+	RS="\e[1;31m"
+#black start
+	BLS="\e[0;30m"
+#dark gray start
+	DGYS="\e[1;30m"
+#light blue start
+	LBS="\e[1;34m"
+#green start
+	GNS="\e[0;32m"
+#light green start
+	LGNS="\e[1;32m"
+#cyan start
+	CYS="\e[0;36m"
+#light cyan start
+	LCYS="\e[1;36m"
+#light red start
+	DRS="\e[0;31m"
+#purple start
+	PS="\e[0;35m"
+#light purple start
+	LPS="\e[1;35m"
+#brown start
+	BRS="\e[0;33m"
+#light gray start
+	LGYS="\e[0;37m"
+#white start
+	WHS="\e[1;37m"
+
+sleep 1
+echo -e
+echo -e To view options type show options
+sleep 1
+read -p $'(\e[4;93mconsole\e[0m\en)> ' UORI
+
+if [[ "$UORI" = "1" ]]
+then 
+	
+	sleep 3
+	killall SpringBoard
+
+elif [[ "$UORI" = "2" ]]
+then
+ echo -e
+ sleep 1
+ cat /root/ehtools/ans/whatisehtools
+ echo -e
+ sleep 1
+ ebot
+
+elif [[ "$UORI" = "3" ]]
+then
+ echo -e
+ sleep 1
+ cat /root/ehtools/ans/whatsnewinehtools
+ echo -e
+ sleep 1
+ ebot
+
+elif [[ "$UORI" = "show options" ]]
+then
+ sleep 1
+ echo -e
+ echo -e "$YS" Options "$CE"
+ echo -e ""$YS" 1"$CE") respring ("$RS"only for iOS"$CE")"
+ 
+ echo -e ""$YS" 2"$CE") what is ehtools?"
+ echo -e ""$YS" 3"$CE") what’s new in ehtools?"
+ echo -e ""$YS" 4"$CE") reboot"
+ echo -e ""$YS" 5"$CE") launch ehtools"
+ echo -e ""$YS" 6"$CE") who is Ivan Nikolsky?"
+ echo -e ""$YS" 7"$CE") change my ehtools password"
+ echo -e ""$YS" 8"$CE") remove ehtools"
+ echo -e ""$YS" 9"$CE") update ehtools"
+ echo -e ""$YS"10"$CE") uicache ("$RS"only for iOS"$CE")"
+ echo -e ""$YS"11"$CE") uiecache ("$RS"uninstall all ehtools login logs"$CE")"
+ echo -e ""$YS"12"$CE") about us ("$BS"ehtools team"$CE")"
+echo -e ""$YS" 0"$CE") exit"
+ sleep 1
+ ebot
+
+elif [[ "$UORI" = "4" ]]
+then
+ sleep 3
+ reboot
+
+elif [[ "$UORI" = "5" ]]
+then
+ sleep 1
+ ehtools
+
+elif [[ "$UORI" = "6" ]]
+then
+ echo -e
+ sleep 1
+ cat /root/ehtools/ans/whoisivannikolsky
+ echo -e
+ sleep 1
+ ebot
+
+elif [[ "$UORI" = "7" ]]
+then
+ sleep 1
+ epasswd
+
+elif [[ "$UORI" = "0" ]]
+then
+ sleep 1
+ clear
+ exit
+
+elif [[ "$UORI" = "9" ]]
+then
+ sleep 1
+ euh
+
+elif [[ "$UORI" = "8" ]]
+then
+ sleep 1
+ cd /root/ehtools
+ chmod +x uninstall.sh
+ ./uninstall.sh
+
+elif [[ "$UORI" = "10" ]]
+then
+ sleep 1
+ uicache
+ echo -e
+ ebot
+ 
+elif [[ "$UORI" = "11" ]]
+then
+ echo -e
+ sleep 1
+ uiecache
+ ebot
+
+elif [[ "$UORI" = "12" ]]
+then
+ echo -e
+ echo -e "$BS" Ehtools team "$CE"
+ sleep 1
+ echo -e "\e[4;34mIvan Nikolsky (Enty)\e[0m - Main Developer"
+sleep 3
+echo -e "\e[4;33mDJ Mobley\e[0m            - Ascii Designer"
+sleep 3
+echo -e "\e[4;32mTheCakeIsFalse\e[0m       - Modules Developer"
+sleep 3
+ ebot
+fi
+
