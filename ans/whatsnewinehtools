@@ -1,0 +1,17 @@
+2.1.6
+Added Modules (BETA)
+Added Ehtools update helper (euh)
+Ehtools eht files moved to /root/ehtools/eht
+Main ehtools files moved to /root/ehtools/bin
+New install.sh
+New uninstall.sh
+Added password protection!
+Added new design of main menu!
+Some new tools in Tools menu.
+Deep Whois update.
+Compatible with Parrot OS.
+Changes in settings menu
+Changes in about menu
+Error 2 fixed in Handshake menu
+All outgoing data (created files, exploits) are protected by encryption
+Updated $EPATH firmware version 1.0 to $EPATH 0.2
