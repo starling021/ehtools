@@ -51,7 +51,7 @@ echo -e "==> \e[1;33mhttps://entynethacker.wixsite.com/ehtools\e[0m"
 sleep 3
 echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com/\e[0m"
 sleep 3
-echo -e "Creators of Ehtools Framework:"
+echo -e "Creators of Ehtools Framework (\e[4;34mehtools team\e[0m):"
 sleep 3
 echo -e "\e[4;34mIvan Nikolsky (Enty)\e[0m - Main Developer"
 sleep 3
