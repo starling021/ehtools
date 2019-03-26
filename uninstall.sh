@@ -119,7 +119,6 @@ printf '\033]2;Uninstalling...\a'
 	      rm /bin/epasswd
 	      rm /bin/modules
 	      rm /bin/euh
-	      rm /bin/ehtconsole
 	      rm /bin/uiecache
 } &> /dev/null
 
