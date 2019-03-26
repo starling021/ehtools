@@ -179,7 +179,6 @@ then
 	      rm /bin/epasswd
 	      rm /bin/modules
 	      rm /bin/euh
-	      rm /bin/ehtconsole
 	      rm /bin/uiecache
 	      sleep 1
 	      cd /root
