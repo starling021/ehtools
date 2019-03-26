@@ -120,7 +120,5 @@ done
 
 cp /root/ehtools/bin/ehtconsole /bin/ehtools
 chmod +x /bin/ehtools/ehtconsole
-cp /root/ehtools/bin/ehtconsole /bin
-chmod +x /bin/ehtconsole
 clear
 ehtconsole
