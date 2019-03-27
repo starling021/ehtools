@@ -121,6 +121,7 @@ done
 
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
+cp /root/ehtools/etc/config /etc/ehtools
 ehtconsole
 else
 cp /root/ehtools/bin/ehtconsole /bin/ehtools
