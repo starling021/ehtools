@@ -118,7 +118,13 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 
 done
 
+
+if [[ -f /bin/ehtools/ehtconsole ]]
+then
+ehtconsole
+else
 cp /root/ehtools/bin/ehtconsole /bin/ehtools
 chmod +x /bin/ehtools/ehtconsole
 clear
 ehtconsole
+fi
