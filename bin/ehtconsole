@@ -9691,6 +9691,7 @@ function main_options
 		bruteforce_router
 	elif [[ "$YORNAA" = "exit" ]]
 	then
+		rm /etc/ehtools/config
 		kill -9 $PPID
 		exit
 	elif [[ "$YORNAA" = "update" ]]
