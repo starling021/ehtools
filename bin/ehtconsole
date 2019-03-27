@@ -324,6 +324,20 @@ fi
 
 clear
 
+
+{
+PIK="$( cat /etc/ehtools/config)"
+} &> /dev/null
+
+
+if [[ "$PIK" != "1001" ]]
+then 
+sleep 3
+echo -e "["$RS"*"$CE"] "$RS"Permission denied!"$CE""
+sleep 3
+ehtools
+fi
+
 }
 function banner
 {
@@ -8270,7 +8284,6 @@ function about_option
 	      rm /bin/epasswd
 	      rm /bin/modules
 	      rm /bin/euh
-	      rm /bin/ehtconsole
               rm /bin/uiecache
 	fi
         done
@@ -9043,7 +9056,6 @@ function settings_menu
 	                 rm /bin/epasswd
 	                 rm /bin/modules
 	                 rm /bin/euh
-	                 rm /bin/ehtconsole
                          rm /bin/uiecache
 		elif [[ "$SET" = 7 ]]
 		then
@@ -9291,6 +9303,7 @@ function main_options
 {
 	if [[ "$YORNAA" = "0" ]]
 	then
+		rm /etc/ehtools/config
 		exit
 	elif [[ "$YORNAA" = "gate" || "$YORNAA" = "gateway" ]]
 	then
@@ -9497,7 +9510,7 @@ function main_options
 	elif [[ "$YORNAA" = "9" ]]
 	then
 		tools_menu
-	elif [[ "$YORNAA" = "l" ]]
+	elif [[ "$YORNAA" = "ehtools" ]]
 	then
 		clear 
 		exec bash "$0"
@@ -9752,6 +9765,7 @@ function main_options
 	elif [[ "$YORNAA" = "exit" ]]
 	then
 		clear
+		rm /etc/ehtools/config
 		exit
 	fi
 ####check if it is ks
