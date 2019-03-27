@@ -126,5 +126,6 @@ ehtconsole
 else
 cp /root/ehtools/bin/ehtconsole /bin/ehtools
 chmod +x /bin/ehtools/ehtconsole
+cp /root/ehtools/etc/config /etc/ehtools
 ehtconsole
 fi
