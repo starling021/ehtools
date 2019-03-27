@@ -322,6 +322,8 @@ exit
 
 fi
 
+clear
+
 }
 function banner
 {
