@@ -326,14 +326,24 @@ clear
 
 
 {
-PIK="$( cat /etc/ehtools/config)"
+PIK="$( cat /etc/ehtools/config )"
 } &> /dev/null
 
 
 if [[ "$PIK" != "1001" ]]
 then 
-sleep 3
-echo -e "["$RS"*"$CE"] "$RS"Permission denied!"$CE""
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"ehtconsole : Operation not permitted!"$CE""
+sleep 1
+echo -e "["$YS"!"$CE"] "$RS"Permission denied!"$CE""
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Use it as"$CE" "$YS"ehtools"$CE""
+sleep 1
+echo -e "["$YS"!"$CE"] "$YS"/bin/ehtools/ehtconsole : "$CE""$RS"returned a fatal error "$CE"("$YS"permission denied"$CE")"
+sleep 1
+echo -e "["$RS"!"$CE"] "$RS"Permission denied!"$CE""
+sleep 1
+echo -e "["$GNS"~"$CE"] "$GNS"Running /bin/ehtools/ehtools..."$CE""
 sleep 3
 ehtools
 fi
