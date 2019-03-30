@@ -116,16 +116,16 @@ echo -e "("$YS"Try again..."$CE")"
 sleep 2
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 
+cp /root/ehtools/etc/config /etc/ehtools
+
 done
 
 
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
-cp /root/ehtools/etc/config /etc/ehtools
 ehtconsole
 else
 cp /root/ehtools/bin/ehtconsole /bin/ehtools
 chmod +x /bin/ehtools/ehtconsole
-cp /root/ehtools/etc/config /etc/ehtools
 ehtconsole
 fi
