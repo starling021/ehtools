@@ -6422,14 +6422,9 @@ function update_ehtools
 		fi
 	else
 		clear
-		echo -e ""
-echo -e ""$GNS"   .               .   "$CE""$RS" No internet connection!"$CE""
-echo -e ""$GNS" .´  ·  .     .  ·  `.  "$CE""$YS"Ehtools can't connect to"$CE""
-echo -e ""$GNS :  :  :  "$CE"(¯)"$GNS"  :  :  : "$CE""$GNS"github/entynetproject/ehtools"$CE""
-echo -e ""$GNS" `.  ·  ` "$CE"/¯\"GNS" ´  ·  .´ "$CE""
-echo -e ""$GNS"   `     "$CE"/¯¯¯\"$GNS"     ´  "$CE""  
+		echo -e "There is no connection. 
 		sleep 2
-		echo -e "$GNS"Maybe you should type 'stop' in the main menu to get internet access again"$CE"
+		echo -e "Maybe you should type 'stop' in the main menu to get internet access again"
 		echo -e ""
 		echo -e "$PAKTGB"
 		$READAK
