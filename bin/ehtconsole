@@ -6421,10 +6421,10 @@ function update_ehtools
 			exec bash "$0"
 		fi
 	else
-		clear
-		echo -e "There is no connection. 
-		sleep 2
-		echo -e "Maybe you should type 'stop' in the main menu to get internet access again"
+	        clear
+		echo -e "There is no connection."
+		sleep 1
+		echo -e "Maybe you should type 'stop' in the main menu to gain internet access again"
 		echo -e ""
 		echo -e "$PAKTGB"
 		$READAK
