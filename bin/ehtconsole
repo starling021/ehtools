@@ -6322,21 +6322,23 @@ function metasploit_menu
 }
 function update_ehtools
 {
-	echo -e "Checking for updates..."
+	echo -e "["$YS"*"$CE"] "$YS"Connecting to server..."$CE""
+      sleep 2
+      echo -e "["$YS"*"$CE"] "$YS"Checking for updates..."$CE""
 	TESTINTERNETCONNECTION=$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')
 	if [[ "$TESTINTERNETCONNECTION" != "" ]]
 	then
-		VER=$(timeout -s SIGTERM 20 curl "https://raw.githubusercontent.com/entynetproject/ehtools/master/version.txt" 2>/dev/null)
+		VER=$(timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/entynetproject/ehtools/master/version.txt" 2>/dev/null)
 		if [[ "$VERSION" != "$VER" ]]
 		then
 			clear
-			echo -e "There is an update available."
-			echo -e "Current version: $VERSION"
-			echo -e "Updated version: $VER"
+			echo -e ""$YS"There is an update available"$CE""
+			echo -e ""$YS"Current version: "$CE""$YS"$VERSION"$CE""
+			echo -e ""$YS"Updated version: "$CE""$GNS"$VER"$CE""
 			echo -e "$PAKTC"
 			$READAK
 			clear
-			echo -e "Do you want to update?"$YNONLY": "
+			echo -e ""$YS"Do you want to update?"$CE""$YNONLY": "
 			read UPDATEYN
 			if [[ "$UPDATEYN" = "y" ]]
 			then
@@ -6405,16 +6407,16 @@ function update_ehtools
 				kill -9 $PPID
 			else 
 				clear
-				echo -e "You didnt select "y" so you go back..."
+				echo -e "You didnt select ""$YS"y"$CE"" so you go back..."
 				sleep 3
 				exec bash "$0"
 			fi
 		else
-			echo -e "There is no update available"
+			echo -e ""$YS"There is no update available"$CE""
 			sleep 1
-			echo -e "Installed version: $VERSION"
+			echo -e ""$YS"Installed version: "$CE""$GNS"$VERSION"
 			sleep 1
-			echo -e "Github version:    $VER"
+			echo -e ""$YS"Github version: "$CE""$GNS"   $VER"$CE""
 			sleep 1
 			echo -e "$PAKTGB"
 			$READAK	
@@ -6422,15 +6424,15 @@ function update_ehtools
 		fi
 	else
 	        clear
-		echo -e "There is no connection."
+		echo -e "["$RS"*"$CE"] "$RS"There is no connection!"$CE""
 		sleep 1
-		echo -e "Maybe you should type 'stop' in the main menu to gain internet access again"
+		echo -e "["$GNS"~"$CE"] "$GNS"Maybe you should type 'stop' in the main menu to get internet access again"$CE""
 		echo -e ""
 		echo -e "$PAKTGB"
 		$READAK
 		exec bash "$0"
 	fi	
-}
+}				
 function hidden_shortcuts
 {
 	clear
