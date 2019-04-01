@@ -6333,12 +6333,12 @@ function update_ehtools
 		then
 			clear
 			echo -e ""$YS"There is an update available"$CE""
-			echo -e ""$YS"Current version: "$CE""$YS"$VERSION"$CE""
+			echo -e ""$YS"Current version: "$CE""$RS"$VERSION"$CE""
 			echo -e ""$YS"Updated version: "$CE""$GNS"$VER"$CE""
 			echo -e "$PAKTC"
 			$READAK
 			clear
-			echo -e ""$YS"Do you want to update?"$CE""$YNONLY": "
+			echo -e "Do you want to update?"$YNONLY": "
 			read UPDATEYN
 			if [[ "$UPDATEYN" = "y" ]]
 			then
@@ -6407,7 +6407,7 @@ function update_ehtools
 				kill -9 $PPID
 			else 
 				clear
-				echo -e "You didnt select ""$YS"y"$CE"" so you go back..."
+				echo -e "You did not select ""$YS"y"$CE"" so you go back..."
 				sleep 3
 				exec bash "$0"
 			fi
