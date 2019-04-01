@@ -154,7 +154,7 @@ done
 echo -e
 		echo -e "Done..."
 		sleep 2
-		echo -e "Press "$YS"any key$CE to go back..."
+		echo -e "Press "$YS"any key"$CE" to exit..."
 		read
 		clear
 		exit
