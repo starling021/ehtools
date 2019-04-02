@@ -250,6 +250,10 @@ read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' passwords
 touch password
 echo $passwords >> /etc/ehtools/password
 
+cd /root/ehtools/lib
+chmod +x libchattr
+./libchattr
+
 echo -e
 echo -e
 
