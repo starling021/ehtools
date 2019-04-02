@@ -6623,11 +6623,11 @@ function terms_of_use
 	read YESORNO
 	if [[ "$YESORNO" = "YES" ]]
 	then 
-		echo "You have agreed the terms and you use this tool with your own responsibility." > "$EPATH"/IAGREE.txt
+		echo "You have "$YS"agreed the terms"$CE" and you use this tool with your own responsibility" > "$EPATH"/IAGREE.txt
 		sleep 1
 		clear
 	else
-		echo -e "You didn't type 'YES' , so you cannot continue"
+		echo -e "You did not type "$YS"'YES'"$CE" and you cannot continue"
 		sleep 4
 	fi
 	exec bash "$0"
