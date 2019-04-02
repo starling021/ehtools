@@ -131,15 +131,15 @@ From the next menu, the tools are broken down into major categories, with option
 
 You can also manage your installed tools by accessing option 6. To download Pupy, we'll go to option 2, which is remote access. Here, we will see a list of different tools for remote access, and we can select option 3 for Pupy. Here, we can see Pupy is not installed because it appears in red.
 
-# Why our CLI? 
+# Why our Framework? 
 
-> more than 58 hacker tools
+> more than 58 tools for pentesting
 
-> fast hacking
+> password protection
 
 > easy in learning
 
-> more than 100 tools you can install from this CLI
+> more than 100 tools you can install from ehtools or ehtoolslite
 
 ![2018-11-03 0 31 21](https://user-images.githubusercontent.com/43011806/47941719-5bec3180-df00-11e8-8769-af1979dd5f58.png)
 ![2018-11-03 0 32 00](https://user-images.githubusercontent.com/43011806/47941721-5e4e8b80-df00-11e8-8e8c-aaa881092bd2.png)
@@ -178,6 +178,14 @@ Modules (BETA) - the function that adds permissions or the ability to control th
 To activate, for example eht1 module after installing modules (BETA) run command:
 
 > eht1
+
+# How to protect ehtools/ehtoolslite
+
+> create login and password from install.sh (login: ehtools password: sloothe)
+
+> when you are going to exit framework, exit with shortcuts - 0 or exit (DO NOT JUST CLOSE EHTOOLS WINDOW!)
+
+> do not exit from metasploit menu (4), from tools menu (9) or from shotcuts menu (ks), make exit only from main menu!
 
 # Pictures!
 
