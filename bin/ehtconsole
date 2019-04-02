@@ -8281,7 +8281,10 @@ function about_option
 		exit
 	elif [[ "$DON" = "e" ]]
         then
-              rm -r /root/ehtools
+              cd /root/ehtools/lib
+	      chmod +x libunchattr
+	      ./libunchattr
+	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
 	      rm -r /etc/ehtools
 	      rm -r /root/handshakes
@@ -9053,7 +9056,10 @@ function settings_menu
 			exit
 		elif [[ "$SET" = e ]]
                 then
-                         rm -r /root/ehtools
+                         cd /root/ehtools/lib
+	                 chmod +x libunchattr
+	                 ./libunchattr
+			 rm -r /root/ehtools
 	                 rm -r /bin/ehtools
 	                 rm -r /etc/ehtools
 	                 rm -r /root/handshakes
