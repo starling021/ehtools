@@ -6331,9 +6331,9 @@ function update_ehtools
 		VER=$(timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/entynetproject/ehtools/master/version.txt" 2>/dev/null)
 		if [[ "$VERSION" != "$VER" ]]
 		then
-			echo -e ""$YS"There is an update available"$CE""
-			echo -e ""$YS"Current version: "$CE""$RS"$VERSION"$CE""
-			echo -e ""$YS"Updated version: "$CE""$GNS"$VER"$CE""
+			echo -e "There is an update available"
+			echo -e "Current version: "$RS"$VERSION"$CE""
+			echo -e "Updated version: "$GNS"$VER"$CE""
 			echo -e "$PAKTC"
 			$READAK
 			clear
@@ -6411,11 +6411,11 @@ function update_ehtools
 				exec bash "$0"
 			fi
 		else
-			echo -e ""$YS"There is no update available"$CE""
+			echo -e "There is no update available"
 			sleep 1
-			echo -e ""$YS"Installed version: "$CE""$GNS"$VERSION"
+			echo -e "Installed version: "$GNS"$VERSION"
 			sleep 1
-			echo -e ""$YS"Github version: "$CE""$GNS"   $VER"$CE""
+			echo -e "Github version: "$GNS"   $VER"$CE""
 			sleep 1
 			echo -e "$PAKTGB"
 			$READAK	
@@ -6622,11 +6622,11 @@ function terms_of_use
 	read YESORNO
 	if [[ "$YESORNO" = "YES" ]]
 	then 
-		echo "You have "$YS"agreed the terms"$CE" and you use this tool with your own responsibility" > "$EPATH"/IAGREE.txt
+		echo "You have "$YS"agreed the terms"$CE" and you use this tool with "$YS"your own responsibility"$CE"" > "$EPATH"/IAGREE.txt
 		sleep 1
 		clear
 	else
-		echo -e "You did not type "$YS"'YES'"$CE" and you cannot continue"
+		echo -e "You did not type '"$YS"YES"$CE"' and you cannot continue"
 		sleep 4
 	fi
 	exec bash "$0"
