@@ -34,10 +34,9 @@
  </a>
 </p>
 
-EntynetHackerTools for linux with gnome-terminal (PRO or lite!)
+EntynetHackerTools for linux with bash and gnome-terminal (PRO or lite!)
 
-
-# To start our HackerTools PRO free trial: #
+# To start our ehtools PRO free trial
 
 > cd /root
 
@@ -51,7 +50,7 @@ EntynetHackerTools for linux with gnome-terminal (PRO or lite!)
 
 > ehtools
 
-# To start our HackerTools Lite:
+# To start our ehtools Lite
 
 > cd /root
 
@@ -65,11 +64,11 @@ EntynetHackerTools for linux with gnome-terminal (PRO or lite!)
 
 > eht
 
-PRO INSTALLATION:
+# Install.sh
 
 ![2018-11-12 1 56 58](https://user-images.githubusercontent.com/43011806/48319414-d9115800-e61e-11e8-9503-9fcff2f6f8ad.png)
 
-INSTALL.SH:
+# Install.sh
 
 ![2018-11-12 1 57 09](https://user-images.githubusercontent.com/43011806/48319426-fa724400-e61e-11e8-96f8-db5e7d5fb113.png)
 
