@@ -250,7 +250,7 @@ function latest_changelog
 	printf '\033]2;WELCOME TO EHTOOLS\a'
 	echo -e ""$BS"Welcome to version $VERSION"$CE""
 	echo -e "$WHS[$GNS*$WHS]$GNS WELCOME TO EHTOOLS FRAMEWORK $CE"
-	cat "$EPATH"/info | head -n $LATESTCHANGELOGLINES
+	cat "$EPATH"/Changelog | head -n $LATESTCHANGELOGLINES
 	echo -e "$PAKTC"
 	$READAK
         clear
