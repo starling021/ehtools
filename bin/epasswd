@@ -133,6 +133,9 @@ then
         
 elif [[ "$UORI" = "yes" ]]
 then
+cd /root/ehtools/lib
+chmod +x libunchattr
+./libunchattr
 rm /etc/ehtools/login
 rm /etc/ehtools/password
 sleep 3
@@ -150,6 +153,10 @@ sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' passwords
 touch password
 echo $passwords >> /etc/ehtools/password
+
+cd /root/ehtools/lib
+chmod +x libchattr
+./libchattr
 
 echo -e
 echo -e
