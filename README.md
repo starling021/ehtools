@@ -24,10 +24,10 @@
       <img src="https://img.shields.io/github/issues/entynetproject/ehtools.svg">
   </a>
   <a href="https://github.com/entynetproject/ehtools">
-      <img src="https://img.shields.io/badge/files-26-red.svg?maxAge=2592000">
+      <img src="https://img.shields.io/badge/files-28-red.svg?maxAge=2592000">
   </a>
   <a href="https://github.com/entynetproject">
-    <img src="https://img.shields.io/badge/folders-4-blue.svg">
+    <img src="https://img.shields.io/badge/folders-5-blue.svg">
 
   </a>
   <a href="https://github.com/entynetproject/ehtools/wiki">
