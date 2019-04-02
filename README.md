@@ -14,16 +14,9 @@
 <p align="center">
   <a href="https://github.com/entynetproject">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
-    </a>
-  <a href="https://mobile.twitter.com/ehtools">
-    <img src="https://img.shields.io/badge/twitter-ehtools-blue.svg">
-
   </a> 
   <a href="https://github.com/entynetproject/ehtools/releases">
     <img src="https://img.shields.io/github/release/entynetproject/ehtools.svg">
-  </a>
-  <a href="https://entynethacker.wixsite.com/ehtools">
-    <img src="https://img.shields.io/badge/ehtools-site-green.svg?maxAge=2592000">
   </a>
   <a href="https://github.com/entynetproject/ehtools"><img src="https://img.shields.io/badge/Supported%20OS-KaliLinux, ParrotSecurityOS-brightgreengreen.svg" alt="Build" data-canonical-src="https://img.shields.io/badge/Supported%20OS-Linux-brightgreengreen.svg" style="max-width:100%;"></a>
   </a>
@@ -40,6 +33,13 @@
   <a href="https://github.com/entynetproject/ehtools/wiki">
       <img src="https://img.shields.io/badge/ehtools%20-wiki-lightgrey.svg">
  </a>
+
+  <a href="https://entynethacker.wixsite.com/ehtools">
+    <img src="https://img.shields.io/badge/ehtools-site-green.svg?maxAge=2592000">
+ </a>
+  <a href="https://mobile.twitter.com/ehtools">
+    <img src="https://img.shields.io/badge/twitter-ehtools-blue.svg">
+</a>
 </p>
 
 EntynetHackerTools for linux with bash and gnome-terminal (PRO or lite!)
