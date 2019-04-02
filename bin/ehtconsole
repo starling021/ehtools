@@ -6331,7 +6331,6 @@ function update_ehtools
 		VER=$(timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/entynetproject/ehtools/master/version.txt" 2>/dev/null)
 		if [[ "$VERSION" != "$VER" ]]
 		then
-			clear
 			echo -e ""$YS"There is an update available"$CE""
 			echo -e ""$YS"Current version: "$CE""$RS"$VERSION"$CE""
 			echo -e ""$YS"Updated version: "$CE""$GNS"$VER"$CE""
