@@ -162,6 +162,10 @@ then
 	then
 		rm -r /root/ehtold
 	fi
+	      
+	      cd /root/ehtools/lib
+	      chmod +x libunchattr
+	      ./libunchattr
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
 	      rm -r /etc/ehtools
