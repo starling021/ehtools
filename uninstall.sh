@@ -102,6 +102,9 @@ done
 printf '\033]2;Uninstalling...\a'
 
 {
+	      cd /root/ehtools/lib
+	      chmod +x libunchattr
+	      ./libunchattr
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
 	      rm -r /etc/ehtools
