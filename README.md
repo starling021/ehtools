@@ -33,7 +33,9 @@
   <a href="https://mobile.twitter.com/ehtools">
     <img src="https://img.shields.io/badge/ehtools-twitter-blue.svg">
  </a>
-  <a href="https://github.com/entynetproject/ehtools">
+ <h4 align="center">Files</h4>
+<p align="center">
+ <a href="https://github.com/entynetproject/ehtools">
       <img src="https://img.shields.io/badge/files-28-red.svg?maxAge=2592000">
   </a>
   <a href="https://github.com/entynetproject/ehtools">
