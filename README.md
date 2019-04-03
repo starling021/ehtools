@@ -51,6 +51,9 @@
   </a>
 <a href="https://entynethacker.wixsite.com/ehtools">
     <img src="https://img.shields.io/badge/folder-/eht-green.svg?maxAge=2592000">
+  </a>
+<a href="https://entynethacker.wixsite.com/ehtools">
+    <img src="https://img.shields.io/badge/folder-/ls-green.svg?maxAge=2592000">
 </a>
 </p>
 
