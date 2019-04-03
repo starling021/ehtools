@@ -327,10 +327,11 @@ clear
 
 {
 PIK="$( cat /etc/ehtools/config )"
+KIP="$( cat /root/ehtools/etc/config )"
 } &> /dev/null
 
 
-if [[ "$PIK" != "1001" ]]
+if [[ "$PIK" != "$KIP" ]]
 then 
 sleep 1
 echo -e "["$RS"*"$CE"] "$RS"ehtconsole : Operation not permitted!"$CE""
