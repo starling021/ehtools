@@ -292,6 +292,8 @@ uiecache
 clear
 sleep 2
 echo -e "Create your indenty key for /etc/ehtools/config"
+echo -e "=> "$YS"use code such as "$CE"["$YS"1001"$CE"]"
+echo -e "=> "$YS"you must not say this code someone!"$CE""
 read -p $'(\e[4;93mkey\e[0m\en)> ' DADI
 echo $DADI >> /root/ehtools/etc/config
 
