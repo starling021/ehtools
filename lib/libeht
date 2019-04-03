@@ -2,4 +2,4 @@
 
 {
 chattr +i /bin/ehtools/ehtconsole
-}
+} &> /dev/null
