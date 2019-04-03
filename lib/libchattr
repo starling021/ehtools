@@ -5,4 +5,5 @@ chattr +i /bin/ehtools/ehtools
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools/login
 chattr +i /etc/ehtools/password
+chattr +i /etc/ehtools
 } &> /dev/null
