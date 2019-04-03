@@ -40,19 +40,19 @@
   <a href="https://github.com/entynetproject">
     <img src="https://img.shields.io/badge/folders-5-blue.svg">
  </a>
-  <a href="https://github.com/entynetproject/ehtools">
+  <a href="https://github.com/entynetproject/ehtools/tree/master/lib">
       <img src="https://img.shields.io/badge/folder-/lib-red.svg?maxAge=2592000">
   </a>
-  <a href="https://github.com/entynetproject/ehtools">
+  <a href="https://github.com/entynetproject/ehtools/tree/master/etc">
       <img src="https://img.shields.io/badge/folder-/etc-red.svg?maxAge=2592000">
   </a>
-  <a href="https://github.com/entynetproject">
+  <a href="https://github.com/entynetproject/ehtools/tree/master/bin">
     <img src="https://img.shields.io/badge/folder-/bin-blue.svg">
   </a>
-<a href="https://entynethacker.wixsite.com/ehtools">
+<a href="https://github.com/entynetproject/ehtools/tree/master/eht">
     <img src="https://img.shields.io/badge/folder-/eht-green.svg?maxAge=2592000">
   </a>
-<a href="https://entynethacker.wixsite.com/ehtools">
+<a href="https://github.com/entynetproject/ehtools/tree/master/ls">
     <img src="https://img.shields.io/badge/folder-/ls-green.svg?maxAge=2592000">
 </a>
 </p>
