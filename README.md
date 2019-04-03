@@ -22,12 +22,6 @@
   </a>
   <a href="https://github.com/entynetproject/ehtools/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/ehtools.svg">
-  </a>
-  <a href="https://github.com/entynetproject/ehtools">
-      <img src="https://img.shields.io/badge/files-28-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject">
-    <img src="https://img.shields.io/badge/folders-5-blue.svg">
 
   </a>
   <a href="https://github.com/entynetproject/ehtools/wiki">
@@ -39,6 +33,12 @@
  </a>
   <a href="https://mobile.twitter.com/ehtools">
     <img src="https://img.shields.io/badge/ehtools-twitter-blue.svg">
+ </a>
+  <a href="https://github.com/entynetproject/ehtools">
+      <img src="https://img.shields.io/badge/files-28-red.svg?maxAge=2592000">
+  </a>
+  <a href="https://github.com/entynetproject">
+    <img src="https://img.shields.io/badge/folders-5-blue.svg">
 </a>
 </p>
 
