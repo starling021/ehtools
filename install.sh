@@ -289,6 +289,12 @@ echo -e
 
 uiecache
 
+clear
+sleep 2
+echo -e "Create your indenty key for /etc/ehtools/config"
+read -p $'(\e[4;93mkey\e[0m\en)> ' DADI
+echo $DADI >> /root/ehtools/etc/config
+
 sleep 5
 clear
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
