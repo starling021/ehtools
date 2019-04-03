@@ -11,7 +11,7 @@
                                                 The Ehtools Framework 
 
    <h4 align="center">Details</h4>
-<p align="center">
+<p align="">
   <a href="https://github.com/entynetproject">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
   </a> 
