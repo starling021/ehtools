@@ -299,7 +299,8 @@ echo -e "=> "$YS"you must not say this code someone!"$CE""
 read -p $'(\e[4;93mkey\e[0m\en)> ' DADI
 echo $DADI >> /root/ehtools/etc/config
 
-sleep 5
+clear
+sleep 3
 clear
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
 sleep 0.5
