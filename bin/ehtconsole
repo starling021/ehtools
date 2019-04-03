@@ -8284,6 +8284,9 @@ function about_option
               cd /root/ehtools/lib
 	      chmod +x libunchattr
 	      ./libunchattr
+	      cd /root/ehtools/lib
+	      chmod +x libunconf
+	      ./libunconf
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
 	      rm -r /etc/ehtools
@@ -9059,6 +9062,9 @@ function settings_menu
                          cd /root/ehtools/lib
 	                 chmod +x libunchattr
 	                 ./libunchattr
+			 cd /root/ehtools/lib
+	                 chmod +x libunconf
+	                 ./libunconf
 			 rm -r /root/ehtools
 	                 rm -r /bin/ehtools
 	                 rm -r /etc/ehtools
@@ -9323,6 +9329,9 @@ function main_options
 {
 	if [[ "$YORNAA" = "0" ]]
 	then
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
 		rm /etc/ehtools/config
 		exit
 	elif [[ "$YORNAA" = "gate" || "$YORNAA" = "gateway" ]]
@@ -9711,6 +9720,9 @@ function main_options
 		bruteforce_router
 	elif [[ "$YORNAA" = "exit" ]]
 	then
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
 		rm /etc/ehtools/config
 		kill -9 $PPID
 		exit
@@ -9786,6 +9798,9 @@ function main_options
 	elif [[ "$YORNAA" = "exit" ]]
 	then
 		clear
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
 		rm /etc/ehtools/config
 		exit
 	fi
