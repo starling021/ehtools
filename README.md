@@ -39,6 +39,18 @@
   </a>
   <a href="https://github.com/entynetproject">
     <img src="https://img.shields.io/badge/folders-5-blue.svg">
+ </a>
+  <a href="https://github.com/entynetproject/ehtools">
+      <img src="https://img.shields.io/badge/folder-/lib-red.svg?maxAge=2592000">
+  </a>
+  <a href="https://github.com/entynetproject/ehtools">
+      <img src="https://img.shields.io/badge/folder-/etc-red.svg?maxAge=2592000">
+  </a>
+  <a href="https://github.com/entynetproject">
+    <img src="https://img.shields.io/badge/folder-/bin-blue.svg">
+  </a>
+<a href="https://entynethacker.wixsite.com/ehtools">
+    <img src="https://img.shields.io/badge/folder-/eht-green.svg?maxAge=2592000">
 </a>
 </p>
 
