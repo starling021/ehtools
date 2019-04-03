@@ -33,6 +33,8 @@
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
 
+YS="\e[1;33m"
+
 clear
 printf '\033]2;ehtools INSTALLER\a'
 
