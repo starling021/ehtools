@@ -129,6 +129,7 @@ cp /root/ehtools/etc/config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
+chattr -i /bin/ehtools/ehtconsole
 chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 ehtconsole
@@ -138,6 +139,7 @@ cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
 cp /root/ehtools/bin/ehtconsole /bin/ehtools
+chattr -i /bin/ehtools/ehtconsole
 chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 ehtconsole
