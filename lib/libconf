@@ -2,3 +2,4 @@
 
 {
 chattr +i /etc/ehtools/config
+} &> /dev/null
