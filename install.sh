@@ -33,6 +33,7 @@
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
 
+CE="\e[0m"
 YS="\e[1;33m"
 
 clear
