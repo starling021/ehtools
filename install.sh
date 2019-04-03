@@ -292,6 +292,7 @@ echo -e
 
 uiecache
 
+sleep 3
 clear
 echo -e "Create your indenty key for "$YS"/etc/ehtools/config"$CE""
 echo -e "=> "$YS"use code such as "$CE"["$YS"1001"$CE"]"
