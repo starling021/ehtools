@@ -295,8 +295,9 @@ uiecache
 sleep 3
 clear
 echo -e "Create your indenty key for "$YS"/etc/ehtools/config"$CE""
-echo -e "=> "$YS"use code such as "$CE"["$YS"1001"$CE"]"
-echo -e "=> "$YS"you must not say this code someone!"$CE""
+echo -e "=> "$YS"use key such as "$CE"["$YS"1001"$CE"]"
+echo -e "=> "$YS"you must not say this key someone such as "$CE"["$YS"your friend"$CE"]"
+echo -e "This indenty key will protect ehtools boot!"
 read -p $'(\e[4;93mkey\e[0m\en)> ' DADI
 echo $DADI >> /root/ehtools/etc/config
 
