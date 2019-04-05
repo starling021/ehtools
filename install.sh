@@ -247,8 +247,9 @@ sleep 0.5
 read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
 while [ "$logins" = "root" ]
 do
+sleep 0.5
 echo -e "$RS"this user reserved by ehtools system!"$CE"
-sleep 0.2
+sleep 0.5
 read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
 done
 touch login
