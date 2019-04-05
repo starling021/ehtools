@@ -128,9 +128,9 @@ chattr -i /bin/ehtools/ehtconsole
 chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
+} &> /dev/null
 ehtconsole
 exit
-} &> /dev/null
 else
 {
 chattr -i /etc/ehtools
@@ -143,9 +143,9 @@ chattr -i /bin/ehtools/ehtconsole
 chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
+} &> /dev/null
 ehtconsole
 exit
-} &> /dev/null
 fi
 
 done
@@ -191,8 +191,8 @@ chattr -i /bin/ehtools/ehtconsole
 chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
-ehtconsole
 } &> /dev/null
+ehtconsole
 else
 {
 chattr -i /etc/ehtools
@@ -205,6 +205,6 @@ chattr -i /bin/ehtools/ehtconsole
 chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
-ehtconsole
 } &> /dev/null
+ehtconsole
 fi
