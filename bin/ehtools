@@ -109,7 +109,6 @@ read -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
 do
-echo -e
 echo -e "$RS"Wrong password!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
@@ -129,6 +128,7 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 ehtconsole
+exit
 else
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/config /etc/ehtools
@@ -141,6 +141,7 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 ehtconsole
+exit
 fi
 
 done
