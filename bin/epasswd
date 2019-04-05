@@ -116,13 +116,16 @@ done
 
 sleep 3
 clear
+chattr -i /etc/ehtools/root
+chattr -i /etc/ehtools/root/password
+rm /etc/ehtools/root/password
 echo -e "Set ehtools root password"
 echo -e "Let's make ehtools root password!"
 echo -e "Ehtools root protect:"
 sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
 touch password
-echo $passwords >> /etc/ehtools/root/password
+echo $roots >> /etc/ehtools/root/password
 sleep 0.5
 exit
 done
