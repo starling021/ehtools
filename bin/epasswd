@@ -116,9 +116,11 @@ done
 
 sleep 3
 clear
+{
 chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
+} &> /dev/null
 echo -e "Set ehtools root password"
 echo -e "Let's make ehtools root password!"
 echo -e "Ehtools root protect:"
