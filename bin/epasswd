@@ -127,6 +127,8 @@ read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots
 touch password
 echo $roots >> /etc/ehtools/root/password
 sleep 0.5
+chattr +i /etc/ehtools/root
+chattr +i /etc/ehtools/root/password
 exit
 done
 
