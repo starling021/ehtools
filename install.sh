@@ -97,6 +97,8 @@ chmod +x /bin/modules
 cp /root/ehtools/bin/uiecache /bin
 chmod +x /bin/uiecache
 mkdir /etc/ehtools
+mkdir /etc/ehtools/root
+cp /root/ehtools/etc/root/password /etc/ehtools/root
 clear
 #required for gui
 apt-get -y install ncurses-dev
