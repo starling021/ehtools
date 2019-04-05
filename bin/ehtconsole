@@ -9334,7 +9334,9 @@ function main_options
 	        chmod +x libunconf
 	        ./libunconf
 		rm /etc/ehtools/config
+		{
 		chattr +i /etc/ehtools
+		} &> /dev/null
 		exit
 	elif [[ "$YORNAA" = "gate" || "$YORNAA" = "gateway" ]]
 	then
@@ -9726,7 +9728,9 @@ function main_options
 	        chmod +x libunconf
 	        ./libunconf
 		rm /etc/ehtools/config
+		{
 		chattr +i /etc/ehtools
+		} &> /dev/null
 		kill -9 $PPID
 		exit
 	elif [[ "$YORNAA" = "update" ]]
@@ -9805,7 +9809,9 @@ function main_options
 	        chmod +x libunconf
 	        ./libunconf
 		rm /etc/ehtools/config
+		{
 		chattr +i /etc/ehtools
+		} &> /dev/null
 		exit
 	fi
 ####check if it is ks
