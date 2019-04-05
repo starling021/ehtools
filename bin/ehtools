@@ -118,6 +118,7 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 done
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
+{
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/config /etc/ehtools
 cd /root/ehtools/lib
@@ -129,7 +130,9 @@ chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 ehtconsole
 exit
+} &> /dev/null
 else
+{
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/config /etc/ehtools
 cd /root/ehtools/lib
@@ -142,6 +145,7 @@ chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 ehtconsole
 exit
+} &> /dev/null
 fi
 
 done
@@ -177,6 +181,7 @@ done
 
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
+{
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/config /etc/ehtools
 cd /root/ehtools/lib
@@ -187,7 +192,9 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 ehtconsole
+} &> /dev/null
 else
+{
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/config /etc/ehtools
 cd /root/ehtools/lib
@@ -199,4 +206,5 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 ehtconsole
+} &> /dev/null
 fi
