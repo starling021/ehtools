@@ -109,6 +109,7 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
 do
+echo -e
 echo -e "$RS"Wrong password!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
