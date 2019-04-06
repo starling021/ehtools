@@ -156,9 +156,9 @@ do
 	if [[ "$STATION" = "m" ]]
 	then
 		echo -e "MAC to deauth: "
-		read MACTD
+		read -p $'(\e[4;31mmac\e[0m)> ' MACTD
 		echo -e "Number of deauths to send("$YS"0"$CE"=inf)("$YS"Enter"$CE"=0): "
-		read DEAUTHS
+		read -p $'(\e[4;31mnumber\e[0m)> ' DEAUTHS
 		if [[ "$DEAUTHS" = "" ]]
 		then
 			DEAUTHS=0
@@ -176,7 +176,7 @@ do
 	if [[ "$STATION" = "a" ]]
 	then
 		echo -e "Number of deauths to send("$YS"0"$CE"=inf)("$YS"Enter"$CE"=0): "
-		read DEAUTHS
+		read -p $'(\e[4;31mnumber\e[0m)> ' DEAUTHS
 		if [[ "$DEAUTHS" = "" ]]
 		then
 			DEAUTHS=0
@@ -199,7 +199,7 @@ do
 	if [[ "$STATION" -le "$dlines" && "$STATION" -ge 1 ]]
 	then
 		echo -e "Number of deauths to send("$YS"0"$CE"=inf)("$YS"Enter"$CE"=0): "
-		read DEAUTHS
+		read -p $'(\e[4;31mnumber\e[0m)> ' DEAUTHS
 		if [[ "$DEAUTHS" = "" ]]
 		then
 			DEAUTHS=0
@@ -313,12 +313,12 @@ do
 		#~ echo -e ""$YS"ENTER"$CE") Last option"
 	#~ fi
 	echo -e ""$YS" 0"$CE") Exit"
-	read DT
+	read -p $'(\e[4;31mdeauth\e[0m)> ' DT
 	if [[ "$DT" = 1 ]]
 	then
 		PER=0
 		echo -e "Number of deauths to send("$YS"0"$CE"=inf)("$YS"Enter"$CE"=0): "
-		read -e DEAUTHS
+		read -p $'(\e[4;31mnumber\e[0m)> ' DEAUTHS
 		if [[ -z "$DEAUTHS" ]]
 		then
 			DEAUTHS=0
@@ -332,7 +332,7 @@ do
 	elif [[ "$DT" == 4 ]]
 	then
 		echo -e "Number of deauths per time: "
-		read DPT
+		read -p $'(\e[4;31mnumber\e[0m)> ' DPT
 		if [[ ! "$DPT" -gt 0 ]]
 		then
 			echo -e ""$RS"eht2 returned a fatal error (Invalid number)"$CE""
@@ -341,7 +341,7 @@ do
 			continue
 		fi
 		echo -e "Delay in seconds: "
-		read DIS
+		read -p $'(\e[4;31mdelay\e[0m)> ' DIS
 		if [[ ! "$DIS" -gt 0 ]]
 		then
 			echo -e ""$RS"eht2 returned a fatal error (Invalid number)"$CE""
@@ -392,7 +392,7 @@ do
 		if [[ "$HANDF" != "deauth" ]]
 		then
 			echo -e "Interval in seconds("$YS"Enter"$CE"="$YS"5"$CE"): "
-			read Del
+			read -p $'(\e[4;31minterval\e[0m)> ' Del
 			if [[ "$Del" == "" ]]
 			then
 				Del=5
