@@ -406,7 +406,7 @@ echo -e ""$YS" b"$CE") Go back"
 function capture_again
 {
 			echo -e "Capture handshake again on the same network? "$YNYES""
-			read CAGAIN
+			read -p $'(\e[4;93mcapture\e[0m\en)> ' CAGAIN
 			if [[ ! "$CAGAIN" = "n" ]]
 			then
 				gnome-terminal --geometry 70x10+0+0 -- eht2
