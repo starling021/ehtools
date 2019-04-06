@@ -76,6 +76,15 @@ echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 logins=$(cat /etc/ehtools/login)
+
+while [ "$logins" = "root" ]
+do
+sleep 0.5
+echo -e "["$RS"*"$CE] "$RS"Failed to open session for root!"$CE""
+sleep 0.5
+read -p $'(\e[4;93mlogin\e[0m\en)> ' logins
+done
+
 while [ "$loginer" != "$logins" ]
 do
 echo -e "$RS"Wrong login!"$CE"
