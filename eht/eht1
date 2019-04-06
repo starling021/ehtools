@@ -447,7 +447,7 @@ do
 			clear
 			echo -e "Enter the name of the handshake file(no extention)(e.g: "$YS"hand1"$CE")"
 			echo -e "Type "$YS""0""$CE" for no file"
-			read -e HANDF
+			read -p $'(\e[4;93mname\e[0m\en)> ' HANDF
 			if [[ "$HANDF" = 0 ]]
 			then
 				if [[ -f /root/handshakes/deauth-01.csv || -f /root/handshakes/deauth-01.cap || -f /root/handshakes/deauth-01.kismet.csv || -f /root/handshakes/deauth-01.kismet.netxml ]]
@@ -700,7 +700,7 @@ do
 		echo -e "Enter the name of the handshake file(no extension): "
 		echo -e "(don't use the same name twice)"
 		echo -e "Type "$YS""0""$CE" for no file"
-		read -p $'(\e[4;93mfile\e[0m\en)> ' HANDF
+		read -p $'(\e[4;93mname\e[0m\en)> ' HANDF
 		TARGE=""
 		HANDFFP="/root/handshakes/"$HANDF"-01.cap"
 		HANDCAP="/root/handshakes/"$HANDF"-01.cap"
@@ -727,7 +727,7 @@ do
 			echo -e "Enter the name of the handshake file(no extension): "
 			echo -e "(don't use the same name twice)"
 			echo -e "Type "$YS""0""$CE" for no file"
-			read -p $'(\e[4;93mfile\e[0m\en)> ' HANDF
+			read -p $'(\e[4;93mname\e[0m\en)> ' HANDF
 			TARGE=""
 			HANDFFP="/root/handshakes/"$HANDF"-01.cap"
 			HANDCAP="/root/handshakes/"$HANDF"-01.cap"
