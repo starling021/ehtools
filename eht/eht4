@@ -96,7 +96,7 @@ function pre_scan
 		echo -e ""$YS"ENTER"$CE") All channels"
 		echo -e " "$YS"1"$CE"-"$YS"13"$CE") Specific channel"
 		echo -e "    "$YS"b"$CE") Go back"
-		read CHANNELSL
+		read -p $'(\e[4;93mchoose\e[0m\en)> ' CHANNELSL
 		if [[ "$CHANNELSL" = "" ]]
 		then
 			JS=1
@@ -130,7 +130,7 @@ while true
 do
 	clear
 	autoapselect
-	read APCHOOSE
+	read -p $'(\e[4;93mchoose\e[0m\en)> ' APCHOOSE
 	clear
 	if [[ "$APCHOOSE" = "back" || "$APCHOOSE" = "b" ]]
 	then
@@ -326,7 +326,6 @@ else
 fi
 echo -e ""$YS" r"$CE") rescan"
 echo -e ""$YS" b"$CE") Go back"
-echo -e "Choose: "
 }
 function select_a_network_first
 {
@@ -374,7 +373,7 @@ do
 	then
 		echo -e "Enter the name of the file(no extension): "
 		echo -e "(don't use the same name twice)"
-		read WEPF
+		read -p $'(\e[4;93mname\e[0m\en)> ' WEPF
 		export WEPF
 		if [[ ! -d /root/handshakes/WEP ]]
 		then
