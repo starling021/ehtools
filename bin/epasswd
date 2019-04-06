@@ -134,6 +134,7 @@ sleep 0.5
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools/root/password
 } &> /dev/null
+sleep 3
 clear
 exit
 done
