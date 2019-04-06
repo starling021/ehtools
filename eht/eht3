@@ -288,7 +288,7 @@ function scan_wash
 		fi
 		echo -e ""$YS" r"$CE") Rescan"
 		echo -e ""$YS" b"$CE") Go back"
-		read -p $'(\e[4;31mchoose\e[0m)> ' WASHSCAN
+		read -p $'(\e[4;93mchoose\e[0m)> ' WASHSCAN
 		if [[ "$WASHSCAN" = "r" ]]
 		then
 			continue
