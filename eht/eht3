@@ -288,8 +288,7 @@ function scan_wash
 		fi
 		echo -e ""$YS" r"$CE") Rescan"
 		echo -e ""$YS" b"$CE") Go back"
-		echo -e "Choose: "
-		read WASHSCAN
+		read -p $'(\e[4;31mchoose\e[0m)> ' WASHSCAN
 		if [[ "$WASHSCAN" = "r" ]]
 		then
 			continue
@@ -320,7 +319,7 @@ function scan_wash
 				sleep 1
 				SCW=0
 				echo -e "Do you want to try to unlock it?"$YNYES""
-				read UNW
+				read -p $'(\e[4;31munlock\e[0m)> ' UNW
 				if [[ ! "$UNW" = "n" ]]
 				then
 					unlock_wps
@@ -443,7 +442,7 @@ do
 	elif [[ "$UNL" = "2" ]]
 	then
 		echo -e "Packets to inject per second:("$YS"Enter"$CE"="$DPPS")"
-		read PPS
+		read -p $'(\e[4;93mseconds\e[0m)> ' PPS
 		if [[ "$PPS" = "" ]]
 		then
 			PPS="$DPPS"
@@ -493,7 +492,7 @@ do
 			echo -e ""$YS" a"$CE") Add another interface"
 			echo -e ""$YS" r"$CE") Reset interfaces"
 			echo -e ""$YS" b"$CE") Go back"
-			read NIN
+			read -p $'(\e[4;93minterfaces\e[0m)> ' NIN
 			clear
 			if [[ "$NIN" = "b" || "$NIN" = 00 ]]
 			then
@@ -516,7 +515,7 @@ do
 			elif [[ "$NIN" = "a" ]]
 			then
 				echo -e "New interface: "
-				read NII
+				read -p $'(\e[4;93minterface\e[0m\en)> ' NII
 				TEST3=$(ifconfig | grep "$NII")
 				if [[ "$TEST3" = "" ]]
 				then
@@ -570,7 +569,7 @@ function reaver_attack
 	dash_calc
 	printf '\033]2;WPS BRUTEFORCE\a'
 	echo -e "Delay between every attempt("$YS"Enter"$CE"=60): "
-	read DELAY
+	read -p $'(\e[4;93mdelay\e[0m\en)> ' DELAY
 	if [[ "$DELAY" = "" ]]
 	then
 		DELAY=60
@@ -587,7 +586,7 @@ function pixie_loop
 	dash_calc
 	printf '\033]2;PIXIE LOOP ATTACK\a'
 	echo -e "Delay between every attempt("$YS"Enter"$CE"=15): "
-	read DELAY
+	read -p $'(\e[4;93mdelay\e[0m\en)> ' DELAY
 	if [[ "$DELAY" = "" ]]
 	then
 		DELAY=15
@@ -944,15 +943,15 @@ do
 	elif [[ "$B" = 1 ]]
 	then
 		echo -e "Essid:"
-		read ESSIDT
+		read -p $'(\e[4;93messid\e[0m\en)> ' ESSIDT
 	elif [[ "$B" = 2 ]]
 	then
 		echo -e "Bssid:"
-		read BSSIDT
+		read -p $'(\e[4;93mbssid\e[0m\en)> ' BSSIDT
 	elif [[ "$B" = 3 ]]
 	then
 		echo -e "Channel:"
-		read CHANT
+                read -p $'(\e[4;93mchannel\e[0m\en)> ' CHANT
 	elif [[ "$B" = 4 ]]
 	then
 		if [[ "$BRUTE" = "ON" ]]
@@ -972,11 +971,11 @@ do
 	elif [[ "$B" = 6 ]]
 	then
 		echo -e "Wait after lock(in seconds): "
-		read LOCKWAIT
+		read -p $'(\e[4;93mseconds\e[0m\en)> ' LOCKWAIT
 	elif [[ "$B" = 7 ]]
 	then
 		echo -e "Wait per attempt(in seconds): "
-		read WAITPERATTEMPT
+		read -p $'(\e[4;93mseconds\e[0m\en)> ' WAITPERATTEMPT
 	elif [[ "$B" = 8 ]]
 	then
 		if [[ "$FORCE" = "ON" ]]
@@ -998,7 +997,7 @@ do
 		while true
 		do
 			echo -e "Verbosity (1-4): "
-			read VERB
+			read -p $'(\e[4;93mverbosity\e[0m\en)> ' VERB
 			clear
 			if [[ "$VERB" = 1 || "$VERB" = 2 || "$VERB" = 3 || "$VERB" = 4 ]]
 			then
@@ -1086,7 +1085,7 @@ then
 	if [[ "$ESSIDT" != "" ]]
 	then
 		echo -e "Enter your target's WPS pin: "
-		read -e WPST
+		read -p $'(\e[4;93mpin\e[0m\en)> ' WPST
 		clear
 		reaver -i $WLANNM -b $BSSIDT -c $CHANT -p $WPST -vv | tee /root/ehtools/wpslog
 		echo -e "Press "$YS"enter"$CE" to go back"
