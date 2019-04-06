@@ -80,7 +80,7 @@ logins=$(cat /etc/ehtools/login)
 while [ "$loginer" = "root" ]
 do
 sleep 0.5
-echo -e "["$RS"*"$CE] "$RS"Failed to open session for root!"$CE""
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for root!"$CE""
 sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 done
