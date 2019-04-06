@@ -105,7 +105,7 @@ echo -e "You want to login as administrator"
 echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
 passroot="$( cat /etc/ehtools/root/password )"
-read -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
+read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
 do
