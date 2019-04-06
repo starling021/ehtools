@@ -251,7 +251,7 @@ read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
 while [ "$logins" = "root" ]
 do
 sleep 0.5
-echo -e "["$RS"*"$CE] "$RS"This user reserved by ehtools system!"$CE""
+echo -e "["$RS"*"$CE"] "$RS"This user reserved by ehtools system!"$CE""
 sleep 0.5
 read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
 done
