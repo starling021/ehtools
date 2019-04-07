@@ -42,6 +42,22 @@ rm /root/login
 rm /root/password
 rm /root/ehtools/login
 rm /root/ehtools/password
+rm /etc/login
+rm /etc/password
+rm /root/ehtools/lib/login
+rm /root/ehtools/lib/password
+rm /root/ehtools/bin/login
+rm /root/ehtools/bin/password
+rm /bin/ehtools/login
+rm /bin/ehtools/password
+rm /root/ehtools/etc/login
+rm /root/ehtools/etc/password
+rm /root/ehtools/eht/login
+rm /root/ehtools/eht/password
+rm /root/ehtools/ls/password
+rm /root/ehtools/ls/login
+rm /login
+rm /password
 } &> /dev/null
 
 function ProgressBar {
