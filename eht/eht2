@@ -313,7 +313,7 @@ do
 		#~ echo -e ""$YS"ENTER"$CE") Last option"
 	#~ fi
 	echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;31mdeauth\e[0m)> ' DT
+	read -p $'(\e[4;93mdeauth\e[0m)> ' DT
 	if [[ "$DT" = 1 ]]
 	then
 		PER=0
