@@ -3579,7 +3579,7 @@ function wifi_tools
 		if [[ -f /usr/sbin/netdiscover ]]
 		then
 			echo -e "Range ("$YS"Enter"$CE"=192.168.1.0/24):"
-			read NRANGE
+			read -p $'(\e[4;93mrange\e[0m)> ' NRANGE
 			if [[ -z $NRANGE ]]
 			then
 				NRANGE="192.168.1.0/24"
@@ -3652,14 +3652,14 @@ function wifi_tools
 		if [[ -d "/root/xerxes" ]]
 		then
 			echo -e "Do you own the site you want to DoS?"$YNONLY""
-			read DOSTERM
+			read -p $'(\e[4;93mown\e[0m)> ' DOSTERM
 			if [[ "$DOSTERM" = "y" ]]
 			then
 
 				clear
 				echo -e "Enter your site(e.g: iownthissite.com): "
 				echo -e "(without www)"
-				read -e SITEDOS
+				read -p $'(\e[4;93msite\e[0m)> ' SITEDOS
 				clear
 				echo -e "Launching www.isitdownrightnow.com for $SITEDOS"
 				sleep 4
@@ -3739,7 +3739,7 @@ function wifi_tools
 		if [[ -d /etc/openvas ]]
 		then
 			echo -e "Start or stop?("$YS"start"$CE"/"$YS"stop"$CE")"
-			read -e SORS
+			read -p $'(\e[4;93mselect\e[0m)> ' SORS
 			if [[ "$SORS" == "start" ]]
 			then
 				netstat -nltp
@@ -4371,7 +4371,7 @@ function remote_access
 			ls -1 build*
 			echo -e ""
 			echo -e "Type which one you want: "
-			read AVE
+			read -p $'(\e[4;93mtype\e[0m)> ' AVE
 			if [[ ! -f /root/avet/build/"$AVE" ]]
 			then
 				echo -e ""$RS"File not found"$CE""
@@ -4487,11 +4487,11 @@ function remote_access
 					fi
 				fi
 				clear
-				echo -e "EHOST: "
-				read MEHOST
+				echo -e "LHOST: "
+				read -p $'(\e[4;93mlhost\e[0m)> ' MEHOST
 				clear
-				echo -e "EPORT: "
-				read MEPORT
+				echo -e "LPORT: "
+				read -p $'(\e[4;93mlport\e[0m)> ' MEPORT
 				clear
 				echo -e ""$YS" 1"$CE") CMD                      Smaller size but less features"
 				echo -e ""$YS" 2"$CE") MSF                      Bigger size but more features"
@@ -4579,7 +4579,7 @@ function remote_access
 				echo -e ""$YS" 3"$CE") WmiPrvSE"
 				echo -e ""$YS"ENTER"$CE") Explorer"
 				echo -e "Choose technique to use:: "
-				read MODE
+				read -p $'(\e[4;93mtechnique\e[0m)> ' MODE
 				if [[ "$MODE" = 1 ]]
 				then
 					MMODE="mshta"
@@ -4592,7 +4592,7 @@ function remote_access
 				clear
 				echo -e "Enter max length of randomly generated strings: "
 				echo -e ""$YS"ENTER"$CE") 1000"
-				read M1
+				read -p $'(\e[4;93mnumber\e[0m)> ' M1
 				if [[ "$M1" = "" ]]
 				then
 					M1=1000
@@ -4600,7 +4600,7 @@ function remote_access
 				clear
 				echo -e "Enter max length of randomly generated variable names: "
 				echo -e ""$YS"ENTER"$CE") 40"
-				read M2
+				read -p $'(\e[4;93mnumber\e[0m)> ' M2
 				if [[ "$M2" = "" ]]
 				then
 					M2=40
@@ -4608,7 +4608,7 @@ function remote_access
 				clear
 				echo -e "Enter max number of times values should be split in chr obfuscation: "
 				echo -e ""$YS"ENTER"$CE") 10"
-				read M3
+				read -p $'(\e[4;93mnumber\e[0m)> ' M3
 				if [[ "$M3" = "" ]]
 				then
 					M3=10
@@ -4616,7 +4616,7 @@ function remote_access
 				clear
 				echo -e "Enter value of each split: "
 				echo -e ""$YS"ENTER"$CE") 10"
-				read M4
+				read -p $'(\e[4;93mnumber\e[0m)> ' M4
 				if [[ "$M4" = "" ]]
 				then
 					M4=10
@@ -4626,7 +4626,7 @@ function remote_access
 					clear
 					echo -e "Enter file to output the morphed HTA to: "
 					echo -e ""$YS"ENTER"$CE") /root/Desktop/morph.HTA"
-					read M5
+					read -p $'(\e[4;93mfile\e[0m)> ' M5
 					if [[ "$M5" = "" ]]
 					then
 						M5="/root/Desktop/morph.HTA"
@@ -4680,7 +4680,7 @@ function remote_access
 			do
 				clear
 				echo -e "Path to raw shellcode file you want to use: "
-				read RPATH
+				read -p $'(\e[4;93mpath\e[0m)> ' RPATH
 				if [[ ! -f "$RPATH" ]]
 				then
 					echo -e ""$RS"File not found"$CE""
@@ -4689,7 +4689,7 @@ function remote_access
 				fi
 				clear
 				echo -e "Name of output file: "
-				read OUT
+				read -p $'(\e[4;93mname\e[0m)> ' OUT
 				if [[ -f "$OUT" ]]
 				then
 					echo -e ""$RS"File already exists"$CE""
@@ -4804,7 +4804,7 @@ function remote_access
 				echo -e ""$YS" 3"$CE") Excel.RegisterXLL"
 				echo -e ""$YS" 4"$CE") WbemScripting.SWbemLocator"
 				echo -e "Choose payload type: "
-				read PT
+				read -p $'(\e[4;93mtype\e[0m)> ' PT
 				if [[ "$PT" -le 4 && "$PT" -ge 1 ]]
 				then
 					if [[ "$PT" = 1 ]]
@@ -4822,7 +4822,7 @@ function remote_access
 					fi
 					clear
 					echo -e "Command to run from HTA: "
-					read CHTA
+					read -p $'(\e[4;93mcommand\e[0m)> ' CHTA
 					if [[ "$CHTA" = "" ]]
 					then
 						CCHTA=""
@@ -4831,7 +4831,7 @@ function remote_access
 					fi
 					clear
 					echo -e "Output file name: "
-					read FN
+					read -p $'(\e[4;93mname\e[0m)> ' FN
 					cd /root/demiguise
 					python demiguise.py -k "$ENC" -p "$PTT" "$CCHTA" -o "$FN"
 					if [[ -f /root/demiguise/$FN ]]
@@ -5090,13 +5090,13 @@ function remote_access
 					fi
 					if [[ "$APKLH" = "\e[1;31mNONE\e[m" ]]
 					then
-						echo -e ""$RS"No EHOST specified."$CE""
+						echo -e ""$RS"No LHOST specified."$CE""
 						sleep 3
 						continue
 					fi
 					if [[ "$APKLP" = "\e[1;31mNONE\e[m" ]]
 					then
-						echo -e ""$RS"No EPORT specified."$CE""
+						echo -e ""$RS"No LPORT specified."$CE""
 						sleep 3
 						continue
 					fi
