@@ -5165,7 +5165,7 @@ function remote_access
 			echo -e ""$YS" b"$CE") Go back"
 			echo -e ""$YS"00"$CE") Main menu"
 			echo -e ""$YS" 0"$CE") EXIT"
-			read -e PUPY
+			read -p $'(\e[4;93mpupy\e[0m)> ' PUPY
 			if [[ "$PUPY" = "1" ]]
 			then
 				clear
@@ -5190,13 +5190,13 @@ function remote_access
 				fi
 				clear
 				echo -e "Enter your ip: "
-				read -e PUPYIP
+				read -p $'(\e[4;93mIP\e[0m)> ' PUPYIP
 				clear
 				echo -e "Enter your port(e.g: 443): "
-				read -e PUPYPORT
+				read -p $'(\e[4;93mport\e[0m)> ' PUPYPORT
 				clear
 				echo -e "Enter the full output path(e.g: /root/Desktop/payload1.exe)"
-				read -e PUPYPATH
+				read -p $'(\e[4;93mpath\e[0m)> ' PUPYPATH
 				cd /root/pupy/pupy
 				./pupygen.py -O $TAROS -o "$PUPYPATH" connect --host "$PUPYIP":"$PUPYPORT"
 				cd
@@ -5233,7 +5233,7 @@ function remote_access
 			echo -e "CAUTION: DO NOT upload it to anti-virus scanners online."
 			sleep 3
 			echo -e "You agree with that?("$YS"YES"$CE"/"$YS"*"$CE")"
-			read MUSTBEYES
+			read -p $'(\e[4;93magree\e[0m)> ' MUSTBEYES
 			if [[ "$MUSTBEYES" = "YES" ]] 
 			then 
 				clear
@@ -5358,7 +5358,7 @@ function information_gathering
 			if [[ -d /usr/share/sniper ]]
 			then
 				echo -e "Enter the domain you want to scan: "
-				read DOMAIN
+				read -p $'(\e[4;34mdomain\e[0m)> ' DOMAIN
 				clear
 				sniper $DOMAIN
 			else
@@ -5411,9 +5411,9 @@ function information_gathering
 			if [[ -d /root/Infoga ]]
 			then
 				echo -e "Domain to search:"
-				read INFOTARG
+				read -p $'(\e[4;34mdomain\e[0m)> ' INFOTARG
 				echo -e "Data source(e.g. "$YS"all"$CE","$YS"google"$CE","$YS"bing"$CE","$YS"yahoo"$CE","$YS"pgp"$CE"): "
-				read INFOSOUR
+				read -p $'(\e[4;93msource\e[0m)> ' INFOSOUR
 				clear
 				cd /root/Infoga
 				python infoga.py -t $INFOTARG -s $INFOSOUR 
@@ -7256,7 +7256,7 @@ do
 	clear
 	if [[ "$SQ" = 1 ]]
 	then
-		echo -n "URL: "
+		echo -e "URL: "
 		read -p $'(\e[4;93murl\e[0m)> ' URLL
 		if [[ "$URLL" != "" || "$URLL" = "b" ]]
 		then
@@ -7932,11 +7932,11 @@ do
 		fi
 	elif [[ "$BR" = 2 ]]
 	then
-		echo -n "Username: "
+		echo -e "Username: "
 		read -p $'(\e[4;93musername\e[0m)> ' US
 	elif [[ "$BR" = 3 ]]
 	then
-		echo -n "Wordlist: "
+		echo -e "Wordlist: "
 		read -p $'(\e[4;93mwordlist\e[0m)> ' WL
 		if [[ ! -f "$WL" ]]
 		then
@@ -7949,22 +7949,22 @@ do
 		fi
 	elif [[ "$BR" = 4 ]]
 	then
-		echo -n "Request URI: "
+		echo -e "Request URI: "
 		read -p $'(\e[4;93murl\e[0m)> ' RQ
 		rqq=1
 	elif [[ "$BR" = 5 ]]
 	then
-		echo -n "^USER^ & ^PASS^ field: "
+		echo -e "^USER^ & ^PASS^ field: "
 		read -p $'(\e[4;93mfield\e[0m)> ' UP
 		upp=1
 	elif [[ "$BR" = 6 ]]
 	then
-		echo -n "Invalid pass string: "
+		echo -e "Invalid pass string: "
 		read -p $'(\e[4;93mstring\e[0m)> ' IS
 		iss=1
 	elif [[ "$BR" = 7 ]]
 	then
-		echo -n "Form: "
+		echo -e "Form: "
 		read -p $'(\e[4;93mform\e[0m)> ' FM
 	elif [[ "$BR" = 8 ]]
 	then
@@ -8064,7 +8064,7 @@ do
 		fi
 		clear
 		echo -e ""$RS"Do you have permission to bruteforce this network?"$CE""$YNONLY""
-		read PERM
+		read -p $'(\e[4;34mpermissions\e[0m)> ' PERM
 		if [[ "$PERM" != "y" && "$PERM" != "Y" ]]
 		then
 			echo -e ""$RS"You cannot proceed then"$CE""
