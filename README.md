@@ -71,6 +71,8 @@
 
 > ./install.sh 
 
+After installation run:
+
 > ehtools
 
 # To install our ehtools Lite
