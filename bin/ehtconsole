@@ -6656,7 +6656,7 @@ function eternalblue
 	echo -e "RHOST: "
 	read -p $'(\e[4;93mrhost\e[0m)> ' RHOSTL
 	echo -e "TARGETARCHITECTURE("$YS"x86"$CE"/"$YS"x64"$CE"): "
-	read TARGETARCHL
+	read -p $'(\e[4;93march\e[0m)> ' TARGETARCHL
 	if [[ "$TARGETARCHL" = "x64" ]]
 	then
 		PROCESSINJECTL="lsass.exe"
@@ -6685,7 +6685,7 @@ function eternalblue_check
 		mkdir	"$EPATH"/rce
 	fi
 	echo -e "RHOST:("$BS"if scanning multiple hosts, seperate with space"$CE") "
-	read RHOSTL
+	read -p $'(\e[4;93mrhost\e[0m)> ' RHOSTL
 	echo "use auxiliary/scanner/smb/smb_ms17_010" > "$EPATH"/rce/eternalbluerc.rc
 	echo "set RHOSTS "$RHOSTL"" >> "$EPATH"/rce/eternalbluerc.rc
 	echo "exploit" >> "$EPATH"/rce/eternalbluerc.rc
@@ -8344,7 +8344,7 @@ function ngrok_option
 			elif [[ "$NG" = 1 || "$NG" = 2 || "$NG" = 3 ]]
 			then
 				echo -e "Type the local port to forward: "
-				read PORTL
+				read -p $'(\e[4;93mlport\e[0m)> ' PORTL
 				if [[ "$NG" = 1 ]]
 				then
 					PROT="tcp"
@@ -8384,7 +8384,7 @@ function ngrok_option
 							if [[ "$RP" = 1 ]]
 							then
 								echo -e "Ngrok port: "
-								read NGPORT
+								read -p $'(\e[4;93mnport\e[0m)> ' NGPORT
 							elif [[ "$RP" = "back" || "$RP" = "b" ]]
 							then
 								break
@@ -8440,7 +8440,7 @@ function ngrok_option
 			elif [[ "$NG" = 5 ]]
 			then
 					echo -e "Type your authtoken: "
-					read AUTHT
+					read -p $'(\e[4;93mauthtoken\e[0m)> ' AUTHT
 					if [[ "$AUTHT" != "" ]]
 					then
 						./ngrok authtoken $AUTHT
