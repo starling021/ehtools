@@ -2900,7 +2900,7 @@ do
 				echo -e ""$YS"cp"$CE") Copy my icon to that folder"
 				echo -e ""$YS" b"$CE") Go back"
 				echo -e "Enter the name of your icon: "
-				read ICON
+				read -p $'(\e[4;93mname\e[0m)> ' ICON
 				if [[ "$ICON" = "b" ]]
 				then
 					ICON="OFF"
@@ -2909,7 +2909,7 @@ do
 				then
 					clear
 					echo -e "Your file path: "
-					read FP
+					read -p $'(\e[4;93mpath\e[0m)> ' FP
 					if [[ ! -f "$FP" ]]
 					then
 						echo -e ""$RS"File does not exist."$CE""
@@ -8421,7 +8421,7 @@ function ngrok_option
 						echo -e "Select to type a custom payload, NOT listed."
 						echo -e "Then type the path of the payload you have created on option 1."
 						echo -e "For the listener, the payload is windows/meterpreter/reverse_tcp_dns"
-						echo -e "EHOST is 127.0.0.1 and EPORT is the port you opened to ngrok."
+						echo -e "LHOST is 127.0.0.1 and LPORT is the port you opened to ngrok."
 						echo -e "$PAKTGB"
 						$READAK
 					elif [[ "$SHINT" = "back" || "$SHINT" = "b" ]]
@@ -9088,13 +9088,13 @@ function settings_menu
 		then
 			clear
 			echo -e ""$BS"Interface to be used for iftop: "$CE""
-			read IFTOP
+			read -p $'(\e[4;93minterface\e[0m)> ' IFTOP
 			IFTOPTEST=$(ifconfig | grep "$IFTOP")
 			if [[ "$IFTOPTEST" = "" ]]
 			then
 				echo -e ""$RS""$IFTOP" is not currently available."$CE""
 				echo -e "Do you still want to use $IFTOP for iftop?"$YNYES""
-				read STARP
+				read -p $'(\e[4;93muse\e[0m)> ' STARP
 				if [[ "$STARP" = "n" ]]
 				then
 					IFTOP=""
@@ -9106,13 +9106,13 @@ function settings_menu
 		then
 			clear
 			echo -e ""$BS"Interface to be used for arp-scan: "$CE""
-			read ARPIN
+			read -p $'(\e[4;93minterface\e[0m)> ' ARPIN
 			ARPINTEST=$(ifconfig | grep "$ARPIN")
 			if [[ "$ARPINTEST" = "" ]]
 			then
 				echo -e ""$RS""$ARPIN" is not currently available."$CE""
 				echo -e "Do you still want to use $ARPIN for arp-scan?"$YNYES""
-				read STARP
+				read -p $'(\e[4;93muse\e[0m)> ' STARP
 				if [[ "$STARP" = "n" ]]
 				then
 					ARPIN=""
@@ -9124,7 +9124,7 @@ function settings_menu
 		then
 			clear
 			echo -e "Type new MAC("$YS"Enter"$CE"="$DEFMAC"): "
-			read NEWMAC
+			read -p $'(\e[4;93mmac\e[0m)> ' NEWMAC
 			if [[ "$NEWMAC" = "" ]]
 			then
 				echo "$DEFMAC" > "$EPATH"/settings/startmac.txt
