@@ -93,11 +93,9 @@ EntynetHackerTools for linux with bash and gnome-terminal (PRO or lite!)
 
 # Install.sh
 
+![Снимок экрана 2019-04-07 в 11 17 52](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
 
-
-# Install.sh
-
-![2018-11-12 1 57 09](https://user-images.githubusercontent.com/43011806/48319426-fa724400-e61e-11e8-96f8-db5e7d5fb113.png)
+![Снимок экрана 2019-04-07 в 11 20 23](https://user-images.githubusercontent.com/43011806/55680975-a9465200-5929-11e9-9385-8e6c817999d5.png)
 
 # About our framework
 
