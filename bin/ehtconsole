@@ -6623,7 +6623,7 @@ function terms_of_use
 	echo -e "Use this tool only on your own network and never without permission."
 	echo -e "I am not responsible for anything you do with this tool."
 	echo -e "Will you use this tool only on your own network and only with your own responsibility?("$YS"YES"$CE"/"$YS"NO"$CE"): "
-	read YESORNO
+	read -p $'(\e[4;93magree\e[0m\en)> ' YESORNO
 	if [[ "$YESORNO" = "YES" ]]
 	then 
 		echo "You have "$YS"agreed the terms"$CE" and you use this tool with "$YS"your own responsibility"$CE"" > "$EPATH"/IAGREE.txt
