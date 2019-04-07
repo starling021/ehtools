@@ -8220,7 +8220,7 @@ function select_interface
 		elif [[ "$CI" = 3 ]]
 		then
 			echo -e "Interface to use: "
-			read ITU
+			read -p $'(\e[4;93minterface\e[0m)> ' ITU
 			TT=$(ifconfig | grep "$ITU:")
 			if [[ "$TT" != "" ]]
 			then
@@ -8231,7 +8231,7 @@ function select_interface
 			else
 				echo -e ""$RS"Could not find this interface"$CE""
 				echo -e "Do you still want to use it?"$YNNO": "
-				read SU
+				read -p $'(\e[4;93muse\e[0m)> ' SU
 				if [[ "$SU" = "y" ]]
 				then
 					SINT="$ITU"
@@ -8880,7 +8880,7 @@ function browser_exploiting
 					elif [[ "$TARR" = 2 ]]
 					then
 						echo -e "Target: "
-						read TARGETI
+						read -p $'(\e[4;93mtarget\e[0m)> ' TARGETI
 						size=${#TARGETI}
 						if [[ "$size" -le 16 && "$size" -ge 7 ]]
 						then
@@ -8934,7 +8934,7 @@ function browser_exploiting
 							fi
 							clear
 							echo -e "hook.js URL path("$YS"Enter"$CE"=http://"$mitmflocalip":3000/hook.js): "
-							read hookch
+							read -p $'(\e[4;93murl\e[0m)> ' hookch
 							if [[ "$hookch" = "" ]]
 							then
 								mitmfhook="http://"$mitmflocalip":3000/hook.js"
