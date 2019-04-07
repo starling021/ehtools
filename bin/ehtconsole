@@ -5034,8 +5034,8 @@ function remote_access
 					APKPERM="yes"
 				fi
 				echo -e ""$YS" 1"$CE") Apk to infect                      CURRENT:$APK"
-				echo -e ""$YS" 2"$CE") EHOST                              CURRENT:$APKLH"
-				echo -e ""$YS" 3"$CE") EPORT                              CURRENT:$APKLP"
+				echo -e ""$YS" 2"$CE") LHOST                              CURRENT:$APKLH"
+				echo -e ""$YS" 3"$CE") LPORT                              CURRENT:$APKLP"
 				echo -e ""$YS" 4"$CE") Protocol                           CURRENT:$APKPROT"
 				echo -e ""$YS" 5"$CE") Add additional permissions         CURRENT:$APKPERM"
 				echo -e ""$YS" b"$CE") Go back"
@@ -5045,7 +5045,7 @@ function remote_access
 				if [[ "$APKK" = 1 ]]
 				then
 					echo -e "Apk to infect(must be in /root/kwetza): "
-					read APKTBI
+					read -p $'(\e[4;93mapk\e[0m)> ' APKTBI
 					if [[ -f "$APKTBI" ]]
 					then
 						APK="$APKTBI"
@@ -5055,12 +5055,12 @@ function remote_access
 					fi
 				elif [[ "$APKK" = 2 ]]
 				then
-					echo -e "EHOST: "
-					read APKLH
+					echo -e "LHOST: "
+					read -p $'(\e[4;93mlhost\e[0m)> ' APKLH
 				elif [[ "$APKK" = 3 ]]
 				then
-					echo -e "EPORT: "
-					read APKLP
+					echo -e "LPORT: "
+					read -p $'(\e[4;93mlport\e[0m)> ' APKLP
 				elif [[ "$APKK" = 4 ]]
 				then
 					if [[ "$APKPROT" = "tcp" ]]
@@ -5789,9 +5789,9 @@ function website_tools
 					if [[ "$C" == 1 ]]
 					then
 						echo -e ""$YS"Username: "$CE""
-						read USRNM
+						read -p $'(\e[4;93musername\e[0m)> ' USRNM
 						echo -e ""$YS"Wordlist path: "$CE""
-						read WRDLST
+						read -p $'(\e[4;93mpath\e[0m)> ' WRDLST
 						if [[ ! -f "$WRDLST" ]]
 						then
 							echo -e ""$RS"File not found"$CE""
@@ -5804,9 +5804,9 @@ function website_tools
 					elif [[ "$C" == 2 ]]
 					then
 						echo -e ""$YS"Username: "$CE""
-						read USRNM
+						read -p $'(\e[4;93musername\e[0m)> ' USRNM
 						echo -e ""$YS"Wordlist path: "$CE""
-						read WRDLST
+						read -p $'(\e[4;93mpath\e[0m)> ' WRDLST
 						if [[ ! -f "$WRDLST" ]]
 						then
 							echo -e ""$RS"File not found"$CE""
@@ -5819,7 +5819,7 @@ function website_tools
 					elif [[ "$C" == 3 ]]
 					then
 						echo -e ""$YS"Username: "$CE""
-						read USRNM
+						read -p $'(\e[4;93musername\e[0m)> ' USRNM
 						instagram-py -i "$USRNM"
 						echo -e "$PAKTGB"
 						$READAK
@@ -6097,7 +6097,7 @@ function findsploit_menu
 {
 	clear
 	echo -e "Search: "
-	read FSEARCH
+	read -p $'(\e[4;93msearch\e[0m)> ' FSEARCH
 	findsploit "$FSEARCH"
 	echo -e "$PAKTGB"
 	$READAK
@@ -8064,7 +8064,7 @@ do
 		fi
 		clear
 		echo -e ""$RS"Do you have permission to bruteforce this network?"$CE""$YNONLY""
-		read -p $'(\e[4;34mpermissions\e[0m)> ' PERM
+		read -p $'(\e[4;93mpermissions\e[0m)> ' PERM
 		if [[ "$PERM" != "y" && "$PERM" != "Y" ]]
 		then
 			echo -e ""$RS"You cannot proceed then"$CE""
