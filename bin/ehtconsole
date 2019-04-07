@@ -1635,14 +1635,14 @@ then
 	then
 		clear
 		echo -e "Redirect tcp port 80 to port("$YS"Enter"$CE"=8080):"
-		read PORTTCP
+		read -p $'(\e[4;93mport\e[0m\en)> ' PORTTCP
 		if [[ "$PORTTCP" = "" ]]
 		then
 			PORTTCP="8080"
 		fi
 					clear
 		echo -e "Redirect udp port 40 to port("$YS"Enter"$CE"=40):"
-		read PORTUDP
+		read -p $'(\e[4;93mport\e[0m\en)> ' PORTUDP
 		if [[ "$PORTUDP" = "" ]]
 		then
 			PORTUDP="40"
@@ -1660,10 +1660,10 @@ then
 		echo -e ""
 		echo -e ""
 		echo -e "Enter your gateway(prefer "$ETH" gateway):"
-		read GATENM
+		read -p $'(\e[4;93mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface("$YS"Enter"$CE"="$ETH"):"
-		read GATEINT
+		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
 		if [[ "$GATEINT" = "" ]]
 		then
 			GATEINT="$ETH"
@@ -1675,7 +1675,7 @@ then
 		echo -e ""
 		echo -e ""
 		echo -e "Enter your target IP:"
-		read TARGIP
+		read -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
 		if [[ "$TARGIP" = "r" ]]
 		then
 			continue
@@ -1703,17 +1703,17 @@ then
 	then
 		clear
 		echo -e "Enter your gateway(prefer "$ETH" gateway):"
-		read GATENM
+		read -p $'(\e[4;93mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface("$YS"Enter"$CE"="$ETH"):"
-		read GATEINT
+		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
 		if [[ "$GATEINT" = "" ]]
 		then
 			GATEINT="$ETH"
 		fi
 		clear
 		echo -e "Enter your target IP("$YS"r"$CE"=rescan):"
-		read TARGIP
+		read -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
 		echo -e ""
 		echo -e "$PAKTC"
 		$READAK
@@ -1781,10 +1781,10 @@ then
 		echo -e ""
 		echo -e ""
 		echo -e "Enter your gateway:"
-		read GATENM
+		read -p $'(\e[4;93mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface(e.g: wlan0):"
-		read GATEINT
+		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
 		while true
 		do		
 		clear
@@ -1792,7 +1792,7 @@ then
 		echo -e ""
 		echo -e ""
 		echo -e "Enter your target IP("$YS"r"$CE"=rescan):"
-		read TARGIP
+		read -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
 		if [[ "$TARGIP" = "r" ]]
 		then
 			continue
@@ -1803,13 +1803,13 @@ then
 	elif [[ "$MITMSET" = "22" ]]
 	then
 		echo -e "Enter your gateway:"
-		read GATENM
+		read -p $'(\e[4;93mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface(e.g: wlan0):"
-		read GATEINT
+		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
 		clear
 		echo -e "Enter your target IP:"
-		read TARGIP
+		read -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
 	elif [[ "$MITMSET" = "3" ]]
 	then
 		export PAKTC
@@ -1839,9 +1839,9 @@ then
 		echo -e "Enter your IP address that you started the server:"
 		echo -e "One of this/these:"
 		ip addr | grep '/24' | awk -F "inet " {'print $2'} | cut -d '/' -f1
-		read -e SERVIP
+		read -p $'(\e[4;93mIP\e[0m\en)> ' SERVIP
 		echo -e "Enter the interface of that IP(e.g: wlan0):"
-		read -e INTIP
+		read -p $'(\e[4;93minterface\e[0m\en)> ' INTIP
 		if [[ -f ""$EPATH"/HOSTS/hosts.txt" ]]
 		then
 			rm "$EPATH"/HOSTS/hosts.txt
@@ -1852,12 +1852,12 @@ then
 		do
 		clear
 		echo -e "Enter the URL you want to redirect your IP from(e.g: thisis.myfakesite.com):"
-		read -e URL
+		read -p $'(\e[4;93murl\e[0m\en)> ' URL
 		echo "$SERVIP	$URL" >> "$EPATH"/HOSTS/hosts.txt
 		sleep 0.2
 		clear
 		echo -e "Add another one as well?"$YNYES""
-		read -e ANOTHERHOST
+		read -p $'(\e[4;93madd\e[0m\en)> ' ANOTHERHOST
 		if [[ "$ANOTHERHOST" = "n" ]]
 		then
 			break
@@ -6796,9 +6796,9 @@ do
 	if [[ "$SMTP" = "1" ]]
 	then
 		clear
-		echo -e "Enter your smtp username (find it here: https://app.smtp2go.com/settings/users)"
+		echo -e "Enter your smtp username (find it here: https://app.smtp2go.com/settings/users): "
 		read -p $'(\e[4;93musername\e[0m)> ' SMTPEMAIL
-		echo -e "Enter your smtp password (find it here: https://app.smtp2go.com/settings/users)"
+		echo -e "Enter your smtp password (find it here: https://app.smtp2go.com/settings/users): "
 		read -p $'(\e[4;93mpassword\e[0m)> ' SMTPPASS
 		clear
 		echo "$SMTPEMAIL" > /bin/ehtools/smtp/smtpemail.txt
