@@ -270,6 +270,8 @@ chmod +x libchattr
 echo -e
 echo -e
 
+printf '\033]2;Configuring...\a'
+
 function ProgressBar {
 
     let _progress=(${1}*100/${2}*100)/100
