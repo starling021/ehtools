@@ -1660,7 +1660,7 @@ then
 		echo -e ""
 		echo -e ""
 		echo -e "Enter your gateway(prefer "$ETH" gateway):"
-		read -p $'(\e[4;93mgateway\e[0m\en)> ' GATENM
+		read -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface("$YS"Enter"$CE"="$ETH"):"
 		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
@@ -1703,7 +1703,7 @@ then
 	then
 		clear
 		echo -e "Enter your gateway(prefer "$ETH" gateway):"
-		read -p $'(\e[4;93mgateway\e[0m\en)> ' GATENM
+		read -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface("$YS"Enter"$CE"="$ETH"):"
 		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
@@ -1763,7 +1763,7 @@ then
 	echo -e ""$YS" 5"$CE") Start DNSspoofing"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") EXIT"
-	read -p $'(\e[4;31mmitm\e[0m) => (\e[5;32mSET\e[0m)> ' MITMSET
+	read -p $'(\e[4;31mmitm\e[0m) => (\e[5;32mSpoof\e[0m)> ' MITMSET
 	clear
 	if [[ "$MITMSET" = "1" ]]
 	then
@@ -1781,7 +1781,7 @@ then
 		echo -e ""
 		echo -e ""
 		echo -e "Enter your gateway:"
-		read -p $'(\e[4;93mgateway\e[0m\en)> ' GATENM
+		read -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface(e.g: wlan0):"
 		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
@@ -1803,7 +1803,7 @@ then
 	elif [[ "$MITMSET" = "22" ]]
 	then
 		echo -e "Enter your gateway:"
-		read -p $'(\e[4;93mgateway\e[0m\en)> ' GATENM
+		read -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface(e.g: wlan0):"
 		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
@@ -2035,7 +2035,7 @@ do
 		if [[ "$DICTSEL" = 1 ]]
 		then
 			echo -e "Type the path of the dictionary:"
-			read DICTPATH
+			read -p $'(\e[4;93mpath\e[0m\en)> ' DICTPATH
 			if [[ ! -f "$DICTPATH" ]]
 			then
 				echo -e ""$RS"No such file"$CE""
@@ -2046,7 +2046,7 @@ do
 		elif [[ "$DICTSEL" = 2 ]]
 		then
 			echo -e "Type the path of the first dictionary:"
-			read DICTPATH
+			read -p $'(\e[4;93mpath\e[0m\en)> ' DICTPATH
 			if [[ ! -f "$DICTPATH" ]]
 			then
 				echo -e ""$RS"No such file"$CE""
@@ -2075,7 +2075,7 @@ do
 		elif [[ "$DICTSEL" = 3 ]]
 		then
 			echo -e "Type the path of the folder:"
-			read DICTPATH
+			read -p $'(\e[4;93mpath\e[0m\en)> ' DICTPATH
 			if [[ ! -d "$DICTPATH" ]]
 			then
 				echo -e ""$RS"No such folder"$CE""
@@ -2113,19 +2113,19 @@ do
 		elif [[ "$HASHES" = 1 ]]
 		then
 			echo -e "Type your hash: "
-			read HASH
+			read -p $'(\e[4;93mhash\e[0m\en)> ' HASH
 			HASHTYPE=1
 		elif [[ "$HASHES" = 2 ]]
 		then
 			echo -e "Type your first hash: "
-			read HASH
+			read -p $'(\e[4;93mhash\e[0m\en)> ' HASH
 			echo -e "$HASH" > $EPATH/hashes.txt
 			while true
 			do
 				clear
 				echo -e ""$RS"----------TO STOP, TYPE 0----------"
 				echo -e "Type your next hash: "
-				read HASH
+				read -p $'(\e[4;93mhash\e[0m\en)> ' HASH
 				if [[ "$HASH" = "0" || "$HASH" = "o" || "$HASH" = "O" ]]
 				then
 					HASH="multiple"
@@ -2137,7 +2137,7 @@ do
 		elif [[ "$HASHES" = 3 ]]
 		then
 			echo -e "Type the full path of the file: "
-			read HASHPATH
+			read -p $'(\e[4;93mpath\e[0m\en)> ' HASHPATH
 			if [[ ! -f "$HASHPATH" ]]
 			then
 				echo -e ""$RS"There is not such file."$CE""
