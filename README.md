@@ -71,10 +71,6 @@
 
 > ./install.sh 
 
-After installation run:
-
-> ehtools
-
 # To install our ehtools Lite
 
 > cd /root/ehtoolslite
@@ -82,8 +78,6 @@ After installation run:
 > chmod +x install.sh
 
 > ./install.sh
-
-> eht
 
 # Install.sh
 
