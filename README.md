@@ -211,6 +211,8 @@ To activate, for example eht1 module after installing modules (BETA) run command
 
 > do not exit from metasploit menu (4), from tools menu (9) or from shotcuts menu (ks), make exit only from main menu!
 
+![Снимок экрана 2019-04-07 в 11 21 51](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
+
 # Pictures!
 
 # We update our choose string in the bottom of ehtools menu and now it's not a "Choose:" it's "(ehtools)>"
