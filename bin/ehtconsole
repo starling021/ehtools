@@ -6279,7 +6279,7 @@ function metasploit_menu
 		echo -e ""$YS" 1"$CE") Start listener"
 		echo -e ""$YS" 2"$CE") Delete listener"
 		echo -e ""$YS" b"$CE") Go back"
-		read -p $'(\e[4;31mlistener\e[0m)> ' LISTL
+		read -p $'(\e[4;93mlistener\e[0m)> ' LISTL
 		if [[ "$LISTL" = "1" ]]
 		then
 			msfconsole -r "$EPATH"/rc/"$NAMERC"
