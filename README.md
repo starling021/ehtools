@@ -61,15 +61,11 @@
 </a>
 </p>
 
-EntynetHackerTools for linux with bash and gnome-terminal (PRO or lite!)
+![Снимок экрана 2019-04-07 в 11 23 56](https://user-images.githubusercontent.com/43011806/55681017-270a5d80-592a-11e9-865c-0ca07581b78c.png)
 
-# To start our ehtools PRO free trial
+# To install our ehtools PRO free trial
 
-> cd /root
-
-> git clone https://github.com/entynetproject/ehtools.git
-
-> cd ehtools
+> cd /root/ehtools
 
 > chmod +x install.sh
 
@@ -77,13 +73,9 @@ EntynetHackerTools for linux with bash and gnome-terminal (PRO or lite!)
 
 > ehtools
 
-# To start our ehtools Lite
+# To install our ehtools Lite
 
-> cd /root
-
-> git clone https://github.com/entynetproject/ehtoolslite.git
-
-> cd ehtoolslite
+> cd /root/ehtoolslite
 
 > chmod +x install.sh
 
@@ -165,8 +157,7 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 > more than 100 tools you can install from ehtools or ehtoolslite
 
-![2018-11-03 0 31 21](https://user-images.githubusercontent.com/43011806/47941719-5bec3180-df00-11e8-8769-af1979dd5f58.png)
-![2018-11-03 0 32 00](https://user-images.githubusercontent.com/43011806/47941721-5e4e8b80-df00-11e8-8e8c-aaa881092bd2.png)
+![Снимок экрана 2019-04-07 в 11 23 56](https://user-images.githubusercontent.com/43011806/55681017-270a5d80-592a-11e9-865c-0ca07581b78c.png)
 
 # System requirements 
 
@@ -212,27 +203,5 @@ To activate, for example eht1 module after installing modules (BETA) run command
 > do not exit from metasploit menu (4), from tools menu (9) or from shotcuts menu (ks), make exit only from main menu!
 
 ![Снимок экрана 2019-04-07 в 11 21 51](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
-
-# Pictures!
-
-# We update our choose string in the bottom of ehtools menu and now it's not a "Choose:" it's "(ehtools)>"
-
-<a href="https://github.com/entynetproject">
-    <img src="https://img.shields.io/badge/Choose:-(ehtools)>%20New design-green.svg">
-  </a> 
-
-
-
-PRO version of ehtools framework (with new design):
-
-![img_6049](https://user-images.githubusercontent.com/43011806/50402183-9d34eb00-07a5-11e9-9847-579e1cfbfbf5.JPG)
-
-PRO version of ehtools framework:
-
-![2018-11-03 0 30 47](https://user-images.githubusercontent.com/43011806/47941691-424aea00-df00-11e8-8992-a391d8ee8ace.png)
-
-Lite version of ehtools framework:
-
-![i284008264540267243 _szw1280h1280_ jpg](https://user-images.githubusercontent.com/43011806/48487945-a76fdb00-e830-11e8-8b10-0aca0f1e131f.png)
 
 # Thats all!
