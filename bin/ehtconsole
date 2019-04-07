@@ -8064,7 +8064,7 @@ do
 		fi
 		clear
 		echo -e ""$RS"Do you have permission to bruteforce this network?"$CE""$YNONLY""
-		read -p $'(\e[4;93mpermissions\e[0m)> ' PERM
+		read -p $'(\e[4;93mpermission\e[0m)> ' PERM
 		if [[ "$PERM" != "y" && "$PERM" != "Y" ]]
 		then
 			echo -e ""$RS"You cannot proceed then"$CE""
