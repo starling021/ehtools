@@ -186,7 +186,7 @@ else
 		fi
 	fi
 	echo -e "Start capturing on a file?"$YNYES""
-	read SCF
+	read -p $'(\e[4;93mcapture\e[0m\en)> ' SCF
 	if [[ "$SCF" = "n" ]]
 	then
 		clear
@@ -196,7 +196,7 @@ else
 		do
 			clear
 			echo -e "Enter the name of the handshake file(no extension): "
-			read -e HANDF
+			read -p $'(\e[4;93mname\e[0m\en)> ' HANDF
 			if [[ ! -f "/root/handshakes/$HANDF-01.cap" ]]
 			then
 				break
