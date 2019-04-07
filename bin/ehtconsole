@@ -6491,12 +6491,11 @@ function interface_menu
 	echo -e "Your current wireless interface names are $WLANN and $WLANNM"
 	sleep 2
 	echo -e "Do you want to change you interface names?"$YNYES": "
-	read INAG
+	read -p $'(\e[4;93mchange\e[0m)> ' INAG
 	if [[ "$INAG" = "n" ]]
 	then
 		clear
-		echo -e "Then why did you come here? lol"
-		sleep 3
+		sleep 1
 		exec bash "$0"
 	else
 		clear
