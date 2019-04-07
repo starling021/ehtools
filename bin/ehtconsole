@@ -492,7 +492,7 @@ function change_mac
 		sleep 2
 	else
 		echo -e "Change it to a random or specific?("$YS"r"$CE"/"$YS"s"$CE")("$YS"Enter"$CE"=r): "
-		read -e RORS
+		read -p $'(\e[4;93mr/s\e[0m\en)> ' RORS
 		clear
 		if [[ "$RORS" != "s" ]]
 		then
@@ -500,15 +500,15 @@ function change_mac
 			ifconfig $MYINT down
 			macchanger -r $MYINT
 			ifconfig $MYINT up
-			echo -e "Done."
+			echo -e "Done, mac address changed with success!"
 		else
 			echo -e "Enter the MAC you want:"
-			read -e SMAC
+			read -p $'(\e[4;93m(new)mac\e[0m\en)> ' SMAC
 			echo -e "Changing mac address of $MYINT to $SMAC..."
 			ifconfig $MYINT down
 			macchanger -m $SMAC $MYINT
 			ifconfig $MYINT up
-			echo -e "Done."
+			echo -e "Done, mac address changed with success!"
 		fi
 	fi
 }
@@ -518,19 +518,19 @@ clear
 while true
 do
 echo -e "Enter the name of your wireless interface when in "$RS"managed"$CE" mode("$YS"Enter"$CE"=wlan0): "
-read MANAGED
+read -p $'(\e[4;93minterface\e[0m\en)> ' MANAGED
 if [[ "$MANAGED" = "" ]]
 then
 	MANAGED="wlan0"
 fi
 echo -e "Enter the name of your wireless interface when in "$RS"monitor"$CE" mode("$YS"Enter"$CE"=wlan0mon): "
-read MONITOR
+read -p $'(\e[4;93minterface\e[0m\en)> ' MONITOR
 if [[ "$MONITOR" = "" ]]
 then
 	MONITOR="wlan0mon"
 fi
 echo -e "Enter the name of your wired interface("$YS"Enter"$CE"="eth0"): "
-read WIRED
+read -p $'(\e[4;93minterface\e[0m\en)> ' WIRED
 if [[ "$WIRED" = "" ]]
 then
 	WIRED="eth0"
@@ -617,7 +617,7 @@ echo -e "Enter the keyboard shortcut that will open "$TITLE" from ehtool's main 
 echo -e "(e.g: "$YS""$TITLE""$CE")"
 echo -e "To delete it , type:   "$YS"delete"$CE""
 echo -e ""$YS" b"$CE") Go back"
-read CHECKKS
+read -p $'(\e[4;93mshortcut\e[0m\en)> ' CHECKKS
 if [[ "$CHECKKS" = "back" || "$CHECKKS" = "b" ]]
 then
 	clear
