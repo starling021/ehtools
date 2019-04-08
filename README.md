@@ -147,7 +147,7 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 > more than 58 tools for pentesting
 
-> password protection and config encruption
+> password protection and config encryption
 
 > easy in learning and this is the best framework for begginers
 
