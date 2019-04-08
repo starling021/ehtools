@@ -500,7 +500,7 @@ function change_mac
 			ifconfig $MYINT down
 			macchanger -r $MYINT
 			ifconfig $MYINT up
-			echo -e "Done, mac address changed with success!"
+			echo -e "Done."
 		else
 			echo -e "Enter the MAC you want:"
 			read -p $'(\e[4;93m(new)mac\e[0m\en)> ' SMAC
@@ -508,7 +508,7 @@ function change_mac
 			ifconfig $MYINT down
 			macchanger -m $SMAC $MYINT
 			ifconfig $MYINT up
-			echo -e "Done, mac address changed with success!"
+			echo -e "Done."
 		fi
 	fi
 }
