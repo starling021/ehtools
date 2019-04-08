@@ -147,9 +147,11 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 > more than 58 tools for pentesting
 
-> password protection
+> password protection and config encruption
 
-> easy in learning
+> easy in learning and this is the best framework for begginers
+
+> UX/UI impruvements for begginers
 
 > more than 100 tools you can install from ehtools or ehtoolslite
 
