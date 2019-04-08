@@ -6625,7 +6625,7 @@ function terms_of_use
 	read -p $'(\e[4;93magree\e[0m\en)> ' YESORNO
 	if [[ "$YESORNO" = "YES" ]]
 	then 
-		echo "You have "$YS"agreed the terms"$CE" and you use this tool with "$YS"your own responsibility"$CE"" > "$EPATH"/IAGREE.txt
+		echo "You have agreed the terms and you use this tool with your own responsibility" > "$EPATH"/IAGREE.txt
 		sleep 1
 		clear
 	else
@@ -9477,8 +9477,8 @@ function main_options
 			else
 				na=""
 			fi
-			echo -e "How do i :  "
-			read HOW
+			echo -e "Howdoi:  "
+			read -p $'(\e[4;31mhowdoi\e[0m\en)> ' HOW
 			howdoi $co $na $ol $df $HOW
 		fi
 	elif [[ "$YORNAA" = "settings" || "$YORNAA" = "s" ]]
