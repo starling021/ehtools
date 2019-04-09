@@ -43,11 +43,11 @@ cd /root/ehtools/lib
 chmod +x libactiv
 ./libactiv
 
-if [[ -f /etc/ehtools/root/service/ehtkey.txt ]]
+if [[ -f /etc/ehtools/root/service/late/ehtkey.txt ]]
 then
 printf '\033]2;activate ehtools\a'
 
-EHTKEY="$( cat /etc/ehtools/root/service/ehtkey.txt )"
+EHTKEY="$( cat /etc/ehtools/root/service/late/ehtkey.txt )"
 sleep 1
 echo -e "Enter your ehtools activation key!"
 echo -e "Or buy it on ehtools site!"
