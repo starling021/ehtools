@@ -61,6 +61,8 @@
 </a>
 </p>
 
+![Install](https://github.com/entynetproject/ehtools#to-install-our-ehtools-pro-free-trial)
+
 ![Снимок экрана 2019-04-07 в 11 23 56](https://user-images.githubusercontent.com/43011806/55681017-270a5d80-592a-11e9-865c-0ca07581b78c.png)
 
 # To install our ehtools PRO free trial
