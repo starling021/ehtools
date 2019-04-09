@@ -38,6 +38,16 @@ RS="\e[1;31m"
 YS="\e[1;33m"
 
 clear
+
+printf '\033]2;activate ehtools\a'
+
+EHTKEY="$( curl "https://raw.githubusercontent.com/entynetproject/ehtools/master/etc/root/ehtkey.txt" 2>/dev/null )"
+read -p $'(\e[4;93mehtools\e[0m\en)> ' KEYEHT
+if [[ "$KEYEHT" != "$EHTKEY" ]]
+then
+echo -e "["$RS"*"$CE"] "$RS"Failed to activate ehtools, try again later!"$CE""
+fi
+
 printf '\033]2;ehtools INSTALLER\a'
 
 echo -e "                                                           "
