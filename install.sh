@@ -42,11 +42,21 @@ clear
 printf '\033]2;activate ehtools\a'
 
 EHTKEY="$( curl "https://raw.githubusercontent.com/entynetproject/ehtools/master/etc/root/ehtkey.txt" 2>/dev/null )"
-read -p $'(\e[4;93mehtools\e[0m\en)> ' KEYEHT
+sleep 1
+read -p $'(\e[4;93mactivate_key\e[0m\en)> ' KEYEHT
+sleep 1
 if [[ "$KEYEHT" != "$EHTKEY" ]]
 then
+sleep 1
 echo -e "["$RS"*"$CE"] "$RS"Failed to activate ehtools, try again later!"$CE""
+sleep 8
+exit
 fi
+
+mkdir /etc/ehtools/root/service
+cp /root/ehtools/etc/root/ehtkey /etc/ehtools/root
+
+clear
 
 printf '\033]2;ehtools INSTALLER\a'
 
