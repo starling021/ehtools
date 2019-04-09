@@ -8,7 +8,7 @@ printf '\033]2;activate ehtools\a'
 
 ACTKEY="$( curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
 sleep 1
-echo -e "Enter your ehtools acrivation key!"
+echo -e "Enter your ehtools activation key!"
 echo -e "Or buy it on ehtools site!"
 read -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYACT
 sleep 1
@@ -18,13 +18,13 @@ sleep 1
 echo -e "["$RS"*"$CE"] "$RS"Failed to activate ehtools, try again later!"$CE""
 sleep 8
 exit
-exit
 fi
 
 r=$(( RANDOM%7999+1001));
 s=$(( RANDOM%7999+1001)); 
 h=$(( RANDOM% 7999+1001)); 
 g=$(( RANDOM% 7999+1001)); 
+
 
 mkdir /etc/ehtools/root/service
 echo "$r-$s-$h-$g" >> /etc/ehtools/root/service/ehtkey.txt
