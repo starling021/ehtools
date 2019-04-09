@@ -5,4 +5,5 @@ s=$(( RANDOM%7999+1001));
 h=$(( RANDOM% 7999+1001)); 
 g=$(( RANDOM% 7999+1001)); 
 
-echo -e "$r-$s-$h-$g"
+mkdir /etc/ehtools/root/service
+echo "$r-$s-$h-$g" >> /etc/ehtools/root/service/ehtkey.txt
