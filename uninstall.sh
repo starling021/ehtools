@@ -69,6 +69,21 @@
 #white start
 	WHS="\e[1;37m"
 
+{
+KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
+KEYKE="$( curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
+} &> /dev/null
+
+if [[ "$KEYEK" != "$KEYKE" ]]
+then
+
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for uninstall.sh, did you buy ehtools?"$CE""
+sleep 1
+exit
+
+fi
+
 clear
 printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
