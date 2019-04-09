@@ -44,7 +44,7 @@ if [[ "$KEYEK" != "$KEYKE" ]]
 then
 
 sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtconsole, did you buy ehtools?"$CE""
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for uiecache, did you buy ehtools?"$CE""
 sleep 1
 exit
 
