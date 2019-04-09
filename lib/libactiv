@@ -1,8 +1,12 @@
 #!/bin/bash
 
+printf '\033]2;activate ehtools\a'
+
 ACTKEY="$( curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
 sleep 1
-read -p $'(\e[4;93mactivate_key\e[0m\en)> ' KEYACT
+echo -e "Enter your ehtools acrivation key!"
+echo -e "Or buy it on ehtools site!"
+read -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYACT
 sleep 1
 if [[ "$KEYACT" != "$ACTKEY" ]]
 then
@@ -19,3 +23,5 @@ g=$(( RANDOM% 7999+1001));
 
 mkdir /etc/ehtools/root/service
 echo "$r-$s-$h-$g" >> /etc/ehtools/root/service/ehtkey.txt
+
+sleep 3
