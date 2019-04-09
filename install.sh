@@ -49,6 +49,7 @@ printf '\033]2;activate ehtools\a'
 
 EHTKEY="$( cat /etc/ehtools/root/service/late/ehtkey.txt )"
 sleep 1
+echo -e
 echo -e "Enter your ehtools activation key!"
 echo -e "Or buy it on ehtools site!"
 sleep 3
