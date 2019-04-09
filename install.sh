@@ -38,6 +38,35 @@ RS="\e[1;31m"
 YS="\e[1;33m"
 
 clear
+
+cd /root/ehtools/lib
+chmod +x libactiv
+./libactiv
+
+if [[ -f /etc/ehtools/root/service/ehtkey.txt ]]
+then
+printf '\033]2;activate ehtools\a'
+
+EHTKEY="$( cat /etc/ehtools/root/service/ehtkey.txt )"
+sleep 1
+echo -e "Enter your ehtools activation key!"
+echo -e "Or buy it on ehtools site!"
+sleep 3
+echo -e "["$YS"*"$CE"] "$YS"Activated! Your key is "$CE"["$YS""$EHTKEY""$CE"]"
+read -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYEHT
+sleep 1
+if [[ "$KEYEHT" != "$EHTKEY" ]]
+then
+sleep 8
+echo -e "["$RS"*"$CE"] "$RS"Failed to activate ehtools, try again later!"$CE""
+sleep 1
+exit
+fi
+
+else
+exit
+fi
+
 printf '\033]2;ehtools INSTALLER\a'
 
 echo -e "                                                           "
