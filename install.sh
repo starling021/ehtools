@@ -67,6 +67,7 @@ else
 exit
 fi
 
+clear
 printf '\033]2;ehtools INSTALLER\a'
 
 echo -e "                                                           "
