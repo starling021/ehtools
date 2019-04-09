@@ -1,5 +1,17 @@
 #!/bin/bash
 
+EHTKEY="$(  )"
+sleep 1
+read -p $'(\e[4;93mactivate_key\e[0m\en)> ' KEYEHT
+sleep 1
+if [[ "$KEYEHT" != "$EHTKEY" ]]
+then
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Failed to activate ehtools, try again later!"$CE""
+sleep 8
+exit
+fi
+
 r=$(( RANDOM%7999+1001));
 s=$(( RANDOM%7999+1001)); 
 h=$(( RANDOM% 7999+1001)); 
