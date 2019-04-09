@@ -29,6 +29,7 @@ g=$(( RANDOM% 7999+1001));
 mkdir /etc/ehtools
 mkdir /etc/ehtools/root
 mkdir /etc/ehtools/root/service
-echo "$r-$s-$h-$g" >> /etc/ehtools/root/service/ehtkey.txt
-
+mkdir /etc/ehtools/root/service/late
+echo "$r-$s-$h-$g" >> /etc/ehtools/root/service/late/ehtkey.txt
+echo "$ACTKEY" >> /etc/ehtools/root/service/ehtkey.txt
 sleep 3
