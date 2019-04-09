@@ -39,6 +39,10 @@ YS="\e[1;33m"
 
 clear
 
+cd /root/ehtools/lib
+chmod +x libactiv
+./libactiv
+
 printf '\033]2;activate ehtools\a'
 
 EHTKEY="$( cat /etc/ehtools/root/service/ehtkey.txt )"
@@ -47,15 +51,14 @@ read -p $'(\e[4;93mactivate_key\e[0m\en)> ' KEYEHT
 sleep 1
 if [[ "$KEYEHT" != "$EHTKEY" ]]
 then
-sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Failed to activate ehtools, try again later!"$CE""
 sleep 8
+echo -e "["$RS"*"$CE"] "$RS"Failed to activate ehtools, try again later!"$CE""
+sleep 1
 exit
 fi
 
-mkdir /etc/ehtools/root/service
-cp /root/ehtools/etc/root/ehtkey /etc/ehtools/root
-
+mkdir /etc/ehtools/root/service/last
+cp /etc/ehtools/root/service/ehtkey /etc/ehtools/root/service/last
 clear
 
 printf '\033]2;ehtools INSTALLER\a'
