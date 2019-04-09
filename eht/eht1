@@ -33,6 +33,10 @@
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
 
+CE="\e[0m"
+RS="\e[1;31m"
+YS="\e[1;33m"
+
 {
 KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 KEYKE="$( curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
@@ -71,14 +75,9 @@ function defaults_eht1
 	else
 		ALFA="no"
 	fi
-#yellow start 
-	YS="\e[1;33m"
+	
 #blue start 
 	BS="\e[0;34m"
-#color end
-	CE="\e[0m"
-#red start
-	RS="\e[1;31m"
 #black start
 	BLS="\e[0;30m"
 #dark gray start
