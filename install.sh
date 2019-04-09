@@ -41,7 +41,7 @@ clear
 
 printf '\033]2;activate ehtools\a'
 
-EHTKEY="$( curl "https://raw.githubusercontent.com/entynetproject/ehtools/master/etc/root/ehtkey.txt" 2>/dev/null )"
+EHTKEY="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 sleep 1
 read -p $'(\e[4;93mactivate_key\e[0m\en)> ' KEYEHT
 sleep 1
