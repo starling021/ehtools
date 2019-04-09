@@ -47,7 +47,11 @@ printf '\033]2;activate ehtools\a'
 
 EHTKEY="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 sleep 1
-read -p $'(\e[4;93mactivate_key\e[0m\en)> ' KEYEHT
+echo -e "Enter your ehtools activation key!"
+echo -e "Or buy it on ehtools site!
+sleep 3
+echo -e "["$YS"*"$CE"] "$YS"Activated! Your key is "$CE"["$YS""$EHTKEY""$CE]"
+read -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYEHT
 sleep 1
 if [[ "$KEYEHT" != "$EHTKEY" ]]
 then
@@ -58,7 +62,7 @@ exit
 fi
 
 mkdir /etc/ehtools/root/service/last
-cp /etc/ehtools/root/service/ehtkey /etc/ehtools/root/service/last
+cp /etc/ehtools/root/service/ehtkey.txt /etc/ehtools/root/service/last
 clear
 
 printf '\033]2;ehtools INSTALLER\a'
