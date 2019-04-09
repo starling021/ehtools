@@ -1,10 +1,10 @@
 #!/bin/bash
 
-EHTKEY="$(  )"
+ACTKEY="$( curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
 sleep 1
-read -p $'(\e[4;93mactivate_key\e[0m\en)> ' KEYEHT
+read -p $'(\e[4;93mactivate_key\e[0m\en)> ' KEYACT
 sleep 1
-if [[ "$KEYEHT" != "$EHTKEY" ]]
+if [[ "$KEYACT" != "$ACTKEY" ]]
 then
 sleep 1
 echo -e "["$RS"*"$CE"] "$RS"Failed to activate ehtools, try again later!"$CE""
