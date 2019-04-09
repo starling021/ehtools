@@ -25,6 +25,9 @@ s=$(( RANDOM%7999+1001));
 h=$(( RANDOM% 7999+1001)); 
 g=$(( RANDOM% 7999+1001)); 
 
+{
+rm -r /etc/ehtools
+} &> /dev/null
 
 mkdir /etc/ehtools
 mkdir /etc/ehtools/root
