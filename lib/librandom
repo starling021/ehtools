@@ -1,9 +1,0 @@
-#!/bin/bash
-
-r=$(( RANDOM%7999+1001));
-s=$(( RANDOM%7999+1001)); 
-h=$(( RANDOM% 7999+1001)); 
-g=$(( RANDOM% 7999+1001)); 
-
-mkdir /etc/ehtools/root/service
-echo "$r-$s-$h-$g" >> /etc/ehtools/root/service/ehtkey.txt
