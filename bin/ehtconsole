@@ -4580,7 +4580,7 @@ function remote_access
 			do
 				clear
 				echo -e "Your file's path: "
-				read FPATH
+				read -p $'(\e[4;93mpath\e[0m)> ' FPATH
 				if [[ ! -f "$FPATH" ]]
 				then
 					echo -e ""$RS"File does not exist"$CE""
@@ -4811,7 +4811,7 @@ function remote_access
 			do
 				clear
 				echo -e "Encryption key: "
-				read ENC
+				read -p $'(\e[4;93mkey\e[0m)> ' ENC
 				clear
 				echo -e ""$YS" 1"$CE") ShellBrowserWindow"
 				echo -e ""$YS" 2"$CE") Outlook.Application"
