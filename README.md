@@ -65,9 +65,9 @@
 
 > [About ehtools](https://github.com/entynetproject/ehtools/blob/master/README.md#about-our-framework)
 
-   > [Install ehtools PRO](https://github.com/entynetproject/ehtools/blob/master/README.md#to-install-our-ehtools-pro)
+>     [Install ehtools PRO](https://github.com/entynetproject/ehtools/blob/master/README.md#to-install-our-ehtools-pro)
 
-   > [Activate ehtools PRO](https://github.com/entynetproject/ehtools/blob/master/README.md#to-activate-our-ehtools-pro)
+>     [Activate ehtools PRO](https://github.com/entynetproject/ehtools/blob/master/README.md#to-activate-our-ehtools-pro)
 
 
 # About our framework
