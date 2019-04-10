@@ -97,7 +97,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 > ./install.sh
 
-# Install.sh
+# Install.sh interface
 
 ![Снимок экрана 2019-04-07 в 11 17 52](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
 
