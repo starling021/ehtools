@@ -33,25 +33,6 @@
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
 
-CE="\e[0m"
-RS="\e[1;31m"
-YS="\e[1;33m"
-
-{
-KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
-KEYKE="$( curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
-} &> /dev/null
-
-if [[ "$KEYEK" != "$KEYKE" ]]
-then
-
-sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Failed to open session for eht31, did you buy ehtools?"$CE""
-sleep 1
-exit
-
-fi
-
 #############DEFAULTS###############
 #setting yellow-start 
 YS="\e[1;33m"
