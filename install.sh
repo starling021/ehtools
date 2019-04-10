@@ -37,6 +37,11 @@ CE="\e[0m"
 RS="\e[1;31m"
 YS="\e[1;33m"
 
+ASESR="$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')"
+
+if [[ "$ASESR" != "" ]]
+then 
+
 clear
 
 cd /root/ehtools/lib
