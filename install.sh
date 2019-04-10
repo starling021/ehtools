@@ -37,13 +37,6 @@ CE="\e[0m"
 RS="\e[1;31m"
 YS="\e[1;33m"
 
-else
-sleep 1
-echo -e "["$RS"*"$CE"] "$RS"There is no connection!"$CE""
-sleep 1
-exit
-fi
-
 clear
 
 cd /root/ehtools/lib
@@ -72,6 +65,13 @@ exit
 fi
 
 else
+exit
+fi
+
+else
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"There is no connection!"$CE""
+sleep 1
 exit
 fi
 
