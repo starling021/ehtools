@@ -96,6 +96,8 @@ sleep 1
 exit
 fi
 
+DIR="$( whoami )"
+
 if [[ "$DIR" != "root" ]]
 then
 
