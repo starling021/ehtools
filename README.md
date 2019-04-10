@@ -63,6 +63,10 @@
 
 ![Снимок экрана 2019-04-07 в 11 23 56](https://user-images.githubusercontent.com/43011806/55681017-270a5d80-592a-11e9-865c-0ca07581b78c.png)
 
+# About our framework
+
+Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools Framework is a framework of serious penetration tools that can be explored easily from within it. This powerful and simple tool can be used for everything from installing new add-ons to grabbing a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and utilize.
+
 # To install our ehtools PRO
 
 > cd /root/ehtools
@@ -102,10 +106,6 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 ![Снимок экрана 2019-04-07 в 11 17 52](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
 
 ![Снимок экрана 2019-04-07 в 11 20 23](https://user-images.githubusercontent.com/43011806/55680975-a9465200-5929-11e9-9385-8e6c817999d5.png)
-
-# About our framework
-
-Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools Framework is a framework of serious penetration tools that can be explored easily from within it. This powerful and simple tool can be used for everything from installing new add-ons to grabbing a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and utilize.
 
 # Attacking frameworks
 
