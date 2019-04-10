@@ -163,15 +163,39 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 # Why our Framework? 
 
-> more than 58 tools for pentesting
+> More than 58 tools for pentesting installed by default
 
-> password protection and config encryption
+    INFO: More than 58 options installed by default you
+    can find in ehtools, this is tools such as MetaSploit
+    WireShark and other tools!
 
-> easy in learning and this is the best framework for begginers
+> Password protection and config encryption
+
+    INFO: In version 2.1.6 we added pasword protection,
+    we added it for users who think that his/her friend or
+    parents will turn into ehtools and will remove or destroy
+    it. Only for this people we create password protection
+    for ehtools framework :)
+
+> Easy in learning and this is the best framework for begginers
+
+    INFO: Ehtools framework's GUI is very simple for begginers,
+    you can start attack on the local network by choosing an
+    option from main menu. It is very simple, is not it?
 
 > UX/UI impruvements for begginers
 
-> more than 100 tools you can install from ehtools or ehtoolslite
+    INFO: It uses the names you supply to connect to the tools 
+    needed to execute any attacks you select! Aside from that 
+    initial input, the majority of the possible attacks can be performed 
+    merely by choosing the option number from the menu. This means you can 
+    grab a network handshake or download a new hacking tool like Pupy by just 
+    selecting from one of the menu options!
+
+> More than 100 tools you can install from ehtools or ehtoolslite
+
+    INFO: Our framework has more than 100 packages it 
+    ehtools archive!
 
 ![Снимок экрана 2019-04-07 в 11 23 56](https://user-images.githubusercontent.com/43011806/55681017-270a5d80-592a-11e9-865c-0ca07581b78c.png)
 
@@ -179,6 +203,9 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 > Full root access and access to /root folder
 
+    INFO: All ehtools files and folders will copy to /root,
+    /bin and /etc system folders, for copy ehtools data to
+    your system needed root access!
 
 > Bourne-again shell and Gnome-terminal shell
 
@@ -230,19 +257,19 @@ To activate, for example eht1 module after installing modules (BETA) run command
 
 # How to protect ehtools/ehtoolslite
 
-Do it with install.sh
+> Do it with install.sh
    
     1) create login and password from install.sh 
     (defaults: login: ehtools password: sloothe)
 
-Do it when you are going to exit from ehtools
+> Do it when you are going to exit from ehtools
     
     2) when you are going to exit framework,
     exit with shortcuts - 0 or exit 
     
     WARNING: Do not just close ehtools window!
 
-Do not do it when you are going to exit from ehtools
+> Do not do it when you are going to exit from ehtools
     
     3) do not exit from metasploit menu (4), 
     from tools menu (9) or 
