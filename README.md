@@ -63,13 +63,21 @@
 
 ![Снимок экрана 2019-04-07 в 11 23 56](https://user-images.githubusercontent.com/43011806/55681017-270a5d80-592a-11e9-865c-0ca07581b78c.png)
 
-# To install our ehtools PRO free trial
+# To install our ehtools PRO
 
 > cd /root/ehtools
 
 > chmod +x install.sh
 
 > ./install.sh 
+
+# To activate our ehtools PRO
+
+> ./install.sh
+
+Enter your ehtools activation key!
+Or buy it on ehtools site!
+(\e[4;93mactivation_key\e[0m\en)> 
 
 # To install our ehtools Lite
 
@@ -163,7 +171,7 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 > Bourne-again shell and Gnome-terminal shell
 
-> Good internet connection for server support
+> Good internet connection for server support (only ehtools PRO)
 
 # To uninstall ehtools 
 
