@@ -33,32 +33,6 @@
   <a href="https://mobile.twitter.com/ehtools">
     <img src="https://img.shields.io/badge/ehtools-twitter-blue.svg">
  </a>
- <h4 align="center">Files</h4>
-<p align="center">
- <a href="https://github.com/entynetproject/ehtools">
-      <img src="https://img.shields.io/badge/files-31-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject/ehtools">
-    <img src="https://img.shields.io/badge/folders-6-blue.svg">
- </a>
-  <a href="https://github.com/entynetproject/ehtools/tree/master/lib">
-      <img src="https://img.shields.io/badge/folder-/lib-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject/ehtools/tree/master/etc">
-      <img src="https://img.shields.io/badge/folder-/etc-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject/ehtools/tree/master/bin">
-    <img src="https://img.shields.io/badge/folder-/bin-blue.svg">
-  </a>
-<a href="https://github.com/entynetproject/ehtools/tree/master/eht">
-    <img src="https://img.shields.io/badge/folder-/eht-green.svg?maxAge=2592000">
-  </a>
-<a href="https://github.com/entynetproject/ehtools/tree/master/ls">
-    <img src="https://img.shields.io/badge/folder-/ls-green.svg?maxAge=2592000">
-</a>
-<a href="https://github.com/entynetproject/ehtools/tree/master/etc/root">
-    <img src="https://img.shields.io/badge/folder-/etc/root-green.svg?maxAge=2592000">
-</a>
 </p>
 
 ![Снимок экрана 2019-04-07 в 11 23 56](https://user-images.githubusercontent.com/43011806/55681017-270a5d80-592a-11e9-865c-0ca07581b78c.png)
