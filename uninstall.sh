@@ -70,7 +70,7 @@
 	WHS="\e[1;37m"
 
 {
-ASESR="$( timeout -s SIGTERM 1 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+ASESR="$( timeout -s SIGTERM 3 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 } &> /dev/null
 
