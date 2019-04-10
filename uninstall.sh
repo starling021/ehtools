@@ -68,24 +68,8 @@
 	LGYS="\e[0;37m"
 #white start
 	WHS="\e[1;37m"
-
-{
-ASESR="$( timeout -s SIGTERM 3 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
-KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
-} &> /dev/null
-
-if [[ "$ASESR" != "" ]]
-then 
-
-KEYKE="$( curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
-
-if [[ "$KEYEK" != "$KEYKE" ]]
-then
-
-sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Failed to open session for uninstall.sh, did you buy ehtools?"$CE""
-sleep 1
-exit
+	
+	
 
 fi
 
