@@ -26,8 +26,6 @@ h=$(( RANDOM% 7999+1001));
 g=$(( RANDOM% 7999+1001)); 
 
 {
-chattr -i /etc/ehtools
-chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/service
 chattr -i /etc/ehtools/root/service/late
 chattr -i /etc/ehtools/root/service/ehtkey.txt
