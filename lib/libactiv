@@ -26,6 +26,12 @@ h=$(( RANDOM% 7999+1001));
 g=$(( RANDOM% 7999+1001)); 
 
 {
+chattr -i /etc/ehtools
+chattr -i /etc/ehtools/root
+chattr -i /etc/ehtools/root/service
+chattr -i /etc/ehtools/root/service/late
+chattr -i /etc/ehtools/root/service/ehtkey.txt
+chattr -i /etc/ehtools/root/service/late/ehtkey.txt
 rm -r /etc/ehtools
 } &> /dev/null
 
@@ -36,3 +42,7 @@ mkdir /etc/ehtools/root/service/late
 echo "$r-$s-$h-$g" >> /etc/ehtools/root/service/late/ehtkey.txt
 echo "$ACTKEY" >> /etc/ehtools/root/service/ehtkey.txt
 sleep 3
+
+cd /root/ehtools/lib
+chmod +x libstrict
+./libstrict
