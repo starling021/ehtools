@@ -177,17 +177,32 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 # System requirements 
 
-    3) Full root access and access to /root folder
+> Full root access and access to /root folder
 
-    2) Bourne-again shell and Gnome-terminal shell
 
-    1) Good internet connection for server support (only ehtools PRO)
+> Bourne-again shell and Gnome-terminal shell
+
+    INFO: Bourne-again shell and Gnome-terminal shell needed
+    for ehtools GUI and also without Gnome-terminall shell 
+    modules such as (eht1, eht2 and etc.) will not work!
+
+> Good internet connection for server support (only ehtools PRO)
+
+    INFO: The server support for ehtools PRO is one of system 
+    requirements, it is needed for collect information about 
+    ehtools crashes and it is also needed for check product 
+    status such as (you bought ehtools/you did not buy ehtools)
 
 # To uninstall ehtools 
 
 > ./uninstall.sh
 
 # Ehtools update helper (euh)
+
+    WARNING: Update option now is not working and
+    you should use this tool if you want to update ehtools
+    but payload in ehtools update helper named "hard reinstall"
+    and this is not safe for ehtools!
 
 If you have some problems with update use our "Ehtools update helper"
 Last time, configuration errors of our program occur and it can not be updated by itself.
@@ -229,7 +244,10 @@ Do it when you are going to exit from ehtools
 
 Do not do it when you are going to exit from ehtools
     
-    3) do not exit from metasploit menu (4), from tools menu (9) or from shotcuts menu (ks), make exit only from main menu!
+    3) do not exit from metasploit menu (4), 
+    from tools menu (9) or 
+    from shotcuts menu (ks), 
+    make exit only from main menu!
 
 ![Снимок экрана 2019-04-07 в 11 21 51](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
 
