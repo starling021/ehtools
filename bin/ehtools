@@ -35,8 +35,6 @@
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
 
-printf '\033]2;Checking...\a'
-
 #yellow start 
 	YS="\e[1;33m"
 #blue start 
@@ -82,13 +80,13 @@ KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 if [[ "$ASESR" != "" ]]
 then 
 
-KEYKE="$( curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
+KEYKE="$( timeout -s SIGTERM 3 curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
 
 if [[ "$KEYEK" != "$KEYKE" ]]
 then
 
 sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtools, did you buy ehtools?"$CE""
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtools! "$CE"("$YS"it's may be caused by the fact that you have not bought ehtools or by bad internet connection!"$CE")"
 sleep 1
 exit
 
