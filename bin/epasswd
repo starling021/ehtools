@@ -207,7 +207,7 @@ done
 
 clear
 printf '\033]2;ehtools password changer\a'
-echo -e "Are you want to change password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "Do you want to change password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So, select 'yes' but remember it!"
 read -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
 
