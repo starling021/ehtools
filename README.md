@@ -149,15 +149,15 @@ Part of the fun of Ehtools is how easy it is to add new tools to our arsenal. To
 
 From the next menu, the tools are broken down into major categories, with options for managing the installation of scripts. The options presented are:
 
-> 1 - Wi-Fi tools (tools for attacking wireless networks).
+    1 - Wi-Fi tools (tools for attacking wireless networks).
 
-> 2 - Remote access (tools for getting remote access to other devices and remotely managing them).
+    2 - Remote access (tools for getting remote access to other devices and remotely managing them).
 
-> 3 - Information gathering (collecting intelligence on people or website).
+    3 - Information gathering (collecting intelligence on people or website).
 
-> 4 - Website tools (tools for exploiting or attacking sites).
+    4 - Website tools (tools for exploiting or attacking sites).
 
-> 5 - Other (a miscellaneous collection of other hacking tools)
+    5 - Other (a miscellaneous collection of other hacking tools)
 
 You can also manage your installed tools by accessing option 6. To download Pupy, we'll go to option 2, which is remote access. Here, we will see a list of different tools for remote access, and we can select option 3 for Pupy. Here, we can see Pupy is not installed because it appears in red.
 
@@ -177,11 +177,11 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 # System requirements 
 
-> Full root access and access to /root folder
+    3) Full root access and access to /root folder
 
-> Bourne-again shell and Gnome-terminal shell
+    2) Bourne-again shell and Gnome-terminal shell
 
-> Good internet connection for server support (only ehtools PRO)
+    1) Good internet connection for server support (only ehtools PRO)
 
 # To uninstall ehtools 
 
@@ -200,7 +200,8 @@ if not working:
 
 # Modules (BETA) 
 
-This is only BETA feature for now but you can try it today!
+    WARNING: This is only BETA feature for now but you can try it today!
+    And we recommend you to try modules (BETA)!
 
 Modules (BETA) - the function that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start. To activate this function, perform the following steps (ONLY AFTER INSTALLING EHTOOLS WITH INSTALL.SH):
 
@@ -214,11 +215,11 @@ To activate, for example eht1 module after installing modules (BETA) run command
 
 # How to protect ehtools/ehtoolslite
 
-> create login and password from install.sh (login: ehtools password: sloothe)
+    1) create login and password from install.sh (login: ehtools password: sloothe)
 
-> when you are going to exit framework, exit with shortcuts - 0 or exit (DO NOT JUST CLOSE EHTOOLS WINDOW!)
+    2) when you are going to exit framework, exit with shortcuts - 0 or exit (DO NOT JUST CLOSE EHTOOLS WINDOW!)
 
-> do not exit from metasploit menu (4), from tools menu (9) or from shotcuts menu (ks), make exit only from main menu!
+    3) do not exit from metasploit menu (4), from tools menu (9) or from shotcuts menu (ks), make exit only from main menu!
 
 ![Снимок экрана 2019-04-07 в 11 21 51](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
 
