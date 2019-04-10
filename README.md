@@ -163,6 +163,8 @@ You can also manage your installed tools by accessing option 6. To download Pupy
 
 > Bourne-again shell and Gnome-terminal shell
 
+> Good internet connection for server support
+
 # To uninstall ehtools 
 
 > ./uninstall.sh
