@@ -215,10 +215,16 @@ To activate, for example eht1 module after installing modules (BETA) run command
 
 # How to protect ehtools/ehtoolslite
 
+Do it with install.sh
+   
     1) create login and password from install.sh (login: ehtools password: sloothe)
 
+Do it when you are going to exit from ehtools
+    
     2) when you are going to exit framework, exit with shortcuts - 0 or exit (DO NOT JUST CLOSE EHTOOLS WINDOW!)
 
+Do not do it when you are going to exit from ehtools
+    
     3) do not exit from metasploit menu (4), from tools menu (9) or from shotcuts menu (ks), make exit only from main menu!
 
 ![Снимок экрана 2019-04-07 в 11 21 51](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
