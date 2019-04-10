@@ -125,23 +125,23 @@ To begin, we can access data about the network we're currently connected to, as 
 
 This allows us to do things like scan the network for other devices. This part of Ehtools Framework gives us better visibility on a network and situational awareness of what devices are around us. The various information can be broken down as follows:
 
-> if - Runs ifconfig and gives the names and information about all network devices.
+    if - Runs ifconfig and gives the names and information about all network devices.
 
-> 1 - Enable wlan0 (d1 disables it).
+    1 - Enable wlan0 (d1 disables it).
 
-> 2 - Enable wlan0mon (d2 disables it).
+    2 - Enable wlan0mon (d2 disables it).
 
-> 3 - Randomize or set the MAC address to a specific value.
+    3 - Randomize or set the MAC address to a specific value.
 
-> 7 - View the public IP address your computer is leaving on sites you visit.
+    7 - View the public IP address your computer is leaving on sites you visit.
 
-> 19 - Look up the physical address of a given IP address to determine it's relative location.
+    19 - Look up the physical address of a given IP address to determine it's relative location.
 
-> scan - Start an ARP scan on the network to discover nearby devices.
+    scan - Start an ARP scan on the network to discover nearby devices.
 
-> start - Start monitor mode on the wireless network adapter.
+    start - Start monitor mode on the wireless network adapter.
 
-> stop - Stop wireless monitor mode on the network adapter.
+    stop - Stop wireless monitor mode on the network adapter.
 
 # Install new tools
 
