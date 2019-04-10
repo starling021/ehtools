@@ -73,11 +73,19 @@
 
 # To activate our ehtools PRO
 
+To activate ehtools PRO you need
+
+run install.sh and enter your activation
+
+key
+
 > ./install.sh
 
-Enter your ehtools activation key!
-Or buy it on ehtools site!
-(\e[4;93mactivation_key\e[0m\en)> 
+    Enter your ehtools activation key!
+
+    Or buy it on ehtools site!
+
+    (activation_key)> 
 
 # To install our ehtools Lite
 
