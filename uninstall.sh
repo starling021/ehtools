@@ -74,6 +74,11 @@ KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 KEYKE="$( curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
 } &> /dev/null
 
+ASESR="$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')"
+
+if [[ "$ASESR" != "" ]]
+then 
+
 if [[ "$KEYEK" != "$KEYKE" ]]
 then
 
