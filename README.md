@@ -217,11 +217,15 @@ To activate, for example eht1 module after installing modules (BETA) run command
 
 Do it with install.sh
    
-    1) create login and password from install.sh (login: ehtools password: sloothe)
+    1) create login and password from install.sh 
+    (defaults: login: ehtools password: sloothe)
 
 Do it when you are going to exit from ehtools
     
-    2) when you are going to exit framework, exit with shortcuts - 0 or exit (DO NOT JUST CLOSE EHTOOLS WINDOW!)
+    2) when you are going to exit framework,
+    exit with shortcuts - 0 or exit 
+    
+    WARNING: Do not just close ehtools window!
 
 Do not do it when you are going to exit from ehtools
     
