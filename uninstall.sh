@@ -89,6 +89,13 @@ exit
 
 fi
 
+else
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"There is no connection!"$CE""
+sleep 1
+exit
+fi
+
 clear
 printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
