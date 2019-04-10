@@ -125,23 +125,47 @@ To begin, we can access data about the network we're currently connected to, as 
 
 This allows us to do things like scan the network for other devices. This part of Ehtools Framework gives us better visibility on a network and situational awareness of what devices are around us. The various information can be broken down as follows:
 
-    if - Runs ifconfig and gives the names and information about all network devices.
+(if) 
+ 
+    INFO: Runs ifconfig and gives the names and information 
+    about all network devices.
 
-    1 - Enable wlan0 (d1 disables it).
+(1) 
 
-    2 - Enable wlan0mon (d2 disables it).
+    INFO: Enable wlan0.
+    (d1 disables it)
 
-    3 - Randomize or set the MAC address to a specific value.
+(2) 
 
-    7 - View the public IP address your computer is leaving on sites you visit.
+    INFO: Enable wlan0mon.
+    (d2 disables it)
 
-    19 - Look up the physical address of a given IP address to determine it's relative location.
+(3)     
+   
+    INFO: Randomize or set the MAC address to a specific value.
 
-    scan - Start an ARP scan on the network to discover nearby devices.
+(7)      
 
-    start - Start monitor mode on the wireless network adapter.
+    INFO: View the public IP address your computer 
+    is leaving on sites you visit.
 
-    stop - Stop wireless monitor mode on the network adapter.
+(19)     
+
+    INFO: Look up the physical address of a given 
+    IP address to determine it's relative location.
+
+(scan)   
+
+    INFO: Start an ARP scan on the network 
+    to discover nearby devices.
+
+(start)  
+      
+    INFO: Start monitor mode on the wireless network adapter.
+
+(stop)  
+
+    INFO: Stop wireless monitor mode on the network adapter.
 
 # Install new tools
 
@@ -149,17 +173,32 @@ Part of the fun of Ehtools is how easy it is to add new tools to our arsenal. To
 
 From the next menu, the tools are broken down into major categories, with options for managing the installation of scripts. The options presented are:
 
-    1 - Wi-Fi tools (tools for attacking wireless networks).
+> 1) Wi-Fi tools (tools for attacking wireless networks).
 
-    2 - Remote access (tools for getting remote access to other devices and remotely managing them).
+    INFO: Wi-Fi options this is tools for attacking wireless
+    networks and network databases.
 
-    3 - Information gathering (collecting intelligence on people or website).
+> 2) Remote access (tools for getting remote access to other devices and remotely managing them).
 
-    4 - Website tools (tools for exploiting or attacking sites).
+    INFO: Remote access means tools for getting access to 
+    other devices and remotely managing them.
+    
+> 3) Information gathering (collecting intelligence on people or website).
 
-    5 - Other (a miscellaneous collection of other hacking tools)
+    INFO: Information gathering tools, tools for collecting
+    intelligence on peaple or website.
+    
+> 4) Website tools (tools for exploiting or attacking sites).
 
-You can also manage your installed tools by accessing option 6. To download Pupy, we'll go to option 2, which is remote access. Here, we will see a list of different tools for remote access, and we can select option 3 for Pupy. Here, we can see Pupy is not installed because it appears in red.
+    INFO: Website tools, tools for exploiting or attacking
+    sites and network databases.
+   
+> 5) Other (a miscellaneous collection of other hacking tools)
+
+    INFO: Other tools this is collection of miscellaneous
+    hacking tools.
+
+You can also manage your installed tools by accessing option 6. To download Pupy, we'll go to option 2, which is remote access. Here, we will see a list of different tools for remote access, and we can select option 3 for Pupy.
 
 # Why our Framework? 
 
@@ -192,10 +231,10 @@ You can also manage your installed tools by accessing option 6. To download Pupy
     grab a network handshake or download a new hacking tool like Pupy by just 
     selecting from one of the menu options!
 
-> More than 100 tools you can install from ehtools or ehtoolslite
+> More than 100 tools you can install from ehtools or ehtoolslit
 
-    INFO: Our framework has more than 100 packages it 
-    ehtools archive!
+    INFO: Our framework has more than 100 packages in
+    ehtools archive (on server this archive: 2.3 Tb)!
 
 ![Снимок экрана 2019-04-07 в 11 23 56](https://user-images.githubusercontent.com/43011806/55681017-270a5d80-592a-11e9-865c-0ca07581b78c.png)
 
@@ -259,19 +298,19 @@ To activate, for example eht1 module after installing modules (BETA) run command
 
 > Do it with install.sh
    
-    1) create login and password from install.sh 
+    COUNCIL: Create login and password from install.sh 
     (defaults: login: ehtools password: sloothe)
 
 > Do it when you are going to exit from ehtools
     
-    2) when you are going to exit framework,
-    exit with shortcuts - 0 or exit 
+    COUNCIL: When you are going to exit framework,
+    exit with shortcuts - 0 or exit. 
     
     WARNING: Do not just close ehtools window!
 
 > Do not do it when you are going to exit from ehtools
     
-    3) do not exit from metasploit menu (4), 
+    COUNCIL: Do not exit from metasploit menu (4), 
     from tools menu (9) or 
     from shotcuts menu (ks), 
     make exit only from main menu!
