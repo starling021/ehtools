@@ -96,6 +96,18 @@ sleep 1
 exit
 fi
 
+if [[ "$DIR" != "root" ]]
+then
+
+sleep 1
+echo -e "$RS"run it as"$CE" "$YS"root"$CE"
+sleep 1
+echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
+sleep 1
+exit
+
+fi
+
 clear
 printf '\033]2;ehtools password changer\a'
 echo -e "            ____   "
