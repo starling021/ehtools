@@ -26,6 +26,13 @@ exit
 
 fi
 
+else
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"There is no connection!"$CE""
+sleep 1
+exit
+fi
+
 {
 chattr +i /etc/ehtools/config
 chattr +i /etc/ehtools
