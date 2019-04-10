@@ -350,9 +350,9 @@ then
 sleep 1
 echo -e "["$RS"*"$CE"] "$RS"ehtconsole : Operation not permitted!"$CE""
 sleep 1
-echo -e "["$YS"!"$CE"] "$RS"Permission denied!"$CE""
+echo -e "["$RS"*"$CE"] "$RS"Permission denied!"$CE""
 sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Use it as"$CE" "$YS"ehtools"$CE""
+echo -e "["$YS"!"$CE"] "$RS"Use it as"$CE" "$YS"ehtools"$CE""
 sleep 1
 echo -e "["$YS"!"$CE"] "$YS"/bin/ehtools/ehtconsole : "$CE""$RS"returned a fatal error "$CE"("$YS"permission denied"$CE")"
 sleep 1
