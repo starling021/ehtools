@@ -75,7 +75,8 @@
 
 This key you can buy on our ehtools website for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
 
-    WARNING: The key works only one week then it changes! You need to have time to enter it before it is updated!
+    WARNING: The key works only one week then it changes!
+    You need to have time to enter it before it is updated!
 
 > ./install.sh
 
@@ -85,7 +86,8 @@ This key you can buy on our ehtools website for one dollar! This key is used to 
     
 Also, we do not recommend to change the source code of ehtools because it is very complex and you can mess up something and disrupt the framework!
 
-    WARNING: We do not recommend to change ehtools code because you can disrupt framework!
+    WARNING: We do not recommend to change ehtools source code
+    because you can disrupt framework!
 
 # To install our ehtools Lite
 
