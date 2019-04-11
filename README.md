@@ -342,11 +342,11 @@ Server support for ehtools PRO is very important, as all error reports are sent 
     
 If in consequence of bad Internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
 
-> if there is the bad internet connection, ehtools will say you this:
+> If there is the bad internet connection, ehtools will say you this:
 
     [*] There is no connection!
     
-> if you did not buy ehtools, ehtools will say you this:
+> If you did not buy ehtools, ehtools will say you this:
 
     [*] Failed to open session for ehtools!
     
