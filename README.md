@@ -80,7 +80,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 > ./uninstall.sh
 
     WARNING: Do not do it if you want to reinstall
-    ehtools PRO that you bought, do not do it because
+    ehtools PRO which you bought, do not do it because
     you will need to buy it one more time!
 
 # Install.sh interface
