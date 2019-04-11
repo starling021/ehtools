@@ -75,6 +75,14 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 > ./install.sh
 
+# To uninstall ehtools/ehtoolslite
+
+> ./uninstall.sh
+
+    WARNING: Do not do it if you want to reinstall
+    ehtools PRO that you bought, do not do it because
+    you will need to buy it one more time!
+
 # Install.sh interface
 
 ![Снимок экрана 2019-04-07 в 11 17 52](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
@@ -233,9 +241,30 @@ You can also manage your installed tools by accessing option 6. To download Pupy
     ehtools crashes and it is also needed for check product 
     status such as (you bought ehtools/you did not buy ehtools)
 
-# To uninstall ehtools 
+# About ehtools team
 
-> ./uninstall.sh
+> Ivan Nikolsky
+
+    INFO: Main ehtools developer
+    
+> DJ Mobley
+
+    INFO: Ehtools ascii designer
+    
+> TheCakeIsFalse
+
+    INFO: Ehtools modules developer
+    
+<h4 align="center">Resources</h4>
+<p align="center">
+</a>
+<a href="https://entynethacker.wixsite.com/ehtools">
+    <img src="https://img.shields.io/badge/ehtools-site-green.svg?maxAge=2592000">
+ </a>
+  <a href="https://mobile.twitter.com/ehtools">
+    <img src="https://img.shields.io/badge/ehtools-twitter-blue.svg">
+ </a>
+</p>
 
 # Ehtools update helper (euh)
 
