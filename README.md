@@ -153,6 +153,9 @@ This allows us to do things like scan the network for other devices. This part o
 
 Part of the fun of Ehtools is how easy it is to add new tools to our arsenal. To demonstrate this, let's download Pupy, a Python-based RAT designed to take control of other computers on the network. We can select option 9 to access the list of tools in Ehtools Framework.
 
+    INFO: Our framework has more than 100 packages in
+    ehtools archive (on server this archive: 2.3 Tb)!
+
 From the next menu, the tools are broken down into major categories, with options for managing the installation of scripts. The options presented are:
 
 > 1) Wi-Fi tools (tools for attacking wireless networks).
@@ -213,7 +216,7 @@ You can also manage your installed tools by accessing option 6. To download Pupy
     grab a network handshake or download a new hacking tool like Pupy by just 
     selecting from one of the menu options!
 
-> More than 100 tools you can install from ehtools or ehtoolslit
+> More than 100 tools you can install from ehtools or ehtoolslite
 
     INFO: Our framework has more than 100 packages in
     ehtools archive (on server this archive: 2.3 Tb)!
@@ -330,6 +333,23 @@ To activate, for example eht1 module after installing modules (BETA) run command
 </a>
 </p>
 
+# About ehtools PRO server support
+
+Server support for ehtools PRO is very important, as all error reports are sent to it in order to improve and fix vulnerabilities and bugs!
+
+    COUNCIL: Make a good internet connection
+    for ehtools, to help ehtools access to server!
+    
+If in consequence of bad Internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
+
+> if there is the bad internet connection, ehtools will say you this:
+
+    [*] There is no connection!
+    
+> if you did not buy ehtools, ehtools will say you this:
+
+    [*] Failed to open session for ehtools!
+    
 # How to protect ehtools/ehtoolslite
 
 > Do it with install.sh
