@@ -356,7 +356,7 @@ read -p $'(\e[4;93mkey\e[0m\en)> ' DADI
 echo $DADI >> /root/ehtools/etc/config
 
 clear
-printf '\033]2;ehtoolslite INSTALLER\a'
+printf '\033]2;ehtools INSTALLER\a'
 sleep 3
 echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
 sleep 0.5
