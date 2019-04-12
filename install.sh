@@ -75,7 +75,7 @@ fi
 
 else
 sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Can't connect with server: there is no connection!"$CE""
+echo -e "["$RS"*"$CE"] "$RS"Can't connect with server: There is no connection!"$CE""
 sleep 1
 exit
 fi
