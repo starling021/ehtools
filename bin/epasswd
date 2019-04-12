@@ -69,14 +69,14 @@
 	WHS="\e[1;37m"
 
 {
-ASESR="$( timeout -s SIGTERM 8 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+ASESR="$( timeout -s SIGTERM 20 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 } &> /dev/null
 
 if [[ "$ASESR" != "" ]]
 then 
 
-KEYKE="$( timeout -s SIGTERM 8 curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
+KEYKE="$( timeout -s SIGTERM 20 curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
 
 if [[ "$KEYEK" != "$KEYKE" ]]
 then
@@ -92,7 +92,7 @@ fi
 
 else
 sleep 1
-echo -e "["$RS"*"$CE"] "$RS"There is no connection!"$CE""
+echo -e "["$RS"*"$CE"] "$RS"Can't connect with server: There is no connection!"$CE""
 sleep 1
 exit
 fi
