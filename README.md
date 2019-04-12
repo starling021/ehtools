@@ -18,7 +18,7 @@
   <a href="https://github.com/entynetproject/ehtools/releases">
     <img src="https://img.shields.io/github/release/entynetproject/ehtools.svg">
   </a>
-  <a href="https://github.com/entynetproject/ehtools"><img src="https://img.shields.io/badge/Supported%20OS-KaliLinux, ParrotSecurityOS-brightgreengreen.svg" alt="Build" data-canonical-src="https://img.shields.io/badge/Supported%20OS-Linux-brightgreengreen.svg" style="max-width:100%;"></a>
+  <a href="https://github.com/entynetproject/ehtools"><img src="https://img.shields.io/badge/Supported%20OS-KaliLinux, ParrotSecurityOS-brightgreengreen.svg" alt="Build" data-canonical-src="https://img.shields.io/badge/Supported%20OS-Linux-brightgreengreen.svg" style="max-width:100%;">
   </a>
   <a href="https://github.com/entynetproject/ehtools/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/ehtools.svg">
@@ -260,7 +260,6 @@ You can also manage your installed tools by accessing option 6. To download Pupy
     
 <h4 align="center">Resources</h4>
 <p align="center">
-</a>
 <a href="https://entynethacker.wixsite.com/ehtools">
     <img src="https://img.shields.io/badge/ehtools-site-green.svg?maxAge=2592000">
  </a>
