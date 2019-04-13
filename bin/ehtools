@@ -111,6 +111,62 @@ exit
 
 fi
 
+if [[ $1 = "-r" || $1 = "--remove" ]]
+then
+sleep 1
+printf '\033]2;Launching uninstall.sh...\a'
+echo -e "["$GNS"~"$CE"] "$GNS"Launching uninstall.sh..."$CE""
+sleep 1
+cd /root/ehtools
+chmod +x uninstall.sh
+./uninstall.sh
+exit
+
+elif [[ $1 = "-u" || $1 = "--update" ]]
+then
+sleep 1
+printf '\033]2;Launching euh...\a'
+echo -e "["$GNS"~"$CE"] "$GNS"Launching ehtools update helper..."$CE""
+sleep 1
+euh
+exit
+
+
+elif [[ $1 = "-h" || $1 = "--handshake" ]]
+then
+sleep 1
+printf '\033]2;Launching eht1...\a'
+echo -e "["$GNS"~"$CE"] "$GNS"Launching eht1..."$CE""
+sleep 1
+eht1
+exit
+
+
+elif [[ $1 = "-w" || $1 = "--wps" ]]
+then
+sleep 1
+printf '\033]2;Launching eht3...\a'
+echo -e "["$GNS"~"$CE"] "$GNS"Launching eht3..."$CE""
+sleep 1
+eht3
+exit
+
+
+elif [[ $1 = "-o" || $1 = "--options" ]]
+then
+sleep 1
+echo -e
+echo -e ""$YS"Options: "$CE""
+echo -e ""$YS"-r"$CE") Remove ehtools"
+echo -e ""$YS"-u"$CE") Update ehtools"
+echo -e ""$YS"-h"$CE") Make handshake"
+echo -e ""$YS"-w"$CE") WPS menu"
+echo -e ""$YS"-o"$CE") Options"
+echo -e
+sleep 1
+exit
+fi
+
 clear
 printf '\033]2;Ehtools Authentication\a'
 
