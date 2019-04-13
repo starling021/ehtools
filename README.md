@@ -186,6 +186,34 @@ From the next menu, the tools are broken down into major categories, with option
 
 You can also manage your installed tools by accessing option 6. To download Pupy, we'll go to option 2, which is remote access. Here, we will see a list of different tools for remote access, and we can select option 3 for Pupy.
 
+# Use quick access (only ehtools PRO)
+
+    INFO: Quick access, this is when you run ehtools
+    and for example ehtools -r to remove ehtools!
+    
+Run it to open quick access menu:
+
+> ehtools -o
+
+Run it to update ehtools:
+
+> ehtools -u
+
+Run it to remove ehtools:
+
+> ehtools -r
+
+Run it to make handshake:
+
+> ehtools -h
+
+Run it to open WPS menu:
+
+> ehtools -w
+
+    INFO: For this shortcuts you will not need
+    enter your ehtools password!
+
 # Why our Framework? 
 
 > More than 58 tools for pentesting installed by default
