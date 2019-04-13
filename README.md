@@ -18,8 +18,9 @@
   <a href="https://github.com/entynetproject/ehtools/releases">
     <img src="https://img.shields.io/github/release/entynetproject/ehtools.svg">
   </a>
-  <a href="https://github.com/entynetproject/ehtools"><img src="https://img.shields.io/badge/Supported%20OS-KaliLinux, ParrotSecurityOS-brightgreengreen.svg" alt="Build" data-canonical-src="https://img.shields.io/badge/Supported%20OS-Linux-brightgreengreen.svg" style="max-width:100%;">
-  </a>
+  <a href="https://github.com/entynetproject/ehtools">
+    <img src="https://img.shields.io/badge/language-shell-green.svg">
+ </a>
   <a href="https://github.com/entynetproject/ehtools/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/ehtools.svg">
   </a>
