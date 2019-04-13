@@ -334,7 +334,7 @@ KIP="$( cat /root/ehtools/etc/config )"
 if [[ "$PIK" != "$KIP" ]]
 then 
 sleep 1
-echo -e "["$RS"*"$CE"] "$RS"ehtconsole : Operation not permitted!"$CE""
+echo -e "["$RS"*"$CE"] "$RS"ehtconsole: Operation not permitted!"$CE""
 sleep 1
 echo -e "["$RS"*"$CE"] "$RS"Permission denied!"$CE""
 sleep 1
