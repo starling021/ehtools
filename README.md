@@ -266,6 +266,9 @@ You can also manage your installed tools by accessing option 6. To download Pupy
   <a href="https://mobile.twitter.com/ehtools">
     <img src="https://img.shields.io/badge/ehtools-twitter-blue.svg">
  </a>
+  <a href="https://mobile.twitter.com/_mobley_">
+    <img src="https://img.shields.io/badge/mobley-twitter-black.svg">
+ </a>
 </p>
 
 # Ehtools update helper (euh)
