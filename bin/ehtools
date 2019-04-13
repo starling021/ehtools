@@ -295,6 +295,7 @@ exit
 fi
 
 done
+done
 
 sleep 0.5
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
