@@ -71,14 +71,14 @@
 DIR="$( whoami )"
 
 {
-ASESR="$( timeout -s SIGTERM 20 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+ASESR="$( timeout -s SIGTERM 30 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 } &> /dev/null
 
 if [[ "$ASESR" != "" ]]
 then 
 
-KEYKE="$( timeout -s SIGTERM 20 curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
+KEYKE="$( timeout -s SIGTERM 30 curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
 
 if [[ "$KEYEK" != "$KEYKE" ]]
 then
@@ -239,6 +239,60 @@ sleep 3
 echo -e "("$YS"Try again..."$CE")"
 sleep 2
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+
+while [ "$loginer" = "root" ]
+do
+sleep 0.5
+clear
+sleep 0.5
+printf '\033]2;Ehtools Root Authentication\a'
+echo -e "You want to login as administrator"
+echo -e "$YS"Ehtools Root Authentication:"$CE"
+sleep 0.5
+passroot="$( cat /etc/ehtools/root/password )"
+read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
+
+while [ "$rootpass" != "$passroot" ]
+do
+echo -e
+echo -e "$RS"Wrong password!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
+
+done
+if [[ -f /bin/ehtools/ehtconsole ]]
+then
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+./libconf
+chattr -i /bin/ehtools/ehtconsole
+chmod +x /bin/ehtools/ehtconsole
+chattr +i /bin/ehtools/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+ehtconsole
+exit
+else
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+./libconf
+cp /root/ehtools/bin/ehtconsole /bin/ehtools
+chattr -i /bin/ehtools/ehtconsole
+chmod +x /bin/ehtools/ehtconsole
+chattr +i /bin/ehtools/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+ehtconsole
+exit
+fi
 
 done
 
