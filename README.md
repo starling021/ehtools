@@ -18,7 +18,7 @@
   <a href="https://github.com/entynetproject/ehtools/releases">
     <img src="https://img.shields.io/github/release/entynetproject/ehtools.svg">
   </a>
-  <a href="https://github.com/entynetproject/ehtools">
+  <a href="https://ru.m.wikipedia.org/wiki/Сценарий_командной_строки">
     <img src="https://img.shields.io/badge/language-shell-green.svg">
  </a>
   <a href="https://github.com/entynetproject/ehtools/issues?q=is%3Aissue+is%3Aclosed">
