@@ -37,7 +37,7 @@ CE="\e[0m"
 RS="\e[1;31m"
 YS="\e[1;33m"
 
-ASESR="$(timeout -s SIGTERM 20 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')"
+ASESR="$(timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')"
 
 if [[ "$ASESR" != "" ]]
 then 
