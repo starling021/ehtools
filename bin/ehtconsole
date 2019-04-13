@@ -347,6 +347,7 @@ sleep 1
 echo -e "["$GNS"~"$CE"] "$GNS"Running /bin/ehtools/ehtools..."$CE""
 sleep 3
 ehtools
+exit
 fi
 
 }
