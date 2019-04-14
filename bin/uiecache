@@ -94,7 +94,6 @@ exit
 fi
 fi
 
-else
 
 DIR="$( whoami )"
 
