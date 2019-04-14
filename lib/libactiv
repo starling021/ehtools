@@ -45,8 +45,8 @@ chattr -i /tmp/config/configure.txt
 } &> /dev/null
 rm /tmp/config/config.txt
 rm /tmp/config/configure.txt
-cat /etc/ehtools/root/service/late/ehtkey.txt >> /tmp/configure.txt
-cat /etc/ehtools/root/service/late/ehtkey.txt >> /tmp/config.txt
+cat /etc/ehtools/root/service/late/ehtkey.txt >> /tmp/config/configure.txt
+cat /etc/ehtools/root/service/late/ehtkey.txt >> /tmp/config/config.txt
 {
 chattr +i /tmp/config
 chattr +i /tmp/config/config.txt
