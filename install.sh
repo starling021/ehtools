@@ -37,12 +37,21 @@ CE="\e[0m"
 RS="\e[1;31m"
 YS="\e[1;33m"
 
+{
+chattr -i /tmp/config
+chattr -i /tmp/config/config.txt
+chattr -i /tmp/config/configure.txt
+} &> /dev/null
+
+mkdir /tmp/config
 echo 0 >> /tmp/config/config.txt
 echo 1 >> /tmp/config/configure.txt
 
+{
 chattr +i /tmp/config
 chattr +i /tmp/config/config.txt
 chattr +i /tmp/config/configure.txt
+} &> /dev/null
 
 ASESR="$(timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')"
 SERSE="$( cat /tmp/config.txt )"
