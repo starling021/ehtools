@@ -73,8 +73,8 @@ DIR="$( whoami )"
 {
 ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
-SERSE="$( cat /tmp/config.txt )"
-ESRES="$( cat /tmp/configure.txt )"
+SERSE="$( cat /tmp/config/config.txt )"
+ESRES="$( cat /tmp/config/configure.txt )"
 } &> /dev/null
 
 if [[ "$SERSE" != "$ESRES" ]]
