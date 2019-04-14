@@ -38,7 +38,11 @@ RS="\e[1;31m"
 YS="\e[1;33m"
 
 ASESR="$(timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')"
+SERSE="$( cat /tmp/config.txt )"
+ESRES="$( cat /tmp/configure.txt )"
 
+if [[ "$SERSE" != "$ESRES" ]]
+then
 if [[ "$ASESR" != "" ]]
 then 
 
@@ -78,6 +82,7 @@ sleep 1
 echo -e "["$RS"*"$CE"] "$RS"Can't connect with server: There is no connection!"$CE""
 sleep 1
 exit
+fi
 fi
 
 clear
