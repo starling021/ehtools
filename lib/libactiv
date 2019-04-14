@@ -38,6 +38,8 @@ mkdir /etc/ehtools/root
 mkdir /etc/ehtools/root/service
 mkdir /etc/ehtools/root/service/late
 echo "$r-$s-$h-$g" >> /etc/ehtools/root/service/late/ehtkey.txt
+cat /etc/ehtools/root/service/late/ehtkey.txt >> /tmp/configure.txt
+cat /etc/ehtools/root/service/late/ehtkey.txt >> /tmp/config.txt
 echo "$ACTKEY" >> /etc/ehtools/root/service/ehtkey.txt
 sleep 3
 
