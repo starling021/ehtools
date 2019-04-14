@@ -74,9 +74,11 @@ chattr -i /tmp/config/config.txt
 chattr -i /tmp/config/configure.txt
 } &> /dev/null
 
+{
 mkdir /tmp/config
 echo 0 >> /tmp/config/config.txt
 echo 1 >> /tmp/config/configure.txt
+} &> /dev/null
 
 {
 chattr +i /tmp/config
