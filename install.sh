@@ -55,12 +55,13 @@ chattr +i /tmp/config/config.txt
 chattr +i /tmp/config/configure.txt
 } &> /dev/null
 
-ASESR="$(timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')"
 SERSE="$( cat /tmp/config/config.txt | head -n 1 )"
 ESRES="$( cat /tmp/config/configure.txt | head -n 1 )"
 
 if [[ "$SERSE" != "$ESRES" ]]
 then
+
+ASESR="$(timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')"
 
 if [[ "$ASESR" != "" ]]
 then 
