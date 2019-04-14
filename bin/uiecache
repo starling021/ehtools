@@ -235,9 +235,11 @@ echo -e
 echo -e "Uninstall ehtools login and just ehtools cache."
 echo -e
 echo -e  "    --all          Uninstall all ehtools cache."
+echo -e  "                     (standart old uiecache)
 echo -e  "    --path <path>  Uninstall ehtools cache from your path."
-echo -e "    --restart      Restart all ehtools processes and services."
-                     
+echo -e  "                     (uninstall cache from path)
+echo -e  "    --restart      Restart all ehtools processes and services."
+echo -e  "                     (restart ehtools system)                     
 echo -e  "    --help         Give this help list."
 echo -e
 exit
