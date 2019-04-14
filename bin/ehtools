@@ -73,11 +73,11 @@ DIR="$( whoami )"
 {
 ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
 KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
-SASER="$( cat /etc/ehtools/root/service/late/lastlog )"
+SERSE="$( cat /etc/ehtools/root/service/late/ehtkey.txt)"
+ESRES="$( cat /mnt/configure )"
 } &> /dev/null
 
-
-if [[ "$SASER" != "" ]]
+if [[ "$SERSE" != "$ESRES" ]]
 then
 
 if [[ "$ASESR" != "" ]]
@@ -103,10 +103,7 @@ echo -e "["$RS"*"$CE"] "$RS"Can't connect with server: There is no connection!"$
 sleep 1
 exit
 fi
-
 fi
-
-echo >> /etc/ehtools/root/service/late/lastlog
 
 if [[ "$DIR" != "root" ]]
 then
