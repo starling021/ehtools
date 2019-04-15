@@ -313,7 +313,7 @@ Run it to open WPS menu:
 
 # Ehtools utilities 
 
-# > Ehtools update helper (euh)
+> # Ehtools update helper (euh)
 
     WARNING: Update option now is not working and
     you should use this tool if you want to update ehtools
