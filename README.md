@@ -311,11 +311,7 @@ Run it to open WPS menu:
  </a>
 </p>
 
-# Ehtools utilities 
-
-> # Ehtools update helper (euh) <a href="https://mobile.twitter.com/_mobley_">
-    <img src="https://img.shields.io/badge/mobley-twitter-black.svg">
- </a>
+# Ehtools update helper (euh)
 
     WARNING: Update option now is not working and
     you should use this tool if you want to update ehtools
@@ -331,7 +327,7 @@ if not working:
 
 > euh --update or euh -u
 
-> # Modules (BETA) 
+# Modules (BETA) 
 
     WARNING: This is only BETA feature for now but you can try it today!
     And we recommend you to try modules (BETA)!
