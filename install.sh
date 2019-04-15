@@ -368,7 +368,7 @@ sleep 5
 echo -e
 echo -e
 
-uiecache
+uiecache --all
 
 sleep 3
 clear
