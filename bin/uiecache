@@ -130,59 +130,44 @@ exit
 
 elif [[ $1 = "--path" ]]
 then
-read -p $'(path to clean)> ' PATH
+read -p $'(path to clean)> ' SAS
 sleep 2
-printf '\033]2;Uiecache ($PATH)...\a'
+printf '\033]2;Uiecache ($SAS)...\a'
 
 {
 rm $PATH/login
 rm $PATH/password
 } &> /dev/null
 
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
-echo -e "[*] Cleaning "$PATH"..."
-sleep 0.5
+function ProgressBar {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rUiecache ($SAS): [${_fill// /\#}${_empty// /-}] ${_progress}%%"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.2
+    ProgressBar ${number} ${_end}
+done
+
+echo -e
 exit
+
 
 elif [[ $1 = "--restart" ]]
 then
