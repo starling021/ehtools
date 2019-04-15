@@ -313,7 +313,9 @@ Run it to open WPS menu:
 
 # Ehtools utilities 
 
-> # Ehtools update helper (euh)
+> # Ehtools update helper (euh) <a href="https://mobile.twitter.com/_mobley_">
+    <img src="https://img.shields.io/badge/mobley-twitter-black.svg">
+ </a>
 
     WARNING: Update option now is not working and
     you should use this tool if you want to update ehtools
