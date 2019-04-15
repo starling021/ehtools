@@ -329,7 +329,7 @@ if not working:
 
 > euh --update or euh -u
 
-# Modules (BETA) 
+> # Modules (BETA) 
 
     WARNING: This is only BETA feature for now but you can try it today!
     And we recommend you to try modules (BETA)!
