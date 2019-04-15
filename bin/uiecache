@@ -132,11 +132,11 @@ elif [[ $1 = "--path" ]]
 then
 read -p $'(path to clean)> ' SAS
 sleep 2
-printf '\033]2;Uiecache ($SAS)...\a'
+printf '\033]2;Uiecache ('$SAS')...\a'
 
 {
-rm $PATH/login
-rm $PATH/password
+rm $SAS/login
+rm $SAS/password
 } &> /dev/null
 
 function ProgressBar {
