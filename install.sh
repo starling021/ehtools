@@ -44,7 +44,6 @@ chattr -i /tmp/config/configure.txt
 } &> /dev/null
 
 {
-rm -r /tmp/config
 mkdir /tmp/config
 echo 0 >> /tmp/config/config.txt
 echo 1 >> /tmp/config/configure.txt
