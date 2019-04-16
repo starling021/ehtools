@@ -415,19 +415,21 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     
 # How to protect ehtools?
 
-> Do it with install.sh
+> Do it with install.sh:
    
     COUNCIL: Create login and password from install.sh 
     (defaults: login: ehtools password: sloothe)
 
-> Do it when you are going to exit from ehtools
+> Do it when you are going to exit from ehtools:
     
     COUNCIL: When you are going to exit framework,
     exit with shortcuts - 0 or exit. 
+ 
+> Do not do it when you are going to exit from ehtools:
     
     WARNING: Do not just close ehtools window!
 
-> Do not do it when you are going to exit from ehtools
+> Do not do it when you are going to exit from ehtools:
     
     COUNCIL: Do not exit from metasploit menu (4), 
     from tools menu (9) or 
