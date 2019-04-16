@@ -366,7 +366,7 @@ To activate, for example eht1 module after installing modules (BETA) run command
 
 Ehtools password changer (epasswd) - tool (ehtools utility) that help you to change your ehtools password or ehtools root password!
 
-    INFO: This is tool that can change ehtools or ehtools root password!
+   INFO: This is tool that can change ehtools or ehtools root password!
 
 > epasswd
 
@@ -382,8 +382,8 @@ After this enter your new ehtools login (example: admin) and your new ehtools pa
 
 > ((new)password)> 1234
 
-    WARNING: In no case do not forget this password, 
-    it will not be restored and you will have to reinstall ehtools!
+   WARNING: In no case do not forget this password, 
+   it will not be restored and you will have to reinstall ehtools!
 
 To cange root password login to epasswd like ehtools root:
 
@@ -399,8 +399,8 @@ After this enter your new ehtools root password (example: 1234)
 
 > ((new)password)> 1234
 
-     WARNING: In no case do not forget this password,
-     it will not be restored and you will have to reinstall ehtools!
+    WARNING: In no case do not forget this password,
+    it will not be restored and you will have to reinstall ehtools!
 
 # Ehtools files and folders
 
