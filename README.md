@@ -322,6 +322,7 @@ Run it to uninstall all ehtools cache:
 > uiecache --all
 
 Run it to uninstall ehtools cache from path:
+
 > uiecache --path <path>
   
 Run it to restart ehtools services:
