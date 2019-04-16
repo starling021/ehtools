@@ -225,7 +225,7 @@ Run it to open WPS menu:
     INFO: For this shortcuts you will not need
     enter your ehtools password!
 
-# Why our Framework? 
+# Why our framework? 
 
 > More than 58 tools for pentesting installed by default
 
@@ -311,12 +311,11 @@ Run it to open WPS menu:
  </a>
 </p>
 
-# Ehtools/ehtoolslite utilities
-
+# Ehtools utilities
 
 > # Uiecache <img src="https://img.shields.io/badge/utility-uiecache-black.svg">
 
-Uiecache - tool (ehtools utility) to clean/uninstall ehtools login and just ehtools/ehtoolslite cache!
+Uiecache - tool (ehtools utility) to clean/uninstall ehtools login and just ehtools cache!
 
 Run it to uninstall all ehtools cache:
 
@@ -414,7 +413,7 @@ If in consequence of bad Internet connection ehtools will not be able to communi
 
     [*] Failed to open session for ehtools!
     
-# How to protect ehtools/ehtoolslite
+# How to protect ehtools?
 
 > Do it with install.sh
    
