@@ -315,7 +315,7 @@ Run it to open WPS menu:
 
 > # Uiecache <img src="https://img.shields.io/badge/utility-uiecache-black.svg">
 
-Uiecache - tool (ehtools utility) to clean/uninstall ehtools login and just ehtools cache!
+    INFO: Uiecache - tool (ehtools utility) to clean/uninstall ehtools login and just ehtools cache!
 
 Run it to uninstall all ehtools cache:
 
