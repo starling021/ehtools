@@ -313,6 +313,26 @@ Run it to open WPS menu:
 
 # Ehtools/ehtoolslite utilities
 
+
+> # Uiecache <img src="https://img.shields.io/badge/utility-uiecache-gray.svg">
+
+Uiecache - tool (ehtools utility) to clean/uninstall ehtools login and just ehtools/lite cache!
+
+Run it to uninstall all ehtools cache:
+
+> uiecache --all
+
+Run it to uninstall ehtools cache from path:
+> uiecache --path <path>
+  
+Run it to restart ehtools services:
+
+> uiecache --restart
+
+Run it to get help:
+
+> uiecache --help
+
 > # Ehtools update helper (euh) <img src="https://img.shields.io/badge/utility-euh-brown.svg">
 
     WARNING: Update option now is not working and
