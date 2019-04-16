@@ -311,7 +311,9 @@ Run it to open WPS menu:
  </a>
 </p>
 
-# Ehtools update helper (euh)
+# Ehtools/ehtoolslite utilities
+
+> # Ehtools update helper (euh) <img src="https://img.shields.io/badge/utility-euh-brown.svg">
 
     WARNING: Update option now is not working and
     you should use this tool if you want to update ehtools
@@ -327,7 +329,7 @@ if not working:
 
 > euh --update or euh -u
 
-# Modules (BETA) 
+> # Modules (BETA) <img src="https://img.shields.io/badge/utility-modules-green.svg">
 
     WARNING: This is only BETA feature for now but you can try it today!
     And we recommend you to try modules (BETA)!
