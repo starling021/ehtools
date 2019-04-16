@@ -354,7 +354,7 @@ if not working:
     WARNING: This is only BETA feature for now but you can try it today!
     And we recommend you to try modules (BETA)!
 
-Modules (BETA) - the function that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start. To activate this function, perform the following steps (ONLY AFTER INSTALLING EHTOOLS WITH INSTALL.SH):
+Modules (BETA) - the utility that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start. To activate this function, perform the following steps (ONLY AFTER INSTALLING EHTOOLS WITH INSTALL.SH):
 
 > After installing ehtools with install.sh run command:
 
@@ -363,6 +363,38 @@ Modules (BETA) - the function that adds permissions or the ability to control th
 To activate, for example eht1 module after installing modules (BETA) run command:
 
 > eht1
+
+> # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
+
+Ehtools password changer (epasswd) - tool (ehtools utility) that help you to change your ehtools password or ehtools root password!
+
+> epasswd
+
+After epasswd launch, enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe)
+
+> (login)> ehtools
+
+> (password)> sloothe
+
+After this enter your new ehtools login (example: admin) and your new ehtools password (example: 1234)
+
+> ((new)login)> admin
+
+> ((new)password)> 1234
+
+To cange root password login to epasswd like ehtools root:
+
+> epasswd
+
+> (login)> root
+
+After this enter your old ehtools root password (default: toor)
+
+> (password)> toor
+
+After this enter your new ehtools root password (example: 1234)
+
+> ((new)password)> 1234
 
 # Ehtools files and folders
 
