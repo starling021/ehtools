@@ -364,9 +364,9 @@ To activate, for example eht1 module after installing modules (BETA) run command
 
 > # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
-Ehtools password changer (epasswd) - tool (ehtools utility) that help you to change your ehtools password or ehtools root password!
+Ehtools password changer (epasswd) - the utility that help you to change your ehtools password or ehtools root password!
 
-    INFO: This is tool that can change ehtools or ehtools root password!
+    INFO: Uiecache - tool (ehtools utility) to change ehtools and ehtools root password!
 
 > epasswd
 
