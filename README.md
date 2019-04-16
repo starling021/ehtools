@@ -315,6 +315,8 @@ Run it to open WPS menu:
 
 > # Uiecache | <img src="https://img.shields.io/badge/utility-uiecache-lightgray.svg">
 
+Uiecache - (uninstall ehtools cache) the utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
+
     INFO: Uiecache - tool (ehtools utility) to clean/uninstall ehtools login and just ehtools cache!
 
 Run it to uninstall all ehtools cache:
@@ -349,6 +351,9 @@ if not working:
 
 > euh --update or euh -u
 
+    INFO: This bug (configuration errors) fixed in v2.1.8!
+    You can now use update option from main menu!
+
 > # Modules (BETA) | <img src="https://img.shields.io/badge/utility-modules-blue.svg">
 
     WARNING: This is only BETA feature for now but you can try it today!
@@ -366,7 +371,7 @@ To activate, for example eht1 module after installing modules (BETA) run command
 
 Ehtools password changer (epasswd) - the utility that help you to change your ehtools password or ehtools root password!
 
-    INFO: Uiecache - tool (ehtools utility) to change ehtools and ehtools root password!
+    INFO: epasswd - tool (ehtools utility) to change ehtools and ehtools root password!
 
 > epasswd
 
