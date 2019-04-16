@@ -314,7 +314,7 @@ Run it to open WPS menu:
 # Ehtools/ehtoolslite utilities
 
 
-> # Uiecache <img src="https://img.shields.io/badge/utility-uiecache-light.svg">
+> # Uiecache <img src="https://img.shields.io/badge/utility-uiecache-black.svg">
 
 Uiecache - tool (ehtools utility) to clean/uninstall ehtools login and just ehtools/lite cache!
 
@@ -349,7 +349,7 @@ if not working:
 
 > euh --update or euh -u
 
-> # Modules (BETA) <img src="https://img.shields.io/badge/utility-modules-green.svg">
+> # Modules (BETA) <img src="https://img.shields.io/badge/utility-modules-blue.svg">
 
     WARNING: This is only BETA feature for now but you can try it today!
     And we recommend you to try modules (BETA)!
