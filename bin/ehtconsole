@@ -639,7 +639,9 @@ else
 		KSSET="$KSSETBACKUP"
 		if [[ "$GOOD" = "1" ]]
 		then
-			echo -e "Shortcut is ok.Setting it up..."
+			echo -e "["$YS"*"$CE"] "$YS"Shortcut is ok!"$CE""
+			sleep 1
+			echo -e "["$YS"*"$CE"] "$YS"Setting it up..."$CE""
 			sleep 1
 			echo "$CHECKKS" > "$KSPATH"/"$TITLE"/"$TITLE"ks.txt
 			echo "$NAMECD" > "$KSPATH"/"$TITLE"/"$TITLE".txt
@@ -1100,7 +1102,7 @@ done
 	#~ echo -e " "$YS"1"$CE") Fluxion      "$YS"21"$CE") 4nonimizer    "$YS"41"$CE") Infoga           "$YS"61"$CE") Wifi-Pumpkin"
 	#~ echo -e ""$YS" 2"$CE") Wifite       "$YS"22"$CE") Openvas       "$YS"42"$CE") nWatch           "$YS"62"$CE") Veil-Framework"
 	#~ echo -e ""$YS" 3"$CE") Wifiphisher  "$YS"23"$CE") BeeLogger     "$YS"43"$CE") Eternal scanner  "$YS"63"$CE") Leviathan"
-	#~ echo -e ""$YS" 4"$CE") Zatacker     "$YS"24"$CE") Ezsploit      "$YS"44"$CE") Eaphammer        "$YS"64"$CE") FakeImageExploiter"
+	#~ echo -e ""$YS" 4"$CE") ECLI.        "$YS"24"$CE") Ezsploit      "$YS"44"$CE") Eaphammer        "$YS"64"$CE") FakeImageExploiter"
 	#~ echo -e ""$YS" 5"$CE") Morpheus     "$YS"25"$CE") Pupy          "$YS"45"$CE") Dagon            "$YS"65"$CE") Avet"
 	#~ echo -e ""$YS" 6"$CE") Osrfconsole  "$YS"26"$CE") Zirikatu      "$YS"46"$CE") Lalin            "$YS"66"$CE") Gloom"
 	#~ echo -e ""$YS" 7"$CE") Hakku        "$YS"27"$CE") WiFi-autopwner"$YS"47"$CE") Knockmail        "$YS"67"$CE") Arcanus"
@@ -1132,7 +1134,7 @@ done
 		#~ install_wifiphisher
 	#~ elif [[ "$REIN" = "4" ]]
 	#~ then
-		#~ install_zatacker
+		#~ install_ECLI
 	#~ elif [[ "$REIN" = "5" ]]
 	#~ then
 		#~ install_morpheus
