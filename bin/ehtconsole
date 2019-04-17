@@ -3222,7 +3222,7 @@ function wifi_tools
 	then
 		echo -e ""$YS" 4"$CE") ECLI                  VPN generator by entynetproject"
 	else
-		echo -e ""$RS" 4"$CE") "$RS"ECLI"$CE"              VPN generator by entynetproject"
+		echo -e ""$RS" 4"$CE") "$RS"ECLI"$CE"                  VPN generator by entynetproject"
 	fi
 	if [[ -d /root/morpheus ]]
 	then
@@ -4217,11 +4217,11 @@ function remote_access
 	else
 		echo -e ""$RS"29"$CE") "$RS"Cromos"$CE"                 Download and Inject code into Google Chrome extensions"
 	fi
-	if [[ -d /root/AutoSploit ]]
+	if [[ -d /root/packex ]]
 	then
-		echo -e ""$YS"30"$CE") ECLI-ROOT              VPN generator by Entynetproject with root"
+		echo -e ""$YS"30"$CE") Packex                Package manager for installing tools for pentegration testing"
 	else
-		echo -e ""$RS"30"$CE") "$RS"ECLI-ROOT"$CE"             VPN generator by Entynetproject with root"
+		echo -e ""$RS"30"$CE") "$RS"Packex"$CE"                 Package manager for installing tools for pentegration testing"
 	fi
 	if [[ -d /root/Enigma ]]
 	then
@@ -4750,8 +4750,8 @@ function remote_access
 						#~ python UniByAv*.py "$RPATH" "$OUT" none /root/UniByAv/configs/"$FC"
 						#~ break
 					#~ else
-						echo -e "Path to mingw32-gcc.exe : "
-						read PGCC
+						echo -e "Path to mingw32-gcc.exe: "
+ 						read -p $'(\e[4;93mpath\e[0m)> ' PGCC
 						#~ if [[ "$PGCC" = "" ]]
 						#~ then
 							#~ PGCC="$GCC"
@@ -4959,10 +4959,9 @@ function remote_access
 		fi
 	elif [[ "$KEYLOG" = "30" ]]
 	then
-		if [[ -d /root/ECLI-ROOT ]]
+		if [[ -d /root/packex ]]
 		then
-			cd /root/ECLI-ROOT
-			./Entynet.py
+			packex
 		else	
 			echo -e "$TNI"
 			read INSTALL
@@ -10808,13 +10807,15 @@ check_if_ks
 	}
 	function install_autosploit
 	{
-		foldname="ECLI-ROOT"
-		gitlink="https:github.com/entynetproject/ECLI-ROOT.git"
+		foldname="packex"
+		gitlink="https:github.com/entynetproject/packex.git"
 		install_default
 		clone=$?
 		if [["$cloned" == 1 ]]
 		then
-		        chmod +x Entynet.py
+		        cd packex
+			chmod +x install.sh
+			./install.sh
                 fi
 	}
 	function install_blazy
