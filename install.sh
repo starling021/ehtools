@@ -212,7 +212,7 @@ then
 	fi
 	echo -e "["$YS"inf"$CE"] "$YS"Adding EntynetHackerTools to PATH so you can access it from anywhere"$CE""
 	sleep 0.5
-        echo -e "["$YS"inf"$CE"] "$YS"Welcome to EntynetHackerTools PRO free trial!"$CE""
+        echo -e "["$YS"inf"$CE"] "$YS"Welcome to EntynetHackerTools PRO :3"$CE""
 	sleep 0.5
         echo -e "["$YS"inf"$CE"] "$YS"More information about PRO or other plans on our site"$CE""
 	sleep 0.5
