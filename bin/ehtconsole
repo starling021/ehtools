@@ -129,7 +129,7 @@ toolarray=(
 	PAKT="Press "$YS"any key$CE to"
 	PAKTC="Press "$YS"any key$CE to continue..."
 	PAKTGB="Press "$YS"any key$CE to go back..."
-	TNI=""$RS"Tool is not installed. To install it type '"$CE""$YS"install"$CE""$RS"'."$CE""
+	TNI="["$RS"*"$CE"] "$RS"Tool is not installed! To install it type "$CE"'"$YS"install"$CE"'..."
 #code to read from keyboard without return
 	READAK="read -n 1"
 #default MAC when starting monitor
@@ -561,7 +561,7 @@ function checkifalready
 		if [[ "$CHECKKS" = "$num" ]]
 		then
 			GOOD="0"
-			echo -e ""$RS"This shortcut is already in use by the script."$CE""
+			echo -e ""$RS"This shortcut is already in use by the script!"$CE""
 			sleep 3
 		fi
 		num=$(( num+1 ))
@@ -571,7 +571,7 @@ function checkifalready
 		if [[ "$CHECKKS" = "etercheck" || "$CHECKKS" = "eternalblue" || "$CHECKKS" = "changelog" || "$CHECKKS" = "wififb" || "$CHECKKS" = "nessusstop" || "$CHECKKS" = "nessusstart" || "$CHECKKS" = "pstop" || "$CHECKKS" = "pstart" || "$CHECKKS" = "astop" || "$CHECKKS" = "astart" || "$CHECKKS" = "settings" || "$CHECKKS" = "entynetproject" || "$CHECKKS" = "e" || "$CHECKKS" = "s" || "$CHECKKS" = "g" || "$CHECKKS" = "l" || "$CHECKKS" = "" || "$CHECKKS" = "if" || "$CHECKKS" = "ifconfig" || "$CHECKKS" = "interfaces" || "$CHECKKS" = "interface" || "$CHECKKS" = "errors" || "$CHECKKS" = "00" || "$CHECKKS" = "exit" || "$CHECKKS" = "update" || "$CHECKKS" = "d1" || "$CHECKKS" = "d2" || "$CHECKKS" = "d3" || "$CHECKKS" = "d4" || "$CHECKKS" = "d5" || "$CHECKKS" = "d6" || "$CHECKKS" = "d7" || "$CHECKKS" = "epasswd" || "$CHECKKS" = "ks" ]]
 		then
 			GOOD="0"
-			echo -e ""$RS"This shortcut is already in use by the script."$CE""
+			echo -e ""$RS"This shortcut is already in use by the script!"$CE""
 			sleep 3
 		fi
 	fi
@@ -597,7 +597,7 @@ function checkifalready
 			read KSIFALREADY < "$KSPATH"/"$TITLE"/"$TITLE"ks.txt
 			if [[ "$CHECKKS" == "$KSIFALREADY" ]]
 			then
-				echo -e ""$RS"Shortcut '"$CHECKKS"' is already in use by "$TITLE""$CE""
+				echo -e ""$RS"Shortcut '"$CHECKKS"' is already in use by "$TITLE""$CE"!"
 				GOOD=0
 				sleep 3
 			fi
@@ -639,9 +639,9 @@ else
 		KSSET="$KSSETBACKUP"
 		if [[ "$GOOD" = "1" ]]
 		then
-			echo -e "["$YS"*"$CE"] "$YS"Shortcut is ok!"$CE""
+			echo -e "["$YS"inf"$CE"] "$YS"Shortcut is ok!"$CE""
 			sleep 1
-			echo -e "["$YS"*"$CE"] "$YS"Setting it up..."$CE""
+			echo -e "["$YS"inf"$CE"] "$YS"Setting it up..."$CE""
 			sleep 1
 			echo "$CHECKKS" > "$KSPATH"/"$TITLE"/"$TITLE"ks.txt
 			echo "$NAMECD" > "$KSPATH"/"$TITLE"/"$TITLE".txt
