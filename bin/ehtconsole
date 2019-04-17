@@ -920,9 +920,9 @@ function listshortcuts
 		KSSET="python zerodoor.py"
 	elif [[ "$nn" = "50" ]]
 	then
-		TITLE="AutoSploit"
-		NAMECD="cd /root/ECLI-root"
-		KSSET="python Entynet.py"
+		TITLE="Packex"
+		NAMECD="cd /root/packex"
+		KSSET="packex"
 	elif [[ "$nn" = "51" ]]
 	then
 		TITLE="Enigma"
