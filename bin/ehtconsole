@@ -656,7 +656,7 @@ else
 			echo -e "Removing shortcut for "$TITLE"..."
 			rm -r "$KSPATH"/"$TITLE"
 			sleep 1
-			echo -e "Done."
+			echo -e "Done!"
 			echo -e "$PAKTGB"
 			$READAK
 			clear
