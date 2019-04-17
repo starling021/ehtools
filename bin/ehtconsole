@@ -119,7 +119,7 @@ toolarray=(
 "recondog" "redhawk" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
 "websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "koadic" "empire" "meterpreter_paranoid_mode"
 "dropit_frmw" "wifi_pumpkin" "veil" "leviathan" "fake_image" "avet" "gloom" "arcanus" "msfpc" "morphhta" "lfi" "unibyav" "demiguise" "dkmc" "sechub" "beef" "mitmf"
-"fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "eggshell" "zerodoor" "cromos" "yuki-chan" "socialfish" "autosploit" "blazy"
+"fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "eggshell" "zerodoor" "cromos" "yuki-chan" "socialfish" "ECLI" "blazy"
 "striker" "hyprpulse" "instaburst" "instagram-py" "datasploit" "sitebroker" "enigma"
 )
 #setting frequent stings
@@ -129,7 +129,7 @@ toolarray=(
 	PAKT="Press "$YS"any key$CE to"
 	PAKTC="Press "$YS"any key$CE to continue..."
 	PAKTGB="Press "$YS"any key$CE to go back..."
-	TNI="["$RS"*"$CE"] "$RS"Tool is not installed! To install it type "$CE"'"$YS"install"$CE"'..."
+	TNI="["$RS"*"$CE"] "$RS"Tool is not installed! To install it type"$CE" '"$YS"install"$CE"' "$RS"..."$CE""
 #code to read from keyboard without return
 	READAK="read -n 1"
 #default MAC when starting monitor
@@ -7109,7 +7109,7 @@ function wififb
 	then
 		clear
 		echo -e "Custom access point name:"
-		read wifiname
+		read -p $'(\e[4;93mname\e[0m)> ' wifiname
 	elif [[ "$wifiind" == 'b' || "$wifiind" == 'back' ]]
 	then
 		wififb_attack
@@ -7806,7 +7806,7 @@ function mitmf_hook
 			cd
 		fi
 	else
-		echo -e ""$RS"Mitmf is not installed.type '"$CE""$YS"install"$CE""$RS"' to install it."
+		echo -e "$TNI"
 		read INSTALL
 		if [[ "$INSTALL" = "install" ]]
 		then
@@ -8452,7 +8452,7 @@ function ngrok_option
 					fi
 			fi
 		else
-			echo -e ""$RS"Ngrok is not installed.type '"$CE""$YS"install"$CE""$RS"' to install it."
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
@@ -8960,7 +8960,7 @@ function browser_exploiting
 							$READAK
 						fi
 				else
-					echo -e ""$RS"Mitmf is not installed.Type '"$CE""$YS"install"$CE""$RS"' to install it."
+					echo -e "$TNI"
 					read INSTALL
 					if [[ "$INSTALL" = "install" ]]
 					then
@@ -9433,7 +9433,7 @@ function main_options
 	then
 		if [[ ! -f "/usr/local/bin/howdoi" ]]
 		then
-			echo -e ""$RS"Howdoi is not installed.type '"$CE""$YS"install"$CE""$RS"' to install it."
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
@@ -9603,7 +9603,7 @@ function main_options
 	then
 		if [[ ! -f "/etc/init.d/anonym8.sh" ]]
 		then
-			echo -e ""$RS"Anonym8 is not installed.type '"$CE""$YS"install"$CE""$RS"' to install it."
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
@@ -9618,7 +9618,7 @@ function main_options
 	then
 		if [[ ! -f "/etc/init.d/anonym8.sh" ]]
 		then
-			echo -e ""$RS"Anonym8 is not installed.type '"$CE""$YS"install"$CE""$RS"' to install it."
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
@@ -9633,7 +9633,7 @@ function main_options
 	then
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
-			echo -e ""$RS"Anonsurf is not installed.type '"$CE""$YS"install"$CE""$RS"' to install it."
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
@@ -9648,7 +9648,7 @@ function main_options
 	then
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
-			echo -e ""$RS"Anonsurf is not installed.type '"$CE""$YS"install"$CE""$RS"' to install it."
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
@@ -9663,7 +9663,7 @@ function main_options
 	then
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
-			echo -e ""$RS"Anonsurf is not installed.type '"$CE""$YS"install"$CE""$RS"' to install it."
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
@@ -9677,9 +9677,9 @@ function main_options
 	elif [[ "$YORNAA" = "d6" ]]
 	then
 		if [[ ! -f "/usr/bin/anonsurf" ]]
-		then
-			echo -e ""$RS"Anonsurf is not installed.type '"$CE""$YS"install"$CE""$RS"' to install it."
-			read INSTALL
+                then
+			echo -e "$TNI"
+                        read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -9693,7 +9693,7 @@ function main_options
 	then
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
-			echo -e ""$RS"Anonsurf is not installed.type '"$CE""$YS"install"$CE""$RS"' to install it."
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
@@ -9765,7 +9765,7 @@ function main_options
 		then
 			eternalblue_check
 		else
-			echo -e ""$RS"Wifiphisher is not installed.Type '"$CE""$YS"install"$CE""$RS"' to install it."$CE""
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
@@ -9778,7 +9778,7 @@ function main_options
 		then
 			eternalblue
 		else
-			echo -e ""$RS"Wifiphisher is not installed.Type '"$CE""$YS"install"$CE""$RS"' to install it."$CE""
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
@@ -9791,7 +9791,7 @@ function main_options
 		then
 			wififb_attack
 		else
-			echo -e ""$RS"Wifiphisher is not installed.Type '"$CE""$YS"install"$CE""$RS"' to install it."$CE""
+			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
