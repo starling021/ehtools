@@ -350,6 +350,8 @@ ehtools
 exit
 fi
 
+cd /root
+
 }
 function banner
 {
