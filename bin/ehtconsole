@@ -1134,7 +1134,7 @@ done
 		#~ install_wifiphisher
 	#~ elif [[ "$REIN" = "4" ]]
 	#~ then
-		#~ install_ECLI
+		#~ install_zatacker
 	#~ elif [[ "$REIN" = "5" ]]
 	#~ then
 		#~ install_morpheus
