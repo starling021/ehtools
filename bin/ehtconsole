@@ -8607,7 +8607,14 @@ function ngrok_option
 			elif [[ "$NG" = 0 ]]
 			then
 				clear
-				exit
+				cd /root/ehtools/lib
+	                        chmod +x libunconf
+	                        ./libunconf
+	                        rm /etc/ehtools/config
+                                {
+	                        chattr +i /etc/ehtools
+	                        } &> /dev/null
+	                        exit
 			elif [[ "$NG" = 5 ]]
 			then
 					echo -e "Type your authtoken: "
