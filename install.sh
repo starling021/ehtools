@@ -207,7 +207,7 @@ then
 	BASHCHECK=$(cat ~/.bashrc | grep "bin/ehtools")
 	if [[ "$BASHCHECK" != "i" ]]
 	then
-		echo -e "\e[4;44mCongratulations you have successfully installed our Framework\e[0m"
+		echo -e "["$YS"inf"$CE"] "$YS"Congratulations, you have successfully installed our Framework!"$CE""
 		sleep 0.5
 	fi
 	echo -e "["$YS"inf"$CE"] "$YS"Adding EntynetHackerTools to PATH so you can access it from anywhere"$CE""
