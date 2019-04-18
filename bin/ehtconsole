@@ -468,6 +468,13 @@ then
 elif [[ "$MYINT" = "0" ]]
 then
 	clear
+	cd /root/ehtools/lib
+	chmod +x libunconf
+	./libunconf
+	rm /etc/ehtools/config
+        {
+	chattr +i /etc/ehtools
+	} &> /dev/null
 	exit
 elif [[ "$MYINT" = "00" || "$MYINT" = "b" ]]
 then
@@ -1020,7 +1027,14 @@ do
 		break
 	elif [[ "$ST" == 0 ]]
 	then
-		exit
+	cd /root/ehtools/lib
+	chmod +x libunconf
+	./libunconf
+	rm /etc/ehtools/config
+        {
+	chattr +i /etc/ehtools
+	} &> /dev/null
+	exit
 	elif [[ "$ST" == 00 ]]
 	then
 		exec bash $0
@@ -1485,6 +1499,13 @@ then
 elif [[ "$ERRS" = "0" ]]
 then
 	clear
+	cd /root/ehtools/lib
+	chmod +x libunconf
+	./libunconf
+	rm /etc/ehtools/config
+        {
+	chattr +i /etc/ehtools
+	} &> /dev/null
 	exit
 else
 	clear
@@ -1571,7 +1592,14 @@ then
 		elif [[ "$nn" = "0" ]]
 		then
 			clear
-			exit
+	                cd /root/ehtools/lib
+	                chmod +x libunconf
+	                ./libunconf
+	                rm /etc/ehtools/config
+	                {
+	                chattr +i /etc/ehtools
+	                } &> /dev/null
+	                exit
 		elif [[ "$nn" = "00" ]]
 		then
 			exec bash "$0"
@@ -1593,8 +1621,15 @@ then
 		break
 	elif [[ "$KS" = "0" ]]
 	then
-		clear
-		exit
+	clear
+	cd /root/ehtools/lib
+	chmod +x libunconf
+	./libunconf
+	rm /etc/ehtools/config
+	{
+	chattr +i /etc/ehtools
+	} &> /dev/null
+	exit
 	elif [[ "$KS" = "00" ]]
 	then
 		exec bash "$0"
@@ -1750,8 +1785,15 @@ then
 		exec bash "$0"
 	elif [[ "$MITMCH" = "0" ]]
 	then
-		clear
-		exit
+	clear
+	cd /root/ehtools/lib
+	chmod +x libunconf
+	./libunconf
+	rm /etc/ehtools/config
+	{
+	chattr +i /etc/ehtools
+	} &> /dev/null
+	exit
 	fi
 	done
 elif [[ "$MITMATT" = "2" ]]
@@ -1884,8 +1926,15 @@ then
 		exec bash "$0"
 	elif [[ "$MITMSET" = "0" ]]
 	then
-		clear
-		exit
+	clear
+	cd /root/ehtools/lib
+	chmod +x libunconf
+	./libunconf
+	rm /etc/ehtools/config
+	{
+	chattr +i /etc/ehtools
+	} &> /dev/null
+	exit
 	fi
 	done
 elif [[ "$MITMATT" = "back" || "$MITMATT" = "b" ]]
@@ -1899,6 +1948,13 @@ then
 elif [[ "$MITMATT" = "0" ]]
 then
 	clear
+	cd /root/ehtools/lib
+	chmod +x libunconf
+	./libunconf
+	rm /etc/ehtools/config
+	{
+	chattr +i /etc/ehtools
+	} &> /dev/null
 	exit
 fi
 }
@@ -2158,7 +2214,14 @@ do
 	elif [[ "$DAGON" = 0 ]]
 	then
 		clear
-		exit
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
+	        rm /etc/ehtools/config
+	        {
+	        chattr +i /etc/ehtools
+	        } &> /dev/null
+	        exit
 	elif [[ "$DAGON" = 2 ]]
 	then
 		if [[ "$CORV" = "crack" ]]
@@ -3996,7 +4059,14 @@ function wifi_tools
 					exit
 				elif [[ "$OSFR" = "0" ]]
 				then
-					exit
+		                        cd /root/ehtools/lib
+	                                chmod +x libunconf
+	                                ./libunconf
+	                                rm /etc/ehtools/config
+	                                {
+	                                chattr +i /etc/ehtools
+	                                } &> /dev/null
+	                                exit
 				elif [[ "$OSFR" = "00" ]]
 				then
 					exec bash "$0"
@@ -4023,7 +4093,14 @@ function wifi_tools
 	elif [[ "$APPP" = "0" ]]
 	then
 		clear
-		exit
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
+	        rm /etc/ehtools/config
+	        {
+	        chattr +i /etc/ehtools
+	        } &> /dev/null
+	        exit
 	elif [[ "$APPP" = "00" ]]
 	then
 		clear
@@ -5216,7 +5293,14 @@ function remote_access
 				break
 			elif [[ "$PUPY" = "0" ]]
 			then
-				exit
+			cd /root/ehtools/lib
+	                chmod +x libunconf
+	                ./libunconf
+	                rm /etc/ehtools/config
+	                {
+	                chattr +i /etc/ehtools
+	                } &> /dev/null
+	                exit
 			fi
 			done
 		else
@@ -5294,7 +5378,14 @@ function remote_access
 	elif [[ "$KEYLOG" = "0" ]]
 	then
 		clear
-		exit
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
+	        rm /etc/ehtools/config
+	        {
+	        chattr +i /etc/ehtools
+	        } &> /dev/null
+	        exit
 	elif [[ "$KEYLOG" = "back" || "$KEYLOG" = "b" ]]
 	then
 		break
@@ -5520,7 +5611,14 @@ function information_gathering
 						exit
 					elif [[ "$OSFR" = "0" ]]
 					then
-						exit
+		                                cd /root/ehtools/lib
+	                                        chmod +x libunconf
+	                                        ./libunconf
+	                                        rm /etc/ehtools/config
+	                                        {
+	                                        chattr +i /etc/ehtools
+	                                        } &> /dev/null
+	                                        exit
 					elif [[ "$OSFR" = "00" ]]
 					then
 						exec bash "$0"
@@ -5546,7 +5644,14 @@ function information_gathering
 			fi
 		elif [[ "$INFOG" = 0 ]]
 		then
-			exit
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
+	        rm /etc/ehtools/config
+	        {
+	        chattr +i /etc/ehtools
+	        } &> /dev/null
+	        exit
 		elif [[ "$INFOG" = 00 ]]
 		then
 			exec bash $0
@@ -5839,7 +5944,14 @@ function website_tools
 					elif [[ "$C" == 0 ]]
 					then
 						clear
-						exit
+		                                cd /root/ehtools/lib
+	                                        chmod +x libunconf
+	                                        ./libunconf
+	                                        rm /etc/ehtools/config
+	                                        {
+	                                        chattr +i /etc/ehtools
+	                                        } &> /dev/null
+	                                        exit
 					elif [[ "$C" == 00 ]]
 					then
 						exec bash $0
@@ -5899,7 +6011,14 @@ function website_tools
 			continue
 		elif [[ "$WEB" = 0 ]]
 		then
-			exit
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
+	        rm /etc/ehtools/config
+	        {
+	        chattr +i /etc/ehtools
+	        } &> /dev/null
+	        exit
 		elif [[ "$WEB" = 00 ]]
 		then
 			exec bash $0
@@ -6093,7 +6212,14 @@ do
 	elif [[ "$OTHERT" = 0 ]]
 	then
 		clear
-		exit
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
+	        rm /etc/ehtools/config
+	        {
+	        chattr +i /etc/ehtools
+	        } &> /dev/null
+	        exit
 	fi
 done
 }
@@ -6321,7 +6447,14 @@ function metasploit_menu
 	elif [[ "$METASP" = "0" ]]
 	then
 		clear
-		exit
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
+	        rm /etc/ehtools/config
+	        {
+	        chattr +i /etc/ehtools
+	        } &> /dev/null
+	        exit
 	fi
 	done
 }
@@ -6550,8 +6683,15 @@ function tools_menu
 			NOCONFIRM=0
 		elif [[ "$CATEG" = "0" ]]
 		then
-			clear
-			exit
+		clear
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
+	        rm /etc/ehtools/config
+	        {
+	        chattr +i /etc/ehtools
+	        } &> /dev/null
+	        exit
 		elif [[ "$CATEG" = "back" || "$CATEG" = "b" || "$CATEG" = 00 ]]
 		then
 			BACKL="1"
@@ -6836,7 +6976,14 @@ do
 	elif [[ "$SMTP" = "0" ]]
 	then
 		clear
-		exit
+		cd /root/ehtools/lib
+	        chmod +x libunconf
+	        ./libunconf
+	        rm /etc/ehtools/config
+	        {
+	        chattr +i /etc/ehtools
+	        } &> /dev/null
+	        exit
 	elif [[ "$SMTP" = "back" || "$SMTP" = "b" ]]
 	then
 		clear
@@ -7733,7 +7880,14 @@ function cromos_menu
 				break
 			elif [[ "$CROM" == 0 ]]
 			then
-				exit
+	                cd /root/ehtools/lib
+	                chmod +x libunconf
+	                ./libunconf
+	                rm /etc/ehtools/config
+	                {
+	                chattr +i /etc/ehtools
+	                } &> /dev/null
+	                exit
 			elif [[ "$CROM" == 00 ]]
 			then
 				exec bach $0
@@ -7894,7 +8048,14 @@ do
 		wireshark & disown
 	elif [[ "$BR" = 0 ]]
 	then
-		exit
+	cd /root/ehtools/lib
+	chmod +x libunconf
+	./libunconf
+	rm /etc/ehtools/config
+	{
+	chattr +i /etc/ehtools
+	} &> /dev/null
+	exit
 	elif [[ "$BR" = "i" ]]
 	then
 		echo -e ""$LGYS"With hydra you can bruteforce your router's login screen."
@@ -8282,6 +8443,13 @@ function about_option
 	elif [[ "$DON" = "0" ]]
 	then
 		clear
+		cd /root/ehtools/lib
+		chmod +x libunconf
+	        ./libunconf
+		rm /etc/ehtools/config
+		{
+		chattr +i /etc/ehtools
+		} &> /dev/null
 		exit
 	elif [[ "$DON" = "e" ]]
         then
@@ -9060,7 +9228,14 @@ function settings_menu
 			break
 		elif [[ "$SET" = 0 ]]
 		then
-			exit
+			cd /root/ehtools/lib
+	                chmod +x libunconf
+	                ./libunconf
+		        rm /etc/ehtools/config
+		        {
+		        chattr +i /etc/ehtools
+		        } &> /dev/null
+		        exit
 		elif [[ "$SET" = e ]]
                 then
                          cd /root/ehtools/lib
@@ -9238,7 +9413,14 @@ function settings_menu
 					exec bash $0
 				elif [[ "$HOWCH" = 0 ]]
 				then
-					exit
+					cd /root/ehtools/lib
+	                                chmod +x libunconf
+	                                ./libunconf
+		                        rm /etc/ehtools/config
+		                        {
+		                        chattr +i /etc/ehtools
+		                        } &> /dev/null
+		                        exit
 				fi
 			done
 		elif [[ "$SET" = 1 ]]
