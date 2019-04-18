@@ -129,7 +129,7 @@ toolarray=(
 	PAKT="Press "$YS"any key$CE to"
 	PAKTC="Press "$YS"any key$CE to continue..."
 	PAKTGB="Press "$YS"any key$CE to go back..."
-	TNI="["$RS"*"$CE"] "$RS"Tool is not installed! To install it type"$CE" '"$YS"install"$CE"' "$RS"..."$CE""
+	TNI="["$RS"*"$CE"] "$RS"Tool is not installed! To install it type '"$CE""$YS"install"$CE""$RS"' ..."$CE""
 #code to read from keyboard without return
 	READAK="read -n 1"
 #default MAC when starting monitor
