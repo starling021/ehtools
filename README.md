@@ -50,6 +50,8 @@ Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools 
 
 > ./install.sh 
 
+> ehtools
+
 # To activate our ehtools PRO
 
 This key you can buy on our ehtools website for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
@@ -75,6 +77,8 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 > chmod +x install.sh
 
 > ./install.sh
+
+> eht
 
 # To uninstall our ehtools PRO
 
