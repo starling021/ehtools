@@ -510,7 +510,7 @@ function change_mac
 			ifconfig $MYINT down
 			macchanger -r $MYINT
 			ifconfig $MYINT up
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		else
 			echo -e "Enter the MAC you want:"
 			read -p $'(\e[4;93m(new)mac\e[0m\en)> ' SMAC
@@ -518,7 +518,7 @@ function change_mac
 			ifconfig $MYINT down
 			macchanger -m $SMAC $MYINT
 			ifconfig $MYINT up
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		fi
 	fi
 }
@@ -548,7 +548,7 @@ fi
 	echo "$MANAGED" > "$EPATH"/wlan.txt
 	echo "$MONITOR" > "$EPATH"/wlanmon.txt
 	echo "$WIRED" > "$EPATH"/eth.txt
-	echo -e ""$YS"Done"$CE""
+	echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 	sleep 1
 	clear
 	echo -e ""$BS"If you want to change it, type "$CE""$YS"interface"$CE""$BS" any time"$CE""
@@ -653,7 +653,7 @@ else
 			echo "$CHECKKS" > "$KSPATH"/"$TITLE"/"$TITLE"ks.txt
 			echo "$NAMECD" > "$KSPATH"/"$TITLE"/"$TITLE".txt
 			echo "$KSSET" > "$KSPATH"/"$TITLE"/"$TITLE"2.txt
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 			echo -e "$PAKTGB"
 			$READAK
 			clear
@@ -663,7 +663,7 @@ else
 			echo -e "Removing shortcut for "$TITLE"..."
 			rm -r "$KSPATH"/"$TITLE"
 			sleep 1
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 			echo -e "$PAKTGB"
 			$READAK
 			clear
@@ -1422,7 +1422,7 @@ then
 	sleep 1
 	systemctl --user enable pulseaudio && systemctl --user start pulseaudio
 	clear
-	echo -e "Done"
+	echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 	sleep 1
 	clear
 	echo -e "I mean...Try to see if you have audio."
@@ -1664,12 +1664,12 @@ then
 	if [[ "$MITMCH" = "1" ]]
 	then
 		echo "1" > /proc/sys/net/ipv4/ip_forward
-		echo -e "Done"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 1
 	elif [[ "$MITMCH" = "d1" ]]
 	then
 		echo "0" > /proc/sys/net/ipv4/ip_forward
-		echo -e "Done"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 1
 	elif [[ "$MITMCH" = "2" ]]
 	then
@@ -1691,7 +1691,7 @@ then
 		iptables --flush -t nat
 		iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port $PORTTCP
 		iptables -t nat -A PREROUTING -p udp --destination-port 40 -j REDIRECT --to-port $PORTUDP
-		echo -e "Done"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 1
 	elif [[ "$MITMCH" = "3" ]]
 	then
@@ -1815,12 +1815,12 @@ then
 	if [[ "$MITMSET" = "1" ]]
 	then
 		echo "1" > /proc/sys/net/ipv4/ip_forward
-		echo -e "Done"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 1
 	elif [[ "$MITMSET" = "d1" ]]
 	then
 		echo "0" > /proc/sys/net/ipv4/ip_forward
-		echo -e "Done"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 1
 	elif [[ "$MITMSET" = "2" ]]
 	then
@@ -6297,7 +6297,7 @@ function metasploit_menu
 		else
 			msfvenom -p $PAYLOADL --platform windows -a x86 -f exe -e x86/shikata_ga_nai EHOST="$ATIP" EPORT="$ATPORT" -o "$ATEXEPATH"
 		fi
-		echo -e "Done"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		echo -e ""
 		echo -e "$PAKTC"
 		$READAK
@@ -6510,28 +6510,28 @@ function update_ehtools
 				then
 					echo -e "Copying your shortcuts"
 					cp -r /root/ehtold/ehtools/ks "$EPATH"
-					echo -e "Done"
+					echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 					sleep 0.2
 				fi
 				if [[ -d /root/ehtold/ehtools/settings ]]
 				then
 					echo -e "Copying your settings"
 					cp -r /root/ehtold/ehtools/settings "$EPATH"
-					echo -e "Done"
+					echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 					sleep 0.2
 				fi
 				if [[ -f /root/ehtold/ehtools/wlanmon.txt ]]
 				then
 					echo -e "Copying your interfaces"
 					cp /root/ehtold/ehtools/wlanmon.txt "$EPATH"
-					echo -e "Done"
+					echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 					sleep 0.2
 				fi
 				echo -e ""
 				if [[ -f /root/ehtold/ehtools/wlan.txt ]]
 				then
 					cp /root/ehtold/ehtools/wlan.txt "$EPATH"
-					echo -e "Done"
+					echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 					sleep 0.2
 					clear
 				fi
@@ -6844,15 +6844,15 @@ function start_menu
 	echo -e "Enabling $WLANNM..."
 	enable_wlan
 	echo -e "Killing services..."
-	airmon-ng check kill &> /dev/null && echo -e ""$YS"Done"$CE"" && O1=1
+	airmon-ng check kill &> /dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O1=1
 	echo -e "Starting monitor mode..."
 	if [[ "$ALFA" = "yes" ]]
 	then
 		ifconfig $WLANN down
-		iwconfig $WLANN mode monitor &> /dev/null && echo -e ""$YS"Done"$CE"" && O2=1
+		iwconfig $WLANN mode monitor &> /dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O2=1
 		ifconfig $WLANN up
 	else
-		airmon-ng start $WLANN | grep "monitor mode" | awk -F "(" {'print $2'} | cut -d ')' -f1 &> /dev/null && echo -e ""$YS"Done"$CE"" && O2=1
+		airmon-ng start $WLANN | grep "monitor mode" | awk -F "(" {'print $2'} | cut -d ')' -f1 &> /dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O2=1
 	fi
 	if [[ -f "$EPATH"/settings/startmac.txt ]]
 	then
@@ -6863,7 +6863,7 @@ function start_menu
 	echo -e "Changing mac address of $WLANNM to "$STARTMAC"..."
 	ifconfig $WLANNM down
 	macchanger -m $STARTMAC $WLANNM &> /dev/null | grep "New MAC:" &> /dev/null && O3=1
-	ifconfig $WLANNM up && echo -e ""$YS"Done"$CE"" 
+	ifconfig $WLANNM up && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 	if [[ "$O1" = 1 && "$O2" = 1 && "$O3" = 1 && "$O4" = 1 ]]
 	then
 		BACKL=1
@@ -6879,7 +6879,7 @@ function stop_menu
 	ifconfig $WLANN down
 	macchanger -p $WLANN | grep "Current MAC:" && O1=1
 	ifconfig $WLANN up
-	echo -e ""$YS"Done"$CE""
+	echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 	if [[ "$O1" = 1 && "$O2" = 1 && "$O3" = 1 ]]
 	then
 		BACKL=1
@@ -6899,15 +6899,15 @@ function stop_monitor
 		ifconfig $WLANN up && A3=1
 		if [[ "$A1" = 1 && "$A2" = 1 && "$A3" = 1 ]]
 		then
-			echo -e ""$YS"Done"$CE"" && O2=1
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O2=1
 		else
 			echo -e ""$RS"Error stoping monitor mode."$CE""
 		fi
 	else
-		airmon-ng stop $WLANNM &>/dev/null && echo -e ""$YS"Done"$CE"" && O2=1 || echo -e ""$RS"Error stoping monitor mode."$CE""
+		airmon-ng stop $WLANNM &>/dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O2=1 || echo -e ""$RS"Error stoping monitor mode."$CE""
 	fi
 	echo -e "Starting network-manager service..."
-	service network-manager start && echo -e ""$YS"Done"$CE"" && O3=1 || echo -e ""$RS"Error starting network-manager service"$CE""
+	service network-manager start && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O3=1 || echo -e ""$RS"Error starting network-manager service"$CE""
 }
 function spoof_email
 {
@@ -7176,10 +7176,10 @@ function wififb_attack
 			$READAK
 		elif [[ "$wifimenu" == 4 ]]
 		then
-			cp $wififbpassfileall /root/Desktop/all-saved-passwords.txt && echo -e "Done"
+			cp $wififbpassfileall /root/Desktop/all-saved-passwords.txt && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		elif [[ "$wifimenu" == 5 ]]
 		then
-			rm $wififbpassfileall && echo -e "Done"
+			rm $wififbpassfileall && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		elif [[ "$wifimenu" == 6 ]]
 		then
 			nmcli n on
@@ -7579,7 +7579,7 @@ do
 					echo -e ""$YS""$NCO" columns found!"$CE""
 					sleep 2
 				fi
-				CL="Done"
+				CL="["$YS"inf"$CE"] "$YS"Done"$CE""
 				cls=1
 				break
 			fi
@@ -7664,7 +7664,7 @@ do
 				echo -e ""$YS""$NTB" tables found!"$CE""
 				sleep 2
 			fi
-			TB="Done"
+			TB="["$YS"inf"$CE"] "$YS"Done"$CE""
 			tbs=1
 				##Clearing nexts
 				ST=""
@@ -7788,7 +7788,7 @@ do
 			sleep 1
 		fi
 		echo -e ""
-		FDBS=""$YS"Done"$CE""
+		FDBS="["$YS"inf"$CE"] "$YS"Done"$CE""
 		fdbss=1
 		NDB="$n"
 				##Clearing nexts
@@ -9687,27 +9687,27 @@ function main_options
 #------services
 	elif [[ "$YORNAA" = "pstart" ]]
 	then
-		service postgresql start && echo -e ""$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
+		service postgresql start && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
 	elif [[ "$YORNAA" = "pstop" ]]
 	then
-		service postgresql stop && echo -e ""$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
+		service postgresql stop && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
 	elif [[ "$YORNAA" = "nstart" ]]
 	then
-		service network-manager start && echo -e ""$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
+		service network-manager start && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
 	elif [[ "$YORNAA" = "nstop" ]]
 	then
-		service network-manager stop && echo -e ""$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
+		service network-manager stop && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
 	elif [[ "$YORNAA" = "astart" ]]
 	then
-		service apache2 start && echo -e ""$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
+		service apache2 start && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
 	elif [[ "$YORNAA" = "astop" ]]
 	then
-		service apache2 stop && echo -e ""$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
+		service apache2 stop && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
 	elif [[ "$YORNAA" = "nessusstart" ]]
 	then
 		if [[ -f /etc/init.d/nessusd ]]
 		then
-			/etc/init.d/nessusd start && echo -e ""$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
+			/etc/init.d/nessusd start && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
 		else
 			echo -e ""$RS"Nessus is not already installed."$CE""
 			sleep 2
@@ -9716,7 +9716,7 @@ function main_options
 	then
 		if [[ -f /etc/init.d/nessusd ]]
 		then
-			/etc/init.d/nessusd stop && echo -e ""$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
+			/etc/init.d/nessusd stop && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" || echo -e ""$RS"Error"$CE""
 		else
 			echo -e ""$RS"Nessus is not already installed."$CE""
 			sleep 2
@@ -9763,9 +9763,9 @@ function main_options
 		else
 			echo -e "Enabling $WLANNM..."
 			echo -e "Killing services..."
-			(airmon-ng check kill &> /dev/null && echo -e "Done" ) || echo -e ""$RS"Error killing services"$YS""
+			(airmon-ng check kill &> /dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" ) || echo -e ""$RS"Error killing services"$YS""
 			echo -e "Starting monitor mode..."
-			(airmon-ng start $WLANN &>/dev/null && echo -e "Done" ) || echo -e "Error starting monitor mode."
+			(airmon-ng start $WLANN &>/dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" ) || echo -e "Error starting monitor mode."
 		fi
 	elif [[ "$YORNAA" = "d2" ]]
 	then
@@ -9787,7 +9787,7 @@ function main_options
 		ifconfig $MYINT down
 		macchanger -p $MYINT
 		ifconfig $MYINT up
-		echo -e "Done"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 	elif [[ "$YORNAA" = "4" ]]
 	then
 		if [[ ! -f "/etc/init.d/anonym8.sh" ]]
@@ -9801,7 +9801,7 @@ function main_options
 		else
 			echo -e "Enabling anonym8..."
 			anonym8 start
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		fi
 	elif [[ "$YORNAA" = "d4" ]]
 	then
@@ -9816,7 +9816,7 @@ function main_options
 		else
 			echo -e "Disabling anonym8..."
 			anonym8 stop
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		fi
 	elif [[ "$YORNAA" = "5" ]]
 	then
@@ -9831,7 +9831,7 @@ function main_options
 		else
 			echo -e "Enabling anonsurf..."
 			anonsurf start
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		fi
 	elif [[ "$YORNAA" = "d5" ]]
 	then
@@ -9846,7 +9846,7 @@ function main_options
 		else
 			echo -e "Disabling anonsurf..."
 			anonsurf stop
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		fi
 	elif [[ "$YORNAA" = "6" ]]
 	then
@@ -9861,7 +9861,7 @@ function main_options
 		else
 			echo -e "Status of anonsurf..."
 			anonsurf status
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		fi
 	elif [[ "$YORNAA" = "d6" ]]
 	then
@@ -9876,7 +9876,7 @@ function main_options
 		else
 			echo -e "Restarting anonsurf..."
 			anonsurf change
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		fi
 	elif [[ "$YORNAA" = "r6" ]]
 	then
@@ -9891,7 +9891,7 @@ function main_options
 		else
 			echo -e "Restarting anonsurf..."
 			anonym8 change
-			echo -e "Done"
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		fi
 	elif [[ "$YORNAA" = "7" ]]
 	then
@@ -10398,7 +10398,7 @@ check_if_ks
 		wget https://github.com/angryip/ipscan/releases/download/3.5.2/ipscan_3.5.2_amd64.deb
 		echo -e "Installing..."
 		dpkg -i ipscan_3.5.2*
-		echo -e "Done"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 1
 	}
 	function install_sniper
