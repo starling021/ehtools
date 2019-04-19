@@ -568,7 +568,7 @@ function checkifalready
 		if [[ "$CHECKKS" = "$num" ]]
 		then
 			GOOD="0"
-			echo -e ""$RS"This shortcut is already in use by the script!"$CE""
+			echo -e "["$RS"*"$CE"] "$RS"This shortcut is already in use by the ehtconsole!"$CE""
 			sleep 3
 		fi
 		num=$(( num+1 ))
@@ -578,7 +578,7 @@ function checkifalready
 		if [[ "$CHECKKS" = "etercheck" || "$CHECKKS" = "eternalblue" || "$CHECKKS" = "changelog" || "$CHECKKS" = "wififb" || "$CHECKKS" = "nessusstop" || "$CHECKKS" = "nessusstart" || "$CHECKKS" = "pstop" || "$CHECKKS" = "pstart" || "$CHECKKS" = "astop" || "$CHECKKS" = "astart" || "$CHECKKS" = "settings" || "$CHECKKS" = "entynetproject" || "$CHECKKS" = "e" || "$CHECKKS" = "s" || "$CHECKKS" = "g" || "$CHECKKS" = "l" || "$CHECKKS" = "" || "$CHECKKS" = "if" || "$CHECKKS" = "ifconfig" || "$CHECKKS" = "interfaces" || "$CHECKKS" = "interface" || "$CHECKKS" = "errors" || "$CHECKKS" = "00" || "$CHECKKS" = "exit" || "$CHECKKS" = "update" || "$CHECKKS" = "d1" || "$CHECKKS" = "d2" || "$CHECKKS" = "d3" || "$CHECKKS" = "d4" || "$CHECKKS" = "d5" || "$CHECKKS" = "d6" || "$CHECKKS" = "d7" || "$CHECKKS" = "epasswd" || "$CHECKKS" = "ks" ]]
 		then
 			GOOD="0"
-			echo -e ""$RS"This shortcut is already in use by the script!"$CE""
+			echo -e "["$RS"*"$CE"] "$RS"This shortcut is already in use by the ehtconsole!"$CE""
 			sleep 3
 		fi
 	fi
@@ -604,7 +604,7 @@ function checkifalready
 			read KSIFALREADY < "$KSPATH"/"$TITLE"/"$TITLE"ks.txt
 			if [[ "$CHECKKS" == "$KSIFALREADY" ]]
 			then
-				echo -e ""$RS"Shortcut '"$CHECKKS"' is already in use by "$TITLE""$CE"!"
+				echo -e "["$RS"*"$CE"] "$RS"Shortcut '"$CHECKKS"' is already in use by ("$TITLE")!"$CE""
 				GOOD=0
 				sleep 3
 			fi
@@ -660,7 +660,7 @@ else
 			#break
 		else
 			clear
-			echo -e "Removing shortcut for "$TITLE"..."
+			echo -e "["$YS"inf"$CE"] "$YS"Removing shortcut for ("$TITLE") ..."$CE""
 			rm -r "$KSPATH"/"$TITLE"
 			sleep 1
 			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
