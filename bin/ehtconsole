@@ -604,7 +604,7 @@ function checkifalready
 			read KSIFALREADY < "$KSPATH"/"$TITLE"/"$TITLE"ks.txt
 			if [[ "$CHECKKS" == "$KSIFALREADY" ]]
 			then
-				echo -e "["$RS"*"$CE"] "$RS"Shortcut '"$CHECKKS"' is already in use by ("$TITLE")!"$CE""
+				echo -e "["$RS"*"$CE"] "$RS"Shortcut "$CE"("$YS""$CHECKKS""$CE")"$RS" is already in use by "$CE"("$YS""$TITLE""$CE")"$RS"!"$CE""
 				GOOD=0
 				sleep 3
 			fi
@@ -660,7 +660,7 @@ else
 			#break
 		else
 			clear
-			echo -e "["$YS"inf"$CE"] "$YS"Removing shortcut for ("$TITLE") ..."$CE""
+			echo -e "["$YS"inf"$CE"] "$YS"Removing shortcut for "$CE"("$YS""$TITLE""$CE")"$YS" ..."$CE""
 			rm -r "$KSPATH"/"$TITLE"
 			sleep 1
 			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
