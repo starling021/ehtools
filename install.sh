@@ -230,8 +230,6 @@ then
 fi
 done
 clear
-echo -e "DONE"
-clear
 echo -e "Are you want to install modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "If you do not install the modules now, then most of the functions will not work!"
 echo -e "So without thinking install them now!"
