@@ -385,7 +385,7 @@ echo -e "Open a NEW terminal and type '"$YS"ehtools"$CE"' to launch framework"
 sleep 0.5
 echo -e "If you want to update ehtools, run '"$YS"euh"$CE"'"
 sleep 0.5
-echo -e "If you want to change password, run '"$YS"epasswd"$CE"'"
+echo -e "If you want to change ehtools password, run '"$YS"epasswd"$CE"'"
 sleep 0.5
 echo -e "If you want to clean ehtools cache, run '"$YS"uiecache"$CE"'"
 sleep 1
