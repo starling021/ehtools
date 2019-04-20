@@ -281,32 +281,30 @@ then
           then
 		echo -e "Copying your shortcuts"
 		cp -r /root/ehtold/ehtools/ks "$EPATH"
-		echo -e "Done."
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 0.2
 	   fi
 	if [[ -d /root/ehtold/ehtools/settings ]]
           then
 		echo -e "Copying your settings"
 		cp -r /root/ehtold/ehtools/settings "$EPATH"
-		echo -e "Done."
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 0.2
 	  fi
 	if [[ -f /root/ehtold/ehtools/wlanmon.txt ]]
 	  then
 		echo -e "Copying your interfaces"
 		cp /root/ehtold/ehtools/wlanmon.txt "$EPATH"
-		echo -e "Done."
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 0.2
 	   fi
 		
 	if [[ -f /root/ehtold/ehtools/wlan.txt ]]
 	   then
 		cp /root/ehtold/ehtools/wlan.txt "$EPATH"
-		echo -e "Done."
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 0.2
 		clear
-                echo -e ""$GNS"Launching /root/ehtools/install.sh..."$CE""
-		sleep 3
   fi
 fi
 
