@@ -6547,7 +6547,7 @@ function update_ehtools
 				kill -9 $PPID
 			else 
 				clear
-				echo -e "You did not select ""$YS"y"$CE"" so you go back..."
+				echo -e "You did not select '"$YS"y"$CE"' so you go back..."
 				sleep 3
 				exec bash "$0"
 			fi
