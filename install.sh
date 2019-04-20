@@ -82,7 +82,7 @@ echo -e
 echo -e "Enter your ehtools activation key!"
 echo -e "Or buy it on ehtools site!"
 sleep 3
-echo -e "["$YS"*"$CE"] "$YS"Activated! Your key is "$CE"["$YS""$EHTKEY""$CE"]"
+echo -e "["$YS"inf"$CE"] "$YS"Activated! Your key is "$CE"["$YS""$EHTKEY""$CE"]"
 read -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYEHT
 sleep 1
 if [[ "$KEYEHT" != "$EHTKEY" ]]
@@ -381,10 +381,12 @@ echo $DADI >> /root/ehtools/etc/config
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
-echo -e "Open a NEW terminal and type '\e[4;44mehtools\e[0m' to launch framework"
+echo -e "Open a NEW terminal and type '"$YS"ehtools"$CE"' to launch framework"
 sleep 0.5
-echo -e "If you want to update ehtools, run '\e[4;44meuh\e[0m'"
+echo -e "If you want to update ehtools, run '"$YS"euh"$CE"'"
 sleep 0.5
-echo -e "If you want to change password, run '\e[4;44mepasswd\e[0m'"
+echo -e "If you want to change password, run '"$YS"epasswd"$CE"'"
+sleep 0.5
+echo -e "If you want to clean ehtools cache, run '"$YS"uiecache"$CE"'"
 sleep 1
 exit
