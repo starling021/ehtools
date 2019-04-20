@@ -5,7 +5,7 @@
 | • Has PRO and LITE versions!                    |
 | • More than 58 general tools!                   |
 | • More than 100 tools in all Framework          |
-| [*] Welcome to Ehtools Framework 2.1.8 [*]      |
+| [*] Welcome to Ehtools Framework PRO 2.1.8 [*]  |
 |                         [^] ART by              |
 |      .----.   @   @         DJ Mobley           |
 |     / .-"-.`.  \v/                              |
@@ -31,6 +31,8 @@ Added paid version of Ehtools PRO
 Added libactiv library to lib
 Added server support
 Added some new features!
+Added quick access menu (open it with 'ehtools -o')
+Updated password protection!
 
 2.1.7
 Added root user (you can login to ehtools as ehtools root)
