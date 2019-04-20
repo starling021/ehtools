@@ -305,13 +305,13 @@ then
 		echo -e "Done."
 		sleep 0.2
 		clear
-                echo -e "Running install.sh..."
+                echo -e ""$GNS"Launching /root/ehtools/install.sh..."$CE""
 		sleep 3
   fi
 fi
 
 sleep 0.5
-echo -e "Running install.sh..."
+echo -e ""$GNS"Launching /root/ehtools/install.sh..."$CE""
 sleep 3
 cd /root/ehtools
 ./install.sh
