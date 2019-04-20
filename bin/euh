@@ -250,7 +250,6 @@ then
 	      ./libunconf
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
-	      rm -r /etc/ehtools
 	      rm -r /root/handshakes
 	      rm -r /root/wordlists
 	      rm /bin/eht1
