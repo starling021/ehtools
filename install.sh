@@ -305,6 +305,10 @@ then
 fi
 
 clear
+{
+rm /etc/ehtools/login
+rm /etc/ehtools/password
+} &> /dev/null
 printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools password"
 echo -e "Let's make ehtools password!"
