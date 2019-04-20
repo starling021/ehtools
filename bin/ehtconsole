@@ -8461,7 +8461,6 @@ function about_option
 	      ./libunconf
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
-	      rm -r /etc/ehtools
 	      rm -r /root/handshakes
 	      rm -r /root/wordlists
 	      rm /bin/eht1
@@ -9253,7 +9252,6 @@ function settings_menu
 	                 ./libunconf
 			 rm -r /root/ehtools
 	                 rm -r /bin/ehtools
-	                 rm -r /etc/ehtools
 	                 rm -r /root/handshakes
 			 rm -r /root/wordlists
 			 rm /bin/eht1
