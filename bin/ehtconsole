@@ -9935,7 +9935,7 @@ function main_options
 	then
 		clear
 		BACKL=1
-		cat "$EPATH"/Changelog | head -n 20
+		cat "$EPATH"/Changelog
 		echo -e "$PAKTC"
 		$READAK
 		clear
