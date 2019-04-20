@@ -174,6 +174,7 @@ printf '\033]2;Uninstalling...\a'
 	      cd /root/ehtools/lib
 	      chmod +x libunconf
 	      ./libunconf
+	      rm -r /tmp/config
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
 	      rm -r /etc/ehtools
