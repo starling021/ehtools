@@ -39,7 +39,7 @@ VERSION=2.1.8
 HOWMANYTOOLS=53
 BACKL="0"
 DOWNLOADS=100
-LATESTCHANGELOGLINES=24
+LATESTCHANGELOGLINES=23
 cd
 #############DEFAULTS###############
 function defaults_l
@@ -2013,7 +2013,7 @@ do
 	then
 		DICT="$DICTPATH folder"
 	fi
-	echo -e "   "$YS"5"$CE") Specify dictionary/ies     CURRENT:$DICT"
+	echo -e ""$YS" 5"$CE") Specify dictionary/ies     CURRENT:$DICT"
 	echo -e "------------------------------------------------"
 	echo -e ""$YS" b"$CE") Go back              "$YS"update"$CE") Update dagon"
 	echo -e ""$YS"start"$CE") Start"
