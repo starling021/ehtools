@@ -10038,7 +10038,7 @@ check_if_ks
 					fi
 			else
 				echo -e ""$YS"Removing old and install again?"$CE" ("$YS"y"$CE"/"$YS"n"$CE")"
-				read ROIN
+				read -p $'(\e[4;93mremove\e[0m\en)> ' ROIN
 				if [[ "$ROIN" == "y" ]]
 				then
 					if [[ "$foldname" != "" ]]
