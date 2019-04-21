@@ -1069,7 +1069,7 @@ do
 		while [[ "$j" -le "$HOWMANYSELECTED" ]]
 		do
 			clear
-			echo -e ""$YS"Installing "${toolselected["$j"]}""$CE"("$YS"$j"$CE"/"$YS"$HOWMANYSELECTED"$CE")"
+			echo -e ""$YS"Installing "${toolselected["$j"]}""$CE" ("$YS"$j"$CE"/"$YS"$HOWMANYSELECTED"$CE")"
 			sleep 1
 			command="install_"${toolselected["$j"]}""
 			$command
