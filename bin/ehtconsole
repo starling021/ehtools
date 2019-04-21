@@ -9405,7 +9405,7 @@ function settings_menu
 				elif [[ "$HOWCH" = 4 ]]
 				then
 					echo -e "Type number of answers to return: "
-					read numofans
+					read -p $'(\e[4;93mnumber\e[0m\en)> ' numofans
 					echo "$numofans" > "$EPATH"/settings/numofans.txt
 				elif [[ "$HOWCH" = 5 ]]
 				then
