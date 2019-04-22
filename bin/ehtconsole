@@ -423,13 +423,13 @@ function enable_wlan
 	O4=0
 	echo -e "Enabling $WLANN..."
 	rfkill unblock wifi &> /dev/null; rfkill unblock all &> /dev/null
-	ifconfig $WLANN up &>/dev/null && echo -e ""$YS"Done"$CE"" && O4=1  || echo -e ""$RS"Error. I can't find your wireless adapter"$CE""
+	ifconfig $WLANN up &>/dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O4=1  || echo -e ""$RS"Error. I can't find your wireless adapter"$CE""
 }
 function disable_wlan
 {
 	echo -e "Disabling $WLANN..."
 	rfkill unblock wifi &> /dev/null; rfkill unblock all &> /dev/null
-	ifconfig $WLANN down &>/dev/null && echo -e ""$YS"Done"$CE"" && O4=1 || echo -e ""$RS"Error. I can't find your wireless adapter."$CE""
+	ifconfig $WLANN down &>/dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O4=1 || echo -e ""$RS"Error. I can't find your wireless adapter."$CE""
 }
 function interface_selection
 {
@@ -9216,7 +9216,7 @@ function settings_menu
                 echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS" 0"$CE") Exit"
 		echo -e ""$RS" IF YOU DELETE EPATH FIRMWARE - SYSTEM WILL CRASHED!!!"$CE""
-		read -p $'(\e[101m\e[1;77msettings\e[0m)> ' SET
+		read -p $'(\e[4;93msettings\e[0m)> ' SET
 		clear
 		if [[ "$SET" = "back" || "$SET" = "b" || "$SET" = "00" ]]
 		then
