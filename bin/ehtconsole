@@ -1427,7 +1427,7 @@ then
 	echo -e "["$YS"inf"$CE"] "$YS"Ok...Lets try to fix this..."$CE""
 	sleep 0.5
 	mkdir /etc/reaver
-	echo -e "["$YS"inf"$CE"] "$YS"It seems to be fixe!"$CE""
+	echo -e "["$YS"inf"$CE"] "$YS"It seems to be fixed!"$CE""
 	sleep 0.5
 	echo -e "Enter your interface: "
 	read -p $'(\e[4;93minterface\e[0m)> ' INTWASH
