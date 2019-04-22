@@ -1411,8 +1411,6 @@ then
 	clear
 	echo -e "["$YS"inf"$CE"] "$YS"Trying to get you some audio..."$CE""
 	sleep 0.5
-	echo -e "Press '"$YS"y"$CE"' if/when prompted"
-	sleep 0.5
 	echo -e "["$YS"inf"$CE"] "$YS"Installing pulseaudio..."$CE""
 	sleep 0.5
 	apt-get install pulseaudio
@@ -1435,6 +1433,7 @@ then
 	read -p $'(\e[4;93minterface\e[0m)> ' INTWASH
 	sleep 0.5
 	echo -e "Press "$YS"many key"$CE" to test wash"
+	read -n 1
 	sleep 0.5
 	echo -e "["$YS"inf"$CE"] "$YS"Also try "$CE"'"$YS"wash -i wlan0mon -a"$CE"'"$YS" to display all networks"$CE""
 	wash -i $INTWASH
@@ -9210,9 +9209,9 @@ function settings_menu
 		echo -e ""$YS" 2"$CE") Howdoi settings"
 		echo -e ""$YS" 3"$CE") ALFA AWUS036ACH support                      $ALFA"
 		echo -e ""$YS" 4"$CE") Ignore negative one when deauthing           $IGN"
-		echo -e ""$YS" 5"$CE") MAC to change to,when starting monitor       $STARTMAC"	
+		echo -e ""$YS" 5"$CE") MAC to change to, when starting monitor      $STARTMAC"	
 		echo -e ""$YS" 6"$CE") Interface for arp-scan                       $ARPIN"
-		echo -e ""$YS" 7"$CE") Interface for iftop(show bandwidth)          $iftopint"
+		echo -e ""$YS" 7"$CE") Interface for iftop ("$YS"show bandwidth"$CE")         $iftopint"
 		echo -e ""$RS" e"$CE") Delete EPATH firmware (\e[5;31mDANGER!\e[0m)"
                 echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS" 0"$CE") Exit"
