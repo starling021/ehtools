@@ -1410,36 +1410,39 @@ if [[ "$ERRS" = "1" ]]
 then
 	clear
 	echo -e "["$YS"inf"$CE"] "$YS"Trying to get you some audio..."$CE""
-	sleep 1
+	sleep 0.5
 	echo -e "Press "$YS"y"$CE" if/when prompted"
-	sleep 1
+	sleep 0.5
 	echo -e "["$YS"inf"$CE"] "$YS"Installing pulseaudio..."$CE""
-	sleep 1
+	sleep 0.5
 	apt-get install pulseaudio
-	sleep 1
+	sleep 0.5
 	echo -e "["$YS"inf"$CE"] "$YS"Enabling pulseaudio..."$CE""
-	sleep 1
+	sleep 0.5
 	systemctl --user enable pulseaudio && systemctl --user start pulseaudio
 	echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
-	sleep 2
+	sleep 1
 	clear
 elif [[ "$ERRS" = "2" ]]
 then
 	clear
-	echo -e "Ok...Lets try to fix this..."
-	sleep 1
+	echo -e "["$YS"inf"$CE"] "$YS"Ok...Lets try to fix this..."$CE""
+	sleep 0.5
 	mkdir /etc/reaver
-	echo -e "It seems to be fixed."
-	echo -e "Enter you interface"
-	read INTWASH
+	echo -e "["$YS"inf"$CE"] "$YS"It seems to be fixe!"$CE""
+	sleep 0.5
+	echo -e "Enter your interface: "
+	read -p $'(\e[4;93minterface\e[0m)> ' INTWASH
+	sleep 0.5
 	echo -e "Press "$YS"many key"$CE" to test wash"
-	echo -e "Also try "wash -i wlan0mon -a" to display all networks"
+	sleep 0.5
+	echo -e "["$YS"inf"$CE"] "$YS"Also try "$CE"'"$YS"wash -i wlan0mon -a"$CE"'"$YS" to display all networks"$CE""
 	wash -i $INTWASH
 elif [[ "$ERRS" = "3" ]]
 then
 	apt-get install -y open-vm-tools-desktop fuse
-	echo -e "Restart your vistual machine..."
-	sleep 2
+	echo -e "["$YS"inf"$CE"] "$YS"Restart your vistual machine..."$CE""
+	sleep 1
 	echo -e "$PAKTGB"
 	$READAK
 elif [[ "$ERRS" = "4" ]]
@@ -1447,23 +1450,22 @@ then
 	locale-gen
 	localectl set-locale LANG="en_US.UTF-8"
 	sleep 2
-	echo -e "Reboot your system now"
+	echo -e "["$YS"inf"$CE"] "$YS"Reboot your system now!"$CE""
 	sleep 3
 elif [[ "$ERRS" = "5" ]]
 then
 	service nginx stop
-	echo -e "I think i fixed it. Try again: service apache2 start "
 	sleep 5
 elif [[ "$ERRS" = "6" ]]
 then
 	echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
 	rm -r -f /etc/apt/sources.list.d/*
-	echo -e "Try   apt-get update    again. That's all i can do."
+	echo -e ""["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
 	sleep 3
 elif [[ "$ERRS" = "7" ]]
 then
 	rm -f -r /usr/local/lib/python2.7/dist-packages/Crypto
-	echo -e "Error was fixed!"
+	echo -e ""["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
 	echo -e "$PAKTGB"
 	$READAK
 elif [[ "$ERRS" = "8" ]]
@@ -1473,14 +1475,14 @@ then
 	apt-get -y remove nginx-common
 	apt-get -y autoremove
 	clear
-	echo -e "Error was fixed!"
+	echo -e ""["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
 	echo -e "$PAKTGB"
 	$READAK
 elif [[ "$ERRS" = "9" ]]
 then
 	wget -O /tmp/scapy2.3.2.tar.gz https://pypi.python.org/packages/6d/72/c055abd32bcd4ee6b36ef8e9ceccc2e242dea9b6c58fdcf2e8fd005f7650/scapy-2.3.2.tar.gz; sudo pip2 install /tmp/scapy2.3.2.tar.gz
 	clear
-	echo -e "Error was fixed!"
+	echo -e ""["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
 	echo -e "$PAKTGB"
 	$READAK
 elif [[ "$ERRS" = "back" || "$ERRS" = "b" || "$ERRS" = 00 ]]
@@ -1500,7 +1502,7 @@ then
 	exit
 else
 	clear
-	echo -e "Not a valid option...."
+	echo -e "Not a valid option..."
 	sleep 2
 fi
 done
