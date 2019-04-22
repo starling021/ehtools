@@ -1460,12 +1460,12 @@ elif [[ "$ERRS" = "6" ]]
 then
 	echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
 	rm -r -f /etc/apt/sources.list.d/*
-	echo -e ""["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
+	echo -e "["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
 	sleep 3
 elif [[ "$ERRS" = "7" ]]
 then
 	rm -f -r /usr/local/lib/python2.7/dist-packages/Crypto
-	echo -e ""["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
+	echo -e "["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
 	echo -e "$PAKTGB"
 	$READAK
 elif [[ "$ERRS" = "8" ]]
@@ -1474,15 +1474,13 @@ then
 	apt-get -y remove nginx-full
 	apt-get -y remove nginx-common
 	apt-get -y autoremove
-	clear
-	echo -e ""["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
+	echo -e "["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
 	echo -e "$PAKTGB"
 	$READAK
 elif [[ "$ERRS" = "9" ]]
 then
 	wget -O /tmp/scapy2.3.2.tar.gz https://pypi.python.org/packages/6d/72/c055abd32bcd4ee6b36ef8e9ceccc2e242dea9b6c58fdcf2e8fd005f7650/scapy-2.3.2.tar.gz; sudo pip2 install /tmp/scapy2.3.2.tar.gz
-	clear
-	echo -e ""["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
+	echo -e "["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
 	echo -e "$PAKTGB"
 	$READAK
 elif [[ "$ERRS" = "back" || "$ERRS" = "b" || "$ERRS" = 00 ]]
