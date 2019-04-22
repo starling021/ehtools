@@ -1069,7 +1069,7 @@ do
 		while [[ "$j" -le "$HOWMANYSELECTED" ]]
 		do
 			clear
-			echo -e ""$YS"Installing "${toolselected["$j"]}""$CE" ("$YS"$j"$CE"/"$YS"$HOWMANYSELECTED"$CE")"
+			echo -e ""$YS"Installing "${toolselected["$j"]}""$CE"("$YS"$j"$CE"/"$YS"$HOWMANYSELECTED"$CE")"
 			sleep 1
 			command="install_"${toolselected["$j"]}""
 			$command
@@ -10028,7 +10028,7 @@ check_if_ks
 						return 1
 					fi
 			else
-				echo -e ""$YS"Removing old and install again?"$CE" ("$YS"y"$CE"/"$YS"n"$CE")"
+				echo -e ""$YS"Removing old and install again?"$CE"("$YS"y"$CE"/"$YS"n"$CE")"
 				read -p $'(\e[4;93mremove\e[0m\en)> ' ROIN
 				if [[ "$ROIN" == "y" ]]
 				then
