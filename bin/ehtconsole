@@ -1411,7 +1411,7 @@ then
 	clear
 	echo -e "["$YS"inf"$CE"] "$YS"Trying to get you some audio..."$CE""
 	sleep 0.5
-	echo -e "Press "$YS"y"$CE" if/when prompted"
+	echo -e "Press '"$YS"y"$CE"' if/when prompted"
 	sleep 0.5
 	echo -e "["$YS"inf"$CE"] "$YS"Installing pulseaudio..."$CE""
 	sleep 0.5
