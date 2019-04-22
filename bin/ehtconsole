@@ -1409,29 +1409,20 @@ clear
 if [[ "$ERRS" = "1" ]]
 then
 	clear
-	echo -e "Trying to get you some audio..."
-	sleep 2
-	clear
-	echo -e "Press "$YS"y"$CE" if/when prompted"
-	sleep 3
-	clear
-	echo -e "Installing pulseaudio......."
+	echo -e "["$YS"inf"$CE"] "$YS"Trying to get you some audio..."$CE""
 	sleep 1
-	apt-get pulseaudio
-	echo -e "Enabling pulseaudio......."
+	echo -e "Press "$YS"y"$CE" if/when prompted"
+	sleep 1
+	echo -e "["$YS"inf"$CE"] "$YS"Installing pulseaudio..."$CE""
+	sleep 1
+	apt-get install pulseaudio
+	sleep 1
+	echo -e "["$YS"inf"$CE"] "$YS"Enabling pulseaudio..."$CE""
 	sleep 1
 	systemctl --user enable pulseaudio && systemctl --user start pulseaudio
-	clear
 	echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
-	sleep 1
-	clear
-	echo -e "I mean...Try to see if you have audio."
-	sleep 3
-	echo -e " "
-	echo -e "That's all ehtools can do :/"
 	sleep 2
-	echo -e " "
-	echo -e "If it wasn't fix , then try rebooting"
+	clear
 elif [[ "$ERRS" = "2" ]]
 then
 	clear
