@@ -199,9 +199,11 @@ done
 clear
 printf '\033]2;ehtools update helper\a'
 sleep 3
-echo -e "\e[4;31m?DO YOU WANT TO CONTINUE?\e[0m"
+echo -e "\e[4;31mDO YOU WANT TO CONTINUE?\e[0m"
 sleep 2
-echo -e "\e[4;31mIf something goes wrong, all the data, the framework's system and configuration files will be erased!!!\e[0m"
+echo -e "\e[4;31mIf something goes wrong, all data, \e[0m"
+echo -e "\e[4;31mthe framework's system and configuration files\e[0m"
+echo -e "\e[4;31mwill be erased!!!\e[0m"
 sleep 3
 echo -e "Press \e[1;33many key\e[0m to install update"
 read -n 1
