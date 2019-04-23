@@ -8466,6 +8466,11 @@ function about_option
 	      rm /bin/modules
 	      rm /bin/euh
               rm /bin/uiecache
+	      chattr +i /etc/ehtools/login
+              chattr +i /etc/ehtools/password
+              chattr +i /etc/ehtools
+              chattr +i /etc/ehtools/root
+              chattr +i /etc/ehtools/root/password
 	fi
         done
 }
@@ -9257,6 +9262,11 @@ function settings_menu
 	                 rm /bin/modules
 	                 rm /bin/euh
                          rm /bin/uiecache
+		         chattr +i /etc/ehtools/login
+                         chattr +i /etc/ehtools/password
+                         chattr +i /etc/ehtools
+                         chattr +i /etc/ehtools/root
+                         chattr +i /etc/ehtools/root/password
 		elif [[ "$SET" = 7 ]]
 		then
 			clear
