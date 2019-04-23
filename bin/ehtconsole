@@ -34,7 +34,7 @@
 #
 
 # set -x
-VERSION=2.1.8
+VERSION=3.0.0
 #Number of tools with keyboard shortcut support
 HOWMANYTOOLS=53
 BACKL="0"
