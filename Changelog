@@ -5,7 +5,7 @@
 | • Has PRO and LITE versions!                    |
 | • More than 58 general tools!                   |
 | • More than 100 tools in all Framework          |
-| [*] Welcome to Ehtools Framework PRO 2.1.8 [*]  |
+| [*] Welcome to Ehtools Framework PRO 3.0.0 [*]  |
 |                         [^] ART by              |
 |      .----.   @   @         DJ Mobley           |
 |     / .-"-.`.  \v/                              |
@@ -23,8 +23,20 @@
 +=================================================+
 
 +=================================================+
-|   Full Ehtools Framework Changelog (0.2-2.1.8)  |
+|   Full Ehtools Framework Changelog (0.2-3.0.0)  |
 +=================================================+
+
+3.0.0
+Added some new features!
+Updated libchattr and libunchattr
+Updated libconf and libunconf
+Updated ehtools PRO UX/UI Impruvements
+Updated ehtools Lite UX/UI Impruvements
+
+2.1.9
+Fixed known issues and bugs!
+Updated  ehtools Lite UX/UI
+Fixed install/reinstall menu bug!
 
 2.1.8
 Added paid version of Ehtools PRO
