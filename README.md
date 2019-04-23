@@ -314,7 +314,7 @@ Run it to open WPS menu:
     <img src="https://img.shields.io/badge/thecakeisfalse-twitter-green.svg">
  </a>
  <a href="https://mobile.twitter.com/_mobley_">
-    <img src="https://img.shields.io/badge/mobley-twitter-brown.svg">
+    <img src="https://img.shields.io/badge/mobley-twitter-black.svg">
  </a>
 </p>
 
