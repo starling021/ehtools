@@ -177,6 +177,10 @@ printf '\033]2;Uninstalling...\a'
 	      chattr -i /tmp/config
               chattr -i /tmp/config/config.txt
               chattr -i /tmp/config/configure.txt
+	      chattr -i /etc/ehtools/root/service
+              chattr -i /etc/ehtools/root/service/late
+              chattr -i /etc/ehtools/root/service/ehtkey.txt
+              chattr -i /etc/ehtools/root/service/late/ehtkey.txt
 	      rm -r /tmp/config
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
