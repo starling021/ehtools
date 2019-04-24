@@ -8,6 +8,7 @@
                                             ╚══════╝╚═╝  ╚═╝   ╚═╝
                                             The Ehtools Framework 
                                        By Ehtools Team and Entynetproject
+                                         entynetproject.simplesite.com
                                                  ehtools.pro
  <h4 align="center">Details</h4>                
 <p align="center">
