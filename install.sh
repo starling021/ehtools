@@ -82,7 +82,7 @@ echo -e "█████╗  ███████║   ██║   ██║   
 echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
 echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
 echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
-echo -e "\e[1;33mBy Ehtools Team and Entynetproject corp\e[0m"
+echo -e "\e[1;33mBy Ehtools Team and Entynetproject\e[0m"
 sleep 3
 echo -e "More on our sites:"
 sleep 3
