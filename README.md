@@ -7,7 +7,7 @@
                                             ███████╗██║  ██║   ██║   
                                             ╚══════╝╚═╝  ╚═╝   ╚═╝
                                             The Ehtools Framework 
-                                       By Ehtools Team and Entynetproject
+                                       By Ehtools Team with Entynetproject
                                          entynetproject.simplesite.com
                                                  ehtools.pro
  <h4 align="center">Details</h4>                
