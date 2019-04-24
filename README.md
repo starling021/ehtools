@@ -6,9 +6,9 @@
                                             ██╔══╝  ██╔══██║   ██║   
                                             ███████╗██║  ██║   ██║   
                                             ╚══════╝╚═╝  ╚═╝   ╚═╝
-                                            The Ehtools Framework 
-                                               By ehtools team
-   <h4 align="center">Details</h4>               ehtools.pro
+                                             The Ehtools Framework 
+                                                By ehtools team
+   <h4 align="center">Details</h4>                ehtools.pro
 <p align="center">
   <a href="https://github.com/entynetproject">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
