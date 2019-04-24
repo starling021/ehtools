@@ -197,7 +197,9 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS# entynetproject.simplesite.com # $CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#   To open this run - ehtools  # $CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS################################# $CE"                                                                
+sleep 0.5
 echo -e "You want to login as '"$YS"user"$CE"'"
+sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
@@ -215,7 +217,9 @@ printf '\033]2;Ehtools Root Authentication\a'
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS# entynetproject.simplesite.com # $CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#   To open this run - ehtools  # $CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS################################# $CE"                                                               
+sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
+sleep 0.5
 echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
 passroot="$( cat /etc/ehtools/root/password )"
@@ -279,7 +283,15 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
-echo -e "You want to login as administrator"
+      echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS################################# $CE" 
+      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS#     Entynet Hacker Tools      # $CE"                
+      echo -e "$COL       █████╗  ███████║   ██║      $WHS#       [Entynetproject]        # $CE"          
+      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS# entynetproject.simplesite.com # $CE"                 
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#   To open this run - ehtools  # $CE"
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS################################# $CE"                                                               
+sleep 0.5
+echo -e "You want to login as '"$YS"root"$CE"'"
+sleep 0.5
 echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
 passroot="$( cat /etc/ehtools/root/password )"
