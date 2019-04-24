@@ -29,7 +29,7 @@
 #    Founder : Entynetproject (Ivan Nikolsky)
 #    Instagram : @entynetproject | @ehtools_framework
 #    Email : entynetproject@gmail.com
-#    Project's site : https://entynethacker.wixsite.com/ehtools
+#    Project's site : https://ehtools.pro/
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
 
@@ -115,9 +115,9 @@ echo -e "█████╗  ███████║   ██║   ██║   
 echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
 echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
 echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
-echo -e "\e[1;33mBy Ehtools Team\e[0m"
+echo -e "\e[1;33mBy Ehtools Team and Entynetproject corp\e[0m"
 sleep 3
-echo -e "More on our site:"
+echo -e "More on our sites:"
 sleep 3
 echo -e "==> \e[1;33mhttps://ehtools.pro/\e[0m"                                                           
 sleep 3
