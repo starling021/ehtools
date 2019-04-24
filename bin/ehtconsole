@@ -362,7 +362,7 @@ function banner
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS#     Entynet Hacker Tools      # $CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS#      [by Ehtools Team]        # $CE"          
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS#     https://ehtools.pro       # $CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#   To open this run - ehtools  # $CE"
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#  To open this run - ehtools   # $CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS################################# $CE"
       echo -e "                                                                             $CE"                                                                     
 
