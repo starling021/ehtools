@@ -159,11 +159,11 @@ fi
 clear
 printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHSName | $RSEntynet Hacker Tools$CE" 
-      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHSVer  | $RSv3.0.0 $WHS($RSfinally$WHS)$CE"                
-      echo -e "$COL       █████╗  ███████║   ██║      $WHSCore | $RSTEF $WHS($RSThe Ehtools Framework$WHS)$CE"         
+      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHSVer  | $RSv3.0.0 $WHS($YSfinally$WHS)$CE"                
+      echo -e "$COL       █████╗  ███████║   ██║      $WHSCore | $RSTEF $WHS($YSThe Ehtools Framework$WHS)$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHSDev  | $RSEhtools Team and Entynetproject$CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHSSite | $RShttps://ehtools.pro$CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHSPlan | $RSEhtools Framework PRO$CE"                                                              
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHSPlan | $RSEhtools Framework $WHS[$YSPRO$WHS]$CE"                                                            
 sleep 0.5
 echo -e "You want to login as '"$YS"user"$CE"'"
 sleep 0.5
@@ -179,11 +179,11 @@ clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHSName | $RSEntynet Hacker Tools$CE" 
-      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHSVer  | $RSv3.0.0 $WHS($RSfinally$WHS)$CE"                
-      echo -e "$COL       █████╗  ███████║   ██║      $WHSCore | $RSTEF $WHS($RSThe Ehtools Framework$WHS)$CE"         
+      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHSVer  | $RSv3.0.0 $WHS($YSfinally$WHS)$CE"                
+      echo -e "$COL       █████╗  ███████║   ██║      $WHSCore | $RSTEF $WHS($YSThe Ehtools Framework$WHS)$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHSDev  | $RSEhtools Team and Entynetproject$CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHSSite | $RShttps://ehtools.pro$CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHSPlan | $RSEhtools Framework PRO$CE"                                               
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHSPlan | $RSEhtools Framework $WHS[$YSPRO$WHS]$CE"                                       
 sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
@@ -251,11 +251,11 @@ clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHSName | $RSEntynet Hacker Tools$CE" 
-      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHSVer  | $RSv3.0.0 $WHS($RSfinally$WHS)$CE"                
-      echo -e "$COL       █████╗  ███████║   ██║      $WHSCore | $RSTEF $WHS($RSThe Ehtools Framework$WHS)$CE"         
+      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHSVer  | $RSv3.0.0 $WHS($YSfinally$WHS)$CE"                
+      echo -e "$COL       █████╗  ███████║   ██║      $WHSCore | $RSTEF $WHS($YSThe Ehtools Framework$WHS)$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHSDev  | $RSEhtools Team and Entynetproject$CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHSSite | $RShttps://ehtools.pro$CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHSPlan | $RSEhtools Framework PRO$CE"                                                           
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHSPlan | $RSEhtools Framework $WHS[$YSPRO$WHS]$CE"                                                   
 sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
