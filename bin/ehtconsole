@@ -360,8 +360,8 @@ function banner
 	
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS################################# $CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS#     Entynet Hacker Tools      # $CE"                
-      echo -e "$COL       █████╗  ███████║   ██║      $WHS#       [Entynetproject]        # $CE"          
-      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS# entynetproject.simplesite.com # $CE"                 
+      echo -e "$COL       █████╗  ███████║   ██║      $WHS#      [by Ehtools Team]        # $CE"          
+      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS#     https://ehtools.pro       # $CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#   To open this run - ehtools  # $CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS################################# $CE"
       echo -e "                                                                             $CE"                                                                     
@@ -389,10 +389,10 @@ function banner
 	if [[ -f /usr/bin/anonsurf ]]
 	then
 	echo -e ""$YS" 5"$CE") Enable anonsurf   "$YS"d5"$CE") Disable anonsurf     "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
-	echo -e ""$YS" 6"$CE") Anonsurf's status "$YS"d6"$CE") Restart anonsurf     "$RS"|"$CE""$YS"     e"$CE") About entynetproject"
+	echo -e ""$YS" 6"$CE") Anonsurf's status "$YS"d6"$CE") Restart anonsurf     "$RS"|"$CE""$YS"     e"$CE") About ehtools team"
 	else
 	echo -e ""$RS" 5"$CE") Enable anonsurf   "$RS"d5"$CE") Disable anonsurf     "$RS"|"$CE"    "$YS"ks"$CE") Keyboard shortucts"
-	echo -e ""$RS" 6"$CE") Anonsurf's status "$RS"d6"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"e"$CE") About entynetproject"
+	echo -e ""$RS" 6"$CE") Anonsurf's status "$RS"d6"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"e"$CE") About ehtools team"
 	fi
 	echo -e ""$YS" 7"$CE") View public IP                             "$RS"|"$CE"     "$YS"s"$CE") Go to settings menu"
 	echo -e ""$YS" 8"$CE") View MAC"
@@ -8409,9 +8409,9 @@ function about_option
 	while true
 	do
 	clear
-	TERMINALTITLE="ENTYNETPROJECT"
+	TERMINALTITLE="Ehtools Team"
 	dash_calc
-	printf '\033]2;ENTYNETPROJECT\a'
+	printf '\033]2Ehtools Team\a'
 	echo -e "Open our site, please :з"
 	echo -e ""$LBS"Total ehtools downloads:"$CE" $DOWNLOADS"
 	echo -e "Welcome to ehtools framework PRO!"
@@ -8422,7 +8422,7 @@ function about_option
 	read -p $'(\e[4;34mabout\e[0m)> ' DON
 	if [[ "$DON" = "1" ]]
 	then
-		gio open "http://entynetproject.simplesite.com/"
+		gio open "https://ehtools.pro/"
 	elif [[ "$DON" = "2" ]]
 	then
 		gio open "https://github.com/entynetproject/ehtools"
