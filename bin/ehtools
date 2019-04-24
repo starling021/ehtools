@@ -68,6 +68,12 @@
 #white start
 	WHS="\e[1;37m"
 
+if [[ -f /root/ehtools/settings/logocolor.txt ]]
+	then
+		read COL < "$EPATH"/settings/logocolor.txt
+	else
+		COL="$RS"
+	fi
 
 
 {
