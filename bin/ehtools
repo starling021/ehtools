@@ -193,9 +193,9 @@ clear
 printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS################################# $CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS#     Entynet Hacker Tools      # $CE"                
-      echo -e "$COL       █████╗  ███████║   ██║      $WHS#       [Entynetproject]        # $CE"          
-      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS# entynetproject.simplesite.com # $CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#   To open this run - ehtools  # $CE"
+      echo -e "$COL       █████╗  ███████║   ██║      $WHS#      [By Ehtools Team]        # $CE"          
+      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS#     https://ehtools.pro       # $CE"                 
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#  To open this run - ehtools   # $CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS################################# $CE"                                                                
 sleep 0.5
 echo -e "You want to login as '"$YS"user"$CE"'"
@@ -213,9 +213,9 @@ sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS################################# $CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS#     Entynet Hacker Tools      # $CE"                
-      echo -e "$COL       █████╗  ███████║   ██║      $WHS#       [Entynetproject]        # $CE"          
-      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS# entynetproject.simplesite.com # $CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#   To open this run - ehtools  # $CE"
+      echo -e "$COL       █████╗  ███████║   ██║      $WHS#      [By Ehtools Team]        # $CE"          
+      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS#     https://ehtools.pro       # $CE"                 
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#  To open this run - ehtools   # $CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS################################# $CE"                                                               
 sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
@@ -285,9 +285,9 @@ sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS################################# $CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS#     Entynet Hacker Tools      # $CE"                
-      echo -e "$COL       █████╗  ███████║   ██║      $WHS#       [Entynetproject]        # $CE"          
-      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS# entynetproject.simplesite.com # $CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#   To open this run - ehtools  # $CE"
+      echo -e "$COL       █████╗  ███████║   ██║      $WHS#      [By Ehtools Team]        # $CE"          
+      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS#     https://ehtools.pro       # $CE"                 
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#  To open this run - ehtools   # $CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS################################# $CE"                                                               
 sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
