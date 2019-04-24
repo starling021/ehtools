@@ -115,11 +115,11 @@ echo -e "█████╗  ███████║   ██║   ██║   
 echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
 echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
 echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
-echo -e "\e[1;33mBy Entynetproject corp\e[0m"
+echo -e "\e[1;33mBy Ehtools Team\e[0m"
 sleep 3
 echo -e "More on our site:"
 sleep 3
-echo -e "==> \e[1;33mhttps://entynethacker.wixsite.com/ehtools\e[0m"                                                           
+echo -e "==> \e[1;33mhttps://ehtools.pro/\e[0m"                                                           
 sleep 3
 echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com/\e[0m"
 sleep 3
