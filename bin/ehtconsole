@@ -325,13 +325,13 @@ function banner
 	check_wlans                           
 
 	
-      echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS################################# $CE" 
-      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS#     Entynet Hacker Tools      # $CE"                
-      echo -e "$COL       █████╗  ███████║   ██║      $WHS#      [by Ehtools Team]        # $CE"          
-      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS#     https://ehtools.pro       # $CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS#  To open this run - ehtools   # $CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS################################# $CE"
-      echo -e "                                                                             $CE"                                                                     
+      echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHSName | $RSEntynet Hacker Tools$CE" 
+      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHSVer  | $RSv3.0.0 $WHS($RSfinally$WHS)$CE"                
+      echo -e "$COL       █████╗  ███████║   ██║      $WHSCore | $RSTEF $WHS($RSThe Ehtools Framework$WHS)$CE"         
+      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHSDev  | $RSEhtools Team and Entynetproject$CE"                 
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHSSite | $RShttps://ehtools.pro$CE"
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHSPlan | $RSEhtools Framework PRO$CE"
+      echo -e "                                                                             "                                                                     
 
        echo -e "$RS"Red colour - not installed"$CE"
        echo -e "$YS"Yellow colour - installed"$CE"              
