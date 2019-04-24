@@ -29,7 +29,7 @@
 #    Founder : Entynetproject (Ivan Nikolsky)
 #    Instagram : @entynetproject | @ehtools_framework
 #    Email : entynetproject@gmail.com
-#    Project's site : https://entynethacker.wixsite.com/ehtools
+#    Project's site : https://ehtools.pro/
 #    Entynetproject's site : http://entynetproject.simplesite.com/
 #
 
