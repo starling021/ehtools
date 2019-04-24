@@ -5,12 +5,10 @@
                                             █████╗  ███████║   ██║   
                                             ██╔══╝  ██╔══██║   ██║   
                                             ███████╗██║  ██║   ██║   
-                                            ╚══════╝╚═╝  ╚═╝   ╚═╝  
-                                   (Hacker support from entynetproject corp)
-                                        entynetproject.simplesite.com
-                                           The Ehtools Framework 
-
-   <h4 align="center">Details</h4>
+                                            ╚══════╝╚═╝  ╚═╝   ╚═╝
+                                            The Ehtools Framework 
+                                               By ehtools team
+   <h4 align="center">Details</h4>               ehtools.pro
 <p align="center">
   <a href="https://github.com/entynetproject">
     <img src="https://img.shields.io/badge/entynetproject-Ivan%20Nikolsky-blue.svg">
@@ -28,8 +26,8 @@
       <img src="https://img.shields.io/badge/ehtools%20-wiki-lightgrey.svg">
  </a>
 
-  <a href="https://entynethacker.wixsite.com/ehtools">
-    <img src="https://img.shields.io/badge/ehtools-site-green.svg?maxAge=2592000">
+  <a href="https://ehtools.pro/">
+    <img src="https://img.shields.io/badge/site-ehtools.pro-green.svg?maxAge=2592000">
  </a>
   <a href="https://mobile.twitter.com/ehtools">
     <img src="https://img.shields.io/badge/ehtools-twitter-blue.svg">
@@ -304,8 +302,8 @@ Run it to open WPS menu:
     
 <h4 align="center">Resources</h4>
 <p align="center">
-<a href="https://entynethacker.wixsite.com/ehtools">
-    <img src="https://img.shields.io/badge/ehtools-site-green.svg?maxAge=2592000">
+<a href="https://ehtools.pro/">
+    <img src="https://img.shields.io/badge/site-ehtools.pro-green.svg?maxAge=2592000">
  </a>
   <a href="https://mobile.twitter.com/ehtools">
     <img src="https://img.shields.io/badge/ehtools-twitter-blue.svg">
