@@ -103,7 +103,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 ![Снимок экрана 2019-04-07 в 11 17 52](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
 
-![Снимок экрана 2019-04-07 в 11 20 23](https://user-images.githubusercontent.com/43011806/55680975-a9465200-5929-11e9-9385-8e6c817999d5.png)
+![Снимок экрана 2019-04-25 в 2 59 47](https://user-images.githubusercontent.com/43011806/56701350-4c0f1680-6707-11e9-8e13-222e9448ee4d.png)
 
 # Attacking frameworks
 
