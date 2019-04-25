@@ -292,7 +292,7 @@ Run it to open WPS menu:
 
 # About ehtools team
 
-> Ivan Nikolsky
+> Entynetproject
 
     INFO: Main ehtools developer
     
