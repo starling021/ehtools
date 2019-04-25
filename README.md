@@ -267,7 +267,7 @@ Run it to open WPS menu:
     INFO: Our framework has more than 100 packages in
     ehtools archive (on server this archive: 2.3 Tb)!
 
-![Снимок экрана 2019-04-07 в 11 23 56](https://user-images.githubusercontent.com/43011806/55681017-270a5d80-592a-11e9-865c-0ca07581b78c.png)
+![Снимок экрана 2019-04-25 в 2 47 44](https://user-images.githubusercontent.com/43011806/56701380-84aef000-6707-11e9-9dc2-32e0286e08d7.png)
 
 # System requirements 
 
