@@ -36,7 +36,7 @@
  </a>
 </p>
 
-![Снимок экрана 2019-04-25 в 3 03 30](https://user-images.githubusercontent.com/43011806/56701315-22ee8600-6707-11e9-853a-216a9c7a0e64.png)
+![Ehtools UX/UI Interface Red](https://user-images.githubusercontent.com/43011806/56748159-034b7200-6788-11e9-95fa-f331bd3aeb76.png)
 
 # About our framework
 
@@ -101,9 +101,10 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 # Install.sh interface
 
-![Снимок экрана 2019-04-07 в 11 17 52](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
+![Ehtools Installer 2](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
 
-![Снимок экрана 2019-04-25 в 2 59 47](https://user-images.githubusercontent.com/43011806/56701350-4c0f1680-6707-11e9-8e13-222e9448ee4d.png)
+![Ehtools Installer 3](https://user-images.githubusercontent.com/43011806/56747927-86b89380-6787-11e9-99dc-5693642d6770.png)
+
 
 # Attacking frameworks
 
@@ -167,7 +168,7 @@ This allows us to do things like scan the network for other devices. This part o
 
 # Install new tools
 
-![Снимок экрана 2019-04-25 в 2 47 44](https://user-images.githubusercontent.com/43011806/56701380-84aef000-6707-11e9-9dc2-32e0286e08d7.png)
+![Tools Menu](https://user-images.githubusercontent.com/43011806/56701380-84aef000-6707-11e9-9dc2-32e0286e08d7.png)
 
 Part of the fun of Ehtools is how easy it is to add new tools to our arsenal. To demonstrate this, let's download Pupy, a Python-based RAT designed to take control of other computers on the network. We can select option 9 to access the list of tools in Ehtools Framework.
 
@@ -267,7 +268,7 @@ Run it to open WPS menu:
     INFO: Our framework has more than 100 packages in
     ehtools archive (on server this archive: 2.3 Tb)!
 
-![Снимок экрана 2019-04-25 в 3 03 48](https://user-images.githubusercontent.com/43011806/56701459-f5eea300-6707-11e9-9a53-da4e68ee8ae7.png)
+![Ehtools UX/UI Interface Yellow](https://user-images.githubusercontent.com/43011806/56748244-283fe500-6788-11e9-99c1-a12c7475bf41.png)
 
 # System requirements 
 
@@ -482,6 +483,6 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     
     WARNING: Do not just close ehtools window!
 
-![Снимок экрана 2019-04-07 в 11 21 51](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
+![Ehtools Password Protection](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
 
 # Thats all!
