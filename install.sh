@@ -82,7 +82,7 @@ echo -e "█████╗  ███████║   ██║   ██║   
 echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
 echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
 echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
-echo -e "\e[1;33mBy Ehtools Team with Entynetproject\e[0m"
+echo -e "\e[1;33mBy Ehtools Team\e[0m"
 sleep 3
 echo -e "More on our sites:"
 sleep 3
@@ -92,11 +92,11 @@ echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com/\e[0m"
 sleep 3
 echo -e "Creators of Ehtools Framework (\e[4;34mehtools team\e[0m):"
 sleep 3
-echo -e "\e[4;34mIvan Nikolsky (Enty)\e[0m - Main Developer"
+echo -e "\e[4;34mEntynetproject\e[0m   - Main Developer"
 sleep 3
-echo -e "\e[4;33mDJ Mobley\e[0m            - Ascii Designer"
+echo -e "\e[4;33mDJ Mobley\e[0m        - Ascii Designer"
 sleep 3
-echo -e "\e[4;32mTheCakeIsFalse\e[0m       - Modules Developer"
+echo -e "\e[4;32mTheCakeIsFalse\e[0m   - Modules Developer"
 sleep 3
 echo -e "Press \e[1;33many key\e[0m to install ehtools"
 read -n 1
