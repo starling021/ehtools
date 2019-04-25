@@ -167,6 +167,8 @@ This allows us to do things like scan the network for other devices. This part o
 
 # Install new tools
 
+![Снимок экрана 2019-04-25 в 2 47 44](https://user-images.githubusercontent.com/43011806/56701380-84aef000-6707-11e9-9dc2-32e0286e08d7.png)
+
 Part of the fun of Ehtools is how easy it is to add new tools to our arsenal. To demonstrate this, let's download Pupy, a Python-based RAT designed to take control of other computers on the network. We can select option 9 to access the list of tools in Ehtools Framework.
 
     INFO: Our framework has more than 100 packages in
@@ -200,8 +202,6 @@ From the next menu, the tools are broken down into major categories, with option
     hacking tools.
 
 You can also manage your installed tools by accessing option 6. To download Pupy, we'll go to option 2, which is remote access. Here, we will see a list of different tools for remote access, and we can select option 3 for Pupy.
-
-![Снимок экрана 2019-04-25 в 2 47 44](https://user-images.githubusercontent.com/43011806/56701380-84aef000-6707-11e9-9dc2-32e0286e08d7.png)
 
 # Use quick access (only ehtools PRO)
 
