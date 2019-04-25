@@ -36,7 +36,7 @@
  </a>
 </p>
 
-![Снимок экрана 2019-04-07 в 11 23 56](https://user-images.githubusercontent.com/43011806/55681017-270a5d80-592a-11e9-865c-0ca07581b78c.png)
+![Снимок экрана 2019-04-25 в 3 03 30](https://user-images.githubusercontent.com/43011806/56701315-22ee8600-6707-11e9-853a-216a9c7a0e64.png)
 
 # About our framework
 
