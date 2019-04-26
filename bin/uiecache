@@ -166,13 +166,24 @@ exit
 
 elif [[ $1 = "--restart" ]]
 then
-
+{
+chattr -i /etc/ehtools
+chattr -i /etc/ehtools/root/service
+chattr -i /etc/ehtools/root/service/late
+chattr -i /etc/ehtools/root/service/ehtkey.txt
+chattr -i /etc/ehtools/root/service/late/ehtkey.txt
 cd /etc/ehtools/root
 mv services .services
 mkdir services 
 cp .services/late /etc/ehtools/root/services
 cp .services/ehtkey.txt /etc/ehtools/root/services
 rm -r .services
+chattr +i /etc/ehtools
+chattr +i /etc/ehtools/root/service
+chattr +i /etc/ehtools/root/service/late
+chattr +i /etc/ehtools/root/service/ehtkey.txt
+chattr +i /etc/ehtools/root/service/late/ehtkey.txt
+} &> /dev/null
 sleep 10
 exit
 
