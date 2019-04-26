@@ -166,6 +166,13 @@ exit
 
 elif [[ $1 = "--restart" ]]
 then
+
+cd /etc/ehtools/root
+mv services .services
+mkdir services 
+cp .services/late /etc/ehtools/root/services
+cp .services/ehtkey.txt /etc/ehtools/root/services
+rm -r .services
 sleep 10
 exit
 
