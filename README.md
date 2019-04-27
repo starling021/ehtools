@@ -36,7 +36,7 @@
  </a>
 </p>
 
-![Ehtools UX/UI Interface Red](https://user-images.githubusercontent.com/43011806/56748159-034b7200-6788-11e9-95fa-f331bd3aeb76.png)
+![Red Ehtools Menu](https://user-images.githubusercontent.com/43011806/56846868-09069c00-68dd-11e9-87ff-07284790eb2c.png)
 
 # About our framework
 
@@ -103,7 +103,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 ![Ehtools Installer 2](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
 
-![Ehtools Installer 3](https://user-images.githubusercontent.com/43011806/56747927-86b89380-6787-11e9-99dc-5693642d6770.png)
+![Ehtools Installer 3](https://user-images.githubusercontent.com/43011806/56846875-29365b00-68dd-11e9-9646-9e40a763789f.png)
 
 
 # Attacking frameworks
@@ -268,7 +268,7 @@ Run it to open WPS menu:
     INFO: Our framework has more than 100 packages in
     ehtools archive (on server this archive: 2.3 Tb)!
 
-![Ehtools UX/UI Interface Yellow](https://user-images.githubusercontent.com/43011806/56748244-283fe500-6788-11e9-99c1-a12c7475bf41.png)
+![Yellow Ehtools Menu](https://user-images.githubusercontent.com/43011806/56846891-60a50780-68dd-11e9-8337-5444ec1fb69a.png)
 
 # System requirements 
 
@@ -469,6 +469,8 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     
 # How to protect ehtools?
 
+![Ehtools Password Protection Menu](https://user-images.githubusercontent.com/43011806/56846904-80d4c680-68dd-11e9-9b30-b20ee13dccca.png)
+
 > Do it with install.sh:
    
     COUNCIL: Create login and password from install.sh 
@@ -483,6 +485,6 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     
     WARNING: Do not just close ehtools window!
 
-![Ehtools Password Protection](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
+![Ehtools Password Protection Creator](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
 
 # Thats all!
