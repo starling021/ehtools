@@ -29,11 +29,13 @@
 #
 
 {
-chattr -i /bin/ehtools/ehtools
-chattr -i /bin/ehtools/ehtconsole
+chattr -i /etc/ehtools
 chattr -i /etc/ehtools/login
 chattr -i /etc/ehtools/password
-chattr -i /etc/ehtools
 chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
+chattr -i /etc/ehtools/root/service
+chattr -i /etc/ehtools/root/service/late
+chattr -i /etc/ehtools/root/service/ehtkey.txt
+chattr -i /etc/ehtools/root/service/late/ehtkey.txt
 } &> /dev/null
