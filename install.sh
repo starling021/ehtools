@@ -301,7 +301,7 @@ fi
 clear
 {
 cd /root/ehtools/lib
-chmod +x /libunlogin
+chmod +x libunlogin
 ./libunlogin
 rm /etc/ehtools/login
 rm /etc/ehtools/password
@@ -329,7 +329,7 @@ touch password
 echo $passwords >> /etc/ehtools/password
 
 cd /root/ehtools/lib
-chmod +x /liblogin
+chmod +x liblogin
 ./liblogin
 
 cd /root/ehtools/lib
