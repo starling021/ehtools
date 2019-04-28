@@ -6243,7 +6243,7 @@ function metasploit_menu
 	then
 		PAYLOADL=""
 		echo -e "PAYLOAD (Default: "$YS"windows/meterpreter/reverse_tcp"$CE"): "
-		read PAYLOADL
+		read -p $'(\e[4;93mpayload\e[0m)> ' PAYLOADL
 		if [[ -z "$PAYLOADL" ]]
 		then
 			echo -e "Setting PAYLOAD to windows/meterpreter/reverse_tcp"
