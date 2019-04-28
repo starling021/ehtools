@@ -166,6 +166,8 @@ exit
 
 elif [[ $1 = "--restart" ]]
 then
+if [[ -d /etc/ehtools/root/service ]]
+then
 {
 chattr -i /etc/ehtools
 chattr -i /etc/ehtools/root/service
@@ -173,11 +175,11 @@ chattr -i /etc/ehtools/root/service/late
 chattr -i /etc/ehtools/root/service/ehtkey.txt
 chattr -i /etc/ehtools/root/service/late/ehtkey.txt
 cd /etc/ehtools/root
-mv services .services
-mkdir services 
-cp .services/late /etc/ehtools/root/services
-cp .services/ehtkey.txt /etc/ehtools/root/services
-rm -r .services
+mv service .service
+mkdir service 
+cp .service/late /etc/ehtools/root/service
+cp .service/ehtkey.txt /etc/ehtools/root/service
+rm -r .service
 chattr +i /etc/ehtools
 chattr +i /etc/ehtools/root/service
 chattr +i /etc/ehtools/root/service/late
@@ -185,6 +187,11 @@ chattr +i /etc/ehtools/root/service/ehtkey.txt
 chattr +i /etc/ehtools/root/service/late/ehtkey.txt
 } &> /dev/null
 sleep 10
+else
+sleep 2
+echo -e "Error, no services found!"
+sleep 2
+fi
 exit
 
 
