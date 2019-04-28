@@ -177,7 +177,7 @@ chattr -i /etc/ehtools/root/service/late/ehtkey.txt
 cd /etc/ehtools/root
 mv service .service
 mkdir service 
-cp .service/late /etc/ehtools/root/service
+cp -r .service/late /etc/ehtools/root/service
 cp .service/ehtkey.txt /etc/ehtools/root/service
 rm -r .service
 chattr +i /etc/ehtools
