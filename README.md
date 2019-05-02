@@ -330,7 +330,8 @@ Run it to open WPS menu:
 
 Uiecache - (uninstall ehtools cache) the utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
 
-    INFO: Uiecache - tool (ehtools utility) to clean/uninstall ehtools login and just ehtools cache!
+    INFO: Uiecache - tool (ehtools utility) to clean/uninstall 
+    ehtools login and just ehtools cache!
 
 Run it to uninstall all ehtools cache:
 
