@@ -25,14 +25,14 @@
       <img src="https://img.shields.io/github/issues/entynetproject/ehtools.svg">
   </a>
   <a href="https://github.com/entynetproject/ehtools/wiki">
-      <img src="https://img.shields.io/badge/ehtools%20-wiki-lightgrey.svg">
+      <img src="https://img.shields.io/badge/wiki%20-ehtools-lightgrey.svg">
  </a>
 
   <a href="https://ehtools.pro/">
     <img src="https://img.shields.io/badge/site-ehtools.pro-green.svg?maxAge=2592000">
  </a>
   <a href="https://mobile.twitter.com/ehtools">
-    <img src="https://img.shields.io/badge/ehtools-twitter-blue.svg">
+    <img src="https://img.shields.io/badge/twitter-ehtools-blue.svg">
  </a>
 </p>
 
@@ -311,16 +311,16 @@ Run it to open WPS menu:
     <img src="https://img.shields.io/badge/site-ehtools.pro-green.svg?maxAge=2592000">
  </a>
   <a href="https://mobile.twitter.com/ehtools">
-    <img src="https://img.shields.io/badge/ehtools-twitter-blue.svg">
+    <img src="https://img.shields.io/badge/twitter-ehtools-blue.svg">
  </a>
   <a href="https://mobile.twitter.com/entynetproject">
-    <img src="https://img.shields.io/badge/entynetproject-twitter-lightgray.svg">
+    <img src="https://img.shields.io/badge/twitter-entynetproject-lightgray.svg">
  </a>
  <a href="https://mobile.twitter.com/_mobley_">
-    <img src="https://img.shields.io/badge/mobley-twitter-black.svg">
+    <img src="https://img.shields.io/badge/twitter-mobley-black.svg">
  </a>
 <a href="https://mobile.twitter.com/thecakeisfalse">
-    <img src="https://img.shields.io/badge/thecakeisfalse-twitter-green.svg">
+    <img src="https://img.shields.io/badge/twitter-thecakeisfalse-green.svg">
  </a>
 </p>
 
