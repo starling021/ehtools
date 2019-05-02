@@ -314,13 +314,13 @@ Run it to open WPS menu:
     <img src="https://img.shields.io/badge/ehtools-twitter-blue.svg">
  </a>
   <a href="https://mobile.twitter.com/entynetproject">
-    <img src="https://img.shields.io/badge/entynetproject-twitter-gray.svg">
- </a>
- <a href="https://mobile.twitter.com/thecakeisfalse">
-    <img src="https://img.shields.io/badge/thecakeisfalse-twitter-green.svg">
+    <img src="https://img.shields.io/badge/entynetproject-twitter-lightgray.svg">
  </a>
  <a href="https://mobile.twitter.com/_mobley_">
     <img src="https://img.shields.io/badge/mobley-twitter-black.svg">
+ </a>
+<a href="https://mobile.twitter.com/thecakeisfalse">
+    <img src="https://img.shields.io/badge/thecakeisfalse-twitter-green.svg">
  </a>
 </p>
 
