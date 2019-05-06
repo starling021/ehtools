@@ -11041,7 +11041,7 @@ check_if_ks
 		gitlink="https://github.com/entynetproject/arissploit.git"
 		install_default
 		clone=$?
-		if [["$cloned" == 1 ]]
+		if [[ "$cloned" == 1 ]]
 		then
 		        cd /root/arissploit
 			chmod +x install.sh
