@@ -9611,6 +9611,7 @@ function main_options
                 rm -r *
 
         elif [[ "$YORNAA" = "26" ]]
+        then
                 sleep 1
                 clear 
                 sleep 0.5
