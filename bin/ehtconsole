@@ -395,7 +395,7 @@ function banner
 	then
 		echo -e ""$YS"10"$CE") Handshake         "$YS"16"$CE") Ngrok port forward"$YS"23"$CE") Arissploit"
 	else
-		echo -e ""$YS"10"$CE") Handshake         "$RS"16"$CE") "$RS"Ngrok"$CE" port forward          "$YS"23"$CE") Arissploit"      
+		echo -e ""$YS"10"$CE") Handshake         "$RS"16"$CE") "$RS"Ngrok"$CE" port forward        "$YS"23"$CE") Arissploit"      
 	fi
 	if [[ -f /usr/local/bin/howdoi ]]
 	then
