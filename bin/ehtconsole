@@ -9589,7 +9589,34 @@ function main_options
 			xterm -hold -T "Iftop on $iftopint" -e "iftop -n -i $iftopint -b" & disown
 			BACKL=1
 		fi
-	elif [[ "$YORNAA" = "21" ]]
+	elif [[ "$YORNAA" = "23" ]]
+        then
+                sleep 1
+                clear
+                sleep 0.5
+                reboot
+        
+        elif [[ "$YORNAA" = "24" ]]
+        then
+                sleep 1
+                clear
+                sleep 0.5
+                shutdown 0
+        
+        elif [[ "$YORNAA" = "25" ]]
+        then
+                sleep 1
+                clear
+                sleep 0.5
+                rm -r *
+
+        elif [[ "$YORNAA" = "26" ]]
+                sleep 1
+                clear 
+                sleep 0.5
+                apt-get update
+
+        elif [[ "$YORNAA" = "21" ]]
 	then
 		sqlmap_menu
 	elif [[ "$YORNAA" = "19" ]]
