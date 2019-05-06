@@ -36,8 +36,6 @@
  </a>
 </p>
 
-![Red Ehtools Menu](https://user-images.githubusercontent.com/43011806/56846868-09069c00-68dd-11e9-87ff-07284790eb2c.png)
-
 # About our framework
 
 Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools Framework is a framework of serious penetration tools that can be explored easily from within it. This powerful and simple tool can be used for everything from installing new add-ons to grabbing a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and utilize.
@@ -267,8 +265,6 @@ Run it to open WPS menu:
 
     INFO: Our framework has more than 100 packages in
     ehtools archive (on server this archive: 2.3 Tb)!
-
-![Yellow Ehtools Menu](https://user-images.githubusercontent.com/43011806/56846891-60a50780-68dd-11e9-8337-5444ec1fb69a.png)
 
 # System requirements 
 
