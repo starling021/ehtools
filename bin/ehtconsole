@@ -393,7 +393,7 @@ function banner
 	echo -e ""$YS" 9"$CE") TOOLS             "$YS"15"$CE") Spoof EMAIL               "$YS"22"$CE") Show bandwidth"
 	if [[ -f /root/ngrok ]]
 	then
-		echo -e ""$YS"10"$CE") Handshake         "$YS"16"$CE") Ngrok port forward"$YS"23"$CE") Arissploit"
+		echo -e ""$YS"10"$CE") Handshake         "$YS"16"$CE") Ngrok port forward          "$YS"23"$CE") Arissploit"
 	else
 		echo -e ""$YS"10"$CE") Handshake         "$RS"16"$CE") "$RS"Ngrok"$CE" port forward        "$YS"23"$CE") Arissploit"      
 	fi
