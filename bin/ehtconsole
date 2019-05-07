@@ -9633,9 +9633,25 @@ function main_options
         elif [[ "$YORNAA" = "26" ]]
         then
                 sleep 1
-                clear 
-                sleep 0.5
-                rm -r *
+                clear
+                if [[ -d /root/ehtools-shell ]]
+                then
+                if [[ -f /bin/ehtsh ]]
+                then
+                ehtsh
+                else
+                cd /root/ehtools-shell
+                cp ehtsh /bin
+                chmod +x /bin/ehtsh 
+                ehtsh
+                fi
+                else
+                git clone https://github.com/entynetproject/ehtools-shell.git
+                cd ehtools-shell
+                cp ehtsh /bin
+                chmod +x /bin/ehtsh
+                fi
+                
 
         elif [[ "$YORNAA" = "27" ]]
         then
