@@ -27,6 +27,30 @@
 #    Twitter   : @ehtools
 #
 
+cd ..
+EDIR="$( pwd )"
+
+if [[ "$EDIR" != "/root" ]]
+then
+rm -r "$EDIR"/ehtools
+
+if [[ -d /root ]]
+then
+cd /root
+git clone https://github.com/entynetproject/ehtools.git
+cd /root/ehtools
+chmod +x install.sh
+./install.sh
+else
+mkdir /root
+git clone https://github.com/entynetproject/ehtools.git
+cd /root/ehtools
+chmod +x install.sh
+./install.sh
+fi
+fi
+
+
 CE="\e[0m"
 RS="\e[1;31m"
 YS="\e[1;33m"
