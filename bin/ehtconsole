@@ -6586,7 +6586,7 @@ function hidden_shortcuts
 	echo -e ""$YS"     wififb"$CE") Create open wifi access point and get fb passwords with wifiphisher"
 	echo -e ""$YS"eternalblue"$CE") Launch msfconsole with eternalblue exploit on target"
 	echo -e ""$YS"  etercheck"$CE") Check if a target is vulnerable to eternalblue exploit"
-	echo -e ""$YS"  changelog"$CE") View A.R.I.S changelog"
+	echo -e ""$YS"  changelog"$CE") View ehtools changelog"
 	echo -e ""$YS"     pstart"$CE") Service postgresql start"
 	echo -e ""$YS"      pstop"$CE") Service postgresql stop"
 	echo -e ""$YS"     nstart"$CE") Service network-manager start"
@@ -9997,9 +9997,9 @@ function main_options
 		rm /etc/ehtools/config
 		{
 		chattr +i /etc/ehtools
-		} &> /dev/null
 		kill -9 $PPID
-		exit
+		} &> /dev/null
+                exit
 	elif [[ "$YORNAA" = "update" ]]
 	then
 		printf '\033]2;UPDATE\a'
