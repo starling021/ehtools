@@ -9599,7 +9599,9 @@ function main_options
                        then
                              arissploit
                        else
-                             cd ~/arissploit
+                             cd ~/arissploit/bin
+			     cp arissploit /bin
+			     cd ~/arissploit
                              python arissploit.py
                        fi
                 else
