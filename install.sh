@@ -27,6 +27,7 @@
 #    Twitter   : @ehtools
 #
 
+clear
 cd ..
 EDIR="$( pwd )"
 
