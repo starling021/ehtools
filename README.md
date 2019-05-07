@@ -36,7 +36,7 @@
  </a>
 </p>
 
-![Ehtools Framework Red](https://user-images.githubusercontent.com/43011806/57336344-3994d400-712e-11e9-9969-59908069b00f.png)
+![Ehtools Framework Red](https://user-images.githubusercontent.com/43011806/57336702-862cdf00-712f-11e9-86d1-3ea03b536f85.png)
 
 # About our framework
 
@@ -268,7 +268,7 @@ Run it to open WPS menu:
     INFO: Our framework has more than 100 packages in
     ehtools archive (on server this archive: 2.3 Tb)!
 
-![Ehtools Framework Yellow](https://user-images.githubusercontent.com/43011806/57336345-3994d400-712e-11e9-872f-e85d2b65c4ae.png)
+![Ehtools Framework Yellow](https://user-images.githubusercontent.com/43011806/57336703-86c57580-712f-11e9-9d10-0cc704d2e16d.png)
 
 # System requirements 
 
