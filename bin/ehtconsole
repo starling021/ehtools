@@ -9602,7 +9602,7 @@ function main_options
 		CHECK=$(ifconfig | grep "$iftopint")
 		if [[ "$CHECK" = "" ]]
 		then
-			echo -e ""$RS"Interface "$iftopint" was not found"
+			echo -e ""$RS"Interface "$iftopint" was not found"$CE""
 			sleep 2
 		else
 			xterm -hold -T "Iftop on $iftopint" -e "iftop -n -i $iftopint -b" & disown
