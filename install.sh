@@ -331,6 +331,28 @@ chmod +x libunlogin
 rm /etc/ehtools/login
 rm /etc/ehtools/password
 } &> /dev/null
+echo -e "Protect ehtools with password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "This will protect your ehtools framework with login and password!"
+echo -e "So without thinking protect ehtools now!"
+echo -e "Only use 'yes' for the best way!"
+read -p $'(\e[4;93mprotect\e[0m\en)> ' WQE
+
+
+if [[ "$WQE" = "no" ]]
+then
+clear
+	echo -e "OK..."
+	sleep 1
+	echo -e "To protect ehtools run 'epasswd'"
+	touch /etc/ehtools/login
+        touch /etc/ehtools/password
+        sleep 3
+	clear
+fi
+
+if [[ "$WQE" = "yes" ]]
+then
+clear
 printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools password"
 echo -e "Let's make ehtools password!"
@@ -398,6 +420,7 @@ echo -e
 echo -e
 
 uiecache --all
+fi
 
 sleep 3
 clear
