@@ -151,6 +151,11 @@ sleep 1
 echo -e "Press \e[1;33many key\e[0m to install update"
 read -n 1
 clear
+CAT="$( cat /etc/ehtools/password )"
+if [[ "$CAT" = "" ]]
+then
+clear
+else
 printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
@@ -189,6 +194,7 @@ sleep 2
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 
 done
+fi
 
 clear
 printf '\033]2;ehtools update helper\a'
