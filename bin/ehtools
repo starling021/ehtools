@@ -202,6 +202,7 @@ chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 ehtconsole
+exit
 else
 {
 chattr -i /etc/ehtools
@@ -216,6 +217,7 @@ chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 ehtconsole
+exit
 fi
 fi
 
