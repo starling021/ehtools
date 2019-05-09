@@ -8438,7 +8438,6 @@ function about_option
 	echo -e "Welcome to ehtools framework PRO!"
 	echo -e ""$YS" 1"$CE") Open our site"
 	echo -e ""$YS" 2"$CE") Open github repo of ehtools PRO"
-	echo -e ""$RS" e"$CE") Delete EPATH firmware (\e[5;31mDANGER!\e[0m)"
         echo -e ""$YS" b"$CE") I'm not interested about it! :P"
 	read -p $'(\e[4;34mabout\e[0m)> ' DON
 	if [[ "$DON" = "1" ]]
@@ -8462,36 +8461,6 @@ function about_option
 		chattr +i /etc/ehtools
 		} &> /dev/null
 		exit
-	elif [[ "$DON" = "e" ]]
-        then
-              cd /root/ehtools/lib
-	      chmod +x libunchattr
-	      ./libunchattr
-	      cd /root/ehtools/lib
-	      chmod +x libunconf
-	      ./libunconf
-	      rm -r /root/ehtools
-	      rm -r /bin/ehtools
-	      rm -r /root/handshakes
-	      rm -r /root/wordlists
-	      rm /bin/eht1
-	      rm /bin/eht2
-	      rm /bin/eht3
-	      rm /bin/eht4
-	      rm /bin/eht21
-	      rm /bin/eht31
-	      rm /bin/eht41
-	      rm /bin/eht42
-	      rm /bin/eht43
-	      rm /bin/epasswd
-	      rm /bin/modules
-	      rm /bin/euh
-              rm /bin/uiecache
-	      chattr +i /etc/ehtools/login
-              chattr +i /etc/ehtools/password
-              chattr +i /etc/ehtools
-              chattr +i /etc/ehtools/root
-              chattr +i /etc/ehtools/root/password
 	fi
         done
 }
