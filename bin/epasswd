@@ -153,6 +153,12 @@ clear
 CAT="$( cat /etc/ehtools/password )"
 if [[ "$CAT" = "" ]]
 then
+ESENT="create"
+else
+ESENT="change"
+fi
+if [[ "$CAT" = "" ]]
+then
 clear
 else
 printf '\033]2;Ehtools Authentication\a'
@@ -284,7 +290,7 @@ fi
 
 clear
 printf '\033]2;ehtools password changer\a'
-echo -e "Do you want to change password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "Do you want to "$ESENT" password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So, select 'yes' but remember it!"
 read -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
 
