@@ -9233,11 +9233,12 @@ function settings_menu
 		fi
 		echo -e ""$YS" 1"$CE") Change logo color"
 		echo -e ""$YS" 2"$CE") Howdoi settings"
-		echo -e ""$YS" 3"$CE") ALFA AWUS036ACH support                      $ALFA"
-		echo -e ""$YS" 4"$CE") Ignore negative one when deauthing           $IGN"
-		echo -e ""$YS" 5"$CE") MAC to change to, when starting monitor      $STARTMAC"	
-		echo -e ""$YS" 6"$CE") Interface for arp-scan (network scanner)     $ARPIN"
-		echo -e ""$YS" 7"$CE") Interface for iftop    (show bandwidth)      $iftopint"
+		echo -e ""$YS" 3"$CE") Ehtools Passwords Protection                 $EPPO"
+                echo -e ""$YS" 4"$CE") ALFA AWUS036ACH support                      $ALFA"
+		echo -e ""$YS" 5"$CE") Ignore negative one when deauthing           $IGN"
+		echo -e ""$YS" 6"$CE") MAC to change to, when starting monitor      $STARTMAC"	
+		echo -e ""$YS" 7"$CE") Interface for arp-scan (network scanner)     $ARPIN"
+		echo -e ""$YS" 8"$CE") Interface for iftop    (show bandwidth)      $iftopint"
 		echo -e ""$RS" e"$CE") Delete EPATH firmware (\e[5;31mDANGER!\e[0m)"
                 echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS" 0"$CE") Exit"
@@ -9288,7 +9289,7 @@ function settings_menu
                          chattr +i /etc/ehtools
                          chattr +i /etc/ehtools/root
                          chattr +i /etc/ehtools/root/password
-		elif [[ "$SET" = 7 ]]
+		elif [[ "$SET" = 8 ]]
 		then
 			clear
 			echo -e ""$BS"Interface to be used for iftop: "$CE""
@@ -9306,7 +9307,7 @@ function settings_menu
 				fi
 			fi
 			echo -e "$IFTOP" > "$EPATH"/settings/iftopint.txt
-		elif [[ "$SET" = 6 ]]
+		elif [[ "$SET" = 7 ]]
 		then
 			clear
 			echo -e ""$BS"Interface to be used for arp-scan: "$CE""
@@ -9324,7 +9325,7 @@ function settings_menu
 				fi
 			fi
 			echo -e "$ARPIN" > "$EPATH"/settings/arpin.txt
-		elif [[ "$SET" = 5 ]]
+		elif [[ "$SET" = 6 ]]
 		then
 			clear
 			echo -e "Type new MAC("$YS"Enter"$CE"="$DEFMAC"): "
@@ -9342,7 +9343,7 @@ function settings_menu
 					echo $NEWMAC > "$EPATH"/settings/startmac.txt
 				fi
 			fi
-		elif [[ "$SET" = 4 ]]
+		elif [[ "$SET" = 5 ]]
 		then
 			if [[ "$IGN" = "yes" ]]
 			then
@@ -9351,7 +9352,7 @@ function settings_menu
 				IGN="yes"
 			fi
 			echo -e "$IGN" > "$EPATH"/settings/ignorenegativeone.txt
-		elif [[ "$SET" = 3 ]]
+		elif [[ "$SET" = 4 ]]
 		then
 			if [[ "$ALFA" = "yes" ]]
 			then
@@ -9360,7 +9361,47 @@ function settings_menu
 				ALFA="yes"
 			fi
 			echo -e "$ALFA" > "$EPATH"/settings/AWUS036ACH.txt
-		elif [[ "$SET" = 2 ]]
+		elif [[ "$SET" = 3 ]]
+                then
+                        if [[ "$EPPO" = "yes" ]]
+                        then
+                                {
+                                chattr -i /etc/ehtools
+                                chattr -i /etc/ehtools/login
+                                chattr -i /etc/ehtools/password
+                                } &> /dev/null
+                                cd /etc/ehtools
+                                mkdir password-data
+                                cp login password-data
+                                cp password password-data
+                                rm login && touch login
+                                rm password && touch password
+                                {
+                                chattr +i /etc/ehtools
+                                chattr +i /etc/ehtools/login
+                                chattr +i /etc/ehtools/password
+                                } &> /dev/null
+                                EPPO="no"
+                        else
+                                {
+                                chattr -i /etc/ehtools
+                                chattr -i /etc/ehtools/login
+                                chattr -i /etc/ehtools/password
+                                } &> /dev/null
+                                cd /etc/ehtools
+                                rm login
+                                rm password
+                                cp password-data/login /etc/ehtools
+                                cp password-data/password /etc/ehtools
+                                rm -r password-data
+                                {
+                                chattr +i /etc/ehtools
+                                chattr +i /etc/ehtools/login
+                                chattr +i /etc/ehtools/password
+                                } &> /dev/null
+                                EPPO="yes"
+                       fi
+                elif [[ "$SET" = 2 ]]
 		then
 			while true
 			do
