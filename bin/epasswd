@@ -198,6 +198,7 @@ chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
 } &> /dev/null
+printf '\033]2;ehtools root password changer\a'
 echo -e "Set ehtools root password"
 echo -e "Let's change ehtools root password!"
 echo -e "Ehtools root protect:"
@@ -254,6 +255,7 @@ chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
 } &> /dev/null
+printf '\033]2;ehtools root password changer\a'
 echo -e "Set ehtools root password"
 echo -e "Let's change ehtools root password!"
 echo -e "Ehtools root protect:"
@@ -290,7 +292,7 @@ fi
 
 clear
 printf '\033]2;ehtools password changer\a'
-echo -e "Do you want to "$ESENT" password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "Do you want to "$ESENT" ehtools password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So, select 'yes' but remember it!"
 read -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
 
@@ -299,7 +301,7 @@ then
 	clear
 	echo -e "OK..."
 	sleep 3
-	echo -e "To change password run 'epasswd'"
+	echo -e "To change ehtools password run 'epasswd'"
 	sleep 3
 	clear
 	exit
