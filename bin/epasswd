@@ -199,7 +199,7 @@ chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
 } &> /dev/null
 echo -e "Set ehtools root password"
-echo -e "Let's make ehtools root password!"
+echo -e "Let's change ehtools root password!"
 echo -e "Ehtools root protect:"
 sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
@@ -255,7 +255,7 @@ chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
 } &> /dev/null
 echo -e "Set ehtools root password"
-echo -e "Let's make ehtools root password!"
+echo -e "Let's change ehtools root password!"
 echo -e "Ehtools root protect:"
 sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
