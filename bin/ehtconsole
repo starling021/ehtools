@@ -9176,7 +9176,14 @@ function settings_menu
 		TERMINALTITLE="SETTINGS"
 		dash_calc
 		printf '\033]2;SETTINGS\a'
-		if [[ -f "$EPATH"/settings/AWUS036ACH.txt ]]
+		CATIS="$( cat /etc/ehtools/password )"
+                if [[ "$CATIS" = "" ]]
+                then
+                EPPO="no"
+                else
+                EPPO="yes"
+                fi
+                if [[ -f "$EPATH"/settings/AWUS036ACH.txt ]]
 		then
 			read ALFA < "$EPATH"/settings/AWUS036ACH.txt
 		else
