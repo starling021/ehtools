@@ -249,6 +249,7 @@ then
 fi
 done
 clear
+printf '\033]2;ehtools INSTALLER\a'
 echo -e "Are you want to install modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "If you do not install the modules now, then most of the functions will not work!"
 echo -e "So without thinking install them now!"
@@ -331,6 +332,7 @@ chmod +x libunlogin
 rm /etc/ehtools/login
 rm /etc/ehtools/password
 } &> /dev/null
+printf '\033]2;ehtools INSTALLER\a'
 echo -e "Protect ehtools with password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "This will protect your ehtools framework with login and password!"
 echo -e "So without thinking protect ehtools now!"
