@@ -316,7 +316,7 @@ rm /etc/ehtools/password
 sleep 3
 clear
 echo -e "Set ehtools password"
-echo -e "Let's make ehtools password!"
+echo -e "Let's "$ESENT" ehtools password!"
 echo -e "Ehtools protect:"
 
 sleep 0.5
