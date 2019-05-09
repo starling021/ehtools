@@ -29,11 +29,13 @@
 3.0.0
 On this version you can turn off ehtools password protection!
 Updated ehtools/install.sh and epasswd utility!
+---------ONLY PRO----------
 Added arissploit option!
 Added ehtools simple shell option!
 Added reboot and shutdown options!
 Added update APT sources option!
 Added some new features to main menu!
+---------------------------
 Updated libchattr and libunchattr
 Updated libconf and libunconf
 Updated ehtools PRO UX/UI Impruvements
@@ -41,7 +43,7 @@ Updated ehtools Lite UX/UI Impruvements
 
 2.1.9
 Fixed known issues and bugs!
-Updated  ehtools Lite UX/UI
+Updated ehtools Lite UX/UI
 Fixed install/reinstall menu bug!
 
 2.1.8
