@@ -6492,7 +6492,7 @@ function update_ehtools
 			$READAK
 			clear
 			echo -e "Do you want to update?"$YNONLY": "
-			read UPDATEYN
+			read -p $'(\e[4;93mupdate\e[0m\en)> ' UPDATEYN
 			if [[ "$UPDATEYN" = "y" ]]
 			then
 				clear
@@ -6503,7 +6503,6 @@ function update_ehtools
 					rm -r /root/ehtold
 				fi
 				mkdir /root/ehtold
-				echo -e ""
 				#~ echo -e "Moving ehtools to ehtold"
 				sleep 1
 				mv "$EPATH" /root/ehtold
@@ -6540,7 +6539,6 @@ function update_ehtools
 					echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 					sleep 0.2
 				fi
-				echo -e ""
 				if [[ -f /root/ehtold/ehtools/wlan.txt ]]
 				then
 					cp /root/ehtold/ehtools/wlan.txt "$EPATH"
