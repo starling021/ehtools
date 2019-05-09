@@ -6275,6 +6275,7 @@ function metasploit_menu
 			sleep 2
 			PAYLOADL="windows/meterpreter/reverse_tcp"
 		fi
+		echo -e ""
 		echo -e "LHOST: "
 		read -p $'(\e[4;93mlhost\e[0m)> ' ATIP
 		echo -e ""
@@ -6283,6 +6284,7 @@ function metasploit_menu
 		echo -e ""
 		echo -e "Enter the target's architecture("$YS"x86"$CE"/"$YS"x64"$CE"): "
 		read -p $'(\e[4;93march\e[0m)> ' TARCH
+		echo -e ""
 		echo -e "Enter the name of the payload(e.g: "$YS"trojan2"$CE"): "
 		read -p $'(\e[4;93mname\e[0m)> ' ATEXE
 		ATEXEPATH="/root/Desktop/$ATEXE.exe"
@@ -6352,8 +6354,10 @@ function metasploit_menu
 		clear
 		echo -e "LHOST: "
 		read -p $'(\e[4;93mlhost\e[0m)> ' LHOSTL
+		echo -e ""
 		echo -e "LPORT: "
 		read -p $'(\e[4;93mlport\e[0m)> ' LPORTL
+		echo -e ""
 		echo -e "PAYLOAD (Default: "$YS"windows/meterpreter/reverse_tcp"$CE"): "
 		read -p $'(\e[4;93mpayload\e[0m)> ' PAYLOADL
 		if [[ -z "$PAYLOADL" ]]
@@ -8430,7 +8434,7 @@ function about_option
 	clear
 	TERMINALTITLE="Ehtools Team"
 	dash_calc
-	printf '\033]2Ehtools Team\a'
+	printf '\033]2;Ehtools Team\a'
 	echo -e "Open our site, please :з"
 	echo -e ""$LBS"Total ehtools downloads:"$CE" $DOWNLOADS"
 	echo -e "Welcome to ehtools framework PRO!"
