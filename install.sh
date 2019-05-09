@@ -357,7 +357,7 @@ then
 clear
 printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools password"
-echo -e "Let's make ehtools password!"
+echo -e "Let's create ehtools password!"
 echo -e "Ehtools protect:"
 
 sleep 0.5
