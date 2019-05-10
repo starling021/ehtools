@@ -6724,7 +6724,7 @@ function tools_menu
 			echo -e "	From here you can install any tool available in the ehtools framework."
 			echo -e "	If it is already installed, it will be deleted and reistalled."$CE""
 			echo -e ""
-			echo -e ""$BS"Do you want another tool to be added in the script?"$CE""
+			echo -e ""$BS"Do you want another tool to be added in the ehtools?"$CE""
 			echo -e ""$BS"Submit it as an issue on my github repo:"$CE""
 			echo -e "	"$YS"https://github.com/entynetproject/ehtools"$CE""
 			echo -e ""
@@ -7070,7 +7070,7 @@ function new_terminal
 		echo -e "Monitor mode is not enabled."
 		echo -e ""
 		echo -e "Do you want to enable monitor mode? "$YNYES": "
-		read MONITOREN
+		read -p $'(\e[4;93menable\e[0m)> ' MONITOREN
 		clear
 		if [[ "$MONITOREN" = "n" ]]
 		then
