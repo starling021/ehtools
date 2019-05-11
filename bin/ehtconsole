@@ -1942,7 +1942,7 @@ then
 elif [[ "$MITMATT" = "back" || "$MITMATT" = "b" ]]
 then
 	BACKL="1"
-	break
+	
 elif [[ "$MITMATT" = "00" ]]
 then			
 	clear
