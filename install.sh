@@ -41,12 +41,14 @@ cd /root
 git clone https://github.com/entynetproject/ehtools.git
 cd /root/ehtools
 chmod +x install.sh
+exit
 ./install.sh
 else
 mkdir /root
 git clone https://github.com/entynetproject/ehtools.git
 cd /root/ehtools
 chmod +x install.sh
+exit
 ./install.sh
 fi
 fi
@@ -445,5 +447,4 @@ echo -e "If you want to change ehtools password, run '"$YS"epasswd"$CE"'"
 sleep 0.5
 echo -e "If you want to clean ehtools cache, run '"$YS"uiecache"$CE"'"
 sleep 1
-exit
 exit
