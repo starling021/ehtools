@@ -446,3 +446,4 @@ sleep 0.5
 echo -e "If you want to clean ehtools cache, run '"$YS"uiecache"$CE"'"
 sleep 1
 exit
+exit
