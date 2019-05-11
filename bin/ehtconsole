@@ -1432,7 +1432,9 @@ then
 	systemctl --user enable pulseaudio && systemctl --user start pulseaudio
 	echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 	sleep 1
-	clear
+	echo -e "["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
+	echo -e "$PAKTGB"
+	$READAK
 elif [[ "$ERRS" = "2" ]]
 then
 	clear
@@ -1455,6 +1457,7 @@ then
 	apt-get install -y open-vm-tools-desktop fuse
 	echo -e "["$YS"inf"$CE"] "$YS"Restart your vistual machine..."$CE""
 	sleep 1
+	echo -e "["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
 	echo -e "$PAKTGB"
 	$READAK
 elif [[ "$ERRS" = "4" ]]
@@ -1463,17 +1466,24 @@ then
 	localectl set-locale LANG="en_US.UTF-8"
 	sleep 2
 	echo -e "["$YS"inf"$CE"] "$YS"Reboot your system now!"$CE""
-	sleep 3
+	sleep 1
+	echo -e "["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
+	echo -e "$PAKTGB"
+	$READAK
 elif [[ "$ERRS" = "5" ]]
 then
 	service nginx stop
 	sleep 5
+	echo -e "["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
+	echo -e "$PAKTGB"
+	$READAK
 elif [[ "$ERRS" = "6" ]]
 then
 	echo "deb http://http.kali.org/kali kali-rolling main non-free contrib" > /etc/apt/sources.list
 	rm -r -f /etc/apt/sources.list.d/*
 	echo -e "["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
-	sleep 3
+	echo -e "$PAKTGB"
+	$READAK
 elif [[ "$ERRS" = "7" ]]
 then
 	rm -f -r /usr/local/lib/python2.7/dist-packages/Crypto
