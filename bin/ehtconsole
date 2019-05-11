@@ -1446,6 +1446,7 @@ then
 	sleep 0.5
 	echo -e "Press "$YS"many key"$CE" to test wash"
 	read -n 1
+	clear
 	sleep 0.5
 	echo -e "["$YS"inf"$CE"] "$YS"Also try "$CE"'"$YS"wash -i wlan0mon -a"$CE"'"$YS" to display all networks"$CE""
 	wash -i $INTWASH
