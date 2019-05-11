@@ -661,7 +661,7 @@ else
 		if [[ ! "$CTDQ" == "n" ]]
 		then
 			cp "$CTD" /root/Desktop
-			echo -e ""$YS"Done!"$CE""
+			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 			sleep 1
 		fi
 		echo -e "$PAKTC"
