@@ -41,15 +41,13 @@ cd /root
 git clone https://github.com/entynetproject/ehtools.git
 cd /root/ehtools
 chmod +x install.sh
-exit
-./install.sh
+cd /root/ehtools
 else
 mkdir /root
 git clone https://github.com/entynetproject/ehtools.git
 cd /root/ehtools
 chmod +x install.sh
-exit
-./install.sh
+cd /root/ehtools
 fi
 fi
 
