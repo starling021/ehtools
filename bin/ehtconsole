@@ -8628,14 +8628,14 @@ function geolocate_ip()
 {
 	if [[ -f /usr/local/bin/copycat ]]
 	then
-	copycat "$IPG"
+	copycat host "$IPG"
 	else
 	echo -e ""$BS"Installing copycat..."$CE""
 	git clone https://github.com/entynetproject/copycat.git
 	cd copycat
 	chmod +x install.sh
 	./install.sh
-	copycat "$IPG"
+	copycat host "$IPG"
 	fi
 }
 function ip_scan()
@@ -9648,7 +9648,7 @@ function main_options
         if [[ -f /usr/local/bin/copycat ]]
 	then
 	clear
-	copycat "$IPG"
+	copycat host "$IPG"
 	else
 	clear
 	echo -e ""$BS"Installing copycat..."$CE""
@@ -9656,7 +9656,7 @@ function main_options
 	cd copycat
 	chmod +x install.sh
 	./install.sh
-	copycat "$IPG"
+	copycat host "$IPG"
 	fi
 	elif [[ "$YORNAA" = "18" ]]
 	then
