@@ -8626,78 +8626,16 @@ function ngrok_option
 }
 function geolocate_ip()
 {
-	locbool=1
-	echo -e ""$BS"Please wait..."$CE""
-	A1="$1"
-	AA1=$(is_it_an_ip "$A1")
-	if [[ "$AA1" = 1 ]]
+	if [[ -f /usr/local/bin/copycat ]]
 	then
-		country=$(curl ipinfo.io/"$A1"/country 2>/dev/null)
-		if [[ "$country" = "" ]]
-		then
-			country=""$RS"Not found"$CE""
-		fi
-		loc=$(curl ipinfo.io/"$A1"/loc 2>/dev/null)
-		if [[ "$loc" = "" ]]
-		then
-			locbool=0
-			loc=""$RS"Not found"$CE""
-		fi
-		city=$(curl ipinfo.io/"$A1"/city 2>/dev/null)
-		if [[ "$city" = "" ]]
-		then
-			city=""$RS"Not found"$CE""
-		fi
-		org=$(curl ipinfo.io/"$A1"/org 2>/dev/null)
-		if [[ "$org" = "" ]]
-		then
-			org=""$RS"Not found"$CE""
-		fi
-		postal=$(curl ipinfo.io/"$A1"/postal 2>/dev/null)
-		if [[ "$postal" = "" ]]
-		then
-			postal=""$RS"Not found"$CE""
-		fi
-		region=$(curl ipinfo.io/"$A1"/region 2>/dev/null)
-		if [[ "$region" = "" ]]
-		then
-			region=""$RS"Not found"$CE""
-		fi
-		hostname=$(curl ipinfo.io/"$A1"/hostname 2>/dev/null)
-		if [[ "$hostname" = "" ]]
-		then
-			hostname=""$RS"Not found"$CE""
-		fi
-		echo -e "     Country: $country"
-		echo -e "      Region: $region"
-		echo -e "    Location: $loc"
-		echo -e "        City: $city"
-		echo -e "      Postal: $postal"
-		echo -e "    Hostname: $hostname"
-		echo -e "Organization: $org"
-		if [[ "$locbool" = 0 ]]
-		then
-			echo -e ""$RS" m"$CE") Open google maps location"
-		else
-			echo -e ""$YS" m"$CE") Open google maps location"
-		fi
-		echo -e ""$YS" *"$CE") Go back"
-		read -p $'(\e[5;34mconsole\e[0m)> ' ge
-		if [[ "$ge" = "m" ]]
-		then
-			if [[ "$locbool" = 0 ]]
-			then
-				echo -e ""$RS"Location was not found"$CE""
-				sleep 3
-			else
-				gio open https://www.google.gr/maps/search/"$loc"/
-			fi
-		else
-			clear
-			BACKL=1
-		fi
+	copycat "$A1"
 	else
-		echo 0
+	echo -e ""$BS"Installing copycat..."$CE""
+	git clone https://github.com/entynetproject/copycat.git
+	cd copycat
+	chmod +x install.sh
+	./install.sh
+	copycat "$A1"
 	fi
 }
 function ip_scan()
