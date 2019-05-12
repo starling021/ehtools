@@ -8628,14 +8628,14 @@ function geolocate_ip()
 {
 	if [[ -f /usr/local/bin/copycat ]]
 	then
-	copycat "$A1"
+	copycat "$IPG"
 	else
 	echo -e ""$BS"Installing copycat..."$CE""
 	git clone https://github.com/entynetproject/copycat.git
 	cd copycat
 	chmod +x install.sh
 	./install.sh
-	copycat "$A1"
+	copycat "$IPG"
 	fi
 }
 function ip_scan()
@@ -9643,10 +9643,21 @@ function main_options
 		sqlmap_menu
 	elif [[ "$YORNAA" = "19" ]]
 	then
-		echo -e ""$BS"Whois console:"$CE" "
-		read -p $'(\e[4;34mseen\e[0m\en)> ' IPG
-		clear
-		geolocate_ip "$IPG"
+		echo -e ""$BS"Copycat console:"$CE" "
+		read -p $'(\e[4;34mcopycat\e[0m\en)> ' IPG
+        if [[ -f /usr/local/bin/copycat ]]
+	then
+	clear
+	copycat "$IPG"
+	else
+	clear
+	echo -e ""$BS"Installing copycat..."$CE""
+	git clone https://github.com/entynetproject/copycat.git
+	cd copycat
+	chmod +x install.sh
+	./install.sh
+	copycat "$IPG"
+	fi
 	elif [[ "$YORNAA" = "18" ]]
 	then
 		browser_exploiting
