@@ -125,8 +125,7 @@ exit
 
 elif [[ $1 = "--path" ]]
 then
-read -p $'(path to clean)> ' SAS
-sleep 2
+SAS="$2"
 printf '\033]2;Uiecache ('$SAS')...\a'
 
 {
