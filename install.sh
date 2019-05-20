@@ -28,8 +28,6 @@
 #
 
 clear
-cd ..
-EDIR="$( pwd )"
 
 if [[ -d /root/ehtools ]]
 then
