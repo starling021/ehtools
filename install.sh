@@ -31,10 +31,10 @@ clear
 cd ..
 EDIR="$( pwd )"
 
-if [[ "$EDIR" != "/root" ]]
+if [[ -d /root/ehtools ]]
 then
-rm -r "$EDIR"/ehtools
-
+sleep 0.5
+else
 if [[ -d /root ]]
 then
 cd /root
