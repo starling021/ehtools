@@ -101,9 +101,6 @@ exit
 fi
 fi
 
-
-DIR="$( whoami )"
-
 if [[ $1 = "--help" ]]
 then
 
