@@ -132,8 +132,6 @@ exit
 fi
 fi
 
-DIR="$( whoami )"
-
 clear
 printf '\033]2;ehtools password changer\a'
 echo -e "            ____   "
