@@ -62,6 +62,18 @@
 #white start
 	WHS="\e[1;37m"
 	
+WHO="$( whoami )"
+
+if [[ "$WHO" != "root" ]]
+then
+sleep 1
+echo -e "$RS"run it as"$CE" "$YS"root"$CE"
+sleep 1
+echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
+sleep 1
+exit
+fi
+
 {
 chattr -i /tmp/config
 chattr -i /tmp/config/config.txt
@@ -117,18 +129,6 @@ echo -e "["$RS"*"$CE"] "$RS"Can't connect with server: There is no connection!"$
 sleep 1
 exit
 fi
-fi
-
-WHO="$( whoami )"
-
-if [[ "$WHO" != "root" ]]
-then
-sleep 1
-echo -e "$RS"run it as"$CE" "$YS"root"$CE"
-sleep 1
-echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
-sleep 1
-exit
 fi
 
 clear
