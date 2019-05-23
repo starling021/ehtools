@@ -101,8 +101,6 @@ exit
 fi
 fi
 
-DIR="$( whoami )"
-
 clear
 printf '\033]2;Modules (BETA)\a'
 echo -e "            ____   "
