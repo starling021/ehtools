@@ -63,6 +63,18 @@
 #white start
 	WHS="\e[1;37m"
 
+WHO="$( whoami )"
+
+if [[ "$WHO" != "root" ]]
+then
+sleep 1
+echo -e "$RS"run it as"$CE" "$YS"root"$CE"
+sleep 1
+echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
+sleep 1
+exit
+fi
+
 {
 chattr -i /tmp/config
 chattr -i /tmp/config/config.txt
@@ -121,18 +133,6 @@ fi
 fi
 
 DIR="$( whoami )"
-
-if [[ "$DIR" != "root" ]]
-then
-
-sleep 1
-echo -e "$RS"run it as"$CE" "$YS"root"$CE"
-sleep 1
-echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
-sleep 1
-exit
-
-fi
 
 clear
 printf '\033]2;ehtools update helper\a'
