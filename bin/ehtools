@@ -187,8 +187,8 @@ echo -e ""$YS"Options: "$CE""
 echo -e ""$YS"-r"$CE") Remove ehtools"
 echo -e ""$YS"-u"$CE") Update ehtools"
 echo -e ""$YS"-h"$CE") Make handshake"
-echo -e ""$YS"-w"$CE") WPS menu"
-echo -e ""$YS"-o"$CE") Options"
+echo -e ""$YS"-w"$CE") Open WPS menu"
+echo -e ""$YS"-o"$CE") Show options"
 echo -e
 sleep 1
 exit
