@@ -48,13 +48,17 @@ else
 if [[ -d /root ]]
 then
 cd /root
+{
 git clone https://github.com/entynetproject/ehtools.git
+} &> /dev/null
 cd /root/ehtools
 chmod +x install.sh
 cd /root/ehtools
 else
 mkdir /root
+{
 git clone https://github.com/entynetproject/ehtools.git
+} &> /dev/null
 cd /root/ehtools
 chmod +x install.sh
 cd /root/ehtools
