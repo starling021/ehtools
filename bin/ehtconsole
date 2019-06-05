@@ -9116,7 +9116,9 @@ function settings_menu
 		TERMINALTITLE="SETTINGS"
 		dash_calc
 		printf '\033]2;SETTINGS\a'
+		{
 		CATIS="$( cat /etc/ehtools/password )"
+		} &> /dev/null
                 if [[ "$CATIS" = "" ]]
                 then
                 EPPO="no"
