@@ -309,8 +309,10 @@ then
 cd /root/ehtools/lib
 chmod +x libunchattr
 ./libunchattr
+{
 rm /etc/ehtools/login
 rm /etc/ehtools/password
+} &> /dev/null
 sleep 3
 clear
 echo -e "Set ehtools password"
