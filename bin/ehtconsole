@@ -9151,7 +9151,7 @@ function settings_menu
 		fi
 		echo -e ""$YS" 1"$CE") Change logo color"
 		echo -e ""$YS" 2"$CE") Howdoi settings"
-		echo -e ""$YS" 3"$CE") Ehtools Passwords Protection                 $EPPO"
+		echo -e ""$YS" 3"$CE") Ehtools Password Protection                  $EPPO"
                 echo -e ""$YS" 4"$CE") ALFA AWUS036ACH support                      $ALFA"
 		echo -e ""$YS" 5"$CE") Ignore negative one when deauthing           $IGN"
 		echo -e ""$YS" 6"$CE") MAC to change to, when starting monitor      $STARTMAC"	
@@ -9287,12 +9287,14 @@ function settings_menu
                                 chattr -i /etc/ehtools/login
                                 chattr -i /etc/ehtools/password
                                 } &> /dev/null
-                                cd /etc/ehtools
+                                {
+				cd /etc/ehtools
                                 mkdir password-data
                                 cp login password-data
                                 cp password password-data
                                 rm login && touch login
                                 rm password && touch password
+				} &> /dev/null
                                 {
                                 chattr +i /etc/ehtools
                                 chattr +i /etc/ehtools/login
@@ -9305,12 +9307,14 @@ function settings_menu
                                 chattr -i /etc/ehtools/login
                                 chattr -i /etc/ehtools/password
                                 } &> /dev/null
+				{
                                 cd /etc/ehtools
                                 rm login
                                 rm password
                                 cp password-data/login /etc/ehtools
                                 cp password-data/password /etc/ehtools
                                 rm -r password-data
+				} &> /dev/null
                                 {
                                 chattr +i /etc/ehtools
                                 chattr +i /etc/ehtools/login
