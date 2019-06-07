@@ -199,7 +199,7 @@ rm /etc/ehtools/root/password
 printf '\033]2;ehtools root password changer\a'
 echo -e "Set ehtools root password"
 echo -e "Let's change ehtools root password!"
-echo -e "Ehtools root protect:"
+echo -e "Ehtools root protection:"
 sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
 touch password
@@ -256,7 +256,7 @@ rm /etc/ehtools/root/password
 printf '\033]2;ehtools root password changer\a'
 echo -e "Set ehtools root password"
 echo -e "Let's change ehtools root password!"
-echo -e "Ehtools root protect:"
+echo -e "Ehtools root protection:"
 sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
 touch password
@@ -299,7 +299,7 @@ then
 	clear
 	echo -e "OK..."
 	sleep 3
-	echo -e "To change ehtools password run 'epasswd'"
+	echo -e "To "$ESENT" ehtools password run 'epasswd'"
 	sleep 3
 	clear
 	exit
