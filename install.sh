@@ -219,7 +219,7 @@ fi
 while true
 do
 clear
-echo -e "Are you \e[1;33md\e[0meliting or \e[1;33mi\e[0mnstalling ehtools?(\e[1;33md\e[0m/\e[1;33mi\e[0m): "
+echo -e "Are you \e[1;33md\e[0meleting or \e[1;33mi\e[0mnstalling ehtools?(\e[1;33md\e[0m/\e[1;33mi\e[0m): "
 echo -e "Only use 'i' to install ehtools!"
 read -p $'(\e[4;93minstall\e[0m\en)> ' UORI
 if [[ "$UORI" = "d" ]]
