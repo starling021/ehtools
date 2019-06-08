@@ -492,4 +492,64 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     Use this tool only on your own network and never without permission.
     I am not responsible for anything you do with this tool.
 
+# Ehtools main license
+
+            --------------------------------------------------
+                            Ehtools Framework          
+            --------------------------------------------------
+                  Copyright (C) <2015>  <Ehtools Team>
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+        
+# Ehtools utilities license
+
+            --------------------------------------------------
+                            Ehtools Utilities          
+            --------------------------------------------------
+          Copyright (C) <2015>  <Entynetproject (Ivan Nikolsky)>
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+        
+# Ehtools libraries license
+ 
+            --------------------------------------------------
+                            Ehtools Libraries          
+            --------------------------------------------------
+          Copyright (C) <2015>  <Entynetproject (Ivan Nikolsky)>
+
+        This program is free software: you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation, either version 3 of the License, or
+        any later version.
+
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+        GNU General Public License for more details.
+
+        You should have received a copy of the GNU General Public License
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 # Thats all!
