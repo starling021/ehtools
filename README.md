@@ -492,7 +492,7 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     Use this tool only on your own network and never without permission.
     I am not responsible for anything you do with this tool.
 
-# Ehtools main license
+# Ehtools framework license
 
             --------------------------------------------------
                             Ehtools Framework          
