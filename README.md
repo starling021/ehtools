@@ -486,4 +486,10 @@ If in consequence of bad Internet connection ehtools will not be able to communi
 
 ![Ehtools Password Protection Creator](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
 
+# Terms of use
+
+    This tool is only for educational purposes only.
+    Use this tool only on your own network and never without permission.
+    I am not responsible for anything you do with this tool.
+
 # Thats all!
