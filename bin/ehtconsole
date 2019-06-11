@@ -11177,6 +11177,63 @@ fi
 if [[ -f ""$EPATH"/IAGREE.txt" ]]
 then
 
+{
+chattr -i /tmp/config
+chattr -i /tmp/config/config.txt
+chattr -i /tmp/config/configure.txt
+} &> /dev/null
+
+{
+mkdir /tmp/config
+echo 0 >> /tmp/config/config.txt
+echo 1 >> /tmp/config/configure.txt
+} &> /dev/null
+
+{
+chattr +i /tmp/config
+chattr +i /tmp/config/config.txt
+chattr +i /tmp/config/configure.txt
+} &> /dev/null
+
+
+{
+SERSE="$( cat /tmp/config/config.txt | head -n 1 )"
+ESRES="$( cat /tmp/config/configure.txt | head -n 1 )"
+} &> /dev/null
+
+if [[ "$SERSE" != "$ESRES" ]]
+then
+
+{
+ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
+} &> /dev/null
+
+if [[ "$ASESR" != "" ]]
+then 
+
+KEYKE="$( timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
+
+if [[ "$KEYEK" != "$KEYKE" ]]
+then
+
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtconsole!"$CE""
+sleep 1
+echo -e "("$YS"it's may be caused by the fact that you have not bought ehtools or by bad internet connection!"$CE")"
+sleep 1
+exit
+
+fi
+
+else
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Can't connect with server: There is no connection!"$CE""
+sleep 1
+exit
+fi
+fi
+
 	if [[ ! -f ""$EPATH"/wlan.txt" ]]
 	then
 		set_interface_number
@@ -11189,7 +11246,6 @@ then
 	then
 		set_interface_number
 	fi
-	clear
 	WLANNM=$(cat "$EPATH"/wlanmon.txt)
 	WLANN=$(cat "$EPATH"/wlan.txt)
 	ETH=$(cat "$EPATH"/eth.txt)	
@@ -11223,5 +11279,62 @@ then
 		exec bash "$0"
 	fi
 else
+
+{
+chattr -i /tmp/config
+chattr -i /tmp/config/config.txt
+chattr -i /tmp/config/configure.txt
+} &> /dev/null
+
+{
+mkdir /tmp/config
+echo 0 >> /tmp/config/config.txt
+echo 1 >> /tmp/config/configure.txt
+} &> /dev/null
+
+{
+chattr +i /tmp/config
+chattr +i /tmp/config/config.txt
+chattr +i /tmp/config/configure.txt
+} &> /dev/null
+
+
+{
+SERSE="$( cat /tmp/config/config.txt | head -n 1 )"
+ESRES="$( cat /tmp/config/configure.txt | head -n 1 )"
+} &> /dev/null
+
+if [[ "$SERSE" != "$ESRES" ]]
+then
+
+{
+ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
+} &> /dev/null
+
+if [[ "$ASESR" != "" ]]
+then 
+
+KEYKE="$( timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
+
+if [[ "$KEYEK" != "$KEYKE" ]]
+then
+
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtconsole!"$CE""
+sleep 1
+echo -e "("$YS"it's may be caused by the fact that you have not bought ehtools or by bad internet connection!"$CE")"
+sleep 1
+exit
+
+fi
+
+else
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Can't connect with server: There is no connection!"$CE""
+sleep 1
+exit
+fi
+fi
 	terms_of_use
 fi
