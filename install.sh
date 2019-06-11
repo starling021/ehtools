@@ -27,6 +27,10 @@
 #    Twitter   : @ehtools
 #
 
+CE="\e[0m"
+RS="\e[1;31m"
+YS="\e[1;33m"
+
 WHO="$( whoami )"
 
 if [[ "$WHO" != "root" ]]
@@ -64,11 +68,6 @@ chmod +x install.sh
 cd /root/ehtools
 fi
 fi
-
-
-CE="\e[0m"
-RS="\e[1;31m"
-YS="\e[1;33m"
 
 {
 chattr -i /tmp/config
