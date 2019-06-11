@@ -6776,9 +6776,9 @@ function terms_of_use
 	$READAK
 	clear
 	echo -e "This tool is only for educational purposes only."
-	echo -e "Use this tool only on your own network and never without permission."
+	echo -e "Use this tool wisely and never without permission."
 	echo -e "I am not responsible for anything you do with this tool."
-	echo -e "Will you use this tool only on your own network and only with your own responsibility?("$YS"YES"$CE"/"$YS"NO"$CE"): "
+	echo -e "Will you use this tool wisely and only with your own responsibility?("$YS"YES"$CE"/"$YS"NO"$CE"): "
 	read -p $'(\e[4;93magree\e[0m\en)> ' YESORNO
 	if [[ "$YESORNO" = "YES" ]]
 	then 
@@ -6786,7 +6786,7 @@ function terms_of_use
 		sleep 1
 		clear
 	else
-		echo -e "You did not type '"$YS"YES"$CE"' and you cannot continue"
+		echo -e "You did not type '"$YS"YES"$CE"' and you cannot continue..."
 		sleep 4
 	fi
 	exec bash "$0"
