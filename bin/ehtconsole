@@ -11171,6 +11171,18 @@ defaults_l
 printf '\033]2;Entynet Hacker Tools\a'
 if [[ "$ONETIMEPERLAUNCH" != "1" ]]
 then
+
+WHO="$( whoami )"
+
+if [[ "$WHO" != "root" ]]
+then
+sleep 1
+echo -e "$RS"run it as"$CE" "$YS"root"$CE"
+sleep 1
+echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
+sleep 1
+exit
+fi
 	one_time_per_launch_ks
 fi
 ####################################
