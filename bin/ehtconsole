@@ -11177,6 +11177,18 @@ fi
 if [[ -f ""$EPATH"/IAGREE.txt" ]]
 then
 
+WHO="$( whoami )"
+
+if [[ "$WHO" != "root" ]]
+then
+sleep 1
+echo -e "$RS"run it as"$CE" "$YS"root"$CE"
+sleep 1
+echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
+sleep 1
+exit
+fi
+
 {
 chattr -i /tmp/config
 chattr -i /tmp/config/config.txt
@@ -11279,6 +11291,18 @@ fi
 		exec bash "$0"
 	fi
 else
+
+WHO="$( whoami )"
+
+if [[ "$WHO" != "root" ]]
+then
+sleep 1
+echo -e "$RS"run it as"$CE" "$YS"root"$CE"
+sleep 1
+echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
+sleep 1
+exit
+fi
 
 {
 chattr -i /tmp/config
