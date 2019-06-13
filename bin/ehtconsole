@@ -47,7 +47,9 @@ function defaults_l
 #making sure the kspath is set
 	if [[ ! -d "$KSPATH" ]]
 	then
+	{
 		mkdir "$KSPATH"
+        } &> /dev/null
 	fi
 #wififb file
 	wififbfile=""$EPATH"/wififb.txt"
