@@ -8628,13 +8628,16 @@ function geolocate_ip()
 {
 	if [[ -f /usr/local/bin/copycat ]]
 	then
+        clear
 	copycat host "$IPG"
 	else
+        clear
 	echo -e ""$BS"Installing copycat..."$CE""
 	git clone https://github.com/entynetproject/copycat.git
 	cd copycat
 	chmod +x install.sh
 	./install.sh
+        clear
 	copycat host "$IPG"
 	fi
 }
@@ -9649,8 +9652,20 @@ function main_options
 		sqlmap_menu
 	elif [[ "$YORNAA" = "19" ]]
 	then
-		echo -e ""$BS"Copycat console:"$CE" "
+        if [[ -f /usr/local/bin/copycat ]]
+	then
+	clear
+	else
+	echo -e ""$BS"Installing copycat..."$CE""
+	git clone https://github.com/entynetproject/copycat.git
+	cd copycat
+	chmod +x install.sh
+	./install.sh
+        clear
+	fi
+		echo -e ""$BS"Copycat Toolkit:"$CE" "
 		read -p $'(\e[4;34mcopycat\e[0m\en)> ' IPG
+        
         if [[ -f /usr/local/bin/copycat ]]
 	then
 	clear
@@ -9662,6 +9677,7 @@ function main_options
 	cd copycat
 	chmod +x install.sh
 	./install.sh
+        clear
 	copycat host "$IPG"
 	fi
 	elif [[ "$YORNAA" = "18" ]]
