@@ -94,12 +94,11 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 > ./uninstall.sh
 
-# Install.sh interface
+# Ehtools install.sh interface
 
 ![Ehtools Installer 2](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
 
 ![Ehtools Installer 3](https://user-images.githubusercontent.com/43011806/56846875-29365b00-68dd-11e9-9646-9e40a763789f.png)
-
 
 # Attacking frameworks
 
@@ -109,7 +108,7 @@ An excellent example of this are programs that integrate scanning tools like Air
 
 An example of this we've covered is the Airgeddonframework, a wireless attack framework that does useful things like automating the target selection process and eliminating the time a user spends copying and pasting information between programs. This saves valuable time for even experienced pentesters but has the disadvantage of preventing beginners from understanding what's happening "under the hood" of the attack. While this is true, most of these frameworks are fast, efficient, and dead simple to use, enabling even beginners to take on and disable an entire network.
 
-# UX/UI Impruvements for begginers
+# UX/UI Impruvements for beginners
 
 The Ehtools Framework starts by merely typing the letter ehtools or eht into a terminal window, then it asks for the name of your network interfaces after the first run. It uses the names you supply to connect to the tools needed to execute any attacks you select. Aside from that initial input, the majority of the possible attacks can be performed merely by choosing the option number from the menu. This means you can grab a network handshake or download a new hacking tool like Pupy by just selecting from one of the menu options.
 
@@ -243,13 +242,13 @@ Run it to open WPS menu:
     it. Only for this people we create password protection
     for ehtools framework :)
 
-> Easy in learning and this is the best framework for begginers
+> Easy in learning and this is the best framework for beginners
 
-    INFO: Ehtools framework's GUI is very simple for begginers,
+    INFO: Ehtools framework's TUI is very simple for beginners,
     you can start attack on the local network by choosing an
     option from main menu. It is very simple, is not it?
 
-> UX/UI impruvements for begginers
+> UX/UI impruvements for beginners
 
     INFO: It uses the names you supply to connect to the tools 
     needed to execute any attacks you select! Aside from that 
