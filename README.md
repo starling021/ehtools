@@ -231,7 +231,7 @@ Run it to open WPS menu:
 > More than 58 tools for pentesting installed by default
 
     INFO: More than 58 options installed by default you
-    can find in ehtools, this is tools such as MetaSploit
+    can find in ehtools, this is tools such as MetaSploit,
     WireShark and other tools!
 
 > Password protection and config encryption
@@ -240,11 +240,11 @@ Run it to open WPS menu:
     we added it for users who think that his/her friend or
     parents will turn into ehtools and will remove or destroy
     it. Only for this people we create password protection
-    for ehtools framework :)
+    for Ehtools Framework :)
 
 > Easy in learning and this is the best framework for beginners
 
-    INFO: Ehtools framework's TUI is very simple for beginners,
+    INFO: Ehtools Framework's TUI is very simple for beginners,
     you can start attack on the local network by choosing an
     option from main menu. It is very simple, is not it?
 
