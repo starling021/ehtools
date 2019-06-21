@@ -103,7 +103,7 @@ fi
 
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
-
+echo -e
 echo -e "Usage: uiecache [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
@@ -249,6 +249,7 @@ echo -e
 exit
 fi
 
+echo -e
 echo -e "Usage: uiecache [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
