@@ -114,7 +114,7 @@ echo -e "                  (install ehtools modules)"
 echo -e "     --restore  Restore saved ehtools modules snapshot."
 echo -e "                  (restore ehtools modules snapshot)"
 echo -e "     --take     Take new ehtools modules snapshot."
-echo -e "                   (take ehtools modules snapshot)"
+echo -e "                  (take ehtools modules snapshot)"
 echo -e "     --help     Give this help list."
 echo -e
 exit
@@ -385,7 +385,7 @@ echo -e "                  (install ehtools modules)"
 echo -e "     --restore  Restore saved ehtools modules snapshot."
 echo -e "                  (restore ehtools modules snapshot)"
 echo -e "     --take     Take new ehtools modules snapshot."
-echo -e "                   (take ehtools modules snapshot)"
+echo -e "                  (take ehtools modules snapshot)"
 echo -e "     --help     Give this help list."
 echo -e
 exit
