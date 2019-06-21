@@ -239,6 +239,7 @@ then
 	BASHCHECK=$(cat ~/.bashrc | grep "bin/ehtools")
 	if [[ "$BASHCHECK" != "i" ]]
 	then
+	        sleep 5
 		echo -e "["$YS"inf"$CE"] "$YS"Congratulations, you have successfully installed our Framework!"$CE""
 		sleep 0.5
 	fi
@@ -248,7 +249,7 @@ then
 	sleep 0.5
         echo -e "["$YS"inf"$CE"] "$YS"More information about PRO or other plans on our site"$CE""
 	sleep 0.5
-	echo -e "["$YS"inf"$CE"] "$YS"A few more steps and you're done..."$CE""
+	echo -e "["$YS"inf"$CE"] "$YS"A few more steps and you are done..."$CE""
 	sleep 3
 
 
