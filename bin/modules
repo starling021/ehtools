@@ -195,7 +195,7 @@ chmod +t /etc/ehtools/modules/snapshots
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
-echo -e "Snapshot 1: \e[4;32m/etc/ehtools/modules/snapshots/ehto\e[0m"
+echo -e "Snapshot 1: \e[4;32m/etc/ehtools/modules/snapshots/eht\e[0m"
 echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/ehtools\e[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
@@ -355,7 +355,7 @@ chmod +t /etc/ehtools/modules/snapshots
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
-echo -e "Snapshot 1: \e[4;32m/etc/ehtools/modules/snapshots/ehto\e[0m"
+echo -e "Snapshot 1: \e[4;32m/etc/ehtools/modules/snapshots/eht\e[0m"
 echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/ehtools\e[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
