@@ -102,63 +102,56 @@ fi
 fi
 
 clear
-printf '\033]2;Modules (BETA)\a'
+printf '\033]2;Modules v1.9\a'
 echo -e "            ____   "
 echo -e "Modules    /\___\  "
-echo -e "(BETA)    /\ \___\ "
+echo -e " v1.9     /\ \___\ "
 echo -e " for      \ \/ / / "
 echo -e "ehtools    \/_/_/  By Ivan Nikolsky "
 sleep 3
-echo -e "Welcome to Modules (BETA)"
+echo -e "Welcome to Modules v1.9"
 sleep 1
 echo -e "Instrument to add eht modules to /bin"
 sleep 1
 echo -e "It's fully safely!"
 sleep 1
-echo -e "Press \e[1;33many key\e[0m to install modules (BETA)"
+echo -e "Press \e[1;33many key\e[0m to install modules v1.9"
 read -n 1
 clear
 echo -e "Well, we are going to start!"
 sleep 2
 echo -e "\e[4;32mPreparing to install...\e[0m"
 sleep 1
-echo -e "Getting 10%"
-sleep 0.1
-echo -e "Getting 15%"
-sleep 0.1
-echo -e "Getting 20%"
-sleep 0.1
-echo -e "Getting 25%"
-sleep 0.1
-echo -e "Getting 30%"
-sleep 0.1
-echo -e "Getting 35%"
-sleep 0.1
-echo -e "Getting 40%"
-sleep 0.1
-echo -e "Getting 45%"
-sleep 0.1
-echo -e "Getting 50%"
-sleep 0.1
-echo -e "Getting 55%"
-sleep 0.1
-echo -e "Getting 60%"
-sleep 0.1
-echo -e "Getting 65%"
-sleep 0.1 
-echo -e "Getting 70%"
-sleep 0.1
-echo -e "Getting 75%"
-sleep 0.1
-echo -e "Getting 80%"
-sleep 0.1
-echo -e "Getting 85%"
-sleep 0.1
-echo -e "Getting 90%"
-sleep 0.1
-echo -e "Getting 95%"
-sleep 0.1
-echo -e "Getting 100%"
+printf '\033]2;Installing...\a'
+
+function ProgressBar {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rGetting ${_progress}%%"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.2
+    ProgressBar ${number} ${_end}
+done
+
+sleep 5
+echo -e
 sleep 0.3
 echo -e "10 tar archives installed to /bin with success!"
 sleep 0.2
@@ -214,25 +207,4 @@ cp /root/ehtools/eht/eht21 /bin
 chmod +x /bin/eht21
 sleep 0.5
 echo -e "Modules added to /bin with success!"
-sleep 0.5
-echo -e "Good job! You can open modules with commands:"
-sleep 0.5
-echo -e "> eht1"
-sleep 0.1
-echo -e "> eht2"
-sleep 0.1
-echo -e "> eht3"
-sleep 0.1
-echo -e "> eht4"
-sleep 0.1
-echo -e "> eht21"
-sleep 0.1
-echo -e "> eht31"
-sleep 0.1
-echo -e "> eht41"
-sleep 0.1
-echo -e "> eht42"
-sleep 0.1
-echo -e "> eht43"
-sleep 0.5
-echo -e "read more about this modules on my wiki"
+sleep 5
