@@ -105,17 +105,19 @@ clear
 printf '\033]2;Modules v1.9\a'
 echo -e "            ____   "
 echo -e "Modules    /\___\  "
-echo -e " v1.9     /\ \___\ "
-echo -e " for      \ \/ / / "
+echo -e "v1.9      /\ \___\ "
+echo -e "for       \ \/ / / "
 echo -e "ehtools    \/_/_/  By Ivan Nikolsky "
 sleep 3
 echo -e "Welcome to Modules v1.9"
 sleep 1
 echo -e "Instrument to add eht modules to /bin"
 sleep 1
+echo -e "This is sandbox for ehtools modules"
+sleep 1
 echo -e "It's fully safely!"
 sleep 1
-echo -e "Press \e[1;33many key\e[0m to install modules v1.9"
+echo -e "Press \e[1;33many key\e[0m to install modules"
 read -n 1
 clear
 echo -e "Well, we are going to start!"
@@ -207,4 +209,10 @@ cp /root/ehtools/eht/eht21 /bin
 chmod +x /bin/eht21
 sleep 0.5
 echo -e "Modules added to /bin with success!"
+sleep 1
+echo -e "Cleaning caches and finishing..."
+sleep 0.5
+uiecache --all
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
 sleep 5
