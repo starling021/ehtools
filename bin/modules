@@ -212,7 +212,9 @@ echo -e "Modules added to /bin with success!"
 sleep 1
 echo -e "Cleaning caches and finishing..."
 sleep 0.5
+echo -e
 uiecache --all
+echo -e
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 5
