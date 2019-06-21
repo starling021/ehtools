@@ -189,6 +189,7 @@ sleep 1
 mkdir /bin/ehtools
 cd /root/ehtools
 cp /root/ehtools/bin/ehtools /bin/ehtools
+chmod +x /bin/ehtools/ehtools
 cp /root/ehtools/bin/euh /bin
 chmod +x /bin/euh
 cp /root/ehtools/bin/epasswd /bin
