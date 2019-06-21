@@ -101,12 +101,27 @@ exit
 fi
 fi
 
-if [[ $1 = "--restore" || $1 = "-r" ]]
+if [[ $1 = "--help" || $1 = "-h" ]]
+then
+
+echo -e "Usage: modules [OPTION...]"
+echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
+echo -e
+echo -e "Modules v1.9 is a sandbox for ehtools modules."
+echo -e
+echo -e  "    --install      Install ehtools modules to /bin."
+echo -e  "    --restore      Restore saved ehtools snapshot."
+echo -e  "    --take         Take new ehtools snapshot."                    
+echo -e  "    --help         Give this help list."
+echo -e
+exit
+
+elif [[ $1 = "--restore" || $1 = "-r" ]]
 then
 if [[ -d /etc/ehtools/modules/snapshots/ehtools ]]
 then
-sleep 3
 clear
+sleep 3
 echo -e "Well, we are going to start!"
 sleep 2
 echo -e "\e[4;32mPreparing to restore /etc/ehtools/modules/snapshots/ehtools...\e[0m"
@@ -146,14 +161,56 @@ rm -r /bin/ehtools
 cp -r /etc/ehtools/modules/snapshots/ehtools /bin
 sleep 2
 echo -e "\e[4;32mSuccess!\e[0m"
+sleep 0.5
+echo -e "Finishing and exiting..."
+sleep 5
 else
 sleep 3
 echo -e "Error, no snapshots found!"
 sleep 1
 fi
+
+elif [[ $1 = "--take" || $1 = "-t" ]]
+then
+if [[ -d /etc/ehtools/modules ]]
+then
+clear
+sleep 3
+echo -e "\e[4;32mPreparing to take snapshot...\e[0m"
+sleep 0.5
+echo -e "Removing old snapshots..."
+rm -r /etc/ehtools/modules/snapshots
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
+sleep 0.5
+echo -e "Making /etc/ehtools/modules/snapshots..."
+mkdir /etc/ehtools/modules/snapshots
+sleep 0.5
+echo -e "Trying to take snapshot of /root/ehtools/eht..."
+cp -r /root/ehtools/eht /etc/ehtools/modules/snapshots
+sleep 0.5
+echo -e "Trying to take snapshot of /bin/ehtools..."
+cp -r /bin/ehtools /etc/ehtools/modules/snapshots
+chmod +t /etc/ehtools/modules/snapshots
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
+sleep 0.5
+echo -e "Snapshot 1: \e[4;32m/etc/ehtools/modules/snapshots/ehto\e[0m"
+echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/ehtools\e[0m"
+sleep 0.5
+echo -e "Finishing and exiting..."
+sleep 5
+else
+sleep 3
+echo -e "Error, modules is not installed!"
+sleep 1
 fi
 
+
+elif [[ $1 = "--install" || $1 = "-i" ]]
+then
 clear
+sleep 3
 printf '\033]2;Modules v1.9\a'
 echo -e "            ____   "
 echo -e "Modules    /\___\  "
@@ -303,3 +360,4 @@ echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/ehtools\e[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
+fi
