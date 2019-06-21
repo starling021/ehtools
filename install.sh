@@ -307,7 +307,7 @@ function ProgressBark {
 
                          
         
-printf "\rConfiguring ${_progress}%%"
+printf "\rConfiguring (${_progress}%%)"
 
 }
 
