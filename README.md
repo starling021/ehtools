@@ -324,24 +324,18 @@ Run it to open WPS menu:
 
 Uiecache - (uninstall ehtools cache) the utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
 
-    INFO: Uiecache - tool (ehtools utility) to clean/uninstall 
-    ehtools login and just ehtools cache!
+    Usage: uiecache [OPTION...]
+    Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
-Run it to uninstall all ehtools cache:
+    Uninstall ehtools login and just ehtools cache.
 
-> uiecache --all
-
-Run it to uninstall ehtools cache from path:
-
-> uiecache --path <path>
-  
-Run it to restart ehtools services:
-
-> uiecache --restart
-
-Run it to get help:
-
-> uiecache --help
+          --all          Uninstall all ehtools cache.
+                           (standart old uiecache)
+          --path <path>  Uninstall ehtools cache from your path.
+                           (uninstall cache from path)
+          --restart      Restart all ehtools processes and services.
+                           (restart ehtools system)                  
+          --help         Give this help list.
 
 > # Ehtools update helper (euh) | <img src="https://img.shields.io/badge/utility-euh-brown.svg">
 
@@ -366,7 +360,15 @@ if not working:
 
 Modules v1.9 - the utility that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start. To activate this function, perform the following steps!
 
-> modules or modules --install
+    Usage: modules [OPTION...]
+    Copyright (C) 2019, Entynetproject. All Rights Reserved.
+    
+    Modules v1.9 is a sandbox for ehtools modules.
+
+         --install      Install ehtools modules to /bin.
+         --restore      Restore saved ehtools snapshot.
+         --take         Take new ehtools snapshot.                  
+         --help         Give this help list.
 
 > # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
