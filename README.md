@@ -358,7 +358,7 @@ if not working:
 
 > # Modules v1.9 | <img src="https://img.shields.io/badge/utility-modules-blue.svg">
 
-Modules v1.9 - the utility that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start. To activate this function, perform the following steps!
+Modules v1.9 - the utility that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
 
     Usage: modules [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
