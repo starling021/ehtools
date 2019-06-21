@@ -164,10 +164,12 @@ echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
+exit
 else
 sleep 3
 echo -e "Error, no snapshots found!"
 sleep 1
+exit
 fi
 
 elif [[ $1 = "--take" || $1 = "-t" ]]
@@ -200,10 +202,12 @@ echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/ehtools\e[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
+exit
 else
 sleep 3
 echo -e "Error, modules is not installed!"
 sleep 1
+exit
 fi
 
 
@@ -360,4 +364,17 @@ echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/ehtools\e[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
+exit
 fi
+
+echo -e "Usage: modules [OPTION...]"
+echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
+echo -e
+echo -e "Modules v1.9 is a sandbox for ehtools modules."
+echo -e
+echo -e  "    --install      Install ehtools modules to /bin."
+echo -e  "    --restore      Restore saved ehtools snapshot."
+echo -e  "    --take         Take new ehtools snapshot."                    
+echo -e  "    --help         Give this help list."
+echo -e
+exit
