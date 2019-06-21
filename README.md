@@ -368,10 +368,6 @@ Modules v1.9 - the utility that adds permissions or the ability to control the e
 
 > modules or modules --install
 
-To activate, for example eht1 module after installing Modules v1.9 run command:
-
-> eht1
-
 > # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
 Ehtools password changer (epasswd) - the utility that help you to change your ehtools password or ehtools root password!
