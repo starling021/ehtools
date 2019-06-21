@@ -153,7 +153,7 @@ _end=100
 
 for number in $(seq ${_start} ${_end})
 do
-    sleep 0.2
+    sleep 0.5
     ProgressBar ${number} ${_end}
 done
 
@@ -173,6 +173,33 @@ chmod +x /bin/ehtools/eht31
 chmod +x /bin/ehtools/eht41
 chmod +x /bin/ehtools/eht42
 chmod +x /bin/ehtools/eht43
+rm /bin/eht1
+rm /bin/eht2
+rm /bin/eht3
+rm /bin/eht31
+rm /bin/eht4
+rm /bin/eht41
+rm /bin/eht42
+rm /bin/eht43
+rm /bin/eht21
+cp /etc/ehtools/modules/snapshots/eht/eht1 /bin
+chmod +x /bin/eht1
+cp /etc/ehtools/modules/snapshots/eht/eht2 /bin
+chmod +x /bin/eht2
+cp /etc/ehtools/modules/snapshots/eht/eht3 /bin
+chmod +x /bin/eht3
+cp /etc/ehtools/modules/snapshots/eht/eht31 /bin
+chmod +x /bin/eht31
+cp /etc/ehtools/modules/snapshots/eht/eht4 /bin
+chmod +x /bin/eht4
+cp /etc/ehtools/modules/snapshots/eht/eht41 /bin
+chmod +x /bin/eht41
+cp /etc/ehtools/modules/snapshots/eht/eht42 /bin
+chmod +x /bin/eht42
+cp /etc/ehtools/modules/snapshots/eht/eht43 /bin
+chmod +x /bin/eht43
+cp /etc/ehtools/modules/snapshots/eht/eht21 /bin
+chmod +x /bin/eht21
 sleep 2
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
