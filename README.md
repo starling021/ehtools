@@ -379,9 +379,9 @@ Modules v1.9 - the utility that adds permissions or the ability to control the e
     /root/ehtools/eht (this is saved ehtools modules data), you can 
     take it with Modules utility v1.9 and restore it.
 
-> Ehtools Snapshot Restoration (ESR) 
+> Ehtools Modules Restoration (EMR) 
 
-    INFO: ESR is an operation that removing /bin/ehtools and 
+    INFO: EMR is an operation that removing /bin/ehtools and 
     /root/ehtools/eht and restoring it from saved ehtools modules 
     snapshot, you can take it with Modules utility v1.9 but ESR will 
     remove all your old ehtools modules data from /bin/ehtools and /root/ehtools/eht!
