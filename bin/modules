@@ -319,10 +319,6 @@ chmod +x /bin/ehtools/eht31
 chmod +x /bin/ehtools/eht41
 chmod +x /bin/ehtools/eht42
 chmod +x /bin/ehtools/eht43
-cp /root/ehtools/bin/euh /bin
-chmod +x /bin/euh
-cp /root/ehtools/bin/epasswd /bin
-chmod +x /bin/epasswd
 cp /root/ehtools/eht/eht1 /bin
 chmod +x /bin/eht1
 cp /root/ehtools/eht/eht2 /bin
