@@ -276,7 +276,7 @@ then
 	clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To install Modules (BETA) run 'modules'"
+	echo -e "To install Modules v1.9 run 'modules'..."
 	sleep 3
 	clear
         
@@ -285,51 +285,44 @@ then
       clear
       echo -e "OK..."
       sleep 1
-      echo -e "Loading modules..."
+      echo -e "Loading Modules v1.9..."
       sleep 0.5
-      echo -e "Uploading Modules (BETA)..."
+      echo -e "Uploading Modules v1.9..."
       sleep 0.5
-      echo -e "Configuring Modules (BETA)..."
+      echo -e "Configuring Modules v1.9..."
       sleep 0.5
-      echo -e "Starting configuring Modules (BETA):"
+      echo -e "Starting configuring Modules v1.9..."
       sleep 0.5
-      echo -e "Getting 10%"
-      sleep 0.1
-      echo -e "Getting 15%"
-      sleep 0.1
-      echo -e "Getting 20%"
-      sleep 0.1
-      echo -e "Getting 25%"
-      sleep 0.1
-      echo -e "Getting 30%"
-      sleep 0.1
-      echo -e "Getting 35%"
-      sleep 0.1
-      echo -e "Getting 40%"
-      sleep 0.1
-      echo -e "Getting 45%"
-      sleep 0.1
-      echo -e "Getting 50%"
-      sleep 0.1
-      echo -e "Getting 55%"
-      sleep 0.1
-      echo -e "Getting 60%"
-      sleep 0.1
-      echo -e "Getting 65%"
-      sleep 0.1
-      echo -e "Getting 70%"
-      sleep 0.1
-      echo -e "Getting 75%"
-      sleep 0.1
-      echo -e "Getting 80%"
-      sleep 0.1
-      echo -e "Getting 85%"
-      sleep 0.1
-      echo -e "Getting 90%"
-      sleep 0.1
-      echo -e "Getting 95%"
-      sleep 0.1
-      echo -e "Getting 100%"
+      printf '\033]2;Configuring...\a'
+      
+function ProgressBark {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rConfiguring ${_progress}%%"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.2
+    ProgressBark ${number} ${_end}
+done
+
+sleep 5
+echo -e
       sleep 0.5
       echo -e "Please wait..."
       sleep 0.5
@@ -360,7 +353,7 @@ then
 clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To protect ehtools run 'epasswd'"
+	echo -e "To protect ehtools run 'epasswd'..."
 	touch /etc/ehtools/login
         touch /etc/ehtools/password
         sleep 3
