@@ -347,7 +347,7 @@ rm /etc/ehtools/password
 } &> /dev/null
 printf '\033]2;ehtools INSTALLER\a'
 echo -e "Protect ehtools with password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
-echo -e "This will protect your ehtools framework with login and password!"
+echo -e "This function will protect ehtools with login and password!"
 echo -e "So without thinking protect ehtools now!"
 echo -e "Only use 'yes' for the best way!"
 read -p $'(\e[4;93mprotect\e[0m\en)> ' WQE
