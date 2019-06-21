@@ -259,11 +259,11 @@ then
 clear
 sleep 3
 printf '\033]2;Modules v1.9\a'
-echo -e "            ____   "
-echo -e "Modules    /\___\  "
-echo -e "v1.9      /\ \___\ "
-echo -e "for       \ \/ / / "
-echo -e "ehtools    \/_/_/  By Ivan Nikolsky "
+echo -e "          ____   "
+echo -e "Modules  /\___\  "
+echo -e "v1.9    /\ \___\ "
+echo -e "for     \ \/ / / "
+echo -e "ehtools  \/_/_/  By Ivan Nikolsky "
 sleep 3
 echo -e "Welcome to Modules v1.9 for ehtools"
 sleep 1
