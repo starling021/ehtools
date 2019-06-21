@@ -239,18 +239,19 @@ then
 	BASHCHECK=$(cat ~/.bashrc | grep "bin/ehtools")
 	if [[ "$BASHCHECK" != "i" ]]
 	then
-	        sleep 5
-		echo -e "["$YS"inf"$CE"] "$YS"Congratulations, you have successfully installed our Framework!"$CE""
+	sleep 5
+      echo -e "$RS       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$RS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
+      echo -e "$RS       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$RS       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
+      echo -e "$RS       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro$CE"
+      echo -e "$RS       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"                                         
+		sleep 3
+		echo -e "["$YS"inf"$CE"] "$YS"Congratulations, you have successfully installed our framework!"$CE""
 		sleep 0.5
 	fi
-	echo -e "["$YS"inf"$CE"] "$YS"Adding EntynetHackerTools to PATH so you can access it from anywhere"$CE""
-	sleep 0.5
-        echo -e "["$YS"inf"$CE"] "$YS"Welcome to EntynetHackerTools PRO :3"$CE""
-	sleep 0.5
-        echo -e "["$YS"inf"$CE"] "$YS"More information about PRO or other plans on our site"$CE""
-	sleep 0.5
 	echo -e "["$YS"inf"$CE"] "$YS"A few more steps and you are done..."$CE""
-	sleep 3
+	sleep 5
 
 
 
