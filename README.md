@@ -327,15 +327,13 @@ Uiecache - (uninstall ehtools cache) the utility that can help you to clean/unin
     Usage: uiecache [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
-    Uninstall ehtools login and just ehtools cache.
-
-          --all          Uninstall all ehtools cache.
-                           (standart old uiecache)
-          --path <path>  Uninstall ehtools cache from your path.
-                           (uninstall cache from path)
-          --restart      Restart all ehtools processes and services.
-                           (restart ehtools system)                  
-          --help         Give this help list.
+       --all          Uninstall all ehtools cache.
+                        (standart old uiecache)
+       --path <path>  Uninstall ehtools cache from your path.
+                        (uninstall cache from path)
+       --restart      Restart all ehtools processes and services.
+                        (restart ehtools system)                    
+       --help         Give this help list.
 
 > # Ehtools update helper (euh) | <img src="https://img.shields.io/badge/utility-euh-brown.svg">
 
@@ -362,16 +360,14 @@ Modules v1.9 - the utility that adds permissions or the ability to control the e
 
     Usage: modules [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
-    
-    Modules v1.9 is a sandbox for ehtools modules.
 
-         --install  Install ehtools modules to /bin.
-                      (install ehtools modules)
-         --restore  Restore saved ehtools modules snapshot.
-                      (restore ehtools modules snapshot)
-         --take     Take new ehtools modules snapshot. 
-                      (take ehtools modules snapshot)
-         --help     Give this help list.
+       --install  Install ehtools modules to /bin.
+                    (install ehtools modules)
+       --restore  Restore saved ehtools modules snapshot.
+                    (restore ehtools modules snapshot)
+       --take     Take new ehtools modules snapshot.
+                    (take ehtools modules snapshot)
+       --help     Give this help list.
          
 > Ehtools Modules Snapshot (EMS) 
 
