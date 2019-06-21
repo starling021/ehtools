@@ -207,14 +207,14 @@ then
 	mkdir /root/handshakes
 	echo -e "Made /root/handshake directory"
 else
-	echo -e "/root/handshakes directory detected.Good."
+	echo -e "/root/handshakes directory detected."
 fi
 if [[ ! -d /root/wordlists ]]
 then
 	mkdir /root/wordlists
 	echo -e "Made /root/wordlists directory"
 else
-	echo -e "/root/wordlists directory detected.Good."
+	echo -e "/root/wordlists directory detected."
 fi
 while true
 do
@@ -277,7 +277,7 @@ then
 	clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To install Modules run 'modules'..."
+	echo -e "To install Modules run 'modules -i'..."
 	sleep 3
 	clear
         
@@ -330,7 +330,7 @@ echo -e
       echo -e "Launching..."
       sleep 1
       clear
-      modules
+      modules -i
 fi
 
 clear
