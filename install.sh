@@ -30,6 +30,7 @@
 CE="\e[0m"
 RS="\e[1;31m"
 YS="\e[1;33m"
+WHS="\e[1;37m"
 
 WHO="$( whoami )"
 
