@@ -350,7 +350,7 @@ Run it to get help:
     but payload in ehtools update helper named "hard reinstall"
     and this is not safe for ehtools!
 
-If you have some problems with update use our "Ehtools update helper"
+If you have some problems with update use our "ehtools update helper"
 Last time, configuration errors of our program occur and it can not be updated by itself.
 
 > euh
@@ -362,16 +362,13 @@ if not working:
     INFO: This bug (configuration errors) fixed in v2.1.8!
     You can now use update option from main menu!
 
-> # Modules (BETA) | <img src="https://img.shields.io/badge/utility-modules-blue.svg">
+> # Modules v1.9 | <img src="https://img.shields.io/badge/utility-modules-blue.svg">
 
-    WARNING: This is only BETA feature for now but you can try it today!
-    And we recommend you to try modules (BETA)!
-
-Modules (BETA) - the utility that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start. To activate this function, perform the following steps!
+Modules v1.9 - the utility that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start. To activate this function, perform the following steps!
 
 > modules or modules --install
 
-To activate, for example eht1 module after installing modules (BETA) run command:
+To activate, for example eht1 module after installing Modules v1.9 run command:
 
 > eht1
 
