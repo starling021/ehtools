@@ -164,6 +164,15 @@ rm -r /bin/ehtools
 cp -r /etc/ehtools/modules/snapshots/ehtools /bin
 rm -r /root/ehtools/eht
 cp -r /etc/ehtools/modules/snapshots/eht /root/ehtools
+chmod +x /bin/ehtools/eht1
+chmod +x /bin/ehtools/eht2
+chmod +x /bin/ehtools/eht3
+chmod +x /bin/ehtools/eht4
+chmod +x /bin/ehtools/eht21
+chmod +x /bin/ehtools/eht31
+chmod +x /bin/ehtools/eht41
+chmod +x /bin/ehtools/eht42
+chmod +x /bin/ehtools/eht43
 sleep 2
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
@@ -301,6 +310,15 @@ cp /root/ehtools/eht/eht31 /bin/ehtools
 cp /root/ehtools/eht/eht41 /bin/ehtools
 cp /root/ehtools/eht/eht42 /bin/ehtools
 cp /root/ehtools/eht/eht43 /bin/ehtools
+chmod +x /bin/ehtools/eht1
+chmod +x /bin/ehtools/eht2
+chmod +x /bin/ehtools/eht3
+chmod +x /bin/ehtools/eht4
+chmod +x /bin/ehtools/eht21
+chmod +x /bin/ehtools/eht31
+chmod +x /bin/ehtools/eht41
+chmod +x /bin/ehtools/eht42
+chmod +x /bin/ehtools/eht43
 cp /root/ehtools/bin/euh /bin
 chmod +x /bin/euh
 cp /root/ehtools/bin/epasswd /bin
