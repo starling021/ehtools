@@ -101,6 +101,58 @@ exit
 fi
 fi
 
+if [[ $1 = "--restore" || $1 = "-r" ]]
+then
+if [[ -d /etc/ehtools/modules/snapshots/ehtools ]]
+then
+sleep 3
+clear
+echo -e "Well, we are going to start!"
+sleep 2
+echo -e "\e[4;32mPreparing to restore /etc/ehtools/modules/snapshots/eht...\e[0m"
+sleep 1
+printf '\033]2;Restoring...\a'
+
+function ProgressBar {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rRestoring (${_progress}%%)"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.2
+    ProgressBar ${number} ${_end}
+done
+
+sleep 5
+echo -e
+sleep 0.3
+rm -r /bin/ehtools
+cp -r /etc/ehtools/modules/snapshots/ehtools /bin
+sleep 2
+echo -e "\e[4;32mSuccess!\e[0m"
+else
+sleep 3
+echo -e "Error, no snapshots found!"
+sleep 1
+fi
+fi
+
 clear
 printf '\033]2;Modules v1.9\a'
 echo -e "            ____   "
@@ -109,7 +161,7 @@ echo -e "v1.9      /\ \___\ "
 echo -e "for       \ \/ / / "
 echo -e "ehtools    \/_/_/  By Ivan Nikolsky "
 sleep 3
-echo -e "Welcome to Modules v1.9"
+echo -e "Welcome to Modules v1.9 for ehtools"
 sleep 1
 echo -e "Instrument to add ehtools modules to /bin"
 sleep 1
@@ -235,14 +287,19 @@ sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
 echo -e "Making /etc/ehtools/modules/snapshots..."
+mkdir /etc/ehtools/modules/snapshots
 sleep 0.5
 echo -e "Trying to take snapshot of /root/ehtools/eht..."
 cp -r /root/ehtools/eht /etc/ehtools/modules/snapshots
+sleep 0.5
+echo -e "Trying to take snapshot of /bin/ehtools..."
+cp -r /bin/ehtools /etc/ehtools/modules/snapshots
 chmod +t /etc/ehtools/modules/snapshots
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
-echo -e "Snapshot: \e[4;32m/etc/ehtools/modules/snapshots/eht\e[0m"
+echo -e "Snapshot 1: \e[4;32m/etc/ehtools/modules/snapshots/ehto\e[0m"
+echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/ehtools\e[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
