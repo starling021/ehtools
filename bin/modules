@@ -111,11 +111,9 @@ echo -e "ehtools    \/_/_/  By Ivan Nikolsky "
 sleep 3
 echo -e "Welcome to Modules v1.9"
 sleep 1
-echo -e "Instrument to add eht modules to /bin"
+echo -e "Instrument to add ehtools modules to /bin"
 sleep 1
 echo -e "This is sandbox for ehtools modules"
-sleep 1
-echo -e "It's fully safely!"
 sleep 1
 echo -e "Press \e[1;33many key\e[0m to install modules"
 read -n 1
