@@ -135,7 +135,7 @@ function ProgressBar {
 
                          
         
-printf "\rGetting ${_progress}%%"
+printf "\rGetting (${_progress}%%)"
 
 }
 
