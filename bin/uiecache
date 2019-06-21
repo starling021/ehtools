@@ -101,7 +101,7 @@ exit
 fi
 fi
 
-if [[ $1 = "--help" ]]
+if [[ $1 = "--help" || $1 = "-h" ]]
 then
 
 echo -e "Usage: uiecache [OPTION...]"
@@ -119,7 +119,7 @@ echo -e  "    --help         Give this help list."
 echo -e
 exit
 
-elif [[ $1 = "--path" ]]
+elif [[ $1 = "--path" || $1 = "-p" ]]
 then
 SAS="$2"
 printf '\033]2;Uiecache ('$SAS')...\a'
@@ -159,7 +159,7 @@ echo -e
 exit
 
 
-elif [[ $1 = "--restart" ]]
+elif [[ $1 = "--restart" || $1 = "-r" ]]
 then
 if [[ -d /etc/ehtools/root/service ]]
 then
@@ -175,6 +175,8 @@ mkdir service
 cp -r .service/late /etc/ehtools/root/service
 cp .service/ehtkey.txt /etc/ehtools/root/service
 rm -r .service
+killall ehtools
+killall ehtconsole
 chattr +i /etc/ehtools
 chattr +i /etc/ehtools/root/service
 chattr +i /etc/ehtools/root/service/late
@@ -190,7 +192,7 @@ fi
 exit
 
 
-elif [[ $1 = "--all" ]]
+elif [[ $1 = "--all" || $1 = "-a" ]]
 then
 printf '\033]2;Uiecache...\a'
 
