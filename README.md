@@ -373,12 +373,18 @@ Modules v1.9 - the utility that adds permissions or the ability to control the e
                       (take ehtools modules snapshot)
          --help     Give this help list.
          
-Ehtools Modules Snapshot (EMS) is a saved ehtools modules data from /bin/ehtools and /root/ehtools/eht (this is saved ehtools modules data), you can take it with Modules utility v1.9 and restore it.
+> Ehtools Modules Snapshot (EMS) 
 
-Ehtools Snapshot Restoration (ESR) is an operation that removing /bin/ehtools and /root/ehtools/eht and restoring it from saved ehtools modules snapshot, you can take it with Modules utility v1.9.
+    INFO: EMS is a saved ehtools modules data from /bin/ehtools and 
+    /root/ehtools/eht (this is saved ehtools modules data), you can 
+    take it with Modules utility v1.9 and restore it.
 
-    WARNING: ESR will remove all your old ehtools 
-    modules data from /bin/ehtools and /root/ehtools/eht!
+> Ehtools Snapshot Restoration (ESR) 
+
+    INFO: ESR is an operation that removing /bin/ehtools and 
+    /root/ehtools/eht and restoring it from saved ehtools modules 
+    snapshot, you can take it with Modules utility v1.9 but ESR will 
+    remove all your old ehtools modules data from /bin/ehtools and /root/ehtools/eht!
 
 > # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
