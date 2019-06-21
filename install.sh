@@ -277,7 +277,7 @@ then
 	clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To install Modules v1.9 run 'modules'..."
+	echo -e "To install Modules run 'modules'..."
 	sleep 3
 	clear
         
@@ -286,13 +286,13 @@ then
       clear
       echo -e "OK..."
       sleep 1
-      echo -e "Loading Modules v1.9..."
+      echo -e "Loading Modules..."
       sleep 0.5
-      echo -e "Uploading Modules v1.9..."
+      echo -e "Uploading Modules..."
       sleep 0.5
-      echo -e "Configuring Modules v1.9..."
+      echo -e "Configuring Modules..."
       sleep 0.5
-      echo -e "Starting configuring Modules v1.9..."
+      echo -e "Starting configuring Modules..."
       sleep 0.5
       printf '\033]2;Configuring...\a'
       
