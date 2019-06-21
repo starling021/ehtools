@@ -208,11 +208,41 @@ chmod +x /bin/eht21
 sleep 0.5
 echo -e "Modules added to /bin with success!"
 sleep 1
-echo -e "Cleaning caches and finishing..."
+echo -e "Cleaning caches..."
 sleep 0.5
 echo -e
 uiecache --all
 echo -e
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
+sleep 0.5
+echo -e "Making /etc/ehtools/modules..."
+mkdir /etc/ehtools/modules
+sleep 0.5
+echo -e "Saving to /etc/ehtools/modules/.config..."
+echo eht1 >> /etc/ehtools/modules/.config
+echo eht2 >> /etc/ehtools/modules/.config
+echo eht3 >> /etc/ehtools/modules/.config
+echo eht4 >> /etc/ehtools/modules/.config
+echo eht21 >> /etc/ehtools/modules/.config
+echo eht31 >> /etc/ehtools/modules/.config
+echo eht41 >> /etc/ehtools/modules/.config
+echo eht42 >> /etc/ehtools/modules/.config
+echo eht43 >> /etc/ehtools/modules/.config
+sleep 0.5
+echo -e "Saved to /etc/ehtools/modules/.config..."
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
+sleep 0.5
+echo -e "Making /etc/ehtools/modules/snapshots..."
+sleep 0.5
+echo -e "Trying to take snapshot of /root/ehtools/eht..."
+cp -r /root/ehtools/eht /etc/ehtools/modules/snapshots
+chmod +t /etc/ehtools/modules/snapshots
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
+sleep 0.5
+echo -e "Snapshot: \e[4;32m/etc/ehtools/modules/snapshots/eht\e[0m"
+sleep 0.5
+echo -e "Finishing and exiting..."
 sleep 5
