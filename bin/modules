@@ -109,7 +109,7 @@ sleep 3
 clear
 echo -e "Well, we are going to start!"
 sleep 2
-echo -e "\e[4;32mPreparing to restore /etc/ehtools/modules/snapshots/eht...\e[0m"
+echo -e "\e[4;32mPreparing to restore /etc/ehtools/modules/snapshots/ehtools...\e[0m"
 sleep 1
 printf '\033]2;Restoring...\a'
 
