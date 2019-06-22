@@ -111,29 +111,29 @@ echo -e
 echo -e "Usage: modules [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   --install  Install ehtools modules to /bin."
-echo -e "                (install ehtools modules)"
-echo -e "   --restore  Restore saved ehtools modules snapshot."
-echo -e "                (restore ehtools modules snapshot)"
-echo -e "   --take     Take new ehtools modules snapshot."
-echo -e "                (take ehtools modules snapshot)"
-echo -e "   --help     Give this help list."
+echo -e "   --install         Install ehtools modules to /bin."
+echo -e "                       (install ehtools modules)"
+echo -e "   --restore <name>  Restore saved ehtools modules snapshot."
+echo -e "                       (restore ehtools modules snapshot)"
+echo -e "   --take    <name>  Take new ehtools modules snapshot."
+echo -e "                       (take ehtools modules snapshot)"
+echo -e "   --help            Give this help list."
 echo -e
 exit
 
 elif [[ $1 = "--restore" || $1 = "-r" ]]
 then
-if [[ -d /etc/ehtools/modules/snapshots/ehtools ]]
+if [[ -d /etc/ehtools/modules/snapshots/$2 ]]
 then
 clear
 sleep 3
 echo -e "Well, we are going to start!"
 sleep 2
-echo -e "\e[4;32mPreparing to restore...\e[0m"
+echo -e "\e[4;32mPreparing to restore snapshot: $2...\e[0m"
 sleep 1
 printf '\033]2;Restoring...\a'
 
-function ProgressBar {
+function ProgressBark {
 
     let _progress=(${1}*100/${2}*100)/100
     let _done=(${_progress}*4)/10
@@ -156,16 +156,16 @@ _end=100
 for number in $(seq ${_start} ${_end})
 do
     sleep 0.5
-    ProgressBar ${number} ${_end}
+    ProgressBark ${number} ${_end}
 done
 
 sleep 5
 echo -e
 sleep 0.3
 rm -r /bin/ehtools
-cp -r /etc/ehtools/modules/snapshots/ehtools /bin
+cp -r /etc/ehtools/modules/snapshots/$2/ehtools /bin
 rm -r /root/ehtools/eht
-cp -r /etc/ehtools/modules/snapshots/eht /root/ehtools
+cp -r /etc/ehtools/modules/snapshots/$2/eht /root/ehtools
 chmod +x /bin/ehtools/eht1
 chmod +x /bin/ehtools/eht2
 chmod +x /bin/ehtools/eht3
@@ -184,23 +184,23 @@ rm /bin/eht41
 rm /bin/eht42
 rm /bin/eht43
 rm /bin/eht21
-cp /etc/ehtools/modules/snapshots/eht/eht1 /bin
+cp /etc/ehtools/modules/snapshots/$2/eht/eht1 /bin
 chmod +x /bin/eht1
-cp /etc/ehtools/modules/snapshots/eht/eht2 /bin
+cp /etc/ehtools/modules/snapshots/$2/eht/eht2 /bin
 chmod +x /bin/eht2
-cp /etc/ehtools/modules/snapshots/eht/eht3 /bin
+cp /etc/ehtools/modules/snapshots/$2/eht/eht3 /bin
 chmod +x /bin/eht3
-cp /etc/ehtools/modules/snapshots/eht/eht31 /bin
+cp /etc/ehtools/modules/snapshots/$2/eht/eht31 /bin
 chmod +x /bin/eht31
-cp /etc/ehtools/modules/snapshots/eht/eht4 /bin
+cp /etc/ehtools/modules/snapshots/$2/eht/eht4 /bin
 chmod +x /bin/eht4
-cp /etc/ehtools/modules/snapshots/eht/eht41 /bin
+cp /etc/ehtools/modules/snapshots/$2/eht/eht41 /bin
 chmod +x /bin/eht41
-cp /etc/ehtools/modules/snapshots/eht/eht42 /bin
+cp /etc/ehtools/modules/snapshots/$2/eht/eht42 /bin
 chmod +x /bin/eht42
-cp /etc/ehtools/modules/snapshots/eht/eht43 /bin
+cp /etc/ehtools/modules/snapshots/$2/eht/eht43 /bin
 chmod +x /bin/eht43
-cp /etc/ehtools/modules/snapshots/eht/eht21 /bin
+cp /etc/ehtools/modules/snapshots/$2/eht/eht21 /bin
 chmod +x /bin/eht21
 sleep 2
 echo -e "\e[4;32mSuccess!\e[0m"
@@ -210,7 +210,7 @@ sleep 5
 exit
 else
 sleep 3
-echo -e "Error, no snapshots found!"
+echo -e "Error, snapshot "$N"$2"$N" is not found!"
 sleep 1
 exit
 fi
@@ -221,27 +221,53 @@ if [[ -d /etc/ehtools/modules ]]
 then
 clear
 sleep 3
-echo -e "\e[4;32mPreparing to take snapshot...\e[0m"
+echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
 sleep 0.5
-echo -e "Removing old snapshots..."
-rm -r /etc/ehtools/modules/snapshots
-sleep 0.5
-echo -e "\e[4;32mSuccess!\e[0m"
-sleep 0.5
+
+function ProgressBarks {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rTaking snapshot: $2 (${_progress}%%)"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.5
+    ProgressBarks ${number} ${_end}
+done
+
+sleep 5
 echo -e "Making /etc/ehtools/modules/snapshots..."
 mkdir /etc/ehtools/modules/snapshots
 sleep 0.5
+echo -e "Making /etc/ehtools/modules/snapshots/$2..."
+mkdir /etc/ehtools/modules/snapshots/$2
+sleep 0.5
 echo -e "Trying to take snapshot of /root/ehtools/eht..."
-cp -r /root/ehtools/eht /etc/ehtools/modules/snapshots
+cp -r /root/ehtools/eht /etc/ehtools/modules/snapshots/$2
 sleep 0.5
 echo -e "Trying to take snapshot of /bin/ehtools..."
-cp -r /bin/ehtools /etc/ehtools/modules/snapshots
+cp -r /bin/ehtools /etc/ehtools/modules/snapshots/$2
 chmod +t /etc/ehtools/modules/snapshots
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
-echo -e "Snapshot 1: \e[4;32m/etc/ehtools/modules/snapshots/eht\e[0m"
-echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/ehtools\e[0m"
+echo -e "Snapshot 1: \e[4;32m/etc/ehtools/modules/snapshots/$2/eht\e[0m"
+echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/$2/ehtools\e[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
@@ -395,22 +421,53 @@ echo -e "Saved to /etc/ehtools/modules/.config..."
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
-echo -e "\e[4;32mPreparing to take snapshot...\e[0m"
+echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
 sleep 0.5
+
+function ProgressBarks {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rTaking: default_snapshot (${_progress}%%)"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.5
+    ProgressBarks ${number} ${_end}
+done
+
+sleep 5
 echo -e "Making /etc/ehtools/modules/snapshots..."
 mkdir /etc/ehtools/modules/snapshots
 sleep 0.5
+echo -e "Making /etc/ehtools/modules/snapshots/default_snapshot..."
+mkdir /etc/ehtools/modules/snapshots/default_snapshot
+sleep 0.5
 echo -e "Trying to take snapshot of /root/ehtools/eht..."
-cp -r /root/ehtools/eht /etc/ehtools/modules/snapshots
+cp -r /root/ehtools/eht /etc/ehtools/modules/snapshots/default_snapshot
 sleep 0.5
 echo -e "Trying to take snapshot of /bin/ehtools..."
-cp -r /bin/ehtools /etc/ehtools/modules/snapshots
+cp -r /bin/ehtools /etc/ehtools/modules/snapshots/default_snapshot
 chmod +t /etc/ehtools/modules/snapshots
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
-echo -e "Snapshot 1: \e[4;32m/etc/ehtools/modules/snapshots/eht\e[0m"
-echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/ehtools\e[0m"
+echo -e "Snapshot 1: \e[4;32m/etc/ehtools/modules/snapshots/dafault_snapshot/eht\e[0m"
+echo -e "Snapshot 2: \e[4;32m/etc/ehtools/modules/snapshots/default_snapshot/ehtools\e[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
