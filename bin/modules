@@ -147,7 +147,7 @@ function ProgressBark {
 
                          
         
-printf "\rRestoring snapshot: (${_progress}%%)"
+printf "\rRestoring (${_progress}%%)"
 
 }
 
@@ -164,7 +164,7 @@ done
 
 sleep 5
 echo -e
-sleep 0.3
+sleep 0.5
 rm -r /bin/ehtools
 cp -r /etc/ehtools/modules/snapshots/$2/ehtools /bin
 rm -r /root/ehtools/eht
@@ -224,7 +224,12 @@ if [[ -d /etc/ehtools/modules ]]
 then
 clear
 sleep 3
+echo -e "Well, we are going to start!"
+sleep 2
 echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
+sleep 1
+echo -e "Making /etc/ehtools/modules/snapshots..."
+mkdir /etc/ehtools/modules/snapshots
 sleep 1
 printf '\033]2;Taking...\a'
 
@@ -239,7 +244,7 @@ function ProgressBarks {
 
                          
         
-printf "\rTaking snapshot: $2 (${_progress}%%)"
+printf "\rTaking (${_progress}%%)"
 
 }
 
@@ -255,8 +260,7 @@ do
 done
 
 sleep 5
-echo -e "Making /etc/ehtools/modules/snapshots..."
-mkdir /etc/ehtools/modules/snapshots
+echo -e
 sleep 0.5
 echo -e "Making /etc/ehtools/modules/snapshots/$2..."
 mkdir /etc/ehtools/modules/snapshots/$2
@@ -425,8 +429,13 @@ echo -e "Saved to /etc/ehtools/modules/.config..."
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 3
-echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
-sleep 0.5
+echo -e "Well, we are going to start!"
+sleep 2
+echo -e "\e[4;32mPreparing to take snapshot: default_snapshot...\e[0m"
+sleep 1
+echo -e "Making /etc/ehtools/modules/snapshots..."
+mkdir /etc/ehtools/modules/snapshots
+sleep 1
 
 function ProgressBarksa {
 
@@ -439,7 +448,7 @@ function ProgressBarksa {
 
                          
         
-printf "\rTaking: default_snapshot (${_progress}%%)"
+printf "\rTaking (${_progress}%%)"
 
 }
 
@@ -455,8 +464,7 @@ do
 done
 
 sleep 5
-echo -e "Making /etc/ehtools/modules/snapshots..."
-mkdir /etc/ehtools/modules/snapshots
+echo -e
 sleep 0.5
 echo -e "Making /etc/ehtools/modules/snapshots/default_snapshot..."
 mkdir /etc/ehtools/modules/snapshots/default_snapshot
@@ -558,7 +566,7 @@ function ProgressBark {
 
                          
         
-printf "\rRestoring snapshot: $2 (${_progress}%%)"
+printf "\rRestoring (${_progress}%%)"
 
 }
 
@@ -575,7 +583,7 @@ done
 
 sleep 5
 echo -e
-sleep 0.3
+sleep 0.5
 rm -r /bin/ehtoolslite
 cp -r /etc/ehtoolslite/modules/snapshots/$2/ehtoolslite /bin
 rm -r /root/ehtoolslite/eht
@@ -635,7 +643,12 @@ if [[ -d /etc/ehtoolslite/modules ]]
 then
 clear
 sleep 3
+echo -e "Well, we are going to start!"
+sleep 2
 echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
+sleep 1
+echo -e "Making /etc/ehtoolslite/modules/snapshots..."
+mkdir /etc/ehtoolslite/modules/snapshots
 sleep 1
 printf '\033]2;Taking...\a'
 
@@ -650,7 +663,7 @@ function ProgressBarks {
 
                          
         
-printf "\rTaking snapshot: $2 (${_progress}%%)"
+printf "\rTaking (${_progress}%%)"
 
 }
 
@@ -666,8 +679,7 @@ do
 done
 
 sleep 5
-echo -e "Making /etc/ehtoolslite/modules/snapshots..."
-mkdir /etc/ehtoolslite/modules/snapshots
+echo -e
 sleep 0.5
 echo -e "Making /etc/ehtoolslite/modules/snapshots/$2..."
 mkdir /etc/ehtoolslite/modules/snapshots/$2
@@ -835,7 +847,12 @@ echo -e "Saved to /etc/ehtoolslite/modules/.config..."
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 3
-echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
+echo -e "Well, we are going to start!"
+sleep 2
+echo -e "\e[4;32mPreparing to take snapshot: default_snapshot...\e[0m"
+sleep 1
+echo -e "Making /etc/ehtoolslite/modules/snapshots..."
+mkdir /etc/ehtoolslite/modules/snapshots
 sleep 1
 printf '\033]2;Taking...\a'
 
@@ -866,8 +883,7 @@ do
 done
 
 sleep 5
-echo -e "Making /etc/ehtoolslite/modules/snapshots..."
-mkdir /etc/ehtoolslite/modules/snapshots
+echo -e
 sleep 0.5
 echo -e "Making /etc/ehtoolslite/modules/snapshots/default_snapshot..."
 mkdir /etc/ehtoolslite/modules/snapshots/default_snapshot
