@@ -107,6 +107,7 @@ fi
 {
 chattr -i /etc/ehtools/config
 chattr -i /etc/ehtools
+chattr -i /etc/ehtools/.configuring
 } &> /dev/null
 fi
 
@@ -132,5 +133,6 @@ fi
 {
 chattr -i /etc/ehtoolslite/config
 chattr -i /etc/ehtoolslite
+chattr -i /etc/ehtoolslite/.configuring
 } &> /dev/null
 fi
