@@ -126,6 +126,16 @@ exit
 
 elif [[ $1 = "--restore" || $1 = "-r" ]]
 then
+if [[ -d /etc/ehtools/modules ]]
+then
+if [[ ! -d /etc/ehtools/modules/snapshots ]]
+then
+sleep 3
+echo -e "Error, snapshots directory is not found!"
+mkdir /etc/ehtools/modules/snapshots
+sleep 1
+exit
+fi
 if [[ -d /etc/ehtools/modules/snapshots/$2 ]]
 then
 clear
@@ -213,7 +223,13 @@ sleep 5
 exit
 else
 sleep 3
-echo -e "Error, snapshot "$N"$2"$N" is not found!"
+echo -e "Error, snapshot $2 is not found!"
+sleep 1
+exit
+fi
+else
+sleep 3
+echo -e "Error, modules is not installed!"
 sleep 1
 exit
 fi
@@ -222,6 +238,21 @@ elif [[ $1 = "--take" || $1 = "-t" ]]
 then
 if [[ -d /etc/ehtools/modules ]]
 then
+if [[ ! -d /etc/ehtools/modules/snapshots ]]
+then
+sleep 3
+echo -e "Error, snapshots directory is not found!"
+mkdir /etc/ehtools/modules/snapshots
+sleep 1
+exit
+fi
+if [[ -d /etc/ehtools/modules/snapshots/$2 ]]
+then
+sleep 3
+echo -e "Error, snapshot $2 is already taken!"
+sleep 1
+exit
+else
 clear
 sleep 3
 echo -e "Well, we are going to start!"
@@ -280,6 +311,7 @@ sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
 exit
+fi
 else
 sleep 3
 echo -e "Error, modules is not installed!"
@@ -545,6 +577,16 @@ exit
 
 elif [[ $1 = "--restore" || $1 = "-r" ]]
 then
+if [[ -d /etc/ehtoolslite/modules ]]
+then
+if [[ ! -d /etc/ehtoolslite/modules/snapshots ]]
+then
+sleep 3
+echo -e "Error, snapshots directory is not found!"
+mkdir /etc/ehtoolslite/modules/snapshots
+sleep 1
+exit
+fi
 if [[ -d /etc/ehtoolslite/modules/snapshots/$2 ]]
 then
 clear
@@ -632,7 +674,13 @@ sleep 5
 exit
 else
 sleep 3
-echo -e "Error, snapshot "$N"$2"$N" is not found!"
+echo -e "Error, snapshot $2 is not found!"
+sleep 1
+exit
+fi
+else
+sleep 3
+echo -e "Error, modules is not installed!"
 sleep 1
 exit
 fi
@@ -641,6 +689,21 @@ elif [[ $1 = "--take" || $1 = "-t" ]]
 then
 if [[ -d /etc/ehtoolslite/modules ]]
 then
+if [[ ! -d /etc/ehtoolslite/modules/snapshots ]]
+then
+sleep 3
+echo -e "Error, snapshots directory is not found!"
+mkdir /etc/ehtoolslite/modules/snapshots
+sleep 1
+exit
+fi
+if [[ -d /etc/ehtoolslite/modules/snapshots/$2 ]]
+then
+sleep 3
+echo -e "Error, snapshot $2 is already taken!"
+sleep 1
+exit
+else
 clear
 sleep 3
 echo -e "Well, we are going to start!"
@@ -699,6 +762,7 @@ sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
 exit
+fi
 else
 sleep 3
 echo -e "Error, modules is not installed!"
