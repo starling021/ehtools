@@ -98,7 +98,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 ![Ehtools Installer 2](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
 
-![Ehtools Installer 3](https://user-images.githubusercontent.com/43011806/56846875-29365b00-68dd-11e9-9646-9e40a763789f.png)
+![667](https://user-images.githubusercontent.com/43011806/59968424-5b151800-9542-11e9-948b-a2f3f241c1f1.png)
 
 # Attacking frameworks
 
