@@ -28,7 +28,7 @@
 #    Email     : entynetproject@gmail.com
 #
 
-if [[ -d /bin/ehtools ]]
+if [[ -f /etc/ehtools/.configuring ]]
 then
 
 #yellow start 
@@ -383,7 +383,7 @@ exit
 fi
 fi
 
-if [[ -d /bin/ehtoolslite ]]
+if [[ -f /etc/ehtoolslite/.configuring ]]
 then
 
 #yellow start 
