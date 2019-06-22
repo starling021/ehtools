@@ -28,7 +28,7 @@
 #    Email     : entynetproject@gmail.com
 #
 
-if [[ -d /bin/ehtools ]]
+if [[ -f /etc/ehtools/.configuring ]]
 then
 
 CE="\e[0m"
@@ -272,7 +272,7 @@ echo -e
 exit
 fi
 
-if [[ -d /bin/ehtoolslite ]]
+if [[ -f /etc/ehtoolslite/.configuring ]]
 then
 
 CE="\e[0m"
