@@ -421,7 +421,7 @@ sleep 0.5
 echo -e "Saved to /etc/ehtools/modules/.config..."
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
-sleep 0.5
+sleep 3
 echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
 sleep 0.5
 
