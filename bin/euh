@@ -28,6 +28,9 @@
 #    Email     : entynetproject@gmail.com
 #
 
+if [[ -d /bin/ehtools ]]
+then
+
 #yellow start 
 	YS="\e[1;33m"
 #blue start 
@@ -313,3 +316,240 @@ echo -e ""$GNS"Launching /root/ehtools/install.sh..."$CE""
 sleep 3
 cd /root/ehtools
 ./install.sh
+exit
+fi
+
+if [[ -d /bin/ehtoolslite ]]
+then
+
+#yellow start 
+	YS="\e[1;33m"
+#blue start 
+	BS="\e[0;34m"
+#color end
+	CE="\e[0m"
+#red start
+	RS="\e[1;31m"
+#black start
+	BLS="\e[0;30m"
+#dark gray start
+	DGYS="\e[1;30m"
+#light blue start
+	LBS="\e[1;34m"
+#green start
+	GNS="\e[0;32m"
+#light green start
+	LGNS="\e[1;32m"
+#cyan start
+	CYS="\e[0;36m"
+#light cyan start
+	LCYS="\e[1;36m"
+#light red start
+	DRS="\e[0;31m"
+#purple start
+	PS="\e[0;35m"
+#light purple start
+	LPS="\e[1;35m"
+#brown start
+	BRS="\e[0;33m"
+#light gray start
+	LGYS="\e[0;37m"
+#white start
+	WHS="\e[1;37m"
+
+WHO="$( whoami )"
+
+if [[ "$WHO" != "root" ]]
+then
+sleep 1
+echo -e "$RS"run it as"$CE" "$YS"root"$CE"
+sleep 1
+echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
+sleep 1
+exit
+fi
+
+clear
+printf '\033]2;ehtoolslite update helper\a'
+echo -e "                ____   "
+echo -e "ehtoolslite    /\___\  "
+echo -e "update        /\ \___\ "
+echo -e "helper        \ \/ / / "
+echo -e "v1.0           \/_/_/  By Ivan Nikolsky "
+sleep 3
+echo -e "Welcome to ehtoolslite update helper"
+sleep 1
+echo -e "Unfortunately, ehtoolslite cannot be updated on its own :("
+sleep 1
+echo -e "I created this tool to help ehtoolslite update!"
+sleep 1
+echo -e "Press \e[1;33many key\e[0m to install update"
+read -n 1
+clear
+CAT="$( cat /etc/ehtoolslite/password )"
+if [[ "$CAT" = "" ]]
+then
+clear
+else
+printf '\033]2;Ehtoolslite Authentication\a'
+echo -e "$YS"Ehtoolslite Authentication:"$CE"
+
+sleep 0.5
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+logins=$(cat /etc/ehtoolslite/login)
+
+while [ "$loginer" = "root" ]
+do
+sleep 0.5
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for root!"$CE""
+sleep 0.5
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+done
+
+while [ "$loginer" != "$logins" ]
+do
+echo -e "$RS"Wrong login!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+
+done
+
+sleep 0.5
+read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
+passwords=$(cat /etc/ehtoolslite/password)
+while [ "$passworder" != "$passwords" ]
+do
+echo -e 
+echo -e "$RS"Wrong password!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
+
+done
+fi
+
+clear
+printf '\033]2;ehtoolslite update helper\a'
+sleep 3
+echo -e "\e[4;31mDO YOU WANT TO CONTINUE?\e[0m"
+sleep 2
+echo -e "\e[4;31mIf something goes wrong, all data, \e[0m"
+echo -e "\e[4;31mthe framework's system and configuration files\e[0m"
+echo -e "\e[4;31mwill be erased!!!\e[0m"
+sleep 3
+echo -e "Press \e[1;33many key\e[0m to install update"
+read -n 1
+clear
+echo -e "Rewrite all ehtoolslite data?(\e[1;33myes\e[0m/\e[1;33mno\e[0m): "
+echo -e "Only use 'yes' for the update."
+read -p $'(\e[4;93mupdate\e[0m\en)> ' UORI
+
+if [[ "$UORI" = "no" ]]
+then 
+	clear
+	echo -e "OK..."
+	sleep 3
+	echo -e "To install update run 'euh'"
+	sleep 3
+	echo -e "Exiting..."
+	sleep 3
+	clear
+        
+elif [[ "$UORI" = "yes" ]]
+then
+      clear
+      echo -e "OK..."
+      sleep 2
+      echo -e "Loading..."
+      sleep 2
+      echo -e "Uploading..."
+      sleep 2
+      echo -e "Configuring..."
+      sleep 10
+      echo -e "Please wait..."
+      sleep 8
+      echo -e "Launching..."
+      sleep 1
+      clear
+      if [[ -d /root/ehtold ]]
+	then
+		rm -r /root/ehtold
+	fi
+	      
+	      cd /root/ehtoolslite/lib
+	      chmod +x libunchattr
+	      ./libunchattr
+	      cd /root/ehtoolslite/lib
+              chmod +x libunconf
+              ./libunconf
+	      rm -r /root/ehtoolslite
+	      rm -r /bin/ehtoolslite
+	      rm -r /etc/ehtoolslite
+	      rm -r /root/handshakes
+	      rm -r /root/wordlists
+	      rm /bin/eht1
+	      rm /bin/eht2
+	      rm /bin/eht3
+	      rm /bin/eht4
+	      rm /bin/eht21
+	      rm /bin/eht31
+	      rm /bin/eht41
+	      rm /bin/eht42
+	      rm /bin/eht43
+	      rm /bin/epasswd
+	      rm /bin/modules
+	      rm /bin/euh
+	      rm /bin/uiecache
+	      sleep 1
+	      cd /root
+	      git clone https://github.com/entynetproject/ehtoolslite.git
+              cd /root/ehtoolslite
+	      chmod +x install.sh
+	      clear
+	      sleep 1
+	
+	if [[ -f /root/ehtold/ehtoolslite/IAGREE.txt ]]
+	  then
+		cp /root/ehtold/ehtoolslite/IAGREE.txt "$EPATH"
+	  fi
+	if [[ -d /root/ehtold/ehtoolslite/ks ]]
+          then
+		echo -e "Copying your shortcuts"
+		cp -r /root/ehtold/ehtoolslite/ks "$EPATH"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
+		sleep 0.2
+	   fi
+	if [[ -d /root/ehtold/ehtoolslite/settings ]]
+          then
+		echo -e "Copying your settings"
+		cp -r /root/ehtold/ehtoolslite/settings "$EPATH"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
+		sleep 0.2
+	  fi
+	if [[ -f /root/ehtold/ehtoolslite/wlanmon.txt ]]
+	  then
+		echo -e "Copying your interfaces"
+		cp /root/ehtold/ehtoolslite/wlanmon.txt "$EPATH"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
+		sleep 0.2
+	   fi
+		
+	if [[ -f /root/ehtold/ehtoolslite/wlan.txt ]]
+	   then
+		cp /root/ehtold/ehtoolslite/wlan.txt "$EPATH"
+		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
+		sleep 0.2
+		clear
+  fi
+fi
+
+sleep 0.5
+echo -e ""$GNS"Launching /root/ehtools/install.sh..."$CE""
+sleep 3
+cd /root/ehtoolslite
+./install.sh
+exit
+fi
