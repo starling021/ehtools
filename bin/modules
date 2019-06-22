@@ -144,7 +144,7 @@ function ProgressBark {
 
                          
         
-printf "\rRestoring (${_progress}%%)"
+printf "\rRestoring snapshot: (${_progress}%%)"
 
 }
 
