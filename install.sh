@@ -464,6 +464,7 @@ echo -e "=> "$YS"you must not say this key someone such as "$CE"["$YS"your frien
 echo -e "This indenty key will protect ehtools boot!"
 read -p $'(\e[4;93mkey\e[0m\en)> ' DADI
 echo $DADI >> /root/ehtools/etc/config
+echo DO_NOT_DELETE_THIS_CONFIG_FILE >> /etc/ehtoolslite/.configuring
 
 clear
 printf '\033]2;ehtools INSTALLER\a'
