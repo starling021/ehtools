@@ -361,13 +361,13 @@ Modules v1.9 - the utility that adds permissions or the ability to control the e
     Usage: modules [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
-       --install  Install ehtools modules to /bin.
-                    (install ehtools modules)
-       --restore  Restore saved ehtools modules snapshot.
-                    (restore ehtools modules snapshot)
-       --take     Take new ehtools modules snapshot.
-                    (take ehtools modules snapshot)
-       --help     Give this help list.
+       --install         Install ehtools modules to /bin.
+                           (install ehtools modules)
+       --restore <name>  Restore saved ehtools modules snapshot.
+                           (restore ehtools modules snapshot)
+       --take    <name>  Take new ehtools modules snapshot.
+                           (take ehtools modules snapshot)
+       --help            Give this help list.
          
 > Ehtools Modules Snapshot (EMS) 
 
