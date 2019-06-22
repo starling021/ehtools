@@ -425,7 +425,7 @@ sleep 3
 echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
 sleep 0.5
 
-function ProgressBarks {
+function ProgressBarksa {
 
     let _progress=(${1}*100/${2}*100)/100
     let _done=(${_progress}*4)/10
@@ -448,7 +448,7 @@ _end=100
 for number in $(seq ${_start} ${_end})
 do
     sleep 0.5
-    ProgressBarks ${number} ${_end}
+    ProgressBarksa ${number} ${_end}
 done
 
 sleep 5
