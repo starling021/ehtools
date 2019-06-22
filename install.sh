@@ -70,6 +70,27 @@ cd /root/ehtools
 fi
 fi
 
+if [[ -d /root/ehtoolslite ]]
+then
+cd /root/ehtoolslite
+chmod +x uninstall.sh
+cd lib
+chmod +x libunlogin
+./libunlogin
+chmod +x libunchattr
+./libunchattr
+chmod +x libunconf
+./libunconf
+{
+rm /etc/ehtoolslite/login
+rm /etc/ehtoolslite/password
+touch /etc/ehtoolslite/login
+touch /etc/ehtoolslite/password
+cd /root/ehtoolslite
+./uninstall.sh
+} &> /dev/null
+fi
+
 {
 chattr -i /tmp/config
 chattr -i /tmp/config/config.txt
