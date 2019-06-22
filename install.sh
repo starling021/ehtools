@@ -72,6 +72,7 @@ fi
 
 if [[ -d /root/ehtoolslite ]]
 then
+{
 cd /root/ehtoolslite
 chmod +x uninstall.sh
 cd lib
@@ -81,7 +82,6 @@ chmod +x libunchattr
 ./libunchattr
 chmod +x libunconf
 ./libunconf
-{
 rm /etc/ehtoolslite/login
 rm /etc/ehtoolslite/password
 touch /etc/ehtoolslite/login
