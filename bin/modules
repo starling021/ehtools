@@ -132,7 +132,11 @@ if [[ ! -d /etc/ehtools/modules/snapshots ]]
 then
 sleep 3
 echo -e "Error, snapshots directory is not found!"
+sleep 1
+echo -e "Making /etc/ehtools/modules/snapshots..."
 mkdir /etc/ehtools/modules/snapshots
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
 sleep 1
 exit
 fi
@@ -242,7 +246,11 @@ if [[ ! -d /etc/ehtools/modules/snapshots ]]
 then
 sleep 3
 echo -e "Error, snapshots directory is not found!"
+sleep 1
+echo -e "Making /etc/ehtools/modules/snapshots..."
 mkdir /etc/ehtools/modules/snapshots
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
 sleep 1
 exit
 fi
@@ -258,9 +266,6 @@ sleep 3
 echo -e "Well, we are going to start!"
 sleep 2
 echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
-sleep 1
-echo -e "Making /etc/ehtools/modules/snapshots..."
-mkdir /etc/ehtools/modules/snapshots
 sleep 1
 printf '\033]2;Taking...\a'
 
@@ -461,13 +466,14 @@ echo -e "Saved to /etc/ehtools/modules/.config..."
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 3
-echo -e "Well, we are going to start!"
-sleep 2
 echo -e "\e[4;32mPreparing to take snapshot: default_snapshot...\e[0m"
 sleep 1
 echo -e "Making /etc/ehtools/modules/snapshots..."
 mkdir /etc/ehtools/modules/snapshots
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
 sleep 1
+printf '\033]2;Taking...\a'
 
 function ProgressBarksa {
 
@@ -583,7 +589,11 @@ if [[ ! -d /etc/ehtoolslite/modules/snapshots ]]
 then
 sleep 3
 echo -e "Error, snapshots directory is not found!"
+sleep 1
+echo -e "Making /etc/ehtoolslite/modules/snapshots..."
 mkdir /etc/ehtoolslite/modules/snapshots
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
 sleep 1
 exit
 fi
@@ -693,7 +703,11 @@ if [[ ! -d /etc/ehtoolslite/modules/snapshots ]]
 then
 sleep 3
 echo -e "Error, snapshots directory is not found!"
+sleep 1
+echo -e "Making /etc/ehtoolslite/modules/snapshots..."
 mkdir /etc/ehtoolslite/modules/snapshots
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
 sleep 1
 exit
 fi
@@ -709,9 +723,6 @@ sleep 3
 echo -e "Well, we are going to start!"
 sleep 2
 echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
-sleep 1
-echo -e "Making /etc/ehtoolslite/modules/snapshots..."
-mkdir /etc/ehtoolslite/modules/snapshots
 sleep 1
 printf '\033]2;Taking...\a'
 
@@ -911,12 +922,12 @@ echo -e "Saved to /etc/ehtoolslite/modules/.config..."
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 3
-echo -e "Well, we are going to start!"
-sleep 2
 echo -e "\e[4;32mPreparing to take snapshot: default_snapshot...\e[0m"
 sleep 1
 echo -e "Making /etc/ehtoolslite/modules/snapshots..."
 mkdir /etc/ehtoolslite/modules/snapshots
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
 sleep 1
 printf '\033]2;Taking...\a'
 
