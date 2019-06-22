@@ -931,7 +931,7 @@ function ProgressBarksa {
 
                          
         
-printf "\rTaking snapshot: default_snapshot (${_progress}%%)"
+printf "\rTaking (${_progress}%%)"
 
 }
 
