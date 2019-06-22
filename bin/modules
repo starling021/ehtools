@@ -222,7 +222,8 @@ then
 clear
 sleep 3
 echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
-sleep 0.5
+sleep 1
+printf '\033]2;Restoring...\a'
 
 function ProgressBarks {
 
