@@ -474,7 +474,7 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     
 # How to protect ehtools?
 
-![Ehtools Password Protection Menu](https://user-images.githubusercontent.com/43011806/56846904-80d4c680-68dd-11e9-9b30-b20ee13dccca.png)
+![Ehtools Auth](https://user-images.githubusercontent.com/43011806/59974175-a1ee2680-95b1-11e9-8435-ad9f26bdabb6.png)
 
 > Do it with install.sh:
    
