@@ -87,7 +87,32 @@ rm /etc/ehtoolslite/password
 touch /etc/ehtoolslite/login
 touch /etc/ehtoolslite/password
 cd /root/ehtoolslite
-./uninstall.sh
+
+              cd /root/ehtoolslite/lib
+	      chmod +x libunchattr
+	      ./libunchattr
+	      cd /root/ehtoolslite/lib
+              chmod +x libunconf
+              ./libunconf
+	      rm -r /root/ehtoolslite
+	      rm -r /bin/ehtoolslite
+	      rm -r /etc/ehtoolslite
+	      rm -r /root/handshakes
+	      rm -r /root/wordlists
+	      rm /bin/eht1
+	      rm /bin/eht2
+	      rm /bin/eht3
+	      rm /bin/eht4
+	      rm /bin/eht21
+	      rm /bin/eht31
+	      rm /bin/eht41
+	      rm /bin/eht42
+	      rm /bin/eht43
+	      rm /bin/epasswd
+	      rm /bin/modules
+	      rm /bin/euh
+	      rm /bin/uiecache
+	      
 } &> /dev/null
 fi
 
