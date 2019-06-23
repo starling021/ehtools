@@ -36,7 +36,7 @@
  </a>
 </p>
 
-![Ehtools Framework Red](https://user-images.githubusercontent.com/43011806/57336702-862cdf00-712f-11e9-86d1-3ea03b536f85.png)
+![Ehtools RED](https://user-images.githubusercontent.com/43011806/59976775-9ad71080-95d1-11e9-8456-990569e97120.png)
 
 # About our framework
 
@@ -98,7 +98,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 ![Ehtools Installer 2](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
 
-![667](https://user-images.githubusercontent.com/43011806/59968424-5b151800-9542-11e9-948b-a2f3f241c1f1.png)
+![Ehtools installer](https://user-images.githubusercontent.com/43011806/59976773-9a3e7a00-95d1-11e9-8535-727be10c01eb.png)
 
 # Attacking frameworks
 
@@ -262,7 +262,7 @@ Run it to open WPS menu:
     INFO: Our framework has more than 100 packages in
     ehtools archive (on server this archive: 2.3 Tb)!
 
-![Ehtools Framework Yellow](https://user-images.githubusercontent.com/43011806/57336703-86c57580-712f-11e9-9d10-0cc704d2e16d.png)
+![Ehtools YELLOW](https://user-images.githubusercontent.com/43011806/59976776-9ad71080-95d1-11e9-8fbf-b92352a61ab2.png)
 
 # System requirements 
 
@@ -474,7 +474,7 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     
 # How to protect ehtools?
 
-![Ehtools Auth](https://user-images.githubusercontent.com/43011806/59974175-a1ee2680-95b1-11e9-8435-ad9f26bdabb6.png)
+![Ehtools Auth](https://user-images.githubusercontent.com/43011806/59976788-d96ccb00-95d1-11e9-8441-021dfe299243.png)
 
 > Do it with install.sh:
    
