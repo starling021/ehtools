@@ -54,13 +54,11 @@
 - [Use ehtools quick access](https://github.com/entynetproject/ehtools#use-ehtools-quick-access)
 - [Why ehtools framework?](https://github.com/entynetproject/ehtools#why-ehtools-framework)
 - [System requirements](https://github.com/entynetproject/ehtools#system-requirements)
-- [About ehtools team](https://github.com/entynetproject/ehtools#about-ehtools-team)
 - [Ehtools utilities](https://github.com/entynetproject/ehtools#ehtools-utilities)
     - [Uiecache](https://github.com/entynetproject/ehtools#uiecache--)
     - [Ehtools update helper (euh)](https://github.com/entynetproject/ehtools#ehtools-update-helper-euh--)
     - [Modules v1.9](https://github.com/entynetproject/ehtools#modules-v19--)
     - [Ehtools password changer (epasswd)](https://github.com/entynetproject/ehtools#ehtools-password-changer-epasswd--)
-- [Ehtools files and folders](https://github.com/entynetproject/ehtools#ehtools-files-and-folders)
 - [About ehtools server support](https://github.com/entynetproject/ehtools#about-ehtools-server-support)
 - [How to protect ehtools](https://github.com/entynetproject/ehtools#how-to-protect-ehtools)
 - [Terms of use](https://github.com/entynetproject/ehtools#terms-of-use)
@@ -328,39 +326,6 @@ Run it to open WPS menu:
     ehtools crashes and it is also needed for check product 
     status such as (you bought ehtools/you did not buy ehtools)
 
-# About ehtools team
-
-> Entynetproject
-
-    INFO: Main developer of Ehtools Framework
-    
-> DJ Mobley
-
-    INFO: Ascii designer of Ehtools Framework
-    
-> TheCakeIsFalse
-
-    INFO: Ehtools Framework's modules developer
-    
-<h4 align="center">Resources</h4>
-<p align="center">
-<a href="https://ehtools.pro/">
-    <img src="https://img.shields.io/badge/site-ehtools.pro-green.svg?maxAge=2592000">
- </a>
-  <a href="https://mobile.twitter.com/ehtools">
-    <img src="https://img.shields.io/badge/twitter-ehtools-blue.svg">
- </a>
-  <a href="https://mobile.twitter.com/entynetproject">
-    <img src="https://img.shields.io/badge/twitter-entynetproject-lightgray.svg">
- </a>
- <a href="https://mobile.twitter.com/_mobley_">
-    <img src="https://img.shields.io/badge/twitter-mobley-black.svg">
- </a>
-<a href="https://mobile.twitter.com/thecakeisfalse">
-    <img src="https://img.shields.io/badge/twitter-thecakeisfalse-green.svg">
- </a>
-</p>
-
 # Ehtools utilities
 
 > # Uiecache | <img src="https://img.shields.io/badge/utility-uiecache-lightgray.svg">
@@ -464,39 +429,6 @@ After this enter your new ehtools root password (example: 1234)
 
     WARNING: In no case do not forget this password,
     it will not be restored and you will have to reinstall ehtools!
-
-# Ehtools files and folders
-
-    INFO: Here you can open view all ehtools folders
-    and you can view files in these folders!
-    
-<h4 align="center">Files</h4>
-<p align="center">
- <a href="https://github.com/entynetproject/ehtools">
-      <img src="https://img.shields.io/badge/files-31-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject/ehtools">
-    <img src="https://img.shields.io/badge/folders-6-blue.svg">
- </a>
-  <a href="https://github.com/entynetproject/ehtools/tree/master/lib">
-      <img src="https://img.shields.io/badge/folder-/lib-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject/ehtools/tree/master/etc">
-      <img src="https://img.shields.io/badge/folder-/etc-red.svg?maxAge=2592000">
-  </a>
-  <a href="https://github.com/entynetproject/ehtools/tree/master/bin">
-    <img src="https://img.shields.io/badge/folder-/bin-blue.svg">
-  </a>
-<a href="https://github.com/entynetproject/ehtools/tree/master/eht">
-    <img src="https://img.shields.io/badge/folder-/eht-green.svg?maxAge=2592000">
-  </a>
-<a href="https://github.com/entynetproject/ehtools/tree/master/ls">
-    <img src="https://img.shields.io/badge/folder-/ls-green.svg?maxAge=2592000">
-</a>
-<a href="https://github.com/entynetproject/ehtools/tree/master/etc/root">
-    <img src="https://img.shields.io/badge/folder-/etc/root-green.svg?maxAge=2592000">
-</a>
-</p>
 
 # About ehtools server support
 
