@@ -28,7 +28,7 @@
 #    Email     : entynetproject@gmail.com
 #
 
-if [[ -f /etc/ehtools/.configure ]]
+if [[ -f /etc/ehtools/.configuring ]]
 then
 
 #yellow start 
