@@ -65,7 +65,7 @@
 - [Terms of use](https://github.com/entynetproject/ehtools#terms-of-use)
 - [Ehtools framework license](https://github.com/entynetproject/ehtools#ehtools-framework-license)
     - [Ehtools utilities license](https://github.com/entynetproject/ehtools#ehtools-utilities-license)
-    - ['Ehtools libraries license'](https://github.com/entynetproject/ehtools#ehtools-libraries-license)
+    - [Ehtools libraries license](https://github.com/entynetproject/ehtools#ehtools-libraries-license)
 
 # About ehtools framework
 
