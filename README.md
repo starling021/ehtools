@@ -81,13 +81,11 @@ Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools 
 
 # How to install ehtools PRO
 
-> cd /root/ehtools
+> cd ehtools
 
 > chmod +x install.sh
 
 > ./install.sh 
-
-> ehtools
 
 ![Ehtools installer](https://user-images.githubusercontent.com/43011806/59976773-9a3e7a00-95d1-11e9-8535-727be10c01eb.png)
 
@@ -131,17 +129,15 @@ Also, we do not recommend to change the source code of ehtools because it is ver
     Ehtools Framework LITE and Ehtools 
     Framework PRO is incompatible!
 
-> cd /root/ehtoolslite
+> cd ehtoolslite
 
 > chmod +x install.sh
 
 > ./install.sh
 
-> eht
-
 # How to uninstall ehtools LITE
 
-> cd /root/ehtoolslite
+> cd ehtoolslite
 
 > ./uninstall.sh
 
