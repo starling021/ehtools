@@ -38,6 +38,8 @@
 
 ![Ehtools RED](https://user-images.githubusercontent.com/43011806/59976775-9ad71080-95d1-11e9-8456-990569e97120.png)
 
+# Table of contents
+
 - [About ehtools framework](https://github.com/entynetproject/ehtools#about-our-framework) 
     - [About ehtools PRO](https://github.com/entynetproject/ehtools#about-ehtools-pro)
         - [To install ehtools PRO](https://github.com/entynetproject/ehtools#to-install-ehtools-pro)
