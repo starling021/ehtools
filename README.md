@@ -21,15 +21,14 @@
   <a href="https://ru.m.wikipedia.org/wiki/Сценарий_командной_строки">
     <img src="https://img.shields.io/badge/language-shell-green.svg">
  </a>
+  <a href="https://github.com/entynetproject/ehtools">
+    <img src="https://img.shields.io/badge/core-TEF-red.svg?maxAge=2592000">
+ </a>
   <a href="https://github.com/entynetproject/ehtools/issues?q=is%3Aissue+is%3Aclosed">
       <img src="https://img.shields.io/github/issues/entynetproject/ehtools.svg">
   </a>
   <a href="https://github.com/entynetproject/ehtools/wiki">
       <img src="https://img.shields.io/badge/wiki%20-ehtools-lightgrey.svg">
- </a>
-
-  <a href="https://ehtools.pro/">
-    <img src="https://img.shields.io/badge/site-ehtools.pro-green.svg?maxAge=2592000">
  </a>
   <a href="https://mobile.twitter.com/ehtools">
     <img src="https://img.shields.io/badge/twitter-ehtools-blue.svg">
