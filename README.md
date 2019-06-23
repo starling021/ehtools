@@ -38,7 +38,9 @@
 
 ![Ehtools RED](https://user-images.githubusercontent.com/43011806/59976775-9ad71080-95d1-11e9-8456-990569e97120.png)
 
-- [About our framework](https://github.com/entynetproject/ehtools#about-our-framework) 
+<span style="color:black">
+
+- [About ehtools framework](https://github.com/entynetproject/ehtools#about-our-framework) 
     - [About ehtools PRO](https://github.com/entynetproject/ehtools#about-ehtools-pro)
         - [To install ehtools PRO](https://github.com/entynetproject/ehtools#to-install-ehtools-pro)
             - [To activate ehtools PRO](https://github.com/entynetproject/ehtools#to-activate-ehtools-pro)
@@ -67,7 +69,9 @@
     - [Ehtools utilities license](https://github.com/entynetproject/ehtools#ehtools-utilities-license)
     - [Ehtools libraries license](https://github.com/entynetproject/ehtools#ehtools-libraries-license)
 
-# About our framework
+</span>
+
+# About ehtools framework
 
 Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools Framework is a framework of serious penetration tools that can be explored easily from within it. This powerful and simple tool can be used for everything from installing new add-ons to grabbing a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and utilize.
 
