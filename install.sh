@@ -186,7 +186,7 @@ fi
 
 clear
 printf '\033]2;ehtools INSTALLER\a'
-
+echo -e
 echo -e "███████╗██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ███████╗ \e[1;33mv3.0.0\e[0m"
 echo -e "██╔════╝██║  ██║╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝"
 echo -e "█████╗  ███████║   ██║   ██║   ██║██║   ██║██║     ███████╗"
@@ -197,9 +197,9 @@ echo -e "\e[1;33mBy Ehtools Team\e[0m"
 sleep 3
 echo -e "More on our sites:"
 sleep 3
-echo -e "==> \e[1;33mhttps://ehtools.pro\e[0m"                                                           
+echo -e "==> \e[1;33mhttps://ehtools.pro/\e[0m"                                                           
 sleep 3
-echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com\e[0m"
+echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com/\e[0m"
 sleep 3
 echo -e "Creators of Ehtools Framework (\e[4;34mehtools team\e[0m):"
 sleep 3
@@ -287,6 +287,7 @@ then
 	if [[ "$BASHCHECK" != "i" ]]
 	then
 	sleep 5
+	echo -e
       echo -e "$RS       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$RS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$RS       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
