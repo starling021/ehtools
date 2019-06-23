@@ -42,12 +42,12 @@
 
 - [About ehtools framework](https://github.com/entynetproject/ehtools#about-ehtools-framework) 
     - [About ehtools PRO](https://github.com/entynetproject/ehtools#about-ehtools-pro)
-        - [To install ehtools PRO](https://github.com/entynetproject/ehtools#to-install-ehtools-pro)
-            - [To activate ehtools PRO](https://github.com/entynetproject/ehtools#to-activate-ehtools-pro)
-        - [To uninstall ehtools PRO](https://github.com/entynetproject/ehtools#to-uninstall-ehtools-pro)
+        - [How to install ehtools PRO](https://github.com/entynetproject/ehtools#how-to-install-ehtools-pro)
+            - [How to activate ehtools PRO](https://github.com/entynetproject/ehtools#how-to-activate-ehtools-pro)
+        - [How to uninstall ehtools PRO](https://github.com/entynetproject/ehtools#how-to-uninstall-ehtools-pro)
     - [About ehtools LITE](https://github.com/entynetproject/ehtools#about-ehtools-lite)
-        - [To install ehtools LITE](https://github.com/entynetproject/ehtools#to-install-ehtools-lite)
-        - [To uninstall ehtools LITE](https://github.com/entynetproject/ehtools#to-uninstall-ehtools-lite)
+        - [How to install ehtools LITE](https://github.com/entynetproject/ehtools#how-to-install-ehtools-lite)
+        - [How to uninstall ehtools LITE](https://github.com/entynetproject/ehtools#how-to-uninstall-ehtools-lite)
 - [Attacking frameworks](https://github.com/entynetproject/ehtools#attacking-frameworks) 
 - [UX/UI impruvements for beginners](https://github.com/entynetproject/ehtools#ux/ui-impruvements-for-beginners)
 - [Use basic networking tools](https://github.com/entynetproject/ehtools#use-basic-networking-tools)
@@ -79,7 +79,7 @@ Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools 
     of Ehtools Framework, you can test it with 
     Ehtools LITE for free or buy Ehtools Framework PRO.
 
-# To install ehtools PRO
+# How to install ehtools PRO
 
 > cd /root/ehtools
 
@@ -91,7 +91,7 @@ Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools 
 
 ![Ehtools installer](https://user-images.githubusercontent.com/43011806/59976773-9a3e7a00-95d1-11e9-8535-727be10c01eb.png)
 
-# To activate ehtools PRO
+# How to activate ehtools PRO
 
 This key you can buy on our ehtools website for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
 
@@ -109,7 +109,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
     WARNING: We do not recommend to change ehtools source code
     because you can disrupt framework!
 
-# To uninstall ehtools PRO
+# How to uninstall ehtools PRO
 
 > ehtools -r
 
@@ -123,7 +123,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
     of Ehtools Framework, with it you can try 
     Ehtools Framework for free and rate it.
 
-# To install ehtools LITE
+# How to install ehtools LITE
 
     INFO: If you bought Ehtools Framework PRO,
     and after this you trying to install Ehtools 
@@ -139,7 +139,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 > eht
 
-# To uninstall ehtools LITE
+# How to uninstall ehtools LITE
 
 > cd /root/ehtoolslite
 
