@@ -38,11 +38,46 @@
 
 ![Ehtools RED](https://user-images.githubusercontent.com/43011806/59976775-9ad71080-95d1-11e9-8456-990569e97120.png)
 
-# About our framework
+- [About our framework](https://github.com/entynetproject/ehtools#about-our-framework) 
+    - [About ehtools PRO](https://github.com/entynetproject/ehtools#about-ehtools-pro)
+        - [To install ehtools PRO](https://github.com/entynetproject/ehtools#to-install-ehtools-pro)
+            - [To activate ehtools PRO](https://github.com/entynetproject/ehtools#to-activate-ehtools-pro)
+        - [To uninstall ehtools PRO](https://github.com/entynetproject/ehtools#to-uninstall-ehtools-pro)
+    - [About ehtools LITE](https://github.com/entynetproject/ehtools#about-ehtools-lite)
+        - [To install ehtools LITE](https://github.com/entynetproject/ehtools#to-install-ehtools-lite)
+        - [To uninstall ehtools LITE](https://github.com/entynetproject/ehtools#to-uninstall-ehtools-lite)
+- [Attacking frameworks](https://github.com/entynetproject/ehtools#attacking-frameworks) 
+- [UX/UI impruvements for beginners](https://github.com/entynetproject/ehtools#ux/ui-impruvements-for-beginners)
+- [Use basic networking tools](https://github.com/entynetproject/ehtools#use-basic-networking-tools)
+- [Install new tools](https://github.com/entynetproject/ehtools#install-new-tools)
+- [Use ehtools quick access](https://github.com/entynetproject/ehtools#use-ehtools-quick-access)
+- [Why our framework](https://github.com/entynetproject/ehtools#why-our-framework)
+- [System requirements](https://github.com/entynetproject/ehtools#system-requirements)
+- [About ehtools team](https://github.com/entynetproject/ehtools#about-ehtools-team)
+- [Ehtools utilities](https://github.com/entynetproject/ehtools#ehtools-utilities)
+    - [Uiecache](https://github.com/entynetproject/ehtools#uiecache--)
+    - [Ehtools update helper (euh)](https://github.com/entynetproject/ehtools#ehtools-update-helper-euh--)
+    - [Modules v1.9](https://github.com/entynetproject/ehtools#modules-v19--)
+    - [Ehtools password changer (epasswd)](https://github.com/entynetproject/ehtools#ehtools-password-changer-epasswd--)
+- [Ehtools files and folders](https://github.com/entynetproject/ehtools#ehtools-files-and-folders)
+- [About ehtools server support](https://github.com/entynetproject/ehtools#about-ehtools-server-support)
+- [How to protect ehtools](https://github.com/entynetproject/ehtools#how-to-protect-ehtools)
+- [Terms of use](https://github.com/entynetproject/ehtools#terms-of-use)
+- [Ehtools framework license](https://github.com/entynetproject/ehtools#ehtools-framework-license)
+    - [Ehtools utilities license](https://github.com/entynetproject/ehtools#ehtools-utilities-license)
+    - [Ehtools libraries license](https://github.com/entynetproject/ehtools#ehtools-libraries-license)
+
+# About ehtools framework
 
 Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools Framework is a framework of serious penetration tools that can be explored easily from within it. This powerful and simple tool can be used for everything from installing new add-ons to grabbing a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and utilize.
 
-# To install our ehtools PRO
+# About ehtools PRO
+
+    INFO: Ehtools Framework PRO is a full version 
+    of Ehtools Framework, you can test it with 
+    Ehtools LITE for free or buy Ehtools Framework PRO.
+
+# To install ehtools PRO
 
 > cd /root/ehtools
 
@@ -52,7 +87,9 @@ Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools 
 
 > ehtools
 
-# To activate our ehtools PRO
+![Ehtools installer](https://user-images.githubusercontent.com/43011806/59976773-9a3e7a00-95d1-11e9-8535-727be10c01eb.png)
+
+# To activate ehtools PRO
 
 This key you can buy on our ehtools website for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
 
@@ -70,7 +107,27 @@ Also, we do not recommend to change the source code of ehtools because it is ver
     WARNING: We do not recommend to change ehtools source code
     because you can disrupt framework!
 
-# To install our ehtools Lite
+# To uninstall ehtools PRO
+
+> ehtools -r
+
+    WARNING: Do not do it if you want to reinstall
+    ehtools PRO which you bought, do not do it because
+    you will need to buy it one more time!
+    
+# About ehtools LITE
+
+    INFO: Ehtools Framework LITE is a LITE version 
+    of Ehtools Framework, with it you can try 
+    Ehtools Framework for free and rate it.
+
+# To install ehtools LITE
+
+    INFO: If you bought Ehtools Framework PRO,
+    and after this you trying to install Ehtools 
+    Framework LITE, you should know that 
+    Ehtools Framework LITE and Ehtools 
+    Framework PRO is incompatible!
 
 > cd /root/ehtoolslite
 
@@ -80,25 +137,14 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 > eht
 
-# To uninstall our ehtools PRO
-
-> ehtools -r
-
-    WARNING: Do not do it if you want to reinstall
-    ehtools PRO which you bought, do not do it because
-    you will need to buy it one more time!
-
-# To uninstall our ehtools Lite
+# To uninstall ehtools LITE
 
 > cd /root/ehtoolslite
 
 > ./uninstall.sh
 
-# Install.sh interface
-
-![Ehtools Installer 2](https://user-images.githubusercontent.com/43011806/55680974-a21f4400-5929-11e9-9205-62d6f9875400.png)
-
-![Ehtools installer](https://user-images.githubusercontent.com/43011806/59976773-9a3e7a00-95d1-11e9-8535-727be10c01eb.png)
+    INFO: Install it to rate Ehtools Framework,
+    and if you like it you can buy Ehtools Framework PRO.
 
 # Attacking frameworks
 
@@ -108,7 +154,7 @@ An excellent example of this are programs that integrate scanning tools like Air
 
 An example of this we've covered is the Airgeddonframework, a wireless attack framework that does useful things like automating the target selection process and eliminating the time a user spends copying and pasting information between programs. This saves valuable time for even experienced pentesters but has the disadvantage of preventing beginners from understanding what's happening "under the hood" of the attack. While this is true, most of these frameworks are fast, efficient, and dead simple to use, enabling even beginners to take on and disable an entire network.
 
-# UX/UI Impruvements for beginners
+# UX/UI impruvements for beginners
 
 The Ehtools Framework starts by merely typing the letter ehtools or eht into a terminal window, then it asks for the name of your network interfaces after the first run. It uses the names you supply to connect to the tools needed to execute any attacks you select. Aside from that initial input, the majority of the possible attacks can be performed merely by choosing the option number from the menu. This means you can grab a network handshake or download a new hacking tool like Pupy by just selecting from one of the menu options.
 
@@ -198,10 +244,10 @@ From the next menu, the tools are broken down into major categories, with option
 
 You can also manage your installed tools by accessing option 6. To download Pupy, we'll go to option 2, which is remote access. Here, we will see a list of different tools for remote access, and we can select option 3 for Pupy.
 
-# Use quick access (only ehtools PRO)
+# Use ehtools quick access
 
-    INFO: Quick access, this is when you run ehtools
-    and for example ehtools -r to remove ehtools!
+    INFO: Ehtools quick access, this is when you run
+    ehtools and for example ehtools -r to remove ehtools!
     
 Run it to open quick access menu:
 
@@ -226,7 +272,7 @@ Run it to open WPS menu:
     INFO: For this shortcuts you will not need
     enter your ehtools password!
 
-# Why our framework? 
+# Why our framework?
 
 > More than 58 tools for pentesting installed by default
 
@@ -455,7 +501,7 @@ After this enter your new ehtools root password (example: 1234)
 </a>
 </p>
 
-# About ehtools PRO server support
+# About ehtools server support
 
 Server support for ehtools PRO is very important, as all error reports are sent to it in order to improve and fix vulnerabilities and bugs!
 
@@ -472,7 +518,7 @@ If in consequence of bad Internet connection ehtools will not be able to communi
 
     [*] Failed to open session for ehtools!
     
-# How to protect ehtools?
+# How to protect ehtools
 
 ![Ehtools Auth](https://user-images.githubusercontent.com/43011806/59976788-d96ccb00-95d1-11e9-8441-021dfe299243.png)
 
