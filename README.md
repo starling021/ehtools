@@ -53,7 +53,7 @@
 - [Use basic networking tools](https://github.com/entynetproject/ehtools#use-basic-networking-tools)
 - [Install new tools](https://github.com/entynetproject/ehtools#install-new-tools)
 - [Use ehtools quick access](https://github.com/entynetproject/ehtools#use-ehtools-quick-access)
-- [Why ehtools framework](https://github.com/entynetproject/ehtools#why-ehtools-framework)
+- [Why ehtools framework?](https://github.com/entynetproject/ehtools#why-ehtools-framework)
 - [System requirements](https://github.com/entynetproject/ehtools#system-requirements)
 - [About ehtools team](https://github.com/entynetproject/ehtools#about-ehtools-team)
 - [Ehtools utilities](https://github.com/entynetproject/ehtools#ehtools-utilities)
