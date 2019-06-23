@@ -40,7 +40,7 @@
 
 # Table of contents
 
-- [About ehtools framework](https://github.com/entynetproject/ehtools#about-our-framework) 
+- [About ehtools framework](https://github.com/entynetproject/ehtools#about-ehtools-framework) 
     - [About ehtools PRO](https://github.com/entynetproject/ehtools#about-ehtools-pro)
         - [To install ehtools PRO](https://github.com/entynetproject/ehtools#to-install-ehtools-pro)
             - [To activate ehtools PRO](https://github.com/entynetproject/ehtools#to-activate-ehtools-pro)
