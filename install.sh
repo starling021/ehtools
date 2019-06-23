@@ -292,7 +292,7 @@ then
       echo -e "$RS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$RS       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$RS       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
-      echo -e "$RS       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro$CE"
+      echo -e "$RS       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$RS       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"                                         
 		sleep 3
 		echo -e "["$YS"inf"$CE"] "$YS"Congratulations, you have successfully installed our framework!"$CE""
