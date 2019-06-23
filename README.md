@@ -337,7 +337,7 @@ Run it to open WPS menu:
 
 > Entynetproject
 
-    INFO: Main  developer of Ehtools Framework
+    INFO: Main developer of Ehtools Framework
     
 > DJ Mobley
 
