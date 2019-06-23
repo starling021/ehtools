@@ -237,11 +237,12 @@ fi
 fi
 
 printf '\033]2;Ehtools Authentication\a'
+      echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro$CE"
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"                                         
 sleep 0.5
 echo -e "You want to login as '"$YS"user"$CE"'"
@@ -257,11 +258,12 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
+      echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro$CE"
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"                                   
 sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
@@ -333,11 +335,12 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
+      echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro$CE"
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"                               
 sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
