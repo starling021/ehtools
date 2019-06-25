@@ -37,35 +37,6 @@
 
 ![Ehtools RED](https://user-images.githubusercontent.com/43011806/59976775-9ad71080-95d1-11e9-8456-990569e97120.png)
 
-# Table of contents
-
-- [About ehtools framework](https://github.com/entynetproject/ehtools#about-ehtools-framework) 
-    - [About ehtools PRO](https://github.com/entynetproject/ehtools#about-ehtools-pro)
-        - [How to install ehtools PRO](https://github.com/entynetproject/ehtools#how-to-install-ehtools-pro)
-            - [How to activate ehtools PRO](https://github.com/entynetproject/ehtools#how-to-activate-ehtools-pro)
-        - [How to uninstall ehtools PRO](https://github.com/entynetproject/ehtools#how-to-uninstall-ehtools-pro)
-    - [About ehtools LITE](https://github.com/entynetproject/ehtools#about-ehtools-lite)
-        - [How to install ehtools LITE](https://github.com/entynetproject/ehtools#how-to-install-ehtools-lite)
-        - [How to uninstall ehtools LITE](https://github.com/entynetproject/ehtools#how-to-uninstall-ehtools-lite)
-- [Attacking frameworks](https://github.com/entynetproject/ehtools#attacking-frameworks) 
-- [UX/UI impruvements for beginners](https://github.com/entynetproject/ehtools#ux/ui-impruvements-for-beginners)
-- [Use basic networking tools](https://github.com/entynetproject/ehtools#use-basic-networking-tools)
-- [Install new tools](https://github.com/entynetproject/ehtools#install-new-tools)
-- [Use ehtools quick access](https://github.com/entynetproject/ehtools#use-ehtools-quick-access)
-- [Why ehtools framework?](https://github.com/entynetproject/ehtools#why-ehtools-framework)
-- [System requirements](https://github.com/entynetproject/ehtools#system-requirements)
-- [Ehtools utilities](https://github.com/entynetproject/ehtools#ehtools-utilities)
-    - [Uiecache](https://github.com/entynetproject/ehtools#uiecache--)
-    - [Ehtools update helper (euh)](https://github.com/entynetproject/ehtools#ehtools-update-helper-euh--)
-    - [Modules v1.9](https://github.com/entynetproject/ehtools#modules-v19--)
-    - [Ehtools password changer (epasswd)](https://github.com/entynetproject/ehtools#ehtools-password-changer-epasswd--)
-- [About ehtools server support](https://github.com/entynetproject/ehtools#about-ehtools-server-support)
-- [How to protect ehtools](https://github.com/entynetproject/ehtools#how-to-protect-ehtools)
-- [Terms of use](https://github.com/entynetproject/ehtools#terms-of-use)
-- [Ehtools framework license](https://github.com/entynetproject/ehtools#ehtools-framework-license)
-    - [Ehtools utilities license](https://github.com/entynetproject/ehtools#ehtools-utilities-license)
-    - [Ehtools libraries license](https://github.com/entynetproject/ehtools#ehtools-libraries-license)
-
 # About ehtools framework
 
 Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools Framework is a framework of serious penetration tools that can be explored easily from within it. This powerful and simple tool can be used for everything from installing new add-ons to grabbing a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and utilize.
