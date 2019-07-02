@@ -635,7 +635,7 @@ then
 	mkdir "$KSPATH"/"$TITLE"
 fi
 clear
-echo -e "Enter the keyboard shortcut that will open "$TITLE" from ehtool's main menu"
+echo -e "Enter the keyboard shortcut that will open "$TITLE" from ehtools main menu"
 echo -e "(e.g: "$YS""$TITLE""$CE")"
 echo -e "To delete it , type:   "$YS"delete"$CE""
 echo -e ""$YS" b"$CE") Go back"
