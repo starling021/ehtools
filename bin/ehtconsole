@@ -4293,7 +4293,7 @@ function remote_access
 	else
 		echo -e ""$RS"26"$CE") "$RS"Evil-Droid"$CE"             Penetrate android platforms"
 	fi
-	if [[ -d /root/EggShell ]]
+	if [[ -d /root/mouse ]]
 	then
 		echo -e ""$YS"27"$CE") Mouse                 Penetrate iOS/macOS platforms"
 	else
