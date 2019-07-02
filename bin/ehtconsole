@@ -134,7 +134,7 @@ toolarray=(
 "recondog" "redhawk" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
 "websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "koadic" "empire" "meterpreter_paranoid_mode"
 "dropit_frmw" "wifi_pumpkin" "veil" "leviathan" "fake_image" "avet" "gloom" "arcanus" "msfpc" "morphhta" "lfi" "unibyav" "demiguise" "dkmc" "sechub" "beef" "mitmf"
-"fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "eggshell" "zerodoor" "cromos" "yuki-chan" "socialfish" "ECLI" "blazy"
+"fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "mouse" "zerodoor" "cromos" "yuki-chan" "socialfish" "ECLI" "blazy"
 "striker" "hyprpulse" "instaburst" "instagram-py" "datasploit" "sitebroker" "enigma"
 )
 #setting frequent stings
@@ -931,9 +931,9 @@ function listshortcuts
 		KSSET="python nosqlmap.py"
 	elif [[ "$nn" = "48" ]]
 	then
-		TITLE="EggShell"
-		NAMECD="cd /root/EggShell"
-		KSSET="python eggshell.py"
+		TITLE="Mouse"
+		NAMECD="cd /root/mouse"
+		KSSET="python mouse.py"
 	elif [[ "$nn" = "49" ]]
 	then
 		TITLE="Zerodoor"
@@ -4295,9 +4295,9 @@ function remote_access
 	fi
 	if [[ -d /root/EggShell ]]
 	then
-		echo -e ""$YS"27"$CE") EggShell              Penetrate android platforms"
+		echo -e ""$YS"27"$CE") Mouse                 Penetrate iOS/macOS platforms"
 	else
-		echo -e ""$RS"27"$CE") "$RS"EggShell"$CE"               Penetrate android platforms"
+		echo -e ""$RS"27"$CE") "$RS"Mouse"$CE"                  Penetrate iOS/macOS platforms"
 	fi
 	if [[ -d /root/Zerodoor ]]
 	then
@@ -5005,16 +5005,16 @@ function remote_access
 		fi
 	elif [[ "$KEYLOG" = "27" ]]
 	then
-		if [[ -d /root/EggShell ]]
+		if [[ -d /root/mouse ]]
 		then
-			cd /root/EggShell
-			python eggshell.py
+			cd /root/mouse
+			python mouse.py
 		else	
 			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
-				install_eggshell
+				install_mouse
 			else
 				continue
 			fi
@@ -10991,16 +10991,17 @@ check_if_ks
 			python setup.py install
 		fi
 	}
-	function install_eggshell
+	function install_mouse
 	{
-		foldname="EggShell"
-		gitlink="https://github.com/neoneggplant/EggShell.git"
+		foldname="mouse"
+		gitlink="https://github.com/entynetproject/mouse.git"
 		install_default
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-			easy_install pycrypto
-			python eggshell.py
+			cd /root/mouse
+			chmod +x install.sh
+			./install.sh
 		fi
 	}
 	function install_zerodoor
