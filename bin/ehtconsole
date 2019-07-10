@@ -9607,20 +9607,20 @@ function main_options
         then
                 sleep 1
                 clear
-                if [[ -d /root/ehtools-shell ]]
+                if [[ -d /root/ehtsh ]]
                 then
                 if [[ -f /bin/ehtsh ]]
                 then
                 ehtsh
                 else
-                cd /root/ehtools-shell
+                cd /root/ehtsh
                 cp ehtsh /bin
                 chmod +x /bin/ehtsh 
                 ehtsh
                 fi
                 else
-                git clone https://github.com/entynetproject/ehtools-shell.git
-                cd ehtools-shell
+                git clone https://github.com/entynetproject/ehtsh.git
+                cd ehtsh
                 cp ehtsh /bin
                 chmod +x /bin/ehtsh
                 fi
