@@ -4183,11 +4183,11 @@ function remote_access
 	else
 		echo -e ""$RS"10"$CE") "$RS"Koadic"$CE"                Windows post-exploitation rootkit"
 	fi
-	if [[ -d /root/Empire ]]
+	if [[ -d /root/invader ]]
 	then
-		echo -e ""$YS"11"$CE") Empire                PowerShell and Python post-exploitation agent"
+		echo -e ""$YS"11"$CE") Invader                PowerShell and Python post-exploitation agent"
 	else
-		echo -e ""$RS"11"$CE") "$RS"Empire"$CE"                PowerShell and Python post-exploitation agent"
+		echo -e ""$RS"11"$CE") "$RS"Invader"$CE"                PowerShell and Python post-exploitation agent"
 	fi
 	if [[ -d /root/Meterpreter_Paranoid_Mode-SSL ]]
 	then
@@ -4349,16 +4349,17 @@ function remote_access
 		fi
 	elif [[ "$KEYLOG" = "11" ]]
 	then
-		if [[ -d /root/Empire ]]
+		if [[ -d /root/invader ]]
 		then
-			cd /root/Empire
-			./empire
+			cd /root/invader
+			chmod +x invader
+			./invader
 		else
 			echo -e "$TNI"
 			read INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
-				install_empire
+				install_invader
 			else
 				continue
 			fi
@@ -10742,18 +10743,18 @@ check_if_ks
 			pip2.7 install -r requirements.txt
 		fi
 	}
-	function install_empire
+	function install_invader
 	{
-		foldname="Empire"
-		gitlink="https://github.com/EmpireProject/Empire.git"
+		foldname="invader"
+		gitlink="https://github.com/entynetproject/invader.git"
 		install_default
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-			chmod +x setup/install.sh
+			cd invader
 			cd setup
+			chmod +x install.sh
 			./install.sh
-			./setup_database.py
 		fi
 	}
 	function install_meterpreter_paranoid_mode
