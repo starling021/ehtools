@@ -340,7 +340,7 @@ echo -e "Welcome to Modules v1.9 for ehtools"
 sleep 1
 echo -e "Instrument to add ehtools modules to /bin"
 sleep 1
-echo -e "This is sandbox for ehtools modules"
+echo -e "This is a sandbox for ehtools modules"
 sleep 1
 echo -e "Press \e[1;33many key\e[0m to install modules"
 read -n 1
@@ -797,7 +797,7 @@ echo -e "Welcome to Modules v1.9 for ehtoolslite"
 sleep 1
 echo -e "Instrument to add ehtoolslite modules to /bin"
 sleep 1
-echo -e "This is sandbox for ehtoolslite modules"
+echo -e "This is a sandbox for ehtoolslite modules"
 sleep 1
 echo -e "Press \e[1;33many key\e[0m to install modules"
 read -n 1
