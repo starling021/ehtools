@@ -184,8 +184,8 @@ Added color to pyrit handshake validation output.
 Fixed error in deauth when selecting a non existing station number.
 Fixed error when checking if monitor enabled.
 Added support for ALFA AWUS036ACH when checking if monitor enabled.
-Added Koadic tool to remote access and keyboard shortcuts.
-Added Empire tool to remote access and keyboard shortcuts.
+Added Entypreter tool to remote access and keyboard shortcuts.
+Added Invader tool to remote access and keyboard shortcuts.
 Added Meterpreter_Paranoid_Mode tool to remote access and keyboard shortcuts.
 Added Dr0p1t-Framework tool.
 Added Dr0p1t-Framework automation script to remote access.
