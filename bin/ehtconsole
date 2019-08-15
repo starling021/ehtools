@@ -3518,7 +3518,7 @@ function wifi_tools
 			if [[ -d "/root/ECLI" ]]
 			then	
 				cd /root/ECLI
-				./Entynet.py
+				./ECLI.py
 				cd
 			else
 				echo -e "You have to install it manually since its not on github!"
@@ -4336,6 +4336,7 @@ function remote_access
 		if [[ -d /root/entypreter ]]
 		then
 			cd /root/entypreter
+			chmod +x entypreter
 			./entypreter
 		else
 			echo -e "$TNI"
@@ -10160,7 +10161,8 @@ check_if_ks
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-		        chmod +x Entynet.py
+		        cd /root/ECLI
+		        chmod +x ECLI.py
                 fi
 	}
 	function install_morpheus
