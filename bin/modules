@@ -179,6 +179,15 @@ done
 sleep 5
 echo -e
 sleep 0.5
+{
+cd /root/ehtools
+cd lib
+chmod +x libunlogin
+./libunlogin
+chmod +x libunchattr
+./libunchattr
+chmod +x libunconf
+./libunconf
 rm -r /bin/ehtools
 cp -r /etc/ehtools/modules/snapshots/$2/ehtools /bin
 rm -r /root/ehtools/eht
@@ -219,6 +228,15 @@ cp /etc/ehtools/modules/snapshots/$2/eht/eht43 /bin
 chmod +x /bin/eht43
 cp /etc/ehtools/modules/snapshots/$2/eht/eht21 /bin
 chmod +x /bin/eht21
+cd /root/ehtools
+cd lib
+chmod +x liblogin
+./liblogin
+chmod +x libchattr
+./libchattr
+chmod +x libconf
+./libconf
+} &> /dev/null
 sleep 2
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
@@ -636,6 +654,15 @@ done
 sleep 5
 echo -e
 sleep 0.5
+{
+cd /root/ehtoolslite
+cd lib
+chmod +x libunlogin
+./libunlogin
+chmod +x libunchattr
+./libunchattr
+chmod +x libunconf
+./libunconf
 rm -r /bin/ehtoolslite
 cp -r /etc/ehtoolslite/modules/snapshots/$2/ehtoolslite /bin
 rm -r /root/ehtoolslite/eht
@@ -676,6 +703,15 @@ cp /etc/ehtoolslite/modules/snapshots/$2/eht/eht43 /bin
 chmod +x /bin/eht43
 cp /etc/ehtoolslite/modules/snapshots/$2/eht/eht21 /bin
 chmod +x /bin/eht21
+cd /root/ehtoolslite
+cd lib
+chmod +x liblogin
+./liblogin
+chmod +x libchattr
+./libchattr
+chmod +x libconf
+./libconf
+} &> /dev/null
 sleep 2
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
