@@ -3276,7 +3276,7 @@ function wifi_tools
 	then
 		echo -e ""$YS" 2"$CE") Wifite                Automated wireless attack tool"
 	else
-		echo -e ""$RS" 2"$CE") "$RS"Wifite"$CE"               Automated wireless attack tool"
+		echo -e ""$RS" 2"$CE") "$RS"Wifite"$CE"                Automated wireless attack tool"
 	fi
 	if [[ -d /root/wifiphisher ]]
 	then
@@ -5718,7 +5718,7 @@ function website_tools
 		then
 			echo -e ""$YS" 8"$CE") InstaBurst            A faster way to brute force Instagram"
 		else
-			echo -e ""$RS" 8"$CE") "$RS"InstaBurst"$CE"             A faster way to brute force Instagram"
+			echo -e ""$RS" 8"$CE") "$RS"InstaBurst"$CE"            A faster way to brute force Instagram"
 		fi
 		if [[ -f /usr/local/bin/instagram-py ]]
 		then
