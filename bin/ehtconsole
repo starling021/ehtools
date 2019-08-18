@@ -4185,9 +4185,9 @@ function remote_access
 	fi
 	if [[ -d /root/invader ]]
 	then
-		echo -e ""$YS"11"$CE") Invader                PowerShell and Python post-exploitation agent"
+		echo -e ""$YS"11"$CE") Invader               PowerShell and Python post-exploitation agent"
 	else
-		echo -e ""$RS"11"$CE") "$RS"Invader"$CE"                PowerShell and Python post-exploitation agent"
+		echo -e ""$RS"11"$CE") "$RS"Invader"$CE"               PowerShell and Python post-exploitation agent"
 	fi
 	if [[ -d /root/Meterpreter_Paranoid_Mode-SSL ]]
 	then
@@ -4259,13 +4259,13 @@ function remote_access
 	then
 		echo -e ""$YS"23"$CE") Demiguise             HTA encryption tool for RedTeams"
 	else
-		echo -e ""$RS"23"$CE") "$RS"Demiguise"$CE"              HTA encryption tool for RedTeams"
+		echo -e ""$RS"23"$CE") "$RS"Demiguise"$CE"             HTA encryption tool for RedTeams"
 	fi
 	if [[ -d /root/DKMC ]]
 	then
 		echo -e ""$YS"24"$CE") DKMC                  Malicious payload evasion tool into image"
 	else
-		echo -e ""$RS"24"$CE") "$RS"DKMC"$CE"                   Malicious payload evasion tool into image"
+		echo -e ""$RS"24"$CE") "$RS"DKMC"$CE"                  Malicious payload evasion tool into image"
 	fi
 	if [[ -d /usr/share/beef-xss ]]
 	then
@@ -4277,7 +4277,7 @@ function remote_access
 	then
 		echo -e ""$YS"26"$CE") Evil-Droid            Penetrate android platforms"
 	else
-		echo -e ""$RS"26"$CE") "$RS"Evil-Droid"$CE"             Penetrate android platforms"
+		echo -e ""$RS"26"$CE") "$RS"Evil-Droid"$CE"            Penetrate android platforms"
 	fi
 	if [[ -d /root/mouse ]]
 	then
@@ -4289,13 +4289,13 @@ function remote_access
 	then
 		echo -e ""$YS"28"$CE") Zerodoor              Penetrate android platforms"
 	else
-		echo -e ""$RS"28"$CE") "$RS"Zerodoor"$CE"               Penetrate android platforms"
+		echo -e ""$RS"28"$CE") "$RS"Zerodoor"$CE"              Penetrate android platforms"
 	fi
 	if [[ -d /root/cromos ]]
 	then
 		echo -e ""$YS"29"$CE") Cromos                Download and Inject code into Google Chrome extensions"
 	else
-		echo -e ""$RS"29"$CE") "$RS"Cromos"$CE"                 Download and Inject code into Google Chrome extensions"
+		echo -e ""$RS"29"$CE") "$RS"Cromos"$CE"                Download and Inject code into Google Chrome extensions"
 	fi
 	if [[ -d /root/arissploit ]]
 	then
@@ -4307,7 +4307,7 @@ function remote_access
 	then
 		echo -e ""$YS"31"$CE") Enigma                Multiplatform payload dropper"
 	else
-		echo -e ""$RS"31"$CE") "$RS"Enigma"$CE"                 Multiplatform payload dropper"
+		echo -e ""$RS"31"$CE") "$RS"Enigma"$CE"                Multiplatform payload dropper"
 	fi
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
