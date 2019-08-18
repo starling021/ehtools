@@ -4283,7 +4283,7 @@ function remote_access
 	then
 		echo -e ""$YS"27"$CE") Mouse                 Penetrate iOS/macOS platforms"
 	else
-		echo -e ""$RS"27"$CE") "$RS"Mouse"$CE"                  Penetrate iOS/macOS platforms"
+		echo -e ""$RS"27"$CE") "$RS"Mouse"$CE"                 Penetrate iOS/macOS platforms"
 	fi
 	if [[ -d /root/Zerodoor ]]
 	then
@@ -4299,9 +4299,9 @@ function remote_access
 	fi
 	if [[ -d /root/arissploit ]]
 	then
-		echo -e ""$YS"30"$CE") Arissploit            Database of exploits, viruses and tools for penetration testing"
+		echo -e ""$YS"30"$CE") Arissploit            Database of exploits, viruses and etc"
 	else
-		echo -e ""$RS"30"$CE") "$RS"Arissploit"$CE"             Database of exploits, viruses and tools for penetration testing"
+		echo -e ""$RS"30"$CE") "$RS"Arissploit"$CE"            Database of exploits, viruses and etc"
 	fi
 	if [[ -d /root/Enigma ]]
 	then
