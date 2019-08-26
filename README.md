@@ -58,7 +58,7 @@
 
 > ./install.sh 
 
-![installer](https://user-images.githubusercontent.com/43011806/63712326-312fe880-c846-11e9-8b7f-bd83ceeff26e.png)
+![Ehtools Installer](https://user-images.githubusercontent.com/43011806/63712584-a4395f00-c846-11e9-9aee-988c3a49e127.png)
 
 # How to activate ehtools PRO
 
