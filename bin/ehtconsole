@@ -269,9 +269,7 @@ function latest_changelog
 	sleep 2
 	echo -e "Reading Changelog from /root/ehtools/Changelog..."
 	sleep 3
-	echo -e "Printing Ehtools Framework 3.0.0 Changelog..."
-	sleep 0.5
-	cat "$EPATH"/Changelog | head -n $LATESTCHANGELOGLINES
+	cat "$EPATH"/Changelog
 	echo -e "$PAKTC"
 	$READAK
         clear
