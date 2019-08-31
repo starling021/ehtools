@@ -244,9 +244,9 @@ function latest_changelog
 {
 	clear
 	printf '\033]2;Entynet Hacker Tools\a'
-	echo -e ""$BS"Welcome to version $VERSION LITE"$CE""
+	echo -e ""$WHS"["$GNS"*"$WHS"]"$GNS" Welcome to the Ehtools Framework!"$CE""
 	sleep 1
-	echo -e "$WHS[$GNS*$WHS]$GNS Welcome to the Ehtools Framework LITE $CE"
+	echo -e ""$WHS"["$GNS"*"$WHS"]"$WHS" Welcome to version "$GNS"$VERSION"$CE" PRO"$CE""
 	sleep 2
 	cat "$EPATH"/Changelog | head -n $LATESTCHANGELOGLINES
 	echo -e "$PAKTC"
