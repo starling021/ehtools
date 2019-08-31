@@ -243,7 +243,7 @@ function is_it_an_ip()
 function latest_changelog
 {
 	clear
-	printf '\033]2;WELCOME TO ehtools\a'
+	printf '\033]2;Entynet Hacker Tools\a'
 	echo -e ""$BS"Welcome to version $VERSION"$CE""
 	echo -e "$WHS[$GNS*$WHS]$GNS WELCOME TO ehtools FRAMEWORK $CE"
 	cat "$EPATH"/Changelog | head -n $LATESTCHANGELOGLINES
@@ -324,7 +324,7 @@ KIP="$( cat /root/ehtools/etc/config )"
 
 if [[ "$PIK" != "$KIP" ]]
 then 
-eht
+ehtools
 exit
 fi
 
