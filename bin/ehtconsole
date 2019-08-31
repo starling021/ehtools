@@ -6592,7 +6592,7 @@ function hidden_shortcuts
 	echo -e ""$YS"     wififb"$CE") Create open wifi access point and get fb passwords with wifiphisher"
 	echo -e ""$YS"eternalblue"$CE") Launch msfconsole with eternalblue exploit on target"
 	echo -e ""$YS"  etercheck"$CE") Check if a target is vulnerable to eternalblue exploit"
-	echo -e ""$YS"  changelog"$CE") View ehtools changelog"
+	echo -e ""$YS"  changelog"$CE") View full ehtools changelog"
 	echo -e ""$YS"     pstart"$CE") Service postgresql start"
 	echo -e ""$YS"      pstop"$CE") Service postgresql stop"
 	echo -e ""$YS"     nstart"$CE") Service network-manager start"
@@ -6764,7 +6764,7 @@ function public_ip
 }
 function terms_of_use
 {
-	printf '\033]2;TERMS OF USE\a'
+	printf '\033]2;terms of use\a'
 	clear
 	echo -e ""$RS"You need to accept the terms."$CE""
 	sleep 1
@@ -9156,7 +9156,7 @@ function settings_menu
 		echo -e ""$YS" 6"$CE") MAC to change to, when starting monitor      $STARTMAC"	
 		echo -e ""$YS" 7"$CE") Interface for arp-scan (network scanner)     $ARPIN"
 		echo -e ""$YS" 8"$CE") Interface for iftop    (show bandwidth)      $iftopint"
-		echo -e ""$YS" 9"$CE") Delete EPATH firmware (\e[5;31mDANGER!\e[0m)"
+		echo -e ""$YS" 9"$CE") Open EPATH firmware commander"
                 echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS" 0"$CE") Exit"
 		read -p $'(\e[4;93msettings\e[0m)> ' SET
@@ -9177,34 +9177,8 @@ function settings_menu
 		        exit
 		elif [[ "$SET" = 9 ]]
                 then
-                         cd /root/ehtools/lib
-	                 chmod +x libunchattr
-	                 ./libunchattr
-			 cd /root/ehtools/lib
-	                 chmod +x libunconf
-	                 ./libunconf
-			 rm -r /root/ehtools
-	                 rm -r /bin/ehtools
-	                 rm -r /root/handshakes
-			 rm -r /root/wordlists
-			 rm /bin/eht1
-	                 rm /bin/eht2
-	                 rm /bin/eht3
-	                 rm /bin/eht4
-	                 rm /bin/eht21
-	                 rm /bin/eht31
-	                 rm /bin/eht41
-	                 rm /bin/eht42
-	                 rm /bin/eht43
-	                 rm /bin/epasswd
-	                 rm /bin/modules
-	                 rm /bin/euh
-                         rm /bin/uiecache
-		         chattr +i /etc/ehtools/login
-                         chattr +i /etc/ehtools/password
-                         chattr +i /etc/ehtools
-                         chattr +i /etc/ehtools/root
-                         chattr +i /etc/ehtools/root/password
+                         epath
+			 
 		elif [[ "$SET" = 8 ]]
 		then
 			clear
