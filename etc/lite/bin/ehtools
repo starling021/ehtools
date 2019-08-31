@@ -123,7 +123,7 @@ exit
 fi
 fi
 
-printf '\033]2;ehtools Authentication\a' 
+printf '\033]2;Ehtools Authentication\a' 
       echo -e 
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -134,7 +134,7 @@ printf '\033]2;ehtools Authentication\a'
 sleep 0.5
 echo -e "You want to login as '"$YS"user"$CE"'"
 sleep 0.5
-echo -e "$YS"ehtools Authentication:"$CE"
+echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 logins=$(cat /etc/ehtools/login)
@@ -144,7 +144,7 @@ do
 sleep 0.5
 clear
 sleep 0.5
-printf '\033]2;ehtools Root Authentication\a'
+printf '\033]2;Ehtools Root Authentication\a'
       echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -155,7 +155,7 @@ printf '\033]2;ehtools Root Authentication\a'
 sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
-echo -e "$YS"ehtools Root Authentication:"$CE"
+echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
 passroot="$( cat /etc/ehtools/root/password )"
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
@@ -223,7 +223,7 @@ do
 sleep 0.5
 clear
 sleep 0.5
-printf '\033]2;ehtools Root Authentication\a'
+printf '\033]2;Ehtools Root Authentication\a'
       echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -234,7 +234,7 @@ printf '\033]2;ehtools Root Authentication\a'
 sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
-echo -e "$YS"ehtools Root Authentication:"$CE"
+echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
 passroot="$( cat /etc/ehtools/root/password )"
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass

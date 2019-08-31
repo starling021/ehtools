@@ -5839,7 +5839,7 @@ function settings_menu
 		fi
 		echo -e ""$YS" 1"$CE") Change logo color"
 		echo -e ""$YS" 2"$CE") Howdoi settings"
-		echo -e ""$YS" 3"$CE") ehtools Password Protection              $EPPO"
+		echo -e ""$YS" 3"$CE") Ehtools Password Protection                  $EPPO"
                 echo -e ""$YS" 4"$CE") ALFA AWUS036ACH support                      $ALFA"
 		echo -e ""$YS" 5"$CE") Ignore negative one when deauthing           $IGN"
 		echo -e ""$YS" 6"$CE") MAC to change to, when starting monitor      $STARTMAC"	

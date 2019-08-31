@@ -80,8 +80,8 @@ if [[ "$CAT" = "" ]]
 then
 clear
 else
-printf '\033]2;ehtools Authentication\a'
-echo -e "$YS"ehtools Authentication:"$CE"
+printf '\033]2;Ehtools Authentication\a'
+echo -e "$YS"Ehtools Authentication:"$CE"
 
 sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
