@@ -265,8 +265,10 @@ function latest_changelog
 	printf '\033]2;Entynet Hacker Tools\a'
 	echo -e ""$WHS"["$GNS"*"$WHS"]"$GNS" Welcome to the Ehtools Framework!"$CE""
 	sleep 1
-	echo -e ""$WHS"["$GNS"*"$WHS"]"$WHS" Welcome to version "$GNS"$VERSION"$CE" PRO"$CE""
+	echo -e ""$WHS"["$GNS"*"$WHS"]"$CE" Welcome to version "$GNS"$VERSION"$CE" PRO!"$CE""
 	sleep 2
+	echo -e "Reading changelogs..."
+	sleep 3
 	cat "$EPATH"/Changelog | head -n $LATESTCHANGELOGLINES
 	echo -e "$PAKTC"
 	$READAK
