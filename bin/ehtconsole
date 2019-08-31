@@ -264,7 +264,9 @@ function latest_changelog
 	clear
 	printf '\033]2;Entynet Hacker Tools\a'
 	echo -e ""$BS"Welcome to version $VERSION"$CE""
+	sleep 1
 	echo -e "$WHS[$GNS*$WHS]$GNS WELCOME TO EHTOOLS FRAMEWORK $CE"
+	sleep 2
 	cat "$EPATH"/Changelog | head -n $LATESTCHANGELOGLINES
 	echo -e "$PAKTC"
 	$READAK
