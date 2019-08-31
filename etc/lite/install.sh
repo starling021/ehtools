@@ -422,7 +422,7 @@ echo $DADI >> /root/ehtools/etc/config
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
-echo -e "Open a NEW terminal and type '"$YS"eht"$CE"' to launch framework"
+echo -e "Open a NEW terminal and type '"$YS"ehtools"$CE"' to launch framework"
 sleep 0.5
 echo -e "If you want to update ehtools, run '"$YS"euh"$CE"'"
 sleep 0.5
