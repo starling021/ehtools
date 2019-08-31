@@ -28,6 +28,9 @@
 #    Email     : entynetproject@gmail.com
 #
 
+if [[ -f /etc/ehtools/.configuring ]]
+then
+
 #yellow start 
 	YS="\e[1;33m"
 #blue start 
