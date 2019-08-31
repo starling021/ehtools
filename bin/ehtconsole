@@ -276,7 +276,7 @@ function latest_changelog
 }
 function finish 
 {
-  echo -e ""$RS"Hard kill detected.."$CE""
+  echo -e ""$RS"Hard kill detected..."$CE""
 }
 function dash_calc
 {
