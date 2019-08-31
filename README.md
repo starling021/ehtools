@@ -68,7 +68,7 @@
     If you bought Ehtools Framework PRO, select PRO!
     (version)> 
     
-If you select Ehtools Framework PRO, you will need to activate it with your Ehtools Activation Key that you need to bought on ehtools website. If you have Ehtools Activation Key, read following instructions.
+If you select Ehtools Framework PRO, you will need to activate it with your Ehtools Activation Key that you need to bought on ehtools website. If you have Ehtools Activation Key, read the following instructions.
     
 # How to activate ehtools PRO
 
