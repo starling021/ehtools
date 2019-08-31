@@ -267,7 +267,7 @@ function latest_changelog
 	sleep 1
 	echo -e ""$WHS"["$GNS"*"$WHS"]"$CE" Welcome to version "$GNS"$VERSION"$CE" PRO!"$CE""
 	sleep 2
-	echo -e "Reading changelogs..."
+	echo -e "Reading Changelog from /root/ehtools/Changelog..."
 	sleep 3
 	cat "$EPATH"/Changelog | head -n $LATESTCHANGELOGLINES
 	echo -e "$PAKTC"
