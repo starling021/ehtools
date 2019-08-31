@@ -28,6 +28,9 @@
 #    Email     : entynetproject@gmail.com
 #
 
+if [[ -f /etc/ehtools/.configuring ]]
+then
+
 CE="\e[0m"
 RS="\e[1;31m"
 YS="\e[1;33m"
@@ -555,3 +558,4 @@ echo -e "                       (take ehtools modules snapshot)"
 echo -e "   --help            Give this help list."
 echo -e
 exit
+fi
