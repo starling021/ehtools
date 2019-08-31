@@ -213,3 +213,4 @@ echo -e "                    (restart ehtools system)"
 echo -e "   --help         Give this help list."
 echo -e
 exit
+fi
