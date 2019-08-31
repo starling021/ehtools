@@ -11,7 +11,6 @@ if [[ $CONF = "EHELP" ]]
 then
 echo -e """
 ECONF  ->  Reconfigure EPATH path.
-EBOOT  ->  Boot Ehtools Framework.
 RCONF  ->  Reset default EPATH config.
 EHELP  ->  Print EPATH commander commands.
 EEXIT  ->  Exit from the EPATH commander.
@@ -21,11 +20,6 @@ elif [[ $CONF = "ECONF" ]]
 then
 read -p $'New EPATH path: ' EPATH
 export EPATH
-
-elif [[ $CONF = "EBOOT" ]]
-then
-ehtconsole
-exit
 
 elif [[ $CONF = "RCONF" ]]
 then
