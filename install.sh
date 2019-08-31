@@ -149,6 +149,9 @@ exit
 fi
 fi
 
+{
+rm -r /root/ehtools/etc/lite
+} &> /dev/null
 clear
 printf '\033]2;ehtools INSTALLER\a'
 echo -e
