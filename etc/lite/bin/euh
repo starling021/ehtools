@@ -257,4 +257,3 @@ sleep 3
 cd /root/ehtools
 ./install.sh
 exit
-fi
