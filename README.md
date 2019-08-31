@@ -69,7 +69,9 @@
     
 > ./install.sh
 
-    What version of Ehtools Framework do you want to use?(pro/lite)
+    What version of Ehtools Framework do you want to install?(pro/lite):
+    If you did not buy Ehtools Framework PRO, select LITE!
+    If you bought Ehtools Framework PRO, select PRO!
     (version)> 
     
     
