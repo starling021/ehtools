@@ -80,7 +80,7 @@ This key you can buy on the ehtools site for one dollar! This key is used to act
 > ./install.sh
 
     Enter your ehtools activation key!
-    You can buy it on ehtools site!
+    You can buy it on the ehtools site!
     (activation_key)> 
     
 Also, we do not recommend to change the source code of ehtools because it is very complex and you can mess up something and disrupt the framework!
