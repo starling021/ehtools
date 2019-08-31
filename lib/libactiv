@@ -37,7 +37,7 @@ printf '\033]2;activate ehtools\a'
 ACTKEY="$( curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
 sleep 1
 echo -e "Enter your ehtools activation key!"
-echo -e "Or buy it on ehtools site!"
+echo -e "You can buy it on the ehtools site!"
 read -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYACT
 sleep 1
 if [[ "$KEYACT" != "$ACTKEY" ]]
