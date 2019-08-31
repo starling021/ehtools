@@ -90,11 +90,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 # How to uninstall ehtools
 
-> cd ehtools
-
-> chmod +x uninstall.sh
-
-> ./uninstall.sh
+> ehtools -r
 
     WARNING: Do not do it if you want to reinstall
     ehtools PRO which you bought, do not do it because
