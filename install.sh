@@ -124,7 +124,7 @@ EHTKEY="$( cat /etc/ehtools/root/service/late/ehtkey.txt )"
 sleep 1
 echo -e
 echo -e "Enter your ehtools activation key!"
-echo -e "Or buy it on ehtools site!"
+echo -e "You can buy it on the ehtools site!"
 sleep 3
 echo -e "["$YS"inf"$CE"] "$YS"Activated! Your key is "$CE"["$YS""$EHTKEY""$CE"]"
 read -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYEHT
