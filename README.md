@@ -44,13 +44,7 @@
     powerful and simple tool can be used for everything from installing new add-ons to grabbing 
     a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and utilize.
 
-# About ehtools PRO
-
-    INFO: Ehtools Framework PRO is a full version 
-    of Ehtools Framework, you can test it with 
-    Ehtools LITE for free or buy Ehtools Framework PRO.
-
-# How to install ehtools PRO
+# How to install ehtools
 
 > cd ehtools
 
@@ -74,8 +68,8 @@
     If you bought Ehtools Framework PRO, select PRO!
     (version)> 
     
+If you select Ehtools Framework PRO, you will need to activate it with your Ehtools Activation Key that you need to bought on ehtools website. If you have Ehtools Activation Key, read following instructions (**How to actiovate ehtools PRO**).
     
-
 # How to activate ehtools PRO
 
 This key you can buy on our ehtools website for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
@@ -94,42 +88,17 @@ Also, we do not recommend to change the source code of ehtools because it is ver
     WARNING: We do not recommend to change ehtools source code
     because you can disrupt framework!
 
-# How to uninstall ehtools PRO
+# How to uninstall ehtools
 
-> ehtools -r
+> cd ehtools
+
+> chmod +x uninstall.sh
+
+> ./uninstall.sh
 
     WARNING: Do not do it if you want to reinstall
     ehtools PRO which you bought, do not do it because
     you will need to buy it one more time!
-    
-# About ehtools LITE
-
-    INFO: Ehtools Framework LITE is a LITE version 
-    of Ehtools Framework, with it you can try 
-    Ehtools Framework for free and rate it.
-
-# How to install ehtools LITE
-
-    INFO: If you bought Ehtools Framework PRO,
-    and after this you trying to install Ehtools 
-    Framework LITE, you should know that 
-    Ehtools Framework LITE and Ehtools 
-    Framework PRO is incompatible!
-
-> cd ehtoolslite
-
-> chmod +x install.sh
-
-> ./install.sh
-
-# How to uninstall ehtools LITE
-
-> cd ehtoolslite
-
-> ./uninstall.sh
-
-    INFO: Install it to rate Ehtools Framework,
-    and if you like it you can buy Ehtools Framework PRO.
 
 # Attacking frameworks
 
