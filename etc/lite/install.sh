@@ -117,7 +117,7 @@ chmod +x /root/ehtools/bin/modules
 clear
 mkdir /bin/ehtools
 cd /root/ehtools
-cp /root/ehtools/bin/eht /bin/ehtools
+cp /root/ehtools/bin/ehtools /bin/ehtools
 chmod +x /bin/ehtools/ehtools
 cp /root/ehtools/bin/euh /bin
 chmod +x /bin/euh
