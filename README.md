@@ -68,11 +68,11 @@
     If you bought Ehtools Framework PRO, select PRO!
     (version)> 
     
-If you select Ehtools Framework PRO, you will need to activate it with your Ehtools Activation Key that you need to bought on ehtools website. If you have Ehtools Activation Key, read the following instructions.
+If you select Ehtools Framework PRO, you will need to activate it with your Ehtools Activation Key that you need to bought on the ehtools site. If you have Ehtools Activation Key, read the following instructions.
     
 # How to activate ehtools PRO
 
-This key you can buy on our ehtools website for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
+This key you can buy on the ehtools site for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
 
     WARNING: The key works only one week then it changes!
     You need to have time to enter it before it is updated!
@@ -80,7 +80,7 @@ This key you can buy on our ehtools website for one dollar! This key is used to 
 > ./install.sh
 
     Enter your ehtools activation key!
-    Or buy it on ehtools site!
+    You can buy it on ehtools site!
     (activation_key)> 
     
 Also, we do not recommend to change the source code of ehtools because it is very complex and you can mess up something and disrupt the framework!
