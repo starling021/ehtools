@@ -27,7 +27,8 @@
 #    Twitter   : @ehtools
 #
 
-sleep 1
+clear
+sleep 3
 printf '\033]2;select ehtools\a'
 echo -e "What version of Ehtools Framework you want to use?(\e[1;33mpro\e[0m/\e[1;33mlite\e[0m):"
 echo -e "If you did not buy Ehtools Framework PRO and want to try it, use \e[1;33mLITE\e[0m!"
