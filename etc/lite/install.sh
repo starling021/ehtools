@@ -70,66 +70,14 @@ cd /root/ehtools
 fi
 fi
 
-if [[ -d /root/ehtools ]]
-then
-{
-cd /root/ehtools
-chmod +x uninstall.sh
-cd lib
-chmod +x libunlogin
-./libunlogin
-chmod +x libunchattr
-./libunchattr
-chmod +x libunconf
-./libunconf
-rm /etc/ehtools/login
-rm /etc/ehtools/password
-touch /etc/ehtools/login
-touch /etc/ehtools/password
-cd /root/ehtools
 
-	      cd /root/ehtools/lib
-	      chmod +x libunchattr
-	      ./libunchattr
-	      cd /root/ehtools/lib
-	      chmod +x libunconf
-	      ./libunconf
-	      chattr -i /tmp/config
-              chattr -i /tmp/config/config.txt
-              chattr -i /tmp/config/configure.txt
-	      chattr -i /etc/ehtools/root/service
-              chattr -i /etc/ehtools/root/service/late
-              chattr -i /etc/ehtools/root/service/ehtkey.txt
-              chattr -i /etc/ehtools/root/service/late/ehtkey.txt
-	      rm -r /tmp/config
-	      rm -r /root/ehtools
-	      rm -r /bin/ehtools
-	      rm -r /etc/ehtools
-	      rm -r /root/handshakes
-	      rm -r /root/wordlists
-	      rm /bin/eht1
-	      rm /bin/eht2
-	      rm /bin/eht3
-	      rm /bin/eht4
-	      rm /bin/eht21
-	      rm /bin/eht31
-	      rm /bin/eht41
-	      rm /bin/eht42
-	      rm /bin/eht43
-	      rm /bin/epasswd
-	      rm /bin/modules
-	      rm /bin/euh
-	      rm /bin/uiecache
-	      
-} &> /dev/null
-fi
 
 clear
 printf '\033]2;ehtools INSTALLER\a'
 echo -e
 echo -e "███████╗██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ███████╗ \e[1;33mv3.0.0\e[0m"
 echo -e "██╔════╝██║  ██║╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝"
-echo -e "█████╗  ███████║   ██║   ██║LI ██║██║TE ██║██║     ███████╗"
+echo -e "█████╗  ███████║   ██║   ██║   ██║██║   ██║██║     ███████╗"
 echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
 echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
 echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
