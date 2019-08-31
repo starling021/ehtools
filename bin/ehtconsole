@@ -9156,7 +9156,7 @@ function settings_menu
 		echo -e ""$YS" 6"$CE") MAC to change to, when starting monitor      $STARTMAC"	
 		echo -e ""$YS" 7"$CE") Interface for arp-scan (network scanner)     $ARPIN"
 		echo -e ""$YS" 8"$CE") Interface for iftop    (show bandwidth)      $iftopint"
-		echo -e ""$YS" 9"$CE") Open EPATH firmware commander"
+		echo -e ""$YS" 9"$CE") Open EPATH firmware commander shell"
                 echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS" 0"$CE") Exit"
 		read -p $'(\e[4;93msettings\e[0m)> ' SET
@@ -9177,7 +9177,15 @@ function settings_menu
 		        exit
 		elif [[ "$SET" = 9 ]]
                 then
-                         epath
+		if [[ -d /etc/epath ]]
+		then
+                      chmod +x /etc/epath/epath_commander.sh
+		      /etc/epath/epath_commander.sh
+		      else
+		      cp -r /root/ehtools/etc/epath /etc
+		      chmod +x /etc/epath/epath_commander.sh
+		      /etc/epath/epath_commander.sh
+	        fi
 			 
 		elif [[ "$SET" = 8 ]]
 		then
