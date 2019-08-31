@@ -60,6 +60,20 @@
 
 ![Ehtools Installer](https://user-images.githubusercontent.com/43011806/63712584-a4395f00-c846-11e9-9aee-988c3a49e127.png)
 
+# Selecting version of framework
+
+    INFO: After executing install.sh it will be ask you 
+    to select version of Ehtools Framework - PRO os LITE. 
+    Select LITE if you did not buy Ehtools Framework PRO. 
+    If you bought Ehtools Framework PRO, select PRO.
+    
+> ./install.sh
+
+    What version of Ehtools Framework do you want to use?(pro/lite)
+    (version)> 
+    
+    
+
 # How to activate ehtools PRO
 
 This key you can buy on our ehtools website for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
