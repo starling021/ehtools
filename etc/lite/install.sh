@@ -104,7 +104,7 @@ chmod +x /root/ehtools/eht/eht2
 chmod +x /root/ehtools/eht/eht3
 chmod +x /root/ehtools/eht/eht21
 chmod +x /root/ehtools/eht/eht31
-chmod +x /root/ehtools/bin/eht
+chmod +x /root/ehtools/bin/ehtools
 chmod +x /root/ehtools/eht/eht4
 chmod +x /root/ehtools/eht/eht41
 chmod +x /root/ehtools/eht/eht42
@@ -118,7 +118,7 @@ clear
 mkdir /bin/ehtools
 cd /root/ehtools
 cp /root/ehtools/bin/eht /bin/ehtools
-chmod +x /bin/ehtools/eht
+chmod +x /bin/ehtools/ehtools
 cp /root/ehtools/bin/euh /bin
 chmod +x /bin/euh
 cp /root/ehtools/bin/epasswd /bin
