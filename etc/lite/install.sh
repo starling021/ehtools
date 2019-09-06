@@ -357,11 +357,10 @@ fi
 sleep 3
 clear
 printf '\033]2;ehtools config key\a'
-echo -e "Create your indenty key for "$YS"/etc/ehtools/config"$CE""
-echo -e "=> "$YS"use key such as "$CE"["$YS"1001"$CE"]"
-echo -e "=> "$YS"you must not say this key someone such as "$CE"["$YS"your friend"$CE"]"
-echo -e "This indenty key will protect ehtools boot!"
-read -p $'(\e[4;93mkey\e[0m\en)> ' DADI
+echo -e "Create your ehtools config key for "$YS"/etc/ehtools/config"$CE""
+echo -e "The ehtools config key is intended to protect ehtools boot!"
+echo -e "It is recommended to create a strong ehtools config key!"
+read -p $'(\e[4;93mconfig_key\e[0m\en)> ' DADI
 echo $DADI >> /root/ehtools/etc/config
 
 clear
