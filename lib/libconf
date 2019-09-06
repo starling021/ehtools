@@ -104,5 +104,4 @@ fi
 {
 chattr +i /etc/ehtools/config
 chattr +i /etc/ehtools
-chattr +i /etc/ehtools/.configuring
 } &> /dev/null
