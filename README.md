@@ -393,14 +393,6 @@ Server support for ehtools PRO is very important, as all error reports are sent 
     for ehtools, to help ehtools access to server!
     
 If in consequence of bad Internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
-
-> If there is the bad internet connection, ehtools will say you this:
-
-    [*] There is no connection!
-    
-> If you did not buy ehtools, ehtools will say you this:
-
-    [*] Failed to open session for ehtools!
     
 # How to protect ehtools
 
