@@ -43,7 +43,8 @@ sleep 1
 exit
 fi
 
-cd
+cd /root
+git clone https://github.com/LeonardoNve/dns2proxy
 cd dns2proxy
 python /root/dns2proxy/dns2proxy.py
 read
