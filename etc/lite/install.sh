@@ -199,9 +199,6 @@ fi
 done
 clear
 printf '\033]2;ehtools INSTALLER\a'
-{
-echo DO_NOT_DELETE_THIS_CONFIG_FILE >> /etc/ehtools/.configuring
-} &> /dev/null
 echo -e "Are you want to install modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m): "
 echo -e "If you do not install the modules now, then most of the functions will not work!"
 echo -e "So without thinking install them now!"
