@@ -12,6 +12,7 @@ then
 echo -e """
 ECONF  ->  Reconfigure EPATH path.
 RCONF  ->  Reset default EPATH config.
+ETREE  ->  Print EPATH directory tree.
 EHELP  ->  Print EPATH commander commands.
 EEXIT  ->  Exit from the EPATH commander.
 """
@@ -25,6 +26,10 @@ elif [[ $CONF = "RCONF" ]]
 then
 EPATH="/root/ehtools"
 export EPATH
+
+elif [[ $CONF = "ETREE" ]]
+then
+ls -a /root/ehtools && ls -a /root/ehtools/bin && ls -a /root/ehtools/eht && ls -a /root/ehtools/etc && ls -a /root/ehtools/etc/epath && ls -a /root/ehtools/etc/root && ls -a /root/ehtools/lib && ls -a /root/ehtools/ls
 
 elif [[ $CONF = "EEXIT" ]]
 then
