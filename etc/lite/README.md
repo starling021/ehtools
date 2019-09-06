@@ -405,7 +405,7 @@ If in consequence of bad Internet connection ehtools will not be able to communi
 > Do it with install.sh:
    
     COUNCIL: Create login and password from install.sh 
-    (defaults: login: ehtools password: sloothe)
+    (example: login: ehtools password: sloothe)
 
 > Do it when you are going to exit from ehtools:
     
