@@ -28,8 +28,7 @@
 #    Email     : entynetproject@gmail.com
 #
 
-if [[ -f /etc/ehtools/.configuring ]]
-then
+
 
 CE="\e[0m"
 RS="\e[1;31m"
@@ -103,6 +102,9 @@ sleep 1
 exit
 fi
 fi
+
+if [[ -f /etc/ehtools/.configuring ]]
+then
 
 {
 chattr +i /bin/ehtools/ehtools
