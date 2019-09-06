@@ -86,8 +86,7 @@ then
 
 sleep 1
 echo -e "["$RS"*"$CE"] "$RS"Failed to open session for libunconf!"$CE""
-sleep 1
-echo -e "("$YS"it's may be caused by the fact that you have not bought ehtools or by bad internet connection!"$CE")"
+
 sleep 1
 exit
 
