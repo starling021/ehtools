@@ -347,9 +347,9 @@ Modules v1.9 - the utility that adds permissions or the ability to control the e
 
 > # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
-Ehtools password changer (epasswd) - the utility that help you to change your ehtools password or ehtools root password!
+Ehtools password changer (epasswd) - the utility that help you to change your ehtools login and password or ehtools root password!
 
-    INFO: epasswd - tool (ehtools utility) to change ehtools and ehtools root password!
+    INFO: epasswd - tool (ehtools utility) to change ehtools login and password or ehtools root password!
 
 > epasswd
 
@@ -395,6 +395,8 @@ Server support for ehtools PRO is very important, as all error reports are sent 
 If in consequence of bad Internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
     
 # How to protect ehtools
+
+![Ehtools Auth](https://user-images.githubusercontent.com/54115104/64487106-d5e6f880-d23e-11e9-8b37-217948afaedd.png)
 
 > Do it with install.sh:
    
