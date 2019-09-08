@@ -83,9 +83,9 @@ echo -e "password  /\ \___\ "
 echo -e "changer   \ \/ / / "
 echo -e "v1.0       \/_/_/  By Ivan Nikolsky "
 sleep 3
-echo -e "Welcome to ehtools password changer"
+echo -e "Welcome to ehtools password changer!"
 sleep 1
-echo -e "I created this tool to help you change ehtools password!"
+echo -e "Here you can change ehtools login and password!"
 sleep 1
 echo -e "Press \e[1;33many key\e[0m to change password"
 read -n 1
@@ -115,7 +115,7 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
-echo -e "You want to login as administrator"
+echo -e "You want to login as administrator!"
 echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
 passroot="$( cat /etc/ehtools/root/password )"
@@ -140,8 +140,7 @@ chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
 } &> /dev/null
 printf '\033]2;ehtools password changer\a'
-echo -e "Set ehtools root password"
-echo -e "Let's change ehtools root password!"
+echo -e "Set ehtools root password!"
 echo -e "Ehtools Password Protection:"
 sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
@@ -172,7 +171,7 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
-echo -e "You want to login as administrator"
+echo -e "You want to login as administrator!"
 echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
 passroot="$( cat /etc/ehtools/root/password )"
@@ -197,8 +196,7 @@ chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
 } &> /dev/null
 printf '\033]2;ehtools password changer\a'
-echo -e "Set ehtools root password"
-echo -e "Let's change ehtools root password!"
+echo -e "Set ehtools root password!"
 echo -e "Ehtools Password Protection:"
 sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
@@ -233,8 +231,8 @@ fi
 
 clear
 printf '\033]2;ehtools password changer\a'
-echo -e "Do you want to "$ESENT" ehtools password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
-echo -e "So, select 'yes' but remember it!"
+echo -e "Do you want to "$ESENT" ehtools login and password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "So, select 'yes' but do not forget it!"
 read -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
 
 if [[ "$UORI" = "no" ]]
@@ -242,7 +240,7 @@ then
 	clear
 	echo -e "OK..."
 	sleep 3
-	echo -e "To "$ESENT" ehtools password run 'epasswd'"
+	echo -e "To "$ESENT" ehtools login and password run 'epasswd'"
 	sleep 3
 	clear
 	exit
@@ -258,8 +256,7 @@ rm /etc/ehtools/password
 } &> /dev/null
 sleep 3
 clear
-echo -e "Set ehtools password"
-echo -e "Let's "$ESENT" ehtools password!"
+echo -e "Set ehtools login and password!"
 echo -e "Ehtools Password Protection:"
 
 sleep 0.5
