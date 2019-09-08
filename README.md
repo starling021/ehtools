@@ -410,6 +410,8 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     
     WARNING: Do not just close ehtools window!
 
+![Configuring](https://user-images.githubusercontent.com/54115104/64486976-1c3b5800-d23d-11e9-9fc6-240b1ccfc569.png)
+
 # Terms of use
 
     This tool is only for educational purposes only.
