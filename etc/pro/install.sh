@@ -365,7 +365,7 @@ if [[ "$WQE" = "yes" ]]
 then
 clear
 printf '\033]2;ehtools password changer\a'
-echo -e "Set ehtools password"
+echo -e "Set ehtools login and password!"
 echo -e "Let's create ehtools password!"
 echo -e "Ehtools Password Protection:"
 
