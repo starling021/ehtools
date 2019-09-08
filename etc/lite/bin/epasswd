@@ -139,10 +139,10 @@ chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
 } &> /dev/null
-printf '\033]2;ehtools root password changer\a'
+printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools root password"
 echo -e "Let's change ehtools root password!"
-echo -e "Ehtools root protection:"
+echo -e "Ehtools Password Protection:"
 sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
 touch password
@@ -196,10 +196,10 @@ chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
 } &> /dev/null
-printf '\033]2;ehtools root password changer\a'
+printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools root password"
 echo -e "Let's change ehtools root password!"
-echo -e "Ehtools root protection:"
+echo -e "Ehtools Password Protection:"
 sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
 touch password
@@ -260,7 +260,7 @@ sleep 3
 clear
 echo -e "Set ehtools password"
 echo -e "Let's "$ESENT" ehtools password!"
-echo -e "Ehtools protection:"
+echo -e "Ehtools Password Protection:"
 
 sleep 0.5
 read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
