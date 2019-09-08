@@ -85,9 +85,9 @@ echo -e "v1.0       \/_/_/  By Ivan Nikolsky "
 sleep 3
 echo -e "Welcome to ehtools update helper"
 sleep 1
-echo -e "Unfortunately, ehtools cannot be updated on its own :("
+echo -e "This is an instrument to update ehtools"
 sleep 1
-echo -e "I created this tool to help ehtools update!"
+echo -e "You can safely update ehtools"
 sleep 1
 echo -e "Press \e[1;33many key\e[0m to install update"
 read -n 1
