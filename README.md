@@ -396,8 +396,6 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     
 # How to protect ehtools
 
-![Ehtools Auth](https://user-images.githubusercontent.com/43011806/59976788-d96ccb00-95d1-11e9-8441-021dfe299243.png)
-
 > Do it with install.sh:
    
     COUNCIL: Create login and password from install.sh 
@@ -411,8 +409,6 @@ If in consequence of bad Internet connection ehtools will not be able to communi
 > Do not do it when you are going to exit from ehtools:
     
     WARNING: Do not just close ehtools window!
-
-![Ehtools Password Protection Creator](https://user-images.githubusercontent.com/43011806/55681006-fcb8a000-5929-11e9-822b-40bb80f6b60e.png)
 
 # Terms of use
 
