@@ -276,7 +276,7 @@ then
 	clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To install Modules run 'modules -i'..."
+	echo -e "To install modules run 'modules -i'..."
 	sleep 3
 	clear
         
