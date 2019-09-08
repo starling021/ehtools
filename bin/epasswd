@@ -139,9 +139,9 @@ echo -e "password  /\ \___\ "
 echo -e "changer   \ \/ / / "
 echo -e "v1.0       \/_/_/  By Ivan Nikolsky "
 sleep 3
-echo -e "Welcome to ehtools password changer!"
+echo -e "Welcome to ehtools password changer"
 sleep 1
-echo -e "Here you can change ehtools login and password!"
+echo -e "Here you can change ehtools login and password"
 sleep 1
 echo -e "Press \e[1;33many key\e[0m to launch epasswd"
 read -n 1
