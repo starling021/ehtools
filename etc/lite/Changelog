@@ -3,7 +3,11 @@
 +=================================================+
 
 3.0.0
+Removed $EPATH firmware 
 Updated Modules v1.9
+Updated ehtools (now you can stable login to ehtools)
+Updated epasswd (now you can change login/password)
+Removed $EPATH firmware commander shell
 Added snapshots (more information in README.md/Utilities)
 On this version you can turn off ehtools password protection!
 Updated ehtools/install.sh and epasswd utility!
@@ -15,7 +19,7 @@ Added some new features to main menu!
 Updated libchattr and libunchattr
 Updated libconf and libunconf
 Updated ehtools PRO UX/UI Impruvements
-Updated ehtools Lite UX/UI Impruvements
+Updated ehtools LITE UX/UI Impruvements
 
 2.1.9
 Fixed known issues and bugs!
