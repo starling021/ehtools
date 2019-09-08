@@ -90,11 +90,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 # How to uninstall ehtools
 
-> cd ehtools
-
-> chmod +x uninstall.sh
-
-> ./uninstall.sh
+> ehtools -r
 
     WARNING: Do not do it if you want to reinstall
     ehtools PRO which you bought, do not do it because
@@ -351,9 +347,9 @@ Modules v1.9 - the utility that adds permissions or the ability to control the e
 
 > # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
-Ehtools password changer (epasswd) - the utility that help you to change your ehtools password or ehtools root password!
+Ehtools password changer (epasswd) - the utility that help you to change your ehtools login and password or ehtools root password!
 
-    INFO: epasswd - tool (ehtools utility) to change ehtools and ehtools root password!
+    INFO: epasswd - tool (ehtools utility) to change ehtools login and password or ehtools root password!
 
 > epasswd
 
@@ -400,6 +396,8 @@ If in consequence of bad Internet connection ehtools will not be able to communi
     
 # How to protect ehtools
 
+![Ehtools Auth](https://user-images.githubusercontent.com/54115104/64487106-d5e6f880-d23e-11e9-8b37-217948afaedd.png)
+
 > Do it with install.sh:
    
     COUNCIL: Create login and password from install.sh 
@@ -413,6 +411,8 @@ If in consequence of bad Internet connection ehtools will not be able to communi
 > Do not do it when you are going to exit from ehtools:
     
     WARNING: Do not just close ehtools window!
+
+![Configuring...](https://user-images.githubusercontent.com/54115104/64487077-7ee12380-d23e-11e9-94d1-fc8c4eed30d3.png)
 
 # Terms of use
 
