@@ -451,7 +451,7 @@ else
 fi
 echo -e ""$YS" 3"$CE") "$ETH""
 echo -e ""$YS" b"$CE") Main menu"
-echo -e ""$YS" 0"$CE") EXIT"
+echo -e ""$YS" 0"$CE") Exit"
 read -p $'(\e[4;31mmenu\e[0m)> ' MYINT
 if [[ "$MYINT" = "2" ]]
 then
@@ -1407,7 +1407,7 @@ echo -e ""$YS" 7"$CE") Errors when creating a payload with Winpayloads"
 echo -e ""$YS" 8"$CE") Complete fix for apache2 service failed to start"
 echo -e ""$YS" 9"$CE") Cannot capture handshake-pyrit verification always bad"
 echo -e ""$YS" b"$CE") Go back"
-echo -e ""$YS" 0"$CE") EXIT"
+echo -e ""$YS" 0"$CE") Exit"
 read -p $'(\e[4;31merrors\e[0m)> ' ERRS
 clear
 if [[ "$ERRS" = "1" ]]
@@ -1534,7 +1534,7 @@ echo -e ""$YS" 1"$CE") Tools"
 echo -e ""$YS" 2"$CE") See hidden shortcuts"
 echo -e ""$YS" b"$CE") Go back"
 #~ echo -e ""$YS"00"$CE") Main menu"
-echo -e ""$YS" 0"$CE") EXIT"
+echo -e ""$YS" 0"$CE") Exit"
 read -p $'(\e[4;31mksconsole\e[0m)> ' KS
 clear
 if [[ "$KS" = "1" ]]
@@ -1581,7 +1581,7 @@ then
 		nn=$(( nn+1 ))
 		done
 		echo -e ""$YS" b"$CE") Go back"
-		#echo -e ""$YS" 0"$CE") EXIT"
+		#echo -e ""$YS" 0"$CE") Exit"
 		#nn=""
 		read -p $'(\e[4;31mshortcuts\e[0m)> ' nn
 		clear
@@ -1650,7 +1650,7 @@ printf '\033]2;MITM\a'
 echo -e ""$YS" 1"$CE") Password sniff-sslstrip"
 echo -e ""$YS" 2"$CE") SET + mitm + dnsspoofing"
 echo -e ""$YS" b"$CE") Go back"
-echo -e ""$YS" 0"$CE") EXIT"
+echo -e ""$YS" 0"$CE") Exit"
 read -p $'(\e[5;32mmitm\e[0m)> ' MITMATT
 clear
 if [[ "$MITMATT" = "1" ]]
@@ -1664,7 +1664,7 @@ then
 	echo -e ""$YS" 3"$CE") Scan and select target IP         "$YS"33"$CE") I have scaned"
 	echo -e ""$YS" 4"$CE") Open the sslstrip log"            # "$YS"44"$CE") Filter credentials"
 	echo -e ""$YS" b"$CE") Go back"
-	echo -e ""$YS" 0"$CE") EXIT"
+	echo -e ""$YS" 0"$CE") Exit"
 	read -p $'(\e[4;31mmitm\e[0m) => (\e[5;33mCH\e[0m)> ' MITMCH
 	if [[ "$MITMCH" = "1" ]]
 	then
@@ -1814,7 +1814,7 @@ then
 	echo -e ""$YS" 4"$CE") Start SEToolkit"
 	echo -e ""$YS" 5"$CE") Start DNSspoofing"
 	echo -e ""$YS" b"$CE") Go back"
-	echo -e ""$YS" 0"$CE") EXIT"
+	echo -e ""$YS" 0"$CE") Exit"
 	read -p $'(\e[4;31mmitm\e[0m) => (\e[5;32mSpoof\e[0m)> ' MITMSET
 	clear
 	if [[ "$MITMSET" = "1" ]]
@@ -3460,7 +3460,7 @@ function wifi_tools
 	fi
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
-	#echo -e ""$YS" 0"$CE") EXIT"
+	#echo -e ""$YS" 0"$CE") Exit"
 	read -p $'(\e[4;31mWiFi\e[0m)> ' APPP
 	clear
 	if [[ "$APPP" = "1" ]]
@@ -4033,7 +4033,7 @@ function wifi_tools
 			echo -e ""$YS" 6"$CE") entify"
 			echo -e ""$YS" b"$CE") Go back"
 			echo -e ""$YS"00"$CE") Main menu"
-		#	echo -e ""$YS" 0"$CE") EXIT"
+		#	echo -e ""$YS" 0"$CE") Exit"
 			read -p $'(\e[5;34mOSRFCONSOLE\e[0m)> ' OSFR
 			clear
 				if [[ "$OSFR" = "1" ]]
@@ -4317,7 +4317,7 @@ function remote_access
 	fi
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
-	#echo -e ""$YS" 0"$CE") EXIT"
+	#echo -e ""$YS" 0"$CE") Exit"
 	read -p $'(\e[4;33mremote-access\e[0m)> ' KEYLOG
 	clear
 	if [[ "$KEYLOG" = "1" ]]
@@ -5252,7 +5252,7 @@ function remote_access
 			echo -e ""$YS" 2"$CE") Start listener"
 			echo -e ""$YS" b"$CE") Go back"
 			echo -e ""$YS"00"$CE") Main menu"
-			echo -e ""$YS" 0"$CE") EXIT"
+			echo -e ""$YS" 0"$CE") Exit"
 			read -p $'(\e[4;93mpupy\e[0m)> ' PUPY
 			if [[ "$PUPY" = "1" ]]
 			then
@@ -5587,7 +5587,7 @@ function information_gathering
 					echo -e ""$YS" 6"$CE") entify"
 					echo -e ""$YS" b"$CE") Go back"
 					echo -e ""$YS"00"$CE") Main menu"
-				#	echo -e ""$YS" 0"$CE") EXIT"
+				#	echo -e ""$YS" 0"$CE") Exit"
 					read -p $'(\e[5;34mOSRFCONSOLE\e[0m)> ' OSFR
 					clear
 					if [[ "$OSFR" = "1" ]]
@@ -6088,7 +6088,7 @@ do
 		echo -e ""$RS" 7"$CE") "$RS"Patator"$CE"          Bruteforcer"
 	fi
 	echo -e ""$YS" b"$CE") Go back"
-	echo -e ""$YS" 0"$CE") EXIT"
+	echo -e ""$YS" 0"$CE") Exit"
 	read -p $'(\e[4;33mothertools\e[0m)> ' OTHERT
 	clear
 	if [[ "$OTHERT" = 1 ]]
@@ -6259,7 +6259,7 @@ function metasploit_menu
 	echo -e ""$YS" 6"$CE") Armitage"
 	echo -e ""$YS" 7"$CE") Findsploit"
 	echo -e ""$YS" b"$CE") Go back"
-	echo -e ""$YS" 0"$CE") EXIT"
+	echo -e ""$YS" 0"$CE") Exit"
 	read -p $'(\e[4;35mmetasploit\e[0m)> ' METASP
 	clear
 	if [[ "$METASP" = "1" ]]
@@ -6667,7 +6667,7 @@ function tools_menu
 	echo -e ""$YS" i"$CE") Info"
 	echo -e ""$YS" b"$CE") Go back"
 	#~ echo -e ""$YS"00"$CE") Main menu"
-	echo -e ""$YS" 0"$CE") EXIT"
+	echo -e ""$YS" 0"$CE") Exit"
 	read -p $'(\e[4;32mtools\e[0m)> ' CATEG
 	clear
 		if [[ "$CATEG" = "1" ]]
@@ -6943,7 +6943,7 @@ do
 	echo -e ""$YS" 3"$CE") Clear your SMTP username and pass"
 	echo -e ""$YS" 4"$CE") Fix email failed"
 	echo -e ""$YS" b"$CE") Go back"
-	echo -e ""$YS" 0"$CE") EXIT"
+	echo -e ""$YS" 0"$CE") Exit"
 	read -p $'(\e[4;33mspoof\e[0m)> ' SMTP
 	if [[ "$SMTP" = "1" ]]
 	then
