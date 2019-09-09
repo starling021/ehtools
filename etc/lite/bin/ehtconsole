@@ -115,7 +115,7 @@ toolarray=(
 "recondog" "redhawk" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
 "websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "entypreter" "invader" "meterpreter_paranoid_mode"
 "dropit_frmw" "wifi_pumpkin" "veil" "leviathan" "fake_image" "avet" "gloom" "arcanus" "msfpc" "morphhta" "lfi" "unibyav" "demiguise" "dkmc" "sechub" "beef" "mitmf"
-"fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "mouse" "zerodoor" "cromos" "yuki-chan" "socialfish" "ECLI" "blazy"
+"fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "mouse" "zerodoor" "cromos" "yuki-chan" "socialfish" "entropy" "blazy"
 "striker" "hyprpulse" "instaburst" "instagram-py" "datasploit" "sitebroker" "enigma"
 )
 #setting frequent stings
@@ -760,7 +760,7 @@ done
 	#~ echo -e " "$YS"1"$CE") Fluxion      "$YS"21"$CE") 4nonimizer    "$YS"41"$CE") Infoga           "$YS"61"$CE") Wifi-Pumpkin"
 	#~ echo -e ""$YS" 2"$CE") Wifite       "$YS"22"$CE") Openvas       "$YS"42"$CE") nWatch           "$YS"62"$CE") Veil-Framework"
 	#~ echo -e ""$YS" 3"$CE") Wifiphisher  "$YS"23"$CE") BeeLogger     "$YS"43"$CE") Eternal scanner  "$YS"63"$CE") Leviathan"
-	#~ echo -e ""$YS" 4"$CE") ECLI         "$YS"24"$CE") Ezsploit      "$YS"44"$CE") Eaphammer        "$YS"64"$CE") FakeImageExploiter"
+	#~ echo -e ""$YS" 4"$CE") Entropy      "$YS"24"$CE") Ezsploit      "$YS"44"$CE") Eaphammer        "$YS"64"$CE") FakeImageExploiter"
 	#~ echo -e ""$YS" 5"$CE") Morpheus     "$YS"25"$CE") Pupy          "$YS"45"$CE") Dagon            "$YS"65"$CE") Avet"
 	#~ echo -e ""$YS" 6"$CE") Osrfconsole  "$YS"26"$CE") Zirikatu      "$YS"46"$CE") Lalin            "$YS"66"$CE") Gloom"
 	#~ echo -e ""$YS" 7"$CE") Hakku        "$YS"27"$CE") WiFi-autopwner"$YS"47"$CE") Knockmail        "$YS"67"$CE") Arcanus"
@@ -792,7 +792,7 @@ done
 		#~ install_wifiphisher
 	#~ elif [[ "$REIN" = "4" ]]
 	#~ then
-		#~ install_ecli
+		#~ install_entropy
 	#~ elif [[ "$REIN" = "5" ]]
 	#~ then
 		#~ install_morpheus
@@ -6666,16 +6666,17 @@ check_if_ks
 			sudo python setup.py install
 		fi
 	}
-	function install_ecli
+	function install_entropy
 	{
-		foldname="ECLI"
-		gitlink="https://github.com/entynetproject/ECLI.git"
+		foldname="entropy"
+		gitlink="https://github.com/entynetproject/entropy.git"
 		install_default
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-		        cd /root/ECLI
-		        chmod +x ECLI.py
+		        cd /root/entropy
+		        chmod +x install.sh
+			./install.sh
                 fi
 	}
 	function install_morpheus
