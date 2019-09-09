@@ -109,7 +109,7 @@ KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 if [[ "$ASESR" != "" ]]
 then 
 
-KEYKE="$( timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/entynetproject/ECLI/master/hello.txt" 2>/dev/null )"
+KEYKE="$( timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
 
 if [[ "$KEYEK" != "$KEYKE" ]]
 then
