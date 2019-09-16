@@ -1,4 +1,4 @@
-# EntynetHackerTools ™ (Ehtools Framework)
+# Entynet Hacker Tools (Ehtools Framework)™
 
                                                 ███████╗██╗  ██╗████████╗ 
                                                 ██╔════╝██║  ██║╚══██╔══╝ 
@@ -6,7 +6,7 @@
                                                 ██╔══╝  ██╔══██║   ██║   
                                                 ███████╗██║  ██║   ██║   
                                                 ╚══════╝╚═╝  ╚═╝   ╚═╝
-                                                The Ehtools Framework 
+                                                 Entynet Hacker Tools
                                                    By Ehtools Team 
                                             entynetproject.simplesite.com
                                                      ehtools.pro
