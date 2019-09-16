@@ -1,4 +1,4 @@
-# Entynet Hacker Tools (Ehtools Framework)™
+# Entynet Hacker Tools (Ehtools Framework) ™
 
                                                 ███████╗██╗  ██╗████████╗ 
                                                 ██╔════╝██║  ██║╚══██╔══╝ 
