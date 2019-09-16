@@ -800,7 +800,7 @@ function listshortcuts
 	then
 		TITLE="ReconDog"
 		NAMECD="cd /root/ReconDog"
-		KSSET="python dog.py"
+		KSSET="python dog"
 	elif [[ "$nn" = "24" ]]
 	then
 		TITLE="RED_HAWK"
@@ -5478,7 +5478,7 @@ function information_gathering
 			if [[ -d /root/ReconDog ]]
 			then
 				cd /root/ReconDog
-				python dog.py
+				python dog
 				cd
 			else
 				echo -e "$TNI"
