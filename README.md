@@ -281,7 +281,7 @@ Run it to open WPS menu:
 
 > # uiecache | <img src="https://img.shields.io/badge/utility-uiecache-lightgray.svg">
 
-Utility: uiecache (uninstall ehtools cache) is an utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
+uiecache (uninstall ehtools cache) is an utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
 
     Usage: uiecache [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
@@ -296,7 +296,7 @@ Utility: uiecache (uninstall ehtools cache) is an utility that can help you to c
 
 > # ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
-Utility: ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
+ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
 
     Usage: ehtmod [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
@@ -324,7 +324,7 @@ Utility: ehtmod (ehtools modules) is an utility that adds permissions or the abi
     
 > # ehtkey | <img src="https://img.shields.io/badge/utility-ehtkey-brown.svg">
 
-Utility: ehtkey (ehtools key) is an utility that allows you to change your ehtools config key (ehtools config/boot key) and rewrite /etc/ehtools/config.
+ehtkey (ehtools key) is an utility that allows you to change your ehtools config key (ehtools config/boot key) and rewrite /etc/ehtools/config.
 
     Usage: ehtkey [OPTION...]"
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
@@ -339,7 +339,7 @@ To change ehtools config key you need to launch ehtkey and change it using follo
 
 > # epasswd | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
-Utility: epasswd (ehtools password changer) is an utility that allows you to change your ehtools login and password or ehtools root password!
+epasswd (ehtools password changer) is an utility that allows you to change your ehtools login and password or ehtools root password!
 
 > epasswd
 
