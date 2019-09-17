@@ -285,7 +285,7 @@ Run it to open WPS menu:
 
 > # Uiecache | <img src="https://img.shields.io/badge/utility-uiecache-lightgray.svg">
 
-Uiecache - (uninstall ehtools cache) the utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
+Uiecache (uninstall ehtools cache) - the utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
 
     Usage: uiecache [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
@@ -298,7 +298,7 @@ Uiecache - (uninstall ehtools cache) the utility that can help you to clean/unin
                         (restart ehtools system)                    
        --help         Give this help list.
 
-> # Ehtools update helper (euh) | <img src="https://img.shields.io/badge/utility-euh-brown.svg">
+> # Ehtools update helper | <img src="https://img.shields.io/badge/utility-euh-brown.svg">
 
     WARNING: Update option now is not working and
     you should use this tool if you want to update ehtools
@@ -317,11 +317,11 @@ if not working:
     INFO: This bug (configuration errors) fixed in v2.1.8!
     You can now use update option from main menu!
 
-> # Modules v1.9 | <img src="https://img.shields.io/badge/utility-modules-blue.svg">
+> # Ehtmod | <img src="https://img.shields.io/badge/utility-modules-blue.svg">
 
-Modules v1.9 - the utility that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
+Ehtmod (ehtools modules) - the utility that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
 
-    Usage: modules [OPTION...]
+    Usage: ehtmod [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
        --install         Install ehtools modules to /bin.
