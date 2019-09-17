@@ -298,25 +298,6 @@ Uiecache (uninstall ehtools cache) is an utility that can help you to clean/unin
                         (restart ehtools system)                    
        --help         Give this help list.
 
-> # Ehtools update helper | <img src="https://img.shields.io/badge/utility-euh-brown.svg">
-
-    WARNING: Update option now is not working and
-    you should use this tool if you want to update ehtools
-    but payload in ehtools update helper named "hard reinstall"
-    and this is not safe for ehtools!
-
-If you have some problems with update use our "ehtools update helper"
-Last time, configuration errors of our program occur and it can not be updated by itself.
-
-> euh
-
-if not working:
-
-> euh --update or euh -u
-
-    INFO: This bug (configuration errors) fixed in v2.1.8!
-    You can now use update option from main menu!
-
 > # Ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
 Ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
@@ -358,7 +339,7 @@ Ehtkey (ehtools key) is an utility that allows you to change your ehtools config
        
 To change ehtools config key you need to launch ehtkey and change it using following usage. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002).
 
-    ehtkey --change 1001 2002
+> ehtkey --change 1001 2002
 
 > # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
