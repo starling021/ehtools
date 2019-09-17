@@ -322,7 +322,7 @@ Ehtmod (ehtools modules) is an utility that adds permissions or the ability to c
     snapshot, you can take it with Modules utility v1.9 but ESR will 
     remove all your old ehtools modules data from /bin/ehtools and /root/ehtools/eht!
     
-> # Ehtkey | <img src="https://img.shields.io/badge/utility-ehtmod-brown.svg">
+> # Ehtkey | <img src="https://img.shields.io/badge/utility-ehtkey-brown.svg">
 
 Ehtkey (ehtools key) is an utility that allows you to change your ehtools config key (ehtools config/boot key) and rewrite /etc/ehtools/config.
 
