@@ -86,7 +86,7 @@ if [[ "$KEYEK" != "$KEYKE" ]]
 then
 
 sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Failed to open session for modules!"$CE""
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtkey!"$CE""
 
 sleep 1
 exit
