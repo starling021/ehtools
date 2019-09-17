@@ -344,6 +344,21 @@ Ehtmod (ehtools modules) is an utility that adds permissions or the ability to c
     /root/ehtools/eht and restoring it from saved ehtools modules 
     snapshot, you can take it with Modules utility v1.9 but ESR will 
     remove all your old ehtools modules data from /bin/ehtools and /root/ehtools/eht!
+    
+> # Ehtkey | <img src="https://img.shields.io/badge/utility-ehtmod-brown.svg">
+
+Ehtkey (ehtools key) is an utility that allows you to change your ehtools config key (ehtools config/boot key) and rewrite /etc/ehtools/config.
+
+    Usage: ehtkey [OPTION...]"
+    Copyright (C) 2019, Entynetproject. All Rights Reserved.
+
+       --change <old_key> <new_key>  Change ehtools config key.
+                                    (rewrite /etc/ehtools/config)
+       --help                        Give this help list.
+       
+To change ehtools config key you need to launch ehtkey and change it using following usage. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002).
+
+    ehtkey --change 1001 2002
 
 > # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
