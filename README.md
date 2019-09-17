@@ -337,11 +337,9 @@ To change ehtools config key you need to launch ehtkey and change it using follo
 
 > ehtkey --change 1001 2002
 
-> # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
+> # Epasswd | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
-Ehtools password changer (epasswd) is an utility that allows you to change your ehtools login and password or ehtools root password!
-
-    INFO: epasswd - tool (ehtools utility) to change ehtools login and password or ehtools root password!
+Epasswd (ehtools password changer) is an utility that allows you to change your ehtools login and password or ehtools root password!
 
 > epasswd
 
