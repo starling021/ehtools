@@ -180,7 +180,7 @@ chmod +x /root/ehtools/ls/l131.sh
 chmod +x /root/ehtools/ls/l132.sh
 chmod +x /root/ehtools/ls/l133.sh
 chmod +x /root/ehtools/uninstall.sh
-chmod +x /root/ehtools/bin/modules
+chmod +x /root/ehtools/bin/ehtmod
 chmod +x /root/ehtools/bin/euh
 clear
 sleep 1
@@ -192,8 +192,8 @@ cp /root/ehtools/bin/euh /bin
 chmod +x /bin/euh
 cp /root/ehtools/bin/epasswd /bin
 chmod +x /bin/epasswd
-cp /root/ehtools/bin/modules /bin
-chmod +x /bin/modules
+cp /root/ehtools/bin/ehtmod /bin
+chmod +x /bin/ehtmod
 cp /root/ehtools/bin/uiecache /bin
 chmod +x /bin/uiecache
 cp /root/ehtools/etc/root/password /etc/ehtools/root
@@ -216,25 +216,7 @@ else
 	echo -e "/root/wordlists directory detected."
 fi
 while true
-do
-clear
-echo -e "Are you \e[1;33md\e[0meleting or \e[1;33mi\e[0mnstalling ehtools?(\e[1;33md\e[0m/\e[1;33mi\e[0m): "
-echo -e "Only use 'i' to install ehtools!"
-read -p $'(\e[4;93minstall\e[0m\en)> ' UORI
-if [[ "$UORI" = "d" ]]
-then 
-	clear
-	echo -e "OK..."
-	sleep 1
-	echo -e "Running uninstall.sh..."
-	sleep 3
-	clear
-	cd /root/ehtools
-	chmod +x uninstall.sh
-	./uninstall.sh
-	
-elif [[ "$UORI" = "i" ]]
-then
+do	
 	clear
 	BASHCHECK=$(cat ~/.bashrc | grep "bin/ehtools")
 	if [[ "$BASHCHECK" != "i" ]]
@@ -262,11 +244,10 @@ then
 	sleep 1
 	clear
 	break
-fi
 done
 clear
 printf '\033]2;ehtools INSTALLER\a'
-echo -e "Are you want to install modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "Are you want to install ehtools modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So without thinking install them now!"
 echo -e "Only use 'yes' for the best way!"
 read -p $'(\e[4;93mmodules\e[0m\en)> ' UORI
@@ -276,7 +257,7 @@ then
 	clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To install Modules run 'modules -i'..."
+	echo -e "To install ehtools modules run 'ehtmod -i'..."
 	sleep 3
 	clear
         
@@ -285,50 +266,10 @@ then
       clear
       echo -e "OK..."
       sleep 1
-      echo -e "Loading Modules..."
-      sleep 0.5
-      echo -e "Uploading Modules..."
-      sleep 0.5
-      echo -e "Configuring Modules..."
-      sleep 0.5
-      echo -e "Starting configuring Modules..."
-      sleep 0.5
-      printf '\033]2;Configuring...\a'
-      
-function ProgressBark {
-
-    let _progress=(${1}*100/${2}*100)/100
-    let _done=(${_progress}*4)/10
-    let _left=40-$_done
-
-    _fill=$(printf "%${_done}s")
-    _empty=$(printf "%${_left}s")
-
-                         
-        
-printf "\rConfiguring (${_progress}%%)"
-
-}
-
-
-_start=1
-
-_end=100
-
-for number in $(seq ${_start} ${_end})
-do
-    sleep 0.2
-    ProgressBark ${number} ${_end}
-done
-
-sleep 5
-echo -e
-      sleep 0.5
       echo -e "Please wait..."
-      sleep 0.5
+      sleep 1
       echo -e "Launching..."
       sleep 1
-      clear
       modules -i
 fi
 
