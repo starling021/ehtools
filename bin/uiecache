@@ -103,21 +103,16 @@ fi
 
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
-echo -e
-echo -e ""$N" INFO: Uiecache is an utility that can" 
-echo -e ""$N" uninstall login and just ehtools cache."$CE""
-echo -e
 echo -e "Usage: uiecache [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   --all          Uninstall all ehtools cache."
-echo -e "                    (standart old uiecache)"
-echo -e "   --path <path>  Uninstall ehtools cache from your path."
+echo -e "                    (uninstall all cache)"
+echo -e "   --path <path>  Uninstall ehtools cache from path."
 echo -e "                    (uninstall cache from path)"
-echo -e "   --restart      Restart all ehtools processes and services."
-echo -e "                    (restart ehtools system)"                     
+echo -e "   --restart      Uninstall ehtools cache and restart."
+echo -e "                    (uninstall cache and restart)"                     
 echo -e "   --help         Give this help list."
-echo -e
 exit
 
 elif [[ $1 = "--path" || $1 = "-p" ]]
@@ -250,19 +245,14 @@ echo -e
 exit
 fi
 
-echo -e
-echo -e ""$N" INFO: Uiecache is an utility that can" 
-echo -e ""$N" uninstall login and just ehtools cache."$CE""
-echo -e
 echo -e "Usage: uiecache [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   --all          Uninstall all ehtools cache."
-echo -e "                    (standart old uiecache)"
-echo -e "   --path <path>  Uninstall ehtools cache from your path."
+echo -e "                    (uninstall all cache)"
+echo -e "   --path <path>  Uninstall ehtools cache from path."
 echo -e "                    (uninstall cache from path)"
-echo -e "   --restart      Restart all ehtools processes and services."
-echo -e "                    (restart ehtools system)"                     
+echo -e "   --restart      Uninstall ehtools cache and restart."
+echo -e "                    (uninstall cache and restart)"                     
 echo -e "   --help         Give this help list."
-echo -e
 exit
