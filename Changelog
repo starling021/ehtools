@@ -440,7 +440,8 @@ Fixed install/reinstall menu bug!
 
 3.0.0
 Removed $EPATH firmware 
-Updated Modules v1.9
+Updated ehtmod (ehtools modules).
+Updated Modules v1.9 and renamed to ehtmod.
 Updated ehtools (now you can stable login to ehtools)
 Updated epasswd (now you can change login/password)
 Removed $EPATH firmware commander shell
