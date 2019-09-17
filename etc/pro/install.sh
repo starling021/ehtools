@@ -251,14 +251,14 @@ printf '\033]2;ehtools INSTALLER\a'
 echo -e "Are you want to install ehtools modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So without thinking install them now!"
 echo -e "Only use 'yes' for the best way!"
-read -p $'(\e[4;93mmodules\e[0m\en)> ' UORI
+read -p $'(\e[4;93minstall\e[0m\en)> ' UORI
 
 if [[ "$UORI" = "no" ]]
 then 
 	clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To install ehtools modules, run 'ehtmod -i'..."
+	echo -e "To install ehtools modules, run '"$YS"ehtmod -i"$CE"'..."
 	sleep 3
 	clear
         
@@ -295,7 +295,7 @@ then
 clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To protect ehtools, run 'epasswd'..."
+	echo -e "To protect ehtools, run '"$YS"epasswd"$CE"'..."
 	touch /etc/ehtools/login
         touch /etc/ehtools/password
         sleep 3
