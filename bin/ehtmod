@@ -104,10 +104,10 @@ fi
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
 echo -e
-echo -e ""$N" INFO: Modules v1.9 is a" 
-echo -e ""$N" sandbox for ehtools modules."$CE""
+echo -e ""$N" INFO: Ehtmod (ehtools modules) is" 
+echo -e ""$N" a sandbox for ehtools modules."$CE""
 echo -e
-echo -e "Usage: modules [OPTION...]"
+echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   --install         Install ehtools modules to /bin."
@@ -343,12 +343,12 @@ elif [[ $1 = "--install" || $1 = "-i" ]]
 then
 clear
 sleep 3
-printf '\033]2;Modules v1.9\a'
+printf '\033]2;ehtools modules\a'
 echo -e "          ____   "
-echo -e "Modules  /\___\  "
-echo -e "v1.9    /\ \___\ "
-echo -e "for     \ \/ / / "
-echo -e "ehtools  \/_/_/  By Ivan Nikolsky "
+echo -e "ehtools  /\___\  "
+echo -e "        /\ \___\ "
+echo -e "        \ \/ / / "
+echo -e "         \/_/_/  By Ivan Nikolsky "
 sleep 3
 echo -e "Welcome to Modules v1.9 for ehtools"
 sleep 1
