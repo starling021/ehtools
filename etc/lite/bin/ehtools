@@ -81,7 +81,7 @@ sleep 1
 exit
 fi
 
-if [[ $1 = "-r" || $1 = "--remove" ]]
+if [[ $1 = "-u" || $1 = "--uninstall" ]]
 then
 sleep 1
 printf '\033]2;Launching uninstall.sh...\a'
@@ -91,16 +91,6 @@ cd /root/ehtools
 chmod +x uninstall.sh
 ./uninstall.sh
 exit
-
-elif [[ $1 = "-u" || $1 = "--update" ]]
-then
-sleep 1
-printf '\033]2;Launching euh...\a'
-echo -e "["$GNS"~"$CE"] "$GNS"Launching ehtools update helper..."$CE""
-sleep 1
-euh
-exit
-
 
 elif [[ $1 = "-h" || $1 = "--handshake" ]]
 then
@@ -126,8 +116,7 @@ then
 sleep 1
 echo -e
 echo -e ""$YS"Options: "$CE""
-echo -e ""$YS"-r"$CE") Remove ehtools"
-echo -e ""$YS"-u"$CE") Update ehtools"
+echo -e ""$YS"-u"$CE") Uninstall ehtools"
 echo -e ""$YS"-h"$CE") Make handshake"
 echo -e ""$YS"-w"$CE") Open WPS menu"
 echo -e ""$YS"-o"$CE") Show options"
