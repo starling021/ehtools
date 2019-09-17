@@ -285,7 +285,7 @@ Run it to open WPS menu:
 
 > # Uiecache | <img src="https://img.shields.io/badge/utility-uiecache-lightgray.svg">
 
-Uiecache - (uninstall ehtools cache) the utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
+Uiecache (uninstall ehtools cache) is an utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
 
     Usage: uiecache [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
@@ -298,7 +298,7 @@ Uiecache - (uninstall ehtools cache) the utility that can help you to clean/unin
                         (restart ehtools system)                    
        --help         Give this help list.
 
-> # Ehtools update helper (euh) | <img src="https://img.shields.io/badge/utility-euh-brown.svg">
+> # Ehtools update helper | <img src="https://img.shields.io/badge/utility-euh-brown.svg">
 
     WARNING: Update option now is not working and
     you should use this tool if you want to update ehtools
@@ -317,18 +317,18 @@ if not working:
     INFO: This bug (configuration errors) fixed in v2.1.8!
     You can now use update option from main menu!
 
-> # Modules v1.9 | <img src="https://img.shields.io/badge/utility-modules-blue.svg">
+> # Ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
-Modules v1.9 - the utility that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
+Ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
 
-    Usage: modules [OPTION...]
+    Usage: ehtmod [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
        --install         Install ehtools modules to /bin.
                            (install ehtools modules)
        --restore <name>  Restore saved ehtools modules snapshot.
                            (restore ehtools modules snapshot)
-       --take    <name>  Take new ehtools modules snapshot.
+       --take    <name>  Take a new ehtools modules snapshot.
                            (take ehtools modules snapshot)
        --help            Give this help list.
          
@@ -347,7 +347,7 @@ Modules v1.9 - the utility that adds permissions or the ability to control the e
 
 > # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
-Ehtools password changer (epasswd) - the utility that help you to change your ehtools login and password or ehtools root password!
+Ehtools password changer (epasswd) is an utility that help you to change your ehtools login and password or ehtools root password!
 
     INFO: epasswd - tool (ehtools utility) to change ehtools login and password or ehtools root password!
 
@@ -392,7 +392,7 @@ Server support for ehtools PRO is very important, as all error reports are sent 
     COUNCIL: Make a good internet connection
     for ehtools, to help ehtools access to server!
     
-If in consequence of bad Internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
+If in consequence of the bad internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
     
 # How to protect ehtools
 
