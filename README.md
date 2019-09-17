@@ -271,7 +271,7 @@ Run it to open WPS menu:
 > Bourne-again shell and Gnome-terminal shell
 
     INFO: Bourne-again shell and Gnome-terminal shell needed
-    for ehtools GUI and also without Gnome-terminall shell 
+    for ehtools TUI and also without Gnome-terminall shell 
     modules such as (eht1, eht2 and etc.) will not work!
 
 > Good internet connection for server support (only ehtools PRO)
@@ -285,7 +285,7 @@ Run it to open WPS menu:
 
 > # Uiecache | <img src="https://img.shields.io/badge/utility-uiecache-lightgray.svg">
 
-Uiecache (uninstall ehtools cache) - the utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
+Uiecache (uninstall ehtools cache) is an utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
 
     Usage: uiecache [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
@@ -317,9 +317,9 @@ if not working:
     INFO: This bug (configuration errors) fixed in v2.1.8!
     You can now use update option from main menu!
 
-> # Ehtmod | <img src="https://img.shields.io/badge/utility-modules-blue.svg">
+> # Ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
-Ehtmod (ehtools modules) - the utility that adds permissions or the ability to control the ehtools framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
+Ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
 
     Usage: ehtmod [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
@@ -328,7 +328,7 @@ Ehtmod (ehtools modules) - the utility that adds permissions or the ability to c
                            (install ehtools modules)
        --restore <name>  Restore saved ehtools modules snapshot.
                            (restore ehtools modules snapshot)
-       --take    <name>  Take new ehtools modules snapshot.
+       --take    <name>  Take a new ehtools modules snapshot.
                            (take ehtools modules snapshot)
        --help            Give this help list.
          
@@ -347,7 +347,7 @@ Ehtmod (ehtools modules) - the utility that adds permissions or the ability to c
 
 > # Ehtools password changer (epasswd) | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
-Ehtools password changer (epasswd) - the utility that help you to change your ehtools login and password or ehtools root password!
+Ehtools password changer (epasswd) is an utility that help you to change your ehtools login and password or ehtools root password!
 
     INFO: epasswd - tool (ehtools utility) to change ehtools login and password or ehtools root password!
 
