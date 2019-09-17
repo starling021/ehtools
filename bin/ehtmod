@@ -103,10 +103,6 @@ fi
 
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
-echo -e
-echo -e ""$N" INFO: Ehtmod (ehtools modules) is" 
-echo -e ""$N" a sandbox for ehtools modules."$CE""
-echo -e
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
@@ -117,7 +113,6 @@ echo -e "                       (restore ehtools modules snapshot)"
 echo -e "   --take    <name>  Take a new ehtools modules snapshot."
 echo -e "                       (take ehtools modules snapshot)"
 echo -e "   --help            Give this help list."
-echo -e
 exit
 
 elif [[ $1 = "--restore" || $1 = "-r" ]]
@@ -393,7 +388,6 @@ chmod +x /root/ehtools/eht/eht4
 chmod +x /root/ehtools/eht/eht41
 chmod +x /root/ehtools/eht/eht42
 chmod +x /root/ehtools/eht/eht43
-chmod +x /root/ehtools/bin/euh
 sleep 0.5 
 echo -e "Setting up permissions..."
 sleep 0.5
@@ -522,10 +516,6 @@ sleep 5
 exit
 fi
 
-echo -e
-echo -e ""$N" INFO: Ehtmod (ehtools modules) is" 
-echo -e ""$N" a sandbox for ehtools modules."$CE""
-echo -e
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
@@ -536,5 +526,4 @@ echo -e "                       (restore ehtools modules snapshot)"
 echo -e "   --take    <name>  Take a new ehtools modules snapshot."
 echo -e "                       (take ehtools modules snapshot)"
 echo -e "   --help            Give this help list."
-echo -e
 exit
