@@ -114,13 +114,14 @@ chmod +x /root/ehtools/ls/l132.sh
 chmod +x /root/ehtools/ls/l133.sh
 chmod +x /root/ehtools/uninstall.sh
 chmod +x /root/ehtools/bin/ehtmod
+chmod +x /root/ehtools/bin/ehtkey
 clear
 mkdir /bin/ehtools
 cd /root/ehtools
 cp /root/ehtools/bin/ehtools /bin/ehtools
 chmod +x /bin/ehtools/ehtools
-cp /root/ehtools/bin/euh /bin
-chmod +x /bin/euh
+cp /root/ehtools/bin/ehtkey /bin
+chmod +x /bin/ehtkey
 cp /root/ehtools/bin/epasswd /bin
 chmod +x /bin/epasswd
 cp /root/ehtools/bin/ehtmod /bin
@@ -131,22 +132,23 @@ mkdir /etc/ehtools
 mkdir /etc/ehtools/root
 cp /root/ehtools/etc/root/password /etc/ehtools/root
 clear
-#required for gui
+
 apt-get -y install ncurses-dev
+
 clear
 if [[ ! -d /root/handshakes ]]
 then
 	mkdir /root/handshakes
-	echo -e "Made /root/handshake directory"
+	sleep 0
 else
-	echo -e "/root/handshakes directory detected.Good."
+	sleep 0
 fi
 if [[ ! -d /root/wordlists ]]
 then
 	mkdir /root/wordlists
-	echo -e "Made /root/wordlists directory"
+	sleep 0
 else
-	echo -e "/root/wordlists directory detected.Good."
+	sleep 0
 fi
 while true
 do
