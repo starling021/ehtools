@@ -103,17 +103,12 @@ fi
 
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
-echo -e
-echo -e ""$N" INFO: Ehtkey (ehtools key) is" 
-echo -e ""$N" an ehtools config key changer."$CE""
-echo -e
 echo -e "Usage: ehtkey [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   --change <old_key> <new_key>  Change ehtools config key."
 echo -e "                                (rewrite /etc/ehtools/config)"
 echo -e "   --help                        Give this help list."
-echo -e
 exit
 
 elif [[ $1 = "--change" || $1 = "-c" ]]
@@ -139,15 +134,10 @@ echo -e "New ehtools config key: $3"
 fi
 fi
 
-echo -e
-echo -e ""$N" INFO: Ehtkey (ehtools key) is" 
-echo -e ""$N" an ehtools config key changer."$CE""
-echo -e
 echo -e "Usage: ehtkey [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   --change <old_key> <new_key>  Change ehtools config key."
 echo -e "                                (rewrite /etc/ehtools/config)"
 echo -e "   --help                        Give this help list."
-echo -e
 exit
