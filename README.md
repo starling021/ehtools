@@ -392,7 +392,7 @@ Server support for ehtools PRO is very important, as all error reports are sent 
     COUNCIL: Make a good internet connection
     for ehtools, to help ehtools access to server!
     
-If in consequence of bad Internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
+If in consequence of the bad internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
     
 # How to protect ehtools
 
