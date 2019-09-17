@@ -104,8 +104,8 @@ fi
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
 echo -e
-echo -e ""$N" INFO: Ehtmod (ehtools modules sandbox)" 
-echo -e ""$N" is a sandbox for ehtools modules."$CE""
+echo -e ""$N" INFO: Ehtmod (ehtools modules) is" 
+echo -e ""$N" a sandbox for ehtools modules."$CE""
 echo -e
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
@@ -343,22 +343,6 @@ elif [[ $1 = "--install" || $1 = "-i" ]]
 then
 clear
 sleep 3
-printf '\033]2;ehtools modules sandbox\a'
-echo -e "          ____   "
-echo -e "ehtools  /\___\  "
-echo -e "modules /\ \___\ "
-echo -e "sandbox \ \/ / / "
-echo -e "         \/_/_/  By Ivan Nikolsky "
-sleep 3
-echo -e "Welcome to ehtools modules sandbox"
-sleep 1
-echo -e "Instrument to add ehtools modules to /bin"
-sleep 1
-echo -e "This is a sandbox for ehtools modules"
-sleep 1
-echo -e "Press \e[1;33many key\e[0m to install modules"
-read -n 1
-clear
 echo -e "Well, we are going to start!"
 sleep 2
 echo -e "\e[4;32mPreparing to install...\e[0m"
@@ -539,8 +523,8 @@ exit
 fi
 
 echo -e
-echo -e ""$N" INFO: Ehtmod (ehtools modules sandbox)" 
-echo -e ""$N" is a sandbox for ehtools modules."$CE""
+echo -e ""$N" INFO: Ehtmod (ehtools modules) is" 
+echo -e ""$N" a sandbox for ehtools modules."$CE""
 echo -e
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
