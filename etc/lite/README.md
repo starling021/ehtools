@@ -90,7 +90,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
 
 # How to uninstall ehtools
 
-> ehtools -r
+> ehtools -u
 
     WARNING: Do not do it if you want to reinstall
     ehtools PRO which you bought, do not do it because
@@ -203,13 +203,9 @@ Run it to open quick access menu:
 
 > ehtools -o
 
-Run it to update ehtools:
+Run it to uninstall ehtools:
 
 > ehtools -u
-
-Run it to remove ehtools:
-
-> ehtools -r
 
 Run it to make handshake:
 
