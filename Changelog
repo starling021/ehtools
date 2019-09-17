@@ -440,6 +440,7 @@ Fixed install/reinstall menu bug!
 
 3.0.0
 Removed $EPATH firmware 
+Added a new utility named ehtkey (ehtools key)
 Updated ehtmod (ehtools modules).
 Updated Modules v1.9 and renamed to ehtmod.
 Updated ehtools (now you can stable login to ehtools)
