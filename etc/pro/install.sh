@@ -198,8 +198,9 @@ cp /root/ehtools/bin/uiecache /bin
 chmod +x /bin/uiecache
 cp /root/ehtools/etc/root/password /etc/ehtools/root
 clear
-#required for gui
+
 apt-get -y install ncurses-dev
+
 clear
 if [[ ! -d /root/handshakes ]]
 then
