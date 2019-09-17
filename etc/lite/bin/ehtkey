@@ -66,6 +66,18 @@ if [[ $2 != "$(cat /root/ehtools/etc/config)" ]]
 then
 echo -e "Error, incorrect old ehtools config key!"
 else
+{
+cd /root/ehtools
+chmod +x lib/libunconf
+lib/libunconf
+rm /etc/ehtools/config
+rm /root/ehtools/etc/config
+echo "$3" >> /root/ehtools/etc/config
+cd /root/ehtools/lib
+chmod +x libconf
+./libconf
+cd /root
+} &> /dev/null
 echo -e "Success, ehtools config key changed!"
 echo -e "New ehtools config key: $3"
 fi
