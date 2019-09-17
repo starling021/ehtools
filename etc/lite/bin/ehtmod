@@ -45,12 +45,64 @@ sleep 1
 exit
 fi
 
+{
+chattr -i /tmp/config
+chattr -i /tmp/config/config.txt
+chattr -i /tmp/config/configure.txt
+} &> /dev/null
+
+{
+mkdir /tmp/config
+echo 0 >> /tmp/config/config.txt
+echo 1 >> /tmp/config/configure.txt
+} &> /dev/null
+
+{
+chattr +i /tmp/config
+chattr +i /tmp/config/config.txt
+chattr +i /tmp/config/configure.txt
+} &> /dev/null
+
+
+{
+SERSE="$( cat /tmp/config/config.txt | head -n 1 )"
+ESRES="$( cat /tmp/config/configure.txt | head -n 1 )"
+} &> /dev/null
+
+if [[ "$SERSE" != "$ESRES" ]]
+then
+
+{
+ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
+} &> /dev/null
+
+if [[ "$ASESR" != "" ]]
+then 
+
+KEYKE="$( timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
+
+if [[ "$KEYEK" != "$KEYKE" ]]
+then
+
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtmod!"$CE""
+
+sleep 1
+exit
+
+fi
+
+else
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Can't connect to server: There is no connection!"$CE""
+sleep 1
+exit
+fi
+fi
+
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
-echo -e
-echo -e ""$N" INFO: Ehtmod (ehtools modules) is" 
-echo -e ""$N" a sandbox for ehtools modules."$CE""
-echo -e
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
@@ -61,7 +113,6 @@ echo -e "                       (restore ehtools modules snapshot)"
 echo -e "   --take    <name>  Take a new ehtools modules snapshot."
 echo -e "                       (take ehtools modules snapshot)"
 echo -e "   --help            Give this help list."
-echo -e
 exit
 
 elif [[ $1 = "--restore" || $1 = "-r" ]]
@@ -337,7 +388,6 @@ chmod +x /root/ehtools/eht/eht4
 chmod +x /root/ehtools/eht/eht41
 chmod +x /root/ehtools/eht/eht42
 chmod +x /root/ehtools/eht/eht43
-chmod +x /root/ehtools/bin/euh
 sleep 0.5 
 echo -e "Setting up permissions..."
 sleep 0.5
@@ -466,10 +516,6 @@ sleep 5
 exit
 fi
 
-echo -e
-echo -e ""$N" INFO: Ehtmod (ehtools modules) is" 
-echo -e ""$N" a sandbox for ehtools modules."$CE""
-echo -e
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
@@ -480,5 +526,4 @@ echo -e "                       (restore ehtools modules snapshot)"
 echo -e "   --take    <name>  Take a new ehtools modules snapshot."
 echo -e "                       (take ehtools modules snapshot)"
 echo -e "   --help            Give this help list."
-echo -e
 exit
