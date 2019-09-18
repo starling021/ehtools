@@ -133,8 +133,7 @@ fi
 
 clear
 printf '\033]2;ehtools password changer\a'
-
-clear
+sleep 3
 CAT="$( cat /etc/ehtools/password )"
 if [[ "$CAT" = "" ]]
 then
