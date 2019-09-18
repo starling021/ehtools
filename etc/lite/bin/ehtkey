@@ -45,62 +45,6 @@ sleep 1
 exit
 fi
 
-{
-chattr -i /tmp/config
-chattr -i /tmp/config/config.txt
-chattr -i /tmp/config/configure.txt
-} &> /dev/null
-
-{
-mkdir /tmp/config
-echo 0 >> /tmp/config/config.txt
-echo 1 >> /tmp/config/configure.txt
-} &> /dev/null
-
-{
-chattr +i /tmp/config
-chattr +i /tmp/config/config.txt
-chattr +i /tmp/config/configure.txt
-} &> /dev/null
-
-
-{
-SERSE="$( cat /tmp/config/config.txt | head -n 1 )"
-ESRES="$( cat /tmp/config/configure.txt | head -n 1 )"
-} &> /dev/null
-
-if [[ "$SERSE" != "$ESRES" ]]
-then
-
-{
-ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
-KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
-} &> /dev/null
-
-if [[ "$ASESR" != "" ]]
-then 
-
-KEYKE="$( timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
-
-if [[ "$KEYEK" != "$KEYKE" ]]
-then
-
-sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtkey!"$CE""
-
-sleep 1
-exit
-
-fi
-
-else
-sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Can't connect to server: There is no connection!"$CE""
-sleep 1
-exit
-fi
-fi
-
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
 echo -e "Usage: ehtkey [OPTION...]"
@@ -115,8 +59,11 @@ elif [[ $1 = "--change" || $1 = "-c" ]]
 then
 if [[ $2 != "$(cat /root/ehtools/etc/config)" ]]
 then
+sleep 2
 echo -e "Error, incorrect old ehtools config key!"
+sleep 2
 else
+sleep 1
 {
 cd /root/ehtools
 chmod +x lib/libunconf
@@ -130,6 +77,7 @@ chmod +x libconf
 cd /root
 } &> /dev/null
 echo -e "Success, ehtools config key changed!"
+sleep 0.5
 echo -e "New ehtools config key: $3"
 fi
 fi
