@@ -118,8 +118,9 @@ then
 sleep 2
 echo -e "Error, incorrect old ehtools config key!"
 sleep 2
+exit
 else
-sleep 1
+sleep 2
 {
 cd /root/ehtools
 chmod +x lib/libunconf
@@ -135,6 +136,8 @@ cd /root
 echo -e "Success, ehtools config key changed!"
 sleep 0.5
 echo -e "New ehtools config key: $3"
+sleep 2
+exit
 fi
 fi
 
