@@ -115,7 +115,9 @@ elif [[ $1 = "--change" || $1 = "-c" ]]
 then
 if [[ $2 != "$(cat /root/ehtools/etc/config)" ]]
 then
+sleep 2
 echo -e "Error, incorrect old ehtools config key!"
+sleep 2
 else
 sleep 1
 {
