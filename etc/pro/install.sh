@@ -271,7 +271,7 @@ then
       sleep 1
       echo -e "Launching..."
       sleep 1
-      ehtkey -i
+      ehtmod -i
 fi
 
 clear
