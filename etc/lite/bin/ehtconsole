@@ -4663,7 +4663,7 @@ function mitmf_hook
 		fi
 	else
 		echo -e "$TNI"
-		read INSTALL
+		read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 		if [[ "$INSTALL" = "install" ]]
 		then
 			echo -e ""$RS"No installation added yet"$CE""
@@ -5303,7 +5303,7 @@ function ngrok_option
 			fi
 		else
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_ngrok
@@ -5752,7 +5752,7 @@ function browser_exploiting
 						fi
 				else
 					echo -e "$TNI"
-					read INSTALL
+					read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 					if [[ "$INSTALL" = "install" ]]
 					then
 						install_mitmf
@@ -6223,7 +6223,7 @@ function main_options
 		if [[ ! -f "/usr/local/bin/howdoi" ]]
 		then
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_howdoi
@@ -6367,7 +6367,7 @@ function main_options
 		if [[ ! -f "/etc/init.d/anonym8.sh" ]]
 		then
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonym8
@@ -6383,7 +6383,7 @@ function main_options
 		if [[ ! -f "/etc/init.d/anonym8.sh" ]]
 		then
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonym8
@@ -6398,7 +6398,7 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -6413,7 +6413,7 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -6428,7 +6428,7 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -6443,7 +6443,7 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -6458,7 +6458,7 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -6530,7 +6530,7 @@ function main_options
 			eternalblue_check
 		else
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_wifiphisher
@@ -6543,7 +6543,7 @@ function main_options
 			eternalblue
 		else
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_wifiphisher
@@ -6556,7 +6556,7 @@ function main_options
 			wififb_attack
 		else
 			echo -e "$TNI"
-			read INSTALL
+			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_wifiphisher
