@@ -18,7 +18,7 @@
   <a href="https://github.com/entynetproject/ehtools/releases">
     <img src="https://img.shields.io/github/release/entynetproject/ehtools.svg">
   </a>
-  <a href="https://ru.m.wikipedia.org/wiki/Сценарий_командной_строки">
+  <a href="https://wikipedia.org/wiki/Shell_script">
     <img src="https://img.shields.io/badge/language-shell-green.svg">
  </a>
   <a href="https://github.com/entynetproject/ehtools">
@@ -30,7 +30,7 @@
   <a href="https://github.com/entynetproject/ehtools/wiki">
       <img src="https://img.shields.io/badge/wiki%20-ehtools-lightgrey.svg">
  </a>
-  <a href="https://mobile.twitter.com/ehtools">
+  <a href="https://twitter.com/ehtools">
     <img src="https://img.shields.io/badge/twitter-ehtools-blue.svg">
  </a>
 </p>
