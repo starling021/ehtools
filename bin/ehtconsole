@@ -3292,9 +3292,9 @@ function wifi_tools
 	fi
 	if [[ -d /root/entropy ]]
 	then
-		echo -e ""$YS" 4"$CE") Entropy               IP wecamera exploit also named CNVD-2017-02776"
+		echo -e ""$YS" 4"$CE") Entropy               Netware and GoAhead IP Camera exploit"
 	else
-		echo -e ""$RS" 4"$CE") "$RS"Entropy"$CE"               IP wecamera exploit also named CNVD-2017-02776"
+		echo -e ""$RS" 4"$CE") "$RS"Entropy"$CE"               Netware and GoAhead IP Camera exploit"
 	fi
 	if [[ -d /root/morpheus ]]
 	then
