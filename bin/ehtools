@@ -237,17 +237,16 @@ sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 logins=$(cat /etc/ehtools/login)
 
-while [ "$loginer" != "root" ]
+while [ "$loginer" != "$logins" ]
 do
-if [[ "$loginer" != "$(cat /etc/ehtools/login)" ]]
-then
 echo -e "$RS"Wrong login!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
 sleep 2
-ehtools
-exit
-fi
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+
+while [ "$loginer" != "root" ]
+do
 sleep 0.5
 clear
 sleep 0.5
@@ -384,18 +383,18 @@ exit
 fi
 
 done
+done
 
-while [ "$loginer" != "root" ]
+while [ "$loginer" != "$logins" ]
 do
-if [[ "$loginer" != "$(cat /etc/ehtools/login)" ]]
-then
 echo -e "$RS"Wrong login!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
 sleep 2
-ehtools
-exit
-fi
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+
+while [ "$loginer" != "root" ]
+do
 sleep 0.5
 clear
 sleep 0.5
@@ -532,4 +531,5 @@ ehtconsole
 exit
 fi
 
+done
 done
