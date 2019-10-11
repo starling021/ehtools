@@ -66,7 +66,7 @@ if [[ -f /root/ehtools/settings/logocolor.txt ]]
 	then
 		read COL < /root/ehtools/settings/logocolor.txt
 	else
-		COL="$YS"
+		COL="$RS"
 	fi
 
 WHO="$( whoami )"
@@ -79,6 +79,62 @@ sleep 1
 echo -e "$RS"or use"$CE" "$YS"sudo"$CE"
 sleep 1
 exit
+fi
+
+{
+chattr -i /tmp/config
+chattr -i /tmp/config/config.txt
+chattr -i /tmp/config/configure.txt
+} &> /dev/null
+
+{
+mkdir /tmp/config
+echo 0 >> /tmp/config/config.txt
+echo 1 >> /tmp/config/configure.txt
+} &> /dev/null
+
+{
+chattr +i /tmp/config
+chattr +i /tmp/config/config.txt
+chattr +i /tmp/config/configure.txt
+} &> /dev/null
+
+
+{
+SERSE="$( cat /tmp/config/config.txt | head -n 1 )"
+ESRES="$( cat /tmp/config/configure.txt | head -n 1 )"
+} &> /dev/null
+
+if [[ "$SERSE" != "$ESRES" ]]
+then
+
+{
+ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
+} &> /dev/null
+
+if [[ "$ASESR" != "" ]]
+then 
+
+KEYKE="$( timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
+
+if [[ "$KEYEK" != "$KEYKE" ]]
+then
+
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtools!"$CE""
+
+sleep 1
+exit
+
+fi
+
+else
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Can't connect to server: There is no connection!"$CE""
+sleep 1
+exit
+fi
 fi
 
 if [[ $1 = "-u" || $1 = "--uninstall" ]]
@@ -116,7 +172,7 @@ then
 sleep 1
 echo -e
 echo -e ""$YS"Options: "$CE""
-echo -e ""$YS"-u"$CE") Uninstall ehtools"
+echo -e ""$YS"-r"$CE") Uninstall ehtools"
 echo -e ""$YS"-h"$CE") Make handshake"
 echo -e ""$YS"-w"$CE") Open WPS menu"
 echo -e ""$YS"-o"$CE") Show options"
@@ -174,89 +230,12 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 logins=$(cat /etc/ehtools/login)
-
-while [ "$loginer" != "$logins" ]
-do
-echo -e "$RS"Wrong login!"$CE"
-sleep 3
-echo -e "("$YS"Try again..."$CE")"
-sleep 2
-read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
-
-while [ "$loginer" != "root" ]
-do
-sleep 0.5
-clear
-sleep 0.5
-printf '\033]2;Ehtools Authentication\a'
-      echo -e
-      echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
-      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
-      echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
-sleep 0.5
-echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
-sleep 0.5
-echo -e "$YS"Ehtools Authentication:"$CE"
-sleep 0.5
-passroot="$( cat /etc/ehtools/password )"
-read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
-
-while [ "$rootpass" != "$passroot" ]
-do
-echo -e
-echo -e "$RS"Wrong password!"$CE"
-sleep 3
-echo -e "("$YS"Try again..."$CE")"
-sleep 2
-read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
-
-done
-if [[ -f /bin/ehtools/ehtconsole ]]
-then
-{
-chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
-cd /root/ehtools/lib
-chmod +x libconf
-./libconf
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
-chattr +i /etc/ehtools
-} &> /dev/null
-trap '' INT TSTP
-trap '' 2
-ehtconsole
-exit
-else
-{
-chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
-cd /root/ehtools/lib
-chmod +x libconf
-./libconf
-cp /root/ehtools/bin/ehtconsole /bin/ehtools
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
-chattr +i /etc/ehtools
-} &> /dev/null
-trap '' INT TSTP
-trap '' 2
-ehtconsole
-exit
-fi
-
-done
 
 while [ "$loginer" = "root" ]
 do
@@ -270,7 +249,7 @@ printf '\033]2;Ehtools Root Authentication\a'
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
@@ -326,6 +305,83 @@ exit
 fi
 
 done
+
+while [ "$loginer" != "$logins" ]
+do
+echo -e "$RS"Wrong login!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+
+while [ "$loginer" != "root" ]
+do
+sleep 0.5
+clear
+sleep 0.5
+printf '\033]2;Ehtools Authentication\a'
+      echo -e
+      echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
+      echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
+sleep 0.5
+echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
+sleep 0.5
+echo -e "$YS"Ehtools Authentication:"$CE"
+sleep 0.5
+passroot="$( cat /etc/ehtools/password )"
+read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
+
+while [ "$rootpass" != "$passroot" ]
+do
+echo -e
+echo -e "$RS"Wrong password!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
+
+done
+if [[ -f /bin/ehtools/ehtconsole ]]
+then
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+./libconf
+chattr -i /bin/ehtools/ehtconsole
+chmod +x /bin/ehtools/ehtconsole
+chattr +i /bin/ehtools/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+trap '' INT TSTP
+trap '' 2
+ehtconsole
+exit
+else
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+./libconf
+cp /root/ehtools/bin/ehtconsole /bin/ehtools
+chattr -i /bin/ehtools/ehtconsole
+chmod +x /bin/ehtools/ehtconsole
+chattr +i /bin/ehtools/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+trap '' INT TSTP
+trap '' 2
+ehtconsole
+exit
+fi
+
+done
 done
 
 while [ "$loginer" != "$logins" ]
@@ -348,7 +404,7 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
 echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
 sleep 0.5
@@ -418,7 +474,7 @@ printf '\033]2;Ehtools Root Authentication\a'
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
 echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
