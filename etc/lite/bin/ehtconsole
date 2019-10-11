@@ -350,10 +350,6 @@ function banner
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
       echo -e "                                                                            "                                                                     
-
-       echo -e "$RS"Red colour - not installed"$CE"
-       echo -e "$YS"Yellow colour - installed"$CE"                                                                    
-       echo -e "                                                                                "
        echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE")"$BS" Local IPs & gateways"$CE" "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
@@ -460,7 +456,7 @@ else
 echo -e "Wrong choice..."
 sleep 2
 clear
-echo -e "EXITING"
+echo -e "EXITING..."
 sleep 1
 exec bash "$0"
 fi
@@ -499,7 +495,6 @@ function change_mac
 function set_interface_number
 {
 clear
-printf '\033]2;select interface\a'
 while true
 do
 echo -e "Enter the name of your wireless interface when in "$RS"managed"$CE" mode("$YS"Enter"$CE"=wlan0): "
@@ -1071,7 +1066,7 @@ then
 elif [[ "$ERRS" = "2" ]]
 then
 	clear
-	echo -e "["$YS"inf"$CE"] "$YS"Ok...Lets try to fix this..."$CE""
+	echo -e "["$YS"inf"$CE"] "$YS"Ok... Lets try to fix this..."$CE""
 	sleep 0.5
 	mkdir /etc/reaver
 	echo -e "["$YS"inf"$CE"] "$YS"It seems to be fixed!"$CE""
@@ -1088,7 +1083,7 @@ then
 elif [[ "$ERRS" = "3" ]]
 then
 	apt-get install -y open-vm-tools-desktop fuse
-	echo -e "["$YS"inf"$CE"] "$YS"Restart your vistual machine..."$CE""
+	echo -e "["$YS"inf"$CE"] "$YS"Restart your virtual machine..."$CE""
 	sleep 1
 	echo -e "["$YS"inf"$CE"] "$YS"Error was fixed!"$CE""
 	echo -e "$PAKTGB"
@@ -3458,27 +3453,6 @@ function public_ip
 }
 function terms_of_use
 {
-	printf '\033]2;terms of use\a'
-	clear
-	echo -e ""$RS"You need to accept the terms."$CE""
-	sleep 1
-	echo -e "$PAKTC"
-	$READAK
-	clear
-	echo -e "This tool is only for educational purposes only."
-	echo -e "Use this tool wisely and never without permission."
-	echo -e "I am not responsible for anything you do with this tool."
-	echo -e "Will you use this tool wisely and only with your own responsibility?("$YS"YES"$CE"/"$YS"NO"$CE"): "
-	read -p $'(\e[4;93magree\e[0m\en)> ' YESORNO
-	if [[ "$YESORNO" = "YES" ]]
-	then 
-		echo "You have agreed the terms and you use this tool with your own responsibility" > "$EPATH"/IAGREE.txt
-		sleep 1
-		clear
-	else
-		echo -e "You did not type '"$YS"YES"$CE"' and you cannot continue..."
-		sleep 4
-	fi
 	exec bash "$0"
 }
 function eternalblue
@@ -3642,9 +3616,9 @@ do
 	if [[ "$SMTP" = "1" ]]
 	then
 		clear
-		echo -e "Enter your smtp username (find it here: https://app.smtp2go.com/settings/users): "
+		echo -e "Enter your SMTP username (find it here: https://app.smtp2go.com/settings/users): "
 		read -p $'(\e[4;93musername\e[0m)> ' SMTPEMAIL
-		echo -e "Enter your smtp password (find it here: https://app.smtp2go.com/settings/users): "
+		echo -e "Enter your SMTP password (find it here: https://app.smtp2go.com/settings/users): "
 		read -p $'(\e[4;93mpassword\e[0m)> ' SMTPPASS
 		clear
 		echo "$SMTPEMAIL" > /bin/ehtools/smtp/smtpemail.txt
@@ -3663,16 +3637,16 @@ do
 		if [[ -f /bin/ehtools/smtp/smtpemail.txt ]]
 		then
 			rm /bin/ehtools/smtp/smtpemail.txt
-			echo -e "Username removed"
+			echo -e "Username removed!"
 		else
-			echo -e "Not username found"
+			echo -e "Not username found!"
 		fi
 		if [[ -f /bin/ehtools/smtp/smtppass.txt ]]
 		then
 			rm /bin/ehtools/smtp/smtppass.txt
-			echo -e "Password removed"
+			echo -e "Password removed!"
 		else
-			echo -e "Not password found"
+			echo -e "Not password found!"
 		fi
 		sleep 2
 		continue
@@ -3698,12 +3672,12 @@ do
 		clear
 		if [[ ! -f /bin/ehtools/smtp/smtpemail.txt ]]
 		then
-			echo -e "No smtp username found."
+			echo -e "No SMTP username found."
 			sm=1
 		fi
 		if [[ ! -f /bin/ehtools/smtp/smtppass.txt ]]
 		then
-			echo -e "No smtp pass found."
+			echo -e "No SMTP pass found."
 			sm=1
 		fi
 		if [[ "$sm" = 1 ]]
@@ -3723,13 +3697,13 @@ do
 		read -p $'(\e[4;93msubject\e[0m)> ' SUBJECTEMAIL
 		echo -e "Enter the message: "
 		read -p $'(\e[4;93mmessage\e[0m)> ' MESSAGEEMAIL
-		echo -e "Enter the smtp server ("$YS"Enter"$CE"=mail.smtp2go.com): "
+		echo -e "Enter the SMTP server ("$YS"Enter"$CE"=mail.smtp2go.com): "
 		read -p $'(\e[4;93mserver\e[0m)> ' SMTPSERVER
 		if [[ "$SMTPSERVER" = "" ]]
 		then
 			SMTPSERVER="mail.smtp2go.com"
 		fi
-		echo -e "Enter the smtp port ("$YS"Enter"$CE"=2525): "
+		echo -e "Enter the SMTP port ("$YS"Enter"$CE"=2525): "
 		read -p $'(\e[4;93mport\e[0m)> ' SMTPPORT
 		if [[ "$SMTPPORT" = "" ]]
 		then
@@ -4105,7 +4079,7 @@ do
 		echo -e ""$YS" s"$CE") Start"
 	fi
 	echo -e ""$YS" b"$CE") Go back"
-	read -p $'(\e[4;36mSQconsole\e[0m)> ' SQ
+	read -p $'(\e[4;36mSQLconsole\e[0m)> ' SQ
 	clear
 	if [[ "$SQ" = 1 ]]
 	then
@@ -5032,7 +5006,7 @@ function select_interface
 	while true
 	do
 		clear
-		TERMINALTITLE="Select interface"
+		TERMINALTITLE="SELECT INTERFACE"
 		dash_calc
 		printf '\033]2;SELECT INTERFACE\a'
 		TT=$(ifconfig | grep "$WLANN:")
@@ -5122,22 +5096,22 @@ function about_option
 	while true
 	do
 	clear
-	TERMINALTITLE="Ehtools Team"
+	TERMINALTITLE="EHTOOLS TEAM"
 	dash_calc
-	printf '\033]2;Ehtools Team\a'
-	echo -e "Open our site, please :з"
+	printf '\033]2;EHTOOLS TEAM\a'
+	echo -e "Visit our site, please :з"
 	echo -e ""$LBS"Total ehtools downloads:"$CE" $DOWNLOADS"
-	echo -e "Welcome to ehtools framework LITE!"
-	echo -e ""$YS" 1"$CE") Open our site"
-	echo -e ""$YS" 2"$CE") Open github repo of ehtools"
-        echo -e ""$YS" b"$CE") I'm not interested about it! :P"
+	echo -e "Welcome to the Ehtools Framework LITE!"
+	echo -e ""$YS" 1"$CE") Visit our site"
+	echo -e ""$YS" 2"$CE") Visit our GitHub"
+        echo -e ""$YS" b"$CE") I'm not interested about this! :P"
 	read -p $'(\e[4;34mabout\e[0m)> ' DON
 	if [[ "$DON" = "1" ]]
 	then
 		gio open "https://ehtools.pro/"
 	elif [[ "$DON" = "2" ]]
 	then
-		gio open "https://github.com/entynetproject/ehtools"
+		gio open "https://github.com/ehtools"
 	elif [[ "$DON" = "back" || "$DON" = "b" || "$DON" = "00" ]]
 	then
 		BACKL=1
@@ -5491,7 +5465,7 @@ function browser_exploiting
 	while true
 	do
 		clear
-		TERMINALTITLE="Auto-exploit browser"
+		TERMINALTITLE="AUTO-EXPLOIT BROWSER"
 		dash_calc
 		printf '\033]2;AUTO-EXPLOIT BROWSER\a'
 		if [[ "$SINT" = "" ]]
@@ -5554,7 +5528,7 @@ function browser_exploiting
 			while true
 			do
 			clear
-			TERMINALTITLE="Fix errors"
+			TERMINALTITLE="FIX ERRORS"
 			dash_calc
 			printf '\033]2;FIX ERRORS\a'
 			echo -e ""$YS" 1"$CE") MITMf error: Another process running on port 53"
@@ -5646,7 +5620,7 @@ function browser_exploiting
 				while true
 				do
 					clear
-					TERMINALTITLE="Select target"
+					TERMINALTITLE="SELECT TARGET"
 					dash_calc
 					printf '\033]2;SELECT TARGET\a'
 					echo -e ""$YS" 1"$CE") Scan and choose"
