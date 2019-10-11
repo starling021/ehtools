@@ -402,7 +402,7 @@ echo -e "Saved to /etc/ehtools/modules/.config..."
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 3
-echo -e "\e[4;32mPreparing to take snapshot: default_snapshot...\e[0m"
+echo -e "\e[4;32mPreparing to take snapshot: \e[0mdefault_snapshot..."
 sleep 1
 echo -e "Making /etc/ehtools/modules/snapshots..."
 mkdir /etc/ehtools/modules/snapshots
