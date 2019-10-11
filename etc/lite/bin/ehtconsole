@@ -7683,7 +7683,7 @@ fi
 	one_time_per_launch_ks
 fi
 ####################################
-if [[ -f ""$EPATH"/IAGREE.txt" ]]
+if [[ true ]]
 then
 
 WHO="$( whoami )"
