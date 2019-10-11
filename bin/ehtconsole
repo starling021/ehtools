@@ -9561,7 +9561,8 @@ function main_options
 			     cp arissploit /bin
 			     chmod +x /bin/arissploit
 			     cd ~/arissploit
-                             python arissploit.py
+			     chmod +x arissploit
+                             ./arissploit
                        fi
                 else
                        install_arissploit
