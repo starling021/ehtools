@@ -237,20 +237,12 @@ sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 logins=$(cat /etc/ehtools/login)
 
-while [ "$loginer" != "$logins" ]
-do
-echo -e "$RS"Wrong login!"$CE"
-sleep 3
-echo -e "("$YS"Try again..."$CE")"
-sleep 2
-read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
-
-while [ "$loginer" != "root" ]
+while [ "$loginer" = "root" ]
 do
 sleep 0.5
 clear
 sleep 0.5
-printf '\033]2;Ehtools Authentication\a'
+printf '\033]2;Ehtools Root Authentication\a'
       echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -259,11 +251,11 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
-echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
+echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
-echo -e "$YS"Ehtools Authentication:"$CE"
+echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
-passroot="$( cat /etc/ehtools/password )"
+passroot="$( cat /etc/ehtools/root/password )"
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -314,13 +306,20 @@ fi
 
 done
 
+while [ "$loginer" != "$logins" ]
+do
+echo -e "$RS"Wrong login!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 
-while [ "$loginer" = "root" ]
+while [ "$loginer" != "root" ]
 do
 sleep 0.5
 clear
 sleep 0.5
-printf '\033]2;Ehtools Root Authentication\a'
+printf '\033]2;Ehtools Authentication\a'
       echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -329,11 +328,11 @@ printf '\033]2;Ehtools Root Authentication\a'
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
-echo -e "You want to login as '"$YS"root"$CE"'"
+echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
 sleep 0.5
-echo -e "$YS"Ehtools Root Authentication:"$CE"
+echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
-passroot="$( cat /etc/ehtools/root/password )"
+passroot="$( cat /etc/ehtools/password )"
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
