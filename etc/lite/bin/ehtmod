@@ -81,7 +81,7 @@ clear
 sleep 3
 echo -e "Well, we are going to start!"
 sleep 2
-echo -e "\e[4;32mPreparing to restore snapshot: $2...\e[0m"
+echo -e "\e[4;32mPreparing to restore snapshot:\e[0m $2..."
 sleep 1
 printf '\033]2;Restoring...\a'
 
@@ -218,7 +218,7 @@ clear
 sleep 3
 echo -e "Well, we are going to start!"
 sleep 2
-echo -e "\e[4;32mPreparing to take snapshot: $2...\e[0m"
+echo -e "\e[4;32mPreparing to take snapshot:\e[0m $2..."
 sleep 1
 printf '\033]2;Taking...\a'
 
@@ -317,7 +317,7 @@ done
 sleep 5
 echo -e
 sleep 0.3
-echo -e "10 tar archives installed to /bin with success!"
+echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.2
 echo -e "\e[4;32mPreparing to unpack...\e[0m"
 sleep 2
