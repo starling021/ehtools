@@ -322,7 +322,11 @@ done
 
 while [ "$loginer" != "$logins" ]
 do
-read -p $'login>' loginer
+echo -e "$RS"Wrong login!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 
 while [ "$loginer" = "$logins" ]
 do
