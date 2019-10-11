@@ -499,6 +499,7 @@ function change_mac
 function set_interface_number
 {
 clear
+printf '\033]2;select interface\a'
 while true
 do
 echo -e "Enter the name of your wireless interface when in "$RS"managed"$CE" mode("$YS"Enter"$CE"=wlan0): "
