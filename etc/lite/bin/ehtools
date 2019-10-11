@@ -185,7 +185,6 @@ while [ "$loginer" != "root" ]
 do
 if [[ "$loginer" != "$(cat /etc/ehtools/login)" ]]
 then
-echo -e
 echo -e "$RS"Wrong login!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
@@ -334,7 +333,6 @@ while [ "$loginer" != "root" ]
 do
 if [[ "$loginer" != "$(cat /etc/ehtools/login)" ]]
 then
-echo -e
 echo -e "$RS"Wrong login!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
