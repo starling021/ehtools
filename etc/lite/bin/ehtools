@@ -250,17 +250,7 @@ fi
 
 done
 
-
-
-while [ "$loginer" != "$logins" ]
-do
-echo -e "$RS"Wrong login!"$CE"
-sleep 3
-echo -e "("$YS"Try again..."$CE")"
-sleep 2
-read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
-
-while [ "$loginer" != "root" ]
+while [ "$loginer" = "$logins" ]
 do
 sleep 0.5
 clear
@@ -398,5 +388,4 @@ ehtconsole
 exit
 fi
 
-done
 done
