@@ -239,16 +239,15 @@ logins=$(cat /etc/ehtools/login)
 
 while [ "$loginer" != "root" ]
 do
-while [ "$loginer" != "$(cat /etc/ehtools/login)" ]
-do
-echo -e
+if [[ "$loginer" != "$(cat /etc/ehtools/login)" ]]
+then
 echo -e "$RS"Wrong login!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
 sleep 2
 ehtools
 exit
-done
+fi
 sleep 0.5
 clear
 sleep 0.5
@@ -388,16 +387,15 @@ done
 
 while [ "$loginer" != "root" ]
 do
-while [ "$loginer" != "$(cat /etc/ehtools/login)" ]
-do
-echo -e
+if [[ "$loginer" != "$(cat /etc/ehtools/login)" ]]
+then
 echo -e "$RS"Wrong login!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
 sleep 2
 ehtools
 exit
-done
+fi
 sleep 0.5
 clear
 sleep 0.5
