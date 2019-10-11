@@ -250,6 +250,10 @@ fi
 
 done
 
+while [ "$loginer" != "$logins" ]
+do
+read -p $'login>' loginer
+
 while [ "$loginer" = "$logins" ]
 do
 sleep 0.5
@@ -388,4 +392,5 @@ ehtconsole
 exit
 fi
 
+done
 done
