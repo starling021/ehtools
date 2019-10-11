@@ -183,6 +183,15 @@ logins=$(cat /etc/ehtools/login)
 
 while [ "$loginer" != "root" ]
 do
+if [[ "$loginer" != "$logins" ]]
+then
+echo -e "$RS"Wrong login!"$CE"
+sleep 3
+echo -e "("$YS"Try again..."$CE")"
+sleep 2
+ehtools
+exit
+fi
 sleep 0.5
 clear
 sleep 0.5
