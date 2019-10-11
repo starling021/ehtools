@@ -404,9 +404,9 @@ New install.sh
 New uninstall.sh
 Added password protection!
 Added new design of main menu!
-Some new tools in Tools menu.
-Deep Whois update.
-Compatible with Parrot OS.
+Some new tools in Tools menu
+Deep Whois update
+Compatible with Parrot OS
 Changes in settings menu
 Changes in about menu
 Error 2 fixed in Handshake menu
@@ -439,11 +439,12 @@ Updated ehtools Lite UX/UI
 Fixed install/reinstall menu bug!
 
 3.0.0
-Removed $EPATH firmware 
+Removed $EPATH firmware
 Added a new utility named ehtkey (ehtools key)
-Updated ehtmod (ehtools modules).
-Updated Modules v1.9 and renamed to ehtmod.
+Updated ehtmod (ehtools modules)
+Updated Modules v1.9 and renamed to ehtmod
 Updated ehtools (now you can stable login to ehtools)
+Fixed EHT-2019-02776 (nologin) vulnerability!
 Updated epasswd (now you can change login/password)
 Removed $EPATH firmware commander shell
 Added snapshots (more information in README.md/Utilities)
@@ -458,4 +459,3 @@ Updated libchattr and libunchattr
 Updated libconf and libunconf
 Updated ehtools PRO UX/UI Impruvements
 Updated ehtools LITE UX/UI Impruvements
-
