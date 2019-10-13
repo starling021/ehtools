@@ -34,7 +34,7 @@ YS="\e[1;33m"
 
 printf '\033]2;activate ehtools\a'
 
-ACTKEY="$( curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
+ACTKEY="$( curl "https://raw.githubusercontent.com/entynet/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
 sleep 1
 echo -e "Enter your ehtools activation key!"
 echo -e "You can buy it on the ehtools site!"
