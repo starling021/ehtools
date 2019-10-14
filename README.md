@@ -386,7 +386,7 @@ If in consequence of the bad internet connection ehtools will not be able to com
     
 # How to protect ehtools
 
-![Ehtools Auth](https://user-images.githubusercontent.com/54115104/64487106-d5e6f880-d23e-11e9-8b37-217948afaedd.png)
+![EPP](https://user-images.githubusercontent.com/54115104/66774876-60b8b400-eecb-11e9-8770-ffc92f6341d1.png)
 
 > Do it with install.sh:
    
