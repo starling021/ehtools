@@ -158,7 +158,7 @@ This allows us to do things like scan the network for other devices. This part o
 
 # Install new tools
 
-![TOOLS](https://user-images.githubusercontent.com/54115104/64487595-337e4380-d245-11e9-9fea-872d80b2970b.png)
+![TOOLS](https://user-images.githubusercontent.com/54115104/66775236-3d423900-eecc-11e9-92e4-1f327b6413a0.png)
 
 Part of the fun of Ehtools Framework is how easy it is to add new tools to our arsenal. To demonstrate this, let's download Pupy, a Python-based RAT designed to take control of other computers on the network. We can select option 9 to access the list of tools in Ehtools Framework.
 
@@ -402,7 +402,7 @@ If in consequence of the bad internet connection ehtools will not be able to com
     
     WARNING: Do not just close ehtools window!
 
-![Configuring...](https://user-images.githubusercontent.com/54115104/64487077-7ee12380-d23e-11e9-94d1-fc8c4eed30d3.png)
+![Configuring...](https://user-images.githubusercontent.com/54115104/66775235-3ca9a280-eecc-11e9-9c58-927e11150d59.png)
 
 # Terms of use
 
