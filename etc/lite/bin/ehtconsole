@@ -244,9 +244,9 @@ function latest_changelog
 {
 	clear
 	printf '\033]2;Entynet Hacker Tools\a'
-	echo -e ""$WHS"["$GNS"*"$WHS"]"$GNS" Welcome to the Ehtools Framework!"$CE""
+	echo -e "["$GNS"*"$CE"]"$GNS" Welcome to the Ehtools Framework!"$CE""
 	sleep 1
-	echo -e ""$WHS"["$GNS"*"$WHS"]"$CE" Welcome to version "$GNS"$VERSION"$CE" LITE!"$CE""
+	echo -e "["$GNS"*"$CE"]"$CE" Welcome to version "$GNS"$VERSION"$CE" LITE!"$CE""
 	sleep 2
 	echo -e "Reading Changelog from /root/ehtools/Changelog..."
 	sleep 3
