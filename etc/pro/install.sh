@@ -109,7 +109,7 @@ if [[ -f /etc/ehtools/root/service/late/ehtkey.txt ]]
 then
 printf '\033]2;activate ehtools\a'
 
-EHTKEY="$( cat /etc/ehtools/root/service/late/)"
+EHTKEY="$( cat /etc/ehtools/root/service/late/ehtkey.txt )"
 sleep 3
 echo -e
 echo -e "["$YS"inf"$CE"] "$YS"Activated! Your key is "$CE"["$YS""$EHTKEY""$CE"]"
