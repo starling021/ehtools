@@ -232,6 +232,7 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
+echo -e ""
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
 read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
@@ -251,6 +252,7 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
+echo -e ""
 echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
@@ -321,6 +323,7 @@ printf '\033]2;Ehtools Root Authentication\a'
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
+echo -e ""
 echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
 echo -e "$YS"Ehtools Root Authentication:"$CE"
@@ -398,6 +401,7 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
+echo -e ""
 echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
@@ -468,6 +472,7 @@ printf '\033]2;Ehtools Root Authentication\a'
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
+echo -e ""
 echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
 echo -e "$YS"Ehtools Root Authentication:"$CE"
