@@ -270,7 +270,7 @@ Run it to open WPS menu:
     for ehtools TUI and also without Gnome-terminall shell 
     modules such as (eht1, eht2 and etc.) will not work!
 
-> Good internet connection for server support (only ehtools PRO)
+> Good Internet connection for server support (only ehtools PRO)
 
     INFO: The server support for ehtools PRO is one of system 
     requirements, it is needed for collect information about 
@@ -379,10 +379,10 @@ After this enter your new ehtools root password (example: 1234)
 
 Server support for ehtools PRO is very important, as all error reports are sent to it in order to improve and fix vulnerabilities and bugs!
 
-    COUNCIL: Make a good internet connection
+    COUNCIL: Make a good Internet connection
     for ehtools, to help ehtools access to server!
     
-If in consequence of the bad internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
+If in consequence of the bad Internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
     
 # How to protect ehtools
 

@@ -3267,7 +3267,7 @@ function update_ehtools
 	        clear
 		echo -e "["$RS"*"$CE"] "$RS"There is no connection!"$CE""
 		sleep 1
-		echo -e "["$GNS"~"$CE"] "$GNS"Maybe you should type 'stop' in the main menu to get internet access again"$CE""
+		echo -e "["$GNS"~"$CE"] "$GNS"Maybe you should type 'stop' in the main menu to get Internet access again"$CE""
 		echo -e ""
 		echo -e "$PAKTGB"
 		$READAK
@@ -3445,7 +3445,7 @@ function public_ip
 		echo "Your public IP is: "$PUBLICIP""
 		#~ curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
 	else
-		echo -e "When monitor mode is enabled, you don't have internet access."
+		echo -e "When monitor mode is enabled, you don't have Internet access."
 		echo -e "Select 'd2' to disable monitor mode"
 		echo -e "$PAKTGB"
 		$READAK
