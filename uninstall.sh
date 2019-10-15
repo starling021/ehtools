@@ -242,6 +242,7 @@ do
 done
 
 echo -e
+echo -e
 		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 2
 		echo -e "Press "$YS"any key"$CE" to exit..."
