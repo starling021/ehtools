@@ -701,7 +701,7 @@ function listshortcuts
 	then
 		TITLE="Entropy"
 		NAMECD="cd /root/entropy"
-		KSSET="python src/entropy"
+		KSSET="entropy -b 2 -v --shodan PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 	elif [[ "$nn" = "6" ]]
 	then
 		TITLE="Morpheus"
@@ -3520,8 +3520,8 @@ function wifi_tools
 			if [[ -d "/root/entropy" ]]
 			then	
 				cd /root/entropy
-				python src/entropy
-				cd
+				entropy -b 2 -v --shodan PSKINdQe1GyxGgecYz2191H2JoS9qvgD
+				cd /root
 			else
 				echo -e "You have to install it manually since its not on github!"
 				sleep 4
