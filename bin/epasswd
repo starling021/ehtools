@@ -139,6 +139,9 @@ if [[ "$CAT" = "" ]]
 then
 clear
 else
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
 printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
@@ -312,6 +315,10 @@ sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' passwords
 touch password
 echo $passwords >> /etc/ehtools/password
+
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 
 cd /root/ehtools/lib
 chmod +x libchattr
