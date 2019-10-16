@@ -170,9 +170,6 @@ echo -e "("$YS"Try again..."$CE")"
 sleep 2
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 done
-cd /root/ehtools/lib
-chmod +x libenc
-./libenc
 fi
 
 printf '\033]2;Uninstalling...\a'
