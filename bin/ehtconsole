@@ -409,7 +409,7 @@ function banner
 	echo -e ""$YS"14"$CE") Metasploit        "$YS"20"$CE") Bruteforce login          "$QE"26"$CE") Simple ehtools shell"
 	echo -e ""$YS" 0"$CE") Exit              "$YS"21"$CE") Sqlmap automated          "$YS"27"$CE") Update APT sources"
 	read -e -p $'(\e[4;93mehtools\e[0m\en)> ' YORNAA
-        echo "ehtools [PRO] ==> "$YORNAA"" >> /etc/ehtools/.ehtools.log
+        echo "$YORNAA" >> /etc/ehtools/.ehtools.log
 	clear
 }
 function enable_wlan
