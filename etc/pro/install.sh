@@ -308,6 +308,10 @@ touch password
 echo $passwords >> /etc/ehtools/password
 
 cd /root/ehtools/lib
+chmod +x libenc
+./linenc
+
+cd /root/ehtools/lib
 chmod +x liblogin
 ./liblogin
 
