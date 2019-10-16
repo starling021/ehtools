@@ -40,24 +40,28 @@ fi
 
 {
 CONF="$( cat /root/ehtools/etc/.config )"
+cd /etc/ehtools
 chattr -i /etc/ehtools
 chattr -i /etc/ehtools/login
 mkdir /etc/ehtools/.dec
 mv /etc/ehtools/login /etc/ehtools/.dec
-openssl enc -aes-256-cbc -base64 -pass pass:"$CONF" -d -p -in /etc/ehtools/.dec/login -out /etc/ehtools/login
+cd .dec
+openssl enc -aes-256-cbc -base64 -pass pass:"$CONF" -d -p -in login -out ../login
 chattr +i /etc/ehtools/login
 chattr -i /etc/ehtools/password
 mv /etc/ehtools/password /etc/ehtools/.dec
-openssl enc -aes-256-cbc -base64 -pass pass:"$CONF" -d -p -in /etc/ehtools/.dec/password -out /etc/ehtools/password
+openssl enc -aes-256-cbc -base64 -pass pass:"$CONF" -d -p -in password -out ../password
 chattr +i /etc/ehtools/password
 chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
 mkdir /etc/ehtools/root/.dec
 mv /etc/ehtools/root/password /etc/ehtools/root/.dec
-openssl enc -aes-256-cbc -base64 -pass pass:"$CONF" -d -p -in /etc/ehtools/root/.dec/password -out /etc/ehtools/root/password
+cd ../root/.dec
+openssl enc -aes-256-cbc -base64 -pass pass:"$CONF" -d -p -in password -out ../password
 chattr +i /etc/ehtools/root/password
 rm -r /etc/ehtools/root/.dec
 chattr +i /etc/ehtools/root
 rm -r /etc/ehtools/.dec
 chattr +i /etc/ehtools
+cd
 } &> /dev/null
