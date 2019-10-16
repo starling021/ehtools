@@ -204,8 +204,8 @@ printf '\033]2;Uninstalling...\a'
 	      rm /bin/eht42
 	      rm /bin/eht43
 	      rm /bin/epasswd
-	      rm /bin/modules
-	      rm /bin/euh
+	      rm /bin/ehtmod
+	      rm /bin/ehtkey
 	      rm /bin/uiecache
 } &> /dev/null
 
