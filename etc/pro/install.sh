@@ -308,10 +308,6 @@ touch password
 echo $passwords >> /etc/ehtools/password
 
 cd /root/ehtools/lib
-chmod +x libenc
-./libenc
-
-cd /root/ehtools/lib
 chmod +x liblogin
 ./liblogin
 
@@ -366,6 +362,9 @@ echo -e "The ehtools config key is intended to protect ehtools boot!"
 echo -e "It is recommended to create a strong ehtools config key!"
 read -e -p $'(\e[4;93mconfig_key\e[0m\en)> ' DADI
 echo $DADI >> /root/ehtools/etc/.config
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 
 clear
 printf '\033]2;ehtools INSTALLER\a'
