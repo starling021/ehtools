@@ -42,15 +42,22 @@ fi
 CONF="$( cat /root/ehtools/etc/.config )"
 chattr -i /etc/ehtools
 chattr -i /etc/ehtools/login
-openssl enc -aes-256-cbc -pass pass:"$CONF" -p -in /etc/ehtools/login -out /etc/ehtools/login -base64
+mkdir /etc/ehtools/.enc
+mv /etc/ehtools/login /etc/ehtools/.enc
+openssl enc -aes-256-cbc -pass pass:"$CONF" -p -in /etc/ehtools/.enc/login -out /etc/ehtools/login -base64
 chattr +i /etc/ehtools/login
 chattr -i /etc/ehtools/password
-openssl enc -aes-256-cbc -pass pass:"$CONF" -p -in /etc/ehtools/password -out /etc/ehtools/password -base64
+mv /etc/ehtools/password /etc/ehtools/.dec
+openssl enc -aes-256-cbc -pass pass:"$CONF" -p -in /etc/ehtools/.enc/password -out /etc/ehtools/password -base64
 chattr +i /etc/ehtools/password
 chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
-openssl enc -aes-256-cbc -pass pass:"$CONF" -p -in /etc/ehtools/root/password -out /etc/ehtools/root/password -base64
+mkdir /etc/ehtools/root/.enc
+mv /etc/ehtools/root/password /etc/ehtools/root/.dec
+openssl enc -aes-256-cbc -pass pass:"$CONF" -p -in /etc/ehtools/root/.enc/password -out /etc/ehtools/root/password -base64
 chattr +i /etc/ehtools/root/password
+rm -r /etc/ehtools/root/.enc
 chattr +i /etc/ehtools/root
+rm -r /etc/ehtools/.enc
 chattr +i /etc/ehtools
 } &> /dev/null
