@@ -155,14 +155,14 @@ do
 	echo -e ""$YS" m"$CE") Manually type a MAC to deauth"
 	echo -e ""$YS" r"$CE") Refresh"
 	echo -e ""$YS" b"$CE") Go back"
-	read -p $'(\e[4;31mkill\e[0m)> ' STATION
+	read -e -p $'(\e[4;31mkill\e[0m)> ' STATION
 	clear
 	if [[ "$STATION" = "m" ]]
 	then
 		echo -e "MAC to deauth: "
-		read -p $'(\e[4;93mmac\e[0m)> ' MACTD
+		read -e -p $'(\e[4;93mmac\e[0m)> ' MACTD
 		echo -e "Number of deauths to send("$YS"0"$CE"=inf)("$YS"Enter"$CE"=0): "
-		read -p $'(\e[4;93mnumber\e[0m)> ' DEAUTHS
+		read -e -p $'(\e[4;93mnumber\e[0m)> ' DEAUTHS
 		if [[ "$DEAUTHS" = "" ]]
 		then
 			DEAUTHS=0
@@ -180,7 +180,7 @@ do
 	if [[ "$STATION" = "a" ]]
 	then
 		echo -e "Number of deauths to send("$YS"0"$CE"=inf)("$YS"Enter"$CE"=0): "
-		read -p $'(\e[4;93mnumber\e[0m)> ' DEAUTHS
+		read -e -p $'(\e[4;93mnumber\e[0m)> ' DEAUTHS
 		if [[ "$DEAUTHS" = "" ]]
 		then
 			DEAUTHS=0
@@ -203,7 +203,7 @@ do
 	if [[ "$STATION" -le "$dlines" && "$STATION" -ge 1 ]]
 	then
 		echo -e "Number of deauths to send("$YS"0"$CE"=inf)("$YS"Enter"$CE"=0): "
-		read -p $'(\e[4;93mnumber\e[0m)> ' DEAUTHS
+		read -e -p $'(\e[4;93mnumber\e[0m)> ' DEAUTHS
 		if [[ "$DEAUTHS" = "" ]]
 		then
 			DEAUTHS=0
@@ -317,12 +317,12 @@ do
 		#~ echo -e ""$YS"ENTER"$CE") Last option"
 	#~ fi
 	echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;93mdeauth\e[0m)> ' DT
+	read -e -p $'(\e[4;93mdeauth\e[0m)> ' DT
 	if [[ "$DT" = 1 ]]
 	then
 		PER=0
 		echo -e "Number of deauths to send("$YS"0"$CE"=inf)("$YS"Enter"$CE"=0): "
-		read -p $'(\e[4;93mnumber\e[0m)> ' DEAUTHS
+		read -e -p $'(\e[4;93mnumber\e[0m)> ' DEAUTHS
 		if [[ -z "$DEAUTHS" ]]
 		then
 			DEAUTHS=0
@@ -336,7 +336,7 @@ do
 	elif [[ "$DT" == 4 ]]
 	then
 		echo -e "Number of deauths per time: "
-		read -p $'(\e[4;93mnumber\e[0m)> ' DPT
+		read -e -p $'(\e[4;93mnumber\e[0m)> ' DPT
 		if [[ ! "$DPT" -gt 0 ]]
 		then
 			echo -e ""$RS"eht2 returned a fatal error (Invalid number)"$CE""
@@ -345,7 +345,7 @@ do
 			continue
 		fi
 		echo -e "Delay in seconds: "
-		read -p $'(\e[4;93mdelay\e[0m)> ' DIS
+		read -e -p $'(\e[4;93mdelay\e[0m)> ' DIS
 		if [[ ! "$DIS" -gt 0 ]]
 		then
 			echo -e ""$RS"eht2 returned a fatal error (Invalid number)"$CE""
@@ -371,7 +371,7 @@ do
 				echo -e ""$YS" 1"$CE") Check with pyrit"
 				echo -e ""$YS" 2"$CE") Check with cowpatty"
 				echo -e ""$YS" b"$CE") Go back"
-				read -p $'(\e[4;33mcheck\e[0m)> ' CHW
+				read -e -p $'(\e[4;33mcheck\e[0m)> ' CHW
 				if [[ "$CHW" = 1 ]]
 				then
 					pyrit_hand_check
@@ -396,7 +396,7 @@ do
 		if [[ "$HANDF" != "deauth" ]]
 		then
 			echo -e "Interval in seconds("$YS"Enter"$CE"="$YS"5"$CE"): "
-			read -p $'(\e[4;93minterval\e[0m)> ' Del
+			read -e -p $'(\e[4;93minterval\e[0m)> ' Del
 			if [[ "$Del" == "" ]]
 			then
 				Del=5

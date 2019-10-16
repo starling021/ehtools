@@ -232,7 +232,7 @@ printf '\033]2;ehtools INSTALLER\a'
 echo -e "Are you want to install ehtools modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So without thinking install them now!"
 echo -e "Only use 'yes' for the best way!"
-read -p $'(\e[4;93minstall\e[0m\en)> ' UORI
+read -e -p $'(\e[4;93minstall\e[0m\en)> ' UORI
 
 if [[ "$UORI" = "no" ]]
 then 
@@ -268,7 +268,7 @@ echo -e "Protect ehtools with password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "This function will protect ehtools with login and password!"
 echo -e "So without thinking protect ehtools now!"
 echo -e "Only use 'yes' for the best way!"
-read -p $'(\e[4;93mprotect\e[0m\en)> ' WQE
+read -e -p $'(\e[4;93mprotect\e[0m\en)> ' WQE
 
 
 if [[ "$WQE" = "no" ]]
@@ -291,13 +291,13 @@ echo -e "Set ehtools login and password!"
 echo -e "Ehtools Password Protection:"
 
 sleep 0.5
-read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
+read -e -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
 while [ "$logins" = "root" ]
 do
 sleep 0.5
 echo -e "["$RS"*"$CE"] "$RS"This user is reserved by the ehtools system!"$CE""
 sleep 0.5
-read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
+read -e -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
 done
 touch login
 echo $logins >> /etc/ehtools/login
@@ -360,7 +360,7 @@ printf '\033]2;ehtools config key\a'
 echo -e "Create your ehtools config key for "$YS"/etc/ehtools/config"$CE""
 echo -e "The ehtools config key is intended to protect ehtools boot!"
 echo -e "It is recommended to create a strong ehtools config key!"
-read -p $'(\e[4;93mconfig_key\e[0m\en)> ' DADI
+read -e -p $'(\e[4;93mconfig_key\e[0m\en)> ' DADI
 echo $DADI >> /root/ehtools/etc/config
 
 clear

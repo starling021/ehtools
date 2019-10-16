@@ -87,7 +87,7 @@ printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
 sleep 0.5
-read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 logins=$(cat /etc/ehtools/login)
 
 while [ "$loginer" = "root" ]
@@ -144,7 +144,7 @@ echo -e "$RS"Wrong login!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
 sleep 2
-read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 
 while [ "$loginer" = "root" ]
 do
@@ -214,7 +214,7 @@ clear
 printf '\033]2;ehtools password changer\a'
 echo -e "Do you want to "$ESENT" ehtools login and password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So, select 'yes' but do not forget it!"
-read -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
+read -e -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
 
 if [[ "$UORI" = "no" ]]
 then 
@@ -241,13 +241,13 @@ echo -e "Set ehtools login and password!"
 echo -e "Ehtools Password Protection:"
 
 sleep 0.5
-read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
+read -e -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
 while [ "$logins" = "root" ]
 do
 sleep 0.5
 echo -e "["$RS"*"$CE"] "$RS"This user is reserved by the ehtools system!"$CE""
 sleep 0.5
-read -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
+read -e -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
 done
 touch login
 echo $logins >> /etc/ehtools/login

@@ -70,7 +70,7 @@ printf '\033]2;select ehtools\a'
 echo -e "What version of Ehtools Framework you want to install?(\e[1;33mpro\e[0m/\e[1;33mlite\e[0m):"
 echo -e "If you did not buy Ehtools Framework PRO, select \e[1;33mlite\e[0m!"
 echo -e "If you bought Ehtools Framework PRO, select \e[1;33mpro\e[0m!"
-read -p $'(\e[1;33mversion\e[0m)> ' CONFIGURATION
+read -e -p $'(\e[1;33mversion\e[0m)> ' CONFIGURATION
 
 if [[ $CONFIGURATION = "pro" ]]
 then

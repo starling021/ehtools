@@ -100,7 +100,7 @@ function pre_scan
 		echo -e ""$YS"ENTER"$CE") All channels"
 		echo -e " "$YS"1"$CE"-"$YS"13"$CE") Specific channel"
 		echo -e "    "$YS"b"$CE") Go back"
-		read -p $'(\e[4;93mchoose\e[0m\en)> ' CHANNELSL
+		read -e -p $'(\e[4;93mchoose\e[0m\en)> ' CHANNELSL
 		if [[ "$CHANNELSL" = "" ]]
 		then
 			JS=1
@@ -134,7 +134,7 @@ while true
 do
 	clear
 	autoapselect
-	read -p $'(\e[4;93mchoose\e[0m\en)> ' APCHOOSE
+	read -e -p $'(\e[4;93mchoose\e[0m\en)> ' APCHOOSE
 	clear
 	if [[ "$APCHOOSE" = "back" || "$APCHOOSE" = "b" ]]
 	then
@@ -368,7 +368,7 @@ do
 	echo -e ""$YS" 6"$CE") Aircrack the ivs"
 	echo -e ""$YS" 7"$CE") WiFi autopwner - automated tool"
 	echo -e ""$YS" 0"$CE") Exit"
-	read -p $'(\e[4;31mWEP\e[0m)> ' WEP
+	read -e -p $'(\e[4;31mWEP\e[0m)> ' WEP
 	clear
 	if [[ "$WEP" = "1" ]]
 	then
@@ -377,7 +377,7 @@ do
 	then
 		echo -e "Enter the name of the file(no extension): "
 		echo -e "(don't use the same name twice)"
-		read -p $'(\e[4;93mname\e[0m\en)> ' WEPF
+		read -e -p $'(\e[4;93mname\e[0m\en)> ' WEPF
 		export WEPF
 		if [[ ! -d /root/handshakes/WEP ]]
 		then

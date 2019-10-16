@@ -348,7 +348,7 @@ function scan_wash
 		fi
 		echo -e ""$YS" r"$CE") Rescan"
 		echo -e ""$YS" b"$CE") Go back"
-		read -p $'(\e[4;93mchoose\e[0m)> ' WASHSCAN
+		read -e -p $'(\e[4;93mchoose\e[0m)> ' WASHSCAN
 		if [[ "$WASHSCAN" = "r" ]]
 		then
 			continue
@@ -379,7 +379,7 @@ function scan_wash
 				sleep 1
 				SCW=0
 				echo -e "Do you want to try to unlock it?"$YNYES""
-				read -p $'(\e[4;31munlock\e[0m)> ' UNW
+				read -e -p $'(\e[4;31munlock\e[0m)> ' UNW
 				if [[ ! "$UNW" = "n" ]]
 				then
 					unlock_wps
@@ -396,7 +396,7 @@ function scan_wash
 				echo -e ""$YS" 4"$CE") Bully"
 				echo -e ""$YS" r"$CE") Rescan"
 				echo -e ""$YS" b"$CE") Go back"
-				read -p $'(\e[4;31mPIN\e[0m)> ' WPSL
+				read -e -p $'(\e[4;31mPIN\e[0m)> ' WPSL
 				if [[ "$WPSL" = "r" ]]
 				then
 					RESCAN=1
@@ -456,7 +456,7 @@ do
 	#~ echo -e ""$YS" 3"$CE") Cause Michael failure (only TKIP / AES+TKIP)"
 	#~ echo -e ""$YS" 4"$CE") "
 	echo -e ""$YS" b"$CE") Go back"
-	read -p $'(\e[4;31munlock\e[0m)> ' UNL
+	read -e -p $'(\e[4;31munlock\e[0m)> ' UNL
 	clear
 	if [[ "$UNL" = "b" || "$UNL" = 00 || "$UNL" = 0 ]]
 	then
@@ -502,7 +502,7 @@ do
 	elif [[ "$UNL" = "2" ]]
 	then
 		echo -e "Packets to inject per second:("$YS"Enter"$CE"="$DPPS")"
-		read -p $'(\e[4;93mseconds\e[0m)> ' PPS
+		read -e -p $'(\e[4;93mseconds\e[0m)> ' PPS
 		if [[ "$PPS" = "" ]]
 		then
 			PPS="$DPPS"
@@ -552,7 +552,7 @@ do
 			echo -e ""$YS" a"$CE") Add another interface"
 			echo -e ""$YS" r"$CE") Reset interfaces"
 			echo -e ""$YS" b"$CE") Go back"
-			read -p $'(\e[4;93minterfaces\e[0m)> ' NIN
+			read -e -p $'(\e[4;93minterfaces\e[0m)> ' NIN
 			clear
 			if [[ "$NIN" = "b" || "$NIN" = 00 ]]
 			then
@@ -575,7 +575,7 @@ do
 			elif [[ "$NIN" = "a" ]]
 			then
 				echo -e "New interface: "
-				read -p $'(\e[4;93minterface\e[0m\en)> ' NII
+				read -e -p $'(\e[4;93minterface\e[0m\en)> ' NII
 				TEST3=$(ifconfig | grep "$NII")
 				if [[ "$TEST3" = "" ]]
 				then
@@ -629,7 +629,7 @@ function reaver_attack
 	dash_calc
 	printf '\033]2;WPS BRUTEFORCE\a'
 	echo -e "Delay between every attempt("$YS"Enter"$CE"=60): "
-	read -p $'(\e[4;93mdelay\e[0m\en)> ' DELAY
+	read -e -p $'(\e[4;93mdelay\e[0m\en)> ' DELAY
 	if [[ "$DELAY" = "" ]]
 	then
 		DELAY=60
@@ -646,7 +646,7 @@ function pixie_loop
 	dash_calc
 	printf '\033]2;PIXIE LOOP ATTACK\a'
 	echo -e "Delay between every attempt("$YS"Enter"$CE"=15): "
-	read -p $'(\e[4;93mdelay\e[0m\en)> ' DELAY
+	read -e -p $'(\e[4;93mdelay\e[0m\en)> ' DELAY
 	if [[ "$DELAY" = "" ]]
 	then
 		DELAY=15
@@ -952,7 +952,7 @@ do
 	echo -e ""$YS"11"$CE") Ignore lockout              CURRENT:"$IGNORELOCKOUT""
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"start"$CE") Start"
-	read -p $'(\e[4;31mbully\e[0m)> ' B
+	read -e -p $'(\e[4;31mbully\e[0m)> ' B
 	clear
 	if [[ "$B" = "back" || "$B" = "b" ]]
 	then
@@ -1003,15 +1003,15 @@ do
 	elif [[ "$B" = 1 ]]
 	then
 		echo -e "Essid:"
-		read -p $'(\e[4;93messid\e[0m\en)> ' ESSIDT
+		read -e -p $'(\e[4;93messid\e[0m\en)> ' ESSIDT
 	elif [[ "$B" = 2 ]]
 	then
 		echo -e "Bssid:"
-		read -p $'(\e[4;93mbssid\e[0m\en)> ' BSSIDT
+		read -e -p $'(\e[4;93mbssid\e[0m\en)> ' BSSIDT
 	elif [[ "$B" = 3 ]]
 	then
 		echo -e "Channel:"
-                read -p $'(\e[4;93mchannel\e[0m\en)> ' CHANT
+                read -e -p $'(\e[4;93mchannel\e[0m\en)> ' CHANT
 	elif [[ "$B" = 4 ]]
 	then
 		if [[ "$BRUTE" = "ON" ]]
@@ -1031,11 +1031,11 @@ do
 	elif [[ "$B" = 6 ]]
 	then
 		echo -e "Wait after lock(in seconds): "
-		read -p $'(\e[4;93mseconds\e[0m\en)> ' LOCKWAIT
+		read -e -p $'(\e[4;93mseconds\e[0m\en)> ' LOCKWAIT
 	elif [[ "$B" = 7 ]]
 	then
 		echo -e "Wait per attempt(in seconds): "
-		read -p $'(\e[4;93mseconds\e[0m\en)> ' WAITPERATTEMPT
+		read -e -p $'(\e[4;93mseconds\e[0m\en)> ' WAITPERATTEMPT
 	elif [[ "$B" = 8 ]]
 	then
 		if [[ "$FORCE" = "ON" ]]
@@ -1057,7 +1057,7 @@ do
 		while true
 		do
 			echo -e "Verbosity (1-4): "
-			read -p $'(\e[4;93mverbosity\e[0m\en)> ' VERB
+			read -e -p $'(\e[4;93mverbosity\e[0m\en)> ' VERB
 			clear
 			if [[ "$VERB" = 1 || "$VERB" = 2 || "$VERB" = 3 || "$VERB" = 4 ]]
 			then
@@ -1126,7 +1126,7 @@ else
 fi
 echo -e ""$YS"11"$CE") See latest log"
 echo -e ""$YS" 0"$CE") Exit"
-read -p $'(\e[4;31mWPS\e[0m)> ' YN
+read -e -p $'(\e[4;31mWPS\e[0m)> ' YN
 clear
 if [[ "$YN" = "1" ]]
 then
@@ -1145,7 +1145,7 @@ then
 	if [[ "$ESSIDT" != "" ]]
 	then
 		echo -e "Enter your target's WPS pin: "
-		read -p $'(\e[4;93mpin\e[0m\en)> ' WPST
+		read -e -p $'(\e[4;93mpin\e[0m\en)> ' WPST
 		clear
 		reaver -i $WLANNM -b $BSSIDT -c $CHANT -p $WPST -vv | tee /root/ehtools/wpslog
 		echo -e "Press "$YS"enter"$CE" to go back"

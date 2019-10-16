@@ -38,7 +38,7 @@ ACTKEY="$( curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/mast
 sleep 1
 echo -e "Enter your ehtools activation key!"
 echo -e "You can buy it on the ehtools site!"
-read -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYACT
+read -e -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYACT
 sleep 1
 if [[ "$KEYACT" != "$ACTKEY" ]]
 then

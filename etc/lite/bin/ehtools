@@ -173,7 +173,7 @@ sleep 0.5
 echo -e ""
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
-read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 logins=$(cat /etc/ehtools/login)
 
 while [ "$loginer" = "$logins" ]
@@ -323,7 +323,7 @@ echo -e "$RS"Wrong login!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
 sleep 2
-read -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 
 while [ "$loginer" = "$logins" ]
 do
