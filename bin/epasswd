@@ -291,9 +291,6 @@ then
 elif [[ "$UORI" = "yes" ]]
 then
 cd /root/ehtools/lib
-chmod +x libdec
-./libdec
-cd /root/ehtools/lib
 chmod +x libunchattr
 ./libunchattr
 {
