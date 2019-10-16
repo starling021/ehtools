@@ -61,7 +61,7 @@
 	LGYS="\e[0;37m"
 #white start
 	WHS="\e[1;37m"
-
+	
 if [[ $EUID -ne 0 ]]
 then
    echo "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE"" 1>&2
@@ -74,6 +74,9 @@ if [[ "$CAT" = "" ]]
 then
 clear
 else
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
 printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
@@ -104,7 +107,7 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 passwords=$(cat /etc/ehtools/password)
 while [ "$passworder" != "$passwords" ]
 do
-echo -e 
+echo -e
 echo -e "$RS"Wrong password!"$CE"
 sleep 3
 echo -e "("$YS"Try again..."$CE")"
@@ -115,14 +118,21 @@ fi
 
 printf '\033]2;Uninstalling...\a'
 
-
-{ 
+{
 	      cd /root/ehtools/lib
 	      chmod +x libunchattr
 	      ./libunchattr
 	      cd /root/ehtools/lib
-              chmod +x libunconf
-              ./libunconf
+	      chmod +x libunconf
+	      ./libunconf
+	      chattr -i /tmp/config
+              chattr -i /tmp/config/config.txt
+              chattr -i /tmp/config/configure.txt
+	      chattr -i /etc/ehtools/root/service
+              chattr -i /etc/ehtools/root/service/late
+              chattr -i /etc/ehtools/root/service/ehtkey.txt
+              chattr -i /etc/ehtools/root/service/late/ehtkey.txt
+	      rm -r /tmp/config
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
 	      rm -r /etc/ehtools
@@ -138,8 +148,8 @@ printf '\033]2;Uninstalling...\a'
 	      rm /bin/eht42
 	      rm /bin/eht43
 	      rm /bin/epasswd
-	      rm /bin/modules
-	      rm /bin/euh
+	      rm /bin/ehtmod
+	      rm /bin/ehtkey
 	      rm /bin/uiecache
 } &> /dev/null
 
