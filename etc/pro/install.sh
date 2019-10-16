@@ -309,7 +309,7 @@ echo $passwords >> /etc/ehtools/password
 
 cd /root/ehtools/lib
 chmod +x libenc
-./linenc
+./libenc
 
 cd /root/ehtools/lib
 chmod +x liblogin
