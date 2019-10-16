@@ -110,7 +110,7 @@ then
 sleep 1
 echo -e
 echo -e ""$YS"Options: "$CE""
-echo -e ""$YS"-u"$CE") Uninstall ehtools"
+echo -e ""$YS"-r"$CE") Uninstall ehtools"
 echo -e ""$YS"-h"$CE") Make handshake"
 echo -e ""$YS"-w"$CE") Open WPS menu"
 echo -e ""$YS"-o"$CE") Show options"
@@ -162,6 +162,9 @@ fi
 fi
 
 printf '\033]2;Ehtools Authentication\a' 
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
       echo -e 
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -210,6 +213,9 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 done
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -226,6 +232,9 @@ trap '' 2
 ehtconsole
 exit
 else
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -253,6 +262,9 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
       echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -281,6 +293,9 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 done
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -297,6 +312,9 @@ trap '' 2
 ehtconsole
 exit
 else
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -331,6 +349,9 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Authentication\a'
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
       echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -359,6 +380,9 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 done
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -375,6 +399,9 @@ trap '' 2
 ehtconsole
 exit
 else
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -402,6 +429,9 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
       echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -431,6 +461,9 @@ done
 
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -447,6 +480,9 @@ trap '' 2
 ehtconsole
 exit
 else
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
