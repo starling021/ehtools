@@ -204,6 +204,13 @@ then
 fi
 
 clear
+{
+cd /root/ehtools/lib
+chmod +x libunlogin
+./libunlogin
+rm /etc/ehtools/login
+rm /etc/ehtools/password
+} &> /dev/null
 printf '\033]2;ehtools INSTALLER\a'
 echo -e "Protect ehtools with password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "This function will protect ehtools with login and password!"
