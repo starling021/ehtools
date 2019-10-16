@@ -136,7 +136,7 @@ echo -e "==> \e[1;33mhttps://ehtools.pro/\e[0m"
 sleep 3
 echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com/\e[0m"
 sleep 3
-echo -e "Creators of Ehtools Framework (\e[4;34mehtools team\e[0m):"
+echo -e "Creators of Ehtools Framework (\e[4;34mEhtools Team\e[0m):"
 sleep 3
 echo -e "\e[4;34mEntynetproject\e[0m - Main Developer"
 sleep 3
