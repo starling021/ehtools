@@ -278,6 +278,9 @@ read -e -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
 if [[ "$UORI" = "no" ]]
 then 
 	clear
+        cd /root/ehtools/lib
+        chmod +x libenc
+        ./libenc
 	echo -e "OK..."
 	sleep 3
 	echo -e "To "$ESENT" ehtools login and password run 'epasswd'"
@@ -287,6 +290,9 @@ then
         
 elif [[ "$UORI" = "yes" ]]
 then
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
 cd /root/ehtools/lib
 chmod +x libunchattr
 ./libunchattr
