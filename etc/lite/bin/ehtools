@@ -128,7 +128,7 @@ if [[ -f /bin/ehtools/ehtconsole ]]
 then
 {
 chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
@@ -144,7 +144,7 @@ exit
 else
 {
 chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
@@ -212,7 +212,7 @@ if [[ -f /bin/ehtools/ehtconsole ]]
 then
 {
 chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
@@ -228,7 +228,7 @@ exit
 else
 {
 chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
@@ -283,7 +283,7 @@ if [[ -f /bin/ehtools/ehtconsole ]]
 then
 {
 chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
@@ -299,7 +299,7 @@ exit
 else
 {
 chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
@@ -361,7 +361,7 @@ if [[ -f /bin/ehtools/ehtconsole ]]
 then
 {
 chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
@@ -377,7 +377,7 @@ exit
 else
 {
 chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
@@ -433,7 +433,7 @@ if [[ -f /bin/ehtools/ehtconsole ]]
 then
 {
 chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
@@ -449,7 +449,7 @@ exit
 else
 {
 chattr -i /etc/ehtools
-cp /root/ehtools/etc/config /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf

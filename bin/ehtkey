@@ -101,13 +101,13 @@ echo -e "Usage: ehtkey [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   --change <old_key> <new_key>  Change ehtools config key."
-echo -e "                                (rewrite /etc/ehtools/config)"
+echo -e "                                (rewrite /etc/ehtools/.config)"
 echo -e "   --help                        Give this help list."
 exit
 
 elif [[ $1 = "--change" || $1 = "-c" ]]
 then
-if [[ $2 != "$(cat /root/ehtools/etc/config)" ]]
+if [[ $2 != "$(cat /root/ehtools/etc/.config)" ]]
 then
 sleep 2
 echo -e "Error, incorrect old ehtools config key!"
@@ -119,9 +119,9 @@ sleep 2
 cd /root/ehtools
 chmod +x lib/libunconf
 lib/libunconf
-rm /etc/ehtools/config
-rm /root/ehtools/etc/config
-echo "$3" >> /root/ehtools/etc/config
+rm /etc/ehtools/.config
+rm /root/ehtools/etc/.config
+echo "$3" >> /root/ehtools/etc/.config
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
@@ -139,6 +139,6 @@ echo -e "Usage: ehtkey [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   --change <old_key> <new_key>  Change ehtools config key."
-echo -e "                                (rewrite /etc/ehtools/config)"
+echo -e "                                (rewrite /etc/ehtools/.config)"
 echo -e "   --help                        Give this help list."
 exit

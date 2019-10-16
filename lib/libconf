@@ -95,8 +95,8 @@ fi
 fi
 
 {
-chattr +i /etc/ehtools/config
+chattr +i /etc/ehtools/.config
 chattr +i /etc/ehtools
 chattr +i /root/ehtools/etc
-chattr +i /root/ehtools/etc/config
+chattr +i /root/ehtools/etc/.config
 } &> /dev/null

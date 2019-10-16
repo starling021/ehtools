@@ -335,8 +335,8 @@ fi
 
 
 {
-PIK="$( cat /etc/ehtools/config )"
-KIP="$( cat /root/ehtools/etc/config )"
+PIK="$( cat /etc/ehtools/.config )"
+KIP="$( cat /root/ehtools/etc/.config )"
 } &> /dev/null
 
 
@@ -465,7 +465,7 @@ then
 	cd /root/ehtools/lib
 	chmod +x libunconf
 	./libunconf
-	rm /etc/ehtools/config
+	rm /etc/ehtools/.config
         {
 	chattr +i /etc/ehtools
 	} &> /dev/null
@@ -1024,7 +1024,7 @@ do
 	cd /root/ehtools/lib
 	chmod +x libunconf
 	./libunconf
-	rm /etc/ehtools/config
+	rm /etc/ehtools/.config
         {
 	chattr +i /etc/ehtools
 	} &> /dev/null
@@ -1497,7 +1497,7 @@ then
 	cd /root/ehtools/lib
 	chmod +x libunconf
 	./libunconf
-	rm /etc/ehtools/config
+	rm /etc/ehtools/.config
         {
 	chattr +i /etc/ehtools
 	} &> /dev/null
@@ -1590,7 +1590,7 @@ then
 	                cd /root/ehtools/lib
 	                chmod +x libunconf
 	                ./libunconf
-	                rm /etc/ehtools/config
+	                rm /etc/ehtools/.config
 	                {
 	                chattr +i /etc/ehtools
 	                } &> /dev/null
@@ -1620,7 +1620,7 @@ then
 	cd /root/ehtools/lib
 	chmod +x libunconf
 	./libunconf
-	rm /etc/ehtools/config
+	rm /etc/ehtools/.config
 	{
 	chattr +i /etc/ehtools
 	} &> /dev/null
@@ -1784,7 +1784,7 @@ then
 	cd /root/ehtools/lib
 	chmod +x libunconf
 	./libunconf
-	rm /etc/ehtools/config
+	rm /etc/ehtools/.config
 	{
 	chattr +i /etc/ehtools
 	} &> /dev/null
@@ -1925,7 +1925,7 @@ then
 	cd /root/ehtools/lib
 	chmod +x libunconf
 	./libunconf
-	rm /etc/ehtools/config
+	rm /etc/ehtools/.config
 	{
 	chattr +i /etc/ehtools
 	} &> /dev/null
@@ -1946,7 +1946,7 @@ then
 	cd /root/ehtools/lib
 	chmod +x libunconf
 	./libunconf
-	rm /etc/ehtools/config
+	rm /etc/ehtools/.config
 	{
 	chattr +i /etc/ehtools
 	} &> /dev/null
@@ -2212,7 +2212,7 @@ do
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-	        rm /etc/ehtools/config
+	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
 	        } &> /dev/null
@@ -4057,7 +4057,7 @@ function wifi_tools
 		                        cd /root/ehtools/lib
 	                                chmod +x libunconf
 	                                ./libunconf
-	                                rm /etc/ehtools/config
+	                                rm /etc/ehtools/.config
 	                                {
 	                                chattr +i /etc/ehtools
 	                                } &> /dev/null
@@ -4091,7 +4091,7 @@ function wifi_tools
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-	        rm /etc/ehtools/config
+	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
 	        } &> /dev/null
@@ -5293,7 +5293,7 @@ function remote_access
 			cd /root/ehtools/lib
 	                chmod +x libunconf
 	                ./libunconf
-	                rm /etc/ehtools/config
+	                rm /etc/ehtools/.config
 	                {
 	                chattr +i /etc/ehtools
 	                } &> /dev/null
@@ -5378,7 +5378,7 @@ function remote_access
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-	        rm /etc/ehtools/config
+	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
 	        } &> /dev/null
@@ -5611,7 +5611,7 @@ function information_gathering
 		                                cd /root/ehtools/lib
 	                                        chmod +x libunconf
 	                                        ./libunconf
-	                                        rm /etc/ehtools/config
+	                                        rm /etc/ehtools/.config
 	                                        {
 	                                        chattr +i /etc/ehtools
 	                                        } &> /dev/null
@@ -5644,7 +5644,7 @@ function information_gathering
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-	        rm /etc/ehtools/config
+	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
 	        } &> /dev/null
@@ -5944,7 +5944,7 @@ function website_tools
 		                                cd /root/ehtools/lib
 	                                        chmod +x libunconf
 	                                        ./libunconf
-	                                        rm /etc/ehtools/config
+	                                        rm /etc/ehtools/.config
 	                                        {
 	                                        chattr +i /etc/ehtools
 	                                        } &> /dev/null
@@ -6011,7 +6011,7 @@ function website_tools
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-	        rm /etc/ehtools/config
+	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
 	        } &> /dev/null
@@ -6212,7 +6212,7 @@ do
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-	        rm /etc/ehtools/config
+	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
 	        } &> /dev/null
@@ -6451,7 +6451,7 @@ function metasploit_menu
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-	        rm /etc/ehtools/config
+	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
 	        } &> /dev/null
@@ -6686,7 +6686,7 @@ function tools_menu
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-	        rm /etc/ehtools/config
+	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
 	        } &> /dev/null
@@ -6957,7 +6957,7 @@ do
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-	        rm /etc/ehtools/config
+	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
 	        } &> /dev/null
@@ -7861,7 +7861,7 @@ function cromos_menu
 	                cd /root/ehtools/lib
 	                chmod +x libunconf
 	                ./libunconf
-	                rm /etc/ehtools/config
+	                rm /etc/ehtools/.config
 	                {
 	                chattr +i /etc/ehtools
 	                } &> /dev/null
@@ -8029,7 +8029,7 @@ do
 	cd /root/ehtools/lib
 	chmod +x libunconf
 	./libunconf
-	rm /etc/ehtools/config
+	rm /etc/ehtools/.config
 	{
 	chattr +i /etc/ehtools
 	} &> /dev/null
@@ -8423,7 +8423,7 @@ function about_option
 		cd /root/ehtools/lib
 		chmod +x libunconf
 	        ./libunconf
-		rm /etc/ehtools/config
+		rm /etc/ehtools/.config
 		{
 		chattr +i /etc/ehtools
 		} &> /dev/null
@@ -8561,7 +8561,7 @@ function ngrok_option
 				cd /root/ehtools/lib
 	                        chmod +x libunconf
 	                        ./libunconf
-	                        rm /etc/ehtools/config
+	                        rm /etc/ehtools/.config
                                 {
 	                        chattr +i /etc/ehtools
 	                        } &> /dev/null
@@ -9138,7 +9138,7 @@ function settings_menu
 			cd /root/ehtools/lib
 	                chmod +x libunconf
 	                ./libunconf
-		        rm /etc/ehtools/config
+		        rm /etc/ehtools/.config
 		        {
 		        chattr +i /etc/ehtools
 		        } &> /dev/null
@@ -9342,7 +9342,7 @@ function settings_menu
 					cd /root/ehtools/lib
 	                                chmod +x libunconf
 	                                ./libunconf
-		                        rm /etc/ehtools/config
+		                        rm /etc/ehtools/.config
 		                        {
 		                        chattr +i /etc/ehtools
 		                        } &> /dev/null
@@ -9444,7 +9444,7 @@ function main_options
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-		rm /etc/ehtools/config
+		rm /etc/ehtools/.config
 		{
 		chattr +i /etc/ehtools
 		} &> /dev/null
@@ -9928,7 +9928,7 @@ function main_options
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-		rm /etc/ehtools/config
+		rm /etc/ehtools/.config
 		{
 		chattr +i /etc/ehtools
 		kill -9 $PPID
@@ -10009,7 +10009,7 @@ function main_options
 		cd /root/ehtools/lib
 	        chmod +x libunconf
 	        ./libunconf
-		rm /etc/ehtools/config
+		rm /etc/ehtools/.config
 		{
 		chattr +i /etc/ehtools
 		} &> /dev/null
@@ -11311,8 +11311,8 @@ fi
 fi
 
 {
-PIK="$( cat /etc/ehtools/config )"
-KIP="$( cat /root/ehtools/etc/config )"
+PIK="$( cat /etc/ehtools/.config )"
+KIP="$( cat /root/ehtools/etc/.config )"
 } &> /dev/null
 
 if [[ "$PIK" != "$KIP" ]]

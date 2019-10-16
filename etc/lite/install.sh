@@ -293,11 +293,11 @@ fi
 sleep 3
 clear
 printf '\033]2;ehtools config key\a'
-echo -e "Create your ehtools config key for "$YS"/etc/ehtools/config"$CE""
+echo -e "Create your ehtools config key for "$YS"/etc/ehtools/.config"$CE""
 echo -e "The ehtools config key is intended to protect ehtools boot!"
 echo -e "It is recommended to create a strong ehtools config key!"
 read -e -p $'(\e[4;93mconfig_key\e[0m\en)> ' DADI
-echo $DADI >> /root/ehtools/etc/config
+echo $DADI >> /root/ehtools/etc/.config
 
 clear
 printf '\033]2;ehtools INSTALLER\a'
