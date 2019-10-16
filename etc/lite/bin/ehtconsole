@@ -2351,9 +2351,9 @@ clear
 while true
 do
 	clear
-	TERMINALTITLE="Dr0p1t-Framework"
+	TERMINALTITLE="DROPIT FRAMEWORK"
 	dash_calc
-	printf '\033]2;Dr0p1t-Framework\a'
+	printf '\033]2;DROPIT FRAMEWORK\a'
 	if [[ "$MALURL" = "" ]]
 	then
 		MALURL="\e[1;31mNONE\e[0m"
