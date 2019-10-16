@@ -39,7 +39,7 @@ then
 fi
 
 {
-CONF="$( cat /root/ehtools/etc/.config )
+CONF="$( cat /root/ehtools/etc/.config )"
 chattr -i /etc/ehtools
 chattr -i /etc/ehtools/login
 openssl enc -aes-256-cbc -pass pass:"$CONF" -p -in /etc/ehtools/login -out /etc/ehtools/login -base64
