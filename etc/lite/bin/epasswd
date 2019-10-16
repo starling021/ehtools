@@ -71,7 +71,7 @@ fi
 
 clear
 printf '\033]2;ehtools password changer\a'
-sleep 2
+sleep 3
 CAT="$( cat /etc/ehtools/password )"
 if [[ "$CAT" = "" ]]
 then
@@ -83,6 +83,9 @@ if [[ "$CAT" = "" ]]
 then
 clear
 else
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
 printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
@@ -219,6 +222,9 @@ read -e -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
 if [[ "$UORI" = "no" ]]
 then 
 	clear
+        cd /root/ehtools/lib
+        chmod +x libenc
+        ./libenc
 	echo -e "OK..."
 	sleep 3
 	echo -e "To "$ESENT" ehtools login and password run 'epasswd'"
@@ -256,6 +262,10 @@ sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' passwords
 touch password
 echo $passwords >> /etc/ehtools/password
+
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 
 cd /root/ehtools/lib
 chmod +x libchattr
