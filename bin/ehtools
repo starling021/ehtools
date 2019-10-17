@@ -193,8 +193,6 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 ehtconsole
 exit
 else
@@ -210,8 +208,6 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 ehtconsole
 exit
 fi
@@ -297,8 +293,6 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 ehtconsole
 exit
 else
@@ -314,8 +308,6 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 ehtconsole
 exit
 fi
@@ -374,8 +366,6 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 ehtconsole
 exit
 else
@@ -391,8 +381,6 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 ehtconsole
 exit
 fi
@@ -464,8 +452,6 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 ehtconsole
 exit
 else
@@ -481,8 +467,6 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 ehtconsole
 exit
 fi
@@ -542,8 +526,6 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 ehtconsole
 exit
 else
@@ -559,8 +541,6 @@ chmod +x /bin/ehtools/ehtconsole
 chattr +i /bin/ehtools/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
-trap '' INT TSTP
-trap '' 2
 ehtconsole
 exit
 fi
