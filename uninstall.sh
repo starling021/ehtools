@@ -69,27 +69,27 @@ then
 fi
 
 {
-chattr -i /tmp/config
-chattr -i /tmp/config/config.txt
-chattr -i /tmp/config/configure.txt
+chattr -i /dev/config
+chattr -i /dev/config/config.txt
+chattr -i /dev/config/configure.txt
 } &> /dev/null
 
 {
-mkdir /tmp/config
-echo 0 >> /tmp/config/config.txt
-echo 1 >> /tmp/config/configure.txt
+mkdir /dev/config
+echo 0 >> /dev/config/config.txt
+echo 1 >> /dev/config/configure.txt
 } &> /dev/null
 
 {
-chattr +i /tmp/config
-chattr +i /tmp/config/config.txt
-chattr +i /tmp/config/configure.txt
+chattr +i /dev/config
+chattr +i /dev/config/config.txt
+chattr +i /dev/config/configure.txt
 } &> /dev/null
 
 
 {
-SERSE="$( cat /tmp/config/config.txt | head -n 1 )"
-ESRES="$( cat /tmp/config/configure.txt | head -n 1 )"
+SERSE="$( cat /dev/config/config.txt | head -n 1 )"
+ESRES="$( cat /dev/config/configure.txt | head -n 1 )"
 } &> /dev/null
 
 if [[ "$SERSE" != "$ESRES" ]]
@@ -191,14 +191,14 @@ printf '\033]2;Uninstalling...\a'
 	      cd /root/ehtools/lib
 	      chmod +x libunconf
 	      ./libunconf
-	      chattr -i /tmp/config
-              chattr -i /tmp/config/config.txt
-              chattr -i /tmp/config/configure.txt
+	      chattr -i /dev/config
+              chattr -i /dev/config/config.txt
+              chattr -i /dev/config/configure.txt
 	      chattr -i /etc/ehtools/root/service
               chattr -i /etc/ehtools/root/service/late
               chattr -i /etc/ehtools/root/service/ehtkey.txt
               chattr -i /etc/ehtools/root/service/late/ehtkey.txt
-	      rm -r /tmp/config
+	      rm -r /dev/config
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
 	      rm -r /etc/ehtools

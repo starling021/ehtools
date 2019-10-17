@@ -73,18 +73,18 @@ mkdir /etc/ehtools/root/service
 mkdir /etc/ehtools/root/service/late
 echo "$r-$s-$h-$g" >> /etc/ehtools/root/service/late/ehtkey.txt
 {
-chattr -i /tmp/config
-chattr -i /tmp/config/config.txt
-chattr -i /tmp/config/configure.txt
+chattr -i /dev/config
+chattr -i /dev/config/config.txt
+chattr -i /dev/config/configure.txt
 } &> /dev/null
-rm /tmp/config/config.txt
-rm /tmp/config/configure.txt
-cat /etc/ehtools/root/service/late/ehtkey.txt >> /tmp/config/configure.txt
-cat /etc/ehtools/root/service/late/ehtkey.txt >> /tmp/config/config.txt
+rm /dev/config/config.txt
+rm /dev/config/configure.txt
+cat /etc/ehtools/root/service/late/ehtkey.txt >> /dev/config/configure.txt
+cat /etc/ehtools/root/service/late/ehtkey.txt >> /dev/config/config.txt
 {
-chattr +i /tmp/config
-chattr +i /tmp/config/config.txt
-chattr +i /tmp/config/configure.txt
+chattr +i /dev/config
+chattr +i /dev/config/config.txt
+chattr +i /dev/config/configure.txt
 } &> /dev/null
 echo "$ACTKEY" >> /etc/ehtools/root/service/ehtkey.txt
 sleep 3
