@@ -75,9 +75,6 @@ then
    exit
 fi
 
-trap '' INT TSTP
-trap '' 2
-
 if [[ $1 = "-u" || $1 = "--uninstall" ]]
 then
 sleep 1
@@ -168,6 +165,10 @@ printf '\033]2;Ehtools Authentication\a'
 cd /root/ehtools/lib
 chmod +x libdec
 ./libdec
+logins="$(cat /etc/ehtools/login)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
       echo -e 
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -180,7 +181,6 @@ echo -e ""
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
 read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
-logins=$(cat /etc/ehtools/login)
 
 while [ "$loginer" = "$logins" ]
 do
@@ -201,7 +201,15 @@ echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
-passroot="$( cat /etc/ehtools/password )"
+
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
+passroot="$(cat /etc/ehtools/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
+
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -216,9 +224,6 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 done
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
-cd /root/ehtools/lib
-chmod +x libenc
-./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -235,9 +240,6 @@ trap '' 2
 ehtconsole
 exit
 else
-cd /root/ehtools/lib
-chmod +x libenc
-./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -278,7 +280,13 @@ echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
 echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
-passroot="$( cat /etc/ehtools/root/password )"
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
+passroot="$(cat /etc/ehtools/root/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -293,9 +301,6 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 done
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
-cd /root/ehtools/lib
-chmod +x libenc
-./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -312,9 +317,6 @@ trap '' 2
 ehtconsole
 exit
 else
-cd /root/ehtools/lib
-chmod +x libenc
-./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -362,7 +364,13 @@ echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
-passroot="$( cat /etc/ehtools/password )"
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
+passroot="$(cat /etc/ehtools/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -377,9 +385,6 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 done
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
-cd /root/ehtools/lib
-chmod +x libenc
-./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -396,9 +401,6 @@ trap '' 2
 ehtconsole
 exit
 else
-cd /root/ehtools/lib
-chmod +x libenc
-./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -439,7 +441,13 @@ echo -e "You want to login as '"$YS"root"$CE"'"
 sleep 0.5
 echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
-passroot="$( cat /etc/ehtools/root/password )"
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
+passroot="$(cat /etc/ehtools/root/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -455,9 +463,6 @@ done
 
 if [[ -f /bin/ehtools/ehtconsole ]]
 then
-cd /root/ehtools/lib
-chmod +x libenc
-./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
@@ -474,9 +479,6 @@ trap '' 2
 ehtconsole
 exit
 else
-cd /root/ehtools/lib
-chmod +x libenc
-./libenc
 {
 chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
