@@ -5779,18 +5779,25 @@ function settings_menu
 		printf '\033]2;SETTINGS\a'
 		{
 		CATIS="$( cat /etc/ehtools/password )"
+		CATISIS="$( cat /root/ehtools/lib/libenc )"
 		} &> /dev/null
+		if [[ "$CATISIS" = "" ]]
+		then
+		EPPC="off"
+		else
+		EPPC="on"
+		fi
                 if [[ "$CATIS" = "" ]]
                 then
-                EPPO="no"
+                EPPO="off"
                 else
-                EPPO="yes"
+                EPPO="on"
                 fi
                 if [[ -f "$EPATH"/settings/AWUS036ACH.txt ]]
 		then
 			read ALFA < "$EPATH"/settings/AWUS036ACH.txt
 		else
-			ALFA="no"
+			ALFA="off"
 		fi
 		if [[ -f "$EPATH"/settings/startmac.txt ]]
 		then
@@ -5802,7 +5809,7 @@ function settings_menu
 		then
 			read IGN < "$EPATH"/settings/ignorenegativeone.txt
 		else
-			IGN="no"
+			IGN="off"
 		fi
 		if [[ -f "$EPATH"/settings/arpin.txt ]]
 		then
@@ -5813,10 +5820,11 @@ function settings_menu
 		echo -e ""$YS" 1"$CE") Change logo color"
 		echo -e ""$YS" 2"$CE") Howdoi settings"
 		echo -e ""$YS" 3"$CE") Ehtools Password Protection                  $EPPO"
-                echo -e ""$YS" 4"$CE") ALFA AWUS036ACH support                      $ALFA"
+                echo -e ""$YS" 4"$CE") Ehtools Password Protection Crypto           $EPPC"
 		echo -e ""$YS" 5"$CE") Ignore negative one when deauthing           $IGN"
 		echo -e ""$YS" 6"$CE") MAC to change to, when starting monitor      $STARTMAC"	
 		echo -e ""$YS" 7"$CE") Interface for arp-scan (network scanner)     $ARPIN"
+		echo -e ""$YS" 8"$CE") ALFA AWUS036ACH support                      $ALFA"		
                 echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS" 0"$CE") Exit"
 		read -e -p $'(\e[4;93msettings\e[0m)> ' SET
@@ -5874,25 +5882,47 @@ function settings_menu
 			fi
 		elif [[ "$SET" = 5 ]]
 		then
-			if [[ "$IGN" = "yes" ]]
+			if [[ "$IGN" = "on" ]]
 			then
-				IGN="no"
+				IGN="off"
 			else
-				IGN="yes"
+				IGN="on"
 			fi
 			echo -e "$IGN" > "$EPATH"/settings/ignorenegativeone.txt
+			
 		elif [[ "$SET" = 4 ]]
 		then
-			if [[ "$ALFA" = "yes" ]]
+			if [[ "$EPPC" = "on" ]]
 			then
-				ALFA="no"
+			cd /root/ehtools/lib
+			mkdir .disabled
+			mv libdec .disabled
+			mv libenc .disabled
+			touch libdec
+			touch libenc
+			EPPC="off"
 			else
-				ALFA="yes"
+			cd /root/ehtools/lib
+			rm libdec
+			rm libec
+			mv .disabled/libdec /root/ehtools/lib
+			mv .disabled/libenc /root/ehtools/lib
+			rm -r .disabled
+			EPPC="on"
+			fi	
+			
+		elif [[ "$SET" = 8 ]]
+		then
+			if [[ "$ALFA" = "on" ]]
+			then
+				ALFA="off"
+			else
+				ALFA="on"
 			fi
 			echo -e "$ALFA" > "$EPATH"/settings/AWUS036ACH.txt
 		elif [[ "$SET" = 3 ]]
                 then
-                        if [[ "$EPPO" = "yes" ]]
+                        if [[ "$EPPO" = "on" ]]
                         then
                                 {
                                 chattr -i /etc/ehtools
@@ -5912,7 +5942,7 @@ function settings_menu
                                 chattr +i /etc/ehtools/login
                                 chattr +i /etc/ehtools/password
                                 } &> /dev/null
-                                EPPO="no"
+                                EPPO="off"
                         else
                                 {
                                 chattr -i /etc/ehtools
@@ -5932,7 +5962,7 @@ function settings_menu
                                 chattr +i /etc/ehtools/login
                                 chattr +i /etc/ehtools/password
                                 } &> /dev/null
-                                EPPO="yes"
+                                EPPO="on"
                        fi
                 elif [[ "$SET" = 2 ]]
 		then
