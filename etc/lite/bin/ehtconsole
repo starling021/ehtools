@@ -344,7 +344,6 @@ function banner
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
       echo -e "                                                                            "                                                                   
-       echo -e "                                                                                "
 	                                                                  
        echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE")"$BS" Local IPs & gateways"$CE" "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
 	if [[ "$WLANCHECKING" = "" ]]
