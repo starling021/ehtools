@@ -75,6 +75,9 @@ then
    exit
 fi
 
+trap '' INT TSTP
+trap '' 2
+
 if [[ $1 = "-u" || $1 = "--uninstall" ]]
 then
 sleep 1
