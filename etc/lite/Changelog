@@ -422,7 +422,7 @@ Fixed bug (login hole) when you entered wrong login or password ehtools unlocked
 Updated ehtools, ehtconsole, euh, install.sh and uninstall.sh
 
 2.1.8
-Added paid version of Ehtools PRO
+Added ehtools PRO activation
 Added server support!
 Added some new features!
 Added quick access menu (open it with 'ehtools -o')
@@ -430,7 +430,7 @@ Updated password protection!
 
 2.1.9
 Fixed known issues and bugs!
-Updated ehtools Lite UX/UI
+Updated ehtools LITE UX/UI
 Fixed install/reinstall menu bug!
 
 3.0.0
