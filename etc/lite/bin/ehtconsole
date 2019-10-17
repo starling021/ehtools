@@ -182,7 +182,7 @@ function local_ips()
 		fi
 		if [[ "$n" = 0 ]]
 		then
-			echo -e ""$RS"eht returned a fatal error (No known interfaces found available)"$CE""
+			echo -e ""$RS"ehtconsole returned an error (20) (No known interfaces found available)"$CE""
 		fi
 		echo -e ""
 		find_gateways
@@ -208,7 +208,7 @@ function give_ip_take_zero()
 	GI2="$2"
 	if [[ "$GI1" = "" ]]
 	then
-		echo -e ""$RS"eht returned an error (7) (No parameters passed)"$CE""
+		echo -e ""$RS"ehtconsole returned an error (9) (No parameters passed)"$CE""
 		sleep 3
 	else
 		ip1=$(echo -e "$GI1" | cut -d '.' -f1)
@@ -229,7 +229,7 @@ function is_it_an_ip()
 	IIAI=${#IIA}
 	if [[ "$IIA" = "" ]]
 	then
-		echo -e ""$RS"eht returned an error (9) (No parameteres passed)"$CE""
+		echo -e ""$RS"ehtconsole returned an error (9) (No parameteres passed)"$CE""
 		sleep 2
 	else
 		if [[ "$IIAI" -le 15 && "$IIAI" -ge 7 ]]
@@ -327,6 +327,7 @@ exit
 fi
 
 cd /root
+sleep 0
 clear
 
 }
@@ -446,7 +447,7 @@ elif [[ "$MYINT" = "3" ]]
 then
 	MYINT="$ETH"
 else
-echo -e "Wrong choice..."
+echo -e ""$RS"ehtconsole returned an error (1) (Wrong choice)"$CE""
 sleep 2
 clear
 echo -e "EXITING..."
@@ -2009,7 +2010,7 @@ EOF
 	fi
 	if [[ "$XPT" = "" ]]
 	then
-		echo -e ""$RS"Wrong choice"$CE""
+		echo -e ""$RS"ehtconsole returned an error (1) (Wrong choice)"$CE""
 		sleep 3
 		continue
 	else
@@ -4204,7 +4205,7 @@ do
 				done
 			elif [[ "$COCH" -le 0 || "$COCH" -gt "$NCO" ]] 
 			then
-				echo -e ""$RS"Wrong choice"$CE""
+				echo -e ""$RS"ehtconsole returned an error (1) (Wrong choice)"$CE""
 				sleep 2
 				continue
 			else
@@ -4289,7 +4290,7 @@ do
 				break
 			elif [[ "$TCH" -le 0 || "$TCH" -gt "$NTB" ]] 
 			then
-				echo -e ""$RS"Wrong choice"$CE""
+				echo -e ""$RS"ehtconsole returned an error (1) (Wrong choice)"$CE""
 				sleep 2
 				continue
 			else
@@ -4378,7 +4379,7 @@ do
 			fi
 			if [[ "$DCH" -lt 0 || "$DCH" -gt "$NDB" ]]
 			then
-				echo -e ""$RS"Wrong choice"$CE""
+				echo -e ""$RS"ehtconsole returned an error (1) (Wrong choice)"$CE""
 				sleep 2
 			else
 				SD="${db[$DCH]}"
@@ -6303,7 +6304,7 @@ function main_options
 		check_wlans
 		if [[ "$WLANCHECKING" = "" ]]
 		then
-			echo -e ""$RS"Error. Could find $WLANN interface to disable."$CE""
+			echo -e ""$RS"ehtconsole returned an error (15) (Could find $WLANN interface to disable)"$CE""
 		else
 			disable_wlan
 		fi
@@ -6312,7 +6313,7 @@ function main_options
 		check_wlans
 		if [[ "$WLANCHECKING" = "" ]]
 		then
-			echo -e ""$RS"Error. Could find $WLANN interface."$CE""
+			echo -e ""$RS"ehtconsole returned an error (5) (Could find $WLANN interface)"$CE""
 		else
 			echo -e "Enabling $WLANNM..."
 			echo -e "Killing services..."
@@ -6325,7 +6326,7 @@ function main_options
 		check_wlans
 		if [[ "$WLANMCHECKING" = "" ]]
 		then
-			echo -e ""$RS"Error. Could find $WLANNM interface."$CE""
+			echo -e ""$RS"ehtconsole returned an error (5) (Could find $WLANNM interface)"$CE""
 		else
 			stop_monitor
 		fi
