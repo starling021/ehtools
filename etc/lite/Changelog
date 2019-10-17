@@ -419,7 +419,7 @@ Added root user (you can login to ehtools as ehtools root)
 Updated uiecache (library to remove ehtools cache)
 Updated eht1, eht2, eht3 - added new design for handshake option, death menu option and for "Find WPS Pin" option.
 Fixed bug (login hole) when you entered wrong login or password ehtools unlocked
-updates ehtools, ehtconsole, euh, install.sh and uninstall.sh
+Updated ehtools, ehtconsole, euh, install.sh and uninstall.sh
 
 2.1.8
 Added paid version of Ehtools PRO
@@ -444,6 +444,7 @@ Updated ehtools (now you can stable login to ehtools)
 Fixed EHT-2019-02776 (nologin) vulnerability!
 Updated epasswd (now you can change login/password)
 Removed $EPATH firmware commander shell
+Removed ehtools update helper (euh)
 Added snapshots (more information in README.md/Utilities)
 On this version you can turn off ehtools password protection!
 Updated ehtools/install.sh and epasswd utility!
