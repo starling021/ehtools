@@ -318,9 +318,6 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
-cd /root/ehtools/lib
-chmod +x libdec
-./libdec
       echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -405,9 +402,6 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Authentication\a'
-cd /root/ehtools/lib
-chmod +x libdec
-./libdec
       echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
@@ -485,9 +479,6 @@ sleep 0.5
 clear
 sleep 0.5
 printf '\033]2;Ehtools Root Authentication\a'
-cd /root/ehtools/lib
-chmod +x libdec
-./libdec
       echo -e
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
