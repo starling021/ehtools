@@ -68,6 +68,9 @@ then
    exit
 fi
 
+trap '' INT TSTP
+trap '' 2
+
 clear
 CAT="$( cat /etc/ehtools/password )"
 if [[ "$CAT" = "" ]]
