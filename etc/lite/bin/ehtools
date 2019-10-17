@@ -197,7 +197,13 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
 echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
@@ -360,7 +366,13 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
 echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
