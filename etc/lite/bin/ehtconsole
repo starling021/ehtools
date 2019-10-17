@@ -6248,7 +6248,7 @@ function main_options
 	then
 		settings_menu
 
-	elif [[ "$YORNAA" = "entynetproject" || "$YORNAA" = "e" ]]
+	elif [[ "$YORNAA" = "eteam" || "$YORNAA" = "e" ]]
 	then
 		about_option
 #------services
@@ -6455,7 +6455,7 @@ function main_options
 		mitm_menu
 	elif [[ "$YORNAA" = "b" ]]
 	then
-		gio open https://github.com/entynetproject/ehtools
+		gio open https://ehtools.pro/
 	elif [[ "$YORNAA" = "13" ]]
 	then
 		bruteforce_router
