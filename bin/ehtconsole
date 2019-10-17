@@ -347,8 +347,6 @@ exit
 fi
 
 cd /root
-trap '' INT TSTP
-trap '' 2
 clear
 
 }
