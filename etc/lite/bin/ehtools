@@ -221,9 +221,9 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 while [ "$rootpass" != "$passroot" ]
 do
 echo -e
-echo -e "$RS"Wrong password!"$CE"
+echo -e "["$RS"*"$CE"] "$RS"Wrong password!"$CE""
 sleep 3
-echo -e "("$YS"Try again..."$CE")"
+sleep 0
 sleep 2
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
@@ -298,9 +298,9 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 while [ "$rootpass" != "$passroot" ]
 do
 echo -e
-echo -e "$RS"Wrong password!"$CE"
+echo -e "["$RS"*"$CE"] "$RS"Wrong password!"$CE""
 sleep 3
-echo -e "("$YS"Try again..."$CE")"
+sleep 0
 sleep 2
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
@@ -345,9 +345,9 @@ done
 
 while [ "$loginer" != "$logins" ]
 do
-echo -e "$RS"Wrong login!"$CE"
+echo -e "["$RS"*"$CE"] "$RS"Wrong login!"$CE""
 sleep 3
-echo -e "("$YS"Try again..."$CE")"
+sleep 0
 sleep 2
 read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 
@@ -388,9 +388,9 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 while [ "$rootpass" != "$passroot" ]
 do
 echo -e
-echo -e "$RS"Wrong password!"$CE"
+echo -e "["$RS"*"$CE"] "$RS"Wrong password!"$CE""
 sleep 3
-echo -e "("$YS"Try again..."$CE")"
+sleep 0
 sleep 2
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
@@ -465,9 +465,9 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 while [ "$rootpass" != "$passroot" ]
 do
 echo -e
-echo -e "$RS"Wrong password!"$CE"
+echo -e "["$RS"*"$CE"] "$RS"Wrong password!"$CE""
 sleep 3
-echo -e "("$YS"Try again..."$CE")"
+sleep 0
 sleep 2
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 

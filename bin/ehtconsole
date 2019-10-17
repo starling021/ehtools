@@ -9227,9 +9227,9 @@ function settings_menu
                                 } &> /dev/null
                                 {
 				cd /etc/ehtools
-                                mkdir password-data
-                                cp login password-data
-                                cp password password-data
+                                mkdir password_data
+                                cp login password_data
+                                cp password password_data
                                 rm login && touch login
                                 rm password && touch password
 				} &> /dev/null
@@ -9249,9 +9249,9 @@ function settings_menu
                                 cd /etc/ehtools
                                 rm login
                                 rm password
-                                cp password-data/login /etc/ehtools
-                                cp password-data/password /etc/ehtools
-                                rm -r password-data
+                                cp password_data/login /etc/ehtools
+                                cp password_data/password /etc/ehtools
+                                rm -r password_data
 				} &> /dev/null
                                 {
                                 chattr +i /etc/ehtools
