@@ -142,12 +142,15 @@ else
 cd /root/ehtools/lib
 chmod +x libdec
 ./libdec
+logins="$(cat /etc/ehtools/login)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
 sleep 0.5
 read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
-logins=$(cat /etc/ehtools/login)
 
 while [ "$loginer" = "root" ]
 do
@@ -158,7 +161,13 @@ printf '\033]2;Ehtools Root Authentication\a'
 echo -e "You want to login as administrator!"
 echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
-passroot="$( cat /etc/ehtools/root/password )"
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
+passroot="$(cat /etc/ehtools/root/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -179,6 +188,9 @@ chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
 } &> /dev/null
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
 printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools root password!"
 echo -e "Ehtools Password Protection:"
@@ -187,6 +199,9 @@ read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots
 touch password
 echo $roots >> /etc/ehtools/root/password
 sleep 0.5
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 {
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools/root/password
@@ -214,7 +229,13 @@ printf '\033]2;Ehtools Root Authentication\a'
 echo -e "You want to login as administrator!"
 echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
-passroot="$( cat /etc/ehtools/root/password )"
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
+passroot="$(cat /etc/ehtools/root/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -235,6 +256,9 @@ chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
 rm /etc/ehtools/root/password
 } &> /dev/null
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
 printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools root password!"
 echo -e "Ehtools Password Protection:"
@@ -243,6 +267,9 @@ read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots
 touch password
 echo $roots >> /etc/ehtools/root/password
 sleep 0.5
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 {
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools/root/password
@@ -255,8 +282,14 @@ done
 done
 
 sleep 0.5
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
+passwords="$(cat /etc/ehtools/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
-passwords=$(cat /etc/ehtools/password)
 while [ "$passworder" != "$passwords" ]
 do
 echo -e
@@ -278,9 +311,6 @@ read -e -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
 if [[ "$UORI" = "no" ]]
 then 
 	clear
-        cd /root/ehtools/lib
-        chmod +x libenc
-        ./libenc
 	echo -e "OK..."
 	sleep 3
 	echo -e "To "$ESENT" ehtools login and password run 'epasswd'"
@@ -293,6 +323,9 @@ then
 cd /root/ehtools/lib
 chmod +x libunchattr
 ./libunchattr
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
 {
 rm /etc/ehtools/login
 rm /etc/ehtools/password
