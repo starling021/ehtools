@@ -118,9 +118,6 @@ exit
 fi
 fi
 
-trap '' INT TSTP
-trap '' 2
-
 clear
 printf '\033]2;ehtools INSTALLER\a'
 echo -e
