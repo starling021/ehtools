@@ -9085,7 +9085,7 @@ function settings_menu
 		printf '\033]2;SETTINGS\a'
 		{
 		CATIS="$( cat /etc/ehtools/password )"
-		CATISIS="$( cat /root/ehtools/lib/libdec )"
+		CATISIS="$( cat /root/ehtools/lib/libenc )"
 		} &> /dev/null
 		if [[ "$CATISIS" = "" ]]
 		then
