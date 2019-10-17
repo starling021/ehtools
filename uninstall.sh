@@ -124,9 +124,6 @@ exit
 fi
 fi
 
-trap '' INT TSTP
-trap '' 2
-
 clear
 CAT="$( cat /etc/ehtools/password )"
 if [[ "$CAT" = "" ]]
@@ -136,12 +133,16 @@ else
 cd /root/ehtools/lib
 chmod +x libdec
 ./libdec
+logins="$(cat /etc/ehtools/login)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
 sleep 0.5
 read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
-logins=$(cat /etc/ehtools/login)
+
 
 while [ "$loginer" = "root" ]
 do
@@ -162,8 +163,14 @@ read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 done
 
 sleep 0.5
+cd /root/ehtools/lib
+chmod +x libdec
+./libdec
+passwords="$(cat /etc/ehtools/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+./libenc
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
-passwords=$(cat /etc/ehtools/password)
 while [ "$passworder" != "$passwords" ]
 do
 echo -e
