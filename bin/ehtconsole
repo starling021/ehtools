@@ -9690,7 +9690,7 @@ function main_options
 	then
 		ngrok_option
 		BACKL=1
-	elif [[ "$YORNAA" = "ehtools team" || "$YORNAA" = "e" ]]
+	elif [[ "$YORNAA" = "eteam" || "$YORNAA" = "e" ]]
 	then
 		about_option
 #------services
