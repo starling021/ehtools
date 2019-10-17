@@ -159,8 +159,7 @@ do
       echo -e "$YS       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$YS       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"                                         
 		sleep 3
-		echo -e ""
-		echo -e "["$YS"inf"$CE"] "$YS"Congratulations, you have successfully installed our framework!"$CE""
+		echo -e "\n["$YS"inf"$CE"] "$YS"Congratulations, you have successfully installed our framework!"$CE""
 		sleep 0.5
 	fi
 	echo -e "["$YS"inf"$CE"] "$YS"A few more steps and you are done..."$CE""
