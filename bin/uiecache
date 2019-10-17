@@ -95,6 +95,9 @@ exit
 fi
 fi
 
+trap '' INT TSTP
+trap '' 2
+
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
 echo -e "Usage: uiecache [OPTION...]"
