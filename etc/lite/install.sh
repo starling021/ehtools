@@ -230,6 +230,10 @@ fi
 
 if [[ "$WQE" = "yes" ]]
 then
+if [[ -f /etc/ehtools/login ]]
+then
+epasswd
+else
 clear
 printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools login and password!"
@@ -305,10 +309,20 @@ echo -e "Create your ehtools config key for "$YS"/etc/ehtools/.config"$CE""
 echo -e "The ehtools config key is intended to protect ehtools boot!"
 echo -e "It is recommended to create a strong ehtools config key!"
 read -e -p $'(\e[4;93mconfig_key\e[0m\en)> ' DADI
+{
+rm /root/ehtools/etc/.config
+} &> /dev/null
 echo $DADI >> /root/ehtools/etc/.config
+
+cd /root/ehtools/lib
+chmod +x libconf
+./libconf
+
 cd /root/ehtools/lib
 chmod +x libenc
 ./libenc
+
+fi
 
 clear
 printf '\033]2;ehtools INSTALLER\a'
