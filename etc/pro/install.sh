@@ -276,11 +276,11 @@ fi
 
 if [[ "$WQE" = "yes" ]]
 then
-clear
 if [[ -f /etc/ehtools/login ]]
 then
 epasswd
 else
+clear
 printf '\033]2;ehtools password changer\a'
 echo -e "Set ehtools login and password!"
 echo -e "Ehtools Password Protection:"
