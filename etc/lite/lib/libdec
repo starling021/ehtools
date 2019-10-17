@@ -44,20 +44,35 @@ cd /etc/ehtools
 chattr -i /etc/ehtools
 chattr -i /etc/ehtools/login
 openssl enc -aes-256-cbc -base64 -pass pass:"$CONF" -d -p -in login -out login.dec
+if [[ "$(cat login.dec)" = "" ]]
+then
+rm login.dec
+else
 rm login
 mv login.dec login
+fi
 chattr +i /etc/ehtools/login
 chattr -i /etc/ehtools/password
 openssl enc -aes-256-cbc -base64 -pass pass:"$CONF" -d -p -in password -out password.dec
+if [[ "$(cat password.dec)" = "" ]]
+then
+rm password.dec
+else
 rm password
 mv password.dec password
+fi
 chattr +i /etc/ehtools/password
 chattr -i /etc/ehtools/root
 chattr -i /etc/ehtools/root/password
 cd /etc/ehtools/root
 openssl enc -aes-256-cbc -base64 -pass pass:"$CONF" -d -p -in password -out password.dec
+if [[ "$(cat password.dec)" = "" ]]
+then
+rm password.dec
+else
 rm password
 mv password.dec password
+fi
 chattr +i /etc/ehtools/root/password
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools
