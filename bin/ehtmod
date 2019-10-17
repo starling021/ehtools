@@ -368,9 +368,39 @@ sleep 5
 echo -e
 sleep 0.3
 echo -e "\e[4;32mSuccess!\e[0m"
-sleep 0.2
-echo -e "\e[4;32mPreparing to unpack...\e[0m"
 sleep 2
+echo -e "\e[4;32mPreparing to unpack...\e[0m"
+sleep 1
+printf '\033]2;Unpacking...\a'
+function ProgressBarusy {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rUnpacking (${_progress}%%)"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.1
+    ProgressBarusy ${number} ${_end}
+done
+
+sleep 5
+echo -e
+sleep 0.3
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 0.5
 chmod +x /root/ehtools/eht/eht1
