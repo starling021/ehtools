@@ -405,6 +405,82 @@ sleep 1
 exit
 fi
 
+elif [[ $1 = "--uninstall" || $1 = "-u" ]]
+then
+if [[ -d /etc/ehtools/modules ]]
+then
+clear
+sleep 3
+echo -e "Well, we are going to start!"
+sleep 2
+echo -e "\e[4;32mPreparing to uninstall\e[0m"
+sleep 1
+printf '\033]2;Uninstalling...\a'
+
+function ProgressBarkty {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rUninstalling (${_progress}%%)"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.2
+    ProgressBarkty ${number} ${_end}
+done
+
+sleep 5
+echo -e
+sleep 0.3
+{
+chattr -i /bin/ehtools
+rm /bin/ehtools/eht1
+rm /bin/ehtools/eht2
+rm /bin/ehtools/eht3
+rm /bin/ehtools/eht21
+rm /bin/ehtools/eht31
+rm /bin/ehtools/eht4
+rm /bin/ehtools/eht41
+rm /bin/ehtools/eht42
+rm /bin/ehtools/eht43
+rm /bin/eht1
+rm /bin/eht2
+rm /bin/eht3
+rm /bin/eht21
+rm /bin/eht31
+rm /bin/eht4
+rm /bin/eht41
+rm /bin/eht42
+rm /bin/eht43
+rm -r /etc/ehtools/modules
+} &> /dev/null
+sleep 2
+echo -e "\e[4;32mSuccess!\e[0m"
+sleep 0.5
+echo -e "Finishing and exiting..."
+sleep 5
+exit
+else
+sleep 3
+echo -e "Error, ehtools modules is not installed!"
+sleep 1
+exit
+fi
+
 
 elif [[ $1 = "--install" || $1 = "-i" ]]
 then
@@ -434,7 +510,7 @@ function ProgressBar {
 
                          
         
-printf "\rGetting (${_progress}%%)"
+printf "\rInstalling (${_progress}%%)"
 
 }
 
@@ -453,41 +529,7 @@ sleep 5
 echo -e
 sleep 0.3
 echo -e "\e[4;32mSuccess!\e[0m"
-sleep 2
-echo -e "\e[4;32mPreparing to unpack...\e[0m"
 sleep 1
-printf '\033]2;Unpacking...\a'
-function ProgressBarusy {
-
-    let _progress=(${1}*100/${2}*100)/100
-    let _done=(${_progress}*4)/10
-    let _left=40-$_done
-
-    _fill=$(printf "%${_done}s")
-    _empty=$(printf "%${_left}s")
-
-                         
-        
-printf "\rUnpacking (${_progress}%%)"
-
-}
-
-
-_start=1
-
-_end=100
-
-for number in $(seq ${_start} ${_end})
-do
-    sleep 0.1
-    ProgressBarusy ${number} ${_end}
-done
-
-sleep 5
-echo -e
-sleep 0.3
-echo -e "\e[4;32mSuccess!\e[0m"
-sleep 0.5
 chmod +x /root/ehtools/eht/eht1
 chmod +x /root/ehtools/eht/eht2
 chmod +x /root/ehtools/eht/eht3
