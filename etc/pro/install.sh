@@ -385,7 +385,7 @@ read -e -p $'(\e[4;93mshortcut\e[0m\en)> ' SHORT
 
 if [[ "$SHORT" = "yes" ]]
 then
-cp /root/ehtools/app/ehtools.desktop /usr/local/applications
+cp /root/ehtools/app/ehtools.desktop /usr/share/applications
 fi
 
 if [[ "$SHORT" = "no" ]]
@@ -395,7 +395,7 @@ clear
 	sleep 1
 	echo -e "To create ehtools shortcut, run the following commands:"
 	sleep 0.5
-	echo -e ""$YS"cp /root/ehtools/app/ehtools.desktop /usr/local/applications"$CE"..."
+	echo -e ""$YS"cp /root/ehtools/app/ehtools.desktop /usr/share/applications"$CE"..."
         sleep 3
 	clear
 fi
