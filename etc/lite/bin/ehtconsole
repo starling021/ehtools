@@ -5895,6 +5895,9 @@ function settings_menu
 			if [[ "$EPPC" = "on" ]]
 			then
 			cd /root/ehtools/lib
+			chmod +x libdec
+			./libdec
+			cd /root/ehtools/lib
 			mkdir .disabled
 			mv libdec .disabled
 			mv libenc .disabled
@@ -5908,7 +5911,10 @@ function settings_menu
 			mv .disabled/libdec /root/ehtools/lib
 			mv .disabled/libenc /root/ehtools/lib
 			rm -r .disabled
-			EPPC="on"
+			cd /root/ehtools/lib
+			chmod +x libenc
+			./libenc
+EPPC="on"
 			fi	
 			
 		elif [[ "$SET" = 8 ]]
