@@ -2,7 +2,7 @@
 Name=ehtools
 Encoding=UTF-8
 Exec=sh -c "/bin/ehtools;${SHELL:-bash}"
-Icon=/root/ehtools/app/icon.jpeg
+Icon=/root/ehtools/app/ehtools.jpeg
 StartupNotify=false
 Terminal=true
 Type=Application
