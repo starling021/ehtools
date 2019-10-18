@@ -1,1 +1,10 @@
-
+[Desktop Entry]
+Name=ehtools
+Encoding=UTF-8
+Exec=sh -c "bash /bin/ehtools/ehtconsole;${SHELL:-bash}"
+Icon=kali-/root/ehtools/app/ehtools.png
+StartupNotify=true
+Terminal=true
+Type=Application
+Categories=15-ehtools-framework;
+X-Kali-Package=ehtools
