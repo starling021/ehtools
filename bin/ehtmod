@@ -127,7 +127,6 @@ mkdir /etc/ehtools/modules/snapshots
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 1
-exit
 fi
 if [[ -d /etc/ehtools/modules/snapshots/$2 ]]
 then
@@ -245,6 +244,82 @@ sleep 1
 exit
 fi
 
+elif [[ $1 = "--delete" || $1 = "-d" ]]
+then
+if [[ -d /etc/ehtools/modules ]]
+then
+if [[ ! -d /etc/ehtools/modules/snapshots ]]
+then
+sleep 3
+echo -e "Error, snapshots directory is not found!"
+sleep 1
+echo -e "Making /etc/ehtools/modules/snapshots..."
+mkdir /etc/ehtools/modules/snapshots
+sleep 0.5
+echo -e "\e[4;32mSuccess!\e[0m"
+sleep 1
+fi
+if [[ -d /etc/ehtools/modules/snapshots/$2 ]]
+then
+clear
+sleep 3
+echo -e "Well, we are going to start!"
+sleep 2
+echo -e "\e[4;32mPreparing to delete snapshot:\e[0m $2"
+sleep 1
+printf '\033]2;Deleting...\a'
+
+function ProgressBarkt {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rDeleting (${_progress}%%)"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.5
+    ProgressBarkt ${number} ${_end}
+done
+
+sleep 5
+echo -e
+sleep 0.5
+{
+rm -r /etc/ehtools/modules/snapshots/$2
+} &> /dev/null
+sleep 2
+echo -e "\e[4;32mSuccess!\e[0m"
+sleep 0.5
+echo -e "Finishing and exiting..."
+sleep 5
+exit
+else
+sleep 3
+echo -e "Error, snapshot $2 is not found!"
+sleep 1
+exit
+fi
+else
+sleep 3
+echo -e "Error, modules is not installed!"
+sleep 1
+exit
+fi
+
 elif [[ $1 = "--take" || $1 = "-t" ]]
 then
 if [[ -d /etc/ehtools/modules ]]
@@ -259,7 +334,6 @@ mkdir /etc/ehtools/modules/snapshots
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 1
-exit
 fi
 if [[ -d /etc/ehtools/modules/snapshots/$2 ]]
 then
