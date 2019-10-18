@@ -371,6 +371,31 @@ chmod +x libenc
 
 fi
 
+sleep 3
+clear
+printf '\033]2;ehtools shortcut\a'
+echo -e "Are you want to create ehtools shortcut? "$YS"/etc/ehtools/.config"$CE""
+echo -e "Ehtools shortcut will be saved as gnome application!"
+echo -e "You will can launch ehtools from the applications!"
+read -e -p $'(\e[4;93mshortcut\e[0m\en)> ' SHORT
+
+if [[ "$SHORT" = "yes" ]]
+then
+cp /root/ehtools/app/ehtools.desktop /usr/local/applications
+fi
+
+if [[ "$WQE" = "no" ]]
+then
+clear
+	echo -e "OK..."
+	sleep 1
+	echo -e "To create ehtools shortcut, run the following commands:"
+	sleep 0.5
+	echo -e ""$YS"cp /root/ehtools/app/ehtools.desktop /usr/local/applications"$CE"..."
+        sleep 3
+	clear
+fi
+
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
