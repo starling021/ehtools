@@ -44,13 +44,13 @@ then
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   --install         Install ehtools modules to /bin."
-echo -e "                       (install ehtools modules)"
-echo -e "   --restore <name>  Restore saved ehtools modules snapshot."
-echo -e "                       (restore ehtools modules snapshot)"
-echo -e "   --take    <name>  Take a new ehtools modules snapshot."
-echo -e "                       (take ehtools modules snapshot)"
-echo -e "   --help            Give this help list."
+echo -e "   -i  --install         Install ehtools modules to /bin."
+echo -e "                           (install ehtools modules)"
+echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
+echo -e "                           (restore ehtools modules snapshot)"
+echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
+echo -e "                           (take ehtools modules snapshot)"
+echo -e "   -h  --help            Give this help list."
 exit
 
 elif [[ $1 = "--restore" || $1 = "-r" ]]
@@ -487,11 +487,11 @@ fi
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   --install         Install ehtools modules to /bin."
-echo -e "                       (install ehtools modules)"
-echo -e "   --restore <name>  Restore saved ehtools modules snapshot."
-echo -e "                       (restore ehtools modules snapshot)"
-echo -e "   --take    <name>  Take a new ehtools modules snapshot."
-echo -e "                       (take ehtools modules snapshot)"
-echo -e "   --help            Give this help list."
+echo -e "   -i  --install         Install ehtools modules to /bin."
+echo -e "                           (install ehtools modules)"
+echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
+echo -e "                           (restore ehtools modules snapshot)"
+echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
+echo -e "                           (take ehtools modules snapshot)"
+echo -e "   -h  --help            Give this help list."
 exit
