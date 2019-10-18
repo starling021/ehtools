@@ -100,9 +100,9 @@ then
 echo -e "Usage: ehtkey [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   --change <old_key> <new_key>  Change ehtools config key."
-echo -e "                                (rewrite /etc/ehtools/.config)"
-echo -e "   --help                        Give this help list."
+echo -e "   -c  --change <old_key> <new_key>  Change ehtools config key."
+echo -e "                                   (rewrite /etc/ehtools/.config)"
+echo -e "   -h  --help                        Give this help list."
 exit
 
 elif [[ $1 = "--change" || $1 = "-c" ]]
@@ -144,7 +144,7 @@ fi
 echo -e "Usage: ehtkey [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   --change <old_key> <new_key>  Change ehtools config key."
-echo -e "                                (rewrite /etc/ehtools/.config)"
-echo -e "   --help                        Give this help list."
+echo -e "   -c  --change <old_key> <new_key>  Change ehtools config key."
+echo -e "                                   (rewrite /etc/ehtools/.config)"
+echo -e "   -h  --help                        Give this help list."
 exit
