@@ -99,12 +99,6 @@ read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 while [ "$loginer" = "root" ]
 do
 sleep 0.5
-clear
-sleep 0.5
-printf '\033]2;Ehtools Root Authentication\a'
-echo -e "You want to login as administrator!"
-echo -e "$YS"Ehtools Root Authentication:"$CE"
-sleep 0.5
 cd /root/ehtools/lib
 chmod +x libdec
 ./libdec
@@ -164,12 +158,6 @@ read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 
 while [ "$loginer" = "root" ]
 do
-sleep 0.5
-clear
-sleep 0.5
-printf '\033]2;Ehtools Root Authentication\a'
-echo -e "You want to login as administrator!"
-echo -e "$YS"Ehtools Root Authentication:"$CE"
 sleep 0.5
 cd /root/ehtools/lib
 chmod +x libdec
