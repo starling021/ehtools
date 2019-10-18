@@ -39,62 +39,6 @@ then
    exit
 fi
 
-{
-chattr -i /dev/config
-chattr -i /dev/config/config.txt
-chattr -i /dev/config/configure.txt
-} &> /dev/null
-
-{
-mkdir /dev/config
-echo 0 >> /dev/config/config.txt
-echo 1 >> /dev/config/configure.txt
-} &> /dev/null
-
-{
-chattr +i /dev/config
-chattr +i /dev/config/config.txt
-chattr +i /dev/config/configure.txt
-} &> /dev/null
-
-
-{
-SERSE="$( cat /dev/config/config.txt | head -n 1 )"
-ESRES="$( cat /dev/config/configure.txt | head -n 1 )"
-} &> /dev/null
-
-if [[ "$SERSE" != "$ESRES" ]]
-then
-
-{
-ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
-KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
-} &> /dev/null
-
-if [[ "$ASESR" != "" ]]
-then 
-
-KEYKE="$( timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
-
-if [[ "$KEYEK" != "$KEYKE" ]]
-then
-
-sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtmod!"$CE""
-
-sleep 1
-exit
-
-fi
-
-else
-sleep 1
-echo -e "["$RS"*"$CE"] "$RS"Can't connect to server: There is no connection!"$CE""
-sleep 1
-exit
-fi
-fi
-
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
 echo -e "Usage: ehtmod [OPTION...]"
