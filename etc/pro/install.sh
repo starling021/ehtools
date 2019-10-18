@@ -169,6 +169,8 @@ cp /root/ehtools/bin/ehtools /bin/ehtools
 chmod +x /bin/ehtools/ehtools
 cp /root/ehtools/bin/ehtkey /bin
 chmod +x /bin/ehtkey
+cp /root/ehtools/bin/ehtapp /bin
+chmod +x /bin/ehtapp
 cp /root/ehtools/bin/epasswd /bin
 chmod +x /bin/epasswd
 cp /root/ehtools/bin/ehtmod /bin
