@@ -6,5 +6,5 @@ Icon=kali-/root/ehtools/app/ehtools.png
 StartupNotify=true
 Terminal=true
 Type=Application
-Categories=15-ehtools-framework;
+Categories=01-information-gathering;02-vulnerability-analysis;03-web-application-analysis;04-database-assessment;05-password-attacks;06-wireless-attacks;07-reverse-engineering;08-exploitation-tools;09-sniffing-spoofing;10-post-exploitation;11-forensics;12-reporting-tools;13-social-engeenering-tools;
 X-Kali-Package=ehtools
