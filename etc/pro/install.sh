@@ -176,6 +176,8 @@ chmod +x /bin/ehtmod
 cp /root/ehtools/bin/uiecache /bin
 chmod +x /bin/uiecache
 cp /root/ehtools/etc/root/password /etc/ehtools/root
+mkdir /etc/ehtools/app
+cp /root/ehtools/app/ehtools.png /etc/ehtools/app
 clear
 
 apt-get -y install ncurses-dev
@@ -395,10 +397,7 @@ clear
 	echo -e "OK..."
 	sleep 1
 	echo -e "To create ehtools shortcut application, run '"$YS"ehtapp -c"$CE"'..."
-	touch /etc/ehtools/login
-        touch /etc/ehtools/password
         sleep 3
-	clear
 fi
 
 
