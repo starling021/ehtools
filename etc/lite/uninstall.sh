@@ -101,7 +101,6 @@ do
 echo -e "["$RS"*"$CE"] "$RS"Wrong login!"$CE""
 sleep 3
 sleep 0
-sleep 2
 read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
 
 done
@@ -121,7 +120,6 @@ echo -e
 echo -e "["$RS"*"$CE"] "$RS"Wrong password!"$CE""
 sleep 3
 sleep 0
-sleep 2
 read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
 done
 fi
