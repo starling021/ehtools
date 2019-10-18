@@ -488,10 +488,6 @@ echo -e "Setting up permissions..."
 sleep 0.5
 echo -e "Moving ehtools modules to /bin..."
 sleep 0.5
-echo -e "Ignoring dev1 because it is a child from ehtconsole..."
-echo -e "Ignoring dev2 because it is a child from ehtconsole..."
-echo -e "Ignoring dev13 because it is a child from ehtconsole..."
-sleep 0.5
 cp /root/ehtools/eht/eht1 /bin/ehtools
 cp /root/ehtools/eht/eht2 /bin/ehtools
 cp /root/ehtools/eht/eht3 /bin/ehtools
