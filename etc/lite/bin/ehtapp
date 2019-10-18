@@ -53,7 +53,7 @@ echo -e "                             (remove shortcut application)"
 echo -e "   -h  --help             Give this help list."
 exit
 
-elif [[ $1 = "--change" || $1 = "-c" ]]
+elif [[ $1 = "--create" || $1 = "-c" ]]
 then
 if [[ -f /usr/share/applications/ehtools.desktop ]]
 then
