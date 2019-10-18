@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ehtools
+Encoding=UTF-8
+Exec=sh -c "/bin/ehtools;${SHELL:-bash}"
+Icon=/root/ehtools/app/ehtools.jpeg
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=08-exploitation-tools;
+X-Kali-Package=ehtools
