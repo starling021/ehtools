@@ -232,7 +232,7 @@ if [[ "$WQE" = "yes" ]]
 then
 if [[ -f /etc/ehtools/login ]]
 then
-epasswd
+sleep 0
 else
 clear
 printf '\033]2;ehtools password changer\a'
@@ -318,10 +318,13 @@ cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
 
+if [[ -f /etc/ehtools/login ]]
+then
+sleep 0
+else
 cd /root/ehtools/lib
 chmod +x libenc
 ./libenc
-
 fi
 
 sleep 3
