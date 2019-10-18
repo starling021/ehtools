@@ -201,13 +201,6 @@ then
 fi
 
 clear
-{
-cd /root/ehtools/lib
-chmod +x libunlogin
-./libunlogin
-rm /etc/ehtools/login
-rm /etc/ehtools/password
-} &> /dev/null
 printf '\033]2;ehtools INSTALLER\a'
 echo -e "Protect ehtools with password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "This function will protect ehtools with login and password!"
@@ -232,7 +225,7 @@ if [[ "$WQE" = "yes" ]]
 then
 if [[ -f /etc/ehtools/login ]]
 then
-epasswd
+sleep 0
 else
 clear
 printf '\033]2;ehtools password changer\a'
@@ -301,6 +294,7 @@ echo -e
 
 uiecache --all
 fi
+fi
 
 sleep 3
 clear
@@ -318,10 +312,13 @@ cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
 
+if [[ "$(cat /etc/ehtools/login)" = "" ]]
+then
+sleep 0
+else
 cd /root/ehtools/lib
 chmod +x libenc
 ./libenc
-
 fi
 
 clear
