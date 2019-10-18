@@ -102,10 +102,14 @@ echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -i  --install         Install ehtools modules to /bin."
 echo -e "                           (install ehtools modules)"
-echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
-echo -e "                           (restore ehtools modules snapshot)"
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
 echo -e "                           (take ehtools modules snapshot)"
+echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
+echo -e "                           (restore ehtools modules snapshot)"
+echo -e "   -d  --delete  <name>  Delete saved ehtools modules snapshot."
+echo -e "                           (delete ehtools modules snapshot)"
+echo -e "   -u  --uninstall       Uninstall ehtools modules from /bin."
+echo -e "                           (uninstall ehtools modules)"
 echo -e "   -h  --help            Give this help list."
 exit
 
@@ -330,6 +334,13 @@ fi
 
 elif [[ $1 = "--install" || $1 = "-i" ]]
 then
+if [[ -d /etc/ehtools/modules ]]
+then
+sleep 3
+echo -e "Error, ehtools modules is already installed!"
+sleep 1
+exit
+fi
 clear
 sleep 3
 echo -e "Well, we are going to start!"
@@ -545,9 +556,13 @@ echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -i  --install         Install ehtools modules to /bin."
 echo -e "                           (install ehtools modules)"
-echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
-echo -e "                           (restore ehtools modules snapshot)"
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
 echo -e "                           (take ehtools modules snapshot)"
+echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
+echo -e "                           (restore ehtools modules snapshot)"
+echo -e "   -d  --delete  <name>  Delete saved ehtools modules snapshot."
+echo -e "                           (delete ehtools modules snapshot)"
+echo -e "   -u  --uninstall       Uninstall ehtools modules from /bin."
+echo -e "                           (uninstall ehtools modules)"
 echo -e "   -h  --help            Give this help list."
 exit
