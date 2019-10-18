@@ -1,6 +1,6 @@
 # Entynet Hacker Tools (Ehtools Framework) ™
 
-<h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/67109419-30c62500-f1d9-11e9-82b9-d2b99181a0c1.png" alt="logo" height="100px"></h3>
+<h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/67109419-30c62500-f1d9-11e9-82b9-d2b99181a0c1.png" alt="logo" height="1000px"></h3>
 
  <h4 align="center">Details</h4>                
 <p align="center">
