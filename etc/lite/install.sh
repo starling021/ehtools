@@ -123,6 +123,8 @@ chmod +x /bin/uiecache
 mkdir /etc/ehtools
 mkdir /etc/ehtools/root
 cp /root/ehtools/etc/root/password /etc/ehtools/root
+mkdir /etc/ehtools/app
+cp /root/ehtools/app/ehtools.png /etc/ehtools/app
 clear
 
 apt-get -y install ncurses-dev
@@ -321,10 +323,35 @@ chmod +x libenc
 ./libenc
 fi
 
+sleep 3
+clear
+printf '\033]2;ehtools shortcut application\a'
+echo -e "Are you want to create ehtools shortcut application(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "Ehtools shortcut application allows you to run ehtools via the application!"
+echo -e "Ehtools shortcut application will be created in the applications folder!"
+read -e -p $'(\e[4;93mshortcut\e[0m\en)> ' ES
+
+if [[ "$ES" = "yes" ]]
+then
+cp /root/ehtools/app/ehtools.desktop /usr/share/applications
+chmod +x /usr/share/applications/ehtools.desktop
+fi
+
+if [[ "$ES" = "no" ]]
+then
+clear
+	echo -e "OK..."
+	sleep 1
+	echo -e "To create ehtools shortcut application, run '"$YS"ehtapp -c"$CE"'..."
+        sleep 3
+fi
+
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
 echo -e "Open a NEW terminal and type '"$YS"ehtools"$CE"' to launch the framework"
+sleep 0.5
+echo -e "If you want to configure ehtools shortcut application, run '"$YS"ehtapp"$CE"'"
 sleep 0.5
 echo -e "If you want to change ehtools config key, run '"$YS"ehtkey"$CE"'"
 sleep 0.5
