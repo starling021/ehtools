@@ -100,11 +100,13 @@ then
 echo -e "Usage: ehtapp [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   -c  --create   Create ehtools shortcut application."
-echo -e "                     (create shortcut application)"
-echo -e "   -d  --desktop  Create desktop ehtools shortcut application."
-echo -e "                     (create desktop shortcut application)" 
-echo -e "   -h  --help     Give this help list."
+echo -e "   -c  --create           Create ehtools shortcut application."
+echo -e "                             (create shortcut application)"
+echo -e "   -d  --desktop <option> Create/Remove ehtools desktop shortcut application."
+echo -e "                             (create/remove desktop shortcut application)" 
+echo -e "   -r  --remove           Remove ehtools shortcut application."
+echo -e "                             (remove shortcut application)"
+echo -e "   -h  --help             Give this help list."
 exit
 
 elif [[ $1 = "--change" || $1 = "-c" ]]
@@ -123,24 +125,41 @@ echo -e "Success, ehtools shortcut application created!"
 sleep 2
 exit
 fi
+fi
 
-elif [[ $1 = "--desktop" || $1 = "-d" ]]
+if [[ $1 = "--desktop" || $1 = "-d" ]]
+then
+if [[ $2 = "create" ]]
 then
 if [[ -f /root/Desktop/ehtools.desktop ]]
 then
 sleep 2
-echo -e "Error, desktop ehtools shortcut application is already created!"
+echo -e "Error, ehtools desktop shortcut application is already created!"
 sleep 2
 exit
 else
 sleep 2
 cp /root/ehtools/app/ehtools.desktop /root/Desktop
 chmod +x /root/Desktop/ehtools.desktop
-echo -e "Success, desktop ehtools shortcut application created!"
+echo -e "Success, ehtools desktop shortcut application created!"
 sleep 2
 exit
 fi
 fi
+if [[ $2 = "remove" ]]
+then
+if [[ -f /root/Desktop/ehtools.desktop ]]
+then
+sleep 2
+rm /root/Desktop/ehtools.desktop
+sleep 2
+echo -e "Success, ehtools desktop shortcut application removed"
+else
+sleep 2
+echo -e "Error, ehtools desktop shortcut application is not created!"
+sleep 2
+exit
+if 
 
 echo -e "Usage: ehtapp [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
