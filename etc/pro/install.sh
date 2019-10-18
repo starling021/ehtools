@@ -374,7 +374,7 @@ fi
 sleep 3
 clear
 printf '\033]2;ehtools shortcut\a'
-echo -e "Are you want to create ehtools shortcut? "$YS"/etc/ehtools/.config"$CE""
+echo -e "Are you want to create ehtools shortcut?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "Ehtools shortcut will be saved as gnome application!"
 echo -e "You will can launch ehtools from the applications!"
 read -e -p $'(\e[4;93mshortcut\e[0m\en)> ' SHORT
