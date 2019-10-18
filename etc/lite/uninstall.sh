@@ -161,6 +161,7 @@ printf '\033]2;Uninstalling...\a'
 	      rm /bin/ehtmod
 	      rm /bin/ehtkey
 	      rm /bin/uiecache
+	      rm /bin/ehtapp
 } &> /dev/null
 
 echo -e
