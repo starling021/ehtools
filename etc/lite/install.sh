@@ -345,7 +345,7 @@ then
 clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To create ehtools shortcut, run the following commands:"
+	echo -e "To create ehtools shortcut, run the following command:"
 	sleep 0.5
 	echo -e ""$YS"cp /root/ehtools/app/ehtools.desktop /usr/share/applications"$CE"..."
         sleep 3
