@@ -437,6 +437,7 @@ Fixed install/reinstall menu bug!
 EPP updated to v4.0
 Added EPP Crypto v1.4
 Added login and password encryption
+Added ehtools shortcut and ehtools logo
 Added a new utility named ehtkey (ehtools key)
 Updated ehtmod (ehtools modules)
 Updated Modules to v1.9 and renamed to ehtmod
