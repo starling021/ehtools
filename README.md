@@ -293,7 +293,7 @@ ehtmod (ehtools modules) is an utility that adds permissions or the ability to c
     Usage: ehtmod [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
-       --install         Install ehtools modules to /bin.
+       --install         Install ehtools modules to /bin/ehtools.
                            (install ehtools modules)
        --restore <name>  Restore saved ehtools modules snapshot.
                            (restore ehtools modules snapshot)

@@ -44,7 +44,7 @@ then
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   -i  --install         Install ehtools modules to /bin."
+echo -e "   -i  --install         Install ehtools modules to /bin/ehtools."
 echo -e "                           (install ehtools modules)"
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
 echo -e "                           (take ehtools modules snapshot)"
@@ -486,7 +486,7 @@ chmod +x /root/ehtools/eht/eht43
 sleep 0.5 
 echo -e "Setting up permissions..."
 sleep 0.5
-echo -e "Moving ehtools modules to /bin..."
+echo -e "Moving ehtools modules to /bin/ehtools..."
 sleep 0.5
 cp /root/ehtools/eht/eht1 /bin/ehtools
 cp /root/ehtools/eht/eht2 /bin/ehtools
@@ -525,7 +525,7 @@ chmod +x /bin/eht43
 cp /root/ehtools/eht/eht21 /bin
 chmod +x /bin/eht21
 sleep 0.5
-echo -e "Modules added to /bin with success!"
+echo -e "Modules added to /bin/ehtools with success!"
 sleep 1
 echo -e "Cleaning caches..."
 sleep 0.5
@@ -614,7 +614,7 @@ fi
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   -i  --install         Install ehtools modules to /bin."
+echo -e "   -i  --install         Install ehtools modules to /bin/ehtools."
 echo -e "                           (install ehtools modules)"
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
 echo -e "                           (take ehtools modules snapshot)"

@@ -100,7 +100,7 @@ then
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   -i  --install         Install ehtools modules to /bin."
+echo -e "   -i  --install         Install ehtools modules to /bin/ehtools."
 echo -e "                           (install ehtools modules)"
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
 echo -e "                           (take ehtools modules snapshot)"
@@ -180,42 +180,33 @@ rm -r /bin/ehtools
 cp -r /etc/ehtools/modules/snapshots/$2/ehtools /bin
 rm -r /root/ehtools/eht
 cp -r /etc/ehtools/modules/snapshots/$2/eht /root/ehtools
+rm /bin/ehtools/eht1
+rm /bin/ehtools/eht2
+rm /bin/ehtools/eht3
+rm /bin/ehtools/eht31
+rm /bin/ehtools/eht4
+rm /bin/ehtools/eht41
+rm /bin/ehtools/eht42
+rm /bin/ehtools/eht43
+rm /bin/ehtools/eht21
+cp /etc/ehtools/modules/snapshots/$2/eht/eht1 /bin/ehtools
 chmod +x /bin/ehtools/eht1
+cp /etc/ehtools/modules/snapshots/$2/eht/eht2 /bin/ehtools
 chmod +x /bin/ehtools/eht2
+cp /etc/ehtools/modules/snapshots/$2/eht/eht3 /bin/ehtools
 chmod +x /bin/ehtools/eht3
-chmod +x /bin/ehtools/eht4
-chmod +x /bin/ehtools/eht21
+cp /etc/ehtools/modules/snapshots/$2/eht/eht31 /bin/ehtools
 chmod +x /bin/ehtools/eht31
+cp /etc/ehtools/modules/snapshots/$2/eht/eht4 /bin/ehtools
+chmod +x /bin/ehtools/eht4
+cp /etc/ehtools/modules/snapshots/$2/eht/eht41 /bin/ehtools
 chmod +x /bin/ehtools/eht41
+cp /etc/ehtools/modules/snapshots/$2/eht/eht42 /bin/ehtools
 chmod +x /bin/ehtools/eht42
+cp /etc/ehtools/modules/snapshots/$2/eht/eht43 /bin/ehtools
 chmod +x /bin/ehtools/eht43
-rm /bin/eht1
-rm /bin/eht2
-rm /bin/eht3
-rm /bin/eht31
-rm /bin/eht4
-rm /bin/eht41
-rm /bin/eht42
-rm /bin/eht43
-rm /bin/eht21
-cp /etc/ehtools/modules/snapshots/$2/eht/eht1 /bin
-chmod +x /bin/eht1
-cp /etc/ehtools/modules/snapshots/$2/eht/eht2 /bin
-chmod +x /bin/eht2
-cp /etc/ehtools/modules/snapshots/$2/eht/eht3 /bin
-chmod +x /bin/eht3
-cp /etc/ehtools/modules/snapshots/$2/eht/eht31 /bin
-chmod +x /bin/eht31
-cp /etc/ehtools/modules/snapshots/$2/eht/eht4 /bin
-chmod +x /bin/eht4
-cp /etc/ehtools/modules/snapshots/$2/eht/eht41 /bin
-chmod +x /bin/eht41
-cp /etc/ehtools/modules/snapshots/$2/eht/eht42 /bin
-chmod +x /bin/eht42
-cp /etc/ehtools/modules/snapshots/$2/eht/eht43 /bin
-chmod +x /bin/eht43
-cp /etc/ehtools/modules/snapshots/$2/eht/eht21 /bin
-chmod +x /bin/eht21
+cp /etc/ehtools/modules/snapshots/$2/eht/eht21 /bin/ehtools
+chmod +x /bin/ehtools/eht21
 cd /root/ehtools
 cd lib
 chmod +x liblogin
@@ -457,15 +448,6 @@ rm /bin/ehtools/eht4
 rm /bin/ehtools/eht41
 rm /bin/ehtools/eht42
 rm /bin/ehtools/eht43
-rm /bin/eht1
-rm /bin/eht2
-rm /bin/eht3
-rm /bin/eht21
-rm /bin/eht31
-rm /bin/eht4
-rm /bin/eht41
-rm /bin/eht42
-rm /bin/eht43
 rm -r /etc/ehtools/modules
 } &> /dev/null
 sleep 2
@@ -542,7 +524,7 @@ chmod +x /root/ehtools/eht/eht43
 sleep 0.5 
 echo -e "Setting up permissions..."
 sleep 0.5
-echo -e "Moving ehtools modules to /bin..."
+echo -e "Moving ehtools modules to /bin/ehtools..."
 sleep 0.5
 cp /root/ehtools/eht/eht1 /bin/ehtools
 cp /root/ehtools/eht/eht2 /bin/ehtools
@@ -562,26 +544,8 @@ chmod +x /bin/ehtools/eht31
 chmod +x /bin/ehtools/eht41
 chmod +x /bin/ehtools/eht42
 chmod +x /bin/ehtools/eht43
-cp /root/ehtools/eht/eht1 /bin
-chmod +x /bin/eht1
-cp /root/ehtools/eht/eht2 /bin
-chmod +x /bin/eht2
-cp /root/ehtools/eht/eht3 /bin
-chmod +x /bin/eht3
-cp /root/ehtools/eht/eht31 /bin
-chmod +x /bin/eht31
-cp /root/ehtools/eht/eht4 /bin
-chmod +x /bin/eht4
-cp /root/ehtools/eht/eht41 /bin
-chmod +x /bin/eht41
-cp /root/ehtools/eht/eht42 /bin
-chmod +x /bin/eht42
-cp /root/ehtools/eht/eht43 /bin
-chmod +x /bin/eht43
-cp /root/ehtools/eht/eht21 /bin
-chmod +x /bin/eht21
 sleep 0.5
-echo -e "Modules added to /bin with success!"
+echo -e "Ehtools modules moved to /bin/ehtools with success!"
 sleep 1
 echo -e "Cleaning caches..."
 sleep 0.5
@@ -670,7 +634,7 @@ fi
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   -i  --install         Install ehtools modules to /bin."
+echo -e "   -i  --install         Install ehtools modules to /bin/ehtools."
 echo -e "                           (install ehtools modules)"
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
 echo -e "                           (take ehtools modules snapshot)"
