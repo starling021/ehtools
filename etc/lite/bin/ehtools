@@ -110,10 +110,10 @@ then
 sleep 1
 echo -e
 echo -e ""$YS"Options: "$CE""
-echo -e ""$YS"-r"$CE") Uninstall ehtools"
-echo -e ""$YS"-h"$CE") Make handshake"
-echo -e ""$YS"-w"$CE") Open WPS menu"
-echo -e ""$YS"-o"$CE") Show options"
+echo -e ""$YS"-u"$CE") Uninstall ehtools"
+echo -e ""$YS"-h"$CE") Open handshake menu"
+echo -e ""$YS"-w"$CE") Open Find WPS menu"
+echo -e ""$YS"-o"$CE") Show quick options"
 echo -e
 sleep 1
 exit
