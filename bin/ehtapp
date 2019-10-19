@@ -163,6 +163,7 @@ sleep 2
 exit
 fi
 fi
+echo -e "Usage: ehtapp --desktop <option>"
 fi
 
 if [[ $1 = "--remove" || $1 = "-r" ]]
