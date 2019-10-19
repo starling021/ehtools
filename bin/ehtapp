@@ -102,7 +102,7 @@ echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -c  --create            Create ehtools shortcut application."
 echo -e "                             (create shortcut application)"
-echo -e "   -d  --desktop <option>  Create/Remove ehtools desktop shortcut application."
+echo -e "   -d  --desktop <option>  Create/remove ehtools desktop shortcut application."
 echo -e "                             (create/remove desktop shortcut application)" 
 echo -e "   -r  --remove            Remove ehtools shortcut application."
 echo -e "                             (remove shortcut application)"
