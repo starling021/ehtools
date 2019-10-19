@@ -109,6 +109,16 @@ exit
 
 elif [[ $1 = "--change" || $1 = "-c" ]]
 then
+if [[ $2 = "" ]]
+then
+echo -e "Usage: ehtkey $1 <old_key> <new_key>"
+exit
+fi
+if [[ $3 = "" ]]
+then
+echo -e "Usage: ehtkey $1 <old_key> <new_key>"
+exit
+fi
 if [[ $2 != "$(cat /root/ehtools/etc/.config)" ]]
 then
 sleep 2
