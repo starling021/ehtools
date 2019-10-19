@@ -43,8 +43,6 @@ fi
 
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
-if [[ $1 = "--help" || $1 = "-h" ]]
-then
 echo -e "Usage: ehtkey [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
@@ -52,10 +50,19 @@ echo -e "   -c  --change <old_key> <new_key>  Change ehtools config key."
 echo -e "                                       (change config key)"
 echo -e "   -h  --help                        Give this help list."
 exit
-exit
 
 elif [[ $1 = "--change" || $1 = "-c" ]]
 then
+if [[ $2 = "" ]]
+then
+echo -e "Usage: ehtkey $1 <old_key> <new_key>"
+exit
+fi
+if [[ $3 = "" ]]
+then
+echo -e "Usage: ehtkey $1 <old_key> <new_key>"
+exit
+fi
 if [[ $2 != "$(cat /root/ehtools/etc/.config)" ]]
 then
 sleep 2
@@ -90,13 +97,10 @@ exit
 fi
 fi
 
-if [[ $1 = "--help" || $1 = "-h" ]]
-then
 echo -e "Usage: ehtkey [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -c  --change <old_key> <new_key>  Change ehtools config key."
 echo -e "                                       (change config key)"
 echo -e "   -h  --help                        Give this help list."
-exit
 exit
