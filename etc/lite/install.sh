@@ -358,7 +358,7 @@ printf '\033]2;ehtools INSTALLER\a'
 sleep 3
 echo -e "Open a NEW terminal and type '"$YS"ehtools"$CE"' to launch the framework"
 sleep 0.5
-echo -e "If you want to configure ehtools shortcut, run '"$YS"ehtapp"$CE"'"
+echo -e "If you want to configure ehtools application, run '"$YS"ehtapp"$CE"'"
 sleep 0.5
 echo -e "If you want to change ehtools config key, run '"$YS"ehtkey"$CE"'"
 sleep 0.5
