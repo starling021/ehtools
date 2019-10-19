@@ -127,7 +127,6 @@ fi
 printf '\033]2;Uninstalling...\a'
 
 {
-	      
 	      cd /root/ehtools/lib
 	      chmod +x libunchattr
 	      ./libunchattr
