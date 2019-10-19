@@ -61,6 +61,11 @@ exit
 
 elif [[ $1 = "--restore" || $1 = "-r" ]]
 then
+if [[ $2 = "" ]]
+then
+echo -e "Usage: ehtmod $1 <name>"
+exit
+fi
 if [[ -d /etc/ehtools/modules ]]
 then
 if [[ ! -d /etc/ehtools/modules/snapshots ]]
@@ -183,6 +188,11 @@ fi
 
 elif [[ $1 = "--delete" || $1 = "-d" ]]
 then
+if [[ $2 = "" ]]
+then
+echo -e "Usage: ehtmod $1 <name>"
+exit
+fi
 if [[ -d /etc/ehtools/modules ]]
 then
 if [[ ! -d /etc/ehtools/modules/snapshots ]]
@@ -259,6 +269,11 @@ fi
 
 elif [[ $1 = "--take" || $1 = "-t" ]]
 then
+if [[ $2 = "" ]]
+then
+echo -e "Usage: ehtmod $1 <name>"
+exit
+fi
 if [[ -d /etc/ehtools/modules ]]
 then
 if [[ ! -d /etc/ehtools/modules/snapshots ]]
