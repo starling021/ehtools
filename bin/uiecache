@@ -118,7 +118,7 @@ then
 echo -e "Usage: uiecache $1 <path>"
 exit
 fi
-"SAS="$2"
+SAS="$2"
 printf '\033]2;Uiecache ('$SAS')...\a'
 
 {
