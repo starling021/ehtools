@@ -113,7 +113,12 @@ exit
 
 elif [[ $1 = "--path" || $1 = "-p" ]]
 then
-SAS="$2"
+if [[ $2 = "" ]]
+then
+echo -e "Usage: uiecache $1 <path>"
+exit
+fi
+"SAS="$2"
 printf '\033]2;Uiecache ('$SAS')...\a'
 
 {
