@@ -75,6 +75,11 @@ fi
 
 if [[ $1 = "--desktop" || $1 = "-d" ]]
 then
+if [[ $2 = "" ]]
+then
+echo -e "Usage: ehtapp $1 <option>"
+exit
+fi
 if [[ $2 = "create" ]]
 then
 if [[ -f /root/Desktop/ehtools.desktop ]]
