@@ -101,27 +101,32 @@ chmod +x /root/ehtools/eht/eht4
 chmod +x /root/ehtools/eht/eht41
 chmod +x /root/ehtools/eht/eht42
 chmod +x /root/ehtools/eht/eht43
-chmod +x /root/ehtools/ls/l131.sh
-chmod +x /root/ehtools/ls/l132.sh
-chmod +x /root/ehtools/ls/l133.sh
+chmod +x /root/ehtools/dev/dev1
+chmod +x /root/ehtools/dev/dev2
+chmod +x /root/ehtools/dev/dev21
 chmod +x /root/ehtools/uninstall.sh
 chmod +x /root/ehtools/bin/ehtmod
 chmod +x /root/ehtools/bin/ehtkey
+chmod +x /root/ehtools/bin/ehtconsole
+chmod +x /root/ehtools/bin/ehtapp
+chmod +x /root/ehtools/bin/uiecache
+chmod +x /root/ehtools/bin/epasswd
 clear
+sleep 1
 mkdir /bin/ehtools
 cd /root/ehtools
 cp /root/ehtools/bin/ehtools /bin/ehtools
 chmod +x /bin/ehtools/ehtools
-cp /root/ehtools/bin/ehtkey /bin
-chmod +x /bin/ehtkey
-cp /root/ehtools/bin/ehtapp /bin
-chmod +x /bin/ehtapp
-cp /root/ehtools/bin/epasswd /bin
-chmod +x /bin/epasswd
-cp /root/ehtools/bin/ehtmod /bin
-chmod +x /bin/ehtmod
-cp /root/ehtools/bin/uiecache /bin
-chmod +x /bin/uiecache
+cp /root/ehtools/bin/ehtkey /bin/ehtools
+chmod +x /bin/ehtools/ehtkey
+cp /root/ehtools/bin/ehtapp /bin/ehtools
+chmod +x /bin/ehtools/ehtapp
+cp /root/ehtools/bin/epasswd /bin/ehtools
+chmod +x /bin/ehtools/epasswd
+cp /root/ehtools/bin/ehtmod /bin/ehtools
+chmod +x /bin/ehtools/ehtmod
+cp /root/ehtools/bin/uiecache /bin/ehtools
+chmod +x /bin/ehtools/uiecache
 mkdir /etc/ehtools
 mkdir /etc/ehtools/root
 cp /root/ehtools/etc/root/password /etc/ehtools/root
