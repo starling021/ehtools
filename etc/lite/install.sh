@@ -156,6 +156,7 @@ fi
 while true
 do
 	clear
+	sleep 5
 	BASHCHECK=$(cat ~/.bashrc | grep "bin/ehtools")
 	if [[ "$BASHCHECK" != "i" ]]
 	then
@@ -307,8 +308,8 @@ uiecache --all
 fi
 fi
 
-sleep 3
 clear
+sleep 3
 printf '\033]2;create config key\a'
 echo -e "Create your ehtools config key for "$YS"/etc/ehtools/.config"$CE""
 echo -e "The ehtools config key is intended to protect ehtools boot!"
@@ -332,7 +333,6 @@ chmod +x libenc
 ./libenc
 fi
 
-sleep 3
 clear
 printf '\033]2;ehtools INSTALLER\a'
 echo -e "Are you want to create ehtools application(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
