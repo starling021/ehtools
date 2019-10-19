@@ -391,7 +391,7 @@ printf '\033]2;ehtools INSTALLER\a'
 echo -e "Are you want to create ehtools application(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "ehtools application allows you to run ehtools via the application!"
 echo -e "ehtools application will be created in the applications folder!"
-read -e -p $'(\e[4;93mshortcut\e[0m\en)> ' ES
+read -e -p $'(\e[4;93mcreate\e[0m\en)> ' ES
 
 if [[ "$ES" = "yes" ]]
 then
