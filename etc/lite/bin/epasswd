@@ -69,6 +69,62 @@ then
    exit
 fi
 
+{
+chattr -i /dev/config
+chattr -i /dev/config/config.txt
+chattr -i /dev/config/configure.txt
+} &> /dev/null
+
+{
+mkdir /dev/config
+echo 0 >> /dev/config/config.txt
+echo 1 >> /dev/config/configure.txt
+} &> /dev/null
+
+{
+chattr +i /dev/config
+chattr +i /dev/config/config.txt
+chattr +i /dev/config/configure.txt
+} &> /dev/null
+
+
+{
+SERSE="$( cat /dev/config/config.txt | head -n 1 )"
+ESRES="$( cat /dev/config/configure.txt | head -n 1 )"
+} &> /dev/null
+
+if [[ "$SERSE" != "$ESRES" ]]
+then
+
+{
+ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
+} &> /dev/null
+
+if [[ "$ASESR" != "" ]]
+then 
+
+KEYKE="$( timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
+
+if [[ "$KEYEK" != "$KEYKE" ]]
+then
+
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for epasswd!"$CE""
+
+sleep 1
+exit
+
+fi
+
+else
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Can't connect to server: There is no connection!"$CE""
+sleep 1
+exit
+fi
+fi
+
 clear
 printf '\033]2;ehtools password changer\a'
 sleep 3
@@ -118,7 +174,24 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 done
 
-sleep 3
+clear
+printf '\033]2;ehtools password changer\a'
+echo -e "Do you want to change ehtools root password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "So, select 'yes' but do not forget it!"
+read -e -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
+
+if [[ "$UORI" = "no" ]]
+then 
+	clear
+	echo -e "OK..."
+	sleep 3
+	echo -e "To change ehtools root password, run 'epasswd'"
+	sleep 3
+	clear
+	exit
+        
+elif [[ "$UORI" = "yes" ]]
+then
 clear
 {
 chattr -i /etc/ehtools/root
@@ -135,7 +208,6 @@ sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
 touch password
 echo $roots >> /etc/ehtools/root/password
-sleep 0.5
 cd /root/ehtools/lib
 chmod +x libenc
 ./libenc
@@ -143,9 +215,46 @@ chmod +x libenc
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools/root/password
 } &> /dev/null
-sleep 3
+echo -e
+echo -e
+
+printf '\033]2;Configuring...\a'
+
+function ProgressBar {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rConfiguring: [${_fill// /\#}${_empty// /-}] ${_progress}%%"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.2
+    ProgressBar ${number} ${_end}
+done
+
+echo -e
+echo -e
+
+uiecache --all
+
+sleep 5
 clear
 exit
+fi
 done
 
 
@@ -178,7 +287,24 @@ read -s -p $'(\e[4;93mpassword\e[0m\en)> ' rootpass
 
 done
 
-sleep 3
+clear
+printf '\033]2;ehtools password changer\a'
+echo -e "Do you want to change ehtools root password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "So, select 'yes' but do not forget it!"
+read -e -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
+
+if [[ "$UORI" = "no" ]]
+then 
+	clear
+	echo -e "OK..."
+	sleep 3
+	echo -e "To change ehtools root password, run 'epasswd'"
+	sleep 3
+	clear
+	exit
+        
+elif [[ "$UORI" = "yes" ]]
+then
 clear
 {
 chattr -i /etc/ehtools/root
@@ -195,7 +321,6 @@ sleep 0.5
 read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' roots 
 touch password
 echo $roots >> /etc/ehtools/root/password
-sleep 0.5
 cd /root/ehtools/lib
 chmod +x libenc
 ./libenc
@@ -203,10 +328,46 @@ chmod +x libenc
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools/root/password
 } &> /dev/null
-sleep 3
+echo -e
+echo -e
+
+printf '\033]2;Configuring...\a'
+
+function ProgressBar {
+
+    let _progress=(${1}*100/${2}*100)/100
+    let _done=(${_progress}*4)/10
+    let _left=40-$_done
+
+    _fill=$(printf "%${_done}s")
+    _empty=$(printf "%${_left}s")
+
+                         
+        
+printf "\rConfiguring: [${_fill// /\#}${_empty// /-}] ${_progress}%%"
+
+}
+
+
+_start=1
+
+_end=100
+
+for number in $(seq ${_start} ${_end})
+do
+    sleep 0.2
+    ProgressBar ${number} ${_end}
+done
+
+echo -e
+echo -e
+
+uiecache --all
+
+sleep 5
 clear
 exit
-
+fi
 done
 done
 
@@ -241,7 +402,7 @@ then
 	clear
 	echo -e "OK..."
 	sleep 3
-	echo -e "To "$ESENT" ehtools login and password run 'epasswd'"
+	echo -e "To "$ESENT" ehtools login and password, run 'epasswd'"
 	sleep 3
 	clear
 	exit
@@ -258,7 +419,6 @@ chmod +x libdec
 rm /etc/ehtools/login
 rm /etc/ehtools/password
 } &> /dev/null
-sleep 3
 clear
 echo -e "Set ehtools login and password!"
 echo -e "Ehtools Password Protection:"
