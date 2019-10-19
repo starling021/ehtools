@@ -199,11 +199,11 @@ Run it to uninstall ehtools:
 
 > ehtools -u
 
-Run it to make handshake:
+Run it to open handshake manu:
 
 > ehtools -h
 
-Run it to open WPS menu:
+Run it to open Find WPS menu:
 
 > ehtools -w
 
@@ -293,13 +293,17 @@ ehtmod (ehtools modules) is an utility that adds permissions or the ability to c
     Usage: ehtmod [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
-       --install         Install ehtools modules to /bin/ehtools.
-                           (install ehtools modules)
-       --restore <name>  Restore saved ehtools modules snapshot.
-                           (restore ehtools modules snapshot)
-       --take    <name>  Take a new ehtools modules snapshot.
-                           (take ehtools modules snapshot)
-       --help            Give this help list.
+    -i  --install         Install ehtools modules to /bin/ehtools.
+                            (install ehtools modules)
+    -t  --take    <name>  Take a new ehtools modules snapshot.
+                            (take ehtools modules snapshot)
+    -r  --restore <name>  Restore saved ehtools modules snapshot.
+                            (restore ehtools modules snapshot)
+    -d  --delete  <name>  Delete saved ehtools modules snapshot.
+                            (delete ehtools modules snapshot)
+    -u  --uninstall       Uninstall ehtools modules from /bin/ehtools.
+                            (uninstall ehtools modules)
+    -h  --help            Give this help list.
          
 > Ehtools Modules Snapshot (EMS) 
 
