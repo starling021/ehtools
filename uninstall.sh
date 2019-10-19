@@ -183,12 +183,15 @@ fi
 printf '\033]2;Uninstalling...\a'
 
 {
-	      cd /root/ehtools/lib
+              cd /root/ehtools/lib
 	      chmod +x libunchattr
 	      ./libunchattr
 	      cd /root/ehtools/lib
 	      chmod +x libunconf
 	      ./libunconf
+              cd /root/ehtools/lib
+              chmod +x liunlogin
+              ./libunlogin
 	      chattr -i /dev/config
               chattr -i /dev/config/config.txt
               chattr -i /dev/config/configure.txt
