@@ -156,7 +156,6 @@ fi
 while true
 do
 	clear
-	sleep 5
 	BASHCHECK=$(cat ~/.bashrc | grep "bin/ehtools")
 	if [[ "$BASHCHECK" != "i" ]]
 	then
