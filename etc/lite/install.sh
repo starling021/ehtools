@@ -309,7 +309,7 @@ fi
 
 sleep 3
 clear
-printf '\033]2;ehtools INSTALLER\a'
+printf '\033]2;create config key\a'
 echo -e "Create your ehtools config key for "$YS"/etc/ehtools/.config"$CE""
 echo -e "The ehtools config key is intended to protect ehtools boot!"
 echo -e "It is recommended to create a strong ehtools config key!"
@@ -336,8 +336,8 @@ sleep 3
 clear
 printf '\033]2;ehtools INSTALLER\a'
 echo -e "Are you want to create ehtools application(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
-echo -e "ehtools application allows you to run ehtools via the application!"
-echo -e "ehtools application will be created in the applications folder!"
+echo -e "Ehtools application allows you to run ehtools via the application!"
+echo -e "Ehtools application will be created in the applications folder!"
 read -e -p $'(\e[4;93mcreate\e[0m\en)> ' ES
 
 if [[ "$ES" = "yes" ]]
