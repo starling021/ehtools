@@ -278,13 +278,13 @@ uiecache (uninstall ehtools cache) is an utility that can help you to clean/unin
     Usage: uiecache [OPTION...]
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
-       --all          Uninstall all ehtools cache.
-                        (standart old uiecache)
-       --path <path>  Uninstall ehtools cache from your path.
-                        (uninstall cache from path)
-       --restart      Restart all ehtools processes and services.
-                        (restart ehtools system)                    
-       --help         Give this help list.
+       -a  --all          Uninstall all ehtools cache.
+                            (standart old uiecache)
+       -p  --path <path>  Uninstall ehtools cache from your path.
+                            (uninstall cache from path)
+       -r  --restart      Restart all ehtools processes and services.
+                            (restart ehtools system)                    
+       -h  --help         Give this help list.
 
 > # ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
@@ -326,7 +326,7 @@ ehtkey (ehtools key) is an utility that allows you to change your ehtools config
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
        --change <old_key> <new_key>  Change ehtools config key.
-                                    (rewrite /etc/ehtools/.config)
+                                       (change config key)
        --help                        Give this help list.
        
 To change ehtools config key you need to launch ehtkey and change it using following usage. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002).
