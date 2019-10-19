@@ -34,7 +34,9 @@ WHS="\e[1;37m"
 
 if [[ $EUID -ne 0 ]]
 then
-   echo "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE"" 1>&2
+   sleep 1
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE"" 1>&2
+   sleep 1
    exit
 fi
 
@@ -307,7 +309,7 @@ fi
 
 sleep 3
 clear
-printf '\033]2;ehtools config key\a'
+printf '\033]2;ehtools INSTALLER\a'
 echo -e "Create your ehtools config key for "$YS"/etc/ehtools/.config"$CE""
 echo -e "The ehtools config key is intended to protect ehtools boot!"
 echo -e "It is recommended to create a strong ehtools config key!"
@@ -332,10 +334,10 @@ fi
 
 sleep 3
 clear
-printf '\033]2;ehtools shortcut application\a'
-echo -e "Are you want to create ehtools shortcut application(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
-echo -e "Ehtools shortcut application allows you to run ehtools via the application!"
-echo -e "Ehtools shortcut application will be created in the applications folder!"
+printf '\033]2;ehtools INSTALLER\a'
+echo -e "Are you want to create ehtools application(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "ehtools application allows you to run ehtools via the application!"
+echo -e "ehtools application will be created in the applications folder!"
 read -e -p $'(\e[4;93mshortcut\e[0m\en)> ' ES
 
 if [[ "$ES" = "yes" ]]
@@ -349,7 +351,7 @@ then
 clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To create ehtools shortcut application, run '"$YS"ehtapp -c"$CE"'..."
+	echo -e "To create ehtools application, run '"$YS"ehtapp -c"$CE"'..."
         sleep 3
 fi
 

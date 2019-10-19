@@ -35,7 +35,9 @@ N="\e[1;37m"
 
 if [[ $EUID -ne 0 ]]
 then
-   echo "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE"" 1>&2
+   sleep 1
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE"" 1>&2
+   sleep 1
    exit
 fi
 
@@ -63,9 +65,9 @@ if [[ -d /etc/ehtools/modules ]]
 then
 if [[ ! -d /etc/ehtools/modules/snapshots ]]
 then
-sleep 3
+sleep 2
 echo -e "Error, snapshots directory is not found!"
-sleep 1
+sleep 2
 echo -e "Making /etc/ehtools/modules/snapshots..."
 mkdir /etc/ehtools/modules/snapshots
 sleep 0.5
@@ -167,15 +169,15 @@ echo -e "Finishing and exiting..."
 sleep 5
 exit
 else
-sleep 3
+sleep 2
 echo -e "Error, snapshot $2 is not found!"
-sleep 1
+sleep 2
 exit
 fi
 else
-sleep 3
-echo -e "Error, modules is not installed!"
-sleep 1
+sleep 2
+echo -e "Error, ehtools modules is not installed!"
+sleep 2
 exit
 fi
 
@@ -185,9 +187,9 @@ if [[ -d /etc/ehtools/modules ]]
 then
 if [[ ! -d /etc/ehtools/modules/snapshots ]]
 then
-sleep 3
+sleep 2
 echo -e "Error, snapshots directory is not found!"
-sleep 1
+sleep 2
 echo -e "Making /etc/ehtools/modules/snapshots..."
 mkdir /etc/ehtools/modules/snapshots
 sleep 0.5
@@ -243,15 +245,15 @@ echo -e "Finishing and exiting..."
 sleep 5
 exit
 else
-sleep 3
+sleep 2
 echo -e "Error, snapshot $2 is not found!"
-sleep 1
+sleep 2
 exit
 fi
 else
-sleep 3
-echo -e "Error, modules is not installed!"
-sleep 1
+sleep 2
+echo -e "Error, ehtools modules is not installed!"
+sleep 2
 exit
 fi
 
@@ -261,9 +263,9 @@ if [[ -d /etc/ehtools/modules ]]
 then
 if [[ ! -d /etc/ehtools/modules/snapshots ]]
 then
-sleep 3
+sleep 2
 echo -e "Error, snapshots directory is not found!"
-sleep 1
+sleep 2
 echo -e "Making /etc/ehtools/modules/snapshots..."
 mkdir /etc/ehtools/modules/snapshots
 sleep 0.5
@@ -272,9 +274,9 @@ sleep 1
 fi
 if [[ -d /etc/ehtools/modules/snapshots/$2 ]]
 then
-sleep 3
+sleep 2
 echo -e "Error, snapshot $2 is already taken!"
-sleep 1
+sleep 2
 exit
 else
 clear
@@ -334,9 +336,9 @@ sleep 5
 exit
 fi
 else
-sleep 3
-echo -e "Error, modules is not installed!"
-sleep 1
+sleep 2
+echo -e "Error, ehtools modules is not installed!"
+sleep 2
 exit
 fi
 
@@ -401,9 +403,9 @@ echo -e "Finishing and exiting..."
 sleep 5
 exit
 else
-sleep 3
+sleep 2
 echo -e "Error, ehtools modules is not installed!"
-sleep 1
+sleep 2
 exit
 fi
 
@@ -412,9 +414,9 @@ elif [[ $1 = "--install" || $1 = "-i" ]]
 then
 if [[ -d /etc/ehtools/modules ]]
 then
-sleep 3
+sleep 2
 echo -e "Error, ehtools modules is already installed!"
-sleep 1
+sleep 2
 exit
 fi
 clear

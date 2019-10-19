@@ -35,7 +35,9 @@ N="\e[1;37m"
 
 if [[ $EUID -ne 0 ]]
 then
-   echo "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE"" 1>&2
+   sleep 1
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE"" 1>&2
+   sleep 1
    exit
 fi
 
@@ -44,11 +46,11 @@ then
 echo -e "Usage: ehtapp [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   -c  --create            Create ehtools shortcut application."
+echo -e "   -c  --create            Create ehtools application."
 echo -e "                             (create shortcut application)"
-echo -e "   -d  --desktop <option>  Create/remove ehtools desktop shortcut application."
+echo -e "   -d  --desktop <option>  Create/remove ehtools desktop application."
 echo -e "                             (create/remove desktop shortcut application)" 
-echo -e "   -r  --remove            Remove ehtools shortcut application."
+echo -e "   -r  --remove            Remove ehtools application."
 echo -e "                             (remove shortcut application)"
 echo -e "   -h  --help              Give this help list."
 exit
@@ -58,14 +60,14 @@ then
 if [[ -f /usr/share/applications/ehtools.desktop ]]
 then
 sleep 2
-echo -e "Error, ehtools shortcut application is already created!"
+echo -e "Error, ehtools application is already created!"
 sleep 2
 exit
 else
 sleep 2
 cp /root/ehtools/app/ehtools.desktop /usr/share/applications
 chmod +x /usr/share/applications/ehtools.desktop
-echo -e "Success, ehtools shortcut application created!"
+echo -e "Success, ehtools application created!"
 sleep 2
 exit
 fi
@@ -78,14 +80,14 @@ then
 if [[ -f /root/Desktop/ehtools.desktop ]]
 then
 sleep 2
-echo -e "Error, ehtools desktop shortcut application is already created!"
+echo -e "Error, ehtools desktop application is already created!"
 sleep 2
 exit
 else
 sleep 2
 cp /root/ehtools/app/ehtools.desktop /root/Desktop
 chmod +x /root/Desktop/ehtools.desktop
-echo -e "Success, ehtools desktop shortcut application created!"
+echo -e "Success, ehtools desktop application created!"
 sleep 2
 exit
 fi
@@ -96,11 +98,11 @@ if [[ -f /root/Desktop/ehtools.desktop ]]
 then
 sleep 2
 rm /root/Desktop/ehtools.desktop
-echo -e "Success, ehtools desktop shortcut application removed!"
+echo -e "Success, ehtools desktop application removed!"
 sleep 2
 else
 sleep 2
-echo -e "Error, ehtools desktop shortcut application is not created!"
+echo -e "Error, ehtools desktop application is not created!"
 sleep 2
 exit
 fi
@@ -113,11 +115,11 @@ if [[ -f /usr/share/applications/ehtools.desktop ]]
 then
 sleep 2
 rm /usr/share/applications/ehtools.desktop
-echo -e "Success, ehtools shortcut application removed!"
+echo -e "Success, ehtools application removed!"
 sleep 2
 else
 sleep 2
-echo -e "Error, ehtools shortcut application is not created!"
+echo -e "Error, ehtools application is not created!"
 sleep 2
 exit
 fi
@@ -126,11 +128,11 @@ fi
 echo -e "Usage: ehtapp [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   -c  --create            Create ehtools shortcut application."
+echo -e "   -c  --create            Create ehtools application."
 echo -e "                             (create shortcut application)"
-echo -e "   -d  --desktop <option>  Create/remove ehtools desktop shortcut application."
+echo -e "   -d  --desktop <option>  Create/remove ehtools desktop application."
 echo -e "                             (create/remove desktop shortcut application)" 
-echo -e "   -r  --remove            Remove ehtools shortcut application."
+echo -e "   -r  --remove            Remove ehtools application."
 echo -e "                             (remove shortcut application)"
 echo -e "   -h  --help              Give this help list."
 exit

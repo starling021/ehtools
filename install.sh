@@ -34,7 +34,9 @@ WHS="\e[1;37m"
 
 if [[ $EUID -ne 0 ]]
 then
-   echo "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE"" 1>&2
+   sleep 1
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE"" 1>&2
+   sleep 1
    exit
 fi
 

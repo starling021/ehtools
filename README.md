@@ -335,24 +335,24 @@ To change ehtools config key you need to execute the following command. You need
 
 > # ehtapp | <img src="https://img.shields.io/badge/utility-ehtapp-red.svg">
 
-ehtapp (ehtools application) is an utility that allows you to configure ehtools shortcut application, for example creating ehtools desktop shortcut application.
+ehtapp (ehtools application) is an utility that allows you to configure ehtools application, for example creating ehtools desktop application.
 
     Usage: ehtapp [OPTION...]"
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
-       -c  --create            Create ehtools shortcut application.
+       -c  --create            Create ehtools application.
                                  (create shortcut application)
-       -d  --desktop <option>  Create/remove ehtools desktop shortcut application.
+       -d  --desktop <option>  Create/remove ehtools desktop application.
                                  (create/remove desktop shortcut application)
-       -r  --remove            Remove ehtools shortcut application.
+       -r  --remove            Remove ehtools application.
                                  (remove shortcut application)
        -h  --help              Give this help list.
 
-To create ehtools desktop shortcut application you need to execute the following command:
+To create ehtools desktop application you need to execute the following command:
 
 > ehtapp --desktop create
 
-To remove ehtools desktop shortcut application you need to execute the following command:
+To remove ehtools desktop application you need to execute the following command:
 
 > ehtapp --desktop remove
 
