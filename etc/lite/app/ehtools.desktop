@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=ehtools
 Encoding=UTF-8
-Exec=sh -c "bash /bin/ehtools/ehtconsole;${SHELL:-bash}"
+Exec=sh -c "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/bin/ehtools && bash /bin/ehtools/ehtools && exit;${SHELL:-bash}"
 Icon=/etc/ehtools/app/ehtools.png
 StartupNotify=false
 Terminal=true
