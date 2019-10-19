@@ -264,9 +264,9 @@ function latest_changelog
 	clear
 	printf '\033]2;Entynet Hacker Tools\a'
 	echo -e "["$GNS"*"$CE"]"$GNS" Welcome to the Ehtools Framework!"$CE""
-	sleep 1
+	sleep 0.5
 	echo -e "["$GNS"*"$CE"]"$CE" Welcome to version "$GNS"$VERSION"$CE" PRO!"$CE""
-	sleep 2
+	sleep 0.5
 	echo -e "Reading Changelog from /root/ehtools/Changelog..."
 	sleep 3
 	cat "$EPATH"/Changelog
@@ -363,8 +363,7 @@ function banner
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
-      echo -e "                                                                             "                                                                           
+      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"                                                                        
       echo -e "                                                                                "                                                           
 	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE")"$BS" Local IPs & gateways"$CE" "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
 	if [[ "$WLANCHECKING" = "" ]]
