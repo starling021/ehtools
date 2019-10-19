@@ -283,7 +283,7 @@ clear
 sleep 3
 echo -e "Well, we are going to start!"
 sleep 2
-echo -e "\e[4;32mPreparing to take snapshot:\e[0m $2..."
+echo -e "\e[4;32mPreparing to take snapshot:\e[0m $2"
 sleep 1
 printf '\033]2;Taking...\a'
 
@@ -519,7 +519,7 @@ echo -e "Saved to /etc/ehtools/modules/.config..."
 sleep 0.5
 echo -e "\e[4;32mSuccess!\e[0m"
 sleep 3
-echo -e "\e[4;32mPreparing to take snapshot:\e[0m default_snapshot..."
+echo -e "\e[4;32mPreparing to take snapshot:\e[0m default_snapshot"
 sleep 1
 echo -e "Making /etc/ehtools/modules/snapshots..."
 mkdir /etc/ehtools/modules/snapshots
