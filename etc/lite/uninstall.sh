@@ -127,39 +127,21 @@ fi
 printf '\033]2;Uninstalling...\a'
 
 {
+	      
 	      cd /root/ehtools/lib
 	      chmod +x libunchattr
 	      ./libunchattr
 	      cd /root/ehtools/lib
 	      chmod +x libunconf
 	      ./libunconf
-	      chattr -i /dev/config
-              chattr -i /dev/config/config.txt
-              chattr -i /dev/config/configure.txt
-	      chattr -i /etc/ehtools/root/service
-              chattr -i /etc/ehtools/root/service/late
-              chattr -i /etc/ehtools/root/service/ehtkey.txt
-              chattr -i /etc/ehtools/root/service/late/ehtkey.txt
-	      rm -r /dev/config
+              cd /root/ehtools/lib
+              chmod +x liunlogin
+              ./libunlogin
 	      rm -r /root/ehtools
 	      rm -r /bin/ehtools
 	      rm -r /etc/ehtools
 	      rm -r /root/handshakes
 	      rm -r /root/wordlists
-	      rm /bin/eht1
-	      rm /bin/eht2
-	      rm /bin/eht3
-	      rm /bin/eht4
-	      rm /bin/eht21
-	      rm /bin/eht31
-	      rm /bin/eht41
-	      rm /bin/eht42
-	      rm /bin/eht43
-	      rm /bin/epasswd
-	      rm /bin/ehtmod
-	      rm /bin/ehtkey
-	      rm /bin/uiecache
-	      rm /bin/ehtapp
 } &> /dev/null
 
 echo -e
