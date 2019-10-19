@@ -41,6 +41,11 @@ fi
 {
 chattr +i /bin/ehtools/ehtools
 chattr +i /bin/ehtools/ehtconsole
+chattr +i /bin/ehtools/epasswd
+chattr +i /bin/ehtools/ehtkey
+chattr +i /bin/ehtools/ehtmod
+chattr +i /bin/ehtools/ehtapp
+chattr +i /bin/ehtools/uiecache
 chattr +i /etc/ehtools/login
 chattr +i /etc/ehtools/password
 chattr +i /etc/ehtools
