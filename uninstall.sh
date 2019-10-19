@@ -202,20 +202,6 @@ printf '\033]2;Uninstalling...\a'
 	      rm -r /etc/ehtools
 	      rm -r /root/handshakes
 	      rm -r /root/wordlists
-	      rm /bin/eht1
-	      rm /bin/eht2
-	      rm /bin/eht3
-	      rm /bin/eht4
-	      rm /bin/eht21
-	      rm /bin/eht31
-	      rm /bin/eht41
-	      rm /bin/eht42
-	      rm /bin/eht43
-	      rm /bin/epasswd
-	      rm /bin/ehtmod
-	      rm /bin/ehtkey
-	      rm /bin/uiecache
-	      rm /bin/ehtapp
 } &> /dev/null
 
 echo -e
