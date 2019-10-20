@@ -128,8 +128,7 @@ fi
 fi
 
 clear
-printf '\033]2;ehtools password changer\a'
-sleep 3
+
 CAT="$( cat /etc/ehtools/password )"
 if [[ "$CAT" = "" ]]
 then
@@ -178,6 +177,7 @@ done
 
 clear
 printf '\033]2;ehtools password changer\a'
+sleep 3
 echo -e "Do you want to change ehtools root password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So, select 'yes' but do not forget it!"
 read -e -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
@@ -204,6 +204,7 @@ cd /root/ehtools/lib
 chmod +x libdec
 ./libdec
 printf '\033]2;ehtools password changer\a'
+sleep 3
 echo -e "Set ehtools root password!"
 echo -e "Ehtools Password Protection:"
 sleep 0.5
@@ -291,6 +292,7 @@ done
 
 clear
 printf '\033]2;ehtools password changer\a'
+sleep 3
 echo -e "Do you want to change ehtools root password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So, select 'yes' but do not forget it!"
 read -e -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI
@@ -317,6 +319,7 @@ cd /root/ehtools/lib
 chmod +x libdec
 ./libdec
 printf '\033]2;ehtools password changer\a'
+sleep 3
 echo -e "Set ehtools root password!"
 echo -e "Ehtools Password Protection:"
 sleep 0.5
@@ -395,6 +398,7 @@ fi
 
 clear
 printf '\033]2;ehtools password changer\a'
+sleep 3
 echo -e "Do you want to "$ESENT" ehtools login and password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So, select 'yes' but do not forget it!"
 read -e -p $'(\e[4;93mepasswd\e[0m\en)> ' UORI

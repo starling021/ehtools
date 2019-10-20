@@ -242,6 +242,7 @@ sleep 0
 else
 clear
 printf '\033]2;ehtools password changer\a'
+sleep 3
 echo -e "Set ehtools login and password!"
 echo -e "Ehtools Password Protection:"
 
