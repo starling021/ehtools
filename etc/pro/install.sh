@@ -237,6 +237,7 @@ do
 done
 clear
 printf '\033]2;ehtools INSTALLER\a'
+sleep 3
 echo -e "Are you want to install ehtools modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So without thinking install them now!"
 echo -e "Only use 'yes' for the best way!"
@@ -265,6 +266,7 @@ fi
 
 clear
 printf '\033]2;ehtools INSTALLER\a'
+sleep 3
 echo -e "Protect ehtools with password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "This function will protect ehtools with login and password!"
 echo -e "So without thinking protect ehtools now!"
@@ -362,8 +364,8 @@ fi
 fi
 
 clear
-sleep 3
 printf '\033]2;create config key\a'
+sleep 3
 echo -e "Create your ehtools config key for "$YS"/etc/ehtools/.config"$CE""
 echo -e "The ehtools config key is intended to protect ehtools boot!"
 echo -e "It is recommended to create a strong ehtools config key!"
