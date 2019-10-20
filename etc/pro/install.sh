@@ -103,7 +103,6 @@ chmod +x libactiv
 
 if [[ -f /etc/ehtools/root/service/late/ehtkey.txt ]]
 then
-printf '\033]2;activate ehtools\a'
 
 EHTKEY="$( cat /etc/ehtools/root/service/late/ehtkey.txt )"
 sleep 1
