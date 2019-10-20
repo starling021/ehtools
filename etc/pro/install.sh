@@ -237,7 +237,7 @@ done
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
-echo -e "Are you want to install ehtools modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "Do you want to install ehtools modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "So without thinking install them now!"
 echo -e "Only use 'yes' for the best way!"
 read -e -p $'(\e[4;93minstall\e[0m\en)> ' UORI
@@ -266,7 +266,7 @@ fi
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
-echo -e "Protect ehtools with password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "Do you want to protect ehtools with password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
 echo -e "This function will protect ehtools with login and password!"
 echo -e "So without thinking protect ehtools now!"
 echo -e "Only use 'yes' for the best way!"
