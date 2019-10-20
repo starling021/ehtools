@@ -161,30 +161,30 @@ From the next menu, the tools are broken down into major categories, with option
 
 > 1) Wi-Fi tools (tools for attacking wireless networks).
 
-    INFO: Wi-Fi options this is tools for attacking wireless
-    networks and network databases.
+    INFO: Wi-Fi options this is tools for attacking 
+    wireless networks and network databases.
 
 > 2) Remote access (tools for getting remote access to other devices and remotely managing them).
 
-    INFO: Remote access means tools for getting access to 
-    other devices and remotely managing them.
+    INFO: Remote access means tools for getting access 
+    to other devices and remotely managing them.
     
 > 3) Information gathering (collecting intelligence on people or website).
 
-    INFO: Information gathering tools, tools for collecting
-    intelligence on peaple or website.
+    INFO: Information gathering tools, tools for 
+    collecting intelligence on peaple or website.
     
 > 4) Website tools (tools for exploiting or attacking sites).
 
-    INFO: Website tools, tools for exploiting or attacking
-    sites and network databases.
+    INFO: Website tools, tools for exploiting or 
+    attacking sites and network databases.
    
 > 5) Other (a miscellaneous collection of other hacking tools)
 
-    INFO: Other tools this is collection of miscellaneous
-    hacking tools.
+    INFO: Other tools this is collection 
+    of miscellaneous hacking tools.
 
-You can also manage your installed tools by accessing option 6. To download Pupy, we'll go to option 2, which is remote access. Here, we will see a list of different tools for remote access, and we can select option 3 for Pupy.
+You can also manage your installed tools by accessing option 6.
 
 # Use ehtools quick access
 
@@ -278,12 +278,6 @@ There are two ways how to setup ehtools application:
     /bin and /etc system folders, for copy ehtools data to
     your system needed root access!
 
-> Bourne-again shell and Gnome-terminal shell
-
-    INFO: Bourne-again shell and Gnome-terminal shell needed
-    for ehtools TUI and also without Gnome-terminall shell 
-    modules such as (eht1, eht2 and etc.) will not work!
-
 > Good Internet connection for server support (only ehtools PRO)
 
     INFO: The server support for ehtools PRO is one of system 
@@ -331,6 +325,14 @@ ehtmod (ehtools modules) is an utility that adds permissions or the ability to c
                             (uninstall ehtools modules)
     -h  --help            Give this help list.
          
+To install ehtools modules you need to execute the following command:
+
+    INFO: The ehtools INSTALLER will ask you to "install" or "not 
+    install" ehtools modules and if you answered "not install" and 
+    want to install them, run the following command!
+
+> modules -i
+
 > Ehtools Modules Snapshot (EMS) 
 
     INFO: EMS is a saved ehtools modules data from /bin/ehtools and 
@@ -343,6 +345,14 @@ ehtmod (ehtools modules) is an utility that adds permissions or the ability to c
     /root/ehtools/eht and restoring it from saved ehtools modules 
     snapshot, you can take it with Modules utility v1.9 but ESR will 
     remove all your old ehtools modules data from /bin/ehtools and /root/ehtools/eht!
+
+To take ehtools modules snapshot you need to execute the following command. You need to enter the name of the ehtools modules snapshot you want to take (example: snapshot1):
+
+> ehtmod -t snapshot1
+
+To restore ehtools modules snapshot you need to execute the following command. You need to enter the name of the saved ehtools modules snapshot (example: snapshot1):
+
+> ehtmod -r snapshot1
     
 > # ehtkey | <img src="https://img.shields.io/badge/utility-ehtkey-brown.svg">
 
@@ -355,7 +365,7 @@ ehtkey (ehtools key) is an utility that allows you to change your ehtools config
                                            (change config key)
        -h  --help                        Give this help list.
        
-To change ehtools config key you need to execute the following command. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002).
+To change ehtools config key you need to execute the following command. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002):
 
 > ehtkey -c 1001 2002
 
@@ -385,10 +395,6 @@ To create ehtools application you need to execute the following command:
 To create ehtools desktop application you need to execute the following command:
 
 > ehtapp -d create
-
-To remove ehtools desktop application you need to execute the following command:
-
-> ehtapp -d remove
 
 > # epasswd | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
