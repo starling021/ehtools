@@ -210,6 +210,28 @@ Run it to open Find WPS menu:
     INFO: For this shortcuts you will not need
     enter your ehtools password!
 
+# Use ehtools application 
+
+    INFO: Ehtools application is an Ehtools 
+    Framework shortcut that allows users to 
+    execute Ehtools Framework just selecting 
+    ehtools in applications and clicking on it!
+
+There are two ways how to setup ehtools application.
+
+## Using the installer
+
+    INFO: The ehtools INSTALLER allows 
+    you to create ehtools application.
+
+## Using the ehtapp
+
+    INFO: There is an ehtools utility named 
+    ehtapp (read more in Ehtools Utilities) that 
+    allows users to configure ehtools application.
+
+> ehtapp --create
+
 # Why ehtools framework?
 
 > More than 58 tools for pentesting installed by default
