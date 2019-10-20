@@ -325,9 +325,9 @@ ehtkey (ehtools key) is an utility that allows you to change your ehtools config
     Usage: ehtkey [OPTION...]"
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
-       --change <old_key> <new_key>  Change ehtools config key.
-                                       (change config key)
-       --help                        Give this help list.
+       -c  --change <old_key> <new_key>  Change ehtools config key.
+                                           (change config key)
+       -h  --help                        Give this help list.
        
 To change ehtools config key you need to execute the following command. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002).
 
