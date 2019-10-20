@@ -217,7 +217,7 @@ Run it to open Find WPS menu:
     ehtools in the applications and clicking on it! I mean ehtools 
     application allows users to run ehtools via the application!
 
-There are two ways how to setup ehtools application.
+There are two ways how to setup ehtools application:
 
 ## Using the installer
 
@@ -376,6 +376,10 @@ ehtapp (ehtools application) is an utility that allows you to configure ehtools 
 
 To create ehtools application you need to execute the following command:
 
+    INFO: The ehtools INSTALLER will ask you to "create" or 
+    "not create" ehtools application and if you answered "not 
+    create" and want to create it, run the following command!
+
 > ehtapp -c
 
 To create ehtools desktop application you need to execute the following command:
@@ -392,34 +396,36 @@ epasswd (ehtools password changer) is an utility that allows you to change your 
 
 > epasswd
 
-After epasswd launch, enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe)
+After epasswd launch, enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe):
 
     (login)> ehtools
-    (password)> sloothe
+    (password)> sloothe (will not be shown!)
 
-After this enter your new ehtools login (example: admin) and your new ehtools password (example: 1234)
+After this enter your new ehtools login (example: admin) and your new ehtools password (example: 1234):
 
     ((new)login)> admin
-    ((new)password)> 1234
+    ((new)password)> 1234 (will not be shown!)
 
 Congratulations, you have successfully changed you login and password!
 
     WARNING: In no case do not forget this password, 
     it will not be restored and you will have to reinstall ehtools!
 
-To cange root password login to epasswd like ehtools root:
+To cange root password, login to epasswd as ehtools root:
 
 > epasswd
 
-> (login)> root
+    (login)> root
 
-After this enter your old ehtools root password (default: toor)
+After this enter your old ehtools root password (default: toor):
 
-> (password)> toor
+    (password)> toor (will not be shown!)
 
-After this enter your new ehtools root password (example: 1234)
+After this enter your new ehtools root password (example: 1234):
 
-> ((new)password)> 1234
+    ((new)password)> 1234 (will not be shown!)
+
+Congratulations, you have successfully changed ehtools root password!
 
     WARNING: In no case do not forget this password,
     it will not be restored and you will have to reinstall ehtools!
