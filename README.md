@@ -212,10 +212,10 @@ Run it to open Find WPS menu:
 
 # Use ehtools application 
 
-    INFO: Ehtools application is an Ehtools 
-    Framework shortcut that allows users to 
-    execute Ehtools Framework just selecting 
-    ehtools in applications and clicking on it!
+    INFO: Ehtools application is an Ehtools Framework shortcut 
+    that allows users to execute Ehtools Framework just selecting 
+    ehtools in the applications and clicking on it! I mean ehtools 
+    application allows users to run ehtools via the application!
 
 There are two ways how to setup ehtools application.
 
