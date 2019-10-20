@@ -43,7 +43,7 @@ fi
 printf '\033]2;activate ehtools\a'
 
 ACTKEY="$( curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
-sleep 1
+sleep 3
 echo -e "Enter your ehtools activation key!"
 echo -e "You can buy it on the ehtools site!"
 read -e -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYACT
