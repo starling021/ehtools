@@ -213,7 +213,7 @@ Run it to open Find WPS menu:
 # Use ehtools application 
 
     INFO: Ehtools application is an Ehtools Framework shortcut 
-    that allows users to execute Ehtools Framework just selecting 
+    that allows users to run Ehtools Framework just selecting 
     ehtools in the applications and clicking on it! I mean ehtools 
     application allows users to run ehtools via the application!
 
@@ -230,7 +230,7 @@ There are two ways how to setup ehtools application.
     ehtapp (read more in Ehtools Utilities) that 
     allows users to configure ehtools application.
 
-> ehtapp --create
+> ehtapp -c
 
 # Why ehtools framework?
 
@@ -308,6 +308,10 @@ uiecache (uninstall ehtools cache) is an utility that can help you to clean/unin
                             (restart ehtools system)                    
        -h  --help         Give this help list.
 
+To clean/uninstall all ehtools cache you need to execute the following command:
+
+> uiecache -a
+
 > # ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
 ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
@@ -353,7 +357,7 @@ ehtkey (ehtools key) is an utility that allows you to change your ehtools config
        
 To change ehtools config key you need to execute the following command. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002).
 
-> ehtkey --change 1001 2002
+> ehtkey -c 1001 2002
 
 > # ehtapp | <img src="https://img.shields.io/badge/utility-ehtapp-red.svg">
 
@@ -370,13 +374,17 @@ ehtapp (ehtools application) is an utility that allows you to configure ehtools 
                                  (remove shortcut application)
        -h  --help              Give this help list.
 
+To create ehtools application you need to execute the following command:
+
+> ehtapp -c
+
 To create ehtools desktop application you need to execute the following command:
 
-> ehtapp --desktop create
+> ehtapp -d create
 
 To remove ehtools desktop application you need to execute the following command:
 
-> ehtapp --desktop remove
+> ehtapp -d remove
 
 > # epasswd | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
@@ -386,15 +394,15 @@ epasswd (ehtools password changer) is an utility that allows you to change your 
 
 After epasswd launch, enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe)
 
-> (login)> ehtools
-
-> (password)> sloothe
+    (login)> ehtools
+    (password)> sloothe
 
 After this enter your new ehtools login (example: admin) and your new ehtools password (example: 1234)
 
-> ((new)login)> admin
+    ((new)login)> admin
+    ((new)password)> 1234
 
-> ((new)password)> 1234
+Congratulations, you have successfully changed you login and password!
 
     WARNING: In no case do not forget this password, 
     it will not be restored and you will have to reinstall ehtools!
