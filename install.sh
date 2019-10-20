@@ -67,8 +67,8 @@ fi
 fi
 
 clear
-sleep 3
 printf '\033]2;select ehtools\a'
+sleep 3
 echo -e "What version of Ehtools Framework you want to install?(\e[1;33mpro\e[0m/\e[1;33mlite\e[0m):"
 echo -e "If you did not buy Ehtools Framework PRO, select \e[1;33mlite\e[0m!"
 echo -e "If you bought Ehtools Framework PRO, select \e[1;33mpro\e[0m!"
