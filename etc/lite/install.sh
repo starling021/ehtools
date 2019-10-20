@@ -345,8 +345,8 @@ clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
 echo -e "Do you want to create ehtools application(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
-echo -e "Ehtools application allows you to run ehtools via the application!"
-echo -e "Ehtools application will be created in the applications folder!"
+echo -e "This will allow you to run ehtools via the application!"
+echo -e "Ehtools application will be created in the applications!"
 read -e -p $'(\e[4;93mcreate\e[0m\en)> ' ES
 
 if [[ "$ES" = "yes" ]]
