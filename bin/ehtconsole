@@ -144,7 +144,8 @@ toolarray=(
 	PAKT="Press "$YS"any key$CE to"
 	PAKTC="Press "$YS"any key$CE to continue..."
 	PAKTGB="Press "$YS"any key$CE to go back..."
-	TNI="["$RS"*"$CE"] "$RS"Tool is not installed! To install it type '"$CE""$YS"install"$CE""$RS"' ..."$CE""
+	TNI="["$RS"*"$CE"] "$RS"This tool is not installed by default!"$CE"
+Do you want to install this tool"$CE"("$YS"yes"$CE"/"$YS"no"$CE"):"
 #code to read from keyboard without return
 	READAK="read -n 1"
 #default MAC when starting monitor
@@ -3493,8 +3494,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_fluxion
 			else
@@ -3508,8 +3509,8 @@ function wifi_tools
 			wifite
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_wifite
 			else
@@ -3524,8 +3525,8 @@ function wifi_tools
 			wifiphisher
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_wifiphisher
 			else
@@ -3548,8 +3549,8 @@ function wifi_tools
 			fi
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_entropy
 			else
@@ -3565,8 +3566,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_morpheus
 			else
@@ -3581,8 +3582,8 @@ function wifi_tools
 			./netool.sh
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_netool
 			else
@@ -3601,8 +3602,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_hakku
 			else
@@ -3619,8 +3620,8 @@ function wifi_tools
 			trity			
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_trity
 			else
@@ -3637,8 +3638,8 @@ function wifi_tools
 			cd		
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_dracnmap
 			else
@@ -3654,8 +3655,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_fern
 			else
@@ -3675,8 +3676,8 @@ function wifi_tools
 			netdiscover -r $NRANGE -i "$WLANN"
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_netdiscover
 			else
@@ -3692,8 +3693,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_kickthemout
 			else
@@ -3709,8 +3710,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_ghostphisher
 			else
@@ -3727,8 +3728,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_theeye
 			else
@@ -3766,8 +3767,8 @@ function wifi_tools
 			fi
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_xerxes
 			else
@@ -3781,8 +3782,8 @@ function wifi_tools
 			ktf.console
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_katana
 			else
@@ -3799,8 +3800,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_airgeddon
 			else
@@ -3814,8 +3815,8 @@ function wifi_tools
 			websploit
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_websploit
 			else
@@ -3840,8 +3841,8 @@ function wifi_tools
 			fi
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_openvas
 			else
@@ -3855,8 +3856,8 @@ function wifi_tools
 			bash /usr/bin/ipscan & disown
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_angryip
 			else
@@ -3873,8 +3874,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_routersploit
 			else
@@ -3890,8 +3891,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_nwatch
 			else
@@ -3908,8 +3909,8 @@ function wifi_tools
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_eternalscanner
 			else
@@ -3923,8 +3924,8 @@ function wifi_tools
 			eaphammer_automation
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_eaphammer
 			else
@@ -3940,8 +3941,8 @@ function wifi_tools
 			./VMR-MDK-K2-2017R-012x2.sh
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_vmr
 			else
@@ -3957,8 +3958,8 @@ function wifi_tools
 			python2 netattack2.py
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_netattack2
 			else
@@ -3973,8 +3974,8 @@ function wifi_tools
 			wifi-pumpkin
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_wifi_pumpkin
 			else
@@ -3990,8 +3991,8 @@ function wifi_tools
 			python gloom.py
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_gloom
 			else
@@ -4006,8 +4007,8 @@ function wifi_tools
 			sechub
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_sechub
 			else
@@ -4023,8 +4024,8 @@ function wifi_tools
 			python SocialFish.py
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_socialfish
 			else
@@ -4102,8 +4103,8 @@ function wifi_tools
 			done
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_osrframework
 			else
@@ -4344,8 +4345,8 @@ function remote_access
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_beelogger
 			else
@@ -4361,8 +4362,8 @@ function remote_access
 			./entypreter
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_entypreter
 			else
@@ -4378,8 +4379,8 @@ function remote_access
 			./invader
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_invader
 			else
@@ -4394,8 +4395,8 @@ function remote_access
 			./Meterpreter_Paranoid_Mode.sh
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_meterpreter_paranoid_mode
 			else
@@ -4410,8 +4411,8 @@ function remote_access
 			dropit_automation
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_dropit_frmw
 			else
@@ -4426,8 +4427,8 @@ function remote_access
 			./Veil.py
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_veil
 			else
@@ -4442,8 +4443,8 @@ function remote_access
 			python leviathan.py
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_leviathan
 			else
@@ -4459,8 +4460,8 @@ function remote_access
 			./FakeImageExploiter.sh
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_fake_image
 			else
@@ -4490,8 +4491,8 @@ function remote_access
 			fi
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_avet
 			else
@@ -4511,8 +4512,8 @@ function remote_access
 		fi
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_arcanus
 			else
@@ -4659,8 +4660,8 @@ function remote_access
 			done
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_msfpc
 			else
@@ -4757,8 +4758,8 @@ function remote_access
 				cd
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_morphhta
 			else
@@ -4773,8 +4774,8 @@ function remote_access
 			python lfisuite.py
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_lfi
 			else
@@ -4889,8 +4890,8 @@ function remote_access
 			python UniByAv*.py
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_unibyav
 			else
@@ -4961,8 +4962,8 @@ function remote_access
 			done
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_demiguise
 			else
@@ -4977,8 +4978,8 @@ function remote_access
 			python dkmc.py
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_dkmc
 			else
@@ -4993,8 +4994,8 @@ function remote_access
 			./beef
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_beef
 			else
@@ -5009,8 +5010,8 @@ function remote_access
 			./evil-droid
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_evil_droid
 			else
@@ -5025,8 +5026,8 @@ function remote_access
 			python mouse.py
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_mouse
 			else
@@ -5041,8 +5042,8 @@ function remote_access
 			python zerodoor.py
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_zerodoor
 			else
@@ -5057,8 +5058,8 @@ function remote_access
 			cromos_menu
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_cromos
 			else
@@ -5072,8 +5073,8 @@ function remote_access
 			arissploit
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_arissploit
 			else
@@ -5088,8 +5089,8 @@ function remote_access
 			python enigma.py
 		else	
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_enigma
 			else
@@ -5104,8 +5105,8 @@ function remote_access
 			go run CHAOS.go
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_chaos
 			else
@@ -5216,8 +5217,8 @@ function remote_access
 			done
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_kwetza
 			else
@@ -5231,8 +5232,8 @@ function remote_access
 			shellter
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_shellter
 			else
@@ -5253,8 +5254,8 @@ function remote_access
 			exec bash "$0"
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_ezsploit
 			else
@@ -5332,8 +5333,8 @@ function remote_access
 			done
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_pupy
 			else
@@ -5358,8 +5359,8 @@ function remote_access
 			fi
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_zirikatu
 			else
@@ -5373,8 +5374,8 @@ function remote_access
 			fatrat
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_thefatrat
 			else
@@ -5390,8 +5391,8 @@ function remote_access
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_winpayloads
 			else
@@ -5485,8 +5486,8 @@ function information_gathering
 				sniper $DOMAIN
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_sniper
 				else
@@ -5502,8 +5503,8 @@ function information_gathering
 				cd
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_recondog
 				else
@@ -5519,8 +5520,8 @@ function information_gathering
 				cd
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_redhawk
 				else
@@ -5544,8 +5545,8 @@ function information_gathering
 				cd
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_infoga
 				else
@@ -5563,8 +5564,8 @@ function information_gathering
 				cd
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_knockmail
 				else
@@ -5582,8 +5583,8 @@ function information_gathering
 				cd
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_operative
 				else
@@ -5661,8 +5662,8 @@ function information_gathering
 				done
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_osrframework
 				else
@@ -5775,8 +5776,8 @@ function website_tools
 				sqlmap_menu
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_sqlmap
 				else
@@ -5791,8 +5792,8 @@ function website_tools
 				python leviathan.py
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_leviathan
 				else
@@ -5807,8 +5808,8 @@ function website_tools
 				python nosqlmap.py
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_nosqlmap
 				else
@@ -5825,8 +5826,8 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_yuki
 				else
@@ -5843,8 +5844,8 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_blazy
 				else
@@ -5861,8 +5862,8 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_striker
 				else
@@ -5879,8 +5880,8 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_hyprpulse
 				else
@@ -5897,8 +5898,8 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_instaburst
 				else
@@ -5986,8 +5987,8 @@ function website_tools
 				done
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_instagram-py
 				else
@@ -6006,8 +6007,8 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_datasploit
 				else
@@ -6024,8 +6025,8 @@ function website_tools
 				$READAK
 			else
 				echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_sitebroker
 				else
@@ -6118,8 +6119,8 @@ do
 			geany
 		else
 			echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_geany
 				else
@@ -6134,8 +6135,8 @@ do
 			dagon_script
 		else
 			echo -e "$TNI"
-				read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-				if [[ "$INSTALL" = "install" ]]
+				read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+				if [[ "$INSTALL" = "yes" ]]
 				then
 					install_dagon
 				else
@@ -6152,8 +6153,8 @@ do
 			cd
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_lalin
 			else
@@ -6171,8 +6172,8 @@ do
 			$READAK	
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_cupp
 			else
@@ -6186,8 +6187,8 @@ do
 			bleachbit		
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_bleachbit
 			else
@@ -6204,8 +6205,8 @@ do
 			$READAK	
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_hashbuster
 			else
@@ -6221,8 +6222,8 @@ do
 			$READAK	
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_patator
 			else
@@ -7984,8 +7985,8 @@ function mitmf_hook
 		fi
 	else
 		echo -e "$TNI"
-		read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-		if [[ "$INSTALL" = "install" ]]
+		read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+		if [[ "$INSTALL" = "yes" ]]
 		then
 			echo -e ""$RS"No installation added yet"$CE""
 			sleep 2
@@ -8624,8 +8625,8 @@ function ngrok_option
 			fi
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_ngrok
 			fi
@@ -9073,8 +9074,8 @@ function browser_exploiting
 						fi
 				else
 					echo -e "$TNI"
-					read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-					if [[ "$INSTALL" = "install" ]]
+					read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+					if [[ "$INSTALL" = "yes" ]]
 					then
 						install_mitmf
 					fi
@@ -9712,8 +9713,8 @@ function main_options
 		if [[ ! -f "/usr/local/bin/howdoi" ]]
 		then
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_howdoi
 			fi
@@ -9882,8 +9883,8 @@ function main_options
 		if [[ ! -f "/etc/init.d/anonym8.sh" ]]
 		then
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_anonym8
 			fi
@@ -9897,8 +9898,8 @@ function main_options
 		if [[ ! -f "/etc/init.d/anonym8.sh" ]]
 		then
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_anonym8
 			fi
@@ -9912,8 +9913,8 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_anonsurf
 			fi
@@ -9927,8 +9928,8 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_anonsurf
 			fi
@@ -9942,8 +9943,8 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_anonsurf
 			fi
@@ -9957,8 +9958,8 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
                 then
 			echo -e "$TNI"
-                        read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+                        read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_anonsurf
 			fi
@@ -9972,8 +9973,8 @@ function main_options
 		if [[ ! -f "/usr/bin/anonsurf" ]]
 		then
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_anonsurf
 			fi
@@ -10044,8 +10045,8 @@ function main_options
 			eternalblue_check
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_wifiphisher
 			fi
@@ -10057,8 +10058,8 @@ function main_options
 			eternalblue
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_wifiphisher
 			fi
@@ -10070,8 +10071,8 @@ function main_options
 			wififb_attack
 		else
 			echo -e "$TNI"
-			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "install" ]]
+			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
 			then
 				install_wifiphisher
 			fi

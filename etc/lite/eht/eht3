@@ -110,7 +110,8 @@ function defaults_eht3
 	PAKT="Press "$YS"any key$CE to"
 	PAKTC="Press "$YS"any key$CE to continue..."
 	PAKTGB="Press "$YS"any key$CE to go back..."
-	TNI=""$RS"Tool is not installed. To install it type '"$CE""$YS"install"$CE""$RS"'."$CE""
+	TNI="["$RS"*"$CE"] "$RS"This tool is not installed by default!"$CE"
+Do you want to install this tool"$CE"("$YS"yes"$CE"/"$YS"no"$CE"):"
 #code to read from keyboard without return
 	READAK="read -n 1"
 #default MAC when starting monitor
@@ -1133,7 +1134,7 @@ then
 	else
 		echo -e ""$RS"Bully isn't installed.Type '"$CE""$YS"install"$CE""$RS"' to stop monitor mode and install it."$CE""
 		read INSTALL
-		if [[ "$INSTALL" = "install" ]]
+		if [[ "$INSTALL" = "yes" ]]
 		then
 			stop2_menu
 			echo -e "Press "$YS"enter"$CE" when connected to a network"
@@ -1152,7 +1153,7 @@ then
 	else
 		echo -e ""$RS"Bully isn't installed.Type '"$CE""$YS"install"$CE""$RS"'to stop monitor mode and install it."$CE""
 		read INSTALL
-		if [[ "$INSTALL" = "install" ]]
+		if [[ "$INSTALL" = "yes" ]]
 		then
 			stop2_menu
 			echo -e "Press "$YS"enter"$CE" when connected to a network"
@@ -1171,7 +1172,7 @@ then
 	else
 		echo -e ""$RS"Wifi autopwner isn't installed.Type '"$CE""$YS"install"$CE""$RS"' to stop monitor mode and install it."$CE""
 		read INSTALL
-		if [[ "$INSTALL" = "install" ]]
+		if [[ "$INSTALL" = "yes" ]]
 		then
 			stop2_menu
 			echo -e "Press "$YS"enter"$CE" when connected to a network"
@@ -1190,7 +1191,7 @@ then
 	else
 		echo -e ""$RS"Airgeddon isn't installed.Type '"$CE""$YS"install"$CE""$RS"' to stop monitor mode and install it."$CE""
 		read INSTALL
-		if [[ "$INSTALL" = "install" ]]
+		if [[ "$INSTALL" = "yes" ]]
 		then
 			stop2_menu
 			echo -e "Press "$YS"enter"$CE" when connected to a network"
@@ -1208,7 +1209,7 @@ then
 	else
 		echo -e ""$RS"VMR isn't installed.Type '"$CE""$YS"install"$CE""$RS"' to stop monitor mode and install it."$CE""
 		read INSTALL
-		if [[ "$INSTALL" = "install" ]]
+		if [[ "$INSTALL" = "yes" ]]
 		then
 			stop2_menu
 			echo -e "Press "$YS"enter"$CE" when connected to a network"
