@@ -198,7 +198,12 @@ then
 	then
 		rm $HANDCAP
 	fi
+	if [[ -d /usr/share/konsole ]]
+	then
+	konsole --geometry 70x10+0+0 -- eht2
+	else
 	gnome-terminal --geometry 70x10+0+0 -- eht2
+	fi
 	HANDFORDEAUTH="/root/handshakes/$HANDF-01.csv"
 	export HANDFORDEAUTH
 	airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM # & jobs -p > /root/ehtools/dpidd.txt
@@ -236,7 +241,12 @@ else
 	fi
 	HANDF="deauth"
 	HANDFORDEAUTH="/root/handshakes/deauth-01.csv"
+	if [[ -d /usr/share/konsole ]]
+	then
+	konsole --geometry 70x10+0+0 -- eht2
+	else
 	gnome-terminal --geometry 70x10+0+0 -- eht2
+	fi
 	airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM
 	if [[ -f "$EPATH"/dpid.txt ]]
 	then
@@ -274,7 +284,12 @@ else
 		then
 			rm $HANDFFP
 		fi
-		gnome-terminal --geometry 70x10+0+0 -- eht2
+		if [[ -d /usr/share/konsole ]]
+	    then
+	    konsole --geometry 70x10+0+0 -- eht2
+	    else
+	    gnome-terminal --geometry 70x10+0+0 -- eht2
+	    fi
 		airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM
 		if [[ -f "$EPATH"/dpid.txt ]]
 		then
@@ -471,7 +486,12 @@ function capture_again
 			read -e -p $'(\e[4;93mcapture\e[0m\en)> ' CAGAIN
 			if [[ ! "$CAGAIN" = "n" ]]
 			then
-				gnome-terminal --geometry 70x10+0+0 -- eht2
+				if [[ -d /usr/share/konsole ]]
+	            then
+	            konsole --geometry 70x10+0+0 -- eht2
+	            else
+	            gnome-terminal --geometry 70x10+0+0 -- eht2
+	            fi
 				airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM
 				validhandshake
 				exec bash "$0"

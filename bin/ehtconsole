@@ -1727,9 +1727,16 @@ then
 		export PORTTCP
 		export PORTUDP
 		cd "$EPATH"/dev
+		if [[ -d /usr/share/konsole ]]
+		then
+		konsole --geometry 60x12+0+999999 -e ./dev1
+		konsole --geometry 60x20+999999+999999 -e ./dev21
+		konsole --geometry 60x20+999999+0 -e ./dev2
+		else
 		gnome-terminal --geometry 60x12+0+999999 -e ./dev1
 		gnome-terminal --geometry 60x20+999999+999999 -e ./dev21
 		gnome-terminal --geometry 60x20+999999+0 -e ./dev2
+		fi
 		sslstrip -l $PORTTCP -w /root/sslstrip.log
 		echo -e "$PAKTGB"
 		$READAK
@@ -1758,9 +1765,16 @@ then
 		export PORTTCP
 		export PORTUDP
 		cd "$EPATH"/dev
+		if [[ -d /usr/share/konsole ]]
+		then
+		konsole --geometry 60x25+0+999999 -e ./dev1
+		konsole --geometry 60x25+999999+0 -e ./dev2
+		konsole --geometry 60x25+999999+999999 -e ./dev21
+		else
 		gnome-terminal --geometry 60x25+0+999999 -e ./dev1
 		gnome-terminal --geometry 60x25+999999+0 -e ./dev2
 		gnome-terminal --geometry 60x25+999999+999999 -e ./dev21
+		fi
 		sslstrip -l $PORTTCP -w /root/sslstrip.log
 		echo -e "$PAKTGB"
 		$READAK
@@ -1859,8 +1873,14 @@ then
 		export TARGIP
 		export GATENM
 		cd "$EPATH"/dev
+		if [[ -d /usr/share/konsole ]]
+		then
+		konsole --geometry 60x15+999999+0 -e ./dev2
+		konsole --geometry 60x15+999999+999999 -e ./dev21
+		else
 		gnome-terminal --geometry 60x15+999999+0 -e ./dev2
 		gnome-terminal --geometry 60x15+999999+999999 -e ./dev21
+		fi
 	#~ elif [[ "$MITMSET" = "4" ]]
 	#~ then
 		#~ service apache2 start
@@ -1873,7 +1893,12 @@ then
 		ip addr | grep '/24' | awk -F "inet " {'print $2'} | cut -d '/' -f1
 		echo -e "$PAKTC"
 		$READAK
+		if [[ -d /usr/share/konsole ]]
+		then
+		konsole --geometry 66x40+999999+0 -e setoolkit
+		else
 		gnome-terminal --geometry 66x40+999999+0 -e setoolkit
+		fi
 	elif [[ "$MITMSET" = "5" ]]
 	then
 		echo -e "Making you a hosts.txt file"
@@ -4477,8 +4502,13 @@ function remote_access
 	then
 		if [[ -d /root/ARCANUS ]]
 		then
-			cd /root/ARCANUS
-			gnome-terminal -e "./ARCANUS & disown"
+		cd /root/ARCANUS
+		if [[ -d /usr/share/konsole ]]
+		then
+		gnome-terminal -e "./ARCANUS & disown"
+		else
+		gnome-terminal -e "./ARCANUS & disown"
+		fi
 		else	
 			echo -e "$TNI"
 			read -e -p $'(\e[4;93mconfirm\e[0m\en)> ' INSTALL
@@ -7066,7 +7096,12 @@ function new_terminal
 			sleep 1
 			FJC=0
 			export FJC
+			if [[ -d /usr/share/konsole ]]
+			then
+			konsole --geometry 87x35+9999+0 -- eht1
+			else
 			gnome-terminal --geometry 87x35+9999+0 -- eht1
+			fi
 			sleep 1
 			exec bash "$0"
 			break
@@ -7075,7 +7110,12 @@ function new_terminal
 			clear
 			echo -e "Moving into new terminal..."
 			sleep 1
+			if [[ -d /usr/share/konsole ]]
+			then
+			konsole --geometry 80x25+9999+0 -- eht3
+			else
 			gnome-terminal --geometry 80x25+9999+0 -- eht3
+			fi
 			sleep 1
 			exec bash "$0"
 			break
@@ -7083,7 +7123,12 @@ function new_terminal
 		then
 			echo -e "Moving into new terminal..."
 			sleep 1
+			if [[ -d /usr/share/konsole ]]
+			then
+			konsole --geometry 80x25+9999+0 -- eht4
+			else
 			gnome-terminal --geometry 80x25+9999+0 -- eht4
+			fi
 			sleep 1
 			exec bash "$0"
 			break
