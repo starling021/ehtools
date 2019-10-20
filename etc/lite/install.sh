@@ -311,8 +311,8 @@ fi
 fi
 
 clear
-sleep 3
 printf '\033]2;create config key\a'
+sleep 3
 echo -e "Create your ehtools config key for "$YS"/etc/ehtools/.config"$CE""
 echo -e "The ehtools config key is intended to protect ehtools boot!"
 echo -e "It is recommended to create a strong ehtools config key!"
