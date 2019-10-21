@@ -56,8 +56,8 @@
 > ./install.sh
 
     What version of Ehtools Framework do you want to install?(pro/lite):
-    If you did not buy Ehtools Framework PRO, select LITE!
-    If you bought Ehtools Framework PRO, select PRO!
+    If you did not buy Ehtools Framework PRO, select lite!
+    If you bought Ehtools Framework PRO, select pro!
     (version)> 
     
 If you select Ehtools Framework PRO, you will need to activate it with your Ehtools Activation Key that you need to bought on the ehtools site. If you have Ehtools Activation Key, read the following instructions.
@@ -77,8 +77,8 @@ This key you can buy on the ehtools site for one dollar! This key is used to act
     
 Also, we do not recommend to change the source code of ehtools because it is very complex and you can mess up something and disrupt the framework!
 
-    WARNING: We do not recommend to change ehtools source code
-    because you can disrupt framework!
+    WARNING: We do not recommend to change ehtools 
+    source code because you can disrupt framework!
 
 # How to uninstall ehtools
 
@@ -98,7 +98,7 @@ An example of this we've covered is the Airgeddonframework, a wireless attack fr
 
 # UX/UI impruvements for beginners
 
-The Ehtools Framework starts by merely typing the letter ehtools or eht into a terminal window, then it asks for the name of your network interfaces after the first run. It uses the names you supply to connect to the tools needed to execute any attacks you select. Aside from that initial input, the majority of the possible attacks can be performed merely by choosing the option number from the menu. This means you can grab a network handshake or download a new hacking tool like Pupy by just selecting from one of the menu options.
+The Ehtools Framework starts by merely typing the letter ehtools into a terminal window, then it asks for the name of your network interfaces after the first run. It uses the names you supply to connect to the tools needed to execute any attacks you select. Aside from that initial input, the majority of the possible attacks can be performed merely by choosing the option number from the menu. This means you can grab a network handshake or download a new hacking tool like Pupy by just selecting from one of the menu options.
 
 # Use basic networking tools
 
@@ -108,8 +108,8 @@ This allows us to do things like scan the network for other devices. This part o
 
 > (ehtools)> if
  
-    INFO: Runs ifconfig and gives the names and information 
-    about all network devices.
+    INFO: Runs ifconfig and gives the names 
+    and information about all network devices.
 
 > (ehtools)> 1
 
@@ -123,12 +123,13 @@ This allows us to do things like scan the network for other devices. This part o
 
 > (ehtools)> 3    
    
-    INFO: Randomize or set the MAC address to a specific value.
+    INFO: Randomize or set the MAC 
+    address to a specific value.
 
 > (ehtools)> 7     
 
-    INFO: View the public IP address your computer 
-    is leaving on sites you visit.
+    INFO: View the public IP address your 
+    computer is leaving on sites you visit.
 
 > (ehtools)> 19    
 
@@ -152,7 +153,7 @@ This allows us to do things like scan the network for other devices. This part o
 
 ![TOOLS](https://user-images.githubusercontent.com/54115104/66775236-3d423900-eecc-11e9-92e4-1f327b6413a0.png)
 
-Part of the fun of Ehtools Framework is how easy it is to add new tools to our arsenal. To demonstrate this, let's download Pupy, a Python-based RAT designed to take control of other computers on the network. We can select option 9 to access the list of tools in Ehtools Framework.
+Part of the fun of Ehtools Framework is how easy it is to add new tools to our arsenal. We can select option 9 to access the list of tools in Ehtools Framework.
 
     INFO: Our framework has more than 100 packages in
     ehtools archive (on server this archive: 2.3 Tb)!
@@ -207,8 +208,8 @@ Run it to open Find WPS menu:
 
 > ehtools -w
 
-    INFO: For this shortcuts you will not need
-    enter your ehtools password!
+    INFO: For this shortcuts you will not need enter 
+    your ehtools password (only for ehtools -u)!
 
 # Use ehtools application 
 
@@ -274,9 +275,9 @@ There are two ways how to setup ehtools application:
 
 > Full root access and access to /root folder
 
-    INFO: All ehtools files and folders will copy to /root,
-    /bin and /etc system folders, for copy ehtools data to
-    your system needed root access!
+    INFO: All ehtools files and folders will be copied to /root,
+    /bin and /etc system folders, to copy ehtools data to
+    your system Ehtools Framework needs full root access!
 
 > Good Internet connection for server support (only ehtools PRO)
 
@@ -333,22 +334,22 @@ To install ehtools modules you need to execute the following command:
 
 > modules -i
 
-> Ehtools Modules Snapshot (EMS) 
+## Ehtools Modules Snapshot (EMS) 
 
     INFO: EMS is a saved ehtools modules data from /bin/ehtools and 
-    /root/ehtools/eht (this is saved ehtools modules data), you can 
-    take it with Modules utility v1.9 and restore it.
-
-> Ehtools Modules Restoration (EMR) 
-
-    INFO: EMR is an operation that removing /bin/ehtools and 
-    /root/ehtools/eht and restoring it from saved ehtools modules 
-    snapshot, you can take it with Modules utility v1.9 but ESR will 
-    remove all your old ehtools modules data from /bin/ehtools and /root/ehtools/eht!
-
+    /root/ehtools/eht (this is a saved ehtools modules data), you can 
+    take it using the ehtmod utility v1.9 and restore it.
+    
 To take ehtools modules snapshot you need to execute the following command. You need to enter the name of the ehtools modules snapshot you want to take (example: snapshot1):
 
 > ehtmod -t snapshot1
+
+## Ehtools Modules Restoration (EMR) 
+
+    INFO: EMR is an operation that removing /bin/ehtools and 
+    /root/ehtools/eht and restoring it from the saved ehtools modules 
+    snapshot, you can restore it using the ehtsh utility v1.9, but ESR will 
+    remove all your old ehtools modules data from /bin/ehtools and /root/ehtools/eht!
 
 To restore ehtools modules snapshot you need to execute the following command. You need to enter the name of the saved ehtools modules snapshot (example: snapshot1):
 
@@ -400,9 +401,11 @@ To create ehtools desktop application you need to execute the following command:
 
 epasswd (ehtools password changer) is an utility that allows you to change your ehtools login and password or ehtools root password!
 
+## Changing ehtools login and password
+
 > epasswd
 
-After epasswd launch, enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe):
+To change ehtools login and password enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe):
 
     (login)> ehtools
     (password)> sloothe (will not be shown!)
@@ -412,10 +415,12 @@ After this enter your new ehtools login (example: admin) and your new ehtools pa
     ((new)login)> admin
     ((new)password)> 1234 (will not be shown!)
 
-Congratulations, you have successfully changed you login and password!
+Congratulations, you have successfully changed ehtools login and password!
 
-    WARNING: In no case do not forget this password, 
-    it will not be restored and you will have to reinstall ehtools!
+    WARNING: In no case do not forget this password, it will
+    not be restored and you will need to reinstall ehtools!
+
+## Changing ehtools root password
 
 To cange root password, login to epasswd as ehtools root:
 
@@ -440,8 +445,8 @@ Congratulations, you have successfully changed ehtools root password!
 
 Server support for ehtools PRO is very important, as all error reports are sent to it in order to improve and fix vulnerabilities and bugs!
 
-    COUNCIL: Make a good Internet connection
-    for ehtools, to help ehtools access to server!
+    COUNCIL: Make a good Internet connection for 
+    ehtools, to help ehtools access to server!
     
 If in consequence of the bad Internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
     
@@ -449,10 +454,10 @@ If in consequence of the bad Internet connection ehtools will not be able to com
 
 ![EPP](https://user-images.githubusercontent.com/54115104/66774876-60b8b400-eecb-11e9-8770-ffc92f6341d1.png)
 
-> Do it with install.sh:
+> Do it using install.sh:
    
-    COUNCIL: Create login and password from install.sh 
-    (example: login: ehtools password: sloothe)
+    COUNCIL: Create login and password using install.sh 
+    (example: login: ehtools, password: sloothe)
 
 > Do it when you are going to exit from ehtools:
     
@@ -461,7 +466,9 @@ If in consequence of the bad Internet connection ehtools will not be able to com
  
 > Do not do it when you are going to exit from ehtools:
     
-    WARNING: Do not just close ehtools window!
+    WARNING: Do not just close ehtools window 
+    and do not exit from the Ehtools Framework 
+    using Ctrl + C or other exit signals!
 
 ![Configuring...](https://user-images.githubusercontent.com/54115104/66775235-3ca9a280-eecc-11e9-9c58-927e11150d59.png)
 
