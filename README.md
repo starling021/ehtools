@@ -257,17 +257,17 @@ There are two ways how to setup ehtools application:
 
 > UX/UI impruvements for beginners
 
-    INFO: It uses the names you supply to connect to the tools 
-    needed to execute any attacks you select! Aside from that 
-    initial input, the majority of the possible attacks can be performed 
-    merely by choosing the option number from the menu. This means you can 
-    grab a network handshake or download a new hacking tool like Pupy by just 
-    selecting from one of the menu options!
+    INFO: It uses the names you supply to connect to the tools needed to 
+    execute any attacks you select! Aside from that initial input, the majority 
+    of the possible attacks can be performed merely by choosing the option number 
+    from the menu. This means you can grab a network handshake or download a new 
+    hacking tool like Pupy by just selecting from one of the menu options!
 
-> More than 100 tools you can install from ehtools or ehtoolslite
+> More than 100 tools you can install from ehtools
 
-    INFO: Our framework has more than 100 packages in
-    ehtools archive (on server this archive: 2.3 Tb)!
+    INFO: Our framework has more than 100 packages in ehtools 
+    archive (on server this archive: 2.3 Tb)! But if you are using 
+    ehtools LITE you could install only 50% of this tools!
 
 ![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/66771648-83df6580-eec3-11e9-8fdc-bc67a2450446.png)
 
@@ -348,7 +348,7 @@ To take ehtools modules snapshot you need to execute the following command. You 
 
     INFO: EMR is an operation that removing /bin/ehtools and 
     /root/ehtools/eht and restoring it from the saved ehtools modules 
-    snapshot, you can restore it using the ehtsh utility v1.9, but ESR will 
+    snapshot, you can restore it using the ehtmod utility v1.9, but ESR will 
     remove all your old ehtools modules data from /bin/ehtools and /root/ehtools/eht!
 
 To restore ehtools modules snapshot you need to execute the following command. You need to enter the name of the saved ehtools modules snapshot (example: snapshot1):
