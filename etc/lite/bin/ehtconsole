@@ -3786,7 +3786,7 @@ function new_terminal
 			continue
 		fi
 	else
-		if [[ "$YORNAA" = "10" ]]
+		if [[ "$YORNAA" = "8" ]]
 		then
 			echo -e "Moving into new terminal..."
 			sleep 1
@@ -3794,22 +3794,22 @@ function new_terminal
 			export FJC
 			if [[ -d /usr/share/konsole ]]
 			then
-			konsole --geometry 80x25+9999+0 -- eht3
+			konsole --geometry 80x25+9999+0 -- eht1
 			else
-			gnome-terminal --geometry 80x25+9999+0 -- eht3
+			gnome-terminal --geometry 80x25+9999+0 -- eht1
 			fi
 			sleep 1
 			exec bash "$0"
 			break
-		elif [[ "$YORNAA" = "12" ]]
+		elif [[ "$YORNAA" = "9" ]]
 		then
 			echo -e "Moving into new terminal..."
 			sleep 1
 			if [[ -d /usr/share/konsole ]]
 			then
-			konsole --geometry 80x25+9999+0 -- eht4
+			konsole --geometry 80x25+9999+0 -- eht3
 			else
-			gnome-terminal --geometry 80x25+9999+0 -- eht4
+			gnome-terminal --geometry 80x25+9999+0 -- eht3
 			fi
 			sleep 1
 			exec bash "$0"
