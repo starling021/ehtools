@@ -135,10 +135,6 @@ rm /bin/ehtools/eht1
 rm /bin/ehtools/eht2
 rm /bin/ehtools/eht3
 rm /bin/ehtools/eht31
-rm /bin/ehtools/eht4
-rm /bin/ehtools/eht41
-rm /bin/ehtools/eht42
-rm /bin/ehtools/eht43
 rm /bin/ehtools/eht21
 cp /etc/ehtools/modules/snapshots/$2/eht/eht1 /bin/ehtools
 chmod +x /bin/ehtools/eht1
@@ -148,14 +144,6 @@ cp /etc/ehtools/modules/snapshots/$2/eht/eht3 /bin/ehtools
 chmod +x /bin/ehtools/eht3
 cp /etc/ehtools/modules/snapshots/$2/eht/eht31 /bin/ehtools
 chmod +x /bin/ehtools/eht31
-cp /etc/ehtools/modules/snapshots/$2/eht/eht4 /bin/ehtools
-chmod +x /bin/ehtools/eht4
-cp /etc/ehtools/modules/snapshots/$2/eht/eht41 /bin/ehtools
-chmod +x /bin/ehtools/eht41
-cp /etc/ehtools/modules/snapshots/$2/eht/eht42 /bin/ehtools
-chmod +x /bin/ehtools/eht42
-cp /etc/ehtools/modules/snapshots/$2/eht/eht43 /bin/ehtools
-chmod +x /bin/ehtools/eht43
 cp /etc/ehtools/modules/snapshots/$2/eht/eht21 /bin/ehtools
 chmod +x /bin/ehtools/eht21
 cd /root/ehtools
@@ -405,10 +393,6 @@ rm /bin/ehtools/eht2
 rm /bin/ehtools/eht3
 rm /bin/ehtools/eht21
 rm /bin/ehtools/eht31
-rm /bin/ehtools/eht4
-rm /bin/ehtools/eht41
-rm /bin/ehtools/eht42
-rm /bin/ehtools/eht43
 rm -r /etc/ehtools/modules
 } &> /dev/null
 sleep 2
@@ -478,10 +462,6 @@ chmod +x /root/ehtools/eht/eht2
 chmod +x /root/ehtools/eht/eht3
 chmod +x /root/ehtools/eht/eht21
 chmod +x /root/ehtools/eht/eht31
-chmod +x /root/ehtools/eht/eht4
-chmod +x /root/ehtools/eht/eht41
-chmod +x /root/ehtools/eht/eht42
-chmod +x /root/ehtools/eht/eht43
 sleep 0.5 
 echo -e "Setting up permissions..."
 sleep 0.5
@@ -490,21 +470,13 @@ sleep 0.5
 cp /root/ehtools/eht/eht1 /bin/ehtools
 cp /root/ehtools/eht/eht2 /bin/ehtools
 cp /root/ehtools/eht/eht3 /bin/ehtools
-cp /root/ehtools/eht/eht4 /bin/ehtools
 cp /root/ehtools/eht/eht21 /bin/ehtools
 cp /root/ehtools/eht/eht31 /bin/ehtools
-cp /root/ehtools/eht/eht41 /bin/ehtools
-cp /root/ehtools/eht/eht42 /bin/ehtools
-cp /root/ehtools/eht/eht43 /bin/ehtools
 chmod +x /bin/ehtools/eht1
 chmod +x /bin/ehtools/eht2
 chmod +x /bin/ehtools/eht3
-chmod +x /bin/ehtools/eht4
 chmod +x /bin/ehtools/eht21
 chmod +x /bin/ehtools/eht31
-chmod +x /bin/ehtools/eht41
-chmod +x /bin/ehtools/eht42
-chmod +x /bin/ehtools/eht43
 sleep 0.5
 echo -e "Ehtools modules moved to /bin/ehtools with success!"
 sleep 1
@@ -523,12 +495,8 @@ echo -e "Saving to /etc/ehtools/modules/.config..."
 echo eht1 >> /etc/ehtools/modules/.config
 echo eht2 >> /etc/ehtools/modules/.config
 echo eht3 >> /etc/ehtools/modules/.config
-echo eht4 >> /etc/ehtools/modules/.config
 echo eht21 >> /etc/ehtools/modules/.config
 echo eht31 >> /etc/ehtools/modules/.config
-echo eht41 >> /etc/ehtools/modules/.config
-echo eht42 >> /etc/ehtools/modules/.config
-echo eht43 >> /etc/ehtools/modules/.config
 sleep 0.5
 echo -e "Saved to /etc/ehtools/modules/.config..."
 sleep 0.5
