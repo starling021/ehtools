@@ -99,10 +99,6 @@ chmod +x /root/ehtools/eht/eht3
 chmod +x /root/ehtools/eht/eht21
 chmod +x /root/ehtools/eht/eht31
 chmod +x /root/ehtools/bin/ehtools
-chmod +x /root/ehtools/eht/eht4
-chmod +x /root/ehtools/eht/eht41
-chmod +x /root/ehtools/eht/eht42
-chmod +x /root/ehtools/eht/eht43
 chmod +x /root/ehtools/dev/dev1
 chmod +x /root/ehtools/dev/dev2
 chmod +x /root/ehtools/dev/dev21
