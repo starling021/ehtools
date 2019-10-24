@@ -3204,6 +3204,12 @@ function update_ehtools
 			read -e -p $'(\e[4;93mupdate\e[0m\en)> ' UPDATEYN
 			if [[ "$UPDATEYN" = "y" ]]
 			then
+			        cd /root/ehtools/lib
+				chmod +x libunchattr
+				./libunchattr
+				cd /root/ehtools/lib
+				chmod +x libunconf
+				./libunconf
 				clear
 				#~ echo -e "Making new directory for the old ehtools (will pass it to /root/ehtold)"
 				sleep 1
