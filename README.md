@@ -273,6 +273,11 @@ There are two ways how to setup ehtools application:
 
 # System requirements 
 
+> Ehtools Framework only supports two OS
+
+    INFO: Ehtools Framework only supports two
+    operating systems - Kali Linux and Parrot OS!
+
 > Full root access and access to /root folder
 
     INFO: All ehtools files and folders will be copied to /root,
