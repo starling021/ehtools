@@ -6513,6 +6513,12 @@ function update_ehtools
 			read -e -p $'(\e[4;93mupdate\e[0m\en)> ' UPDATEYN
 			if [[ "$UPDATEYN" = "y" ]]
 			then
+			        cd /root/ehtools/lib
+				chmod +x libunchattr
+				./libunchattr
+				cd /root/ehtools/lib
+				chmod +x libunconf
+				./libunconf
 				clear
 				#~ echo -e "Making new directory for the old ehtools (will pass it to /root/ehtold)"
 				sleep 1
@@ -9609,6 +9615,30 @@ function main_options
                              cd ~/arissploit/bin
 			     cp arissploit /bin
 			     chmod +x /bin/arissploit
+			apt-get update
+		        apt-get -y install git
+		        apt-get -y install python3
+			apt-get -y install python3-pip
+			apt-get -y install wget
+			apt-get -y install perl
+			apt-get -y install libany-uri-escape-perl
+			apt-get -y install libhtml-html5-entities-perl
+			apt-get -y install libhtml-entities-numbered-perl
+			apt-get -y install libhtml-parser-perl
+			apt-get -y install libwww-perl
+			apt-get -y install php
+			apt-get -y install libdnet
+			apt-get -y install ethtool
+			apt-get -y install aircrack-ng
+			apt-get -y install ettercap-text-only
+			apt-get -y install dsniff
+			apt-get -y install xterm
+			apt-get -y install driftnet
+			apt-get -y install tcpdump
+			apt-get -y install libnetfilter-queue-dev
+			apt-get -y install python3-dev
+			apt-get -y install hcitool
+			apt-get -y install sslstrip
 			     cd ~/arissploit
 			     chmod +x arissploit
                              ./arissploit
@@ -11099,7 +11129,31 @@ check_if_ks
 		clone=$?
 		if [[ "$cloned" == 1 ]]
 		then
-		        cd /root/arissploit/bin
+		        apt-get update
+		        apt-get -y install git
+		        apt-get -y install python3
+			apt-get -y install python3-pip
+			apt-get -y install wget
+			apt-get -y install perl
+			apt-get -y install libany-uri-escape-perl
+			apt-get -y install libhtml-html5-entities-perl
+			apt-get -y install libhtml-entities-numbered-perl
+			apt-get -y install libhtml-parser-perl
+			apt-get -y install libwww-perl
+			apt-get -y install php
+			apt-get -y install libdnet
+			apt-get -y install ethtool
+			apt-get -y install aircrack-ng
+			apt-get -y install ettercap-text-only
+			apt-get -y install dsniff
+			apt-get -y install xterm
+			apt-get -y install driftnet
+			apt-get -y install tcpdump
+			apt-get -y install libnetfilter-queue-dev
+			apt-get -y install python3-dev
+			apt-get -y install hcitool
+			apt-get -y install sslstrip
+			cd /root/arissploit/bin
 			cp arissploit /bin
 			chmod +x /bin/arissploit
                 fi
