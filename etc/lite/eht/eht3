@@ -187,7 +187,7 @@ function install_bully
 		echo -e "Removing old..."
 		echo -e "$PAKTC"
 		$READAK
-		rm -r /root/bully
+		rm -rf /root/bully
 	fi				
 	echo -e "Installing Bully"
 	echo -e "Tool by Aanarchyy"
@@ -205,7 +205,7 @@ function install_wifiautopwner
 		echo -e "Removing old..."
 		echo -e "$PAKTC"
 		$READAK
-		rm -r /root/WiFi-autopwner
+		rm -rf /root/WiFi-autopwner
 	fi		
 	echo -e "Installing WiFi-autopwner"
 	echo -e "Tool by Mi-Al"
@@ -219,14 +219,14 @@ function install_vmr
 		echo -e "Removing old..."
 		echo -e "$PAKTC"
 		$READAK
-		rm -r /root/mdk3-v6
+		rm -rf /root/mdk3-v6
 		if [[ -f /root/VMR-MDK-K2-2017R-012x2.zip ]]
 		then
 			rm /root/VMR-MDK-K2-2017R-012x2.zip
 		fi
 		if [[ -d /root/VMR ]]
 		then
-			rm -r /root/VMR
+			rm -rf /root/VMR
 		fi
 	fi
 	cd
@@ -247,7 +247,7 @@ function install_airgeddon
 		echo -e "Removing old..."
 		echo -e "$PAKTC"
 		$READAK
-		rm -r /root/airgeddon
+		rm -rf /root/airgeddon
 	fi
 	echo -e "Installing..."
 	sleep 1

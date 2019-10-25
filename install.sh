@@ -78,11 +78,11 @@ if [[ $CONFIGURATION = "pro" ]]
 then
 
 {
-rm -r /root/ehtools/etc/lite
+rm -rf /root/ehtools/etc/lite
 rm /root/ehtools/install.sh
 cp /root/ehtools/etc/pro/install.sh /root/ehtools
 chmod +x /root/ehtools/install.sh
-rm -r /root/ehtools/etc/pro
+rm -rf /root/ehtools/etc/pro
 } &> /dev/null
 cd /root/ehtools
 ./install.sh
@@ -92,7 +92,7 @@ fi
 cd /root/ehtools/etc
 cp -r lite /root
 cd /root
-rm -r ehtools
+rm -rf ehtools
 mv lite ehtools
 cd /root/ehtools
 chmod +x install.sh

@@ -138,11 +138,11 @@ printf '\033]2;Uninstalling...\a'
               cd /root/ehtools/lib
               chmod +x liunlogin
               ./libunlogin
-	      rm -r /root/ehtools
-	      rm -r /bin/ehtools
-	      rm -r /etc/ehtools
-	      rm -r /root/handshakes
-	      rm -r /root/wordlists
+	      rm -rf /root/ehtools
+	      rm -rf /bin/ehtools
+	      rm -rf /etc/ehtools
+	      rm -rf /root/handshakes
+	      rm -rf /root/wordlists
 } &> /dev/null
 
 echo -e

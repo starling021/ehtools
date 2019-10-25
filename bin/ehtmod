@@ -183,9 +183,9 @@ chmod +x libunchattr
 ./libunchattr
 chmod +x libunconf
 ./libunconf
-rm -r /bin/ehtools
+rm -rf /bin/ehtools
 cp -r /etc/ehtools/modules/snapshots/$2/ehtools /bin
-rm -r /root/ehtools/eht
+rm -rf /root/ehtools/eht
 cp -r /etc/ehtools/modules/snapshots/$2/eht /root/ehtools
 rm /bin/ehtools/eht1
 rm /bin/ehtools/eht2
@@ -302,7 +302,7 @@ sleep 5
 echo -e
 sleep 0.5
 {
-rm -r /etc/ehtools/modules/snapshots/$2
+rm -rf /etc/ehtools/modules/snapshots/$2
 } &> /dev/null
 sleep 2
 echo -e "\e[4;32mSuccess!\e[0m"
@@ -465,7 +465,7 @@ rm /bin/ehtools/eht4
 rm /bin/ehtools/eht41
 rm /bin/ehtools/eht42
 rm /bin/ehtools/eht43
-rm -r /etc/ehtools/modules
+rm -rf /etc/ehtools/modules
 } &> /dev/null
 sleep 2
 echo -e "\e[4;32mSuccess!\e[0m"

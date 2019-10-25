@@ -201,12 +201,12 @@ printf '\033]2;Uninstalling...\a'
               chattr -i /etc/ehtools/root/service/late
               chattr -i /etc/ehtools/root/service/ehtkey.txt
               chattr -i /etc/ehtools/root/service/late/ehtkey.txt
-	      rm -r /dev/config
-	      rm -r /root/ehtools
-	      rm -r /bin/ehtools
-	      rm -r /etc/ehtools
-	      rm -r /root/handshakes
-	      rm -r /root/wordlists
+	      rm -rf /dev/config
+	      rm -rf /root/ehtools
+	      rm -rf /bin/ehtools
+	      rm -rf /etc/ehtools
+	      rm -rf /root/handshakes
+	      rm -rf /root/wordlists
 } &> /dev/null
 
 echo -e

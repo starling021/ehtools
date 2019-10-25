@@ -655,7 +655,7 @@ else
 		else
 			clear
 			echo -e "["$YS"inf"$CE"] "$YS"Removing shortcut for "$CE"("$YS""$TITLE""$CE")"$YS" ..."$CE""
-			rm -r "$KSPATH"/"$TITLE"
+			rm -rf "$KSPATH"/"$TITLE"
 			sleep 1
 			echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 			echo -e "$PAKTGB"
@@ -1600,7 +1600,7 @@ then
 			exec bash "$0"
 		elif [[ "$nn" = "reset" ]]
 		then
-			rm -r "$KSPATH"/*
+			rm -rf "$KSPATH"/*
 		elif [[ "$nn" -le "$HOWMANYTOOLS" ]]
 		then
 			createshortcut
@@ -6524,7 +6524,7 @@ function update_ehtools
 				sleep 1
 				if [[ -d /root/ehtold ]]
 				then
-					rm -r /root/ehtold
+					rm -rf /root/ehtold
 				fi
 				mkdir /root/ehtold
 				#~ echo -e "Moving ehtools to ehtold"
@@ -6576,7 +6576,7 @@ function update_ehtools
 				gnome-terminal -e ./install.sh
 				clear 
 				sleep 1
-				rm -rf /root/ehtold
+				rm -rff /root/ehtold
 				echo -e "Exiting..."
 				sleep 1
 				kill -9 $PPID
@@ -6635,7 +6635,7 @@ function one_time_per_launch_ks
 {
 	if [[ -d ""$KSPATH"/nums" ]]
 	then
-		rm -r "$KSPATH"/nums
+		rm -rf "$KSPATH"/nums
 	fi
 	mkdir "$KSPATH"/nums
 	nn=1
@@ -9286,7 +9286,7 @@ function settings_menu
 			rm libec
 			mv .disabled/libdec /root/ehtools/lib
 			mv .disabled/libenc /root/ehtools/lib
-			rm -r .disabled
+			rm -rf .disabled
 			cd /root/ehtools/lib
 			chmod +x libenc
 			./libenc
@@ -9337,7 +9337,7 @@ function settings_menu
                                 rm password
                                 cp password_data/login /etc/ehtools
                                 cp password_data/password /etc/ehtools
-                                rm -r password_data
+                                rm -rf password_data
 				} &> /dev/null
                                 {
                                 chattr +i /etc/ehtools
@@ -10151,7 +10151,7 @@ check_if_ks
 					if [[ "$foldname" != "" ]]
 					then
 						echo -e ""$YS"Removing: "$foldname""$CE""
-						rm -r /root/"$foldname"
+						rm -rf /root/"$foldname"
 						cd
 						git clone $gitlink	
 						cd "$foldname"
@@ -10165,7 +10165,7 @@ check_if_ks
 					if [[ "$foldname" != "" ]]
 					then
 						echo -e ""$YS"Removing: "$foldname""$CE""
-						rm -r /root/"$foldname"
+						rm -rf /root/"$foldname"
 						cd
 						git clone $gitlink	
 						cd "$foldname"
@@ -10290,7 +10290,7 @@ check_if_ks
 			echo -e "Removing old..."
 			echo -e "$PAKTC"
 			$READAK
-			rm -r /root/Fern-Wifi-Cracker
+			rm -rf /root/Fern-Wifi-Cracker
 		fi		
 		echo -e "Installing Fern"
 		echo -e "Tool by Savio-code"
@@ -10728,14 +10728,14 @@ check_if_ks
 			echo -e "Removing old..."
 			echo -e "$PAKTC"
 			$READAK
-			rm -r /root/mdk3-v6
+			rm -rf /root/mdk3-v6
 			if [[ -f /root/VMR-MDK-K2-2017R-012x2.zip ]]
 			then
 				rm /root/VMR-MDK-K2-2017R-012x2.zip
 			fi
 			if [[ -d /root/VMR ]]
 			then
-				rm -r /root/VMR
+				rm -rf /root/VMR
 			fi
 		fi
 		cd

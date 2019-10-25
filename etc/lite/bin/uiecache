@@ -102,7 +102,7 @@ mv service .service
 mkdir service 
 cp -r .service/late /etc/ehtools/root/service
 cp .service/ehtkey.txt /etc/ehtools/root/service
-rm -r .service
+rm -rf .service
 killall ehtools
 killall ehtconsole
 chattr +i /etc/ehtools
