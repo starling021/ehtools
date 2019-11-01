@@ -248,7 +248,7 @@ then
 	clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To install ehtools modules, run '"$YS"ehtmod -i"$CE"'..."
+	echo -e "To install ehtools modules, run '"$YS"ehtmod -i"$CE"'"
 	sleep 3
 	clear
         
@@ -279,7 +279,7 @@ then
 clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To protect ehtools, run '"$YS"epasswd"$CE"'..."
+	echo -e "To protect ehtools, run '"$YS"epasswd"$CE"'"
 	touch /etc/ehtools/login
         touch /etc/ehtools/password
         sleep 3
@@ -413,7 +413,7 @@ then
 clear
 	echo -e "OK..."
 	sleep 1
-	echo -e "To create ehtools application, run '"$YS"ehtapp -c"$CE"'..."
+	echo -e "To create ehtools application, run '"$YS"ehtapp -c"$CE"'"
         sleep 3
 fi
 
