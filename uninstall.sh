@@ -202,6 +202,8 @@ printf '\033]2;Uninstalling...\a'
               chattr -i /etc/ehtools/root/service/late
               chattr -i /etc/ehtools/root/service/ehtkey.txt
               chattr -i /etc/ehtools/root/service/late/ehtkey.txt
+	      rm /usr/share/applications/ehtools.desktop
+	      rm /root/Desktop/ehtools.desktop
 	      rm -rf /dev/config
 	      rm -rf /root/ehtools
 	      rm -rf /bin/ehtools
