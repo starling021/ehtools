@@ -844,7 +844,7 @@ function listshortcuts
 		KSSET="python operative.py"
 	elif [[ "$nn" = "34" ]]
 	then
-		TITLE="proton"
+		TITLE="Proton"
 		NAMECD="cd /root/proton"
 		KSSET="./proton"
 	elif [[ "$nn" = "35" ]]
@@ -4201,9 +4201,9 @@ function remote_access
 	fi
 	if [[ -d /root/proton ]]
 	then
-		echo -e ""$YS"10"$CE") proton            Windows post exploitation framework"
+		echo -e ""$YS"10"$CE") Proton            Windows post exploitation framework"
 	else
-		echo -e ""$RS"10"$CE") "$RS"proton"$CE"            Windows post exploitation framework"
+		echo -e ""$RS"10"$CE") "$RS"Proton"$CE"            Windows post exploitation framework"
 	fi
 	if [[ -d /root/invader ]]
 	then
