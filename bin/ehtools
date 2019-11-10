@@ -73,7 +73,7 @@ if [[ -f /root/ehtools/settings/logocolor.txt ]]
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$CE"" 1>&2
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$RS"!"$CE"" 1>&2
    sleep 1
    exit
 fi
@@ -336,7 +336,7 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
 echo -e ""
-echo -e "You want to login as '"$YS"root"$CE"'"
+echo -e "You want to login as '"$YS"root"$RS"!"$CE"'"
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
@@ -496,7 +496,7 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
 sleep 0.5
 echo -e ""
-echo -e "You want to login as '"$YS"root"$CE"'"
+echo -e "You want to login as '"$YS"root"$RS"!"$CE"'"
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
