@@ -65,7 +65,7 @@ If you select Ehtools Framework PRO, you will need to activate it with your Ehto
 
 This key you can buy on the ehtools site for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
 
-    WARNING: The key works only one week then it changes!
+    INFO: The key works only one week then it changes!
     You need to have time to enter it before it is updated!
 
 > ./install.sh
@@ -76,14 +76,14 @@ This key you can buy on the ehtools site for one dollar! This key is used to act
     
 Also, we do not recommend to change the source code of ehtools because it is very complex and you can mess up something and disrupt the framework!
 
-    WARNING: We do not recommend to change ehtools 
+    INFO: We do not recommend to change ehtools 
     source code because you can disrupt framework!
 
 # How to uninstall ehtools
 
 > ehtools -u
 
-    WARNING: Do not do it if you want to reinstall
+    INFO: Do not do it if you want to reinstall
     ehtools PRO which you bought, do not do it because
     you will need to buy it one more time!
 
@@ -421,7 +421,7 @@ After this enter your new ehtools login (example: admin) and your new ehtools pa
 
 Congratulations, you have successfully changed ehtools login and password!
 
-    WARNING: In no case do not forget this password, it will
+    INFO: In no case do not forget this password, it will
     not be restored and you will need to reinstall ehtools!
 
 ## Changing ehtools root password
@@ -442,14 +442,14 @@ After this enter your new ehtools root password (example: 1234):
 
 Congratulations, you have successfully changed ehtools root password!
 
-    WARNING: In no case do not forget this password,
-    it will not be restored and you will have to reinstall ehtools!
+    INFO: In no case do not forget this password, it will 
+    not be restored and you will have to reinstall ehtools!
 
 # About ehtools server support
 
 Server support for ehtools PRO is very important, as all error reports are sent to it in order to improve and fix vulnerabilities and bugs!
 
-    COUNCIL: Make a good Internet connection for 
+    INFO: Make a good Internet connection for 
     ehtools, to help ehtools access to server!
     
 If in consequence of the bad Internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
@@ -460,17 +460,17 @@ If in consequence of the bad Internet connection ehtools will not be able to com
 
 > Do it using install.sh:
    
-    COUNCIL: Create login and password using install.sh 
+    INFO: Create login and password using install.sh 
     (example: login: ehtools, password: sloothe)
 
 > Do it when you are going to exit from ehtools:
     
-    COUNCIL: When you are going to exit framework,
+    INFO: When you are going to exit framework,
     exit with shortcuts - 0 or exit. 
  
 > Do not do it when you are going to exit from ehtools:
     
-    WARNING: Do not just close ehtools window 
+    INFO: Do not just close ehtools window 
     and do not exit from the Ehtools Framework 
     using Ctrl + C or other exit signals!
 
