@@ -476,11 +476,11 @@ If in consequence of the bad Internet connection ehtools will not be able to com
 
 ![Configuring...](https://user-images.githubusercontent.com/54115104/66775235-3ca9a280-eecc-11e9-9c58-927e11150d59.png)
 
-# Terms of use
+# Ehatools framework disclaimer
 
-    This tool is only for educational purposes only.
-    Use this tool wisely and never without permission.
-    I am not responsible for anything you do with this tool.
+    INFO: Usage of the Ehtools Framework for attacking targets without prior mutual consent is illegal. 
+    It is the end user's responsibility to obey all applicable local, state, federal, and international laws. 
+    Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
 # Ehtools framework license
 
