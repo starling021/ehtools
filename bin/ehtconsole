@@ -926,7 +926,7 @@ function listshortcuts
 	then
 		TITLE="Arissploit"
 		NAMECD="cd /root/arissploit"
-		KSSET="arissploit"
+		KSSET="./arissploit"
 	elif [[ "$nn" = "51" ]]
 	then
 		TITLE="Enigma"
