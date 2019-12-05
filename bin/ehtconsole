@@ -130,7 +130,7 @@ function defaults_l
 	fi
 #tools
 toolarray=(
-"fluxion" "sniffer" "wifite" "wifiphisher" "morpheus" "osrframework" "hakku" "trity" "cupp" "dracnmap" "fern" "kickthemout" "ghostphisher" "theeye" "xerxes"
+"fluxion" "sniffer" "wifite" "wifiphisher" "morpheus" "osrframework" "dronpwn" "trity" "cupp" "dracnmap" "fern" "kickthemout" "ghostphisher" "theeye" "xerxes"
 "mdk3" "katana" "airgeddon" "4nonimizer" "beelogger" "ezsploit" "pupy" "zirikatu" "wifiautopwner" "bully" "anonsurf" "anonym8" "thefatrat" "angryip" "sniper"
 "recondog" "redhawk" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
 "websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "proton" "invader" "meterpreter_paranoid_mode"
@@ -696,7 +696,7 @@ function listshortcuts
 	then
 		TITLE="Entropy"
 		NAMECD="cd /root/entropy"
-		KSSET="entropy -b 2 -v --shodan PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
+		KSSET="python entropy.py -b 2 -v --shodan PSKINdQe1GyxGgecYz2191H2JoS9qvgD"
 	elif [[ "$nn" = "6" ]]
 	then
 		TITLE="Morpheus"
@@ -704,9 +704,9 @@ function listshortcuts
 		KSSET="./morpheus.sh"
 	elif [[ "$nn" = "7" ]]
 	then
-		TITLE="Hakku"
-		NAMECD="cd /root/hakkuframework"
-		KSSET="./hakku"
+		TITLE="Dronpwn"
+		NAMECD="cd /root/dronpwn"
+		KSSET="perl dronpwn.pl"
 	elif [[ "$nn" = "8" ]]
 	then
 		TITLE="Trity"
@@ -1114,7 +1114,7 @@ done
 	#~ echo -e ""$YS" 4"$CE") Entropy      "$YS"24"$CE") Ezsploit      "$YS"44"$CE") Eaphammer        "$YS"64"$CE") FakeImageExploiter"
 	#~ echo -e ""$YS" 5"$CE") Morpheus     "$YS"25"$CE") Pupy          "$YS"45"$CE") Dagon            "$YS"65"$CE") Avet"
 	#~ echo -e ""$YS" 6"$CE") Osrfconsole  "$YS"26"$CE") Zirikatu      "$YS"46"$CE") Lalin            "$YS"66"$CE") Gloom"
-	#~ echo -e ""$YS" 7"$CE") Hakku        "$YS"27"$CE") WiFi-autopwner"$YS"47"$CE") Knockmail        "$YS"67"$CE") Arcanus"
+	#~ echo -e ""$YS" 7"$CE") Dronpwn      "$YS"27"$CE") WiFi-autopwner"$YS"47"$CE") Knockmail        "$YS"67"$CE") Arcanus"
 	#~ echo -e ""$YS" 8"$CE") Trity        "$YS"28"$CE") Bully         "$YS"48"$CE") Kwetza           "$YS"68"$CE") MSFPC"
 	#~ echo -e ""$YS" 9"$CE") Cupp         "$YS"29"$CE") Anonsurf      "$YS"49"$CE") Ngrok            "$YS"69"$CE") MorphHTA"
 	#~ echo -e ""$YS"10"$CE") Dracnmap     "$YS"30"$CE") Anonym8       "$YS"50"$CE") Bleachbit        "$YS"70"$CE") LFISuite"
@@ -1152,7 +1152,7 @@ done
 		#~ install_osrframework			
 	#~ elif [[ "$REIN" = "7" ]]
 	#~ then
-		#~ install_hakku
+		#~ install_dronpwn
 	#~ elif [[ "$REIN" = "8" ]]
 	#~ then
 		#~ install_trity
@@ -3332,9 +3332,9 @@ function wifi_tools
 	fi
 	if [[ -d /root/hakkuframework ]]
 	then
-		echo -e ""$YS" 7"$CE") Hakku                 Penetration testing tools"
+		echo -e ""$YS" 7"$CE") Dronpwn               Parrot and 3DR Drone exploit"
 	else
-		echo -e ""$RS" 7"$CE") "$RS"Hakku"$CE"                 Penetration testing tools"
+		echo -e ""$RS" 7"$CE") "$RS"Dronpwn"$CE"               Parrot and 3DR Drone exploit"
 	fi
 	if [[ -d /root/Trity ]]
 	then
@@ -3540,7 +3540,7 @@ function wifi_tools
 			if [[ -d "/root/entropy" ]]
 			then	
 				cd /root/entropy
-				entropy -b 2 -v --shodan PSKINdQe1GyxGgecYz2191H2JoS9qvgD
+				python entropy.py -b 2 -v --shodan PSKINdQe1GyxGgecYz2191H2JoS9qvgD
 				cd /root
 			else
 				echo -e "You have to install it manually since its not on github!"
@@ -3592,13 +3592,11 @@ function wifi_tools
 		fi
 	elif [[ "$APPP" = "7" ]]
 	then
-		if [[ -d /root/hakkuframework ]]
+		if [[ -d /root/dronpwn ]]
 		then
-			echo -e "type: 'show modules' to start"
-			sleep 2
 			clear
-			cd /root/hakkuframework
-			./hakku
+			cd /root/dronpwn
+			perl dronpwn.pl
 			cd
 		else
 			echo -e "$TNI"
@@ -10239,16 +10237,17 @@ check_if_ks
 	{
 		pip install osrframework
 	}
-	function install_hakku
+	function install_dronpwn
 	{
-		foldname="hakkuframework"
-		gitlink="https://github.com/4shadoww/hakkuframework.git"
+		foldname="dronpwn"
+		gitlink="https://github.com/entynetproject/dronpwn.git"
 		install_default
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-			chmod +x hakku
-			chmod +x install
+			cd /root/dronpwn
+			chmod +x install.sh
+			./install.sh
 		fi
 	}
 	function install_trity
