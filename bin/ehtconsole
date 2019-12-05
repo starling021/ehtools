@@ -854,9 +854,9 @@ function listshortcuts
 		KSSET="./invader"
 	elif [[ "$nn" = "36" ]]
 	then
-		TITLE="Meterpreter_Paranoid_Mode"
-		NAMECD="cd /root/Meterpreter_Paranoid_Mode-SSL"
-		KSSET="./Meterpreter_Paranoid_Mode.sh"
+		TITLE="Ghost"
+		NAMECD="cd /root/ghost"
+		KSSET="python ghost.py"
 	elif [[ "$nn" = "37" ]]
 	then
 		TITLE="Wifi-Pumpkin"
@@ -1124,9 +1124,9 @@ done
 	#~ echo -e ""$YS"14"$CE") Ghost-Phisher"$YS"34"$CE") ReconDog      "$YS"54"$CE") Howdoi           "$YS"74"$CE") MITMf"
 	#~ echo -e ""$YS"15"$CE") The Eye      "$YS"35"$CE") RED HAWK      "$YS"55"$CE") Operative-frmwork"$YS"75"$CE") Netool-toolkit"
 	#~ echo -e ""$YS"16"$CE") Xerxes       "$YS"36"$CE") WinPayloads   "$YS"56"$CE") Netattack2       "$YS"76"$CE") Patator"
-	#~ echo -e ""$YS"17"$CE") Mdk3-master  "$YS"37"$CE") Shellter      "$YS"57"$CE") Proton       "$YS"77"$CE") Evil-Droid"
+	#~ echo -e ""$YS"17"$CE") Mdk3-master  "$YS"37"$CE") Shellter      "$YS"57"$CE") Proton           "$YS"77"$CE") Evil-Droid"
 	#~ echo -e ""$YS"18"$CE") Katana       "$YS"38"$CE") CHAOS         "$YS"58"$CE") Invader          "$YS"78"$CE") NoSQLMap"
-	#~ echo -e ""$YS"19"$CE") Airgeddon    "$YS"39"$CE") Routersploit  "$YS"59"$CE") Meterpr.-Paranoid"
+	#~ echo -e ""$YS"19"$CE") Airgeddon    "$YS"39"$CE") Routersploit  "$YS"59"$CE") Ghost"
 	#~ echo -e ""$YS"20"$CE") Websploit    "$YS"40"$CE") Geany         "$YS"60"$CE") Dr0p1t"
 	#~ echo -e ""$YS" b"$CE") Go back"
 	#~ echo -e ""$YS" 0"$CE") Exit"
@@ -1308,7 +1308,7 @@ done
 		#~ install_invader
 	#~ elif [[ "$REIN" = "59" ]]
 	#~ then
-		#~ install_meterpreter_paranoid_mode
+		#~ install_ghost
 	#~ elif [[ "$REIN" = "60" ]]
 	#~ then
 		#~ install_dropit_frmw
@@ -3330,7 +3330,7 @@ function wifi_tools
 	else
 		echo -e ""$RS" 6"$CE") "$RS"Netool-toolkit"$CE"        MitM pentesting opensource toolkit"
 	fi
-	if [[ -d /root/hakkuframework ]]
+	if [[ -d /root/dronpwn ]]
 	then
 		echo -e ""$YS" 7"$CE") Dronpwn               Parrot and 3DR Drone exploit"
 	else
@@ -3603,7 +3603,7 @@ function wifi_tools
 			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "yes" ]]
 			then
-				install_hakku
+				install_dronpwn
 			else
 				continue
 			fi
@@ -4194,26 +4194,26 @@ function remote_access
 	if [[ -d /root/kwetza ]]
 	then
 		echo -e ""$YS" 9"$CE") Kwetza                Inject payload to apk"
-	else
+	else						    
 		echo -e ""$RS" 9"$CE") "$RS"Kwetza"$CE"                Inject payload to apk"
-	fi
-	if [[ -d /root/proton ]]
-	then
-		echo -e ""$YS"10"$CE") Proton            Windows post exploitation framework"
-	else
-		echo -e ""$RS"10"$CE") "$RS"Proton"$CE"            Windows post exploitation framework"
-	fi
-	if [[ -d /root/invader ]]
+	fi						    	       
+	if [[ -d /root/proton ]]			    
+	then						    
+		echo -e ""$YS"10"$CE") Proton                Windows post exploitation framework"
+	else						    
+		echo -e ""$RS"10"$CE") "$RS"Proton"$CE"                Windows post exploitation framework"
+	fi						    
+	if [[ -d /root/invader ]]			    
 	then
 		echo -e ""$YS"11"$CE") Invader               PowerShell and Python post exploitation framework"
 	else
 		echo -e ""$RS"11"$CE") "$RS"Invader"$CE"               PowerShell and Python post exploitation framework"
-	fi
-	if [[ -d /root/Meterpreter_Paranoid_Mode-SSL ]]
-	then
-		echo -e ""$YS"12"$CE") Meterpreter Paranoid  Meterpreter Paranoid Mode - SSL/TLS connections"
+	fi							       
+	if [[ -d /root/ghost ]]					       
+	then							       
+		echo -e ""$YS"12"$CE") Ghost  		     Android post exploitation framework"
 	else
-		echo -e ""$RS"12"$CE") "$RS"Meterpreter Paranoid"$CE"  Meterpreter Paranoid Mode - SSL/TLS connections"
+		echo -e ""$RS"12"$CE") "$RS"Ghost"$CE"                 Android post exploitation framework"
 	fi
 	if [[ -d /root/Dr0p1t-Framework ]]
 	then
@@ -4387,16 +4387,16 @@ function remote_access
 		fi	
 	elif [[ "$KEYLOG" = "12" ]]
 	then
-		if [[ -d /root/Meterpreter_Paranoid_Mode-SSL ]]
+		if [[ -d /root/ghost ]]
 		then
-			cd /root/Meterpreter_Paranoid_Mode-SSL
-			./Meterpreter_Paranoid_Mode.sh
+			cd /root/ghost
+			python ghost.py
 		else
 			echo -e "$TNI"
 			read -e -p $'(\e[4;93minstall\e[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "yes" ]]
 			then
-				install_meterpreter_paranoid_mode
+				install_ghost
 			else
 				continue
 			fi
@@ -10818,11 +10818,18 @@ check_if_ks
 			./install.sh
 		fi
 	}
-	function install_meterpreter_paranoid_mode
+	function install_ghost
 	{
-		foldname="Meterpreter_Paranoid_Mode-SSL"
-		gitlink="https://github.com/r00t-3xp10it/Meterpreter_Paranoid_Mode-SSL.git"
+		foldname="Ghost"
+		gitlink="https://github.com/entynetproject/ghost.git"
 		install_default
+		cloned=$?
+		if [[ "$cloned" == 1 ]]
+		then
+			cd /root/ghost
+			chmod +x install.sh
+			./install.sh
+		fi
 	}
 	function install_dropit_frmw
 	{
