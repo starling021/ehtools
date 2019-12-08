@@ -111,7 +111,7 @@ function defaults_l
 	fi
 #tools
 toolarray=(
-"fluxion" "sniffer" "wifite" "wifiphisher" "morpheus" "osrframework" "dronpwn" "trity" "cupp" "dracnmap" "fern" "kickthemout" "ghostphisher" "theeye" "xerxes"
+"fluxion" "sniffer" "wifite" "wifiphisher" "morpheus" "osrframework" "camsnap" "trity" "cupp" "dracnmap" "fern" "kickthemout" "ghostphisher" "theeye" "xerxes"
 "mdk3" "katana" "airgeddon" "4nonimizer" "beelogger" "ezsploit" "pupy" "zirikatu" "wifiautopwner" "bully" "anonsurf" "anonym8" "thefatrat" "angryip" "sniper"
 "recondog" "redhawk" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
 "websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "proton" "invader" "ghost"
@@ -756,7 +756,7 @@ done
 	#~ echo -e ""$YS" 4"$CE") Entropy      "$YS"24"$CE") Ezsploit      "$YS"44"$CE") Eaphammer        "$YS"64"$CE") FakeImageExploiter"
 	#~ echo -e ""$YS" 5"$CE") Morpheus     "$YS"25"$CE") Pupy          "$YS"45"$CE") Dagon            "$YS"65"$CE") Avet"
 	#~ echo -e ""$YS" 6"$CE") Osrfconsole  "$YS"26"$CE") Zirikatu      "$YS"46"$CE") Lalin            "$YS"66"$CE") Gloom"
-	#~ echo -e ""$YS" 7"$CE") Dronpwn      "$YS"27"$CE") WiFi-autopwner"$YS"47"$CE") Knockmail        "$YS"67"$CE") Arcanus"
+	#~ echo -e ""$YS" 7"$CE") CamSnap      "$YS"27"$CE") WiFi-autopwner"$YS"47"$CE") Knockmail        "$YS"67"$CE") Arcanus"
 	#~ echo -e ""$YS" 8"$CE") Trity        "$YS"28"$CE") Bully         "$YS"48"$CE") Kwetza           "$YS"68"$CE") MSFPC"
 	#~ echo -e ""$YS" 9"$CE") Cupp         "$YS"29"$CE") Anonsurf      "$YS"49"$CE") Ngrok            "$YS"69"$CE") MorphHTA"
 	#~ echo -e ""$YS"10"$CE") Dracnmap     "$YS"30"$CE") Anonym8       "$YS"50"$CE") Bleachbit        "$YS"70"$CE") LFISuite"
@@ -794,7 +794,7 @@ done
 		#~ install_osrframework			
 	#~ elif [[ "$REIN" = "7" ]]
 	#~ then
-		#~ install_dronpwn
+		#~ install_camsnap
 	#~ elif [[ "$REIN" = "8" ]]
 	#~ then
 		#~ install_trity
@@ -6734,15 +6734,15 @@ check_if_ks
 	{
 		pip install osrframework
 	}
-	function install_dronpwn
+	function install_camsnap
 	{
-		foldname="dronpwn"
-		gitlink="https://github.com/entynetproject/dronpwn.git"
+		foldname="camsnap"
+		gitlink="https://github.com/entynetproject/camsnap.git"
 		install_default
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-			cd /root/dronpwn
+			cd /root/camsnap
 			chmod +x install.sh
 			./install.sh
 		fi
