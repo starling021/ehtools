@@ -487,7 +487,7 @@ If in consequence of the bad Internet connection ehtools will not be able to com
         --------------------------------------------------
                         Ehtools Framework          
         --------------------------------------------------
-              Copyright (C) <2015>  <Ehtools Team>
+               Copyright (C) <2015>  <Ehtools Team>       
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -507,7 +507,7 @@ If in consequence of the bad Internet connection ehtools will not be able to com
         --------------------------------------------------
                         Ehtools Utilities          
         --------------------------------------------------
-      Copyright (C) <2015>  <Entynetproject (Ivan Nikolsky)>
+              Copyright (C) <2015>  <Entynetproject>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -527,7 +527,7 @@ If in consequence of the bad Internet connection ehtools will not be able to com
         --------------------------------------------------
                         Ehtools Libraries          
         --------------------------------------------------
-      Copyright (C) <2015>  <Entynetproject (Ivan Nikolsky)>
+              Copyright (C) <2015>  <Entynetproject>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
