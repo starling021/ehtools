@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# 
 #            --------------------------------------------------
 #                            Ehtools Utilities          
 #            --------------------------------------------------
@@ -18,15 +17,6 @@
 #
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#
-#
-#    About Author :   
-#    Founder   : Entynetproject (Ivan Nikolsky)
-#    Site      : http://entynetproject.simplesite.com/
-#    Instagram : @entynetproject 
-#    Twitter   : @entynetproject
-#    Email     : entynetproject@gmail.com
-#
 
 CE="\e[0m"
 RS="\e[1;31m"
