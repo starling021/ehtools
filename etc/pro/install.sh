@@ -18,10 +18,10 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-CE="\e[0m"
-RS="\e[1;31m"
-YS="\e[1;33m"
-WHS="\e[1;37m"
+CE="\033[0m"
+RS="\033[1;31m"
+YS="\033[1;33m"
+WHS="\033[1;37m"
 
 if [[ $EUID -ne 0 ]]
 then
@@ -113,27 +113,27 @@ fi
 clear
 printf '\033]2;ehtools INSTALLER\a'
 echo -e
-echo -e "███████╗██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ███████╗ \e[1;33mv3.0.0\e[0m"
+echo -e "███████╗██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ███████╗ \033[1;33mv3.0.0\033[0m"
 echo -e "██╔════╝██║  ██║╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝"
 echo -e "█████╗  ███████║   ██║   ██║   ██║██║   ██║██║     ███████╗"
 echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
 echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
 echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
-echo -e "\e[1;33mBy Ehtools Team\e[0m"
+echo -e "\033[1;33mBy Ehtools Team\033[0m"
 sleep 3
 echo -e "More on our sites:"
 sleep 3
-echo -e "==> \e[1;33mhttps://ehtools.pro/\e[0m"                                                           
+echo -e "==> \033[1;33mhttps://ehtools.pro/\033[0m"                                                           
 sleep 3
-echo -e "==> \e[1;33mhttp://entynetproject.simplesite.com/\e[0m"
+echo -e "==> \033[1;33mhttp://entynetproject.simplesite.com/\033[0m"
 sleep 3
-echo -e "Creators of Ehtools Framework (\e[4;34mEhtools Team\e[0m):"
+echo -e "Creators of Ehtools Framework (\033[4;34mEhtools Team\033[0m):"
 sleep 3
-echo -e "\e[4;34mEntynetproject\e[0m - Main Developer"
+echo -e "\033[4;34mEntynetproject\033[0m - Main Developer"
 sleep 3
-echo -e "\e[4;33mDJ Mobley\e[0m      - Ascii Designer"
+echo -e "\033[4;33mDJ Mobley\033[0m      - Ascii Designer"
 sleep 3
-echo -e "Press \e[1;33many key\e[0m to install ehtools"
+echo -e "Press \033[1;33many key\033[0m to install ehtools"
 read -n 1
 clear
 sleep 0.1
@@ -229,10 +229,10 @@ done
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
-echo -e "Do you want to install ehtools modules now?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "Do you want to install ehtools modules now?(\033[1;33myes\033[0m/\033[1;33mno\033[0m):"
 echo -e "So without thinking install them now!"
 echo -e "Only use 'yes' for the best way!"
-read -e -p $'(\e[4;93minstall\e[0m\en)> ' UORI
+read -e -p $'(\033[4;93minstall\033[0m\en)> ' UORI
 
 if [[ "$UORI" = "no" ]]
 then 
@@ -258,11 +258,11 @@ fi
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
-echo -e "Do you want to protect ehtools with password?(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "Do you want to protect ehtools with password?(\033[1;33myes\033[0m/\033[1;33mno\033[0m):"
 echo -e "This function will protect ehtools with login and password!"
 echo -e "So without thinking protect ehtools now!"
 echo -e "Only use 'yes' for the best way!"
-read -e -p $'(\e[4;93mprotect\e[0m\en)> ' WQE
+read -e -p $'(\033[4;93mprotect\033[0m\en)> ' WQE
 
 
 if [[ "$WQE" = "no" ]]
@@ -290,19 +290,19 @@ echo -e "Set ehtools login and password!"
 echo -e "Ehtools Password Protection:"
 
 sleep 0.5
-read -e -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
+read -e -p $'(\033[4;93m(new)login\033[0m\en)> ' logins
 while [ "$logins" = "root" ]
 do
 sleep 0.5
 echo -e "["$RS"*"$CE"] "$RS"This user is reserved by the ehtools system!"$CE""
 sleep 0.5
-read -e -p $'(\e[4;93m(new)login\e[0m\en)> ' logins
+read -e -p $'(\033[4;93m(new)login\033[0m\en)> ' logins
 done
 touch login
 echo $logins >> /etc/ehtools/login
 
 sleep 0.5
-read -s -p $'(\e[4;93m(new)password\e[0m\en)> ' passwords
+read -s -p $'(\033[4;93m(new)password\033[0m\en)> ' passwords
 touch password
 echo $passwords >> /etc/ehtools/password
 
@@ -361,7 +361,7 @@ sleep 3
 echo -e "Create your ehtools config key for "$YS"/etc/ehtools/.config"$CE""
 echo -e "The ehtools config key is intended to protect ehtools boot!"
 echo -e "It is recommended to create a strong ehtools config key!"
-read -e -p $'(\e[4;93mconfig_key\e[0m\en)> ' DADI
+read -e -p $'(\033[4;93mconfig_key\033[0m\en)> ' DADI
 if [[ "$DADI" = "" ]]
 then
 sleep 0
@@ -388,10 +388,10 @@ fi
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
-echo -e "Do you want to create ehtools application(\e[1;33myes\e[0m/\e[1;33mno\e[0m):"
+echo -e "Do you want to create ehtools application(\033[1;33myes\033[0m/\033[1;33mno\033[0m):"
 echo -e "This will allow you to run ehtools via the application!"
 echo -e "Ehtools application will be created in the applications!"
-read -e -p $'(\e[4;93mcreate\e[0m\en)> ' ES
+read -e -p $'(\033[4;93mcreate\033[0m\en)> ' ES
 
 if [[ "$ES" = "yes" ]]
 then

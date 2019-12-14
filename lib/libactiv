@@ -18,9 +18,9 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-CE="\e[0m"
-RS="\e[1;31m"
-YS="\e[1;33m"
+CE="\033[0m"
+RS="\033[1;31m"
+YS="\033[1;33m"
 
 if [[ $EUID -ne 0 ]]
 then
@@ -36,7 +36,7 @@ ACTKEY="$( curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/mast
 sleep 3
 echo -e "Enter your ehtools activation key!"
 echo -e "You can buy it on the ehtools site!"
-read -e -p $'(\e[4;93mactivation_key\e[0m\en)> ' KEYACT
+read -e -p $'(\033[4;93mactivation_key\033[0m\en)> ' KEYACT
 sleep 1
 if [[ "$KEYACT" != "$ACTKEY" ]]
 then

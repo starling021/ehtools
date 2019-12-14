@@ -18,10 +18,10 @@
 #        You should have received a copy of the GNU General Public License
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-CE="\e[0m"
-RS="\e[1;31m"
-YS="\e[1;33m"
-WHS="\e[1;37m"
+CE="\033[0m"
+RS="\033[1;31m"
+YS="\033[1;33m"
+WHS="\033[1;37m"
 
 if [[ $EUID -ne 0 ]]
 then
@@ -60,10 +60,10 @@ fi
 clear
 printf '\033]2;select ehtools\a'
 sleep 3
-echo -e "What version of Ehtools Framework you want to install?(\e[1;33mpro\e[0m/\e[1;33mlite\e[0m):"
-echo -e "If you did not buy Ehtools Framework PRO, select \e[1;33mlite\e[0m!"
-echo -e "If you bought Ehtools Framework PRO, select \e[1;33mpro\e[0m!"
-read -e -p $'(\e[1;33mversion\e[0m)> ' CONFIGURATION
+echo -e "What version of Ehtools Framework you want to install?(\033[1;33mpro\033[0m/\033[1;33mlite\033[0m):"
+echo -e "If you did not buy Ehtools Framework PRO, select \033[1;33mlite\033[0m!"
+echo -e "If you bought Ehtools Framework PRO, select \033[1;33mpro\033[0m!"
+read -e -p $'(\033[1;33mversion\033[0m)> ' CONFIGURATION
 
 if [[ $CONFIGURATION = "pro" ]]
 then

@@ -19,39 +19,39 @@
 #        along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #yellow start 
-	YS="\e[1;33m"
+	YS="\033[1;33m"
 #blue start 
-	BS="\e[0;34m"
+	BS="\033[0;34m"
 #color end
-	CE="\e[0m"
+	CE="\033[0m"
 #red start
-	RS="\e[1;31m"
+	RS="\033[1;31m"
 #black start
-	BLS="\e[0;30m"
+	BLS="\033[0;30m"
 #dark gray start
-	DGYS="\e[1;30m"
+	DGYS="\033[1;30m"
 #light blue start
-	LBS="\e[1;34m"
+	LBS="\033[1;34m"
 #green start
-	GNS="\e[0;32m"
+	GNS="\033[0;32m"
 #light green start
-	LGNS="\e[1;32m"
+	LGNS="\033[1;32m"
 #cyan start
-	CYS="\e[0;36m"
+	CYS="\033[0;36m"
 #light cyan start
-	LCYS="\e[1;36m"
+	LCYS="\033[1;36m"
 #light red start
-	DRS="\e[0;31m"
+	DRS="\033[0;31m"
 #purple start
-	PS="\e[0;35m"
+	PS="\033[0;35m"
 #light purple start
-	LPS="\e[1;35m"
+	LPS="\033[1;35m"
 #brown start
-	BRS="\e[0;33m"
+	BRS="\033[0;33m"
 #light gray start
-	LGYS="\e[0;37m"
+	LGYS="\033[0;37m"
 #white start
-	WHS="\e[1;37m"
+	WHS="\033[1;37m"
 	
 if [[ $EUID -ne 0 ]]
 then
@@ -78,7 +78,7 @@ printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
 sleep 0.5
-read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+read -e -p $'(\033[4;93mlogin\033[0m\en)> ' loginer
 
 
 while [ "$loginer" = "root" ]
@@ -86,7 +86,7 @@ do
 sleep 0.5
 echo -e "["$RS"*"$CE"] "$RS"Failed to open session for root!"$CE""
 sleep 0.5
-read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+read -e -p $'(\033[4;93mlogin\033[0m\en)> ' loginer
 done
 
 while [ "$loginer" != "$logins" ]
@@ -94,7 +94,7 @@ do
 echo -e "["$RS"*"$CE"] "$RS"Wrong login!"$CE""
 sleep 3
 sleep 0
-read -e -p $'(\e[4;93mlogin\e[0m\en)> ' loginer
+read -e -p $'(\033[4;93mlogin\033[0m\en)> ' loginer
 
 done
 
@@ -106,14 +106,14 @@ passwords="$(cat /etc/ehtools/password)"
 cd /root/ehtools/lib
 chmod +x libenc
 ./libenc
-read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
+read -s -p $'(\033[4;93mpassword\033[0m\en)> ' passworder
 while [ "$passworder" != "$passwords" ]
 do
 echo -e
 echo -e "["$RS"*"$CE"] "$RS"Wrong password!"$CE""
 sleep 3
 sleep 0
-read -s -p $'(\e[4;93mpassword\e[0m\en)> ' passworder
+read -s -p $'(\033[4;93mpassword\033[0m\en)> ' passworder
 done
 fi
 
