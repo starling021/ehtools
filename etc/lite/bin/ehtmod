@@ -37,16 +37,12 @@ echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -i  --install         Install ehtools modules to /bin/ehtools."
-echo -e "                           (install ehtools modules)"
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
-echo -e "                           (take ehtools modules snapshot)"
 echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
-echo -e "                           (restore ehtools modules snapshot)"
 echo -e "   -d  --delete  <name>  Delete saved ehtools modules snapshot."
-echo -e "                           (delete ehtools modules snapshot)"
 echo -e "   -u  --uninstall       Uninstall ehtools modules from /bin/ehtools."
-echo -e "                           (uninstall ehtools modules)"
 echo -e "   -h  --help            Give this help list."
+echo -e
 exit
 
 elif [[ $1 = "--restore" || $1 = "-r" ]]
@@ -554,14 +550,10 @@ echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -i  --install         Install ehtools modules to /bin/ehtools."
-echo -e "                           (install ehtools modules)"
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
-echo -e "                           (take ehtools modules snapshot)"
 echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
-echo -e "                           (restore ehtools modules snapshot)"
 echo -e "   -d  --delete  <name>  Delete saved ehtools modules snapshot."
-echo -e "                           (delete ehtools modules snapshot)"
 echo -e "   -u  --uninstall       Uninstall ehtools modules from /bin/ehtools."
-echo -e "                           (uninstall ehtools modules)"
 echo -e "   -h  --help            Give this help list."
+echo -e
 exit
