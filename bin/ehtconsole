@@ -10511,7 +10511,7 @@ check_if_ks
 	function install_geospy
 	{
 		foldname="geospy"
-		gitlink="https://github.com/Tuhinshubhra/geospy.git"
+		gitlink="https://github.com/entynetproject/geospy.git"
 		install_default
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
