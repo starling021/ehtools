@@ -300,11 +300,8 @@ uiecache (uninstall ehtools cache) is an utility that can help you to clean/unin
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
        -a  --all          Uninstall all ehtools cache.
-                            (standart old uiecache)
        -p  --path <path>  Uninstall ehtools cache from your path.
-                            (uninstall cache from path)
-       -r  --restart      Restart all ehtools processes and services.
-                            (restart ehtools system)                    
+       -r  --restart      Restart all ehtools processes and services.                 
        -h  --help         Give this help list.
 
 To clean/uninstall all ehtools cache you need to execute the following command:
@@ -319,15 +316,10 @@ ehtmod (ehtools modules) is an utility that adds permissions or the ability to c
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
     -i  --install         Install ehtools modules to /bin/ehtools.
-                            (install ehtools modules)
     -t  --take    <name>  Take a new ehtools modules snapshot.
-                            (take ehtools modules snapshot)
     -r  --restore <name>  Restore saved ehtools modules snapshot.
-                            (restore ehtools modules snapshot)
     -d  --delete  <name>  Delete saved ehtools modules snapshot.
-                            (delete ehtools modules snapshot)
     -u  --uninstall       Uninstall ehtools modules from /bin/ehtools.
-                            (uninstall ehtools modules)
     -h  --help            Give this help list.
          
 To install ehtools modules you need to execute the following command:
@@ -367,7 +359,6 @@ ehtkey (ehtools key) is an utility that allows you to change your ehtools config
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
        -c  --change <old_key> <new_key>  Change ehtools config key.
-                                           (change config key)
        -h  --help                        Give this help list.
        
 To change ehtools config key you need to execute the following command. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002):
@@ -382,11 +373,8 @@ ehtapp (ehtools application) is an utility that allows you to configure ehtools 
     Copyright (C) 2019, Entynetproject. All Rights Reserved.
 
        -c  --create            Create ehtools application.
-                                 (create shortcut application)
        -d  --desktop <option>  Create/remove ehtools desktop application.
-                                 (create/remove desktop shortcut application)
        -r  --remove            Remove ehtools application.
-                                 (remove shortcut application)
        -h  --help              Give this help list.
 
 To create ehtools application you need to execute the following command:
