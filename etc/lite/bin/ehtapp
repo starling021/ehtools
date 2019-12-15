@@ -40,7 +40,6 @@ echo -e "   -c  --create            Create ehtools application."
 echo -e "   -d  --desktop <option>  Create/remove ehtools desktop application." 
 echo -e "   -r  --remove            Remove ehtools application."
 echo -e "   -h  --help              Give this help list."
-echo -e
 exit
 
 elif [[ $1 = "--create" || $1 = "-c" ]]
@@ -125,5 +124,4 @@ echo -e "   -c  --create            Create ehtools application."
 echo -e "   -d  --desktop <option>  Create/remove ehtools desktop application."
 echo -e "   -r  --remove            Remove ehtools application."
 echo -e "   -h  --help              Give this help list."
-echo -e
 exit
