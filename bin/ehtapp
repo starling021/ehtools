@@ -93,11 +93,8 @@ echo -e "Usage: ehtapp [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -c  --create            Create ehtools application."
-echo -e "                             (create shortcut application)"
 echo -e "   -d  --desktop <option>  Create/remove ehtools desktop application."
-echo -e "                             (create/remove desktop shortcut application)" 
 echo -e "   -r  --remove            Remove ehtools application."
-echo -e "                             (remove shortcut application)"
 echo -e "   -h  --help              Give this help list."
 exit
 
@@ -180,10 +177,7 @@ echo -e "Usage: ehtapp [OPTION...]"
 echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -c  --create            Create ehtools application."
-echo -e "                             (create shortcut application)"
-echo -e "   -d  --desktop <option>  Create/remove ehtools desktop application."
-echo -e "                             (create/remove desktop shortcut application)" 
+echo -e "   -d  --desktop <option>  Create/remove ehtools desktop application." 
 echo -e "   -r  --remove            Remove ehtools application."
-echo -e "                             (remove shortcut application)"
 echo -e "   -h  --help              Give this help list."
 exit
