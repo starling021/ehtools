@@ -121,7 +121,7 @@ function defaults_l
 toolarray=(
 "fluxion" "sniffer" "wifite" "wifiphisher" "morpheus" "osrframework" "camsnap" "trity" "cupp" "dracnmap" "fern" "kickthemout" "ghostphisher" "theeye" "xerxes"
 "mdk3" "katana" "airgeddon" "4nonimizer" "beelogger" "ezsploit" "pupy" "zirikatu" "wifiautopwner" "bully" "anonsurf" "anonym8" "thefatrat" "angryip" "sniper"
-"recondog" "phonia" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
+"recondog" "geospy" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
 "websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "proton" "invader" "ghost"
 "dropit_frmw" "wifi_pumpkin" "veil" "leviathan" "fake_image" "avet" "gloom" "arcanus" "msfpc" "morphhta" "lfi" "unibyav" "demiguise" "dkmc" "sechub" "beef" "mitmf"
 "fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "mouse" "zerodoor" "cromos" "yuki-chan" "socfish" "entropy" "blazy"
@@ -783,9 +783,9 @@ function listshortcuts
 		KSSET="python dog"
 	elif [[ "$nn" = "24" ]]
 	then
-		TITLE="Phonia"
-		NAMECD="cd /root/phonia"
-		KSSET="chmod +x phonia && ./phonia -n +11111111111"
+		TITLE="GeoSpy"
+		NAMECD="cd /root/geospy"
+		KSSET="chmod +x geospy && ./geospy"
 	elif [[ "$nn" = "25" ]]
 	then
 		TITLE="Winpayloads"
@@ -1106,7 +1106,7 @@ done
 	#~ echo -e ""$YS"12"$CE") Netdiscover  "$YS"32"$CE") Angry IP      "$YS"52"$CE") Hash Buster      "$YS"72"$CE") Demiguise"
 	#~ echo -e ""$YS"13"$CE") KickThemOut  "$YS"33"$CE") Sniper        "$YS"53"$CE") Findsploit       "$YS"73"$CE") Dkmc"
 	#~ echo -e ""$YS"14"$CE") Ghost-Phisher"$YS"34"$CE") ReconDog      "$YS"54"$CE") Howdoi           "$YS"74"$CE") MITMf"
-	#~ echo -e ""$YS"15"$CE") The Eye      "$YS"35"$CE") Phonia        "$YS"55"$CE") Operative-frmwork"$YS"75"$CE") Netool-toolkit"
+	#~ echo -e ""$YS"15"$CE") The Eye      "$YS"35"$CE") GeoSpy        "$YS"55"$CE") Operative-frmwork"$YS"75"$CE") Netool-toolkit"
 	#~ echo -e ""$YS"16"$CE") Xerxes       "$YS"36"$CE") WinPayloads   "$YS"56"$CE") Netattack2       "$YS"76"$CE") Patator"
 	#~ echo -e ""$YS"17"$CE") Mdk3-master  "$YS"37"$CE") Shellter      "$YS"57"$CE") Proton           "$YS"77"$CE") Evil-Droid"
 	#~ echo -e ""$YS"18"$CE") Katana       "$YS"38"$CE") CHAOS         "$YS"58"$CE") Invader          "$YS"78"$CE") NoSQLMap"
@@ -1220,7 +1220,7 @@ done
 		#~ install_recondog
 	#~ elif [[ "$REIN" = "35" ]]
 	#~ then
-		#~ install_phonia
+		#~ install_geospy
 	#~ elif [[ "$REIN" = "36" ]]
 	#~ then
 		#~ install_winpayloads
@@ -5407,11 +5407,11 @@ function information_gathering
 		else
 			echo -e ""$RS" 2"$CE") "$RS"ReconDog"$CE"              All in one tool"
 		fi
-		if [[ -d /root/RED_HAWK ]]
+		if [[ -d /root/geospy ]]
 		then
-			echo -e ""$YS" 3"$CE") Phonia                Phone Number Information Gathering"
+			echo -e ""$YS" 3"$CE") GeoSpy                People tracker on the Internet"
 		else
-			echo -e ""$RS" 3"$CE") "$RS"Phonia"$CE"                Phone Number Information Gathering"
+			echo -e ""$RS" 3"$CE") "$RS"GeoSpy"$CE"                People tracker on the Internet"
 		fi
 		if [[ -d /root/Infoga ]]
 		then
@@ -5478,20 +5478,18 @@ function information_gathering
 			fi
 		elif [[ "$INFOG" = 3 ]]
 		then
-			if [[ -d /root/phonia ]]
+			if [[ -d /root/geospy ]]
 			then
-				cd /root/phonia
-				chmod +x phonia
-                                echo -e "Phone number to scan:"
-				read -e -p $'(\033[4;34mnumber\033[0m)> ' PNUMBER
-                                ./phonia -n $PNUMBER
+				cd /root/geospy
+				chmod +x geospy
+                                ./geospy
 				cd
 			else
 				echo -e "$TNI"
 				read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
 				if [[ "$INSTALL" = "yes" ]]
 				then
-					install_phonia
+					install_geospy
 				else
 					continue
 				fi
@@ -10510,11 +10508,18 @@ check_if_ks
 		gitlink="https://github.com/UltimateHackers/ReconDog.git"
 		install_default
 	}
-	function install_redhawk
+	function install_geospy
 	{
-		foldname="RED_HAWK"
-		gitlink="https://github.com/Tuhinshubhra/RED_HAWK.git"
+		foldname="geospy"
+		gitlink="https://github.com/Tuhinshubhra/geospy.git"
 		install_default
+		cloned=$?
+		if [[ "$cloned" == 1 ]]
+		then
+		        cd /root/geospy
+			chmod +x install.sh
+			./install.sh
+		fi
 	}
 	function install_winpayloads
 	{
@@ -11086,16 +11091,17 @@ check_if_ks
 			./install-perl-module.sh
 		fi
 	}
-	function install_socialfish
+	function install_socfish
 	{
-		foldname="SocialFish"
-		gitlink="https://github.com/UndeadSec/SocialFish.git"
+		foldname="socfish"
+		gitlink="https://github.com/entynetproject/socfish.git"
 		install_default
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-			pip install -r requirements.txt
-			pip2.7 install -r requirements.txt
+			cd /root/socfish
+			chmod +x install.sh
+			./install.sh
 		fi
 	}
 	function install_arissploit
