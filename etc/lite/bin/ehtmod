@@ -42,7 +42,6 @@ echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
 echo -e "   -d  --delete  <name>  Delete saved ehtools modules snapshot."
 echo -e "   -u  --uninstall       Uninstall ehtools modules from /bin/ehtools."
 echo -e "   -h  --help            Give this help list."
-echo -e
 exit
 
 elif [[ $1 = "--restore" || $1 = "-r" ]]
@@ -555,5 +554,4 @@ echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
 echo -e "   -d  --delete  <name>  Delete saved ehtools modules snapshot."
 echo -e "   -u  --uninstall       Uninstall ehtools modules from /bin/ehtools."
 echo -e "   -h  --help            Give this help list."
-echo -e
 exit
