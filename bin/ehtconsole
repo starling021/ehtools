@@ -3457,16 +3457,16 @@ function wifi_tools
 	else
 		echo -e ""$RS"29"$CE") "$RS"secHub"$CE"                Security/Hacking Kit"
 	fi
-	if [[ -d /root/SocialFish ]]
+	if [[ -d /root/socfish ]]
 	then
-		echo -e ""$YS"30"$CE") SocialFish            Ultimate phishing tool with Ngrok integrated"
+		echo -e ""$YS"30"$CE") SocFish               Ultimate phishing tool with Ngrok integrated"
 	else
-		echo -e ""$RS"30"$CE") "$RS"SocialFish"$CE"            Ultimate phishing tool with Ngrok integrated"
+		echo -e ""$RS"30"$CE") "$RS"SocFish"$CE"               Ultimate phishing tool with Ngrok integrated"
 	fi
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
 	#echo -e ""$YS" 0"$CE") Exit"
-	read -e -p $'(\033[4;31mWiFi\033[0m)> ' APPP
+	read -e -p $'(\033[4;31mwifi_tools\033[0m)> ' APPP
 	clear
 	if [[ "$APPP" = "1" ]]
 	then
@@ -3529,7 +3529,7 @@ function wifi_tools
 			if [[ -d "/root/entropy" ]]
 			then	
 				cd /root/entropy
-				python entropy.py -b 2 -v --shodan PSKINdQe1GyxGgecYz2191H2JoS9qvgD
+				chmod +x entropy && ./entropy-b 2 -v --shodan PSKINdQe1GyxGgecYz2191H2JoS9qvgD
 				cd /root
 			else
 				echo -e "You have to install it manually since its not on github!"
@@ -3585,7 +3585,7 @@ function wifi_tools
 		then
 			clear
 			cd /root/camsnap
-			bash camsnap.sh
+			chmod +x camsnap && ./camsnap
 			cd
 		else
 			echo -e "$TNI"
@@ -4005,10 +4005,11 @@ function wifi_tools
 		cd
 	elif [[ "$APPP" = "30" ]]
 	then
-		if [[ -d "/root/SocialFish" ]]
+		if [[ -d "/root/socfish" ]]
 		then
-			cd /root/SocialFish
-			python SocialFish.py
+			cd /root/socfish
+			chmod +x socfish && ./socfish
+                        cd 
 		else
 			echo -e "$TNI"
 			read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
@@ -4290,9 +4291,9 @@ function remote_access
 	fi
 	if [[ -d /root/mouse ]]
 	then
-		echo -e ""$YS"27"$CE") Mouse                 Penetrate iOS/macOS platforms"
+		echo -e ""$YS"27"$CE") Mouse                 iOS and macOS post exploitation tool"
 	else
-		echo -e ""$RS"27"$CE") "$RS"Mouse"$CE"                 Penetrate iOS/macOS platforms"
+		echo -e ""$RS"27"$CE") "$RS"Mouse"$CE"                 iOS and macOS post exploitation tool"
 	fi
 	if [[ -d /root/Zerodoor ]]
 	then
@@ -4306,22 +4307,16 @@ function remote_access
 	else
 		echo -e ""$RS"29"$CE") "$RS"Cromos"$CE"                Download and Inject code into Google Chrome extensions"
 	fi
-	if [[ -d /root/arissploit ]]
-	then
-		echo -e ""$YS"30"$CE") Arissploit            Database of exploits, viruses and etc"
-	else
-		echo -e ""$RS"30"$CE") "$RS"Arissploit"$CE"            Database of exploits, viruses and etc"
-	fi
 	if [[ -d /root/Enigma ]]
 	then
-		echo -e ""$YS"31"$CE") Enigma                Multiplatform payload dropper"
+		echo -e ""$YS"30"$CE") Enigma                Multiplatform payload dropper"
 	else
-		echo -e ""$RS"31"$CE") "$RS"Enigma"$CE"                Multiplatform payload dropper"
+		echo -e ""$RS"30"$CE") "$RS"Enigma"$CE"                Multiplatform payload dropper"
 	fi
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
 	#echo -e ""$YS" 0"$CE") Exit"
-	read -e -p $'(\033[4;33mremote-access\033[0m)> ' KEYLOG
+	read -e -p $'(\033[4;33mremote_access\033[0m)> ' KEYLOG
 	clear
 	if [[ "$KEYLOG" = "1" ]]
 	then
@@ -4379,7 +4374,8 @@ function remote_access
 		if [[ -d /root/ghost ]]
 		then
 			cd /root/ghost
-			python ghost.py
+			chmod +x ghost
+                        ./ghost
 		else
 			echo -e "$TNI"
 			read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
@@ -5010,7 +5006,8 @@ function remote_access
 		if [[ -d /root/mouse ]]
 		then
 			cd /root/mouse
-			python mouse.py
+			chmod +x mouse
+                        ./mouse
 		else	
 			echo -e "$TNI"
 			read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
@@ -5054,21 +5051,6 @@ function remote_access
 			fi
 		fi
 	elif [[ "$KEYLOG" = "30" ]]
-	then
-		if [[ -d /root/arissploit ]]
-		then
-			arissploit
-		else	
-			echo -e "$TNI"
-			read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
-			if [[ "$INSTALL" = "yes" ]]
-			then
-				install_arissploit
-			else
-				continue
-			fi
-		fi
-	elif [[ "$KEYLOG" = "31" ]]
 	then
 		if [[ -d /root/Enigma ]]
 		then
