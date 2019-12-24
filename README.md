@@ -43,8 +43,6 @@
 
 > ./install.sh 
 
-![Ehtools INSTALLER](https://user-images.githubusercontent.com/54115104/66914599-d2a21200-f01f-11e9-864a-e133c3d3f15d.png)
-
 # Selecting version of framework
 
     INFO: After executing install.sh it will be ask you 
