@@ -3,7 +3,7 @@
 #            --------------------------------------------------
 #                            Ehtools Framework          
 #            --------------------------------------------------
-#                   Copyright (C) <2015>  <Ehtools Team>        
+#                  Copyright (C) <2019>  <Entynetproject>   
 #
 #        This program is free software: you can redistribute it and/or modify
 #        it under the terms of the GNU General Public License as published by
@@ -66,7 +66,7 @@ echo -e "█████╗  ███████║   ██║   ██║   
 echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
 echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
 echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
-echo -e "\033[1;33mBy Ehtools Team\033[0m"
+echo -e "\033[1;33mBy Entynetproject\033[0m"
 sleep 3
 echo -e "More on our sites:"
 sleep 3
@@ -74,7 +74,7 @@ echo -e "==> \033[1;33mhttps://ehtools.pro/\033[0m"
 sleep 3
 echo -e "==> \033[1;33mhttp://entynetproject.simplesite.com/\033[0m"
 sleep 3
-echo -e "Creators of Ehtools Framework (\033[4;34mEhtools Team\033[0m):"
+echo -e "Creators of Ehtools Framework (\033[4;34mEntynetproject\033[0m):"
 sleep 3
 echo -e "\033[4;34mEntynetproject\033[0m - Main Developer"
 sleep 3
@@ -151,7 +151,7 @@ do
       echo -e "$YS       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$YS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$YS       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$YS       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
+      echo -e "$YS       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
       echo -e "$YS       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$YS       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"                                         
 		sleep 3

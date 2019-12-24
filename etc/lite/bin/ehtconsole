@@ -3,7 +3,7 @@
 #            --------------------------------------------------
 #                            Ehtools Framework          
 #            --------------------------------------------------
-#                   Copyright (C) <2015>  <Ehtools Team>        
+#                  Copyright (C) <2019>  <Entynetproject>   
 #
 #        This program is free software: you can redistribute it and/or modify
 #        it under the terms of the GNU General Public License as published by
@@ -332,7 +332,7 @@ function banner
       echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Ehtools Team$CE"                 
+      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
       echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
       echo -e "                                                                            "                                                                   
@@ -355,10 +355,10 @@ function banner
 	if [[ -f /usr/bin/anonsurf ]]
 	then
 	echo -e ""$YS" 4"$CE") Enable anonsurf   "$YS"d4"$CE") Disable anonsurf     "$RS"|"$CE""$YS"update"$CE") check for updates"
-	echo -e ""$YS" 5"$CE") Anonsurf's status "$YS"d5"$CE") Restart anonsurf     "$RS"|"$CE""$YS"     e"$CE") About ehtools team"
+	echo -e ""$YS" 5"$CE") Anonsurf's status "$YS"d5"$CE") Restart anonsurf     "$RS"|"$CE""$YS"     e"$CE") About Entynetproject"
 	else
 	echo -e ""$RS" 4"$CE") Enable anonsurf   "$RS"d4"$CE") Disable anonsurf     "$RS"|"$CE"     "$YS"b"$CE") Buy ehtools PRO"
-	echo -e ""$RS" 5"$CE") Anonsurf's status "$RS"d5"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"e"$CE") About ehtools team"
+	echo -e ""$RS" 5"$CE") Anonsurf's status "$RS"d5"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"e"$CE") About Entynetproject"
 	fi
 	echo -e ""$YS" 6"$CE") View public IP                             "$RS"|"$CE"     "$YS"s"$CE") Go to settings menu"
 	echo -e ""$YS" 7"$CE") View MAC"
@@ -5115,9 +5115,9 @@ function about_option
 	while true
 	do
 	clear
-	TERMINALTITLE="EHTOOLS TEAM"
+	TERMINALTITLE="Entynetproject"
 	dash_calc
-	printf '\033]2;EHTOOLS TEAM\a'
+	printf '\033]2;Entynetproject\a'
 	echo -e "Visit our site, please :з"
 	echo -e ""$LBS"Total ehtools downloads:"$CE" $DOWNLOADS"
 	echo -e "Welcome to the Ehtools Framework LITE!"
