@@ -475,7 +475,7 @@ If in consequence of the bad Internet connection ehtools will not be able to com
         --------------------------------------------------
                         Ehtools Framework          
         --------------------------------------------------
-               Copyright (C) <2015>  <Entynetproject>       
+              Copyright (C) <2015>  <Entynetproject>            
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
