@@ -8410,45 +8410,6 @@ function select_interface
 		fi
 	done
 }
-function about_option
-{
-	while true
-	do
-	clear
-	TERMINALTITLE="Entynetproject"
-	dash_calc
-	printf '\033]2;Entynetproject\a'
-	echo -e "Visit our site, please :з"
-	echo -e ""$LBS"Total ehtools downloads:"$CE" $DOWNLOADS"
-	echo -e "Welcome to the Ehtools Framework PRO!"
-	echo -e ""$YS" 1"$CE") Visit our site"
-	echo -e ""$YS" 2"$CE") Visit our GitHub"
-        echo -e ""$YS" b"$CE") I'm not interested about this! :P"
-	read -e -p $'(\033[4;34mabout\033[0m)> ' DON
-	if [[ "$DON" = "1" ]]
-	then
-		gio open "entynetproject.simplesite.com"
-	elif [[ "$DON" = "2" ]]
-	then
-		gio open "https://github.com/ehtools"
-	elif [[ "$DON" = "back" || "$DON" = "b" || "$DON" = "00" ]]
-	then
-		BACKL=1
-		break
-	elif [[ "$DON" = "0" ]]
-	then
-		clear
-		cd /root/ehtools/lib
-		chmod +x libunconf
-	        ./libunconf
-		rm /etc/ehtools/.config
-		{
-		chattr +i /etc/ehtools
-		} &> /dev/null
-		exit
-	fi
-        done
-}
 function ngrok_option
 {
 	while true
@@ -9767,9 +9728,6 @@ function main_options
 	then
 		ngrok_option
 		BACKL=1
-	elif [[ "$YORNAA" = "eteam" || "$YORNAA" = "e" ]]
-	then
-		about_option
 #------services
 	elif [[ "$YORNAA" = "pstart" ]]
 	then
