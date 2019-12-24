@@ -355,12 +355,12 @@ function banner
 	if [[ -f /usr/bin/anonsurf ]]
 	then
 	echo -e ""$YS" 4"$CE") Enable anonsurf   "$YS"d4"$CE") Disable anonsurf     "$RS"|"$CE""$YS"update"$CE") check for updates"
-	echo -e ""$YS" 5"$CE") Anonsurf's status "$YS"d5"$CE") Restart anonsurf     "$RS"|"$CE""$YS"     e"$CE") About Entynetproject"
+	echo -e ""$YS" 5"$CE") Anonsurf's status "$YS"d5"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"s"$CE") Go to settings menu"
 	else
 	echo -e ""$RS" 4"$CE") Enable anonsurf   "$RS"d4"$CE") Disable anonsurf     "$RS"|"$CE"     "$YS"b"$CE") Buy ehtools PRO"
-	echo -e ""$RS" 5"$CE") Anonsurf's status "$RS"d5"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"e"$CE") About Entynetproject"
+	echo -e ""$RS" 5"$CE") Anonsurf's status "$RS"d5"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"s"$CE") Go to settings menu"
 	fi
-	echo -e ""$YS" 6"$CE") View public IP                             "$RS"|"$CE"     "$YS"s"$CE") Go to settings menu"
+	echo -e ""$YS" 6"$CE") View public IP"
 	echo -e ""$YS" 7"$CE") View MAC"
 		echo -e ""$YS" 8"$CE") Handshake                                    "
 	if [[ -f /usr/local/bin/howdoi ]]
