@@ -434,8 +434,6 @@ Updated ehtools LITE UX/UI
 Fixed install/reinstall menu bug!
 
 3.0.0
-EPP updated to v4.0
-Added EPP Crypto v1.4
 Added login and password encryption
 Added KDE konsole support!
 Added ehtools application and ehtapp utility
