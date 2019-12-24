@@ -187,7 +187,6 @@ fi
 	sleep 1
 	echo "export PATH=/bin/ehtools:$PATH" >> ~/.bashrc
 	sleep 1
-	clear
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
