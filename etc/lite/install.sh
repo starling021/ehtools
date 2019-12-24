@@ -3,7 +3,7 @@
 #            --------------------------------------------------
 #                            Ehtools Framework          
 #            --------------------------------------------------
-#                  Copyright (C) <2019>  <Entynetproject>   
+#                  Copyright (C) <2019>  <Entynetproject>        
 #
 #        This program is free software: you can redistribute it and/or modify
 #        it under the terms of the GNU General Public License as published by
@@ -67,18 +67,6 @@ echo -e "██╔══╝  ██╔══██║   ██║   ██║   
 echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
 echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
 echo -e "\033[1;33mBy Entynetproject\033[0m"
-sleep 3
-echo -e "More on our sites:"
-sleep 3
-echo -e "==> \033[1;33mhttps://ehtools.pro/\033[0m"                                                           
-sleep 3
-echo -e "==> \033[1;33mhttp://entynetproject.simplesite.com/\033[0m"
-sleep 3
-echo -e "Creators of Ehtools Framework (\033[4;34mEntynetproject\033[0m):"
-sleep 3
-echo -e "\033[4;34mEntynetproject\033[0m - Main Developer"
-sleep 3
-echo -e "\033[4;33mDJ Mobley\033[0m      - Ascii Designer"
 sleep 3
 echo -e "Press \033[1;33many key\033[0m to install ehtools"
 read -n 1
