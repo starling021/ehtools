@@ -439,7 +439,7 @@ Added KDE konsole support!
 Added ehtools application and ehtapp utility
 Added a new utility named ehtkey (ehtools key)
 Updated ehtmod (ehtools modules)
-Updated Modules to v1.9 and renamed to ehtmod
+Renamed Modules to ehtmod
 Updated ehtools (now you can stable login to ehtools)
 Fixed EHT-2019-02776 (nologin) vulnerability!
 Updated epasswd (now you can change login/password)
