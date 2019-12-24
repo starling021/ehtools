@@ -140,7 +140,7 @@ do
       echo -e "$YS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$YS       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$YS       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$YS       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
+      echo -e "$YS       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
       echo -e "$YS       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"                                         
 		sleep 3
                 echo -e

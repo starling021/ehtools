@@ -165,7 +165,7 @@ chmod +x libenc
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
@@ -184,7 +184,7 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
@@ -266,7 +266,7 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
@@ -346,7 +346,7 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
@@ -426,7 +426,7 @@ printf '\033]2;Ehtools Authentication\a'
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""

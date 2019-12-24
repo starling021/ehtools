@@ -352,7 +352,7 @@ function banner
       echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
       echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
       echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS https://ehtools.pro/$CE"
+      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
       echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"                                                                        
       echo -e "                                                                                "                                                           
 	echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE")"$BS" Local IPs & gateways"$CE" "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
@@ -8427,7 +8427,7 @@ function about_option
 	read -e -p $'(\033[4;34mabout\033[0m)> ' DON
 	if [[ "$DON" = "1" ]]
 	then
-		gio open "https://ehtools.pro/"
+		gio open "entynetproject.simplesite.com"
 	elif [[ "$DON" = "2" ]]
 	then
 		gio open "https://github.com/ehtools"
