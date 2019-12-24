@@ -60,15 +60,15 @@ fi
 clear
 printf '\033]2;ehtools INSTALLER\a'
 echo -e
-echo -e "███████╗██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ███████╗ \033[1;33mv3.0.0\033[0m"
-echo -e "██╔════╝██║  ██║╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝"
-echo -e "█████╗  ███████║   ██║   ██║   ██║██║   ██║██║     ███████╗"
-echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
-echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
-echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
-echo -e "\033[1;33mBy Entynetproject\033[0m"
+      echo -e "$YS       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$YS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
+      echo -e "$YS       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$YS       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$YS       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$YS       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"                                         
 sleep 3
-echo -e "Press \033[1;33many key\033[0m to install"
+echo -e
+echo -e "Press \033[1;33many key\033[0m to install ehtools"
 read -n 1
 clear
 sleep 0.1
@@ -128,37 +128,10 @@ then
 else
 	sleep 0
 fi
-while true
-do
-	clear
-	BASHCHECK=$(cat ~/.bashrc | grep "bin/ehtools")
-	if [[ "$BASHCHECK" != "i" ]]
-	then
-	sleep 5
-	echo -e
-      echo -e "$YS       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
-      echo -e "$YS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS finally$CE"                
-      echo -e "$YS       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$YS       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$YS       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
-      echo -e "$YS       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"                                         
-		sleep 3
-                echo -e
-		echo -e "["$YS"inf"$CE"] "$YS"Congratulations, you have successfully installed our framework!"$CE""
-		sleep 0.5
-	fi
-	echo -e "["$YS"inf"$CE"] "$YS"A few more steps and you are done..."$CE""
-	sleep 5
-
-
-
 	export PATH=/bin/ehtools:$PATH
 	sleep 1
 	echo "export PATH=/bin/ehtools:$PATH" >> ~/.bashrc
 	sleep 1
-	clear
-	break
-done
 clear
 printf '\033]2;ehtools INSTALLER\a'
 sleep 3
