@@ -460,7 +460,7 @@ If in consequence of the bad Internet connection ehtools will not be able to com
     and do not exit from the Ehtools Framework 
     using Ctrl + C or other exit signals!
 
-![EPP](https://user-images.githubusercontent.com/54115104/71424209-03da3680-2690-11ea-9b49-51ae02161812.png)
+![EPP](https://user-images.githubusercontent.com/54115104/71424403-713a9700-2691-11ea-8913-3a52c74c9f4c.png)
 
 # Ehatools framework disclaimer
 
