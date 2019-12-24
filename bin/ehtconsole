@@ -381,7 +381,7 @@ function banner
 	fi
 	echo -e ""$YS" 7"$CE") View public IP"                                 
 	echo -e ""$YS" 8"$CE") View MAC"
-	echo -e ""$YS" 9"$CE") TOOLS             "$YS"15"$CE") Spoof EMAIL               "$QA"22"$CE") Show bandwidth"
+	echo -e ""$YS" 9"$CE") Tools             "$YS"15"$CE") Spoof EMAIL               "$QA"22"$CE") Show bandwidth"
 	if [[ -f /root/ngrok ]]
 	then
 		echo -e ""$YS"10"$CE") Handshake         "$YS"16"$CE") Ngrok port forward        "$QS"23"$CE") Arissploit"
