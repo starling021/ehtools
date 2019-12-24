@@ -3,7 +3,7 @@
 #            --------------------------------------------------
 #                            Ehtools Utilities          
 #            --------------------------------------------------
-#                  Copyright (C) <2019>  <Entynetproject>
+#                  Copyright (C) <2015>  <Entynetproject>
 #
 #        This program is free software: you can redistribute it and/or modify
 #        it under the terms of the GNU General Public License as published by
@@ -34,7 +34,7 @@ fi
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
 echo -e "Usage: ehtmod [OPTION...]"
-echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
+echo -e "Copyright (C) 2015, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -i  --install         Install ehtools modules to /bin/ehtools."
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
@@ -546,7 +546,7 @@ exit
 fi
 
 echo -e "Usage: ehtmod [OPTION...]"
-echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
+echo -e "Copyright (C) 2015, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -i  --install         Install ehtools modules to /bin/ehtools."
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."

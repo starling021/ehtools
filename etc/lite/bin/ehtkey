@@ -3,7 +3,7 @@
 #            --------------------------------------------------
 #                            Ehtools Utilities          
 #            --------------------------------------------------
-#                  Copyright (C) <2019>  <Entynetproject>
+#                  Copyright (C) <2015>  <Entynetproject>
 #
 #        This program is free software: you can redistribute it and/or modify
 #        it under the terms of the GNU General Public License as published by
@@ -34,7 +34,7 @@ fi
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
 echo -e "Usage: ehtkey [OPTION...]"
-echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
+echo -e "Copyright (C) 2015, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -c  --change <old_key> <new_key>  Change ehtools config key."
 echo -e "   -h  --help                        Give this help list."
@@ -87,7 +87,7 @@ fi
 fi
 
 echo -e "Usage: ehtkey [OPTION...]"
-echo -e "Copyright (C) 2019, Entynetproject. All Rights Reserved."
+echo -e "Copyright (C) 2015, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -c  --change <old_key> <new_key>  Change ehtools config key."
 echo -e "   -h  --help                        Give this help list."

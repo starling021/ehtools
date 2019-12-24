@@ -295,7 +295,7 @@ There are two ways how to setup ehtools application:
 uiecache (uninstall ehtools cache) is an utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
 
     Usage: uiecache [OPTION...]
-    Copyright (C) 2019, Entynetproject. All Rights Reserved.
+    Copyright (C) 2015, Entynetproject. All Rights Reserved.
 
        -a  --all          Uninstall all ehtools cache.
        -p  --path <path>  Uninstall ehtools cache from your path.
@@ -311,7 +311,7 @@ To clean/uninstall all ehtools cache you need to execute the following command:
 ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
 
     Usage: ehtmod [OPTION...]
-    Copyright (C) 2019, Entynetproject. All Rights Reserved.
+    Copyright (C) 2015, Entynetproject. All Rights Reserved.
 
     -i  --install         Install ehtools modules to /bin/ehtools.
     -t  --take    <name>  Take a new ehtools modules snapshot.
@@ -354,7 +354,7 @@ To restore ehtools modules snapshot you need to execute the following command. Y
 ehtkey (ehtools key) is an utility that allows you to change your ehtools config key (ehtools config/boot key) and rewrite /etc/ehtools/.config.
 
     Usage: ehtkey [OPTION...]"
-    Copyright (C) 2019, Entynetproject. All Rights Reserved.
+    Copyright (C) 2015, Entynetproject. All Rights Reserved.
 
        -c  --change <old_key> <new_key>  Change ehtools config key.
        -h  --help                        Give this help list.
@@ -368,7 +368,7 @@ To change ehtools config key you need to execute the following command. You need
 ehtapp (ehtools application) is an utility that allows you to configure ehtools application, for example creating ehtools desktop application.
 
     Usage: ehtapp [OPTION...]"
-    Copyright (C) 2019, Entynetproject. All Rights Reserved.
+    Copyright (C) 2015, Entynetproject. All Rights Reserved.
 
        -c  --create            Create ehtools application.
        -d  --desktop <option>  Create/remove ehtools desktop application.
