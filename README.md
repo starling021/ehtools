@@ -26,7 +26,7 @@
  </a>
 </p>
 
-![Ehtools RED](https://user-images.githubusercontent.com/54115104/66771647-8346cf00-eec3-11e9-8bfd-c910161bcba4.png)
+![Ehtools RED](https://user-images.githubusercontent.com/54115104/71423728-95937500-268b-11ea-9ed1-2dbd481fa3c0.png)
 
 # About ehtools framework
 
@@ -266,7 +266,7 @@ There are two ways how to setup ehtools application:
     archive (on server this archive: 2.3 Tb)! But if you are using 
     ehtools LITE you could install only 50% of this tools!
 
-![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/66771648-83df6580-eec3-11e9-8fdc-bc67a2450446.png)
+![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/71423729-962c0b80-268b-11ea-90fe-45ac0c7c7b87.png)
 
 # System requirements 
 
@@ -442,7 +442,7 @@ If in consequence of the bad Internet connection ehtools will not be able to com
     
 # How to protect ehtools
 
-![EPP](https://user-images.githubusercontent.com/54115104/66774876-60b8b400-eecb-11e9-8770-ffc92f6341d1.png)
+![Ehtools Login](https://user-images.githubusercontent.com/54115104/71423731-962c0b80-268b-11ea-8a63-1a9d972e600e.png)
 
 > Do it using install.sh:
    
