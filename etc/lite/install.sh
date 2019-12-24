@@ -68,7 +68,7 @@ echo -e "███████╗██║  ██║   ██║   ╚███
 echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
 echo -e "\033[1;33mBy Entynetproject\033[0m"
 sleep 3
-echo -e "Press \033[1;33many key\033[0m to install ehtools"
+echo -e "Press \033[1;33many key\033[0m to install"
 read -n 1
 clear
 sleep 0.1
