@@ -21,8 +21,8 @@
   <a href="https://github.com/entynetproject/ehtools/wiki">
       <img src="https://img.shields.io/badge/wiki%20-ehtools-lightgrey.svg">
  </a>
-  <a href="https://twitter.com/entynetproject">
-    <img src="https://img.shields.io/badge/twitter-entynetproject-blue.svg">
+  <a href="https://twitter.com/ehtools">
+    <img src="https://img.shields.io/badge/twitter-ehtools-blue.svg">
  </a>
 </p>
 
