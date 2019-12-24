@@ -148,7 +148,7 @@ This allows us to do things like scan the network for other devices. This part o
 
 # Install new tools
 
-![TOOLS](https://user-images.githubusercontent.com/54115104/66775236-3d423900-eecc-11e9-92e4-1f327b6413a0.png)
+![Tools](https://user-images.githubusercontent.com/54115104/71424210-03da3680-2690-11ea-9a68-93989bab4440.png)
 
 Part of the fun of Ehtools Framework is how easy it is to add new tools to our arsenal. We can select option 9 to access the list of tools in Ehtools Framework.
 
@@ -460,7 +460,7 @@ If in consequence of the bad Internet connection ehtools will not be able to com
     and do not exit from the Ehtools Framework 
     using Ctrl + C or other exit signals!
 
-![Configuring...](https://user-images.githubusercontent.com/54115104/66775235-3ca9a280-eecc-11e9-9c58-927e11150d59.png)
+![EPP](https://user-images.githubusercontent.com/54115104/71424209-03da3680-2690-11ea-9b49-51ae02161812.png)
 
 # Ehatools framework disclaimer
 
