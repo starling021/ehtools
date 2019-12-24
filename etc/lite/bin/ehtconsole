@@ -6268,10 +6268,6 @@ function main_options
 	elif [[ "$YORNAA" = "settings" || "$YORNAA" = "s" ]]
 	then
 		settings_menu
-
-	elif [[ "$YORNAA" = "eteam" || "$YORNAA" = "e" ]]
-	then
-		about_option
 #------services
 	elif [[ "$YORNAA" = "pstart" ]]
 	then
