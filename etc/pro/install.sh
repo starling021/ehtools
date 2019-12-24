@@ -113,15 +113,15 @@ fi
 clear
 printf '\033]2;ehtools INSTALLER\a'
 echo -e
-echo -e "███████╗██╗  ██╗████████╗ ██████╗  ██████╗ ██╗     ███████╗ \033[1;33mv3.0.0\033[0m"
-echo -e "██╔════╝██║  ██║╚══██╔══╝██╔═══██╗██╔═══██╗██║     ██╔════╝"
-echo -e "█████╗  ███████║   ██║   ██║   ██║██║   ██║██║     ███████╗"
-echo -e "██╔══╝  ██╔══██║   ██║   ██║   ██║██║   ██║██║     ╚════██║"
-echo -e "███████╗██║  ██║   ██║   ╚██████╔╝╚██████╔╝███████╗███████║"
-echo -e "╚══════╝╚═╝  ╚═╝   ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝╚══════╝"
-echo -e "\033[1;33mBy Entynetproject\033[0m"
+      echo -e "$RS       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$RS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS PRO$CE"                
+      echo -e "$RS       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$RS       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$RS       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$RS       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"             
 sleep 3
-echo -e "Press \033[1;33many key\033[0m to install"
+echo -e
+echo -e "Press \033[1;33many key\033[0m to install ehtools"
 read -n 1
 clear
 sleep 0.1
