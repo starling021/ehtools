@@ -23,6 +23,8 @@ RS="\033[1;31m"
 YS="\033[1;33m"
 WHS="\033[1;37m"
 
+printf '\033]2;install.sh\a'
+
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
