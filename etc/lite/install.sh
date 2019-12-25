@@ -60,19 +60,6 @@ fi
 fi
 
 clear
-echo -e
-      echo -e "$YS       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
-      echo -e "$YS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
-      echo -e "$YS       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$YS       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$YS       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
-      echo -e "$YS       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"                                         
-sleep 3
-echo -e
-echo -e "Press \033[1;33many key\033[0m to install ehtools"
-read -n 1
-clear
-sleep 0.1
 chmod +x /root/ehtools/eht/eht1
 chmod +x /root/ehtools/eht/eht2
 chmod +x /root/ehtools/eht/eht3
@@ -90,7 +77,6 @@ chmod +x /root/ehtools/bin/ehtapp
 chmod +x /root/ehtools/bin/uiecache
 chmod +x /root/ehtools/bin/epasswd
 clear
-sleep 1
 mkdir /bin/ehtools
 cd /root/ehtools
 cp /root/ehtools/bin/ehtools /bin/ehtools
