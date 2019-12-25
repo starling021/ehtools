@@ -23,6 +23,8 @@ RS="\033[1;31m"
 YS="\033[1;33m"
 WHS="\033[1;37m"
 
+printf '\033]2;install.sh\a'
+
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
@@ -58,7 +60,6 @@ fi
 fi
 
 clear
-printf '\033]2;ehtools INSTALLER\a'
 echo -e
       echo -e "$YS       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$YS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
