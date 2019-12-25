@@ -26,7 +26,7 @@
  </a>
 </p>
 
-![Ehtools RED](https://user-images.githubusercontent.com/54115104/71423728-95937500-268b-11ea-9ed1-2dbd481fa3c0.png)
+![Ehtools RED](https://user-images.githubusercontent.com/54115104/71449947-77e01180-2758-11ea-93db-5a30f4b554d2.png)
 
 # About ehtools framework
 
@@ -43,7 +43,7 @@
 
 > ./install.sh 
 
-# Selecting version of framework
+# Selecting ehtools version
 
     INFO: After executing install.sh it will be ask you 
     to select version of Ehtools Framework - PRO os LITE. 
@@ -266,7 +266,7 @@ There are two ways how to setup ehtools application:
     archive (on server this archive: 2.3 Tb)! But if you are using 
     ehtools LITE you could install only 50% of this tools!
 
-![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/71423729-962c0b80-268b-11ea-90fe-45ac0c7c7b87.png)
+![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/71449948-7878a800-2758-11ea-95a1-1f1d7a18cbc8.png)
 
 # System requirements 
 
@@ -442,7 +442,7 @@ If in consequence of the bad Internet connection ehtools will not be able to com
     
 # How to protect ehtools
 
-![Ehtools Login](https://user-images.githubusercontent.com/54115104/71423731-962c0b80-268b-11ea-8a63-1a9d972e600e.png)
+![Ehtools Login](https://user-images.githubusercontent.com/54115104/71450021-c641e000-2759-11ea-9454-a7d59d953933.png)
 
 > Do it using install.sh:
    
