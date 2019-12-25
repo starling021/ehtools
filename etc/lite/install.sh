@@ -76,7 +76,6 @@ chmod +x /root/ehtools/bin/ehtconsole
 chmod +x /root/ehtools/bin/ehtapp
 chmod +x /root/ehtools/bin/uiecache
 chmod +x /root/ehtools/bin/epasswd
-clear
 mkdir /bin/ehtools
 cd /root/ehtools
 cp /root/ehtools/bin/ehtools /bin/ehtools
