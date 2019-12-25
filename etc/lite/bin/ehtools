@@ -161,12 +161,12 @@ cd /root/ehtools/lib
 chmod +x libenc
 ./libenc
       echo -e 
-      echo -e "$COL    ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
-      echo -e "$COL    ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
-      echo -e "$COL    █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$COL    ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL    ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
-      echo -e "$COL    ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
+      echo -e "$COL     ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL     ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
+      echo -e "$COL     █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL     ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL     ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
 echo -e "$YS"Ehtools Authentication:"$CE"
@@ -180,12 +180,12 @@ clear
 sleep 0.5
 printf '\033]2;Ehtools Authentication\a'
       echo -e 
-      echo -e "$COL    ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
-      echo -e "$COL    ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
-      echo -e "$COL    █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$COL    ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL    ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
-      echo -e "$COL    ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
+      echo -e "$COL     ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL     ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
+      echo -e "$COL     █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL     ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL     ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
 cd /root/ehtools/lib
@@ -262,12 +262,12 @@ clear
 sleep 0.5
 printf '\033]2;Ehtools Authentication\a'
       echo -e 
-      echo -e "$COL    ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
-      echo -e "$COL    ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
-      echo -e "$COL    █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$COL    ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL    ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
-      echo -e "$COL    ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
+      echo -e "$COL     ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL     ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
+      echo -e "$COL     █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL     ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL     ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
 echo -e "You want to login as '"$YS"root"$RS"!"$CE"'"
@@ -342,12 +342,12 @@ clear
 sleep 0.5
 printf '\033]2;Ehtools Authentication\a'
       echo -e 
-      echo -e "$COL    ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
-      echo -e "$COL    ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
-      echo -e "$COL    █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$COL    ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL    ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
-      echo -e "$COL    ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
+      echo -e "$COL     ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL     ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
+      echo -e "$COL     █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL     ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL     ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
 cd /root/ehtools/lib
@@ -422,12 +422,12 @@ clear
 sleep 0.5
 printf '\033]2;Ehtools Authentication\a'
       echo -e 
-      echo -e "$COL    ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
-      echo -e "$COL    ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
-      echo -e "$COL    █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$COL    ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL    ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
-      echo -e "$COL    ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
+      echo -e "$COL     ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL     ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
+      echo -e "$COL     █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL     ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL     ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
 sleep 0.5
 echo -e ""
 echo -e "You want to login as '"$YS"root"$RS"!"$CE"'"
