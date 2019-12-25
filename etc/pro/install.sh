@@ -113,19 +113,6 @@ fi
 fi
 
 clear
-echo -e
-      echo -e "$RS       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
-      echo -e "$RS       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS PRO$CE"                
-      echo -e "$RS       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$RS       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$RS       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
-      echo -e "$RS       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"             
-sleep 3
-echo -e
-echo -e "Press \033[1;33many key\033[0m to install ehtools"
-read -n 1
-clear
-sleep 0.1
 chmod +x /root/ehtools/eht/eht1
 chmod +x /root/ehtools/eht/eht2
 chmod +x /root/ehtools/eht/eht3
@@ -146,8 +133,6 @@ chmod +x /root/ehtools/bin/ehtconsole
 chmod +x /root/ehtools/bin/ehtapp
 chmod +x /root/ehtools/bin/uiecache
 chmod +x /root/ehtools/bin/epasswd
-clear
-sleep 1
 mkdir /bin/ehtools
 cd /root/ehtools
 cp /root/ehtools/bin/ehtools /bin/ehtools
@@ -189,7 +174,6 @@ fi
 	echo "export PATH=/bin/ehtools:$PATH" >> ~/.bashrc
 	sleep 1
 clear
-printf '\033]2;ehtools INSTALLER\a'
 sleep 3
 echo -e "Do you want to install ehtools modules now?(\033[1;33myes\033[0m/\033[1;33mno\033[0m):"
 echo -e "So without thinking install them now!"
