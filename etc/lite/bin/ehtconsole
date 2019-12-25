@@ -329,12 +329,12 @@ function banner
 	check_wlans                           
 
       echo -e
-      echo -e "$COL       ███████╗██╗  ██╗████████╗   $WHS Name |$RS Entynet Hacker Tools$CE" 
-      echo -e "$COL       ██╔════╝██║  ██║╚══██╔══╝   $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
-      echo -e "$COL       █████╗  ███████║   ██║      $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
-      echo -e "$COL       ██╔══╝  ██╔══██║   ██║      $WHS Dev  |$RS Entynetproject$CE"                 
-      echo -e "$COL       ███████╗██║  ██║   ██║      $WHS Site |$YS entynetproject.simplesite.com$CE"
-      echo -e "$COL       ╚══════╝╚═╝  ╚═╝   ╚═╝      $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
+      echo -e "$COL    ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL    ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
+      echo -e "$COL    █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL    ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL    ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL    ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
       echo -e "                                                                            "                                                                   
 	                                                                  
        echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE")"$BS" Local IPs & gateways"$CE" "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
