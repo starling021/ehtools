@@ -86,6 +86,8 @@ cp /root/ehtools/bin/epasswd /bin
 chmod +x /bin/epasswd
 cp /root/ehtools/bin/ehtmod /bin
 chmod +x /bin/ehtmod
+mkdir /etc/ehtools
+mkdir /etc/ehtools/root
 cp /root/ehtools/etc/root/password /etc/ehtools/root
 mkdir /etc/ehtools/app
 cp /root/ehtools/app/ehtools.png /etc/ehtools/app
