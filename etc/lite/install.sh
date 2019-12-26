@@ -92,9 +92,6 @@ cp /root/ehtools/app/ehtools.png /etc/ehtools/app
 mkdir /etc/ehtools/ehtoolsd
 cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole
-clear
-
-apt-get -y install ncurses-dev
 
 clear
 if [[ ! -d /root/handshakes ]]
@@ -111,6 +108,44 @@ then
 else
 	sleep 0
 fi
+clear
+sleep 3
+echo -e "What desktop shell do you use?"
+echo -e
+echo -e ""$YS"1"$CE") Gnome"
+echo -e ""$YS"2"$CE") Xfce"
+echo -e ""$YS"3"$CE") KDE"
+echo -e
+read -e -p $'(\033[4;93mdesktop\033[0m\en)> ' xdesk
+
+if [[ $xdesk = "1" ]]
+then
+{
+chattr -i /etc/ehtools
+mkdir /etc/ehtools/xdesktop
+echo "gnome-terminal" >> /etc/ehtools/xdesktop/config.txt
+chattr +i /etc/ehtools
+} &> /dev/null
+
+elif [[ $xdesk = "2" ]]
+then
+{
+chattr -i /etc/ehtools
+mkdir /etc/ehtools/xdesktop
+echo "xfce4-terminal" >> /etc/ehtools/xdesktop/config.txt
+chattr +i /etc/ehtools
+} &> /dev/null
+
+elif [[ $xdesk = "3" ]]
+then
+{
+chattr -i /etc/ehtools
+mkdir /etc/ehtools/xdesktop
+echo "konsole" >> /etc/ehtools/xdesktop/config.txt
+chattr +i /etc/ehtools
+} &> /dev/null
+fi
+
 clear
 printf '\033]2;install.sh\a'
 sleep 3
