@@ -475,8 +475,6 @@ do
     ProgressBar ${number} ${_end}
 done
 
-echo -e
-
 sleep 5
 clear
 exit
