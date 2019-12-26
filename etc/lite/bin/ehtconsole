@@ -3785,9 +3785,9 @@ function new_terminal
 			export FJC
 			if [[ -d /usr/share/konsole ]]
 			then
-			konsole --geometry 80x25+9999+0 -- eht1
+			konsole --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht1
 			else
-			gnome-terminal --geometry 80x25+9999+0 -- eht1
+			gnome-terminal --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht1
 			fi
 			sleep 1
 			exec bash "$0"
@@ -3798,9 +3798,9 @@ function new_terminal
 			sleep 1
 			if [[ -d /usr/share/konsole ]]
 			then
-			konsole --geometry 80x25+9999+0 -- eht3
+			konsole --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht3
 			else
-			gnome-terminal --geometry 80x25+9999+0 -- eht3
+			gnome-terminal --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht3
 			fi
 			sleep 1
 			exec bash "$0"
