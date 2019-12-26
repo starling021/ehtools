@@ -476,9 +476,6 @@ do
 done
 
 echo -e
-echo -e
-
-uiecache --all
 
 sleep 5
 clear
