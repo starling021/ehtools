@@ -466,11 +466,7 @@ sleep 0.5
 echo -e "Ehtools modules moved to /bin/ehtools with success!"
 sleep 1
 echo -e "Cleaning caches..."
-sleep 0.5
-echo -e
-uiecache --all
-echo -e
-sleep 0.5
+sleep 3
 echo -e "\033[4;32mSuccess!\033[0m"
 sleep 0.5
 echo -e "Making /etc/ehtools/modules..."
