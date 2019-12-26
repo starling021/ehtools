@@ -239,9 +239,6 @@ done
 
 sleep 5
 echo -e
-echo -e
-
-uiecache --all
 sleep 3
 fi
 fi
@@ -309,8 +306,6 @@ sleep 0.5
 echo -e "If you want to change ehtools config key, run '"$YS"ehtkey"$CE"'"
 sleep 0.5
 echo -e "If you want to configure ehtools modules, run '"$YS"ehtmod"$CE"'"
-sleep 0.5
-echo -e "If you want to uninstall ehtools cache, run '"$YS"uiecache"$CE"'"
 sleep 0.5
 echo -e "If you want to change ehtools password, run '"$YS"epasswd"$CE"'"
 sleep 1
