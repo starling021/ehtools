@@ -383,7 +383,7 @@ function banner
 	fi
 	echo -e ""$YS" 7"$CE") View public IP"                                 
 	echo -e ""$YS" 8"$CE") View MAC"
-	echo -e ""$YS" 9"$CE") Tools             "$YS"15"$CE") Spoof EMAIL              "$QA"22"$CE") Show bandwidth"
+	echo -e ""$YS" 9"$CE") Tools             "$YS"15"$CE") Spoof email              "$QA"22"$CE") Show bandwidth"
 	if [[ -f /root/ngrok ]]
 	then
 		echo -e ""$YS"10"$CE") Handshake         "$YS"16"$CE") Ngrok port forward       "$QS"23"$CE") Arissploit"
@@ -392,14 +392,14 @@ function banner
 	fi
 	if [[ -f /usr/local/bin/howdoi ]]
 	then
-		echo -e ""$YS"11"$CE") Find WPS pin      "$YS"17"$CE") Ask (Howdoi tool)"
+		echo -e ""$YS"11"$CE") Find WPS pin      "$YS"17"$CE") Ask (Howdoi tool)"    "$YS"24"$CE") Reboot computer"
 	else
-		echo -e ""$YS"11"$CE") Find WPS pin      "$RS"17"$CE") Ask ("$RS"Howdoi"$CE" tool)"
+		echo -e ""$YS"11"$CE") Find WPS pin      "$RS"17"$CE") Ask ("$RS"Howdoi"$CE" tool)" "$YS"24"$CE") Reboot computer"
 	fi
-	echo -e ""$YS"12"$CE") WEP menu          "$YS"18"$CE") Auto-exploit browser     "$YS"24"$CE") Reboot computer"
-	echo -e ""$YS"13"$CE") MITM              "$YS"19"$CE") Geolocate an IP          "$YS"25"$CE") Shutdown computer"
-	echo -e ""$YS"14"$CE") Metasploit        "$YS"20"$CE") Bruteforce login         "$QE"26"$CE") Simple ehtools shell"
-	echo -e ""$YS" 0"$CE") Exit              "$YS"21"$CE") Sqlmap automated         "$YS"27"$CE") Update APT sources"
+	echo -e ""$YS"12"$CE") WEP menu          "$YS"18"$CE") Auto-exploit browser     "$YS"25"$CE") Shutdown computer"
+	echo -e ""$YS"13"$CE") MITM              "$YS"19"$CE") Geolocate an IP          "$QE"26"$CE") Simple ehtools shell"
+	echo -e ""$YS"14"$CE") Metasploit        "$YS"20"$CE") Bruteforce login         "$YS"27"$CE") Update APT sources"
+	echo -e ""$YS" 0"$CE") Exit              "$YS"21"$CE") Sqlmap automated         "$YS"28"$CE") Change interfaces"
 	read -e -p $'(\033[4;93mehtools\033[0m\en)> ' YORNAA
         echo "$YORNAA" >> /etc/ehtools/.ehtools.log
 	clear
@@ -6553,7 +6553,6 @@ function hidden_shortcuts
 	TERMINALTITLE="HIDDEN SHORTCUTS"
 	dash_calc
 	printf '\033]2;HIDDEN SHORTCUTS\a'
-	echo -e ""$YS"  interface"$CE") Change your interface"
 	echo -e ""$YS"     wififb"$CE") Create open wifi access point and get fb passwords with wifiphisher"
 	echo -e ""$YS"eternalblue"$CE") Launch msfconsole with eternalblue exploit on target"
 	echo -e ""$YS"  etercheck"$CE") Check if a target is vulnerable to eternalblue exploit"
@@ -6689,8 +6688,8 @@ function tools_menu
 			echo -e "	If it is already installed, it will be deleted and reistalled."$CE""
 			echo -e ""
 			echo -e ""$BS"Do you want another tool to be added in the ehtools?"$CE""
-			echo -e ""$BS"Submit it as an issue on my github repo:"$CE""
-			echo -e "	"$YS"https://github.com/entynetproject/ehtools"$CE""
+			echo -e ""$BS"Submit it as an issue on the ehtools github repo:"$CE""
+			echo -e "    "$YS"https://github.com/entynetproject/ehtools"$CE""
 			echo -e ""
 			echo -e ""
 			echo -e "$PAKTGB"
@@ -9730,7 +9729,7 @@ function main_options
 	elif [[ "$YORNAA" = "ks" ]]
 	then
 		keyboard_shortcuts
-	elif [[ "$YORNAA" = "interface" ]]
+	elif [[ "$YORNAA" = "28" ]]
 	then
 		interface_menu
 	elif [[ "$YORNAA" = "9" ]]
@@ -9740,9 +9739,6 @@ function main_options
 	then
 		clear 
 		exec bash "$0"
-	elif [[ "$YORNAA" = "epasswd" ]]
-	then
-		epasswd
 	elif [[ "$YORNAA" = "1" ]]
 	then
 		enable_wlan
