@@ -435,7 +435,7 @@ Fixed install/reinstall menu bug!
 
 3.0.0
 Added login and password encryption
-Added KDE konsole support!
+Added KDE $xdesktop support!
 Added ehtools application and ehtapp utility
 Added a new utility named ehtkey (ehtools key)
 Updated ehtmod (ehtools modules)

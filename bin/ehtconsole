@@ -1712,16 +1712,9 @@ then
 		export PORTTCP
 		export PORTUDP
 		cd "$EPATH"/dev
-		if [[ -d /usr/share/konsole ]]
-		then
-		konsole --geometry 60x12+0+999999 -e ./dev1
-		konsole --geometry 60x20+999999+999999 -e ./dev21
-		konsole --geometry 60x20+999999+0 -e ./dev2
-		else
-		gnome-terminal --geometry 60x12+0+999999 -e ./dev1
-		gnome-terminal --geometry 60x20+999999+999999 -e ./dev21
-		gnome-terminal --geometry 60x20+999999+0 -e ./dev2
-		fi
+		$xdesktop --geometry 60x12+0+999999 -e ./dev1
+		$xdesktop --geometry 60x20+999999+999999 -e ./dev21
+		$xdesktop --geometry 60x20+999999+0 -e ./dev2
 		sslstrip -l $PORTTCP -w /root/sslstrip.log
 		echo -e "$PAKTGB"
 		$READAK
@@ -1750,16 +1743,9 @@ then
 		export PORTTCP
 		export PORTUDP
 		cd "$EPATH"/dev
-		if [[ -d /usr/share/konsole ]]
-		then
-		konsole --geometry 60x25+0+999999 -e ./dev1
-		konsole --geometry 60x25+999999+0 -e ./dev2
-		konsole --geometry 60x25+999999+999999 -e ./dev21
-		else
-		gnome-terminal --geometry 60x25+0+999999 -e ./dev1
-		gnome-terminal --geometry 60x25+999999+0 -e ./dev2
-		gnome-terminal --geometry 60x25+999999+999999 -e ./dev21
-		fi
+		$xdesktop --geometry 60x25+0+999999 -e ./dev1
+		$xdesktop --geometry 60x25+999999+0 -e ./dev2
+		$xdesktop --geometry 60x25+999999+999999 -e ./dev21
 		sslstrip -l $PORTTCP -w /root/sslstrip.log
 		echo -e "$PAKTGB"
 		$READAK
@@ -1858,14 +1844,8 @@ then
 		export TARGIP
 		export GATENM
 		cd "$EPATH"/dev
-		if [[ -d /usr/share/konsole ]]
-		then
-		konsole --geometry 60x15+999999+0 -e ./dev2
-		konsole --geometry 60x15+999999+999999 -e ./dev21
-		else
-		gnome-terminal --geometry 60x15+999999+0 -e ./dev2
-		gnome-terminal --geometry 60x15+999999+999999 -e ./dev21
-		fi
+		$xdesktop --geometry 60x15+999999+0 -e ./dev2
+		$xdesktop --geometry 60x15+999999+999999 -e ./dev21
 	#~ elif [[ "$MITMSET" = "4" ]]
 	#~ then
 		#~ service apache2 start
@@ -1878,12 +1858,7 @@ then
 		ip addr | grep '/24' | awk -F "inet " {'print $2'} | cut -d '/' -f1
 		echo -e "$PAKTC"
 		$READAK
-		if [[ -d /usr/share/konsole ]]
-		then
-		konsole --geometry 66x40+999999+0 -e setoolkit
-		else
-		gnome-terminal --geometry 66x40+999999+0 -e setoolkit
-		fi
+		$xdesktop --geometry 66x40+999999+0 -e setoolkit
 	elif [[ "$MITMSET" = "5" ]]
 	then
 		echo -e "Making you a hosts.txt file"
@@ -4483,12 +4458,7 @@ function remote_access
 		if [[ -d /root/ARCANUS ]]
 		then
 		cd /root/ARCANUS
-		if [[ -d /usr/share/konsole ]]
-		then
-		gnome-terminal -e "./ARCANUS & disown"
-		else
-		gnome-terminal -e "./ARCANUS & disown"
-		fi
+		$xdesktop -e "./ARCANUS & disown"
 		else	
 			echo -e "$TNI"
 			read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
@@ -6540,7 +6510,7 @@ function update_ehtools
 				echo -e "$PAKTC"
 				$READAK
 				cd "$EPATH"
-				gnome-terminal -e ./install.sh
+				$xdesktop -e ./install.sh
 				clear 
 				sleep 1
 				rm -rff /root/ehtold
@@ -7069,12 +7039,7 @@ function new_terminal
 			sleep 1
 			FJC=0
 			export FJC
-			if [[ -d /usr/share/konsole ]]
-			then
-			konsole --geometry 87x35+9999+0 -- /etc/ehtools/modules/eht/eht1
-			else
-			gnome-terminal --geometry 87x35+9999+0 -- /etc/ehtools/modules/eht/eht1
-			fi
+			$xdesktop --geometry 87x35+9999+0 -- /etc/ehtools/modules/eht/eht1
 			sleep 1
 			exec bash "$0"
 			break
@@ -7083,12 +7048,7 @@ function new_terminal
 			clear
 			echo -e "Moving into new terminal..."
 			sleep 1
-			if [[ -d /usr/share/konsole ]]
-			then
-			konsole --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht3
-			else
-			gnome-terminal --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht3
-			fi
+			$xdesktop --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht3
 			sleep 1
 			exec bash "$0"
 			break
@@ -7096,12 +7056,7 @@ function new_terminal
 		then
 			echo -e "Moving into new terminal..."
 			sleep 1
-			if [[ -d /usr/share/konsole ]]
-			then
-			konsole --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht4
-			else
-			gnome-terminal --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht4
-			fi
+			$xdesktop --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht4
 			sleep 1
 			exec bash "$0"
 			break
