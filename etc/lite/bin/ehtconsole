@@ -338,28 +338,28 @@ function banner
       echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
       echo -e "                                                                            "                                                                   
 	                                                                  
-       echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways"$CE" "$RS"|"$CE"  "$YS"scan"$CE") Arp-scan network"
+       echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways"$CE"   "$YS"scan"$CE") Arp-scan network"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
-		echo -e ""$RS" 1"$CE") Enable "$RS"$WLANN"$CE"${SPACESN}"$RS"d1"$CE") Disable "$RS"$WLANN"$CE"${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
-		echo -e ""$RS" 2"$CE") Enable "$RS"$WLANNM"$CE"${SPACESM}"$RS"d2"$CE") Disable "$RS"$WLANNM"$CE"${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") Stop monitor mode"
+		echo -e ""$RS" 1"$CE") Enable "$RS"$WLANN"$CE"${SPACESN}"$RS"d1"$CE") Disable "$RS"$WLANN"$CE"${SPACESN}   "$YS"start"$CE") Start monitor mode"
+		echo -e ""$RS" 2"$CE") Enable "$RS"$WLANNM"$CE"${SPACESM}"$RS"d2"$CE") Disable "$RS"$WLANNM"$CE"${SPACESM}    "$YS"stop"$CE") Stop monitor mode"
 	else
-		echo -e ""$YS" 1"$CE") Enable $WLANN${SPACESN}"$YS"d1"$CE") Disable $WLANN${SPACESN}  "$RS"|"$CE" "$YS"start"$CE") Start monitor mode"
-		echo -e ""$YS" 2"$CE") Enable $WLANNM${SPACESM}"$YS"d2"$CE") Disable $WLANNM${SPACESM}  "$RS"|"$CE"  "$YS"stop"$CE") Stop monitor mode"
+		echo -e ""$YS" 1"$CE") Enable $WLANN${SPACESN}"$YS"d1"$CE") Disable $WLANN${SPACESN}   "$YS"start"$CE") Start monitor mode"
+		echo -e ""$YS" 2"$CE") Enable $WLANNM${SPACESM}"$YS"d2"$CE") Disable $WLANNM${SPACESM}    "$YS"stop"$CE") Stop monitor mode"
 	fi
 	if [[ -f /usr/bin/anonym8 ]]
 	then
-	echo -e ""$YS" 3"$CE") Enable anonym8    "$YS"d3"$CE") Disable anonym8      "$RS"|"$CE""$YS"errors"$CE") Fix some errors"
+	echo -e ""$YS" 3"$CE") Enable anonym8    "$YS"d3"$CE") Disable anonym8      "$YS"errors"$CE") Fix some errors"
 	else
-	echo -e ""$RS" 3"$CE") Enable anonym8    "$RS"d3"$CE") Disable anonym8      "$RS"|"$CE""$YS"errors"$CE") Fix some errors"
+	echo -e ""$RS" 3"$CE") Enable anonym8    "$RS"d3"$CE") Disable anonym8      "$YS"errors"$CE") Fix some errors"
 	fi
 	if [[ -f /usr/bin/anonsurf ]]
 	then
-	echo -e ""$YS" 4"$CE") Enable anonsurf   "$YS"d4"$CE") Disable anonsurf     "$RS"|"$CE""$YS"update"$CE") Check for updates"
-	echo -e ""$YS" 5"$CE") Anonsurf's status "$YS"d5"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"s"$CE") Go to settings menu"
+	echo -e ""$YS" 4"$CE") Enable anonsurf   "$YS"d4"$CE") Disable anonsurf     "$YS"update"$CE") Check for updates"
+	echo -e ""$YS" 5"$CE") Anonsurf's status "$YS"d5"$CE") Restart anonsurf          "$YS"s"$CE") Go to settings menu"
 	else
-	echo -e ""$RS" 4"$CE") Enable anonsurf   "$RS"d4"$CE") Disable anonsurf     "$RS"|"$CE""$YS"update"$CE") check for updates"
-	echo -e ""$RS" 5"$CE") Anonsurf's status "$RS"d5"$CE") Restart anonsurf     "$RS"|"$CE"     "$YS"s"$CE") Go to settings menu"
+	echo -e ""$RS" 4"$CE") Enable anonsurf   "$RS"d4"$CE") Disable anonsurf     "$YS"update"$CE") check for updates"
+	echo -e ""$RS" 5"$CE") Anonsurf's status "$RS"d5"$CE") Restart anonsurf          "$YS"s"$CE") Go to settings menu"
 	fi
 	echo -e ""$YS" 6"$CE") View public IP"
 	echo -e ""$YS" 7"$CE") View MAC"
