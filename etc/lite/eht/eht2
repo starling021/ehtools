@@ -398,7 +398,7 @@ do
 			then
 				export Del
 				export HANDCAP
-				xterm -geometry 50x20+0+999999 -T "AUTOCHECK FOR HANDSHAKE" -e "eht21" & disown
+				xterm -geometry 50x20+0+999999 -T "AUTOCHECK FOR HANDSHAKE" -e "/etc/ehtools/modules/eht/eht21" & disown
 			else
 				echo -e ""$RS"eht2 returned a fatal error (Invalid interval)"$CE""
 				sleep 2

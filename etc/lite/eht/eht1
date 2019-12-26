@@ -135,9 +135,9 @@ then
 	fi
 	if [[ -d /usr/share/konsole ]]
 	then
-	konsole --geometry 70x10+0+0 -- eht2
+	konsole --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
 	else
-	gnome-terminal --geometry 70x10+0+0 -- eht2
+	gnome-terminal --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
 	fi
 	HANDFORDEAUTH="/root/handshakes/$HANDF-01.csv"
 	export HANDFORDEAUTH
@@ -178,9 +178,9 @@ else
 	HANDFORDEAUTH="/root/handshakes/deauth-01.csv"
 	if [[ -d /usr/share/konsole ]]
 	then
-	konsole --geometry 70x10+0+0 -- eht2
+	konsole --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
 	else
-	gnome-terminal --geometry 70x10+0+0 -- eht2
+	gnome-terminal --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
 	fi
 	airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM
 	if [[ -f "$EPATH"/dpid.txt ]]
@@ -221,9 +221,9 @@ else
 		fi
 		if [[ -d /usr/share/konsole ]]
 	    then
-	    konsole --geometry 70x10+0+0 -- eht2
+	    konsole --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
 	    else
-	    gnome-terminal --geometry 70x10+0+0 -- eht2
+	    gnome-terminal --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
 	    fi
 		airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM
 		if [[ -f "$EPATH"/dpid.txt ]]
@@ -423,9 +423,9 @@ function capture_again
 			then
 				if [[ -d /usr/share/konsole ]]
 	            then
-	            konsole --geometry 70x10+0+0 -- eht2
+	            konsole --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
 	            else
-	            gnome-terminal --geometry 70x10+0+0 -- eht2
+	            gnome-terminal --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
 	            fi
 				airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM
 				validhandshake
