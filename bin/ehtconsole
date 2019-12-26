@@ -6896,19 +6896,19 @@ while true
 do
 	sm=0
 	clear
-	if [[ ! -d /bin/ehtools/smtp ]]
+	if [[ ! -d /etc/ehtools/smtp ]]
 	then
-		mkdir /bin/ehtools/smtp
+		mkdir /etc/ehtools/smtp
 	fi
 	echo -e ""$RS"YOU SHOULD FIRST SIGN UP ON https://www.smtp2go.com AND VERIFY YOUR EMAIL."$CE""
 	echo -e ""$RS"THEN GO TO https://app.smtp2go.com/settings/users AND MAKE A USERNAME AND PASS."$CE""
 	echo -e ""$RS"      ########ALWAYS HAVE PERMISSION OF THE EMAILS YOU SPOOF########"$CE""
 	echo -e ""$RS"      ########DONT SEND VIRUSES , PHISHING OR ILLEGAL THINGS########"$CE""
-	if [[ ! -f /bin/ehtools/smtp/smtpemail.txt ]]
+	if [[ ! -f /etc/ehtools/smtp/smtpemail.txt ]]
 	then
 		echo -e ""$YS" 1"$CE") Set your SMTP username and pass     "$RS"NOT SET"$CE""
 	else
-		read smtpemail < /bin/ehtools/smtp/smtpemail.txt
+		read smtpemail < /etc/ehtools/smtp/smtpemail.txt
 		echo -e ""$YS" 1"$CE") Set your SMTP username and pass     Current: "$YS""$smtpemail""$CE""
 	fi
 	echo -e ""$YS" 2"$CE") Send a spoofed email"
@@ -6925,9 +6925,9 @@ do
 		echo -e "Enter your SMTP password (find it here: https://app.smtp2go.com/settings/users): "
 		read -e -p $'(\033[4;93mpassword\033[0m)> ' SMTPPASS
 		clear
-		echo "$SMTPEMAIL" > /bin/ehtools/smtp/smtpemail.txt
-		echo "$SMTPPASS" > /bin/ehtools/smtp/smtppass.txt 
-		echo -e "Credentials saved on /bin/ehtools/smtp"
+		echo "$SMTPEMAIL" > /etc/ehtools/smtp/smtpemail.txt
+		echo "$SMTPPASS" > /etc/ehtools/smtp/smtppass.txt 
+		echo -e "Credentials saved on /etc/ehtools/smtp"
 		sleep 3
 	elif [[ "$SMTP" = "4" ]]
 	then
@@ -6938,16 +6938,16 @@ do
 		read -e -n 1 -r
 	elif [[ "$SMTP" = "3" ]]
 	then
-		if [[ -f /bin/ehtools/smtp/smtpemail.txt ]]
+		if [[ -f /etc/ehtools/smtp/smtpemail.txt ]]
 		then
-			rm /bin/ehtools/smtp/smtpemail.txt
+			rm /etc/ehtools/smtp/smtpemail.txt
 			echo -e "Username removed!"
 		else
 			echo -e "Not username found!"
 		fi
-		if [[ -f /bin/ehtools/smtp/smtppass.txt ]]
+		if [[ -f /etc/ehtools/smtp/smtppass.txt ]]
 		then
-			rm /bin/ehtools/smtp/smtppass.txt
+			rm /etc/ehtools/smtp/smtppass.txt
 			echo -e "Password removed!"
 		else
 			echo -e "Not password found!"
@@ -6974,12 +6974,12 @@ do
 		while true
 		do
 		clear
-		if [[ ! -f /bin/ehtools/smtp/smtpemail.txt ]]
+		if [[ ! -f /etc/ehtools/smtp/smtpemail.txt ]]
 		then
 			echo -e "No SMTP username found."
 			sm=1
 		fi
-		if [[ ! -f /bin/ehtools/smtp/smtppass.txt ]]
+		if [[ ! -f /etc/ehtools/smtp/smtppass.txt ]]
 		then
 			echo -e "No SMTP pass found."
 			sm=1
@@ -6988,8 +6988,8 @@ do
 		then
 			break
 		fi
-		read smtppass < /bin/ehtools/smtp/smtppass.txt
-		read smtpemail < /bin/ehtools/smtp/smtpemail.txt
+		read smtppass < /etc/ehtools/smtp/smtppass.txt
+		read smtpemail < /etc/ehtools/smtp/smtpemail.txt
 		clear
 		echo -e "Your username is "$RS""$smtpemail""$CE""
 		echo -e ""

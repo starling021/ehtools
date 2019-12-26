@@ -87,13 +87,12 @@ fi
 fi
 
 {
-chattr +i /bin/ehtools/ehtools
-chattr +i /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/epasswd
-chattr +i /bin/ehtools/ehtkey
-chattr +i /bin/ehtools/ehtmod
-chattr +i /bin/ehtools/ehtapp
-chattr +i /bin/ehtools/uiecache
+chattr +i /bin/ehtools
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /bin/epasswd
+chattr +i /bin/ehtkey
+chattr +i /bin/ehtmod
+chattr +i /bin/ehtapp
 chattr +i /etc/ehtools/login
 chattr +i /etc/ehtools/password
 chattr +i /etc/ehtools

@@ -198,7 +198,6 @@ printf '\033]2;Uninstalling...\a'
 	      rm /root/Desktop/ehtools.desktop
 	      rm -rf /dev/config
 	      rm -rf /root/ehtools
-	      rm -rf /bin/ehtools
 	      rm -rf /etc/ehtools
 	      rm -rf /root/handshakes
 	      rm -rf /root/wordlists

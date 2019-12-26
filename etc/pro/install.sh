@@ -131,25 +131,24 @@ chmod +x /root/ehtools/bin/ehtmod
 chmod +x /root/ehtools/bin/ehtkey
 chmod +x /root/ehtools/bin/ehtconsole
 chmod +x /root/ehtools/bin/ehtapp
-chmod +x /root/ehtools/bin/uiecache
 chmod +x /root/ehtools/bin/epasswd
-mkdir /bin/ehtools
 cd /root/ehtools
-cp /root/ehtools/bin/ehtools /bin/ehtools
-chmod +x /bin/ehtools/ehtools
-cp /root/ehtools/bin/ehtkey /bin/ehtools
-chmod +x /bin/ehtools/ehtkey
-cp /root/ehtools/bin/ehtapp /bin/ehtools
-chmod +x /bin/ehtools/ehtapp
-cp /root/ehtools/bin/epasswd /bin/ehtools
-chmod +x /bin/ehtools/epasswd
-cp /root/ehtools/bin/ehtmod /bin/ehtools
-chmod +x /bin/ehtools/ehtmod
-cp /root/ehtools/bin/uiecache /bin/ehtools
-chmod +x /bin/ehtools/uiecache
+cp /root/ehtools/bin/ehtools /bin
+chmod +x /bin/ehtools
+cp /root/ehtools/bin/ehtkey /bin
+chmod +x /bin/ehtkey
+cp /root/ehtools/bin/ehtapp /bin
+chmod +x /bin/ehtapp
+cp /root/ehtools/bin/epasswd /bin
+chmod +x /bin/epasswd
+cp /root/ehtools/bin/ehtmod /bin
+chmod +x /bin/ehtmod
 cp /root/ehtools/etc/root/password /etc/ehtools/root
 mkdir /etc/ehtools/app
 cp /root/ehtools/app/ehtools.png /etc/ehtools/app
+mkdir /etc/ehtools/ehtoolsd
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
 clear
 
 apt-get -y install ncurses-dev
@@ -169,10 +168,6 @@ then
 else
 	sleep 0
 fi
-	export PATH=/bin/ehtools:$PATH
-	sleep 1
-	echo "export PATH=/bin/ehtools:$PATH" >> ~/.bashrc
-	sleep 1
 clear
 sleep 3
 echo -e "Do you want to install ehtools modules now?(\033[1;33myes\033[0m/\033[1;33mno\033[0m):"
@@ -202,7 +197,7 @@ then
 fi
 
 clear
-printf '\033]2;ehtools INSTALLER\a'
+printf '\033]2;install.sh\a'
 sleep 3
 echo -e "Do you want to protect ehtools with password?(\033[1;33myes\033[0m/\033[1;33mno\033[0m):"
 echo -e "This function will protect ehtools with login and password!"
@@ -327,7 +322,7 @@ chmod +x libenc
 fi
 
 clear
-printf '\033]2;ehtools INSTALLER\a'
+printf '\033]2;install.sh\a'
 sleep 3
 echo -e "Do you want to create ehtools application(\033[1;33myes\033[0m/\033[1;33mno\033[0m):"
 echo -e "This will allow you to run ehtools via the application!"
@@ -351,7 +346,7 @@ fi
 
 
 clear
-printf '\033]2;ehtools INSTALLER\a'
+printf '\033]2;install.sh\a'
 sleep 3
 echo -e "Open a NEW terminal and type '"$YS"ehtools"$CE"' to launch the framework"
 sleep 0.5

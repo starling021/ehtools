@@ -173,7 +173,7 @@ CAT="$( cat /etc/ehtools/password )"
 clear
 if [[ "$CAT" = "" ]]
 then
-if [[ -f /bin/ehtools/ehtconsole ]]
+if [[ -f /etc/ehtools/ehtoolsd/ehtconsole ]]
 then
 {
 chattr -i /etc/ehtools
@@ -181,13 +181,13 @@ cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
+chattr -i /etc/ehtools/ehtoolsd/ehtconsole
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 sleep 0
-ehtconsole
+/etc/ehtools/ehtoolsd/ehtconsole
 exit
 else
 {
@@ -196,14 +196,14 @@ cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
-cp /root/ehtools/bin/ehtconsole /bin/ehtools
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
+chattr -i /etc/ehtools/ehtoolsd/ehtconsole
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 sleep 0
-ehtconsole
+/etc/ehtools/ehtoolsd/ehtconsole
 exit
 fi
 fi
@@ -274,7 +274,7 @@ sleep 0
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
 
 done
-if [[ -f /bin/ehtools/ehtconsole ]]
+if [[ -f /etc/ehtools/ehtoolsd/ehtconsole ]]
 then
 {
 chattr -i /etc/ehtools
@@ -282,13 +282,13 @@ cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
+chattr -i /etc/ehtools/ehtoolsd/ehtconsole
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 sleep 0
-ehtconsole
+/etc/ehtools/ehtoolsd/ehtconsole
 exit
 else
 {
@@ -297,14 +297,14 @@ cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
-cp /root/ehtools/bin/ehtconsole /bin/ehtools
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
+chattr -i /etc/ehtools/ehtoolsd/ehtconsole
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 sleep 0
-ehtconsole
+/etc/ehtools/ehtoolsd/ehtconsole
 exit
 fi
 
@@ -348,7 +348,7 @@ sleep 0
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
 
 done
-if [[ -f /bin/ehtools/ehtconsole ]]
+if [[ -f /etc/ehtools/ehtoolsd/ehtconsole ]]
 then
 {
 chattr -i /etc/ehtools
@@ -356,13 +356,13 @@ cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
+chattr -i /etc/ehtools/ehtoolsd/ehtconsole
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 sleep 0
-ehtconsole
+/etc/ehtools/ehtoolsd/ehtconsole
 exit
 else
 {
@@ -371,14 +371,14 @@ cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
-cp /root/ehtools/bin/ehtconsole /bin/ehtools
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
+chattr -i /etc/ehtools/ehtoolsd/ehtconsole
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 sleep 0
-ehtconsole
+/etc/ehtools/ehtoolsd/ehtconsole
 exit
 fi
 
@@ -434,7 +434,7 @@ sleep 0
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
 
 done
-if [[ -f /bin/ehtools/ehtconsole ]]
+if [[ -f /etc/ehtools/ehtoolsd/ehtconsole ]]
 then
 {
 chattr -i /etc/ehtools
@@ -442,13 +442,13 @@ cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
+chattr -i /etc/ehtools/ehtoolsd/ehtconsole
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 sleep 0
-ehtconsole
+/etc/ehtools/ehtoolsd/ehtconsole
 exit
 else
 {
@@ -457,14 +457,14 @@ cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
-cp /root/ehtools/bin/ehtconsole /bin/ehtools
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
+chattr -i /etc/ehtools/ehtoolsd/ehtconsole
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 sleep 0
-ehtconsole
+/etc/ehtools/ehtoolsd/ehtconsole
 exit
 fi
 
@@ -509,7 +509,7 @@ read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
 
 done
 
-if [[ -f /bin/ehtools/ehtconsole ]]
+if [[ -f /etc/ehtools/ehtoolsd/ehtconsole ]]
 then
 {
 chattr -i /etc/ehtools
@@ -517,13 +517,13 @@ cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
+chattr -i /etc/ehtools/ehtoolsd/ehtconsole
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 sleep 0
-ehtconsole
+/etc/ehtools/ehtoolsd/ehtconsole
 exit
 else
 {
@@ -532,14 +532,14 @@ cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
 ./libconf
-cp /root/ehtools/bin/ehtconsole /bin/ehtools
-chattr -i /bin/ehtools/ehtconsole
-chmod +x /bin/ehtools/ehtconsole
-chattr +i /bin/ehtools/ehtconsole
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
+chattr -i /etc/ehtools/ehtoolsd/ehtconsole
+chmod +x /etc/ehtools/ehtoolsd/ehtconsole
+chattr +i /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools
 } &> /dev/null
 sleep 0
-ehtconsole
+/etc/ehtools/ehtoolsd/ehtconsole
 exit
 fi
 

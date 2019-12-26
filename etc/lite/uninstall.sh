@@ -134,7 +134,6 @@ printf '\033]2;Uninstalling...\a'
 	      rm /usr/share/applications/ehtools.desktop
 	      rm /root/Desktop/ehtools.desktop
 	      rm -rf /root/ehtools
-	      rm -rf /bin/ehtools
 	      rm -rf /etc/ehtools
 	      rm -rf /root/handshakes
 	      rm -rf /root/wordlists
