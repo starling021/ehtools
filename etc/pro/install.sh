@@ -294,9 +294,6 @@ done
 
 sleep 5
 echo -e
-echo -e
-
-uiecache --all
 sleep 3
 fi
 fi
