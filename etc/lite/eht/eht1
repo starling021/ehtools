@@ -133,7 +133,7 @@ then
 	then
 		rm $HANDCAP
 	fi
-	$xdesktop --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
+	$xdesktop --geometry 70x10+0+0 -e /etc/ehtools/modules/eht/eht2
 	HANDFORDEAUTH="/root/handshakes/$HANDF-01.csv"
 	export HANDFORDEAUTH
 	airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM # & jobs -p > /root/ehtools/dpidd.txt
@@ -171,7 +171,7 @@ else
 	fi
 	HANDF="deauth"
 	HANDFORDEAUTH="/root/handshakes/deauth-01.csv"
-	$xdesktop --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
+	$xdesktop --geometry 70x10+0+0 -e /etc/ehtools/modules/eht/eht2
 	airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM
 	if [[ -f "$EPATH"/dpid.txt ]]
 	then
@@ -209,7 +209,7 @@ else
 		then
 			rm $HANDFFP
 		fi
-	    $xdesktop --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
+	    $xdesktop --geometry 70x10+0+0 -e /etc/ehtools/modules/eht/eht2
 		airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM
 		if [[ -f "$EPATH"/dpid.txt ]]
 		then
@@ -406,7 +406,7 @@ function capture_again
 			read -e -p $'(\033[4;93mcapture\033[0m\en)> ' CAGAIN
 			if [[ ! "$CAGAIN" = "n" ]]
 			then
-	            $xdesktop --geometry 70x10+0+0 -- /etc/ehtools/modules/eht/eht2
+	            $xdesktop --geometry 70x10+0+0 -e /etc/ehtools/modules/eht/eht2
 				airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/$HANDF $WLANNM
 				validhandshake
 				exec bash "$0"

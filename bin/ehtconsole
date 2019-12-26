@@ -7041,7 +7041,7 @@ function new_terminal
 			sleep 1
 			FJC=0
 			export FJC
-			$xdesktop --geometry 87x35+9999+0 -- /etc/ehtools/modules/eht/eht1
+			$xdesktop --geometry 87x35+9999+0 -e /etc/ehtools/modules/eht/eht1
 			sleep 1
 			exec bash "$0"
 			break
@@ -7050,7 +7050,7 @@ function new_terminal
 			clear
 			echo -e "Moving into new terminal..."
 			sleep 1
-			$xdesktop --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht3
+			$xdesktop --geometry 80x25+9999+0 -e /etc/ehtools/modules/eht/eht3
 			sleep 1
 			exec bash "$0"
 			break
@@ -7058,7 +7058,7 @@ function new_terminal
 		then
 			echo -e "Moving into new terminal..."
 			sleep 1
-			$xdesktop --geometry 80x25+9999+0 -- /etc/ehtools/modules/eht/eht4
+			$xdesktop --geometry 80x25+9999+0 -e /etc/ehtools/modules/eht/eht4
 			sleep 1
 			exec bash "$0"
 			break
