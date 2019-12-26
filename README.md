@@ -297,11 +297,11 @@ ehtmod (ehtools modules) is an utility that adds permissions or the ability to c
     Usage: ehtmod [OPTION...]
     Copyright (C) 2015, Entynetproject. All Rights Reserved.
 
-    -i  --install         Install ehtools modules to /bin/ehtools.
+    -i  --install         Install ehtools modules.
     -t  --take    <name>  Take a new ehtools modules snapshot.
     -r  --restore <name>  Restore saved ehtools modules snapshot.
     -d  --delete  <name>  Delete saved ehtools modules snapshot.
-    -u  --uninstall       Uninstall ehtools modules from /bin/ehtools.
+    -u  --uninstall       Uninstall ehtools modules.
     -h  --help            Give this help list.
          
 To install ehtools modules you need to execute the following command:
@@ -314,8 +314,7 @@ To install ehtools modules you need to execute the following command:
 
 ## Ehtools Modules Snapshot (EMS) 
 
-    INFO: EMS is a saved ehtools modules data from /bin/ehtools and 
-    /root/ehtools/eht (this is a saved ehtools modules data), you can 
+    INFO: EMS is a saved ehtools modules data, you can 
     take it using the ehtmod utility v1.9 and restore it.
     
 To take ehtools modules snapshot you need to execute the following command. You need to enter the name of the ehtools modules snapshot you want to take (example: snapshot1):
@@ -324,10 +323,9 @@ To take ehtools modules snapshot you need to execute the following command. You 
 
 ## Ehtools Modules Restoration (EMR) 
 
-    INFO: EMR is an operation that removing /bin/ehtools and 
-    /root/ehtools/eht and restoring it from the saved ehtools modules 
-    snapshot, you can restore it using the ehtmod utility v1.9, but ESR will 
-    remove all your old ehtools modules data from /bin/ehtools and /root/ehtools/eht!
+    INFO: EMR is an operation that removing modules and restoring it from the 
+    saved ehtools modules snapshot, you can restore it using the ehtmod utility 
+    v1.9, but ESR will remove all your old ehtools modules data!
 
 To restore ehtools modules snapshot you need to execute the following command. You need to enter the name of the saved ehtools modules snapshot (example: snapshot1):
 
