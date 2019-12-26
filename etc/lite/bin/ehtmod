@@ -36,11 +36,11 @@ then
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2015, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   -i  --install         Install ehtools modules to /bin/ehtools."
+echo -e "   -i  --install         Install ehtools modules."
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
 echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
 echo -e "   -d  --delete  <name>  Delete saved ehtools modules snapshot."
-echo -e "   -u  --uninstall       Uninstall ehtools modules from /bin/ehtools."
+echo -e "   -u  --uninstall       Uninstall ehtools modules from."
 echo -e "   -h  --help            Give this help list."
 exit
 
@@ -59,7 +59,11 @@ sleep 2
 echo -e "Error, snapshots directory is not found!"
 sleep 2
 echo -e "Making /etc/ehtools/modules/snapshots..."
+{
+chattr -i /etc/ehtools
 mkdir /etc/ehtools/modules/snapshots
+chattr +i /etc/ehtools
+}
 sleep 0.5
 echo -e "\033[4;32mSuccess!\033[0m"
 sleep 1
@@ -104,41 +108,15 @@ sleep 5
 echo -e
 sleep 0.5
 {
-cd /root/ehtools
-cd lib
-chmod +x libunlogin
-./libunlogin
-chmod +x libunchattr
-./libunchattr
-chmod +x libunconf
-./libunconf
-rm -rf /bin/ehtools
-cp -r /etc/ehtools/modules/snapshots/$2/ehtools /bin
-rm -rf /root/ehtools/eht
-cp -r /etc/ehtools/modules/snapshots/$2/eht /root/ehtools
-rm /bin/ehtools/eht1
-rm /bin/ehtools/eht2
-rm /bin/ehtools/eht3
-rm /bin/ehtools/eht31
-rm /bin/ehtools/eht21
-cp /etc/ehtools/modules/snapshots/$2/eht/eht1 /bin/ehtools
-chmod +x /bin/ehtools/eht1
-cp /etc/ehtools/modules/snapshots/$2/eht/eht2 /bin/ehtools
-chmod +x /bin/ehtools/eht2
-cp /etc/ehtools/modules/snapshots/$2/eht/eht3 /bin/ehtools
-chmod +x /bin/ehtools/eht3
-cp /etc/ehtools/modules/snapshots/$2/eht/eht31 /bin/ehtools
-chmod +x /bin/ehtools/eht31
-cp /etc/ehtools/modules/snapshots/$2/eht/eht21 /bin/ehtools
-chmod +x /bin/ehtools/eht21
-cd /root/ehtools
-cd lib
-chmod +x liblogin
-./liblogin
-chmod +x libchattr
-./libchattr
-chmod +x libconf
-./libconf
+chatt -i /etc/ehtools
+rm -r /etc/ehtools/modules/eht
+cp -r /etc/ehtools/modules/snapshots/$2/eht /etc/ehtools/modules
+chmod +x /etc/ehtools/modules/eht/eht1
+chmod +x /etc/ehtools/modules/eht/eht2
+chmod +x /etc/ehtools/modules/eht/eht3
+chmod +x /etc/ehtools/modules/eht/eht31
+chmod +x /etc/ehtools/modules/eht/eht21
+chattr +i /etc/ehtools
 } &> /dev/null
 sleep 2
 echo -e "\033[4;32mSuccess!\033[0m"
@@ -174,7 +152,11 @@ sleep 2
 echo -e "Error, snapshots directory is not found!"
 sleep 2
 echo -e "Making /etc/ehtools/modules/snapshots..."
+{
+chattr -i /etc/ehtools
 mkdir /etc/ehtools/modules/snapshots
+chattr +i /etc/ehtools
+} &> /dev/null
 sleep 0.5
 echo -e "\033[4;32mSuccess!\033[0m"
 sleep 1
@@ -219,7 +201,9 @@ sleep 5
 echo -e
 sleep 0.5
 {
+chattr -i /etc/ehtools
 rm -rf /etc/ehtools/modules/snapshots/$2
+chattr +i /etc/ehtools
 } &> /dev/null
 sleep 2
 echo -e "\033[4;32mSuccess!\033[0m"
@@ -255,7 +239,11 @@ sleep 2
 echo -e "Error, snapshots directory is not found!"
 sleep 2
 echo -e "Making /etc/ehtools/modules/snapshots..."
+{
+chattr -i /etc/ehtools
 mkdir /etc/ehtools/modules/snapshots
+chattr +i /etc/ehtools
+} &> /dev/null
 sleep 0.5
 echo -e "\033[4;32mSuccess!\033[0m"
 sleep 1
@@ -305,19 +293,23 @@ sleep 5
 echo -e
 sleep 0.5
 echo -e "Making /etc/ehtools/modules/snapshots/$2..."
+{
+chattr -i /etc/ehtools
 mkdir /etc/ehtools/modules/snapshots/$2
+chattr +i /etc/ehtools
+} &> /dev/null
 sleep 0.5
-echo -e "Trying to take snapshot of /root/ehtools/eht..."
-cp -r /root/ehtools/eht /etc/ehtools/modules/snapshots/$2
-sleep 0.5
-echo -e "Trying to take snapshot of /bin/ehtools..."
-cp -r /bin/ehtools /etc/ehtools/modules/snapshots/$2
+echo -e "Trying to take snapshot of /etc/ehtools/modules/eht..."
+{
+chattr -i /etc/ehtools
+cp -r /etc/ehtools/modules/eht /etc/ehtools/modules/snapshots/$2
 chmod +t /etc/ehtools/modules/snapshots
+chattr +i /etc/ehtools
+} &> /dev/null
 sleep 0.5
 echo -e "\033[4;32mSuccess!\033[0m"
 sleep 0.5
-echo -e "Snapshot 1: \033[4;32m/etc/ehtools/modules/snapshots/$2/eht\033[0m"
-echo -e "Snapshot 2: \033[4;32m/etc/ehtools/modules/snapshots/$2/ehtools\033[0m"
+echo -e "Snapshot: \033[4;32m/etc/ehtools/modules/snapshots/$2/eht\033[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
@@ -372,13 +364,9 @@ sleep 5
 echo -e
 sleep 0.3
 {
-chattr -i /bin/ehtools
-rm /bin/ehtools/eht1
-rm /bin/ehtools/eht2
-rm /bin/ehtools/eht3
-rm /bin/ehtools/eht21
-rm /bin/ehtools/eht31
+chattr -i /etc/ehtools
 rm -rf /etc/ehtools/modules
+chattr +i /etc/ehtools
 } &> /dev/null
 sleep 2
 echo -e "\033[4;32mSuccess!\033[0m"
@@ -407,6 +395,14 @@ clear
 sleep 3
 echo -e "Well, we are going to start!"
 sleep 2
+echo -e "Making /etc/ehtools/modules..."
+{
+chattr -i /etc/ehtools
+mkdir /etc/ehtools/modules
+mkdir /etc/ehtools/modules/eht
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0.5
 echo -e "\033[4;32mPreparing to install...\033[0m"
 sleep 1
 printf '\033]2;Installing...\a'
@@ -450,27 +446,28 @@ chmod +x /root/ehtools/eht/eht31
 sleep 0.5 
 echo -e "Setting up permissions..."
 sleep 0.5
-echo -e "Moving ehtools modules to /bin/ehtools..."
+echo -e "Moving ehtools modules to /etc/ehtools/modules/eht..."
 sleep 0.5
-cp /root/ehtools/eht/eht1 /bin/ehtools
-cp /root/ehtools/eht/eht2 /bin/ehtools
-cp /root/ehtools/eht/eht3 /bin/ehtools
-cp /root/ehtools/eht/eht21 /bin/ehtools
-cp /root/ehtools/eht/eht31 /bin/ehtools
-chmod +x /bin/ehtools/eht1
-chmod +x /bin/ehtools/eht2
-chmod +x /bin/ehtools/eht3
-chmod +x /bin/ehtools/eht21
-chmod +x /bin/ehtools/eht31
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/eht/eht1 /etc/ehtools/modules/eht
+cp /root/ehtools/eht/eht2 /etc/ehtools/modules/eht
+cp /root/ehtools/eht/eht3 /etc/ehtools/modules/eht
+cp /root/ehtools/eht/eht21 /etc/ehtools/modules/eht
+cp /root/ehtools/eht/eht31 /etc/ehtools/modules/eht
+chmod +x /etc/ehtools/modules/eht/eht1
+chmod +x /etc/ehtools/modules/eht/eht2
+chmod +x /etc/ehtools/modules/eht/eht3
+chmod +x /etc/ehtools/modules/eht/eht21
+chmod +x /etc/ehtools/modules/eht/eht31
+chattr +i /etc/ehtools
+} &> /dev/null
 sleep 0.5
-echo -e "Ehtools modules moved to /bin/ehtools with success!"
+echo -e "Ehtools modules moved to /etc/ehtools/modules/eht with success!"
 sleep 1
 echo -e "Cleaning caches..."
 sleep 3
 echo -e "\033[4;32mSuccess!\033[0m"
-sleep 0.5
-echo -e "Making /etc/ehtools/modules..."
-mkdir /etc/ehtools/modules
 sleep 0.5
 echo -e "Saving to /etc/ehtools/modules/.config..."
 echo eht1 >> /etc/ehtools/modules/.config
@@ -522,19 +519,23 @@ sleep 5
 echo -e
 sleep 0.5
 echo -e "Making /etc/ehtools/modules/snapshots/default_snapshot..."
+{
+chattr -i /etc/ehtools
 mkdir /etc/ehtools/modules/snapshots/default_snapshot
+chattr +i /etc/ehtools
+} &> /dev/null
 sleep 0.5
-echo -e "Trying to take snapshot of /root/ehtools/eht..."
-cp -r /root/ehtools/eht /etc/ehtools/modules/snapshots/default_snapshot
-sleep 0.5
-echo -e "Trying to take snapshot of /bin/ehtools..."
-cp -r /bin/ehtools /etc/ehtools/modules/snapshots/default_snapshot
+echo -e "Trying to take snapshot of /etc/ehtools/modules/eht..."
+{
+chattr -i /etc/ehtools
+cp -r /etc/ehtools/modules/eht /etc/ehtools/modules/snapshots/default_snapshot
 chmod +t /etc/ehtools/modules/snapshots
+chattr +i /etc/ehtools
+} &> /dev/null
 sleep 0.5
 echo -e "\033[4;32mSuccess!\033[0m"
 sleep 0.5
-echo -e "Snapshot 1: \033[4;32m/etc/ehtools/modules/snapshots/dafault_snapshot/eht\033[0m"
-echo -e "Snapshot 2: \033[4;32m/etc/ehtools/modules/snapshots/default_snapshot/ehtools\033[0m"
+echo -e "Snapshot: \033[4;32m/etc/ehtools/modules/snapshots/dafault_snapshot/eht\033[0m"
 sleep 0.5
 echo -e "Finishing and exiting..."
 sleep 5
@@ -544,10 +545,10 @@ fi
 echo -e "Usage: ehtmod [OPTION...]"
 echo -e "Copyright (C) 2015, Entynetproject. All Rights Reserved."
 echo -e
-echo -e "   -i  --install         Install ehtools modules to /bin/ehtools."
+echo -e "   -i  --install         Install ehtools modules."
 echo -e "   -t  --take    <name>  Take a new ehtools modules snapshot."
 echo -e "   -r  --restore <name>  Restore saved ehtools modules snapshot."
 echo -e "   -d  --delete  <name>  Delete saved ehtools modules snapshot."
-echo -e "   -u  --uninstall       Uninstall ehtools modules from /bin/ehtools."
+echo -e "   -u  --uninstall       Uninstall ehtools modules."
 echo -e "   -h  --help            Give this help list."
 exit
