@@ -290,22 +290,6 @@ There are two ways how to setup ehtools application:
 
 # Ehtools utilities
 
-> # uiecache | <img src="https://img.shields.io/badge/utility-uiecache-lightgray.svg">
-
-uiecache (uninstall ehtools cache) is an utility that can help you to clean/uninstall ehtools cache like login logs or .config files!
-
-    Usage: uiecache [OPTION...]
-    Copyright (C) 2015, Entynetproject. All Rights Reserved.
-
-       -a  --all          Uninstall all ehtools cache.
-       -p  --path <path>  Uninstall ehtools cache from your path.
-       -r  --restart      Restart all ehtools processes and services.                 
-       -h  --help         Give this help list.
-
-To clean/uninstall all ehtools cache you need to execute the following command:
-
-> uiecache -a
-
 > # ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
 ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
