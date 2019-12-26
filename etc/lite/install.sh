@@ -190,12 +190,12 @@ echo -e "["$RS"*"$CE"] "$RS"This user is reserved by the ehtools system!"$CE""
 sleep 0.5
 read -e -p $'(\033[4;93m(new)login\033[0m\en)> ' logins
 done
-touch login
+
 echo $logins >> /etc/ehtools/login
 
 sleep 0.5
 read -s -p $'(\033[4;93m(new)password\033[0m\en)> ' passwords
-touch password
+
 echo $passwords >> /etc/ehtools/password
 
 cd /root/ehtools/lib
