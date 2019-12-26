@@ -293,8 +293,6 @@ do
 done
 
 sleep 5
-echo -e
-sleep 3
 fi
 fi
 
