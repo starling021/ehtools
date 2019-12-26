@@ -43,10 +43,12 @@ function defaults_l
         } &> /dev/null
 	fi
 #wififb file
+	xdesktop="$(cat /root/ehtools/xdesktop/config.txt)"
 	wififbfile=""$EPATH"/wififb.txt"
 	wififbfileall=""$EPATH"/wififball.txt"
 	wififbpassfile=""$EPATH"/wififbpasswords.txt"
 	wififbpassfileall=""$EPATH"/wififbpasswordsall.txt"
+	export xdesktop
 	export wififbfile 
 	export wififbfileall
 	export wififbpassfile
