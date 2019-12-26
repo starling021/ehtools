@@ -112,6 +112,8 @@ exit
 fi
 fi
 
+printf '\033]2;install.sh\a'
+
 clear
 chmod +x /root/ehtools/eht/eht1
 chmod +x /root/ehtools/eht/eht2
@@ -166,6 +168,7 @@ else
 	sleep 0
 fi
 clear
+printf '\033]2;install.sh\a'
 sleep 3
 echo -e "What desktop shell do you use?"
 echo -e
@@ -204,6 +207,7 @@ chattr +i /etc/ehtools
 fi
 
 clear
+printf '\033]2;install.sh\a'
 sleep 3
 echo -e "Do you want to install ehtools modules now?(\033[1;33myes\033[0m/\033[1;33mno\033[0m):"
 echo -e "So without thinking install them now!"
