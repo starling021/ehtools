@@ -141,7 +141,7 @@ sleep 1
 printf '\033]2;Launching eht1...\a'
 echo -e "["$GNS"~"$CE"] "$GNS"Launching eht1..."$CE""
 sleep 1
-eht1
+/etc/ehtools/modules/eht/eht1
 exit
 
 
@@ -151,7 +151,7 @@ sleep 1
 printf '\033]2;Launching eht3...\a'
 echo -e "["$GNS"~"$CE"] "$GNS"Launching eht3..."$CE""
 sleep 1
-eht3
+/etc/ehtools/modules/eht/eht3
 exit
 
 elif [[ $1 = "-o" || $1 = "--options" ]]
