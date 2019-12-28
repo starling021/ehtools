@@ -383,7 +383,7 @@ function banner
 	fi
 	echo -e ""$YS" 7"$CE") View public IP"                                 
 	echo -e ""$YS" 8"$CE") View MAC"
-	echo -e ""$YS" 9"$CE") Tools             "$YS"15"$CE") Spoof email              "$QA"22"$CE") Show bandwidth"
+	echo -e ""$YS" 9"$CE") Tools             "$YS"15"$CE") Spoof EMAIL              "$QA"22"$CE") Show bandwidth"
 	if [[ -f /root/ngrok ]]
 	then
 		echo -e ""$YS"10"$CE") Handshake         "$YS"16"$CE") Ngrok port forward       "$QS"23"$CE") Arissploit"
@@ -392,12 +392,12 @@ function banner
 	fi
 	if [[ -f /usr/local/bin/howdoi ]]
 	then
-		echo -e ""$YS"11"$CE") Find WPS pin      "$YS"17"$CE") Ask (Howdoi tool)"    "$YS"24"$CE") Reboot computer"
+		echo -e ""$YS"11"$CE") Find WPS pin      "$YS"17"$CE") Ask (Howdoi tool)    "$YS"24"$CE") Reboot computer"
 	else
-		echo -e ""$YS"11"$CE") Find WPS pin      "$RS"17"$CE") Ask ("$RS"Howdoi"$CE" tool)" "$YS"24"$CE") Reboot computer"
+		echo -e ""$YS"11"$CE") Find WPS pin      "$RS"17"$CE") Ask ("$RS"Howdoi"$CE" tool) "$YS"24"$CE") Reboot computer"
 	fi
 	echo -e ""$YS"12"$CE") WEP menu          "$YS"18"$CE") Auto-exploit browser     "$YS"25"$CE") Shutdown computer"
-	echo -e ""$YS"13"$CE") MITM              "$YS"19"$CE") Geolocate an IP          "$QE"26"$CE") Simple ehtools shell"
+	echo -e ""$YS"13"$CE") MITM              "$YS"19"$CE") Geolocate an IP          "$QE"26"$CE") Open ehtools shell"
 	echo -e ""$YS"14"$CE") Metasploit        "$YS"20"$CE") Bruteforce login         "$YS"27"$CE") Update APT sources"
 	echo -e ""$YS" 0"$CE") Exit              "$YS"21"$CE") Sqlmap automated         "$YS"28"$CE") Change interfaces"
 	read -e -p $'(\033[4;93mehtools\033[0m\en)> ' YORNAA
