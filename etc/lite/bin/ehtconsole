@@ -341,8 +341,8 @@ function banner
        echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways"$CE"   "$YS"scan"$CE") Arp-scan network"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
-		echo -e ""$RS" 1"$CE") Enable "$RS"$WLANN"$CE"${SPACESN}"$RS"d1"$CE") Disable "$RS"$WLANN"$CE"${SPACESN}   "$YS"start"$CE") Start monitor mode"
-		echo -e ""$RS" 2"$CE") Enable "$RS"$WLANNM"$CE"${SPACESM}"$RS"d2"$CE") Disable "$RS"$WLANNM"$CE"${SPACESM}    "$YS"stop"$CE") Stop monitor mode"
+		echo -e ""$RS" 1"$CE") Enable $WLANN${SPACESN}"$RS"d1"$CE") Disable "$RS"$WLANN"$CE"${SPACESN}   "$YS"start"$CE") Start monitor mode"
+		echo -e ""$RS" 2"$CE") Enable $WLANNM${SPACESM}"$RS"d2"$CE") Disable "$RS"$WLANNM"$CE"${SPACESM}    "$YS"stop"$CE") Stop monitor mode"
 	else
 		echo -e ""$YS" 1"$CE") Enable $WLANN${SPACESN}"$YS"d1"$CE") Disable $WLANN${SPACESN}   "$YS"start"$CE") Start monitor mode"
 		echo -e ""$YS" 2"$CE") Enable $WLANNM${SPACESM}"$YS"d2"$CE") Disable $WLANNM${SPACESM}    "$YS"stop"$CE") Stop monitor mode"
@@ -368,9 +368,9 @@ function banner
 	then
 		echo -e ""$YS" 9"$CE") Find WPS pin      "$YS"11"$CE") Ask (Howdoi tool)"
 	else
-		echo -e ""$YS" 9"$CE") Find WPS pin      "$RS"11"$CE") Ask ("$RS"Howdoi"$CE" tool)"
+		echo -e ""$YS" 9"$CE") Find WPS pin      "$RS"11"$CE") Ask (Howdoi tool)"
 	fi
-	echo -e ""$YS"10"$CE") MITM              "$YS"12"$CE") Auto-exploit browser"   
+	echo -e ""$YS"10"$CE") MITM menu         "$YS"12"$CE") Auto-exploit browser"   
 	echo -e ""$YS" 0"$CE") Exit              "$YS"13"$CE") Bruteforce login"
 	read -e -p $'(\033[4;93mehtools\033[0m\en)> ' YORNAA
 	echo "$YORNAA" >> /etc/ehtools/.ehtools.log
