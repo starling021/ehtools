@@ -26,16 +26,22 @@
  </a>
 </p>
 
-![Ehtools RED](https://user-images.githubusercontent.com/54115104/71449947-77e01180-2758-11ea-93db-5a30f4b554d2.png)
+![Ehtools RED](https://user-images.githubusercontent.com/54115104/71548038-858bd600-29a8-11ea-8a26-51a200c7b0a3.png)
 
-# About ehtools framework
+***
+
+# About Ehtools Framework
 
     INFO: Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools Framework 
     is a framework of serious penetration tools that can be explored easily from within it. This 
     powerful and simple tool can be used for everything from installing new add-ons to grabbing 
     a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and utilize.
 
-# How to install ehtools
+***
+
+# Getting started
+
+## Ehtools installation
 
 > cd ehtools
 
@@ -43,7 +49,17 @@
 
 > ./install.sh 
 
-# Selecting ehtools version
+## Ehtools uninstallation
+
+> cd ehtools
+
+> chmod +x uninstall.sh
+
+> ./uninstall.sh
+
+***
+
+# Selecting framework version
 
     INFO: After executing install.sh it will be ask you 
     to select version of Ehtools Framework - PRO os LITE. 
@@ -59,7 +75,9 @@
     
 If you select Ehtools Framework PRO, you will need to activate it with your Ehtools Activation Key that you need to bought on the ehtools site. If you have Ehtools Activation Key, read the following instructions.
     
-# How to activate ehtools PRO
+***
+    
+# Ehtools Framework PRO activation
 
 This key you can buy on the ehtools site for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
 
@@ -77,13 +95,7 @@ Also, we do not recommend to change the source code of ehtools because it is ver
     INFO: We do not recommend to change ehtools 
     source code because you can disrupt framework!
 
-# How to uninstall ehtools
-
-> ehtools -u
-
-    INFO: Do not do it if you want to reinstall
-    ehtools PRO which you bought, do not do it because
-    you will need to buy it one more time!
+***
 
 # Attacking frameworks
 
@@ -93,11 +105,15 @@ An excellent example of this are programs that integrate scanning tools like Air
 
 An example of this we've covered is the Airgeddonframework, a wireless attack framework that does useful things like automating the target selection process and eliminating the time a user spends copying and pasting information between programs. This saves valuable time for even experienced pentesters but has the disadvantage of preventing beginners from understanding what's happening "under the hood" of the attack. While this is true, most of these frameworks are fast, efficient, and dead simple to use, enabling even beginners to take on and disable an entire network.
 
+***
+
 # UX/UI impruvements for beginners
 
 The Ehtools Framework starts by merely typing the letter ehtools into a terminal window, then it asks for the name of your network interfaces after the first run. It uses the names you supply to connect to the tools needed to execute any attacks you select. Aside from that initial input, the majority of the possible attacks can be performed merely by choosing the option number from the menu. This means you can grab a network handshake or download a new hacking tool like Pupy by just selecting from one of the menu options.
 
-# Use basic networking tools
+***
+
+# Basic networking tools
 
 To begin, we can access data about the network we're currently connected to, as well as any network interfaces, from the main menu. Here, we can find local information by just typing l to pull up local IP information, as seen below.
 
@@ -146,7 +162,9 @@ This allows us to do things like scan the network for other devices. This part o
 
     INFO: Stop wireless monitor mode on the network adapter.
 
-# Install new tools
+***
+
+# Installing new tools
 
 ![Tools](https://user-images.githubusercontent.com/54115104/71424210-03da3680-2690-11ea-9a68-93989bab4440.png)
 
@@ -208,7 +226,7 @@ Run it to open Find WPS menu:
     INFO: For this shortcuts you will not need enter 
     your ehtools password (only for ehtools -u)!
 
-# Use ehtools application 
+# Ehtools Framework application 
 
     INFO: Ehtools application is an Ehtools Framework shortcut 
     that allows users to run Ehtools Framework just selecting 
@@ -230,7 +248,9 @@ There are two ways how to setup ehtools application:
 
 > ehtapp -c
 
-# Why ehtools framework?
+***
+
+# Why Ehtools Framework
 
 > More than 58 tools for pentesting installed by default
 
@@ -268,6 +288,8 @@ There are two ways how to setup ehtools application:
 
 ![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/71449948-7878a800-2758-11ea-95a1-1f1d7a18cbc8.png)
 
+***
+
 # System requirements 
 
 > Ehtools Framework only supports two OS
@@ -288,7 +310,9 @@ There are two ways how to setup ehtools application:
     ehtools crashes and it is also needed for check product 
     status such as (you bought ehtools/you did not buy ehtools)
 
-# Ehtools utilities
+***
+
+# Ehtools Framework utilities
 
 > # ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
@@ -412,17 +436,8 @@ Congratulations, you have successfully changed ehtools root password!
 
     INFO: In no case do not forget this password, it will 
     not be restored and you will have to reinstall ehtools!
-
-# About ehtools server support
-
-Server support for ehtools PRO is very important, as all error reports are sent to it in order to improve and fix vulnerabilities and bugs!
-
-    INFO: Make a good Internet connection for 
-    ehtools, to help ehtools access to server!
     
-If in consequence of the bad Internet connection ehtools will not be able to communicate with the server then the framework will not start because of access denial and due to a validation error for check ehtools bought or not bought!
-    
-# How to protect ehtools
+# Ehtools Framework protection
 
 ![Ehtools Login](https://user-images.githubusercontent.com/54115104/71450021-c641e000-2759-11ea-9454-a7d59d953933.png)
 
@@ -441,16 +456,16 @@ If in consequence of the bad Internet connection ehtools will not be able to com
     INFO: Do not just close ehtools window 
     and do not exit from the Ehtools Framework 
     using Ctrl + C or other exit signals!
+    
+***
 
-![EPP](https://user-images.githubusercontent.com/54115104/71424403-713a9700-2691-11ea-8913-3a52c74c9f4c.png)
-
-# Ehatools framework disclaimer
+# Ehatools Framework disclaimer
 
     INFO: Usage of the Ehtools Framework for attacking targets without prior mutual consent is illegal. 
     It is the end user's responsibility to obey all applicable local, state, federal, and international laws. 
     Developers assume no liability and are not responsible for any misuse or damage caused by this program.
 
-# Ehtools framework license
+# Ehtools Framework license
 
         --------------------------------------------------
                         Ehtools Framework          
@@ -469,45 +484,3 @@ If in consequence of the bad Internet connection ehtools will not be able to com
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-        
-# Ehtools utilities license
-
-        --------------------------------------------------
-                        Ehtools Utilities          
-        --------------------------------------------------
-              Copyright (C) <2015>  <Entynetproject>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-                     
-# Ehtools libraries license
- 
-        --------------------------------------------------
-                        Ehtools Libraries          
-        --------------------------------------------------
-              Copyright (C) <2015>  <Entynetproject>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.                
-
-# Thats all!
