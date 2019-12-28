@@ -535,12 +535,8 @@ fi
 	echo "$MONITOR" > "$EPATH"/wlanmon.txt
 	echo "$WIRED" > "$EPATH"/eth.txt
 	echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
-	sleep 1
-	clear
-	echo -e ""$BS"If you want to change it, type "$CE""$YS"interface"$CE""$BS" any time"$CE""
 	sleep 3
-	echo -e "$PAKTC"
-	$READAK	
+	clear	
 	BACKL="1"
 	break
 done
