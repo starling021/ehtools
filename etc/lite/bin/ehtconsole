@@ -341,8 +341,8 @@ function banner
        echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways"$CE"   "$YS"scan"$CE") Arp-scan network"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
-		echo -e ""$RS" 1"$CE") Enable $WLANN${SPACESN}"$RS"d1"$CE") Disable "$RS"$WLANN"$CE"${SPACESN}   "$YS"start"$CE") Start monitor mode"
-		echo -e ""$RS" 2"$CE") Enable $WLANNM${SPACESM}"$RS"d2"$CE") Disable "$RS"$WLANNM"$CE"${SPACESM}    "$YS"stop"$CE") Stop monitor mode"
+		echo -e ""$RS" 1"$CE") Enable $WLANN${SPACESN}"$RS"d1"$CE") Disable $WLANN${SPACESN}   "$YS"start"$CE") Start monitor mode"
+		echo -e ""$RS" 2"$CE") Enable $WLANNM${SPACESM}"$RS"d2"$CE") Disable $WLANNM${SPACESM}    "$YS"stop"$CE") Stop monitor mode"
 	else
 		echo -e ""$YS" 1"$CE") Enable $WLANN${SPACESN}"$YS"d1"$CE") Disable $WLANN${SPACESN}   "$YS"start"$CE") Start monitor mode"
 		echo -e ""$YS" 2"$CE") Enable $WLANNM${SPACESM}"$YS"d2"$CE") Disable $WLANNM${SPACESM}    "$YS"stop"$CE") Stop monitor mode"
@@ -381,13 +381,13 @@ function enable_wlan
 	O4=0
 	echo -e "Enabling $WLANN..."
 	rfkill unblock wifi &> /dev/null; rfkill unblock all &> /dev/null
-	ifconfig $WLANN up &>/dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O4=1  || echo -e ""$RS"Error. I can't find your wireless adapter"$CE""
+	ifconfig $WLANN up &>/dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O4=1  || echo -e ""$RS"ehtconsole returned an error (40) (wireless adapter is not found)"$CE""
 }
 function disable_wlan
 {
 	echo -e "Disabling $WLANN..."
 	rfkill unblock wifi &> /dev/null; rfkill unblock all &> /dev/null
-	ifconfig $WLANN down &>/dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O4=1 || echo -e ""$RS"Error. I can't find your wireless adapter."$CE""
+	ifconfig $WLANN down &>/dev/null && echo -e "["$YS"inf"$CE"] "$YS"Done"$CE"" && O4=1 || echo -e ""$RS"ehtconsole returned an error (40) (wireless adapter is not found)"$CE""
 }
 function interface_selection
 {
