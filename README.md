@@ -286,7 +286,7 @@ There are two ways how to setup ehtools application:
     archive (on server this archive: 2.3 Tb)! But if you are using 
     ehtools LITE you could install only 50% of this tools!
 
-![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/71449948-7878a800-2758-11ea-95a1-1f1d7a18cbc8.png)
+![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/71548037-84f33f80-29a8-11ea-99fe-1dde5b286684.png)
 
 ***
 
