@@ -126,11 +126,13 @@ This allows us to do things like scan the network for other devices. This part o
 
 > (ehtools)> 1
 
-    Enable wlan0. (d1 disables it)
+    Enable wlan0. 
+    (d1 disables it)
 
 > (ehtools)> 2
 
-    INFO: Enable wlan0mon. (d2 disables it)
+    INFO: Enable wlan0mon. 
+    (d2 disables it)
 
 > (ehtools)> 3    
    
