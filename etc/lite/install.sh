@@ -206,7 +206,7 @@ then
 sleep 0
 else
 clear
-printf '\033]2;ehtools password changer\a'
+printf '\033]2;install.sh\a'
 sleep 3
 echo -e "Set ehtools login and password!"
 echo -e "Ehtools Password Protection:"
@@ -274,7 +274,7 @@ fi
 fi
 
 clear
-printf '\033]2;create config key\a'
+printf '\033]2;install.sh\a'
 sleep 3
 echo -e "Create your ehtools config key for "$YS"/etc/ehtools/.config"$CE""
 echo -e "The ehtools config key is intended to protect ehtools boot!"
