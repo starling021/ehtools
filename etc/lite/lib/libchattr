@@ -49,3 +49,4 @@ chattr +i /etc/ehtools
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools/root/password
 } &> /dev/null
+fi
