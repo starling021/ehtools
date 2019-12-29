@@ -30,6 +30,12 @@ then
    exit
 fi
 
+passcode="$(cat /root/ehtools/etc/.config)"
+read -s -p $'Password: ' output
+if [[ $output != $passcode ]]
+then
+	echo -e "libdec: Sorry"
+else
 {
 CONF="$( cat /root/ehtools/etc/.config )"
 cd /etc/ehtools
@@ -69,3 +75,4 @@ chattr +i /etc/ehtools/root/password
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools
 } &> /dev/null
+fi
