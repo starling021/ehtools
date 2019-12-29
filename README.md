@@ -41,7 +41,7 @@
 
 # Getting started
 
-## Ehtools installation
+## ehtools installation
 
 > cd ehtools
 
@@ -49,7 +49,7 @@
 
 > ./install.sh 
 
-## Ehtools uninstallation
+## ehtools uninstallation
 
 > cd ehtools
 
