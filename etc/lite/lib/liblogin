@@ -30,6 +30,12 @@ then
    exit
 fi
 
+passcode="$(cat /root/ehtools/etc/.config)"
+read -s -p $'Password: ' output
+if [[ $output != $passcode ]]
+then
+	echo -e "liblogin: Sorry"
+else
 {
 chattr +i /etc/ehtools
 chattr +i /etc/ehtools/login
@@ -37,3 +43,4 @@ chattr +i /etc/ehtools/password
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools/root/password
 } &> /dev/null
+fi
