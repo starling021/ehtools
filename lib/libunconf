@@ -86,9 +86,16 @@ exit
 fi
 fi
 
+passcode="$(cat /root/ehtools/etc/.config)"
+read -s -p $'Password: ' output
+if [[ $output != $passcode ]]
+then
+	echo -e "libunconf: Sorry"
+else
 {
 chattr -i /etc/ehtools/.config
 chattr -i /etc/ehtools
 chattr -i /root/ehtools/etc
 chattr -i /root/ehtools/etc/.config
 } &> /dev/null
+fi

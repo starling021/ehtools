@@ -76,11 +76,13 @@ clear
 else
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 logins="$(cat /etc/ehtools/login)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
@@ -92,11 +94,13 @@ do
 sleep 0.5
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 passroot="$(cat /etc/ehtools/root/password)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -136,7 +140,8 @@ rm /etc/ehtools/root/password
 } &> /dev/null
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 printf '\033]2;ehtools password changer\a'
 sleep 3
 echo -e "Set ehtools root password!"
@@ -147,7 +152,8 @@ read -s -p $'(\033[4;93m(new)password\033[0m\en)> ' roots
 echo $roots >> /etc/ehtools/root/password
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 {
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools/root/password
@@ -207,11 +213,13 @@ do
 sleep 0.5
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 passroot="$(cat /etc/ehtools/root/password)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -251,7 +259,8 @@ rm /etc/ehtools/root/password
 } &> /dev/null
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 printf '\033]2;ehtools password changer\a'
 sleep 3
 echo -e "Set ehtools root password!"
@@ -262,7 +271,8 @@ read -s -p $'(\033[4;93m(new)password\033[0m\en)> ' roots
 echo $roots >> /etc/ehtools/root/password
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 {
 chattr +i /etc/ehtools/root
 chattr +i /etc/ehtools/root/password
@@ -313,11 +323,13 @@ done
 sleep 0.5
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 passwords="$(cat /etc/ehtools/password)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' passworder
 while [ "$passworder" != "$passwords" ]
 do
@@ -351,10 +363,12 @@ elif [[ "$UORI" = "yes" ]]
 then
 cd /root/ehtools/lib
 chmod +x libunchattr
-./libunchattr
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunchattr
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 {
 rm /etc/ehtools/login
 rm /etc/ehtools/password
@@ -382,11 +396,13 @@ echo $passwords >> /etc/ehtools/password
 
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 
 cd /root/ehtools/lib
 chmod +x libchattr
-./libchattr
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libchattr
 
 echo -e
 echo -e

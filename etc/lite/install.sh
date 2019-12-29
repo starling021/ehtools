@@ -230,11 +230,13 @@ echo $passwords >> /etc/ehtools/password
 
 cd /root/ehtools/lib
 chmod +x liblogin
-./liblogin
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./liblogin
 
 cd /root/ehtools/lib
 chmod +x libchattr
-./libchattr
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libchattr
 
 echo -e
 echo -e
@@ -290,7 +292,8 @@ fi
 
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 
 if [[ "$(cat /etc/ehtools/login)" = "" ]]
 then
@@ -298,7 +301,8 @@ sleep 0
 else
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 fi
 
 clear

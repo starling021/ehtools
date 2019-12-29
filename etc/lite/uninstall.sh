@@ -71,11 +71,13 @@ clear
 else
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 logins="$(cat /etc/ehtools/login)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 printf '\033]2;Ehtools Authentication\a'
 echo -e "$YS"Ehtools Authentication:"$CE"
 
@@ -103,11 +105,13 @@ done
 sleep 0.5
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 passwords="$(cat /etc/ehtools/password)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' passworder
 while [ "$passworder" != "$passwords" ]
 do
@@ -124,13 +128,16 @@ printf '\033]2;Uninstalling...\a'
 {
 	      cd /root/ehtools/lib
 	      chmod +x libunchattr
-	      ./libunchattr
+	      passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunchattr
 	      cd /root/ehtools/lib
 	      chmod +x libunconf
-	      ./libunconf
+	      passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
               cd /root/ehtools/lib
               chmod +x liunlogin
-              ./libunlogin
+              passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunlogin
 	      rm /usr/share/applications/ehtools.desktop
 	      rm /root/Desktop/ehtools.desktop
 	      rm -rf /root/ehtools

@@ -124,7 +124,8 @@ chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 chattr -i /etc/ehtools/ehtoolsd/ehtconsole
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools/ehtoolsd/ehtconsole
@@ -139,7 +140,8 @@ chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
 chattr -i /etc/ehtools/ehtoolsd/ehtconsole
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole
@@ -155,11 +157,13 @@ fi
 printf '\033]2;Ehtools Authentication\a' 
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 logins="$(cat /etc/ehtools/login)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
       echo -e 
       echo -e "$COL     ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
       echo -e "$COL     ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS LITE$CE"                
@@ -190,22 +194,26 @@ sleep 0.5
 echo -e ""
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
 
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 passroot="$(cat /etc/ehtools/password)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
 
@@ -225,7 +233,8 @@ chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 chattr -i /etc/ehtools/ehtoolsd/ehtconsole
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools/ehtoolsd/ehtconsole
@@ -240,7 +249,8 @@ chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
 chattr -i /etc/ehtools/ehtoolsd/ehtconsole
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole
@@ -276,11 +286,13 @@ echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 passroot="$(cat /etc/ehtools/root/password)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -299,7 +311,8 @@ chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 chattr -i /etc/ehtools/ehtoolsd/ehtconsole
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools/ehtoolsd/ehtconsole
@@ -314,7 +327,8 @@ chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
 chattr -i /etc/ehtools/ehtoolsd/ehtconsole
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole
@@ -352,21 +366,25 @@ sleep 0.5
 echo -e ""
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 sleep 0.5
 echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 passroot="$(cat /etc/ehtools/password)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -385,7 +403,8 @@ chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 chattr -i /etc/ehtools/ehtoolsd/ehtconsole
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools/ehtoolsd/ehtconsole
@@ -400,7 +419,8 @@ chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
 chattr -i /etc/ehtools/ehtoolsd/ehtconsole
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole
@@ -436,11 +456,13 @@ echo -e "$YS"Ehtools Authentication:"$CE"
 sleep 0.5
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 passroot="$(cat /etc/ehtools/root/password)"
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
 
 while [ "$rootpass" != "$passroot" ]
@@ -460,7 +482,8 @@ chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 chattr -i /etc/ehtools/ehtoolsd/ehtconsole
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole
 chattr +i /etc/ehtools/ehtoolsd/ehtconsole
@@ -475,7 +498,8 @@ chattr -i /etc/ehtools
 cp /root/ehtools/etc/.config /etc/ehtools
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoolsd
 chattr -i /etc/ehtools/ehtoolsd/ehtconsole
 chmod +x /etc/ehtools/ehtoolsd/ehtconsole

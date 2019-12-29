@@ -63,19 +63,23 @@ sleep 2
 {
 cd /root/ehtools/lib
 chmod +x libdec
-./libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 cd /root/ehtools/lib
 chmod +x libunconf
-./libunconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 rm /etc/ehtools/.config
 rm /root/ehtools/etc/.config
 echo "$3" >> /root/ehtools/etc/.config
 cd /root/ehtools/lib
 chmod +x libconf
-./libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
 cd /root/ehtools/lib
 chmod +x libenc
-./libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 cd /root
 } &> /dev/null
 echo -e "Success, ehtools config key changed!"

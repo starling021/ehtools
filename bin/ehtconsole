@@ -456,7 +456,8 @@ then
 	clear
 	cd /root/ehtools/lib
 	chmod +x libunconf
-	./libunconf
+	passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	rm /etc/ehtools/.config
         {
 	chattr +i /etc/ehtools
@@ -1006,7 +1007,8 @@ do
 	then
 	cd /root/ehtools/lib
 	chmod +x libunconf
-	./libunconf
+	passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	rm /etc/ehtools/.config
         {
 	chattr +i /etc/ehtools
@@ -1479,7 +1481,8 @@ then
 	clear
 	cd /root/ehtools/lib
 	chmod +x libunconf
-	./libunconf
+	passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	rm /etc/ehtools/.config
         {
 	chattr +i /etc/ehtools
@@ -1572,7 +1575,8 @@ then
 			clear
 	                cd /root/ehtools/lib
 	                chmod +x libunconf
-	                ./libunconf
+	                passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	                rm /etc/ehtools/.config
 	                {
 	                chattr +i /etc/ehtools
@@ -1602,7 +1606,8 @@ then
 	clear
 	cd /root/ehtools/lib
 	chmod +x libunconf
-	./libunconf
+	passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	rm /etc/ehtools/.config
 	{
 	chattr +i /etc/ehtools
@@ -1766,7 +1771,8 @@ then
 	clear
 	cd /root/ehtools/lib
 	chmod +x libunconf
-	./libunconf
+	passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	rm /etc/ehtools/.config
 	{
 	chattr +i /etc/ehtools
@@ -1907,7 +1913,8 @@ then
 	clear
 	cd /root/ehtools/lib
 	chmod +x libunconf
-	./libunconf
+	passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	rm /etc/ehtools/.config
 	{
 	chattr +i /etc/ehtools
@@ -1928,7 +1935,8 @@ then
 	clear
 	cd /root/ehtools/lib
 	chmod +x libunconf
-	./libunconf
+	passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	rm /etc/ehtools/.config
 	{
 	chattr +i /etc/ehtools
@@ -2194,7 +2202,8 @@ do
 		clear
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
@@ -4039,7 +4048,8 @@ function wifi_tools
 				then
 		                        cd /root/ehtools/lib
 	                                chmod +x libunconf
-	                                ./libunconf
+	                                passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	                                rm /etc/ehtools/.config
 	                                {
 	                                chattr +i /etc/ehtools
@@ -4073,7 +4083,8 @@ function wifi_tools
 		clear
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
@@ -5256,7 +5267,8 @@ function remote_access
 			then
 			cd /root/ehtools/lib
 	                chmod +x libunconf
-	                ./libunconf
+	                passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	                rm /etc/ehtools/.config
 	                {
 	                chattr +i /etc/ehtools
@@ -5341,7 +5353,8 @@ function remote_access
 		clear
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
@@ -5575,7 +5588,8 @@ function information_gathering
 					then
 		                                cd /root/ehtools/lib
 	                                        chmod +x libunconf
-	                                        ./libunconf
+	                                        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	                                        rm /etc/ehtools/.config
 	                                        {
 	                                        chattr +i /etc/ehtools
@@ -5608,7 +5622,8 @@ function information_gathering
 		then
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
@@ -5908,7 +5923,8 @@ function website_tools
 						clear
 		                                cd /root/ehtools/lib
 	                                        chmod +x libunconf
-	                                        ./libunconf
+	                                        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	                                        rm /etc/ehtools/.config
 	                                        {
 	                                        chattr +i /etc/ehtools
@@ -5975,7 +5991,8 @@ function website_tools
 		then
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
@@ -6176,7 +6193,8 @@ do
 		clear
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
@@ -6415,7 +6433,8 @@ function metasploit_menu
 		clear
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
@@ -6450,10 +6469,12 @@ function update_ehtools
 			then
 			        cd /root/ehtools/lib
 				chmod +x libunchattr
-				./libunchattr
+				passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunchattr
 				cd /root/ehtools/lib
 				chmod +x libunconf
-				./libunconf
+				passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 				clear
 				#~ echo -e "Making new directory for the old ehtools (will pass it to /root/ehtold)"
 				sleep 1
@@ -6655,7 +6676,8 @@ function tools_menu
 		clear
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
@@ -6926,7 +6948,8 @@ do
 		clear
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	        rm /etc/ehtools/.config
 	        {
 	        chattr +i /etc/ehtools
@@ -7830,7 +7853,8 @@ function cromos_menu
 			then
 	                cd /root/ehtools/lib
 	                chmod +x libunconf
-	                ./libunconf
+	                passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	                rm /etc/ehtools/.config
 	                {
 	                chattr +i /etc/ehtools
@@ -7998,7 +8022,8 @@ do
 	then
 	cd /root/ehtools/lib
 	chmod +x libunconf
-	./libunconf
+	passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	rm /etc/ehtools/.config
 	{
 	chattr +i /etc/ehtools
@@ -8491,7 +8516,8 @@ function ngrok_option
 				clear
 				cd /root/ehtools/lib
 	                        chmod +x libunconf
-	                        ./libunconf
+	                        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 	                        rm /etc/ehtools/.config
                                 {
 	                        chattr +i /etc/ehtools
@@ -9076,7 +9102,8 @@ function settings_menu
 		then
 			cd /root/ehtools/lib
 	                chmod +x libunconf
-	                ./libunconf
+	                passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 		        rm /etc/ehtools/.config
 		        {
 		        chattr +i /etc/ehtools
@@ -9152,7 +9179,8 @@ function settings_menu
 			then
 			cd /root/ehtools/lib
 			chmod +x libdec
-			./libdec
+			passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
 			cd /root/ehtools/lib
 			mkdir .disabled
 			mv libdec .disabled
@@ -9169,7 +9197,8 @@ function settings_menu
 			rm -rf .disabled
 			cd /root/ehtools/lib
 			chmod +x libenc
-			./libenc
+			passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
 			EPPC="on"
 			fi
 			
@@ -9307,7 +9336,8 @@ function settings_menu
 				then
 					cd /root/ehtools/lib
 	                                chmod +x libunconf
-	                                ./libunconf
+	                                passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 		                        rm /etc/ehtools/.config
 		                        {
 		                        chattr +i /etc/ehtools
@@ -9409,7 +9439,8 @@ function main_options
 	then
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 		rm /etc/ehtools/.config
 		{
 		chattr +i /etc/ehtools
@@ -9911,7 +9942,8 @@ function main_options
 	then
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 		rm /etc/ehtools/.config
 		{
 		chattr +i /etc/ehtools
@@ -9992,7 +10024,8 @@ function main_options
 		clear
 		cd /root/ehtools/lib
 	        chmod +x libunconf
-	        ./libunconf
+	        passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libunconf
 		rm /etc/ehtools/.config
 		{
 		chattr +i /etc/ehtools
