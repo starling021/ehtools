@@ -30,6 +30,12 @@ then
    exit
 fi
 
+passcode="$(cat /root/ehtools/etc/.config)"
+read -s -p $'Password: ' output
+if [[ $output != $passcode ]]
+then
+	echo -e "libchattr: Sorry"
+else
 {
 chattr +i /bin/ehtools
 chattr +i /etc/ehtools/ehtoolsd/ehtconsole
