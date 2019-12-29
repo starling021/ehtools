@@ -1899,7 +1899,7 @@ then
 		echo -e "$PAKTC"
 		$READAK
 		export INTIP
-		xterm --geometry 60x15+0+999999 -e 'dnsspoof -i $INTIP -f "$EPATH"/HOSTS/hosts.txt'				
+		xterm -geometry 60x15+0+999999 -e 'dnsspoof -i $INTIP -f "$EPATH"/HOSTS/hosts.txt'				
 	elif [[ "$MITMSET" = "back" || "$MITMSET" = "b" ]]
 	then
 		clear
@@ -8434,7 +8434,7 @@ function ngrok_option
 				fi
 				export PORTL
 				export PROT
-				xterm --geometry 85x15+9999+999999 -e bash -c './ngrok $PROT $PORTL; exec bash' & disown
+				xterm -geometry 85x15+9999+999999 -e bash -c './ngrok $PROT $PORTL; exec bash' & disown
 			elif [[ "$NG" = 4 ]]
 			then
 				while true
@@ -8586,7 +8586,7 @@ do
 	export ZERO
 	echo -e ""$BS"Scanning, please wait..."$CE""
 	tempfile="/root/ehtools/tempscan.txt"
-	xterm --geometry 1x1+9999+999999 -e "arp-scan -I "$IPF" "$ZERO"/24 | tee $tempfile"
+	xterm -geometry 1x1+9999+999999 -e "arp-scan -I "$IPF" "$ZERO"/24 | tee $tempfile"
 	#gnome-terminal -- arp-scan -I "$IPF" "$ZERO"/24 | tee $tempfile
 	clear
 	######
@@ -8812,7 +8812,7 @@ function browser_exploiting
 				$READAK
 			elif [[ "$AE" = 2 ]]
 			then
-				echo -e "You are facing this error because you did not press "$YS"ctrl c"$CE" on BeEF's window
+				echo -e "You are facing this error because you did not press "$YS"Ctrl + C"$CE" on BeEF's window
 				to close it."
 				echo -e ""
 				PID1=$(lsof -t -i:3000)

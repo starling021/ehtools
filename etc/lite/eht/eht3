@@ -272,9 +272,9 @@ function scan_wash
 	then
 		clear
 		echo -e "Scaning in new terminal..."
-		echo -e ""$YS"PRESS CTRL C IN WASH WHEN READY."$CE""
+		echo -e ""$YS"PRESS Ctrl + C IN WASH WHEN READY."$CE""
 		sleep 1
-		xterm --geometry 80x25+9999+9999 -T "Press Ctrl C when ready" -e "wash  -i $WLANNM | tee /root/ehtools/tempwash "
+		xterm -geometry 80x25+9999+9999 -T "Press Ctrl + C when ready" -e "wash  -i $WLANNM | tee /root/ehtools/tempwash "
 	fi
 		SCW=1
 		clear
@@ -571,7 +571,7 @@ function reaver_attack
 	then
 		DELAY=60
 	fi
-	#xterm --geometry 90x70+0+0 -e "sleep 5 && aireplay-ng $WLANNM -1 120 -a $BSSIDT" & disown
+	#xterm -geometry 90x70+0+0 -e "sleep 5 && aireplay-ng $WLANNM -1 120 -a $BSSIDT" & disown
 	reaver -i $WLANNM -b $BSSIDT -c $CHANT -d $DELAY -L -f -N -vvv | tee /root/ehtools/wpslog
 	echo -e "Press "$YS"enter"$CE" to go back"
 	read	
@@ -639,7 +639,7 @@ function pixie_attack
 	TERMINALTITLE="PIXIE DUST ATTACK"
 	dash_calc
 	printf '\033]2;PIXIE DUST ATTACK\a'
-	#xterm --geometry 90x70+0+0 -e "aireplay-ng $WLANNM -1 10 -a $BSSIDT" & disown
+	#xterm -geometry 90x70+0+0 -e "aireplay-ng $WLANNM -1 10 -a $BSSIDT" & disown
 	reaver -i $WLANNM -b $BSSIDT -c $CHANT -N -f --pixie-dust -vvv | tee /root/ehtools/wpslog
 	echo -e "Press "$YS"enter"$CE" to go back"
 	read
