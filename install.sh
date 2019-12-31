@@ -46,15 +46,11 @@ cd /root
 git clone https://github.com/entynetproject/ehtools.git
 } &> /dev/null
 cd /root/ehtools
-chmod +x install.sh
-cd /root/ehtools
 else
 mkdir /root
 {
 git clone https://github.com/entynetproject/ehtools.git
 } &> /dev/null
-cd /root/ehtools
-chmod +x install.sh
 cd /root/ehtools
 fi
 fi
@@ -72,8 +68,9 @@ then
 
 {
 rm -rf /root/ehtools/etc/lite
-rm /root/ehtools/install.c
+rm /root/ehtools/install.sh
 cp /root/ehtools/etc/pro/install.c /root/ehtools
+cp /root/ehtools/etc/pro/uninstall.c /root/ehtools
 rm -rf /root/ehtools/etc/pro
 } &> /dev/null
 
