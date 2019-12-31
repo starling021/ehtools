@@ -72,9 +72,8 @@ then
 
 {
 rm -rf /root/ehtools/etc/lite
-rm /root/ehtools/install.sh
-cp /root/ehtools/etc/pro/install.sh /root/ehtools
-chmod +x /root/ehtools/install.sh
+rm /root/ehtools/install.c
+cp /root/ehtools/etc/pro/install.c /root/ehtools
 rm -rf /root/ehtools/etc/pro
 } &> /dev/null
 
@@ -89,10 +88,10 @@ gcc dev/dev2.c -o dev/dev2
 gcc dev/dev21.c -o dev/dev21
 gcc eht/eht1.c -o eht/eht1
 gcc eht/eht2.c -o eht/eht2
-gcc eht/eht21.c eht/eht21.c
-gcc eht/eht3.c -o eht/eht3.c
-gcc eht/eht31.c -o eht/eht31.c
-gcc eht/eht4.c -o eht/eht4.c
+gcc eht/eht21.c eht/eht21
+gcc eht/eht3.c -o eht/eht3
+gcc eht/eht31.c -o eht/eht31
+gcc eht/eht4.c -o eht/eht4
 gcc eht/eht41.c -o eht/eht41
 gcc eht/eht42.c -o eht/eht42
 gcc eht/eht43.c -o eht/eht43
@@ -105,11 +104,11 @@ gcc lib/liblogin.c -o lib/liblogin
 gcc lib/libunchattr.c -o lib/libunchattr
 gcc lib/libunconf.c -o lib/libunconf
 gcc lib/libunlogin.c -o lib/libunlogin
-gcc install.sh
-gcc uninstall.sh
+gcc install.c -o install
+gcc uninstall.c -o uninstall
 
 cd /root/ehtools
-./install.sh
+./install
 exit
 fi
 
@@ -131,9 +130,9 @@ gcc dev/dev2.c -o dev/dev2
 gcc dev/dev21.c -o dev/dev21
 gcc eht/eht1.c -o eht/eht1
 gcc eht/eht2.c -o eht/eht2
-gcc eht/eht21.c eht/eht21.c
-gcc eht/eht3.c -o eht/eht3.c
-gcc eht/eht31.c -o eht/eht31.c
+gcc eht/eht21.c eht/eht21
+gcc eht/eht3.c -o eht/eht3
+gcc eht/eht31.c -o eht/eht31
 gcc lib/libchattr.c -o lib/libchattr
 gcc lib/libconf.c -o lib/libconf
 gcc lib/libdec.c -o lib/libdec
@@ -142,9 +141,9 @@ gcc lib/liblogin.c -o lib/liblogin
 gcc lib/libunchattr.c -o lib/libunchattr
 gcc lib/libunconf.c -o lib/libunconf
 gcc lib/libunlogin.c -o lib/libunlogin
-gcc install.sh
-gcc uninstall.sh
+gcc install.c -o install
+gcc uninstall.c -o uninstall
 
-chmod +x install.sh
-./install.sh
+chmod +x install
+./install
 exit
