@@ -1,0 +1,571 @@
+#!/bin/bash
+
+#            --------------------------------------------------
+#                            Ehtools Framework          
+#            --------------------------------------------------
+#                  Copyright (C) <2015>  <Entynetproject>   
+#
+#        This program is free software: you can redistribute it and/or modify
+#        it under the terms of the GNU General Public License as published by
+#        the Free Software Foundation, either version 3 of the License, or
+#        any later version.
+#
+#        This program is distributed in the hope that it will be useful,
+#        but WITHOUT ANY WARRANTY; without even the implied warranty of
+#        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#        GNU General Public License for more details.
+#
+#        You should have received a copy of the GNU General Public License
+#        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+#yellow start 
+	YS="\033[1;33m"
+#blue start 
+	BS="\033[0;34m"
+#color end
+	CE="\033[0m"
+#red start
+	RS="\033[1;31m"
+#black start
+	BLS="\033[0;30m"
+#dark gray start
+	DGYS="\033[1;30m"
+#light blue start
+	LBS="\033[1;34m"
+#green start
+	GNS="\033[0;32m"
+#light green start
+	LGNS="\033[1;32m"
+#cyan start
+	CYS="\033[0;36m"
+#light cyan start
+	LCYS="\033[1;36m"
+#light red start
+	DRS="\033[0;31m"
+#purple start
+	PS="\033[0;35m"
+#light purple start
+	LPS="\033[1;35m"
+#brown start
+	BRS="\033[0;33m"
+#light gray start
+	LGYS="\033[0;37m"
+#white start
+	WHS="\033[1;37m"
+
+if [[ -f /root/ehtools/settings/logocolor.txt ]]
+	then
+		read COL < /root/ehtools/settings/logocolor.txt
+	else
+		COL="$RS"
+	fi
+
+if [[ $EUID -ne 0 ]]
+then
+   sleep 1
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$RS"!"$CE"" 1>&2
+   sleep 1
+   exit
+fi
+
+{
+chattr -i /dev/config
+chattr -i /dev/config/config.txt
+chattr -i /dev/config/configure.txt
+} &> /dev/null
+
+{
+mkdir /dev/config
+echo 0 >> /dev/config/config.txt
+echo 1 >> /dev/config/configure.txt
+} &> /dev/null
+
+{
+chattr +i /dev/config
+chattr +i /dev/config/config.txt
+chattr +i /dev/config/configure.txt
+} &> /dev/null
+
+
+{
+SERSE="$( cat /dev/config/config.txt | head -n 1 )"
+ESRES="$( cat /dev/config/configure.txt | head -n 1 )"
+} &> /dev/null
+
+if [[ "$SERSE" != "$ESRES" ]]
+then
+
+{
+ASESR="$( timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//' )"
+KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
+} &> /dev/null
+
+if [[ "$ASESR" != "" ]]
+then 
+
+KEYKE="$( timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
+
+if [[ "$KEYEK" != "$KEYKE" ]]
+then
+
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Failed to open session for ehtools!"$CE""
+
+sleep 1
+exit
+
+fi
+
+else
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Can't connect to server: There is no connection!"$CE""
+sleep 1
+exit
+fi
+fi
+
+if [[ $1 = "-u" || $1 = "--uninstall" ]]
+then
+sleep 1
+printf '\033]2;Launching uninstall.sh...\a'
+echo -e "["$GNS"~"$CE"] "$GNS"Launching uninstall.sh..."$CE""
+sleep 1
+cd /root/ehtools
+chmod +x uninstall.sh
+./uninstall.sh
+exit
+
+elif [[ $1 = "-h" || $1 = "--handshake" ]]
+then
+sleep 1
+printf '\033]2;Launching eht1...\a'
+echo -e "["$GNS"~"$CE"] "$GNS"Launching eht1..."$CE""
+sleep 1
+/etc/ehtools/modules/eht/eht1
+exit
+
+
+elif [[ $1 = "-w" || $1 = "--wps" ]]
+then
+sleep 1
+printf '\033]2;Launching eht3...\a'
+echo -e "["$GNS"~"$CE"] "$GNS"Launching eht3..."$CE""
+sleep 1
+/etc/ehtools/modules/eht/eht3
+exit
+
+elif [[ $1 = "-o" || $1 = "--options" ]]
+then
+sleep 1
+echo -e
+echo -e ""$YS"Options: "$CE""
+echo -e ""$YS"-u"$CE") Uninstall ehtools"
+echo -e ""$YS"-h"$CE") Open handshake menu"
+echo -e ""$YS"-w"$CE") Open Find WPS menu"
+echo -e ""$YS"-o"$CE") Show quick options"
+echo -e
+sleep 1
+exit
+fi
+
+CAT="$( cat /etc/ehtools/password )"
+
+clear
+if [[ "$CAT" = "" ]]
+then
+if [[ -f /etc/ehtools/ehtoold/ehtconsole ]]
+then
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
+chattr -i /etc/ehtools/ehtoold/ehtconsole
+chmod +x /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0
+/etc/ehtools/ehtoold/ehtconsole
+exit
+else
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoold
+chattr -i /etc/ehtools/ehtoold/ehtconsole
+chmod +x /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0
+/etc/ehtools/ehtoold/ehtconsole
+exit
+fi
+fi
+
+printf '\033]2;Ehtools Authentication\a' 
+cd /root/ehtools/lib
+chmod +x libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
+logins="$(cat /etc/ehtools/login)"
+cd /root/ehtools/lib
+chmod +x libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
+      echo -e 
+      echo -e "$COL    ███████╗██╗  ██╗████████╗     $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL    ██╔════╝██║  ██║╚══██╔══╝     $WHS Ver  |$RS v3.0.0$WHS :$YS PRO$CE"                
+      echo -e "$COL    █████╗  ███████║   ██║        $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL    ██╔══╝  ██╔══██║   ██║        $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL    ███████╗██║  ██║   ██║        $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL    ╚══════╝╚═╝  ╚═╝   ╚═╝        $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
+sleep 0.5
+echo -e ""
+echo -e "$YS"Ehtools Authentication:"$CE"
+sleep 0.5
+read -e -p $'(\033[4;93mlogin\033[0m\en)> ' loginer
+
+while [ "$loginer" = "$logins" ]
+do
+sleep 0.5
+clear
+sleep 0.5
+printf '\033]2;Ehtools Authentication\a'
+      echo -e 
+      echo -e "$COL     ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL     ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS PRO$CE"                
+      echo -e "$COL     █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL     ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL     ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
+sleep 0.5
+echo -e ""
+cd /root/ehtools/lib
+chmod +x libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
+echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
+cd /root/ehtools/lib
+chmod +x libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
+sleep 0.5
+echo -e "$YS"Ehtools Authentication:"$CE"
+sleep 0.5
+
+cd /root/ehtools/lib
+chmod +x libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
+passroot="$(cat /etc/ehtools/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
+
+read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
+
+while [ "$rootpass" != "$passroot" ]
+do
+echo -e
+echo -e "["$RS"*"$CE"] "$RS"Wrong password!"$CE""
+sleep 3
+sleep 0
+read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
+
+done
+if [[ -f /etc/ehtools/ehtoold/ehtconsole ]]
+then
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
+chattr -i /etc/ehtools/ehtoold/ehtconsole
+chmod +x /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0
+/etc/ehtools/ehtoold/ehtconsole
+exit
+else
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoold
+chattr -i /etc/ehtools/ehtoold/ehtconsole
+chmod +x /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0
+/etc/ehtools/ehtoold/ehtconsole
+exit
+fi
+
+done
+
+
+while [ "$loginer" = "root" ]
+do
+sleep 0.5
+clear
+sleep 0.5
+printf '\033]2;Ehtools Authentication\a'
+      echo -e 
+      echo -e "$COL     ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL     ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS PRO$CE"                
+      echo -e "$COL     █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL     ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL     ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
+sleep 0.5
+echo -e ""
+echo -e "You want to login as '"$YS"root"$RS"!"$CE"'"
+sleep 0.5
+echo -e "$YS"Ehtools Authentication:"$CE"
+sleep 0.5
+cd /root/ehtools/lib
+chmod +x libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
+passroot="$(cat /etc/ehtools/root/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
+read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
+
+while [ "$rootpass" != "$passroot" ]
+do
+echo -e
+echo -e "["$RS"*"$CE"] "$RS"Wrong password!"$CE""
+sleep 3
+sleep 0
+read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
+
+done
+if [[ -f /etc/ehtools/ehtoold/ehtconsole ]]
+then
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
+chattr -i /etc/ehtools/ehtoold/ehtconsole
+chmod +x /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0
+/etc/ehtools/ehtoold/ehtconsole
+exit
+else
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoold
+chattr -i /etc/ehtools/ehtoold/ehtconsole
+chmod +x /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0
+/etc/ehtools/ehtoold/ehtconsole
+exit
+fi
+
+done
+
+while [ "$loginer" != "$logins" ]
+do
+echo -e "["$RS"*"$CE"] "$RS"Wrong login!"$CE""
+sleep 3
+sleep 0
+read -e -p $'(\033[4;93mlogin\033[0m\en)> ' loginer
+
+while [ "$loginer" = "$logins" ]
+do
+sleep 0.5
+clear
+sleep 0.5
+printf '\033]2;Ehtools Authentication\a'
+      echo -e 
+      echo -e "$COL     ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL     ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS PRO$CE"                
+      echo -e "$COL     █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL     ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL     ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
+sleep 0.5
+echo -e ""
+cd /root/ehtools/lib
+chmod +x libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
+echo -e "You want to login as '"$YS""$(cat /etc/ehtools/login)""$CE"'"
+cd /root/ehtools/lib
+chmod +x libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
+sleep 0.5
+echo -e "$YS"Ehtools Authentication:"$CE"
+sleep 0.5
+cd /root/ehtools/lib
+chmod +x libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
+passroot="$(cat /etc/ehtools/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
+read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
+
+while [ "$rootpass" != "$passroot" ]
+do
+echo -e
+echo -e "["$RS"*"$CE"] "$RS"Wrong password!"$CE""
+sleep 3
+sleep 0
+read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
+
+done
+if [[ -f /etc/ehtools/ehtoold/ehtconsole ]]
+then
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
+chattr -i /etc/ehtools/ehtoold/ehtconsole
+chmod +x /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0
+/etc/ehtools/ehtoold/ehtconsole
+exit
+else
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoold
+chattr -i /etc/ehtools/ehtoold/ehtconsole
+chmod +x /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0
+/etc/ehtools/ehtoold/ehtconsole
+exit
+fi
+
+done
+
+
+while [ "$loginer" = "root" ]
+do
+sleep 0.5
+clear
+sleep 0.5
+printf '\033]2;Ehtools Authentication\a'
+      echo -e 
+      echo -e "$COL     ███████╗██╗  ██╗████████╗    $WHS Name |$RS Entynet Hacker Tools$CE" 
+      echo -e "$COL     ██╔════╝██║  ██║╚══██╔══╝    $WHS Ver  |$RS v3.0.0$WHS :$YS PRO$CE"                
+      echo -e "$COL     █████╗  ███████║   ██║       $WHS Core |$RS TEF$WHS :$YS The Ehtools Framework$CE"         
+      echo -e "$COL     ██╔══╝  ██╔══██║   ██║       $WHS Dev  |$RS Entynetproject$CE"                 
+      echo -e "$COL     ███████╗██║  ██║   ██║       $WHS Site |$YS entynetproject.simplesite.com$CE"
+      echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS PRO$CE"
+sleep 0.5
+echo -e ""
+echo -e "You want to login as '"$YS"root"$RS"!"$CE"'"
+sleep 0.5
+echo -e "$YS"Ehtools Authentication:"$CE"
+sleep 0.5
+cd /root/ehtools/lib
+chmod +x libdec
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libdec
+passroot="$(cat /etc/ehtools/root/password)"
+cd /root/ehtools/lib
+chmod +x libenc
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libenc
+read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
+
+while [ "$rootpass" != "$passroot" ]
+do
+echo -e
+echo -e "["$RS"*"$CE"] "$RS"Wrong password!"$CE""
+sleep 3
+sleep 0
+read -s -p $'(\033[4;93mpassword\033[0m\en)> ' rootpass
+
+done
+
+if [[ -f /etc/ehtools/ehtoold/ehtconsole ]]
+then
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
+chattr -i /etc/ehtools/ehtoold/ehtconsole
+chmod +x /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0
+/etc/ehtools/ehtoold/ehtconsole
+exit
+else
+{
+chattr -i /etc/ehtools
+cp /root/ehtools/etc/.config /etc/ehtools
+cd /root/ehtools/lib
+chmod +x libconf
+passcode="$(cat /root/ehtools/etc/.config)"
+echo $passcode | ./libconf
+cp /root/ehtools/bin/ehtconsole /etc/ehtools/ehtoold
+chattr -i /etc/ehtools/ehtoold/ehtconsole
+chmod +x /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools/ehtoold/ehtconsole
+chattr +i /etc/ehtools
+} &> /dev/null
+sleep 0
+/etc/ehtools/ehtoold/ehtconsole
+exit
+fi
+
+done
+done

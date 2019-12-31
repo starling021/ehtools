@@ -1,0 +1,89 @@
+#!/bin/bash
+
+#            --------------------------------------------------
+#                            Ehtools Framework          
+#            --------------------------------------------------
+#                  Copyright (C) <2015>  <Entynetproject>   
+#
+#        This program is free software: you can redistribute it and/or modify
+#        it under the terms of the GNU General Public License as published by
+#        the Free Software Foundation, either version 3 of the License, or
+#        any later version.
+#
+#        This program is distributed in the hope that it will be useful,
+#        but WITHOUT ANY WARRANTY; without even the implied warranty of
+#        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#        GNU General Public License for more details.
+#
+#        You should have received a copy of the GNU General Public License
+#        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+CE="\033[0m"
+RS="\033[1;31m"
+YS="\033[1;33m"
+
+if [[ $EUID -ne 0 ]]
+then
+   sleep 1
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$RS"!"$CE"" 1>&2
+   sleep 1
+   exit
+fi
+
+printf '\033]2;activate ehtools\a'
+
+ACTKEY="$( curl "https://raw.githubusercontent.com/dj-mobley/ehtools-config/master/ehtools.cfg" 2>/dev/null )"
+sleep 3
+echo -e "Enter your ehtools activation key!"
+echo -e "You can buy it on the ehtools site!"
+read -e -p $'(\033[4;93mactivation_key\033[0m\en)> ' KEYACT
+sleep 1
+if [[ "$KEYACT" != "$ACTKEY" ]]
+then
+sleep 1
+echo -e "["$RS"*"$CE"] "$RS"Failed to activate ehtools, try again later!"$CE""
+sleep 8
+exit
+fi
+
+r=$(( RANDOM%7999+1001));
+s=$(( RANDOM%7999+1001)); 
+h=$(( RANDOM% 7999+1001)); 
+g=$(( RANDOM% 7999+1001)); 
+
+{
+chattr -i /etc/ehtools/root/service
+chattr -i /etc/ehtools/root/service/late
+chattr -i /etc/ehtools/root/service/ehtkey.txt
+chattr -i /etc/ehtools/root/service/late/ehtkey.txt
+rm -rf /etc/ehtools
+} &> /dev/null
+
+mkdir /etc/ehtools
+mkdir /etc/ehtools/root
+mkdir /etc/ehtools/root/service
+mkdir /etc/ehtools/root/service/late
+echo "$r-$s-$h-$g" >> /etc/ehtools/root/service/late/ehtkey.txt
+{
+chattr -i /dev/config
+chattr -i /dev/config/config.txt
+chattr -i /dev/config/configure.txt
+} &> /dev/null
+rm /dev/config/config.txt
+rm /dev/config/configure.txt
+cat /etc/ehtools/root/service/late/ehtkey.txt >> /dev/config/configure.txt
+cat /etc/ehtools/root/service/late/ehtkey.txt >> /dev/config/config.txt
+{
+chattr +i /dev/config
+chattr +i /dev/config/config.txt
+chattr +i /dev/config/configure.txt
+} &> /dev/null
+echo "$ACTKEY" >> /etc/ehtools/root/service/ehtkey.txt
+sleep 3
+
+{
+chattr +i /etc/ehtools/root/service
+chattr +i /etc/ehtools/root/service/late
+chattr +i /etc/ehtools/root/service/ehtkey.txt
+chattr +i /etc/ehtools/root/service/late/ehtkey.txt
+} &> /dev/null
