@@ -74,6 +74,7 @@ then
 rm -rf /root/ehtools/etc/lite
 rm /root/ehtools/install.sh
 cp /root/ehtools/etc/pro/install.sh /root/ehtools
+cp /root/ehtools/etc/pro/uninstall.sh /root/ehtools
 chmod +x /root/ehtools/install.sh
 rm -rf /root/ehtools/etc/pro
 } &> /dev/null
