@@ -282,7 +282,7 @@ There are two ways how to setup ehtools application:
 
 > # ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
-ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
+ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules.
 
     Usage: ehtmod [OPTION...]
     Copyright (C) 2015, Entynetproject. All Rights Reserved.
@@ -402,6 +402,8 @@ Congratulations, you have successfully changed ehtools root password!
 
     In no case do not forget this password, it will not 
     be restored and you will have to reinstall ehtools!
+    
+***
     
 # Ehtools Framework protection
 
