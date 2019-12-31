@@ -41,7 +41,7 @@
 
 # Getting started
 
-## ehtools installation
+## Ehtools installation
 
 > cd ehtools
 
@@ -49,7 +49,7 @@
 
 > ./install.sh 
 
-## ehtools uninstallation
+## Ehtools uninstallation
 
 > cd ehtools
 
@@ -282,7 +282,7 @@ There are two ways how to setup ehtools application:
 
 > # ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
-ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules.
+ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules using commands, for example, the eht1 module has the eht1 command, enter it in the terminal and the eht1 module will start.
 
     Usage: ehtmod [OPTION...]
     Copyright (C) 2015, Entynetproject. All Rights Reserved.
@@ -294,7 +294,7 @@ ehtmod (ehtools modules) is an utility that adds permissions or the ability to c
     -u  --uninstall       Uninstall ehtools modules.
     -h  --help            Give this help list.
          
-To install ehtools modules you should to execute the following command:
+To install ehtools modules you need to execute the following command:
 
     The ehtools isnatll.sh will ask you to "install" or "not 
     install" ehtools modules and if you answered "not install" and 
