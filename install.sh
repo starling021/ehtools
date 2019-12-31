@@ -120,7 +120,30 @@ rm -rf ehtools
 mv lite ehtools
 cd /root/ehtools
 
-
+gcc bin/ehtapp.c -o bin/ehtapp
+gcc bin/ehtconsole.c -o bin/ehtconsole
+gcc bin/ehtkey.c -o bin/ehtkey
+gcc bin/ehtmod.c -o bin/ehtmod
+gcc bin/ehtools.c -o bin/ehtools
+gcc bin/epasswd.c -o bin/epasswd
+gcc dev/dev1.c -o dev/dev1
+gcc dev/dev2.c -o dev/dev2
+gcc dev/dev21.c -o dev/dev21
+gcc eht/eht1.c -o eht/eht1
+gcc eht/eht2.c -o eht/eht2
+gcc eht/eht21.c eht/eht21.c
+gcc eht/eht3.c -o eht/eht3.c
+gcc eht/eht31.c -o eht/eht31.c
+gcc lib/libchattr.c -o lib/libchattr
+gcc lib/libconf.c -o lib/libconf
+gcc lib/libdec.c -o lib/libdec
+gcc lib/libenc.c -o lib/libenc
+gcc lib/liblogin.c -o lib/liblogin
+gcc lib/libunchattr.c -o lib/libunchattr
+gcc lib/libunconf.c -o lib/libunconf
+gcc lib/libunlogin.c -o lib/libunlogin
+gcc install.sh
+gcc uninstall.sh
 
 chmod +x install.sh
 ./install.sh
