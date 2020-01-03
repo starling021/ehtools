@@ -26,7 +26,7 @@
  </a>
 </p>
 
-![Ehtools RED](https://user-images.githubusercontent.com/54115104/71548038-858bd600-29a8-11ea-8a26-51a200c7b0a3.png)
+![Ehtools RED](https://user-images.githubusercontent.com/54115104/71750057-94c2c600-2e77-11ea-87f2-176cb4345c77.png)
 
 ***
 
@@ -252,7 +252,7 @@ There are two ways how to setup ehtools application:
     from the menu. This means you can grab a network handshake or download a new 
     hacking tool like Pupy by just selecting from one of the menu options!
 
-![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/71548037-84f33f80-29a8-11ea-99fe-1dde5b286684.png)
+![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/71750058-94c2c600-2e77-11ea-8eb5-110b7e42a7ca.png)
 
 ***
 
@@ -407,7 +407,7 @@ Congratulations, you have successfully changed ehtools root password!
     
 # Ehtools Framework protection
 
-![Ehtools Login](https://user-images.githubusercontent.com/54115104/71450021-c641e000-2759-11ea-9454-a7d59d953933.png)
+![Ehtools Login](https://user-images.githubusercontent.com/54115104/71750056-94c2c600-2e77-11ea-856a-46a5a53ef7cb.png)
 
 > Do it using install.sh:
    
