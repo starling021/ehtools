@@ -254,17 +254,6 @@ function is_it_an_ip()
 function latest_changelog
 {
 	clear
-	printf '\033]2;Entynet Hacker Tools\a'
-	echo -e "["$GNS"*"$CE"]"$GNS" Welcome to the Ehtools Framework!"$CE""
-	sleep 0.5
-	echo -e "["$GNS"*"$CE"]"$CE" Welcome to version "$GNS"$VERSION"$CE" PRO!"$CE""
-	sleep 0.5
-	echo -e "Reading Changelog from /root/ehtools/Changelog..."
-	sleep 3
-	cat "$EPATH"/Changelog
-	echo -e "$PAKTC"
-	$READAK
-        clear
 }
 function finish 
 {
