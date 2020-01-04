@@ -1096,26 +1096,26 @@ then
 	echo -e ""$YS" 6"$CE") Bully                       AUTOMATED SCRIPT"
 	echo -e ""$YS" 7"$CE") Bully"
 else
-	echo -e ""$RS" 6"$CE") "$RS"Bully"$CE"                        AUTOMATED SCRIPT"
-	echo -e ""$RS" 7"$CE") "$RS"Bully"$CE""
+	echo -e ""$RS" 6"$CE") Bully"$CE"                        AUTOMATED SCRIPT"
+	echo -e ""$RS" 7"$CE") Bully"$CE""
 fi
 if [[ -d /root/WiFi-autopwner ]]
 then
 	echo -e ""$YS" 8"$CE") WiFi autopwner"
 else
-	echo -e ""$RS" 8"$CE") "$RS"WiFi autopwner"$CE""
+	echo -e ""$RS" 8"$CE") WiFi autopwner"$CE""
 fi
 if [[ -d /root/airgeddon ]]
 then
 	echo -e ""$YS" 9"$CE") Airgeddon"
 else
-	echo -e ""$RS" 9"$CE") "$RS"Airgeddon"$CE""
+	echo -e ""$RS" 9"$CE") Airgeddon"$CE""
 fi
 if [[ -d /root/VMR ]]
 then
 	echo -e ""$YS"10"$CE") VMR"
 else
-	echo -e ""$RS"10"$CE") "$RS"VMR"$CE""
+	echo -e ""$RS"10"$CE") VMR"$CE""
 fi
 echo -e ""$YS"11"$CE") See latest log"
 echo -e ""$YS" 0"$CE") Exit"

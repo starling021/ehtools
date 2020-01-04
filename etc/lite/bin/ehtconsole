@@ -5004,14 +5004,14 @@ function select_interface
 		then
 			echo -e ""$YS" 1"$CE") "$WLANN""
 		else
-			echo -e ""$RS" 1"$CE") "$RS""$WLANN""$CE""
+			echo -e ""$RS" 1"$CE") "$WLANN""$CE""
 		fi
 		TT=$(ifconfig | grep "$ETH:")
 		if [[ "$TT" != "" ]]
 		then
 			echo -e ""$YS" 2"$CE") "$ETH""
 		else
-			echo -e ""$RS" 2"$CE") "$RS""$ETH""$CE""
+			echo -e ""$RS" 2"$CE") "$ETH""$CE""
 		fi
 		echo -e ""$YS" 3"$CE") Manually type an interface"
 		echo -e ""$YS" b"$CE") Go back"

@@ -3247,187 +3247,187 @@ function wifi_tools
 	then
 		echo -e ""$YS" 1"$CE") Fluxion               The future of MITM WPA attacks"
 	else
-		echo -e ""$RS" 1"$CE") "$RS"Fluxion"$CE"               The future of MITM WPA attacks"
+		echo -e ""$RS" 1"$CE") Fluxion"$CE"               The future of MITM WPA attacks"
 	fi
 	if [[ -f /usr/bin/wifite ]]
 	then
 		echo -e ""$YS" 2"$CE") Wifite                Automated wireless attack tool"
 	else
-		echo -e ""$RS" 2"$CE") "$RS"Wifite"$CE"                Automated wireless attack tool"
+		echo -e ""$RS" 2"$CE") Wifite"$CE"                Automated wireless attack tool"
 	fi
 	if [[ -d /root/wifiphisher ]]
 	then
 		echo -e ""$YS" 3"$CE") Wifiphisher           Automated phishing attacks against Wi-Fi clients"
 	else
-		echo -e ""$RS" 3"$CE") "$RS"Wifiphisher"$CE"           Automated phishing attacks against Wi-Fi clients"
+		echo -e ""$RS" 3"$CE") Wifiphisher"$CE"           Automated phishing attacks against Wi-Fi clients"
 	fi
 	if [[ -d /root/entropy ]]
 	then
 		echo -e ""$YS" 4"$CE") Entropy               Netware and GoAhead IP Camera exploit"
 	else
-		echo -e ""$RS" 4"$CE") "$RS"Entropy"$CE"               Netware and GoAhead IP Camera exploit"
+		echo -e ""$RS" 4"$CE") Entropy"$CE"               Netware and GoAhead IP Camera exploit"
 	fi
 	if [[ -d /root/morpheus ]]
 	then
 		echo -e ""$YS" 5"$CE") Morpheus              Automated Ettercap TCP/IP Hijacking Tool"
 	else
-		echo -e ""$RS" 5"$CE") "$RS"Morpheus"$CE"              Automated Ettercap TCP/IP Hijacking Tool"
+		echo -e ""$RS" 5"$CE") Morpheus"$CE"              Automated Ettercap TCP/IP Hijacking Tool"
 	fi
 	#~ if [[ -d /root/osrframework ]]
 	#~ then
 		#~ echo -e ""$YS" 6"$CE") Osrfconsole           Checks usernames-phones to platforms etc.."
 	#~ else
-		#~ echo -e ""$RS" 6"$CE") "$RS"Osrfconsole"$CE"           Checks usernames-phones to platforms etc.."
+		#~ echo -e ""$RS" 6"$CE") Osrfconsole"$CE"           Checks usernames-phones to platforms etc.."
 	#~ fi
 	if [[ -d /root/opensource ]]
 	then
 		echo -e ""$YS" 6"$CE") Netool-toolkit        MitM pentesting opensource toolkit"
 	else
-		echo -e ""$RS" 6"$CE") "$RS"Netool-toolkit"$CE"        MitM pentesting opensource toolkit"
+		echo -e ""$RS" 6"$CE") Netool-toolkit"$CE"        MitM pentesting opensource toolkit"
 	fi
 	if [[ -d /root/camsnap ]]
 	then
 		echo -e ""$YS" 7"$CE") CamSnap               Grabs target's camera snapshots by link"
 	else
-		echo -e ""$RS" 7"$CE") "$RS"CamSnap"$CE"               Grab target's camera snapshots by link"
+		echo -e ""$RS" 7"$CE") CamSnap"$CE"               Grab target's camera snapshots by link"
 	fi
 	if [[ -d /root/Trity ]]
 	then
 		echo -e ""$YS" 8"$CE") Trity                 Advanced pentesting framework"
 	else
-		echo -e ""$RS" 8"$CE") "$RS"Trity"$CE"                 Advanced pentesting framework"
+		echo -e ""$RS" 8"$CE") Trity"$CE"                 Advanced pentesting framework"
 	fi
 	if [[ -d /root/Dracnmap ]]
 	then				
 		echo -e ""$YS" 9"$CE") Dracnmap              Many scan options"
 	else
-		echo -e ""$RS" 9"$CE") "$RS"Dracnmap"$CE"              Many scan options"
+		echo -e ""$RS" 9"$CE") Dracnmap"$CE"              Many scan options"
 	fi
 	if [[ -d "/usr/share/fern-wifi-cracker" ]]
 	then	
 		echo -e ""$YS"10"$CE") Fern                  Wifi cracker GUI"
 	else
-		echo -e ""$RS"10"$CE") "$RS"Fern"$CE"                  Wifi cracker GUI"
+		echo -e ""$RS"10"$CE") Fern"$CE"                  Wifi cracker GUI"
 	fi
 	if [[ -f /usr/sbin/netdiscover ]]
 	then	
 		echo -e ""$YS"11"$CE") Netdiscover           Network address discovering tool"
 	else
-		echo -e ""$RS"11"$CE") "$RS"Netdiscover"$CE"           Network address discovering tool"
+		echo -e ""$RS"11"$CE") Netdiscover"$CE"           Network address discovering tool"
 	fi
 	if [[ -d /root/kickthemout ]]
 	then	
 		echo -e ""$YS"12"$CE") KickThemOut           Kick devices off your network"
 	else
-		echo -e ""$RS"12"$CE") "$RS"KickThemOut"$CE"           Kick devices off your network"
+		echo -e ""$RS"12"$CE") KickThemOut"$CE"           Kick devices off your network"
 	fi
 	if [[ -d "/usr/share/ghost-phisher" ]]
 	then	
 		echo -e ""$YS"13"$CE") Ghost-Phisher         Fake AP,MITM,Session hijacking etc..."
 	else
-		echo -e ""$RS"13"$CE") "$RS"Ghost-Phisher"$CE"         Fake AP,MITM,Session hijacking etc..."
+		echo -e ""$RS"13"$CE") Ghost-Phisher"$CE"         Fake AP,MITM,Session hijacking etc..."
 	fi
 	if [[ -d /root/The-Eye ]]
 	then	
 		echo -e ""$YS"14"$CE") The Eye               Detects ARP poisoning DNS spoofing etc..."
 	else
-		echo -e ""$RS"14"$CE") "$RS"The Eye"$CE"               Detects ARP poisoning DNS spoofing etc..."
+		echo -e ""$RS"14"$CE") The Eye"$CE"               Detects ARP poisoning DNS spoofing etc..."
 	fi
 	if [[ -d /root/xerxes ]]
 	then	
 		echo -e ""$YS"15"$CE") Xerxes                The most powerful DoS tool(CAUTION)"
 	else
-		echo -e ""$RS"15"$CE") "$RS"Xerxes"$CE"                The most powerful DoS tool(CAUTION)"
+		echo -e ""$RS"15"$CE") Xerxes"$CE"                The most powerful DoS tool(CAUTION)"
 	fi
 	if [[ -d /root/KatanaFramework ]]
 	then
 		echo -e ""$YS"16"$CE") Katana Framework      Many penetration testing features"
 	else
-		echo -e ""$RS"16"$CE") "$RS"Katana Framework"$CE"      Many penetration testing features"
+		echo -e ""$RS"16"$CE") Katana Framework"$CE"      Many penetration testing features"
 	fi
 	if [[ -d /root/airgeddon ]]
 	then
 		echo -e ""$YS"17"$CE") Airgeddon             Audit wireless networks."
 	else
-		echo -e ""$RS"17"$CE") "$RS"Airgeddon"$CE"             Audit wireless networks."
+		echo -e ""$RS"17"$CE") Airgeddon"$CE"             Audit wireless networks."
 	fi
 	if [[ -f /usr/bin/websploit ]]
 	then
 		echo -e ""$YS"18"$CE") Websploit             Advanced MITM framework"
 	else
-		echo -e ""$RS"18"$CE") "$RS"Websploit"$CE"             Advanced MITM framework"
+		echo -e ""$RS"18"$CE") Websploit"$CE"             Advanced MITM framework"
 	fi
 	if [[ -d /etc/openvas ]]
 	then
 		echo -e ""$YS"19"$CE") Openvas               Vulnerability scanner LAN"
 	else
-		echo -e ""$RS"19"$CE") "$RS"Openvas"$CE"               Vulnerability scanner LAN"
+		echo -e ""$RS"19"$CE") Openvas"$CE"               Vulnerability scanner LAN"
 	fi
 	if [[ -f /usr/bin/ipscan ]]
 	then
 		echo -e ""$YS"20"$CE") Angry IP Scanner      IP Scanner"
 	else
-		echo -e ""$RS"20"$CE") "$RS"Angry IP Scanner"$CE"      IP Scanner"
+		echo -e ""$RS"20"$CE") Angry IP Scanner"$CE"      IP Scanner"
 	fi
 	if [[ -d /root/routersploit ]]
 	then
 		echo -e ""$YS"21"$CE") Routersploit          Find/exploit router vulnerabilities"
 	else
-		echo -e ""$RS"21"$CE") "$RS"Routersploit"$CE"          Find/exploit router vulnerabilities"
+		echo -e ""$RS"21"$CE") Routersploit"$CE"          Find/exploit router vulnerabilities"
 	fi
 	if [[ -d /root/nWatch ]]
 	then
 		echo -e ""$YS"22"$CE") nWatch                IP scanner/OS detection"
 	else
-		echo -e ""$RS"22"$CE") "$RS"nWatch"$CE"                IP scanner/OS detection"
+		echo -e ""$RS"22"$CE") nWatch"$CE"                IP scanner/OS detection"
 	fi
 	if [[ -d /root/eternal_scanner ]]
 	then
 		echo -e ""$YS"23"$CE") Eternal scanner       Scans hosts for eternalblue vulnerabilities"
 	else
-		echo -e ""$RS"23"$CE") "$RS"Eternal scanner"$CE"       Scans hosts for eternalblue vulnerabilities"
+		echo -e ""$RS"23"$CE") Eternal scanner"$CE"       Scans hosts for eternalblue vulnerabilities"
 	fi
 	if [[ -d /root/eaphammer ]]
 	then
 		echo -e ""$YS"24"$CE") Eaphammer             Evil twin attacks against WPA2-Enterprise networks"
 	else
-		echo -e ""$RS"24"$CE") "$RS"Eaphammer"$CE"             Evil twin attacks against WPA2-Enterprise networks"
+		echo -e ""$RS"24"$CE") Eaphammer"$CE"             Evil twin attacks against WPA2-Enterprise networks"
 	fi
 	if [[ -d /root/VMR ]]
 	then
 		echo -e ""$YS"25"$CE") VMR                   Best WPS cracker, mdk3-v6"
 	else
-		echo -e ""$RS"25"$CE") "$RS"VMR"$CE"                   Best WPS cracker, mdk3-v6"
+		echo -e ""$RS"25"$CE") VMR"$CE"                   Best WPS cracker, mdk3-v6"
 	fi
 	if [[ -d /root/netattack2 ]]
 	then
 		echo -e ""$YS"26"$CE") Netattack3            Advanced network scan and attack script"
 	else
-		echo -e ""$RS"26"$CE") "$RS"Netattack2"$CE"            Advanced network scan and attack script"
+		echo -e ""$RS"26"$CE") Netattack2"$CE"            Advanced network scan and attack script"
 	fi
 	if [[ -f /usr/bin/wifi-pumpkin ]]
 	then
 		echo -e ""$YS"27"$CE") Wifi-Pumpkin          Framework for Rogue Wi-Fi Access Point Attack"
 	else
-		echo -e ""$RS"27"$CE") "$RS"Wifi-Pumpkin"$CE"          Framework for Rogue Wi-Fi Access Point Attack"
+		echo -e ""$RS"27"$CE") Wifi-Pumpkin"$CE"          Framework for Rogue Wi-Fi Access Point Attack"
 	fi
 	if [[ -d /root/Gloom-Framework ]]
 	then
 		echo -e ""$YS"28"$CE") Gloom                 Penetration Testing Framework"
 	else
-		echo -e ""$RS"28"$CE") "$RS"Gloom"$CE"                 Penetration Testing Framework"
+		echo -e ""$RS"28"$CE") Gloom"$CE"                 Penetration Testing Framework"
 	fi
 	if [[ -f /usr/bin/sechub ]]
 	then
 		echo -e ""$YS"29"$CE") secHub                Security/Hacking Kit"
 	else
-		echo -e ""$RS"29"$CE") "$RS"secHub"$CE"                Security/Hacking Kit"
+		echo -e ""$RS"29"$CE") secHub"$CE"                Security/Hacking Kit"
 	fi
 	if [[ -d /root/socfish ]]
 	then
 		echo -e ""$YS"30"$CE") SocFish               Ultimate phishing tool with Ngrok integrated"
 	else
-		echo -e ""$RS"30"$CE") "$RS"SocFish"$CE"               Ultimate phishing tool with Ngrok integrated"
+		echo -e ""$RS"30"$CE") SocFish"$CE"               Ultimate phishing tool with Ngrok integrated"
 	fi
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
@@ -4106,181 +4106,181 @@ function remote_access
 	then
 		echo -e ""$YS" 1"$CE") BeeLogger             Generate Gmail Emailing Keyloggers to Windows"
 	else
-		echo -e ""$RS" 1"$CE") "$RS"BeeLogger"$CE"             Generate Gmail Emailing Keyloggers to Windows"
+		echo -e ""$RS" 1"$CE") BeeLogger"$CE"             Generate Gmail Emailing Keyloggers to Windows"
 	fi
 	if [[ -d /root/ezsploit ]]
 	then
 		echo -e ""$YS" 2"$CE") Ezsploit              Automation for metasploit"
 	else
-		echo -e ""$RS" 2"$CE") "$RS"Ezsploit"$CE"              Automation for metasploit"
+		echo -e ""$RS" 2"$CE") Ezsploit"$CE"              Automation for metasploit"
 	fi
 	if [[ -d /root/pupy ]]
 	then
 		echo -e ""$YS" 3"$CE") Pupy                  Remote administration and post exploitation tool"
 	else
-		echo -e ""$RS" 3"$CE") "$RS"Pupy"$CE"                  Remote administration and post exploitation tool"
+		echo -e ""$RS" 3"$CE") Pupy"$CE"                  Remote administration and post exploitation tool"
 	fi
 	if [[ -d /root/zirikatu ]]
 	then
 		echo -e ""$YS" 4"$CE") Zirikatu              Fud Payload generator script"
 	else
-		echo -e ""$RS" 4"$CE") "$RS"Zirikatu"$CE"              Fud Payload generator script"
+		echo -e ""$RS" 4"$CE") Zirikatu"$CE"              Fud Payload generator script"
 	fi
 	if [[ -d /root/TheFatRat ]]
 	then
 		echo -e ""$YS" 5"$CE") TheFatRat             Generate undetectable payloads"
 	else
-		echo -e ""$RS" 5"$CE") "$RS"TheFatRat"$CE"             Generate undetectable payloads"
+		echo -e ""$RS" 5"$CE") TheFatRat"$CE"             Generate undetectable payloads"
 	fi
 	if [[ -d /root/Winpayloads ]]
 	then
 		echo -e ""$YS" 6"$CE") Winpayloads           Generate undetectable payloads"
 	else
-		echo -e ""$RS" 6"$CE") "$RS"Winpayloads"$CE"           Generate undetectable payloads"
+		echo -e ""$RS" 6"$CE") Winpayloads"$CE"           Generate undetectable payloads"
 	fi
 	if [[ -f /usr/bin/shellter ]]
 	then
 		echo -e ""$YS" 7"$CE") Shellter              Inject payload into .exe"
 	else
-		echo -e ""$RS" 7"$CE") "$RS"Shellter"$CE"              Inject payload into .exe"
+		echo -e ""$RS" 7"$CE") Shellter"$CE"              Inject payload into .exe"
 	fi
 	if [[ -d /root/CHAOS ]]
 	then
 		echo -e ""$YS" 8"$CE") CHAOS                 Generate payloads/listeners"
 	else
-		echo -e ""$RS" 8"$CE") "$RS"CHAOS"$CE"                 Generate payloads/listeners"
+		echo -e ""$RS" 8"$CE") CHAOS"$CE"                 Generate payloads/listeners"
 	fi
 	if [[ -d /root/kwetza ]]
 	then
 		echo -e ""$YS" 9"$CE") Kwetza                Inject payload to apk"
 	else						    
-		echo -e ""$RS" 9"$CE") "$RS"Kwetza"$CE"                Inject payload to apk"
+		echo -e ""$RS" 9"$CE") Kwetza"$CE"                Inject payload to apk"
 	fi						    	       
 	if [[ -d /root/proton ]]			    
 	then						    
 		echo -e ""$YS"10"$CE") Proton                Windows post exploitation framework"
 	else						    
-		echo -e ""$RS"10"$CE") "$RS"Proton"$CE"                Windows post exploitation framework"
+		echo -e ""$RS"10"$CE") Proton"$CE"                Windows post exploitation framework"
 	fi						    
 	if [[ -d /root/invader ]]			    
 	then
 		echo -e ""$YS"11"$CE") Invader               PowerShell and Python post exploitation framework"
 	else
-		echo -e ""$RS"11"$CE") "$RS"Invader"$CE"               PowerShell and Python post exploitation framework"
+		echo -e ""$RS"11"$CE") Invader"$CE"               PowerShell and Python post exploitation framework"
 	fi							       
 	if [[ -d /root/ghost ]]					       
 	then							       
 		echo -e ""$YS"12"$CE") Ghost  		     Android post exploitation framework"
 	else
-		echo -e ""$RS"12"$CE") "$RS"Ghost"$CE"                 Android post exploitation framework"
+		echo -e ""$RS"12"$CE") Ghost"$CE"                 Android post exploitation framework"
 	fi
 	if [[ -d /root/Dr0p1t-Framework ]]
 	then
 		echo -e ""$YS"13"$CE") Dr0p1t-Framework      Create an advanced stealthy dropper"
 	else
-		echo -e ""$RS"13"$CE") "$RS"Dr0p1t-Framework"$CE"      Create an advanced stealthy dropper"
+		echo -e ""$RS"13"$CE") Dr0p1t-Framework"$CE"      Create an advanced stealthy dropper"
 	fi
 	if [[ -d /root/Veil ]]
 	then
 		echo -e ""$YS"14"$CE") Veil-Framework        Generate payloads that bypass common anti-virus"
 	else
-		echo -e ""$RS"14"$CE") "$RS"Veil-Framework"$CE"        Generate payloads that bypass common anti-virus"
+		echo -e ""$RS"14"$CE") Veil-Framework"$CE"        Generate payloads that bypass common anti-virus"
 	fi
 	if [[ -d /root/leviathan ]]
 	then
 		echo -e ""$YS"15"$CE") Leviathan             Wide range mass audit toolkit"
 	else
-		echo -e ""$RS"15"$CE") "$RS"Leviathan"$CE"             Wide range mass audit toolkit"
+		echo -e ""$RS"15"$CE") Leviathan"$CE"             Wide range mass audit toolkit"
 	fi
 	if [[ -d /root/FakeImageExploiter ]]
 	then
 		echo -e ""$YS"16"$CE") FakeImageExploiter    Use a Fake image.jpg to exploit targets"
 	else
-		echo -e ""$RS"16"$CE") "$RS"FakeImageExploiter"$CE"    Use a Fake image.jpg to exploit targets"
+		echo -e ""$RS"16"$CE") FakeImageExploiter"$CE"    Use a Fake image.jpg to exploit targets"
 	fi
 	if [[ -d /root/avet ]]
 	then
 		echo -e ""$YS"17"$CE") Avet                  AntiVirus Evasion Tool"
 	else
-		echo -e ""$RS"17"$CE") "$RS"Avet"$CE"                  AntiVirus Evasion Tool"
+		echo -e ""$RS"17"$CE") Avet"$CE"                  AntiVirus Evasion Tool"
 	fi
 	if [[ -d /root/ARCANUS ]]
 	then
 		echo -e ""$YS"18"$CE") Arcanus               Customized payload generator/handler"
 	else
-		echo -e ""$RS"18"$CE") "$RS"Arcanus"$CE"               Customized payload generator/handler"
+		echo -e ""$RS"18"$CE") Arcanus"$CE"               Customized payload generator/handler"
 	fi
 	if [[ -f /usr/bin/msfpc ]]
 	then
 		echo -e ""$YS"19"$CE") MSFPC                 MSFvenom Payload Creator"
 	else
-		echo -e ""$RS"19"$CE") "$RS"MSFPC"$CE"                 MSFvenom Payload Creator"
+		echo -e ""$RS"19"$CE") MSFPC"$CE"                 MSFvenom Payload Creator"
 	fi
 	if [[ -d /root/morphHTA ]]
 	then
 		echo -e ""$YS"20"$CE") morphHTA              Morphing Cobalt Strike's evil.HTA"
 	else
-		echo -e ""$RS"20"$CE") "$RS"morphHTA"$CE"              Morphing Cobalt Strike's evil.HTA"
+		echo -e ""$RS"20"$CE") morphHTA"$CE"              Morphing Cobalt Strike's evil.HTA"
 	fi
 	if [[ -d /root/LFISuite ]]
 	then
 		echo -e ""$YS"21"$CE") LFISuite              Totally Automatic LFI Exploiter and Scanner"
 	else
-		echo -e ""$RS"21"$CE") "$RS"LFISuite"$CE"              Totally Automatic LFI Exploiter and Scanner"
+		echo -e ""$RS"21"$CE") LFISuite"$CE"              Totally Automatic LFI Exploiter and Scanner"
 	fi
 	if [[ -d /root/UniByAv ]]
 	then
 		echo -e ""$YS"22"$CE") UniByAv               Generate undetectable executable from raw shellcode"
 	else
-		echo -e ""$RS"22"$CE") "$RS"UniByAv"$CE"               Generate undetectable executable from raw shellcode"
+		echo -e ""$RS"22"$CE") UniByAv"$CE"               Generate undetectable executable from raw shellcode"
 	fi
 	if [[ -d /root/demiguise ]]
 	then
 		echo -e ""$YS"23"$CE") Demiguise             HTA encryption tool for RedTeams"
 	else
-		echo -e ""$RS"23"$CE") "$RS"Demiguise"$CE"             HTA encryption tool for RedTeams"
+		echo -e ""$RS"23"$CE") Demiguise"$CE"             HTA encryption tool for RedTeams"
 	fi
 	if [[ -d /root/DKMC ]]
 	then
 		echo -e ""$YS"24"$CE") DKMC                  Malicious payload evasion tool into image"
 	else
-		echo -e ""$RS"24"$CE") "$RS"DKMC"$CE"                  Malicious payload evasion tool into image"
+		echo -e ""$RS"24"$CE") DKMC"$CE"                  Malicious payload evasion tool into image"
 	fi
 	if [[ -d /usr/share/beef-xss ]]
 	then
 		echo -e ""$YS"25"$CE") Beef                  The browser exploitation framework"
 	else
-		echo -e ""$RS"25"$CE") "$RS"Beef"$CE"                   The browser exploitation framework"
+		echo -e ""$RS"25"$CE") Beef"$CE"                   The browser exploitation framework"
 	fi
 	if [[ -d /root/Evil-Droid ]]
 	then
 		echo -e ""$YS"26"$CE") Evil-Droid            Penetrate android platforms"
 	else
-		echo -e ""$RS"26"$CE") "$RS"Evil-Droid"$CE"            Penetrate android platforms"
+		echo -e ""$RS"26"$CE") Evil-Droid"$CE"            Penetrate android platforms"
 	fi
 	if [[ -d /root/mouse ]]
 	then
 		echo -e ""$YS"27"$CE") Mouse                 iOS and macOS post exploitation tool"
 	else
-		echo -e ""$RS"27"$CE") "$RS"Mouse"$CE"                 iOS and macOS post exploitation tool"
+		echo -e ""$RS"27"$CE") Mouse"$CE"                 iOS and macOS post exploitation tool"
 	fi
 	if [[ -d /root/Zerodoor ]]
 	then
 		echo -e ""$YS"28"$CE") Zerodoor              Penetrate android platforms"
 	else
-		echo -e ""$RS"28"$CE") "$RS"Zerodoor"$CE"              Penetrate android platforms"
+		echo -e ""$RS"28"$CE") Zerodoor"$CE"              Penetrate android platforms"
 	fi
 	if [[ -d /root/cromos ]]
 	then
 		echo -e ""$YS"29"$CE") Cromos                Download and Inject code into Google Chrome extensions"
 	else
-		echo -e ""$RS"29"$CE") "$RS"Cromos"$CE"                Download and Inject code into Google Chrome extensions"
+		echo -e ""$RS"29"$CE") Cromos"$CE"                Download and Inject code into Google Chrome extensions"
 	fi
 	if [[ -d /root/Enigma ]]
 	then
 		echo -e ""$YS"30"$CE") Enigma                Multiplatform payload dropper"
 	else
-		echo -e ""$RS"30"$CE") "$RS"Enigma"$CE"                Multiplatform payload dropper"
+		echo -e ""$RS"30"$CE") Enigma"$CE"                Multiplatform payload dropper"
 	fi
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS"00"$CE") Main menu"
@@ -5369,43 +5369,43 @@ function information_gathering
 		then
 			echo -e ""$YS" 1"$CE") Sniper                Automated Pentest Recon Scanner"
 		else
-			echo -e ""$RS" 1"$CE") "$RS"Sniper"$CE"                Automated Pentest Recon Scanner"
+			echo -e ""$RS" 1"$CE") Sniper"$CE"                Automated Pentest Recon Scanner"
 		fi
 		if [[ -d /root/ReconDog ]]
 		then
 			echo -e ""$YS" 2"$CE") ReconDog              All in one tool"
 		else
-			echo -e ""$RS" 2"$CE") "$RS"ReconDog"$CE"              All in one tool"
+			echo -e ""$RS" 2"$CE") ReconDog"$CE"              All in one tool"
 		fi
 		if [[ -d /root/geospy ]]
 		then
 			echo -e ""$YS" 3"$CE") GeoSpy                People tracker on the Internet"
 		else
-			echo -e ""$RS" 3"$CE") "$RS"GeoSpy"$CE"                People tracker on the Internet"
+			echo -e ""$RS" 3"$CE") GeoSpy"$CE"                People tracker on the Internet"
 		fi
 		if [[ -d /root/Infoga ]]
 		then
 			echo -e ""$YS" 4"$CE") Infoga                Email Information Gathering"
 		else
-			echo -e ""$RS" 4"$CE") "$RS"Infoga"$CE"                Email Information Gathering"
+			echo -e ""$RS" 4"$CE") Infoga"$CE"                Email Information Gathering"
 		fi
 		if [[ -d /root/KnockMail ]]
 		then
 			echo -e ""$YS" 5"$CE") KnockMail             Verify if email exists"
 		else
-			echo -e ""$RS" 5"$CE") "$RS"KnockMail"$CE"             Verify if email exists"
+			echo -e ""$RS" 5"$CE") KnockMail"$CE"             Verify if email exists"
 		fi
 		if [[ -d /root/operative-framework ]]
 		then
 			echo -e ""$YS" 6"$CE") Operative-framework   Get information on website or target"
 		else
-			echo -e ""$RS" 6"$CE") "$RS"Operative-framework"$CE"   Get information on website or target"
+			echo -e ""$RS" 6"$CE") Operative-framework"$CE"   Get information on website or target"
 		fi
 		if [[ -d /root/osrframework ]]
 		then
 			echo -e ""$YS" 7"$CE") Osrfconsole           Perform accurate online researches"
 		else
-			echo -e ""$RS" 7"$CE") "$RS"Osrfconsole"$CE"           Perform accurate online researches"
+			echo -e ""$RS" 7"$CE") Osrfconsole"$CE"           Perform accurate online researches"
 		fi
 		echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS"00"$CE") Main menu"
@@ -5641,67 +5641,67 @@ function website_tools
 		then
 			echo -e ""$YS" 1"$CE") SQLmap                Automatic SQL injection and database takeover tool"
 		else
-			echo -e ""$RS" 1"$CE") "$RS"SQLmap"$CE"                Automatic SQL injection and database takeover tool"
+			echo -e ""$RS" 1"$CE") SQLmap"$CE"                Automatic SQL injection and database takeover tool"
 		fi
 		if [[ -d /root/leviathan ]]
 		then
 			echo -e ""$YS" 2"$CE") Leviathan             Wide range mass audit toolkit"
 		else
-			echo -e ""$RS" 2"$CE") "$RS"Leviathan"$CE"             Wide range mass audit toolkit"
+			echo -e ""$RS" 2"$CE") Leviathan"$CE"             Wide range mass audit toolkit"
 		fi
 		if [[ -d /root/NoSQLMap ]]
 		then
 			echo -e ""$YS" 3"$CE") NoSQLMap              Automated NoSQL exploitation tool"
 		else
-			echo -e ""$RS" 3"$CE") "$RS"NoSQLMap"$CE"              Automated NoSQL exploitation tool"
+			echo -e ""$RS" 3"$CE") NoSQLMap"$CE"              Automated NoSQL exploitation tool"
 		fi
 		if [[ -d /root/Yuki-Chan-The-Auto-Pentest ]]
 		then
 			echo -e ""$YS" 4"$CE") Yuki Chan             Automated Pentest Tool"
 		else
-			echo -e ""$RS" 4"$CE") "$RS"Yuki Chan"$CE"             Automated Pentest Tool"
+			echo -e ""$RS" 4"$CE") Yuki Chan"$CE"             Automated Pentest Tool"
 		fi
 		if [[ -d /root/Blazy ]]
 		then
 			echo -e ""$YS" 5"$CE") Blazy                 Login bruteforcer/tests for CSRF, Cj, Cloudflare, WAF"
 		else
-			echo -e ""$RS" 5"$CE") "$RS"Blazy"$CE"                 Login bruteforcer/tests for CSRF, Clickjacking, Cloudflare and WAF"
+			echo -e ""$RS" 5"$CE") Blazy"$CE"                 Login bruteforcer/tests for CSRF, Clickjacking, Cloudflare and WAF"
 		fi
 		if [[ -d /root/Striker ]]
 		then
 			echo -e ""$YS" 6"$CE") Striker               An offensive information and vulnerability scanner"
 		else
-			echo -e ""$RS" 6"$CE") "$RS"Striker"$CE"               An offensive information and vulnerability scanner"
+			echo -e ""$RS" 6"$CE") Striker"$CE"               An offensive information and vulnerability scanner"
 		fi
 		if [[ -d /root/hyprPulse ]]
 		then
 			echo -e ""$YS" 7"$CE") HyprPulse             Brute force multiple accounts at once"
 		else
-			echo -e ""$RS" 7"$CE") "$RS"HyprPulse"$CE"             Brute force multiple accounts at once"
+			echo -e ""$RS" 7"$CE") HyprPulse"$CE"             Brute force multiple accounts at once"
 		fi
 		if [[ -d /root/hyprPulse ]]
 		then
 			echo -e ""$YS" 8"$CE") InstaBurst            A faster way to brute force Instagram"
 		else
-			echo -e ""$RS" 8"$CE") "$RS"InstaBurst"$CE"            A faster way to brute force Instagram"
+			echo -e ""$RS" 8"$CE") InstaBurst"$CE"            A faster way to brute force Instagram"
 		fi
 		if [[ -f /usr/local/bin/instagram-py ]]
 		then
 			echo -e ""$YS" 9"$CE") Instagram-py          Brute force Instagram without password limiting"
 		else
-			echo -e ""$RS" 9"$CE") "$RS"Instagram-py"$CE"          Brute force Instagram without password limiting"
+			echo -e ""$RS" 9"$CE") Instagram-py"$CE"          Brute force Instagram without password limiting"
 		fi
 		if [[ -d /root/datasploit ]]
 		then
 			echo -e ""$YS"10"$CE") Datasploit            Recon on Companies, People, Phone, Bitcoin..."
 		else
-			echo -e ""$RS"10"$CE") "$RS"Datasploit"$CE"            Recon on Companies, People, Phone, Bitcoin..."
+			echo -e ""$RS"10"$CE") Datasploit"$CE"            Recon on Companies, People, Phone, Bitcoin..."
 		fi
 		if [[ -d /root/SiteBroker ]]
 		then
 			echo -e ""$YS"11"$CE") SiteBroker            Utility to penetrate and test websites"
 		else
-			echo -e ""$RS"11"$CE") "$RS"SiteBroker"$CE"            Utility to penetrate and test websites"
+			echo -e ""$RS"11"$CE") SiteBroker"$CE"            Utility to penetrate and test websites"
 		fi
 		echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS"00"$CE") Main menu"
@@ -6010,43 +6010,43 @@ do
 	then
 		echo -e ""$YS" 1"$CE") Geany            Best notepad for linux"
 	else
-		echo -e ""$RS" 1"$CE") "$RS"Geany"$CE"            Best notepad for linux"
+		echo -e ""$RS" 1"$CE") Geany"$CE"            Best notepad for linux"
 	fi
 	if [[ -d /root/dagon ]]
 	then
 		echo -e ""$YS" 2"$CE") Dagon            Hash cracker/Advanced Hash Manipulation"
 	else
-		echo -e ""$RS" 2"$CE") "$RS"Dagon"$CE"            Hash cracker/Advanced Hash Manipulation"
+		echo -e ""$RS" 2"$CE") Dagon"$CE"            Hash cracker/Advanced Hash Manipulation"
 	fi
 	if [[ -d /root/LALIN ]]
 	then
 		echo -e ""$YS" 3"$CE") LALIN            Automatically install any package for pentest "
 	else
-		echo -e ""$RS" 3"$CE") "$RS"LALIN"$CE"            Automatically install any package for pentest "
+		echo -e ""$RS" 3"$CE") LALIN"$CE"            Automatically install any package for pentest "
 	fi
 	if [[ -d /root/cupp ]]
 	then
 		echo -e ""$YS" 4"$CE") Cupp             Make specific worldlists"
 	else
-		echo -e ""$RS" 4"$CE") "$RS"Cupp"$CE"             Make specific worldlists"
+		echo -e ""$RS" 4"$CE") Cupp"$CE"             Make specific worldlists"
 	fi
 	if [[ -d /root/cupp ]]
 	then
 		echo -e ""$YS" 5"$CE") Bleachbit        Free up space"
 	else
-		echo -e ""$RS" 5"$CE") "$RS"Bleachbit"$CE"        Free up space"
+		echo -e ""$RS" 5"$CE") Bleachbit"$CE"        Free up space"
 	fi
 	if [[ -d /root/Hash-Buster ]]
 	then
 		echo -e ""$YS" 6"$CE") Hash Buster      Hash cracker"
 	else
-		echo -e ""$RS" 6"$CE") "$RS"Hash Buster"$CE"      Hash cracker"
+		echo -e ""$RS" 6"$CE") Hash Buster"$CE"      Hash cracker"
 	fi
 	if [[ -d /root/patator ]]
 	then
 		echo -e ""$YS" 7"$CE") Patator          Bruteforcer"
 	else
-		echo -e ""$RS" 7"$CE") "$RS"Patator"$CE"          Bruteforcer"
+		echo -e ""$RS" 7"$CE") Patator"$CE"          Bruteforcer"
 	fi
 	echo -e ""$YS" b"$CE") Go back"
 	echo -e ""$YS" 0"$CE") Exit"
@@ -8299,14 +8299,14 @@ function select_interface
 		then
 			echo -e ""$YS" 1"$CE") "$WLANN""
 		else
-			echo -e ""$RS" 1"$CE") "$RS""$WLANN""$CE""
+			echo -e ""$RS" 1"$CE") "$WLANN""$CE""
 		fi
 		TT=$(ifconfig | grep "$ETH:")
 		if [[ "$TT" != "" ]]
 		then
 			echo -e ""$YS" 2"$CE") "$ETH""
 		else
-			echo -e ""$RS" 2"$CE") "$RS""$ETH""$CE""
+			echo -e ""$RS" 2"$CE") "$ETH""$CE""
 		fi
 		echo -e ""$YS" 3"$CE") Manually type an interface"
 		echo -e ""$YS" b"$CE") Go back"
