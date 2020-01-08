@@ -9566,7 +9566,7 @@ echo $passcode | ./libunconf
         then
                 sleep 1
                 clear
-                cd /root/ehtools/shell
+                cd /root/ehtools/etc/shell
                 chmod +x ehtsh
                 ./ehtsh
 
