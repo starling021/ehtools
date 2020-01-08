@@ -123,7 +123,7 @@ function defaults_l
 toolarray=(
 "fluxion" "sniffer" "wifite" "wifiphisher" "morpheus" "osrframework" "camsnap" "trity" "cupp" "dracnmap" "fern" "kickthemout" "ghostphisher" "theeye" "xerxes"
 "mdk3" "katana" "airgeddon" "4nonimizer" "beelogger" "ezsploit" "pupy" "zirikatu" "wifiautopwner" "bully" "anonsurf" "anonym8" "thefatrat" "angryip" "sniper"
-"recondog" "geospy" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
+"recondog" "geospy" "winpayloads" "chaos" "omega" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
 "websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "proton" "invader" "ghost"
 "dropit_frmw" "wifi_pumpkin" "veil" "leviathan" "fake_image" "avet" "gloom" "arcanus" "msfpc" "morphhta" "lfi" "unibyav" "demiguise" "dkmc" "sechub" "beef" "mitmf"
 "fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "mouse" "zerodoor" "cromos" "yuki-chan" "socfish" "entropy" "blazy"
@@ -786,9 +786,9 @@ function listshortcuts
 		KSSET="go run CHAOS.go"
 	elif [[ "$nn" = "27" ]]
 	then
-		TITLE="Routersploit"
-		NAMECD="cd /root/routersploit"
-		KSSET="./rsf.py"
+		TITLE="Omega"
+		NAMECD="cd /root/omega"
+		KSSET="./omega"
 	elif [[ "$nn" = "28" ]]
 	then
 		TITLE="nWatch"
@@ -1099,7 +1099,7 @@ done
 	#~ echo -e ""$YS"16"$CE") Xerxes       "$YS"36"$CE") WinPayloads   "$YS"56"$CE") Netattack2       "$YS"76"$CE") Patator"
 	#~ echo -e ""$YS"17"$CE") Mdk3-master  "$YS"37"$CE") Shellter      "$YS"57"$CE") Proton           "$YS"77"$CE") Evil-Droid"
 	#~ echo -e ""$YS"18"$CE") Katana       "$YS"38"$CE") CHAOS         "$YS"58"$CE") Invader          "$YS"78"$CE") NoSQLMap"
-	#~ echo -e ""$YS"19"$CE") Airgeddon    "$YS"39"$CE") Routersploit  "$YS"59"$CE") Ghost"
+	#~ echo -e ""$YS"19"$CE") Airgeddon    "$YS"39"$CE") Omega         "$YS"59"$CE") Ghost"
 	#~ echo -e ""$YS"20"$CE") Websploit    "$YS"40"$CE") Geany         "$YS"60"$CE") Dr0p1t"
 	#~ echo -e ""$YS" b"$CE") Go back"
 	#~ echo -e ""$YS" 0"$CE") Exit"
@@ -1221,7 +1221,7 @@ done
 		#~ install_chaos
 	#~ elif [[ "$REIN" = "39" ]]
 	#~ then
-		#~ install_routersploit
+		#~ install_omega
 	#~ elif [[ "$REIN" = "40" ]]
 	#~ then
 		#~ install_geany
@@ -3369,11 +3369,11 @@ function wifi_tools
 	else
 		echo -e ""$RS"20"$CE") Angry IP Scanner"$CE"      IP Scanner"
 	fi
-	if [[ -d /root/routersploit ]]
+	if [[ -d /root/omega ]]
 	then
-		echo -e ""$YS"21"$CE") Routersploit          Find/exploit router vulnerabilities"
+		echo -e ""$YS"21"$CE") Omega                 Exploitation Framework for Embedded Devices"
 	else
-		echo -e ""$RS"21"$CE") Routersploit"$CE"          Find/exploit router vulnerabilities"
+		echo -e ""$RS"21"$CE") Omega"$CE"                 Exploitation Framework for Embedded Devices"
 	fi
 	if [[ -d /root/nWatch ]]
 	then
@@ -3819,18 +3819,18 @@ function wifi_tools
 		fi
 	elif [[ "$APPP" = "21" ]]
 	then
-		if [[ -d "/root/routersploit" ]]
+		if [[ -d "/root/omega" ]]
 		then
-			cd /root/routersploit
-			chmod +x rsf.py
-			./rsf.py
+			cd /root/omega
+			chmod +x omega
+			./omega
 			cd
 		else
 			echo -e "$TNI"
 			read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
 			if [[ "$INSTALL" = "yes" ]]
 			then
-				install_routersploit
+				install_omega
 			else
 				continue
 			fi
@@ -9539,6 +9539,7 @@ echo $passcode | ./libunconf
 			apt-get -y install python3-dev
 			apt-get -y install hcitool
 			apt-get -y install sslstrip
+			apt-get -y install l2ping
 			     cd ~/arissploit
 			     chmod +x arissploit
                              ./arissploit
@@ -9565,25 +9566,9 @@ echo $passcode | ./libunconf
         then
                 sleep 1
                 clear
-                if [[ -d /etc/ehtsh ]]
-                then
-                if [[ -f /bin/ehtsh ]]
-                then
-                ehtsh
-                else
-                cd /etc/ehtsh
-                cp ehtsh /bin
-                chmod +x /bin/ehtsh 
-                ehtsh
-                fi
-                else
-		cd /etc
-                git clone https://github.com/entynetproject/ehtsh.git
-                cd ehtsh
-                cp ehtsh /bin
-                chmod +x /bin/ehtsh
-                fi
-                
+                cd /root/ehtools/shell
+                chmod +x ehtsh
+                ./ehtsh
 
         elif [[ "$YORNAA" = "27" ]]
         then
@@ -10470,17 +10455,17 @@ check_if_ks
 		gitlink="https://github.com/tiagorlampert/CHAOS.git"
 		install_default
 	}
-	function install_routersploit
+	function install_omega
 	{
-		foldname="routersploit"
-		gitlink="https://github.com/reverse-shell/routersploit.git"
+		foldname="omega"
+		gitlink="https://github.com/entynetproject/omega.git"
 		install_default
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-			apt-get install python3-pip
-			python3 -m pip install -r requirements.txt
-			python setup.py install
+			cd /root/omega
+			chmod +x install.sh
+			./install.sh
 		fi
 	}
 	function install_infoga
