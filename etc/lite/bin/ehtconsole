@@ -104,8 +104,8 @@ function defaults_l
 toolarray=(
 "fluxion" "sniffer" "wifite" "wifiphisher" "morpheus" "osrframework" "camsnap" "trity" "cupp" "dracnmap" "fern" "kickthemout" "ghostphisher" "theeye" "xerxes"
 "mdk3" "katana" "airgeddon" "4nonimizer" "beelogger" "ezsploit" "pupy" "zirikatu" "wifiautopwner" "bully" "anonsurf" "anonym8" "thefatrat" "angryip" "sniper"
-"recondog" "geospy" "winpayloads" "chaos" "omega" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
-"websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "proton" "invader" "ghost"
+"recondog" "geospy" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
+"websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "proton" "empire" "ghost"
 "dropit_frmw" "wifi_pumpkin" "veil" "leviathan" "fake_image" "avet" "gloom" "arcanus" "msfpc" "morphhta" "lfi" "unibyav" "demiguise" "dkmc" "sechub" "beef" "mitmf"
 "fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "mouse" "zerodoor" "cromos" "yuki-chan" "socfish" "entropy" "blazy"
 "striker" "hyprpulse" "instaburst" "instagram-py" "datasploit" "sitebroker" "enigma"
@@ -749,8 +749,8 @@ done
 	#~ echo -e ""$YS"15"$CE") The Eye      "$YS"35"$CE") GeoSpy        "$YS"55"$CE") Operative-frmwork"$YS"75"$CE") Netool-toolkit"
 	#~ echo -e ""$YS"16"$CE") Xerxes       "$YS"36"$CE") WinPayloads   "$YS"56"$CE") Netattack2       "$YS"76"$CE") Patator"
 	#~ echo -e ""$YS"17"$CE") Mdk3-master  "$YS"37"$CE") Shellter      "$YS"57"$CE") Proton           "$YS"77"$CE") Evil-Droid"
-	#~ echo -e ""$YS"18"$CE") Katana       "$YS"38"$CE") CHAOS         "$YS"58"$CE") Invader          "$YS"78"$CE") NoSQLMap"
-	#~ echo -e ""$YS"19"$CE") Airgeddon    "$YS"39"$CE") Omega         "$YS"59"$CE") Ghost"
+	#~ echo -e ""$YS"18"$CE") Katana       "$YS"38"$CE") CHAOS         "$YS"58"$CE") Empire           "$YS"78"$CE") NoSQLMap"
+	#~ echo -e ""$YS"19"$CE") Airgeddon    "$YS"39"$CE") Routersploit  "$YS"59"$CE") Ghost"
 	#~ echo -e ""$YS"20"$CE") Websploit    "$YS"40"$CE") Geany         "$YS"60"$CE") Dr0p1t"
 	#~ echo -e ""$YS" b"$CE") Go back"
 	#~ echo -e ""$YS" 0"$CE") Exit"
@@ -872,7 +872,7 @@ done
 		#~ install_chaos
 	#~ elif [[ "$REIN" = "39" ]]
 	#~ then
-		#~ install_omega
+		#~ install_routersploit
 	#~ elif [[ "$REIN" = "40" ]]
 	#~ then
 		#~ install_geany
@@ -929,7 +929,7 @@ done
 		#~ install_proton
 	#~ elif [[ "$REIN" = "58" ]]
 	#~ then
-		#~ install_invader
+		#~ install_empire
 	#~ elif [[ "$REIN" = "59" ]]
 	#~ then
 		#~ install_ghost
@@ -1032,7 +1032,7 @@ then
 	sleep 0.5
 	echo -e "["$YS"inf"$CE"] "$YS"Installing pulseaudio..."$CE""
 	sleep 0.5
-	apt-get install pulseaudio
+	apt-get install -y pulseaudio
 	sleep 0.5
 	echo -e "["$YS"inf"$CE"] "$YS"Enabling pulseaudio..."$CE""
 	sleep 0.5
@@ -6993,17 +6993,17 @@ check_if_ks
 		gitlink="https://github.com/tiagorlampert/CHAOS.git"
 		install_default
 	}
-	function install_omega
+	function install_routersploit
 	{
-		foldname="omega"
-		gitlink="https://github.com/entynetproject/omega.git"
+		foldname="routersploit"
+		gitlink="https://github.com/reverse-shell/routersploit.git"
 		install_default
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-			cd /root/omega
-			chmod +x install.sh
-			./install.sh
+			apt-get install -y python3-pip
+			python3 -m pip install -r requirements.txt
+			python setup.py install
 		fi
 	}
 	function install_infoga
@@ -7231,23 +7231,22 @@ check_if_ks
 			./install.sh
 		fi
 	}
-	function install_invader
+	function install_empire
 	{
-		foldname="invader"
-		gitlink="https://github.com/entynetproject/invader.git"
+		foldname="Empire"
+		gitlink="https://github.com/BC-SECURITY/Empire.git"
 		install_default
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-			cd invader
-			cd setup
-			chmod +x install.sh
-			./install.sh
+			cd Empire
+			chmod +x setup/install.sh
+			./setup/install.sh
 		fi
 	}
 	function install_ghost
 	{
-		foldname="Ghost"
+		foldname="ghost"
 		gitlink="https://github.com/entynetproject/ghost.git"
 		install_default
 		cloned=$?
@@ -7397,7 +7396,7 @@ check_if_ks
 	}
 	function install_beef
 	{
-		apt-get install beef-xss
+		apt-get install -y beef-xss
 	}
 	function install_mitmf
 	{
@@ -7431,7 +7430,7 @@ check_if_ks
 	}
 	function install_sqlmap
 	{
-		apt-get install sqlmap
+		apt-get install -y sqlmap
 	}
 	function install_patator
 	{
