@@ -67,11 +67,6 @@
     If you bought Ehtools Framework PRO, select PRO.
     
 > ./install.sh
-
-    What version of Ehtools Framework do you want to install?(pro/lite):
-    If you did not buy Ehtools Framework PRO, select lite!
-    If you bought Ehtools Framework PRO, select pro!
-    (version)> 
     
 ***
     
@@ -95,16 +90,18 @@ should to have time to enter it before it is updated!
 # Attacking frameworks
 
 ```
-Most new Wi-Fi hacking tools rely on many of the same underlying attacks, and scripts 
-that automate using other more familiartools like Aireplay-ng are often referred to as 
-frameworks. These frameworks try to organize tools in smart or useful ways to take 
-them a step beyond the functionality or usability of the original program.
+Most new Wi-Fi hacking tools rely on many of the same underlying 
+attacks, and scripts that automate using other more familiartools like 
+Aireplay-ng are often referred to as frameworks. These frameworks try 
+to organize tools in smart or useful ways to take them a step beyond 
+the functionality or usability of the original program.
 
-An excellent example of this are programs that integrate scanning tools like Airodump-ng, 
-attacks like WPS Pixie-Dust, andcracking tools like Aircrack-ng to create an easy-to-follow 
-attack chain for beginners. Doing this makes the process of using these tools easier to remember 
-and can be seen as sort of a guided tour. While each of these attacks is possible without the 
-hand-holding, the result can be faster or more convenient than trying to do so yourself.
+An excellent example of this are programs that integrate scanning tools 
+like Airodump-ng, attacks like WPS Pixie-Dust, andcracking tools like Aircrack-ng 
+to create an easy-to-follow attack chain for beginners. Doing this makes the process 
+of using these tools easier to remember and can be seen as sort of a guided tour. 
+While each of these attacks is possible without the hand-holding, the result 
+can be faster or more convenient than trying to do so yourself.
 
 An example of this we've covered is the Airgeddonframework, a wireless attack framework that does 
 useful things like automatingthe target selection process and eliminating the time a user spends copying 
@@ -273,18 +270,18 @@ hacking tool like Pupy by just selecting from one of the menu options!
 
 # System requirements 
 
- * Ehtools Framework only supports two OS
+ * Ehtools Framework only supports two OS.
 ```
 Ehtools Framework only supports two 
 operating systems - Kali Linux and Parrot OS!
 ```
- * Full root access and access to /root folder
+ * Full root access and access to /root folder.
 ```
 All ehtools files and folders will be copied to /root,
 /bin and /etc system folders, to copy ehtools data to
 your system Ehtools Framework needs full root access!
 ```
- * Good Internet connection for server support (only ehtools PRO)
+ * Good Internet connection for server support (only ehtools PRO).
 ```
 The server support for ehtools PRO is one of system 
 requirements, it is needed for collect information about 
