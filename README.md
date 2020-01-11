@@ -96,17 +96,18 @@ Aireplay-ng are often referred to as frameworks. These frameworks try
 to organize tools in smart or useful ways to take them a step beyond 
 the functionality or usability of the original program.
 
-An excellent example of this are programs that integrate scanning tools 
-like Airodump-ng, attacks like WPS Pixie-Dust, andcracking tools like Aircrack-ng 
-to create an easy-to-follow attack chain for beginners. Doing this makes the process 
+An excellent example of this are programs that integrate scanning tools like 
+Airodump-ng, attacks like WPS Pixie-Dust, andcracking tools like Aircrack-ng to 
+create an easy-to-follow attack chain for beginners. Doing this makes the process 
 of using these tools easier to remember and can be seen as sort of a guided tour. 
 While each of these attacks is possible without the hand-holding, the result 
 can be faster or more convenient than trying to do so yourself.
 
-An example of this we've covered is the Airgeddonframework, a wireless attack framework that does 
-useful things like automatingthe target selection process and eliminating the time a user spends copying 
-and pasting information between programs. This savesvaluable time for even experienced pentesters but has 
-the disadvantage of preventing beginners from understanding what's happening "under the hood" of the attack. 
+An example of this we've covered is the Airgeddonframework, a wireless attack 
+framework that does useful things like automatingthe target selection process and 
+eliminating the time a user spends copying and pasting information between programs. 
+This savesvaluable time for even experienced pentesters but has the disadvantage of 
+preventing beginners from understanding what's happening "under the hood" of the attack. 
 While this is true, most of these frameworks are fast, efficient, and dead simple to 
 use, enabling even beginners to take on and disable an entire network.
 ```
@@ -116,11 +117,12 @@ use, enabling even beginners to take on and disable an entire network.
 # UX/UI impruvements for beginners
 
 ```
-The Ehtools Framework starts by merely typing the letter ehtools into a terminal window, then it asks for 
-the name of your network interfaces after the first run. It uses the names you supply to connect to the tools 
-needed to execute any attacks you select. Aside from that initial input, the majority of the possible attacks c
-an be performed merely by choosing the option number from the menu. This means you can grab a network handshake 
-or download a new hacking tool like Pupy by just selecting from one of the menu options.
+The Ehtools Framework starts by merely typing the letter ehtools into a terminal window, 
+then it asks for the name of your network interfaces after the first run. It uses the names 
+you supply to connect to the tools needed to execute any attacks you select. Aside from that 
+initial input, the majority of the possible attacks can be performed merely by choosing the 
+option number from the menu. This means you can grab a network handshake or download a 
+new hacking tool like Pupy by just selecting from one of the menu options.
 ```
 
 ***
