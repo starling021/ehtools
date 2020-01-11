@@ -73,38 +73,45 @@
     If you bought Ehtools Framework PRO, select pro!
     (version)> 
     
- * If you select Ehtools Framework PRO, you will need to activate it with your Ehtools Activation Key that you need to bought on the ehtools site. If you have Ehtools Activation Key, read the following instructions.
-    
 ***
     
 # Ehtools Framework PRO activation
 
- * This key you can buy on the ehtools site for one dollar! This key is used to activate ehtools PRO enter it in the input field of the activation key in the file install.sh and then you can install ehtools and use it only for educational purposes!
-
-    The key works only one week then it changes! You 
-    should to have time to enter it before it is updated!
+```
+This key you can buy on the ehtools site for one dollar! This key is 
+used to activate ehtools PRO enter it in the input field of the activation 
+key in the file install.sh and then you can install ehtools and use it only 
+for educational purposes! The key works only one week then it changes! You 
+should to have time to enter it before it is updated!
+```
 
 > ./install.sh
 
-    Enter your ehtools activation key!
-    You can buy it on the ehtools site!
-    (activation_key)> 
-    
- * Also, we do not recommend to change the source code of ehtools because it is very complex and you can mess up something and disrupt the framework!
-
-    We do not recommend to change ehtools source 
-    code because you can disrupt framework!
+    Also, we do not recommend to change the source code of ehtools because 
+    it is very complex and you can mess up something and disrupt the framework!
 
 ***
 
 # Attacking frameworks
 
 ```
-Most new Wi-Fi hacking tools rely on many of the same underlying attacks, and scripts that automate using other more familiar tools like Aireplay-ng are often referred to as frameworks. These frameworks try to organize tools in smart or useful ways to take them a step beyond the functionality or usability of the original program.
+Most new Wi-Fi hacking tools rely on many of the same underlying attacks, and scripts 
+that automate using other more familiartools like Aireplay-ng are often referred to as 
+frameworks. These frameworks try to organize tools in smart or useful ways to take 
+them a step beyond the functionality or usability of the original program.
 
-An excellent example of this are programs that integrate scanning tools like Airodump-ng, attacks like WPS Pixie-Dust, and cracking tools like Aircrack-ng to create an easy-to-follow attack chain for beginners. Doing this makes the process of using these tools easier to remember and can be seen as sort of a guided tour. While each of these attacks is possible without the hand-holding, the result can be faster or more convenient than trying to do so yourself.
+An excellent example of this are programs that integrate scanning tools like Airodump-ng, 
+attacks like WPS Pixie-Dust, andcracking tools like Aircrack-ng to create an easy-to-follow 
+attack chain for beginners. Doing this makes the process of using these tools easier to remember 
+and can be seen as sort of a guided tour. While each of these attacks is possible without the 
+hand-holding, the result can be faster or more convenient than trying to do so yourself.
 
-An example of this we've covered is the Airgeddonframework, a wireless attack framework that does useful things like automating the target selection process and eliminating the time a user spends copying and pasting information between programs. This saves valuable time for even experienced pentesters but has the disadvantage of preventing beginners from understanding what's happening "under the hood" of the attack. While this is true, most of these frameworks are fast, efficient, and dead simple to use, enabling even beginners to take on and disable an entire network.
+An example of this we've covered is the Airgeddonframework, a wireless attack framework that does 
+useful things like automatingthe target selection process and eliminating the time a user spends copying 
+and pasting information between programs. This savesvaluable time for even experienced pentesters but has 
+the disadvantage of preventing beginners from understanding what's happening "under the hood" of the attack. 
+While this is true, most of these frameworks are fast, efficient, and dead simple to 
+use, enabling even beginners to take on and disable an entire network.
 ```
 
 ***
@@ -112,7 +119,11 @@ An example of this we've covered is the Airgeddonframework, a wireless attack fr
 # UX/UI impruvements for beginners
 
 ```
-The Ehtools Framework starts by merely typing the letter ehtools into a terminal window, then it asks for the name of your network interfaces after the first run. It uses the names you supply to connect to the tools needed to execute any attacks you select. Aside from that initial input, the majority of the possible attacks can be performed merely by choosing the option number from the menu. This means you can grab a network handshake or download a new hacking tool like Pupy by just selecting from one of the menu options.
+The Ehtools Framework starts by merely typing the letter ehtools into a terminal window, then it asks for 
+the name of your network interfaces after the first run. It uses the names you supply to connect to the tools 
+needed to execute any attacks you select. Aside from that initial input, the majority of the possible attacks c
+an be performed merely by choosing the option number from the menu. This means you can grab a network handshake 
+or download a new hacking tool like Pupy by just selecting from one of the menu options.
 ```
 
 ***
@@ -121,7 +132,7 @@ The Ehtools Framework starts by merely typing the letter ehtools into a terminal
 
 > (ehtools)> if
  
-    INRuns ifconfig and gives the names and 
+    Runs ifconfig and gives the names and 
     information about all network devices.
 
 > (ehtools)> 1
@@ -131,7 +142,7 @@ The Ehtools Framework starts by merely typing the letter ehtools into a terminal
 
 > (ehtools)> 2
 
-    INFO: Enable wlan0mon. 
+    Enable wlan0mon. 
     (d2 disables it)
 
 > (ehtools)> 3    
@@ -175,27 +186,27 @@ The Ehtools Framework starts by merely typing the letter ehtools into a terminal
     menu, the tools are broken down into major categories, with options for managing the 
     installation of scripts. The options presented are:
 
-> 1) Wi-Fi tools (tools for attacking wireless networks).
+**1.** Wi-Fi tools (tools for attacking wireless networks).
 
     Wi-Fi options this is tools for attacking 
     wireless networks and network databases.
 
-> 2) Remote access (tools for getting remote access to other devices and remotely managing them).
+**2.** Remote access (tools for getting remote access to other devices and remotely managing them).
 
     Remote access means tools for getting access 
     to other devices and remotely managing them.
     
-> 3) Information gathering (collecting intelligence on people or website).
+**3.** Information gathering (collecting intelligence on people or website).
 
     Information gathering tools, tools for 
     collecting intelligence on peaple or website.
     
-> 4) Website tools (tools for exploiting or attacking sites).
+**4.** Website tools (tools for exploiting or attacking sites).
 
     Website tools, tools for exploiting or 
     attacking sites and network databases.
    
-> 5) Other (a miscellaneous collection of other hacking tools)
+**5.** Other (a miscellaneous collection of other hacking tools)
 
     Other tools this is collection 
     of miscellaneous hacking tools.
@@ -285,7 +296,7 @@ such as (you bought ehtools/you did not buy ehtools)
 
 # Ehtools Framework utilities
 
-> # ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
+## ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
  * ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules.
 ```
@@ -309,7 +320,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
 
 > modules -i
 
-## Ehtools Modules Snapshot (EMS) 
+### Ehtools Modules Snapshot (EMS) 
 
     EMS is a saved ehtools modules data, you can 
     take it using the ehtmod utility and restore it.
@@ -318,7 +329,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
 
 > ehtmod -t snapshot1
 
-## Ehtools Modules Restoration (EMR) 
+### Ehtools Modules Restoration (EMR) 
 
     EMR is an operation that removing modules and restoring it from 
     the saved ehtools modules snapshot, you can restore it using the 
@@ -328,7 +339,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
 
 > ehtmod -r snapshot1
     
-> # ehtkey | <img src="https://img.shields.io/badge/utility-ehtkey-brown.svg">
+## ehtkey | <img src="https://img.shields.io/badge/utility-ehtkey-brown.svg">
 
  * ehtkey (ehtools key) is an utility that allows you to change your ehtools config key (ehtools config/boot key) and rewrite /etc/ehtools/.config.
 
@@ -344,7 +355,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
 
 > ehtkey -c 1001 2002
 
-> # ehtapp | <img src="https://img.shields.io/badge/utility-ehtapp-red.svg">
+## ehtapp | <img src="https://img.shields.io/badge/utility-ehtapp-red.svg">
 
  * ehtapp (ehtools application) is an utility that allows you to configure ehtools application, for example creating ehtools desktop application.
  
@@ -358,7 +369,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
    -h  --help              Give this help list.
 ```
 
- *  create ehtools application you need to execute the following command:
+ * To create ehtools application you need to execute the following command:
 ```
 The ehtools install.sh will ask you to "create" or 
 "not create" ehtools application and if you answered "not 
@@ -367,79 +378,79 @@ create" and want to create it, run the following command!
 
 > ehtapp -c
 
- *Cre ehtools desktop application you need to execute the following command:
+ * To create ehtools desktop application you need to execute the following command:
 
 > ehtapp -d create
 
-> # epasswd | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
+## epasswd | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
-*passwd (ehtools password changer) is an utility that allows you to change your ehtools login and password or ehtools root password!
+ * epasswd (ehtools password changer) is an utility that allows you to change your ehtools login and password or ehtools root password!
 
-## Changing ehtools login and password
+### Changing ehtools login and password
 
 > epasswd
 
-To change ehtools login and password enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe):
+ * To change ehtools login and password enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe):
 
     (login)> ehtools
     (password)> sloothe (will not be shown!)
 
-After this enter your new ehtools login (example: admin) and your new ehtools password (example: 1234):
+ * After this enter your new ehtools login (example: admin) and your new ehtools password (example: 1234):
 
     ((new)login)> admin
     ((new)password)> 1234 (will not be shown!)
 
-Congratulations, you have successfully changed ehtools login and password!
+ * Congratulations, you have successfully changed ehtools login and password!
 
     In no case do not forget this password, it will not 
     be restored and you will need to reinstall ehtools!
 
-## Changing ehtools root password
+### Changing ehtools root password
 
-To cange root password, login to epasswd as ehtools root:
+ * To cange root password, login to epasswd as ehtools root:
 
 > epasswd
 
     (login)> root
 
-After this enter your old ehtools root password (default: toor):
-
-    (password)> toor (will not be shown!)
-
-After this enter your new ehtools root password (example: 1234):
-
-    ((new)password)> 1234 (will not be shown!)
-
-Congratulations, you have successfully changed ehtools root password!
-
-    In no case do not forget this password, it will not 
-    be restored and you will have to reinstall ehtools!
-    
+ * After this enter your old ehtools root password (default: toor):
+```
+(password)> toor (will not be shown!)
+```
+ * After this enter your new ehtools root password (example: 1234):
+```
+((new)password)> 1234 (will not be shown!)
+```
+ * Congratulations, you have successfully changed ehtools root password!
+```
+In no case do not forget this password, it will not 
+be restored and you will have to reinstall ehtools!
+``` 
 ***
     
 # Ehtools Framework protection
 
 ![Ehtools Login](https://user-images.githubusercontent.com/54115104/71750056-94c2c600-2e77-11ea-856a-46a5a53ef7cb.png)
 
-> Do it using install.sh:
-   
-    Create login and password using install.sh 
-    (example: login: ehtools, password: sloothe)
-
-> Do it when you are going to exit from ehtools:
-    
-    When you are going to exit framework,
-    exit with shortcuts - 0 or exit. 
- 
-> Do not do it when you are going to exit from ehtools:
-    
-    Do not just close ehtools window and 
-    do not exit from the Ehtools Framework 
-    using Ctrl + C or other exit signals!
-    
+ * Do it using install.sh:
+```
+Create login and password using install.sh 
+(example: login: ehtools, password: sloothe)
+```
+ * Do it when you are going to exit from ehtools:
+```
+When you are going to exit framework,
+exit with shortcuts - 0 or exit. 
+```
+ * Do not do it when you are going to exit from ehtools:
+``` 
+Do not just close ehtools window and 
+do not exit from the Ehtools Framework 
+using Ctrl + C or other exit signals!
+```
 ***
 
-# Ehatools Framework disclaimer
+# Ehtools Framework disclaimer
 
     Usage of the Ehtools Framework for attacking targets without prior mutual consent is illegal. 
     It is the end user's responsibility to obey all applicable local, state, federal, and international laws. 
