@@ -103,6 +103,15 @@ should to have time to enter it before it is updated!
 
 ***
 
+# Ehtools Framework execution
+
+    To execute Ehtools Framework you 
+    should execute the following command.
+    
+> ehtools
+
+***
+
 # Attacking frameworks
 
 ```
@@ -291,6 +300,8 @@ hacking tool like Pupy by just selecting from one of the menu options!
 ## ehtmod | <img src="https://img.shields.io/badge/utility-ehtmod-blue.svg">
 
  * ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules.
+ 
+> ehtmod -h
 ```
 Usage: ehtmod [OPTION...]
 Copyright (C) 2015, Entynetproject. All Rights Reserved.
@@ -310,7 +321,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
     want to install them, run the following command!
 ```
 
-> modules -i
+> ehtmod -i
 
 ### Ehtools Modules Snapshot (EMS) 
 
@@ -335,6 +346,8 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
 
  * ehtkey (ehtools key) is an utility that allows you to change your ehtools config key (ehtools config/boot key) and rewrite /etc/ehtools/.config.
 
+> ehtkey
+
 ```
 Usage: ehtkey [OPTION...]"
 Copyright (C) 2015, Entynetproject. All Rights Reserved.
@@ -350,6 +363,8 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
 ## ehtapp | <img src="https://img.shields.io/badge/utility-ehtapp-red.svg">
 
  * ehtapp (ehtools application) is an utility that allows you to configure ehtools application, for example creating ehtools desktop application.
+ 
+> ehtapp -h
  
 ```
 Usage: ehtapp [OPTION...]"
