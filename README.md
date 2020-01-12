@@ -244,7 +244,7 @@ new hacking tool like Pupy by just selecting from one of the menu options.
     ehtools in the applications and clicking on it! I mean ehtools 
     application allows users to run ehtools via the application!
 
- * There are two ways how to setup ehtools application:
+ * There are two ways how to setup ehtools application.
 
 ## Using the installer
 
@@ -263,26 +263,20 @@ new hacking tool like Pupy by just selecting from one of the menu options.
 
 # Why Ehtools Framework
 
- * More than 58 tools for pentesting installed by default
+ * More than 58 tools for pentesting installed by default.
 ```
 More than 58 options installed by default 
 you can find in ehtools, this is tools such 
 as Metasploit, Wireshark and other tools!
 ```
- * Password protection and config encryption
+ * Password protection and config encryption.
 ```
 In version 2.1.6 we added pasword protection, we added 
 it for users who think that his/her friend or parents will 
 turn into ehtools and will remove or destroy it. Only for this 
 people we create password protection for Ehtools Framework :)
 ```
- * Easy in learning and this is the best framework for beginners
-```
-Ehtools Framework's TUI is very simple for beginners,
-you can start attack on the local network by choosing an
-option from main menu. It is very simple, is not it?
-```
- * UX/UI impruvements for beginners
+ * UX/UI impruvements for beginners.
 ```
 It uses the names you supply to connect to the tools needed to 
 execute any attacks you select! Aside from that initial input, the majority 
@@ -314,11 +308,11 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
    -h  --help            Give this help list.
 ```
          
- * To install ehtools modules you need to execute the following command:
+ * To install ehtools modules you need to execute the following command.
 ```
-    The ehtools install.sh will ask you to "install" or "not 
-    install" ehtools modules and if you answered "not install" and 
-    want to install them, run the following command!
+The ehtools install.sh will ask you to "install" or "not 
+install" ehtools modules and if you answered "not install" and 
+want to install them, run the following command!
 ```
 
 > ehtmod -i
@@ -328,7 +322,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
     EMS is a saved ehtools modules data, you can 
     take it using the ehtmod utility and restore it.
     
- * To take ehtools modules snapshot you need to execute the following command. You need to enter the name of the ehtools modules snapshot you want to take (example: snapshot1):
+ * To take ehtools modules snapshot you need to execute the following command. You need to enter the name of the ehtools modules snapshot you want to take (example: snapshot1).
 
 > ehtmod -t snapshot1
 
@@ -338,7 +332,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
     the saved ehtools modules snapshot, you can restore it using the 
     ehtmod utility but ESR will remove all your old ehtools modules data!
 
- * To restore ehtools modules snapshot you need to execute the following command. You need to enter the name of the saved ehtools modules snapshot (example: snapshot1):
+ * To restore ehtools modules snapshot you need to execute the following command. You need to enter the name of the saved ehtools modules snapshot (example: snapshot1).
 
 > ehtmod -r snapshot1
     
@@ -356,7 +350,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
    -h  --help                        Give this help list.
 ```
 
- * To change ehtools config key you need to execute the following command. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002):
+ * To change ehtools config key you need to execute the following command. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002).
 
 > ehtkey -c 1001 2002
 
@@ -376,7 +370,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
    -h  --help              Give this help list.
 ```
 
- * To create ehtools application you need to execute the following command:
+ * To create ehtools application you need to execute the following command.
 ```
 The ehtools install.sh will ask you to "create" or 
 "not create" ehtools application and if you answered "not 
@@ -385,24 +379,24 @@ create" and want to create it, run the following command!
 
 > ehtapp -c
 
- * To create ehtools desktop application you need to execute the following command:
+ * To create ehtools desktop application you need to execute the following command.
 
 > ehtapp -d create
 
 ## epasswd | <img src="https://img.shields.io/badge/utility-epasswd-green.svg">
 
- * epasswd (ehtools password changer) is an utility that allows you to change your ehtools login and password or ehtools root password!
+ * epasswd (ehtools password changer) is an utility that allows you to change your ehtools login and password or ehtools root password.
 
 ### Changing ehtools login and password
 
 > epasswd
 
- * To change ehtools login and password enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe):
+ * To change ehtools login and password enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe).
 
     (login)> ehtools
     (password)> sloothe (will not be shown!)
 
- * After this enter your new ehtools login (example: admin) and your new ehtools password (example: 1234):
+ * After this enter your new ehtools login (example: admin) and your new ehtools password (example: 1234).
 
     ((new)login)> admin
     ((new)password)> 1234 (will not be shown!)
@@ -414,17 +408,17 @@ create" and want to create it, run the following command!
 
 ### Changing ehtools root password
 
- * To cange root password, login to epasswd as ehtools root:
+ * To cange root password, login to epasswd as ehtools root.
 
 > epasswd
 
     (login)> root
 
- * After this enter your old ehtools root password (default: toor):
+ * After this enter your old ehtools root password (default: toor).
 ```
 (password)> toor (will not be shown!)
 ```
- * After this enter your new ehtools root password (example: 1234):
+ * After this enter your new ehtools root password (example: 1234).
 ```
 ((new)password)> 1234 (will not be shown!)
 ```
@@ -439,17 +433,17 @@ be restored and you will have to reinstall ehtools!
 
 ![Ehtools Login](https://user-images.githubusercontent.com/54115104/71750056-94c2c600-2e77-11ea-856a-46a5a53ef7cb.png)
 
- * Do it using install.sh:
+ * Do this using install.sh.
 ```
 Create login and password using install.sh 
 (example: login: ehtools, password: sloothe)
 ```
- * Do it when you are going to exit from ehtools:
+ * Do this when you are going to exit from ehtools.
 ```
 When you are going to exit framework,
 exit with shortcuts - 0 or exit. 
 ```
- * Do not do it when you are going to exit from ehtools:
+ * Do not do this when you are going to exit from ehtools.
 ``` 
 Do not just close ehtools window and 
 do not exit from the Ehtools Framework 
