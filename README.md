@@ -394,12 +394,14 @@ create" and want to create it, run the following command!
  * To change ehtools login and password enter your old ehtools login (example: ehtools) and your old ehtools password (example: sloothe).
 
 > (login)> ehtools
-> (password)> sloothe (will not be shown!)
+
+> (password)> sloothe
 
  * After this enter your new ehtools login (example: admin) and your new ehtools password (example: 1234).
 
 > ((new)login)> admin
-> ((new)password)> 1234 (will not be shown!)
+
+> ((new)password)> 1234
 
  * Congratulations, you have successfully changed ehtools login and password!
 
@@ -416,11 +418,11 @@ create" and want to create it, run the following command!
 
  * After this enter your old ehtools root password (default: toor).
  
-> (password)> toor (will not be shown!)
+> (password)> toor
 
  * After this enter your new ehtools root password (example: 1234).
 
-> ((new)password)> 1234 (will not be shown!)
+> ((new)password)> 1234
 
  * Congratulations, you have successfully changed ehtools root password!
 ```
