@@ -59,6 +59,22 @@
 
 ***
 
+# System requirements 
+
+ * Ehtools Framework only supports two OS.
+```
+Ehtools Framework only supports two 
+operating systems - Kali Linux and Parrot OS!
+```
+ * Full root access and access to /root folder.
+```
+All ehtools files and folders will be copied to /root,
+/bin and /etc system folders, to copy ehtools data to
+your system Ehtools Framework needs full root access!
+```
+
+***
+
 # Selecting framework version
 
     After executing install.sh it will be ask you 
@@ -267,29 +283,6 @@ hacking tool like Pupy by just selecting from one of the menu options!
 ```
 
 ![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/71750058-94c2c600-2e77-11ea-8eb5-110b7e42a7ca.png)
-
-***
-
-# System requirements 
-
- * Ehtools Framework only supports two OS.
-```
-Ehtools Framework only supports two 
-operating systems - Kali Linux and Parrot OS!
-```
- * Full root access and access to /root folder.
-```
-All ehtools files and folders will be copied to /root,
-/bin and /etc system folders, to copy ehtools data to
-your system Ehtools Framework needs full root access!
-```
- * Good Internet connection for server support (only ehtools PRO).
-```
-The server support for ehtools PRO is one of system 
-requirements, it is needed for collect information about 
-ehtools crashes and it is also needed for check product status 
-such as (you bought ehtools/you did not buy ehtools)
-```
 
 ***
 
