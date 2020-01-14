@@ -88,7 +88,7 @@ fi
 
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
-echo -e "Usage: ehtapp [OPTION...]"
+echo -e "Usage: ehtapp [OPTION...] <arguments...>"
 echo -e "Copyright (C) 2015, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -c  --create            Create ehtools application."
@@ -172,7 +172,7 @@ exit
 fi
 fi
 
-echo -e "Usage: ehtapp [OPTION...]"
+echo -e "Usage: ehtapp [OPTION...] <arguments...>"
 echo -e "Copyright (C) 2015, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -c  --create            Create ehtools application."

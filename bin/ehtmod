@@ -88,7 +88,7 @@ fi
 
 if [[ $1 = "--help" || $1 = "-h" ]]
 then
-echo -e "Usage: ehtmod [OPTION...]"
+echo -e "Usage: ehtmod [OPTION...] <arguments...>"
 echo -e "Copyright (C) 2015, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -i  --install         Install ehtools modules."
@@ -613,7 +613,7 @@ sleep 5
 exit
 fi
 
-echo -e "Usage: ehtmod [OPTION...]"
+echo -e "Usage: ehtmod [OPTION...] <arguments...>"
 echo -e "Copyright (C) 2015, Entynetproject. All Rights Reserved."
 echo -e
 echo -e "   -i  --install         Install ehtools modules."
