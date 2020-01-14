@@ -8535,20 +8535,7 @@ echo $passcode | ./libunconf
 }
 function geolocate_ip()
 {
-	if [[ -f /usr/local/bin/copycat ]]
-	then
-        clear
-	copycat host "$IPG"
-	else
-        clear
-	echo -e ""$BS"Installing copycat..."$CE""
-	git clone https://github.com/entynetproject/copycat.git
-	cd copycat
-	chmod +x install.sh
-	./install.sh
-        clear
-	copycat host "$IPG"
-	fi
+	sleep 0
 }
 function ip_scan()
 {
@@ -9577,7 +9564,10 @@ echo $passcode | ./libunconf
 	then
 		echo -e ""$BS"Copycat Toolkit:"$CE" "
 		read -e -p $'(\033[4;34mhost\033[0m\en)> ' IPG
-                copycat host $IPG
+		cd /root/copycat
+		chmod +x copycat
+                ./copycat host $IPG
+		cd /root
 	else
 	echo -e "$TNI"
 	read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
