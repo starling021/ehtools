@@ -26,7 +26,7 @@
  </a>
 </p>
 
-![Ehtools RED](https://user-images.githubusercontent.com/54115104/71750057-94c2c600-2e77-11ea-87f2-176cb4345c77.png)
+![Ehtools RED](https://user-images.githubusercontent.com/54115104/72372331-2e5f6280-3717-11ea-8264-c76886520181.png)
 
 ***
 
@@ -285,7 +285,7 @@ from the menu. This means you can grab a network handshake or download a new
 hacking tool like Pupy by just selecting from one of the menu options!
 ```
 
-![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/71750058-94c2c600-2e77-11ea-8eb5-110b7e42a7ca.png)
+![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/72372330-2e5f6280-3717-11ea-8fc6-3054c2820f7c.png)
 
 ***
 
