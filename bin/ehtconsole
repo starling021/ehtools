@@ -9478,8 +9478,14 @@ echo $passcode | ./libunconf
 		IFTOPT=$(which iftop)
 		if [[ "$IFTOPT" == "" ]]
 		then
+			echo -e "$TNI"
+	        	read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
+			if [[ "$INSTALL" = "yes" ]]
+			then
+			clear
 			apt-get -y install iftop
-		fi
+			fi
+		else
 		CHECK=$(ifconfig | grep "$iftopint")
 		if [[ "$CHECK" = "" ]]
 		then
@@ -9488,6 +9494,7 @@ echo $passcode | ./libunconf
 		else
 			xterm -hold -T "Iftop on $iftopint" -e "iftop -n -i $iftopint -b" & disown
 			BACKL=1
+		fi
 		fi
 	elif [[ "$YORNAA" = "23" ]]
         then
@@ -9525,7 +9532,8 @@ echo $passcode | ./libunconf
 		echo -e "$TNI"
 	        read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
 		if [[ "$INSTALL" = "yes" ]]
-		then        
+		then
+		clear
 		cd /root
 		git clone https://github.com/entynetproject/gyrux.git
 		cd /root/gyrux/linux-amd64
@@ -9573,6 +9581,7 @@ echo $passcode | ./libunconf
 	read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
 	if [[ "$INSTALL" = "yes" ]]
 	then
+	clear
 	cd /root
 	git clone https://github.com/entynetproject/copycat.git
 	cd /root/copycat
