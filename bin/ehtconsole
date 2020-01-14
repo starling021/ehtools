@@ -10040,6 +10040,7 @@ check_if_ks
 		foldname="fluxion"
 		gitlink="--recursive  https://github.com/FluxionNetwork/fluxion.git"
 		install_default
+clear
 		#~ wget https://fluxion.tk/fluxion-unstable.zip
 		#~ apt-get install -y unzip
 		#~ clear
@@ -10057,6 +10058,7 @@ check_if_ks
 		foldname="wifiphisher"
 		gitlink="https://github.com/wifiphisher/wifiphisher.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10068,6 +10070,7 @@ check_if_ks
 		foldname="entropy"
 		gitlink="https://github.com/entynetproject/entropy.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10081,6 +10084,7 @@ check_if_ks
 		foldname="morpheus"
 		gitlink="https://github.com/r00t-3xp10it/morpheus.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10096,6 +10100,7 @@ check_if_ks
 		foldname="camsnap"
 		gitlink="https://github.com/entynetproject/camsnap.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10109,6 +10114,7 @@ check_if_ks
 		foldname="Trity"
 		gitlink="https://github.com/toxic-ig/Trity.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10120,6 +10126,7 @@ check_if_ks
 		foldname="cupp"
 		gitlink="https://github.com/Mebus/cupp.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10131,6 +10138,7 @@ check_if_ks
 		foldname="Dracnmap"
 		gitlink="https://github.com/Screetsec/Dracnmap.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10160,6 +10168,7 @@ check_if_ks
 		foldname="kickthemout"
 		gitlink="https://github.com/k4m4/kickthemout.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10171,6 +10180,7 @@ check_if_ks
 		foldname="ghost-phisher"
 		gitlink="https://github.com/savio-code/ghost-phisher.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10182,6 +10192,7 @@ check_if_ks
 		foldname="The-Eye"
 		gitlink="https://github.com/EgeBalci/The-Eye.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10193,6 +10204,7 @@ check_if_ks
 		foldname="xerxes"
 		gitlink="https://github.com/zanyarjamal/xerxes.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10204,6 +10216,7 @@ check_if_ks
 		foldname="mdk3-master"
 		gitlink="https://github.com/wi-fi-analyzer/mdk3-master.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10216,6 +10229,7 @@ check_if_ks
 		foldname="KatanaFramework"
 		gitlink="https://github.com/PowerScript/KatanaFramework.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10228,6 +10242,7 @@ check_if_ks
 		foldname="airgeddon"
 		gitlink="https://github.com/v1s1t0r1sh3r3/airgeddon.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10239,6 +10254,7 @@ check_if_ks
 		foldname="4nonimizer"
 		gitlink="https://github.com/Hackplayers/4nonimizer.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10257,6 +10273,7 @@ check_if_ks
 		foldname="BeeLogger"
 		gitlink="https://github.com/4w4k3/BeeLogger.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10274,6 +10291,7 @@ check_if_ks
 		foldname="ezsploit"
 		gitlink="https://github.com/rand0m1ze/ezsploit.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10285,6 +10303,7 @@ check_if_ks
 		foldname="pupy"
 		gitlink="https://github.com/n1nj4sec/pupy.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10299,6 +10318,7 @@ check_if_ks
 		foldname="zirikatu"
 		gitlink="https://github.com/pasahitz/zirikatu.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10310,12 +10330,14 @@ check_if_ks
 		foldname="WiFi-autopwner"
 		gitlink="https://github.com/Mi-Al/WiFi-autopwner.git"
 		install_default
+clear
 	}
 	function install_bully
 	{
 		foldname="bully"
 		gitlink="https://github.com/aanarchyy/bully.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10329,6 +10351,7 @@ check_if_ks
 		foldname="kali-anonsurf"
 		gitlink="https://github.com/Und3rf10w/kali-anonsurf.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10341,6 +10364,7 @@ check_if_ks
 		foldname="anonym8"
 		gitlink="https://github.com/HiroshiManRise/anonym8.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10353,6 +10377,7 @@ check_if_ks
 		foldname="TheFatRat"
 		gitlink="https://github.com/Screetsec/TheFatRat.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10381,6 +10406,7 @@ check_if_ks
 		foldname="Sn1per"
 		gitlink="https://github.com/1N3/Sn1per.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10393,12 +10419,14 @@ check_if_ks
 		foldname="ReconDog"
 		gitlink="https://github.com/UltimateHackers/ReconDog.git"
 		install_default
+clear
 	}
 	function install_geospy
 	{
 		foldname="geospy"
 		gitlink="https://github.com/entynetproject/geospy.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10412,6 +10440,7 @@ check_if_ks
 		foldname="Winpayloads"
 		gitlink="https://github.com/nccgroup/Winpayloads.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10426,12 +10455,14 @@ check_if_ks
 		foldname="CHAOS"
 		gitlink="https://github.com/tiagorlampert/CHAOS.git"
 		install_default
+clear
 	}
 	function install_routersploit
 	{
 		foldname="routersploit"
 		gitlink="https://github.com/reverse-shell/routersploit.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10445,6 +10476,7 @@ check_if_ks
 		foldname="Infoga"
 		gitlink="https://github.com/m4ll0k/Infoga.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10456,6 +10488,7 @@ check_if_ks
 		foldname="nWatch"
 		gitlink="https://github.com/suraj-root/nWatch.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10474,6 +10507,7 @@ check_if_ks
 		foldname="eternal_scanner"
 		gitlink="https://github.com/peterpt/eternal_scanner.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10485,6 +10519,7 @@ check_if_ks
 		foldname="eaphammer"
 		gitlink="https://github.com/s0lst1c3/eaphammer.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10498,6 +10533,7 @@ check_if_ks
 		foldname="dagon"
 		gitlink="https://github.com/ekultek/dagon.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10511,6 +10547,7 @@ check_if_ks
 		foldname="LALIN"
 		gitlink="https://github.com/Screetsec/LALIN.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10522,6 +10559,7 @@ check_if_ks
 		foldname="KnockMail"
 		gitlink="https://github.com/4w4k3/KnockMail.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10533,6 +10571,7 @@ check_if_ks
 		foldname="kwetza"
 		gitlink="https://github.com/sensepost/kwetza.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10615,12 +10654,14 @@ check_if_ks
 		foldname="Hash-Buster"
 		gitlink="https://github.com/UltimateHackers/Hash-Buster.git"
 		install_default
+clear
 	}
 	function install_findsploit
 	{
 		foldname="Findsploit"
 		gitlink="https://github.com/1N3/Findsploit.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10638,6 +10679,7 @@ check_if_ks
 		foldname="operative-framework"
 		gitlink="https://github.com/graniet/operative-framework.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10651,12 +10693,14 @@ check_if_ks
 		foldname="netattack2"
 		gitlink="https://github.com/chrizator/netattack2.git"
 		install_default
+clear
 	}
 	function install_proton
 	{
 		foldname="proton"
 		gitlink="https://github.com/entynetproject/proton.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10670,6 +10714,7 @@ check_if_ks
 		foldname="Empire"
 		gitlink="https://github.com/BC-SECURITY/Empire.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10683,6 +10728,7 @@ check_if_ks
 		foldname="ghost"
 		gitlink="https://github.com/entynetproject/ghost.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10696,6 +10742,7 @@ check_if_ks
 		foldname="Dr0p1t-Framework"
 		gitlink="https://github.com/D4Vinci/Dr0p1t-Framework.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10712,6 +10759,7 @@ check_if_ks
 		foldname="WiFi-Pumpkin"
 		gitlink="https://github.com/P0cL4bs/WiFi-Pumpkin.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10723,6 +10771,7 @@ check_if_ks
 		foldname="Veil"
 		gitlink="https://github.com/Veil-Framework/Veil.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10736,6 +10785,7 @@ check_if_ks
 		foldname="leviathan"
 		gitlink="https://github.com/leviathan-framework/leviathan.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10748,6 +10798,7 @@ check_if_ks
 		foldname="FakeImageExploiter"
 		gitlink="https://github.com/r00t-3xp10it/FakeImageExploiter.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10759,12 +10810,14 @@ check_if_ks
 		foldname="avet"
 		gitlink="https://github.com/govolution/avet.git"
 		install_default
+clear
 	}
 	function install_gloom
 	{
 		foldname="Gloom-Framework"
 		gitlink="https://github.com/StreetSec/Gloom-Framework.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10776,6 +10829,7 @@ check_if_ks
 		foldname="ARCANUS"
 		gitlink="https://github.com/EgeBalci/ARCANUS.git"
 		install_default
+clear
 	}
 	function install_msfpc
 	{
@@ -10786,18 +10840,21 @@ check_if_ks
 		foldname="morphHTA"
 		gitlink="https://github.com/vysec/morphHTA.git"
 		install_default
+clear
 	}
 	function install_lfi
 	{
 		foldname="LFISuite"
 		gitlink="https://github.com/D35m0nd142/LFISuite.git"
 		install_default
+clear
 	}
 	function install_unibyav
 	{
 		foldname="UniByAv"
 		gitlink="https://github.com/Mr-Un1k0d3r/UniByAv.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10809,18 +10866,21 @@ check_if_ks
 		foldname="demiguise"
 		gitlink="https://github.com/nccgroup/demiguise.git"
 		install_default
+clear
 	}
 	function install_dkmc
 	{
 		foldname="DKMC"
 		gitlink="https://github.com/Mr-Un1k0d3r/DKMC.git"
 		install_default
+clear
 	}
 	function install_sechub
 	{
 		foldname="secHub"
 		gitlink="https://github.com/cys3c/secHub.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10838,6 +10898,7 @@ check_if_ks
 		foldname="MITMf"
 		gitlink="https://github.com/byt3bl33d3r/MITMf"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10856,6 +10917,7 @@ check_if_ks
 		foldname="opensource"
 		gitlink="https://github.com/r00t-3xp10it/netool-toolkit"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10871,12 +10933,14 @@ check_if_ks
 		foldname="patator"
 		gitlink="https://github.com/lanjelot/patator.git"		
 		install_default
+clear
 	}
 	function install_zeus
 	{
 		foldname="Zeus-Scanner"
 		gitlink="https://github.com/Ekultek/Zeus-Scanner.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10889,6 +10953,7 @@ check_if_ks
 		foldname="Evil-Droid"
 		gitlink="https://github.com/M4sc3r4n0/Evil-Droid.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10900,6 +10965,7 @@ check_if_ks
 		foldname="NoSQLMap"
 		gitlink="https://github.com/codingo/NoSQLMap.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10911,6 +10977,7 @@ check_if_ks
 		foldname="mouse"
 		gitlink="https://github.com/entynetproject/mouse.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10924,6 +10991,7 @@ check_if_ks
 		foldname="Zerodoor"
 		gitlink="https://github.com/Souhardya/Zerodoor.git"
 		install_default
+clear
 		cloned=$?
 	}
 	function install_objection
@@ -10932,6 +11000,7 @@ check_if_ks
 		foldname="objection"
 		gitlink="https://github.com/sensepost/objection.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10943,6 +11012,7 @@ check_if_ks
 		foldname="cromos"
 		gitlink="https://github.com/evilsocketbr/cromos.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10954,6 +11024,7 @@ check_if_ks
 		foldname="fsociety"
 		gitlink="https://github.com/Manisso/fsociety.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10966,6 +11037,7 @@ check_if_ks
 		foldname="Yuki-Chan-The-Auto-Pentest"
 		gitlink="https://github.com/Yukinoshita47/Yuki-Chan-The-Auto-Pentest.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10981,6 +11053,7 @@ check_if_ks
 		foldname="socfish"
 		gitlink="https://github.com/entynetproject/socfish.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -10994,6 +11067,7 @@ check_if_ks
 		foldname="arissploit"
 		gitlink="https://github.com/entynetproject/arissploit.git"
 		install_default
+clear
 		clone=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -11031,6 +11105,7 @@ check_if_ks
 		foldname="Blazy"
 		gitlink="https://github.com/UltimateHackers/Blazy.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -11042,6 +11117,7 @@ check_if_ks
 		foldname="Striker"
 		gitlink="https://github.com/UltimateHackers/Striker.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -11053,6 +11129,7 @@ check_if_ks
 		foldname="hyprPulse"
 		gitlink="https://github.com/Ethical-H4CK3R/hyprPulse.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -11067,6 +11144,7 @@ check_if_ks
 		foldname="InstaBurst"
 		gitlink="https://github.com/Ethical-H4CK3R/InstaBurst.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -11081,6 +11159,7 @@ check_if_ks
 		foldname="SiteBroker"
 		gitlink="https://github.com/Anon-Exploiter/SiteBroker"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
@@ -11093,12 +11172,14 @@ check_if_ks
 		foldname="Enigma"
 		gitlink="https://github.com/UndeadSec/Enigma.git"
 		install_default
+clear
 	}
 	function install_datasploit
 	{
 		foldname="datasploit"
 		gitlink="https://github.com/DataSploit/datasploit.git"
 		install_default
+clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
