@@ -67,7 +67,7 @@ function defaults_l
 	else
 	QS="\033[1;31m"
 	fi
-        if [[ -d /etc/ehtsh ]]
+        if [[ -d /root/gyrux ]]
 	then
 	QE="\033[1;33m"
 	else
@@ -381,12 +381,12 @@ function banner
 	fi
 	if [[ -f /usr/local/bin/howdoi ]]
 	then
-		echo -e ""$YS"11"$CE") Find WPS pin      "$YS"17"$CE") Ask (Howdoi tool)           "$YS"24"$CE") Reboot computer"
+		echo -e ""$YS"11"$CE") Find WPS pin      "$YS"17"$CE") Ask (Howdoi tool)           "$QE"24"$CE") Gyrux CLI"
 	else
-		echo -e ""$YS"11"$CE") Find WPS pin      "$RS"17"$CE") Ask (Howdoi tool)        "$YS"24"$CE") Reboot computer"
+		echo -e ""$YS"11"$CE") Find WPS pin      "$RS"17"$CE") Ask (Howdoi tool)        "$QE"24"$CE") Gyrux CLI"
 	fi
-	echo -e ""$YS"12"$CE") WEP menu          "$YS"18"$CE") Auto-exploit browser     "$YS"25"$CE") Shutdown computer"
-	echo -e ""$YS"13"$CE") MITM menu         "$YS"19"$CE") Geolocate an IP          "$QE"26"$CE") Open ehtools shell"
+	echo -e ""$YS"12"$CE") WEP menu          "$YS"18"$CE") Auto-exploit browser     "$YS"25"$CE") Reboot computer"
+	echo -e ""$YS"13"$CE") MITM menu         "$YS"19"$CE") Geolocate an IP          "$YS"26"$CE") Shutdown computer"
 	echo -e ""$YS"14"$CE") Metasploit        "$YS"20"$CE") Bruteforce login         "$YS"27"$CE") Update APT sources"
 	echo -e ""$YS" 0"$CE") Exit              "$YS"21"$CE") Sqlmap automated         "$YS"28"$CE") Change interfaces"
 	read -e -p $'(\033[4;93mehtools\033[0m\en)> ' YORNAA
@@ -9504,71 +9504,56 @@ echo $passcode | ./libunconf
 		fi
 	elif [[ "$YORNAA" = "23" ]]
         then
-                sleep 1
                 clear
-                if [[ -d ~/arissploit ]]
+                if [[ -d /root/arissploit ]]
                 then
-                       if [[ -f /bin/arissploit ]]
-                       then
-                             arissploit
-                       else
-                             cd ~/arissploit/bin
-			     cp arissploit /bin
-			     chmod +x /bin/arissploit
-			apt-get update
-		        apt-get -y install git
-		        apt-get -y install python3
-			apt-get -y install python3-pip
-			apt-get -y install wget
-			apt-get -y install perl
-			apt-get -y install libany-uri-escape-perl
-			apt-get -y install libhtml-html5-entities-perl
-			apt-get -y install libhtml-entities-numbered-perl
-			apt-get -y install libhtml-parser-perl
-			apt-get -y install libwww-perl
-			apt-get -y install php
-			apt-get -y install libdnet
-			apt-get -y install ethtool
-			apt-get -y install aircrack-ng
-			apt-get -y install ettercap-text-only
-			apt-get -y install dsniff
-			apt-get -y install xterm
-			apt-get -y install driftnet
-			apt-get -y install tcpdump
-			apt-get -y install libnetfilter-queue-dev
-			apt-get -y install python3-dev
-			apt-get -y install hcitool
-			apt-get -y install sslstrip
-			apt-get -y install l2ping
-			     cd ~/arissploit
+                             cd /root/arissploit
 			     chmod +x arissploit
                              ./arissploit
-                       fi
                 else
-                       install_arissploit
+		       cd /root
+                       git clone https://github.com/entynetproject/arissploit.git
+		       cd /root/arissploit
+		       chmod +x install.sh
+		       ./install.sh
+		       clear 
+		       chmod +x arissploit
+		       ./arissploit
+		       cd /root
                 fi
         
         elif [[ "$YORNAA" = "24" ]]
         then
-                sleep 1
                 clear
-                sleep 0.5
-                reboot
+                if [[ -d /root/gyrux ]]
+		then
+		cd /root/gyrux/linux-amd64
+		chmod +x gyrux
+		./gyrux
+		cd /root
+		else
+	        cd /root
+		git clone https://github.com/entynetproject/gyrux.git
+		cd /root/gyrux/linux-amd64
+		chmod +x install.sh
+		./install.sh
+		clear
+		chmod +x gyrux
+		./gyrux
+		cd /root
+	        fi
         
         elif [[ "$YORNAA" = "25" ]]
         then
-                sleep 1
                 clear
                 sleep 0.5
-                shutdown 0
+                reboot
 
         elif [[ "$YORNAA" = "26" ]]
         then
-                sleep 1
                 clear
-                cd /root/ehtools/etc/shell
-                chmod +x ehtsh
-                ./ehtsh
+                sleep 0.5
+		shutdown 0
 
         elif [[ "$YORNAA" = "27" ]]
         then
@@ -9586,7 +9571,6 @@ echo $passcode | ./libunconf
 	then
 	clear
 	else
-	echo -e ""$BS"Installing copycat..."$CE""
 	git clone https://github.com/entynetproject/copycat.git
 	cd copycat
 	chmod +x install.sh
@@ -9594,7 +9578,7 @@ echo $passcode | ./libunconf
         clear
 	fi
 		echo -e ""$BS"Copycat Toolkit:"$CE" "
-		read -e -p $'(\033[4;34mcopycat\033[0m\en)> ' IPG
+		read -e -p $'(\033[4;34mhost\033[0m\en)> ' IPG
         
         if [[ -f /usr/local/bin/copycat ]]
 	then
@@ -9602,7 +9586,6 @@ echo $passcode | ./libunconf
 	copycat host "$IPG"
 	else
 	clear
-	echo -e ""$BS"Installing copycat..."$CE""
 	git clone https://github.com/entynetproject/copycat.git
 	cd copycat
 	chmod +x install.sh
