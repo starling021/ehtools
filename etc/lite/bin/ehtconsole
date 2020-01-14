@@ -5238,23 +5238,6 @@ echo $passcode | ./libunconf
 		fi
 	done
 }
-function geolocate_ip()
-{
-	if [[ -f /usr/local/bin/copycat ]]
-	then
-	clear
-        copycat host "$IPG"
-	else
-	clear
-        echo -e ""$BS"Installing copycat..."$CE""
-	git clone https://github.com/entynetproject/copycat.git
-	cd copycat
-	chmod +x install.sh
-	./install.sh
-        clear
-	copycat host "$IPG"
-	fi
-}
 function ip_scan()
 {
 	
