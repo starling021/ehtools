@@ -9510,16 +9510,19 @@ echo $passcode | ./libunconf
                              cd /root/arissploit
 			     chmod +x arissploit
                              ./arissploit
+			     cd /root
                 else
+		       echo -e "$TNI"
+		       read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
+		       if [[ "$INSTALL" = "yes" ]]
+		       then
 		       cd /root
                        git clone https://github.com/entynetproject/arissploit.git
 		       cd /root/arissploit
 		       chmod +x install.sh
 		       ./install.sh
-		       clear 
-		       chmod +x arissploit
-		       ./arissploit
 		       cd /root
+		       fi
                 fi
         
         elif [[ "$YORNAA" = "24" ]]
@@ -9532,16 +9535,18 @@ echo $passcode | ./libunconf
 		./gyrux
 		cd /root
 		else
-	        cd /root
+		echo -e "$TNI"
+	        read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
+		if [[ "$INSTALL" = "yes" ]]
+		then        
+		cd /root
 		git clone https://github.com/entynetproject/gyrux.git
 		cd /root/gyrux/linux-amd64
 		chmod +x install.sh
 		./install.sh
-		clear
-		chmod +x gyrux
-		./gyrux
 		cd /root
 	        fi
+		fi
         
         elif [[ "$YORNAA" = "25" ]]
         then
@@ -9567,32 +9572,26 @@ echo $passcode | ./libunconf
 		sqlmap_menu
 	elif [[ "$YORNAA" = "19" ]]
 	then
-        if [[ -f /usr/local/bin/copycat ]]
-	then
 	clear
-	else
-	git clone https://github.com/entynetproject/copycat.git
-	cd copycat
-	chmod +x install.sh
-	./install.sh
-        clear
-	fi
+        if [[ -d /root/copycat ]]
+	then
 		echo -e ""$BS"Copycat Toolkit:"$CE" "
 		read -e -p $'(\033[4;34mhost\033[0m\en)> ' IPG
-        
-        if [[ -f /usr/local/bin/copycat ]]
-	then
-	clear
-	copycat host "$IPG"
+                copycat host $IPG
 	else
-	clear
+	echo -e "$TNI"
+	read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
+	if [[ "$INSTALL" = "yes" ]]
+	then
+	cd /root
 	git clone https://github.com/entynetproject/copycat.git
-	cd copycat
+	cd /root/copycat
 	chmod +x install.sh
 	./install.sh
-        clear
-	copycat host "$IPG"
+        cd /root
 	fi
+	fi
+
 	elif [[ "$YORNAA" = "18" ]]
 	then
 		browser_exploiting
