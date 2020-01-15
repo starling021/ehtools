@@ -59,7 +59,13 @@ function defaults_l
 	else
 		ALFA="no"
 	fi
-#yellow start 
+	if [[ ! -f /usr/bin/arp-scan && ! -f /usr/sbin/arp-scan ]]
+	then
+	DHHH="\033[1;31m"
+	else
+	DHHH="\033[1;31m"
+	fi
+	#yellow start 
 	YS="\033[1;33m"
 #blue start 
 	BS="\033[0;34m"
@@ -327,7 +333,7 @@ function banner
       echo -e "$COL     ╚══════╝╚═╝  ╚═╝   ╚═╝       $WHS Plan |$RS Ehtools Framework$WHS :$YS LITE$CE"
       echo -e "                                                                            "                                                                   
 	                                                                  
-       echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways"$CE"   "$YS"scan"$CE") Arp-scan network"
+       echo -e ""$YS"if"$CE") Ifconfig           "$YS"l"$CE") Local IPs & gateways"$CE"   "$DHHH"scan"$CE") ARP-scan network"
 	if [[ "$WLANCHECKING" = "" ]]
 	then
 		echo -e ""$RS" 1"$CE") Enable $WLANN${SPACESN}"$RS"d1"$CE") Disable $WLANN${SPACESN}   "$YS"start"$CE") Start monitor mode"
