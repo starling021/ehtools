@@ -9527,6 +9527,7 @@ echo $passcode | ./libunconf
 		       read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
 		       if [[ "$INSTALL" = "yes" ]]
 		       then
+		       clear
 		       cd /root
                        git clone https://github.com/entynetproject/arissploit.git
 		       cd /root/arissploit
