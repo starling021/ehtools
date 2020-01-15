@@ -65,7 +65,7 @@ function defaults_l
 	then
 	DHHH="\033[1;31m"
 	else
-	DHHH="\033[1;31m"
+	DHHH="\033[1;33m"
 	fi
 	if [[ -d /root/copycat ]]
 	then
