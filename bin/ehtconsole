@@ -2965,7 +2965,7 @@ do
 				then
 					if [[ ! -f /root/Dr0p1t-Framework/icons/"$ICON".ico ]]
 					then
-						echo -e ""$RS"File not found."$CE""
+						echo -e ""$RS"File is not found."$CE""
 						sleep 2
 					else
 						ICON=""$ICON".ico"
@@ -3012,7 +3012,7 @@ do
 				then
 					if [[ ! -f /root/Dr0p1t-Framework/scripts/vbs/"$RUNVBS".vbs ]]
 					then
-						echo -e ""$RS"File not found."$CE""
+						echo -e ""$RS"File is not found."$CE""
 						sleep 2
 					else
 						RUNVBS=""$RUNVBS".vbs"
@@ -3059,7 +3059,7 @@ do
 				then
 					if [[ ! -f /root/Dr0p1t-Framework/scripts/powershell/"$RUNPOW".ps1 ]]
 					then
-						echo -e ""$RS"File not found."$CE""
+						echo -e ""$RS"File is not found."$CE""
 						sleep 2
 					else
 						RUNPOW=""$RUNPOW".ps1"
@@ -3106,7 +3106,7 @@ do
 				then
 					if [[ ! -f /root/Dr0p1t-Framework/scripts/bat/"$RUNBAT".bat ]]
 					then
-						echo -e ""$RS"File not found."$CE""
+						echo -e ""$RS"File is not found."$CE""
 						sleep 2
 					else
 						RUNBAT=""$RUNBAT".bat"
@@ -4431,7 +4431,7 @@ function remote_access
 			read -e -p $'(\033[4;93mtype\033[0m)> ' AVE
 			if [[ ! -f /root/avet/build/"$AVE" ]]
 			then
-				echo -e ""$RS"File not found"$CE""
+				echo -e ""$RS"File is not found"$CE""
 				sleep 2
 			else
 				nano /root/avet/build/"$AVE"
@@ -4740,7 +4740,7 @@ function remote_access
 				read -e -p $'(\033[4;93mpath\033[0m)> ' RPATH
 				if [[ ! -f "$RPATH" ]]
 				then
-					echo -e ""$RS"File not found"$CE""
+					echo -e ""$RS"File is not found"$CE""
 					sleep 2
 					continue
 				fi
@@ -4783,7 +4783,7 @@ function remote_access
 					#~ GCC=$(which gcc)
 					#~ if [[ "$GCC" = "" ]]
 					#~ then
-						#~ echo -e ""$RS"gcc not found on your system"$CE""
+						#~ echo -e ""$RS"gcc is not found on your system"$CE""
 						#~ sleep 2
 						#~ echo -e "Proceeding without bypassing Antivirus..."
 						#~ sleep 3
@@ -5092,7 +5092,7 @@ function remote_access
 					then
 						APK="$APKTBI"
 					else
-						echo -e ""$RS"/root/kwetza/"$APKTBI" not found"$CE""
+						echo -e ""$RS"/root/kwetza/"$APKTBI" is not found"$CE""
 						sleep 3
 					fi
 				elif [[ "$APKK" = 2 ]]
@@ -5869,7 +5869,7 @@ function website_tools
 						read -e -p $'(\033[4;93mpath\033[0m)> ' WRDLST
 						if [[ ! -f "$WRDLST" ]]
 						then
-							echo -e ""$RS"File not found"$CE""
+							echo -e ""$RS"File is not found"$CE""
 							sleep 2
 							continue
 						fi
@@ -5884,7 +5884,7 @@ function website_tools
 						read -e -p $'(\033[4;93mpath\033[0m)> ' WRDLST
 						if [[ ! -f "$WRDLST" ]]
 						then
-							echo -e ""$RS"File not found"$CE""
+							echo -e ""$RS"File is not found"$CE""
 							sleep 2
 							continue
 						fi
@@ -6370,7 +6370,7 @@ function metasploit_menu
 			NAMERC="$NAMERC".rc
 			if [[ ! -f "$EPATH"/rc/"$NAMERC" ]]
 			then
-				echo -e "File not found. Try again.."
+				echo -e "File is not found. Try again.."
 				sleep 2
 				continue
 			fi
@@ -7033,7 +7033,7 @@ function new_terminal
 			CHECKWL=$(ifconfig | grep "$WLANN")
 			if [[ "$CHECKWL" == "" ]]
 			then
-				echo -e ""$RS""$WLANN" was not found"$CE""
+				echo -e ""$RS""$WLANN" was is not found"$CE""
 				sleep 2
 				BACKL=1
 				break
@@ -7130,7 +7130,7 @@ function wififb_attack
 			then
 				cat $wififbpassfileall
 			else
-				echo -e ""$RS"File not found. Get some paswords first."$CE""
+				echo -e ""$RS"File is not found. Get some paswords first."$CE""
 			fi
 			echo -e "$PAKTGB"
 			$READAK
@@ -7268,7 +7268,7 @@ function wififb_pass
 		echo -e "" > $wififbpassfile
 		echo -e "" > $wififbfile
 	else
-		echo -e ""$RS"$wififbfile not found."$CE""
+		echo -e ""$RS"$wififbfile is not found."$CE""
 		sleep 3
 	fi
 }
@@ -7769,7 +7769,7 @@ function cromos_menu
 {
 	if [[ ! -d /root/cromos ]]
 	then
-		echo -e ""$RS"Cromos directory was not found on /root"$CE""
+		echo -e ""$RS"Cromos directory was is not found on /root"$CE""
 		echo -e ""$RS"Fix this issue by installing it within ehtools"$CE""
 		echo -e "$PAKTGB"
 		$READAK
@@ -8716,7 +8716,7 @@ function browser_exploiting
 					SINT="$ETH"
 					inter=0
 				else
-					SINT=""$RS"Not found"$CE""
+					SINT=""$RS"is not found"$CE""
 					inter=1
 				fi
 			fi
@@ -9467,7 +9467,7 @@ echo $passcode | ./libunconf
 		if [[ "$TESTARP" = "" ]]
 		then
 			clear
-			echo -e ""$RS"$ARPIN was not found"$CE""
+			echo -e ""$RS"$ARPIN was is not found"$CE""
 			sleep 2
 			BACKL=1
 		else
@@ -9489,7 +9489,7 @@ echo $passcode | ./libunconf
 		CHECK=$(ifconfig | grep "$iftopint")
 		if [[ "$CHECK" = "" ]]
 		then
-			echo -e ""$RS"Interface "$iftopint" was not found"$CE""
+			echo -e ""$RS"Interface "$iftopint" was is not found"$CE""
 			sleep 2
 		else
 			xterm -hold -T "Iftop on $iftopint" -e "iftop -n -i $iftopint -b" & disown
@@ -10600,9 +10600,9 @@ clear
 		fi
 		rm -f /root/ngrok.zip
 		cd
-		echo -e "Downloading Ngrok"
+		echo -e "Downloading Ngrok..."
 		wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip --output-document=/root/ngrok.zip
-		echo -e "Unzipping Ngrok"
+		echo -e "Unzipping Ngrok..."
 		unzip /root/ngrok.zip
 	}
 	function install_netdiscover

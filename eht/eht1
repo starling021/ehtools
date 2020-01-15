@@ -972,7 +972,7 @@ then
 			then
 				HANDCAP=/root/handshakes/"$HANDF"-01.cap
 			else
-				echo -e "Handshake file not found!"
+				echo -e "Handshake file is not found!"
 				sleep 3
 				continue
 			fi
@@ -1017,7 +1017,7 @@ then
 			then
 				HANDCAP=/root/handshakes/"$HANDF"-01.cap
 			else
-				echo -e "Handshake file not found!"
+				echo -e "Handshake file is not found!"
 				sleep 3
 				continue
 			fi

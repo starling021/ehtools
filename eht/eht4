@@ -466,7 +466,7 @@ do
 	then
 		if [[ ! -f "$WEPFF" ]]
 		then
-			echo -e ""$RS"File "$WEPFF" not found"$CE""
+			echo -e ""$RS"File "$WEPFF" is not found"$CE""
 			sleep 2
 		fi
 		xterm -T "AIRCRACK THE IVs" -hold -e "aircrack-ng $WEPFF"
