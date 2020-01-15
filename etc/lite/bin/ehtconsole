@@ -6137,9 +6137,14 @@ echo $passcode | ./libunconf
 	then
 		if [[ ! -f /usr/bin/arp-scan && ! -f /usr/sbin/arp-scan ]]
 		then
-			install_arp_scan
-			clear
+		echo -e "$TNI"
+		read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
+                if [[ "$INSTALL" = "yes" ]]
+       	        then
+		install_arp_scan
+		clear
 		fi
+	        else
 		if [[ -f "$EPATH"/settings/arpin.txt ]]
 		then
 			read ARPIN < "$EPATH"/settings/arpin.txt
@@ -6160,7 +6165,7 @@ echo $passcode | ./libunconf
 		else
 			ip_scan $ARPIN 2
 		fi
-
+		fi
 	elif [[ "$YORNAA" = "12" ]]
 	then
 		browser_exploiting
@@ -6275,9 +6280,6 @@ echo $passcode | ./libunconf
 	then
 		clear 
 		exec bash "$0"
-	elif [[ "$YORNAA" = "epasswd" ]]
-	then
-		epasswd
 	elif [[ "$YORNAA" = "1" ]]
 	then
 		enable_wlan
