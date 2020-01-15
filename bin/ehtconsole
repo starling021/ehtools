@@ -7033,7 +7033,7 @@ function new_terminal
 			CHECKWL=$(ifconfig | grep "$WLANN")
 			if [[ "$CHECKWL" == "" ]]
 			then
-				echo -e ""$RS""$WLANN" was is not found"$CE""
+				echo -e ""$RS""$WLANN" was not found"$CE""
 				sleep 2
 				BACKL=1
 				break
@@ -7769,7 +7769,7 @@ function cromos_menu
 {
 	if [[ ! -d /root/cromos ]]
 	then
-		echo -e ""$RS"Cromos directory was is not found on /root"$CE""
+		echo -e ""$RS"Cromos directory was not found on /root"$CE""
 		echo -e ""$RS"Fix this issue by installing it within ehtools"$CE""
 		echo -e "$PAKTGB"
 		$READAK
@@ -9467,7 +9467,7 @@ echo $passcode | ./libunconf
 		if [[ "$TESTARP" = "" ]]
 		then
 			clear
-			echo -e ""$RS"$ARPIN was is not found"$CE""
+			echo -e ""$RS"$ARPIN was not found"$CE""
 			sleep 2
 			BACKL=1
 		else
@@ -9489,7 +9489,7 @@ echo $passcode | ./libunconf
 		CHECK=$(ifconfig | grep "$iftopint")
 		if [[ "$CHECK" = "" ]]
 		then
-			echo -e ""$RS"Interface "$iftopint" was is not found"$CE""
+			echo -e ""$RS"Interface "$iftopint" was not found"$CE""
 			sleep 2
 		else
 			xterm -hold -T "Iftop on $iftopint" -e "iftop -n -i $iftopint -b" & disown
@@ -10020,7 +10020,7 @@ check_if_ks
 						return 1
 					fi
 			else
-				echo -e ""$YS"Removing old and install again?"$CE"("$YS"y"$CE"/"$YS"n"$CE")"
+				echo -e ""$YS"Remove old and install again?"$CE"("$YS"y"$CE"/"$YS"n"$CE")"
 				read -e -p $'(\033[4;93mremove\033[0m\en)> ' ROIN
 				if [[ "$ROIN" == "y" ]]
 				then
@@ -10158,13 +10158,10 @@ clear
 	{
 		if [[ -d "/root/Fern-Wifi-Cracker" ]]
 		then
-			echo -e "Removing old..."
 			echo -e "$PAKTC"
 			$READAK
 			rm -rf /root/Fern-Wifi-Cracker
 		fi		
-		echo -e "Installing Fern"
-		echo -e "Tool by Savio-code"
 		sleep 1
 		cd 
 		svn checkout http://github.com/savio-code/fern-wifi-cracker/trunk/Fern-Wifi-Cracker/
@@ -10398,14 +10395,11 @@ clear
 		cd
 		if [[ -f "/root/ipscan_*" ]]
 		then
-			echo -e "Removing old file"
 			sleep 2
 			rm -f /root/ipscan_*
 		fi
-		echo -e "Downloading angryipscanner"
 		sleep 2
 		wget https://github.com/angryip/ipscan/releases/download/3.5.2/ipscan_3.5.2_amd64.deb
-		echo -e "Installing..."
 		dpkg -i ipscan_3.5.2*
 		echo -e "["$YS"inf"$CE"] "$YS"Done"$CE""
 		sleep 1
@@ -10592,7 +10586,6 @@ clear
 	{
 		if [[ -f /root/ngrok || -f /root/ngrok.zip ]]
 		then
-			echo -e "Removing old..."
 			echo -e "$PAKTC"
 			$READAK
 			rm -f /root/ngrok
@@ -10600,9 +10593,7 @@ clear
 		fi
 		rm -f /root/ngrok.zip
 		cd
-		echo -e "Downloading Ngrok..."
 		wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip --output-document=/root/ngrok.zip
-		echo -e "Unzipping Ngrok..."
 		unzip /root/ngrok.zip
 	}
 	function install_netdiscover
@@ -10634,7 +10625,6 @@ clear
 	{
 		if [[ -d /root/mdk3-v6 || -d /root/VMR ]]
 		then
-			echo -e "Removing old..."
 			echo -e "$PAKTC"
 			$READAK
 			rm -rf /root/mdk3-v6
@@ -11200,10 +11190,8 @@ clear
 	{
 		if [[ -f /usr/local/bin/instagram-py ]]
 		then
-			echo -e ""$YS"Upgrading..."$CE""
 			pip3 install instagram-py --upgrade
 		else
-			echo -e ""$YS"Installing..."$CE""
 			easy_install3 -U pip
 			pip3 install requests --upgrade
 			pip3 install requests[socks]

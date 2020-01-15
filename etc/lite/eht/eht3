@@ -175,13 +175,10 @@ function install_bully
 {
 	if [[ -d "/root/bully" ]]
 	then
-		echo -e "Removing old..."
 		echo -e "$PAKTC"
 		$READAK
 		rm -rf /root/bully
 	fi				
-	echo -e "Installing Bully"
-	echo -e "Tool by Aanarchyy"
 	cd
 	git clone https://github.com/aanarchyy/bully.git
 	cd /root/bully/src
@@ -193,13 +190,10 @@ function install_wifiautopwner
 {
 	if [[ -d "/root/WiFi-autopwner" ]]
 	then
-		echo -e "Removing old..."
 		echo -e "$PAKTC"
 		$READAK
 		rm -rf /root/WiFi-autopwner
 	fi		
-	echo -e "Installing WiFi-autopwner"
-	echo -e "Tool by Mi-Al"
 	cd
 	git clone https://github.com/Mi-Al/WiFi-autopwner.git
 }
@@ -207,7 +201,6 @@ function install_vmr
 {
 	if [[ -d /root/mdk3-v6 || -d /root/VMR ]]
 	then
-		echo -e "Removing old..."
 		echo -e "$PAKTC"
 		$READAK
 		rm -rf /root/mdk3-v6
@@ -235,15 +228,10 @@ function install_airgeddon
 {
 	if [[ -d "/root/airgeddon" ]]
 	then
-		echo -e "Removing old..."
 		echo -e "$PAKTC"
 		$READAK
 		rm -rf /root/airgeddon
 	fi
-	echo -e "Installing..."
-	sleep 1
-	echo -e "Installing Airgeddon"
-	echo -e "Tool by v1s1t0r1sh3r3"
 	cd
 	git clone https://github.com/v1s1t0r1sh3r3/airgeddon.git
 	cd airgeddon
