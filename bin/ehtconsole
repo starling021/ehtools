@@ -9542,9 +9542,9 @@ echo $passcode | ./libunconf
                 clear
                 if [[ -d /root/gyrux ]]
 		then
-		cd /root/gyrux/linux-amd64
-		chmod +x gyrux
-		./gyrux
+		cd /root/gyrux
+		make linux-amd64
+		/bin/gyrux
 		cd /root
 		else
 		echo -e "$TNI"
@@ -9554,9 +9554,8 @@ echo $passcode | ./libunconf
 		clear
 		cd /root
 		git clone https://github.com/entynetproject/gyrux.git
-		cd /root/gyrux/linux-amd64
-		chmod +x install.sh
-		./install.sh
+		cd /root/gyrux
+		make linux-amd64
 		cd /root
 	        fi
 		fi
