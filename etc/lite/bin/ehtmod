@@ -108,7 +108,7 @@ echo -e
 sleep 0.5
 {
 chatt -i /etc/ehtools
-rm -r /etc/ehtools/modules/eht
+rm -rf /etc/ehtools/modules/eht
 cp -r /etc/ehtools/modules/snapshots/$2/eht /etc/ehtools/modules
 chmod +x /etc/ehtools/modules/eht/eht1
 chmod +x /etc/ehtools/modules/eht/eht2
