@@ -297,8 +297,7 @@ hacking tool like Pupy by just selecting from one of the menu options!
  
 > ehtmod -h
 ```
-Usage: ehtmod [OPTION...]
-Copyright (C) 2015, Entynetproject. All Rights Reserved.
+Usage: ehtmod [OPTION...] <arguments...>
 
    -i  --install         Install ehtools modules.
    -t  --take    <name>  Take a new ehtools modules snapshot.
@@ -343,8 +342,7 @@ want to install them, run the following command!
 > ehtkey
 
 ```
-Usage: ehtkey [OPTION...]"
-Copyright (C) 2015, Entynetproject. All Rights Reserved.
+Usage: ehtkey [OPTION...] <arguments...>
 
    -c  --change <old_key> <new_key>  Change ehtools config key.
    -h  --help                        Give this help list.
@@ -361,8 +359,7 @@ Copyright (C) 2015, Entynetproject. All Rights Reserved.
 > ehtapp -h
  
 ```
-Usage: ehtapp [OPTION...]"
-Copyright (C) 2015, Entynetproject. All Rights Reserved.
+Usage: ehtapp [OPTION...] <arguments...>
 
    -c  --create            Create ehtools application.
    -d  --desktop <option>  Create/remove ehtools desktop application.
@@ -463,10 +460,10 @@ using Ctrl + C or other exit signals!
 
 # Ehtools Framework license
 
-        --------------------------------------------------
-                        Ehtools Framework          
-        --------------------------------------------------
-              Copyright (C) <2015>  <Entynetproject>            
+        ---------------------------------------------------
+                         Ehtools Framework                                                              
+        ---------------------------------------------------
+            Copyright (C) <2019-2020>  <Entynetproject>            
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
