@@ -297,14 +297,14 @@ hacking tool like Pupy by just selecting from one of the menu options!
  
 > ehtmod -h
 ```
-Usage: ehtmod [OPTION...] <arguments...>
+Usage: ehtmod [option] <arguments>
 
-   -i  --install         Install ehtools modules.
-   -t  --take    <name>  Take a new ehtools modules snapshot.
-   -r  --restore <name>  Restore saved ehtools modules snapshot.
-   -d  --delete  <name>  Delete saved ehtools modules snapshot.
-   -u  --uninstall       Uninstall ehtools modules.
-   -h  --help            Give this help list.
+  -i, --install         Install ehtools modules.
+  -t, --take    <name>  Take a new ehtools modules snapshot.
+  -r, --restore <name>  Restore saved ehtools modules snapshot.
+  -d, --delete  <name>  Delete saved ehtools modules snapshot.
+  -u, --uninstall       Uninstall ehtools modules.
+  -h, --help            Give this help list.
 ```
          
  * To install ehtools modules you need to execute the following command.
@@ -342,10 +342,10 @@ want to install them, run the following command!
 > ehtkey
 
 ```
-Usage: ehtkey [OPTION...] <arguments...>
+Usage: ehtkey [option] <arguments>
 
-   -c  --change <old_key> <new_key>  Change ehtools config key.
-   -h  --help                        Give this help list.
+  -c, --change <old_key> <new_key>  Change ehtools config key.
+  -h, --help                        Give this help list.
 ```
 
  * To change ehtools config key you need to execute the following command. You need to enter your old ehtools config key (example: 1001) and after this enter your new ehtools config key (example: 2002).
@@ -359,12 +359,12 @@ Usage: ehtkey [OPTION...] <arguments...>
 > ehtapp -h
  
 ```
-Usage: ehtapp [OPTION...] <arguments...>
+Usage: ehtapp [option] <arguments>
 
-   -c  --create            Create ehtools application.
-   -d  --desktop <option>  Create/remove ehtools desktop application.
-   -r  --remove            Remove ehtools application.
-   -h  --help              Give this help list.
+  -c, --create               Create ehtools application.
+  -d, --desktop <operation>  Create/remove ehtools desktop application.
+  -r, --remove               Remove ehtools application.
+  -h, --help                 Give this help list.
 ```
 
  * To create ehtools application you need to execute the following command.
