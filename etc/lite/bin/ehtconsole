@@ -110,7 +110,7 @@ function defaults_l
 toolarray=(
 "fluxion" "sniffer" "wifite" "wifiphisher" "morpheus" "osrframework" "camsnap" "trity" "cupp" "dracnmap" "fern" "kickthemout" "ghostphisher" "theeye" "xerxes"
 "mdk3" "katana" "airgeddon" "4nonimizer" "beelogger" "ezsploit" "pupy" "zirikatu" "wifiautopwner" "bully" "anonsurf" "anonym8" "thefatrat" "angryip" "sniper"
-"recondog" "geospy" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
+"recondog" "redhawk" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
 "websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "proton" "empire" "ghost"
 "dropit_frmw" "wifi_pumpkin" "veil" "leviathan" "fake_image" "avet" "gloom" "arcanus" "msfpc" "morphhta" "lfi" "unibyav" "demiguise" "dkmc" "sechub" "beef" "mitmf"
 "fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "mouse" "zerodoor" "cromos" "yuki-chan" "socfish" "entropy" "blazy"
@@ -752,7 +752,7 @@ done
 	#~ echo -e ""$YS"12"$CE") Netdiscover  "$YS"32"$CE") Angry IP      "$YS"52"$CE") Hash Buster      "$YS"72"$CE") Demiguise"
 	#~ echo -e ""$YS"13"$CE") KickThemOut  "$YS"33"$CE") Sniper        "$YS"53"$CE") Findsploit       "$YS"73"$CE") Dkmc"
 	#~ echo -e ""$YS"14"$CE") Ghost-Phisher"$YS"34"$CE") ReconDog      "$YS"54"$CE") Howdoi           "$YS"74"$CE") MITMf"
-	#~ echo -e ""$YS"15"$CE") The Eye      "$YS"35"$CE") GeoSpy        "$YS"55"$CE") Operative-frmwork"$YS"75"$CE") Netool-toolkit"
+	#~ echo -e ""$YS"15"$CE") The Eye      "$YS"35"$CE") RED HAWK      "$YS"55"$CE") Operative-frmwork"$YS"75"$CE") Netool-toolkit"
 	#~ echo -e ""$YS"16"$CE") Xerxes       "$YS"36"$CE") WinPayloads   "$YS"56"$CE") Netattack2       "$YS"76"$CE") Patator"
 	#~ echo -e ""$YS"17"$CE") Mdk3-master  "$YS"37"$CE") Shellter      "$YS"57"$CE") Proton           "$YS"77"$CE") Evil-Droid"
 	#~ echo -e ""$YS"18"$CE") Katana       "$YS"38"$CE") CHAOS         "$YS"58"$CE") Empire           "$YS"78"$CE") NoSQLMap"
@@ -866,7 +866,7 @@ done
 		#~ install_recondog
 	#~ elif [[ "$REIN" = "35" ]]
 	#~ then
-		#~ install_geospy
+		#~ install_redhawk
 	#~ elif [[ "$REIN" = "36" ]]
 	#~ then
 		#~ install_winpayloads
@@ -6970,19 +6970,12 @@ clear
 		install_default
 clear
 	}
-	function install_geospy
+	function install_redhawk
 	{
-		foldname="geospy"
-		gitlink="https://github.com/entynetproject/geospy.git"
+		foldname="RED_HAWK"
+		gitlink="https://github.com/Tuhinshubhra/RED_HAWK.git"
 		install_default
 clear
-		cloned=$?
-		if [[ "$cloned" == 1 ]]
-		then
-			cd /root/geospy
-			chmod +x install.sh
-			./install.sh
-		fi
 	}
 	function install_winpayloads
 	{
