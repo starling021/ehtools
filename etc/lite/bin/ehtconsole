@@ -108,12 +108,12 @@ function defaults_l
 	fi
 #tools
 toolarray=(
-"fluxion" "sniffer" "wifite" "wifiphisher" "morpheus" "osrframework" "camsnap" "trity" "cupp" "dracnmap" "fern" "kickthemout" "ghostphisher" "theeye" "xerxes"
+"fluxion" "sniffer" "wifite" "wifiphisher" "morpheus" "osrframework" "zatacker" "trity" "cupp" "dracnmap" "fern" "kickthemout" "ghostphisher" "theeye" "xerxes"
 "mdk3" "katana" "airgeddon" "4nonimizer" "beelogger" "ezsploit" "pupy" "zirikatu" "wifiautopwner" "bully" "anonsurf" "anonym8" "thefatrat" "angryip" "sniper"
 "recondog" "redhawk" "winpayloads" "chaos" "routersploit" "infoga" "nwatch" "eternalscanner" "eaphammer" "dagon" "lalin" "knockmail" "kwetza" "ngrok" "netdiscover"
 "websploit" "openvas" "shellter" "geany" "bleachbit" "vmr" "hashbuster" "findsploit" "howdoi" "operative" "netattack2" "proton" "empire" "ghost"
 "dropit_frmw" "wifi_pumpkin" "veil" "leviathan" "fake_image" "avet" "gloom" "arcanus" "msfpc" "morphhta" "lfi" "unibyav" "demiguise" "dkmc" "sechub" "beef" "mitmf"
-"fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "mouse" "zerodoor" "cromos" "yuki-chan" "socfish" "entropy" "blazy"
+"fsociety" "arp_scan" "netool" "sqlmap" "patator" "zeus" "evil_droid" "nosqlmap" "mouse" "zerodoor" "cromos" "yuki-chan" "socialfish" "entropy" "blazy"
 "striker" "hyprpulse" "instaburst" "instagram-py" "datasploit" "sitebroker" "enigma"
 )
 #setting frequent stings
@@ -744,7 +744,7 @@ done
 	#~ echo -e ""$YS" 4"$CE") Entropy      "$YS"24"$CE") Ezsploit      "$YS"44"$CE") Eaphammer        "$YS"64"$CE") FakeImageExploiter"
 	#~ echo -e ""$YS" 5"$CE") Morpheus     "$YS"25"$CE") Pupy          "$YS"45"$CE") Dagon            "$YS"65"$CE") Avet"
 	#~ echo -e ""$YS" 6"$CE") Osrfconsole  "$YS"26"$CE") Zirikatu      "$YS"46"$CE") Lalin            "$YS"66"$CE") Gloom"
-	#~ echo -e ""$YS" 7"$CE") CamSnap      "$YS"27"$CE") WiFi-autopwner"$YS"47"$CE") Knockmail        "$YS"67"$CE") Arcanus"
+	#~ echo -e ""$YS" 7"$CE") Zatacker     "$YS"27"$CE") WiFi-autopwner"$YS"47"$CE") Knockmail        "$YS"67"$CE") Arcanus"
 	#~ echo -e ""$YS" 8"$CE") Trity        "$YS"28"$CE") Bully         "$YS"48"$CE") Kwetza           "$YS"68"$CE") MSFPC"
 	#~ echo -e ""$YS" 9"$CE") Cupp         "$YS"29"$CE") Anonsurf      "$YS"49"$CE") Ngrok            "$YS"69"$CE") MorphHTA"
 	#~ echo -e ""$YS"10"$CE") Dracnmap     "$YS"30"$CE") Anonym8       "$YS"50"$CE") Bleachbit        "$YS"70"$CE") LFISuite"
@@ -782,7 +782,7 @@ done
 		#~ install_osrframework			
 	#~ elif [[ "$REIN" = "7" ]]
 	#~ then
-		#~ install_camsnap
+		#~ install_zatacker
 	#~ elif [[ "$REIN" = "8" ]]
 	#~ then
 		#~ install_trity
@@ -6542,6 +6542,7 @@ check_if_ks
 #----------------TOOLS---------------
 	function install_default
 	{
+clear
 		if [[ "$foldname" == "" ]]
 		then
 			testgit=$(echo "$gitlink" | grep ".git")
@@ -6606,6 +6607,7 @@ clear
 	}
 	function install_wifite
 	{
+clear
 		apt-get install -y wifite
 	}
 	function install_wifiphisher
@@ -6648,22 +6650,16 @@ clear
 	}
 	function install_osrframework
 	{
+clear
 		pip install osrframework
 	}
-	function install_camsnap
+	function install_zatacker
 	{
-		foldname="camsnap"
-		gitlink="https://github.com/entynetproject/camsnap.git"
-		install_default
 clear
-		cloned=$?
-		if [[ "$cloned" == 1 ]]
-		then
-			cd /root/camsnap
-			chmod +x install.sh
-			./install.sh
-		fi
-	}
+		echo -e "Failed 0"
+		echo -e "$PAKTGB"
+		read
+	}	
 	function install_trity
 	{
 		foldname="Trity"
@@ -6702,6 +6698,7 @@ clear
 	}
 	function install_fern
 	{
+clear
 		if [[ -d "/root/Fern-Wifi-Cracker" ]]
 		then
 			echo -e "$PAKTC"
@@ -6938,6 +6935,7 @@ clear
 	}
 	function install_angryip
 	{
+clear
 		cd
 		if [[ -f "/root/ipscan_*" ]]
 		then
@@ -7123,6 +7121,7 @@ clear
 	}
 	function install_ngrok
 	{
+clear
 		if [[ -f /root/ngrok || -f /root/ngrok.zip ]]
 		then
 			echo -e "$PAKTC"
@@ -7137,31 +7136,38 @@ clear
 	}
 	function install_netdiscover
 	{
+clear
 		apt-get install -y netdiscover	
 	}
 	function install_websploit
 	{
+clear
 		apt-get install -y websploit
 	}
 	function install_openvas
 	{
+clear
 		apt-get install -y openvas
 		openvas-setup
 	}
 	function install_shellter
 	{
+clear
 		apt-get install -y shellter
 	}
 	function install_geany
 	{
+clear
 		apt-get install -y geany
 	}
 	function install_bleachbit
 	{
+clear
 		apt-get install -y bleachbit
 	}
 	function install_vmr
 	{
+clear
 		if [[ -d /root/mdk3-v6 || -d /root/VMR ]]
         then
 			echo -e "$PAKTC"
@@ -7209,6 +7215,7 @@ clear
 	}
 	function install_howdoi
 	{
+clear
 		pip install howdoi
 		pip2.7 install howdoi
 	}
@@ -7371,6 +7378,7 @@ clear
 	}
 	function install_msfpc
 	{
+clear
 		apt-get install -y msfpc
 	}
 	function install_morphhta
@@ -7428,6 +7436,7 @@ clear
 	}
 	function install_beef
 	{
+clear
 		apt-get install -y beef-xss
 	}
 	function install_mitmf
@@ -7448,6 +7457,7 @@ clear
 	}
 	function install_arp_scan
 	{
+clear
 		apt-get -y install arp-scan
 	}
 	function install_netool
@@ -7464,6 +7474,7 @@ clear
 	}
 	function install_sqlmap
 	{
+clear
 		apt-get install -y sqlmap
 	}
 	function install_patator
@@ -7586,18 +7597,17 @@ clear
 			./install-perl-module.sh
 		fi
 	}
-	function install_socfish
+	function install_socialfish
 	{
 		foldname="SocialFish"
-		gitlink="https://github.com/entynetproject/socfish.git"
+		gitlink="https://github.com/UndeadSec/SocialFish.git"
 		install_default
 clear
 		cloned=$?
 		if [[ "$cloned" == 1 ]]
 		then
-			cd /root/socfish
-			chmod +x install.sh
-			./install.sh
+			pip install -r requirements.txt
+			pip2.7 install -r requirements.txt
 		fi
 	}
 	function install_arissploit
@@ -7703,6 +7713,7 @@ clear
 	}
 	function install_instagram-py
 	{
+clear
 		if [[ -f /usr/local/bin/instagram-py ]]
 		then
 			pip3 install instagram-py --upgrade
