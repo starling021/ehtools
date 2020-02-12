@@ -91,10 +91,10 @@ if [[ $1 = "--help" || $1 = "-h" ]]
 then
 echo -e "Usage: ehtapp [option] <arguments>"
 echo -e
-echo -e "  -c, --create            Create ehtools application."
-echo -e "  -d, --desktop <option>  Create/remove ehtools desktop application."
-echo -e "  -r, --remove            Remove ehtools application."
-echo -e "  -h, --help              Give this help list."
+echo -e "  -c, --create               Create ehtools application."
+echo -e "  -d, --desktop <operation>  Create/remove ehtools desktop application."
+echo -e "  -r, --remove               Remove ehtools application."
+echo -e "  -h, --help                 Give this help list."
 exit
 
 elif [[ $1 = "--create" || $1 = "-c" ]]
@@ -174,8 +174,8 @@ fi
 
 echo -e "Usage: ehtapp [option] <arguments>"
 echo -e
-echo -e "  -c, --create            Create ehtools application."
-echo -e "  -d, --desktop <option>  Create/remove ehtools desktop application." 
-echo -e "  -r, --remove            Remove ehtools application."
-echo -e "  -h, --help              Give this help list."
+echo -e "  -c, --create               Create ehtools application."
+echo -e "  -d, --desktop <operation>  Create/remove ehtools desktop application." 
+echo -e "  -r, --remove               Remove ehtools application."
+echo -e "  -h, --help                 Give this help list."
 exit
