@@ -3275,9 +3275,9 @@ function wifi_tools
 	fi
 	if [[ -d /root/entropy ]]
 	then
-		echo -e ""$YS" 4"$CE") Entropy               Set of IP webcamera attack methods"
+		echo -e ""$YS" 4"$CE") Entropy               Powerful toolkit for webcams penetration testing"
 	else
-		echo -e ""$RS" 4"$CE") Entropy"$CE"               Set of IP webcamera attack methods"
+		echo -e ""$RS" 4"$CE") Entropy"$CE"               Powerful toolkit fot webcams penetration testing"
 	fi
 	if [[ -d /root/morpheus ]]
 	then
