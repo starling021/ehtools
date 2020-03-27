@@ -9552,10 +9552,10 @@ echo $passcode | ./libunconf
 		then
 		clear
 		cd /root
-		git clone https://github.com/entynetproject/gyrux.git
+		git clone https://github.com/sectrk/gyrux.git
 		cd /root/gyrux
-		chmod +x install.sh
-        ./install.sh
+		chmod +x setup/install.sh
+                ./setup/install.sh
 		cd /root
 	        fi
 		fi
