@@ -9554,8 +9554,8 @@ echo $passcode | ./libunconf
 		cd /root
 		git clone https://github.com/sectrk/gyrux.git
 		cd /root/gyrux
-		chmod +x setup/install.sh
-                ./setup/install.sh
+		chmod +x setup/other/install.sh
+                ./setup/other/install.sh
 		cd /root
 	        fi
 		fi
