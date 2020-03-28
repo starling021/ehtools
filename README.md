@@ -200,8 +200,6 @@ new hacking tool like Pupy by just selecting from one of the menu options.
 
 # Installing new tools
 
-![Tools](https://user-images.githubusercontent.com/54115104/71424210-03da3680-2690-11ea-9a68-93989bab4440.png)
-
     Part of the fun of Ehtools Framework is how easy it is to add new tools to our arsenal. 
     We can select option 9 to access the list of tools in Ehtools Framework. From the next 
     menu, the tools are broken down into major categories, with options for managing the 
@@ -426,8 +424,6 @@ be restored and you will have to reinstall ehtools!
 ***
     
 # Ehtools Framework protection
-
-![Ehtools Login](https://user-images.githubusercontent.com/54115104/71750056-94c2c600-2e77-11ea-856a-46a5a53ef7cb.png)
 
  * Do this using install.sh.
 ```
