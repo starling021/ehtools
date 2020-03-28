@@ -11328,7 +11328,7 @@ KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 if [[ "$ASESR" != "" ]]
 then 
 
-KEYKE="$( timeout -s SIGTERM 40 curl "https://pastebin.com/raw/DeGu4acQ" 2>/dev/null )"
+KEYKE="$( timeout -s SIGTERM 40 curl "https://pastebin.com/raw/k8D7RBtC" 2>/dev/null )"
 
 if [[ "$KEYEK" != "$KEYKE" ]]
 then
@@ -11438,7 +11438,7 @@ KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 if [[ "$ASESR" != "" ]]
 then 
 
-KEYKE="$( timeout -s SIGTERM 40 curl "https://pastebin.com/raw/DeGu4acQ" 2>/dev/null )"
+KEYKE="$( timeout -s SIGTERM 40 curl "https://pastebin.com/raw/k8D7RBtC" 2>/dev/null )"
 
 if [[ "$KEYEK" != "$KEYKE" ]]
 then
