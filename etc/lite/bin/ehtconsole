@@ -756,7 +756,7 @@ done
 	#~ echo -e ""$YS"16"$CE") Xerxes       "$YS"36"$CE") WinPayloads   "$YS"56"$CE") Netattack2       "$YS"76"$CE") Patator"
 	#~ echo -e ""$YS"17"$CE") Mdk3-master  "$YS"37"$CE") Shellter      "$YS"57"$CE") Proton           "$YS"77"$CE") Evil-Droid"
 	#~ echo -e ""$YS"18"$CE") Katana       "$YS"38"$CE") CHAOS         "$YS"58"$CE") Omega            "$YS"78"$CE") NoSQLMap"
-	#~ echo -e ""$YS"19"$CE") Airgeddon    "$YS"39"$CE") Routersploit  "$YS"59"$CE") Ghost"
+	#~ echo -e ""$YS"19"$CE") Airgeddon    "$YS"39"$CE") Routersploit  "$YS"59"$CE") Ghost"           "$YS"79"$CE") CLoad
 	#~ echo -e ""$YS"20"$CE") Websploit    "$YS"40"$CE") Geany         "$YS"60"$CE") Dr0p1t"
 	#~ echo -e ""$YS" b"$CE") Go back"
 	#~ echo -e ""$YS" 0"$CE") Exit"
@@ -996,6 +996,9 @@ done
 	#~ elif [[ "$REIN" = "78" ]]
 	#~ then
 		#~ install_nosqlmap
+  #~ elif [[ "$REIN" = "79" ]]
+  #~ then
+    #~ install_cload
 	#~ elif [[ "$REIN" = "back" || "$REIN" = "b" ]]
 	#~ then
 		#~ clear
@@ -7264,6 +7267,20 @@ clear
 		if [[ "$cloned" == 1 ]]
 		then
 			cd omega
+			chmod +x install.sh
+			./install.sh
+		fi
+	}
+	function install_cload
+	{
+		foldname="cload"
+		gitlink="https://github.com/sectrk/cload.git"
+		install_default
+clear
+		cloned=$?
+		if [[ "$cloned" == 1 ]]
+		then
+			cd cload
 			chmod +x install.sh
 			./install.sh
 		fi
