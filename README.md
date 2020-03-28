@@ -86,10 +86,10 @@ your system Ehtools Framework needs full root access!
 # Ehtools Framework PRO activation
 
 ```
-This key you can buy on the ehtools site for one dollar! This key is 
-used to activate ehtools PRO enter it in the input field of the activation 
-key in the file install.sh and then you can install ehtools and use it only 
-for educational purposes! The key works only one week then it changes! You 
+This key you can buy on the ehtools site! This key is used to activate 
+ehtools PRO enter it in the input field of the activation key in the file 
+install.sh and then you can install ehtools and use it only for educational 
+purposes! The key works only one week then it changes! You 
 should to have time to enter it before it is updated!
 ```
 
