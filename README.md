@@ -61,11 +61,14 @@ a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and 
 # System requirements 
 
  * Ehtools Framework only supports two OS.
+
 ```
 Ehtools Framework only supports two 
 operating systems - Kali Linux and Parrot OS!
 ```
+
  * Full root access and access to /root folder.
+
 ```
 All ehtools files and folders will be copied to /root,
 /bin and /etc system folders, to copy ehtools data to
@@ -303,19 +306,24 @@ users to configure ehtools application.
 # Why Ehtools Framework
 
  * More than 58 tools for pentesting installed by default.
+
 ```
 More than 58 options installed by default 
 you can find in ehtools, this is tools such 
 as Metasploit, Wireshark and other tools!
 ```
+
  * Password protection and config encryption.
+
 ```
 In version 2.1.6 we added pasword protection, we added 
 it for users who think that his/her friend or parents will 
 turn into ehtools and will remove or destroy it. Only for this 
 people we create password protection for Ehtools Framework :)
 ```
+
  * UX/UI impruvements for beginners.
+
 ```
 It uses the names you supply to connect to the tools needed to 
 execute any attacks you select! Aside from that initial input, the majority 
@@ -335,6 +343,7 @@ hacking tool like Pupy by just selecting from one of the menu options!
  * ehtmod (ehtools modules) is an utility that adds permissions or the ability to control the Ehtools Framework modules.
  
 > ehtmod -h
+
 ```
 Usage: ehtmod [option] <arguments>
 
@@ -347,6 +356,7 @@ Usage: ehtmod [option] <arguments>
 ```
          
  * To install ehtools modules you need to execute the following command.
+
 ```
 The ehtools install.sh will ask you to "install" or "not 
 install" ehtools modules and if you answered "not install" and 
@@ -468,6 +478,7 @@ be restored and you will need to reinstall ehtools!
 > ((new)password)> 1234
 
  * Congratulations, you have successfully changed ehtools root password!
+
 ```
 In no case do not forget this password, it will not 
 be restored and you will have to reinstall ehtools!
@@ -477,21 +488,27 @@ be restored and you will have to reinstall ehtools!
 # Ehtools Framework protection
 
  * Do this using install.sh.
+
 ```
 Create login and password using install.sh 
 (example: login: ehtools, password: sloothe)
 ```
+
  * Do this when you are going to exit from ehtools.
+
 ```
 When you are going to exit framework,
 exit with shortcuts - 0 or exit. 
 ```
+
  * Do not do this when you are going to exit from ehtools.
+
 ``` 
 Do not just close ehtools window and 
 do not exit from the Ehtools Framework 
 using Ctrl-C or other exit signals!
 ```
+
 ***
 
 # Ehtools Framework disclaimer
