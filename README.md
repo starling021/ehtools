@@ -29,10 +29,12 @@
 
 # About Ehtools Framework
 
-    Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools Framework 
-    is a framework of serious penetration tools that can be explored easily from within it. This 
-    powerful and simple tool can be used for everything from installing new add-ons to grabbing 
-    a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and utilize.
+```
+Wi-Fi tools keep getting more and more accessible to beginners, and the Ehtools Framework 
+is a framework of serious penetration tools that can be explored easily from within it. This 
+powerful and simple tool can be used for everything from installing new add-ons to grabbing 
+a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and utilize.
+```
 
 ***
 
@@ -74,11 +76,13 @@ your system Ehtools Framework needs full root access!
 
 # Selecting framework version
 
-    After executing install.sh it will be ask you 
-    to select version of Ehtools Framework - PRO os LITE. 
-    Select LITE if you did not buy Ehtools Framework PRO. 
-    If you bought Ehtools Framework PRO, select PRO.
-    
+```
+After executing install.sh it will be ask you 
+to select version of Ehtools Framework - PRO os LITE. 
+Select LITE if you did not buy Ehtools Framework PRO. 
+If you bought Ehtools Framework PRO, select PRO.
+```
+
 > ./install.sh
     
 ***
@@ -95,16 +99,20 @@ should to have time to enter it before it is updated!
 
 > ./install.sh
 
-    Also, we do not recommend to change the source code of ehtools because 
-    it is very complex and you can mess up something and disrupt the framework!
+```
+Also, we do not recommend to change the source code of ehtools because 
+it is very complex and you can mess up something and disrupt the framework!
+```
 
 ***
 
 # Ehtools Framework execution
 
-    To execute Ehtools Framework you 
-    should execute the following command.
-    
+```
+To execute Ehtools Framework you 
+should execute the following command.
+```
+
 > ehtools
 
 ***
@@ -152,105 +160,141 @@ new hacking tool like Pupy by just selecting from one of the menu options.
 # Basic networking tools
 
 > (ehtools)> if
- 
-    Runs ifconfig and gives the names and 
-    information about all network devices.
+
+```
+Runs ifconfig and gives the names and 
+information about all network devices.
+```
 
 > (ehtools)> 1
 
-    Enable wlan0. 
-    (d1 disables it)
+```
+Enable wlan0. 
+(d1 disables it)
+```
 
 > (ehtools)> 2
 
-    Enable wlan0mon. 
-    (d2 disables it)
+```
+Enable wlan0mon. 
+(d2 disables it)
+```
 
 > (ehtools)> 3    
-   
-    Randomize or set the MAC 
-    address to a specific value.
+
+```
+Randomize or set the MAC 
+address to a specific value.
+```
 
 > (ehtools)> 7     
 
-    View the public IP address your 
-    computer is leaving on sites you visit.
+```
+View the public IP address your 
+computer is leaving on sites you visit.
+```
 
 > (ehtools)> 19    
 
-    Look up the physical address of a given IP 
-    address to determine it's relative location.
+```
+Look up the physical address of a given IP 
+address to determine it's relative location.
+```
 
 > (ehtools)> scan   
 
-    Start an ARP scan on the network 
-    to discover nearby devices.
+```
+Start an ARP scan on the network 
+to discover nearby devices.
+```
 
 > (ehtools)> start  
-      
-    Start monitor mode on the 
-    wireless network adapter.
+
+```
+Start monitor mode on the 
+wireless network adapter.
+```
 
 > (ehtools)> stop
 
-    Stop wireless monitor mode 
-    on the network adapter.
+```
+Stop wireless monitor mode 
+on the network adapter.
+```
 
 ***
 
 # Installing new tools
 
-    Part of the fun of Ehtools Framework is how easy it is to add new tools to our arsenal. 
-    We can select option 9 to access the list of tools in Ehtools Framework. From the next 
-    menu, the tools are broken down into major categories, with options for managing the 
-    installation of scripts. The options presented are:
+```
+Part of the fun of Ehtools Framework is how easy it is to add new tools to our arsenal. 
+We can select option 9 to access the list of tools in Ehtools Framework. From the next 
+menu, the tools are broken down into major categories, with options for managing the 
+installation of scripts. The options presented are:
+```
 
 **1.** Wi-Fi tools (tools for attacking wireless networks).
 
-    Wi-Fi options this is tools for attacking 
-    wireless networks and network databases.
+```
+Wi-Fi options this is tools for attacking 
+wireless networks and network databases.
+```
 
 **2.** Remote access (tools for getting remote access to other devices and remotely managing them).
 
-    Remote access means tools for getting access 
-    to other devices and remotely managing them.
-    
+```
+Remote access means tools for getting access 
+to other devices and remotely managing them.
+```
+
 **3.** Information gathering (collecting intelligence on people or website).
 
-    Information gathering tools, tools for 
-    collecting intelligence on peaple or website.
-    
+```
+Information gathering tools, tools for 
+collecting intelligence on peaple or website.
+```
+
 **4.** Website tools (tools for exploiting or attacking sites).
 
-    Website tools, tools for exploiting or 
-    attacking sites and network databases.
-   
+```
+Website tools, tools for exploiting or 
+attacking sites and network databases.
+```
+
 **5.** Other (a miscellaneous collection of other hacking tools)
 
-    Other tools this is collection 
-    of miscellaneous hacking tools.
+```
+Other tools this is collection 
+of miscellaneous hacking tools.
+```
 
  * You can also manage your installed tools by accessing option 6.
 
 # Ehtools Framework application 
 
-    Ehtools application is an Ehtools Framework shortcut 
-    that allows users to run Ehtools Framework just selecting 
-    ehtools in the applications and clicking on it! I mean ehtools 
-    application allows users to run ehtools via the application!
+```
+Ehtools application is an Ehtools Framework shortcut 
+that allows users to run Ehtools Framework just selecting 
+ehtools in the applications and clicking on it! I mean ehtools 
+application allows users to run ehtools via the application!
+```
 
  * There are two ways how to setup ehtools application.
 
 ## Using the installer
 
-    The ehtools install.sh allows 
-    you to create ehtools application.
+```
+The ehtools install.sh allows 
+you to create ehtools application.
+```
 
 ## Using the ehtapp
 
-    There is an ehtools utility named ehtapp 
-    (read more in Ehtools Utilities) that allows 
-    users to configure ehtools application.
+```
+There is an ehtools utility named ehtapp 
+(read more in Ehtools Utilities) that allows 
+users to configure ehtools application.
+```
 
 > ehtapp -c
 
@@ -313,18 +357,22 @@ want to install them, run the following command!
 
 ### Ehtools Modules Snapshot (EMS) 
 
-    EMS is a saved ehtools modules data, you can 
-    take it using the ehtmod utility and restore it.
-    
+```
+EMS is a saved ehtools modules data, you can 
+take it using the ehtmod utility and restore it.
+```
+
  * To take ehtools modules snapshot you need to execute the following command. You need to enter the name of the ehtools modules snapshot you want to take (example: snapshot1).
 
 > ehtmod -t snapshot1
 
 ### Ehtools Modules Restoration (EMR) 
 
-    EMR is an operation that removing modules and restoring it from 
-    the saved ehtools modules snapshot, you can restore it using the 
-    ehtmod utility but ESR will remove all your old ehtools modules data!
+```
+EMR is an operation that removing modules and restoring it from 
+the saved ehtools modules snapshot, you can restore it using the 
+ehtmod utility but ESR will remove all your old ehtools modules data!
+```
 
  * To restore ehtools modules snapshot you need to execute the following command. You need to enter the name of the saved ehtools modules snapshot (example: snapshot1).
 
@@ -363,6 +411,7 @@ Usage: ehtapp [option] <arguments>
 ```
 
  * To create ehtools application you need to execute the following command.
+
 ```
 The ehtools install.sh will ask you to "create" or 
 "not create" ehtools application and if you answered "not 
@@ -397,8 +446,10 @@ create" and want to create it, run the following command!
 
  * Congratulations, you have successfully changed ehtools login and password!
 
-    In no case do not forget this password, it will not 
-    be restored and you will need to reinstall ehtools!
+```
+In no case do not forget this password, it will not 
+be restored and you will need to reinstall ehtools!
+```
 
 ### Changing ehtools root password
 
@@ -445,28 +496,32 @@ using Ctrl + C or other exit signals!
 
 # Ehtools Framework disclaimer
 
-    Usage of the Ehtools Framework for attacking targets without prior mutual consent is illegal. 
-    It is the end user's responsibility to obey all applicable local, state, federal, and international laws. 
-    Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+```
+Usage of the Ehtools Framework for attacking targets without prior mutual consent is illegal.
+It is the end user's responsibility to obey all applicable local, state, federal, and international laws.
+Developers assume no liability and are not responsible for any misuse or damage caused by this program.
+```
 
 ***
 
 # Ehtools Framework license
 
-        ---------------------------------------------------
-                         Ehtools Framework                                                              
-        ---------------------------------------------------
-            Copyright (C) <2018-2020>  <Entynetproject>            
+```
+    ---------------------------------------------------
+                     Ehtools Framework                                                              
+    ---------------------------------------------------
+        Copyright (C) <2018-2020>  <Entynetproject>            
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    any later version.
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+any later version.
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-    GNU General Public License for more details.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+```
