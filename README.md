@@ -490,7 +490,7 @@ exit with shortcuts - 0 or exit.
 ``` 
 Do not just close ehtools window and 
 do not exit from the Ehtools Framework 
-using Ctrl + C or other exit signals!
+using Ctrl-C or other exit signals!
 ```
 ***
 
