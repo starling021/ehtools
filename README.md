@@ -228,8 +228,6 @@ on the network adapter.
 
 # Installing new tools
 
-![tools](https://user-images.githubusercontent.com/54115104/79588111-20392d80-80dc-11ea-9691-bc0eac9b2a46.png)
-
 ```
 Part of the fun of Ehtools Framework is how easy it is to add new tools to our arsenal. 
 We can select option 9 to access the list of tools in Ehtools Framework. From the next 
