@@ -23,8 +23,7 @@
  </a>
 </p>
 
-![Ehtools RED](https://user-images.githubusercontent.com/54115104/72455869-a50e6580-37d4-11ea-963d-ca4bb2dd5f1a.png)
-
+![ehtools](https://user-images.githubusercontent.com/54115104/79588104-1f080080-80dc-11ea-989b-b282cb78f237.png)
 ***
 
 # About Ehtools Framework
@@ -229,6 +228,8 @@ on the network adapter.
 
 # Installing new tools
 
+![tools](https://user-images.githubusercontent.com/54115104/79588111-20392d80-80dc-11ea-9691-bc0eac9b2a46.png)
+
 ```
 Part of the fun of Ehtools Framework is how easy it is to add new tools to our arsenal. 
 We can select option 9 to access the list of tools in Ehtools Framework. From the next 
@@ -332,7 +333,7 @@ from the menu. This means you can grab a network handshake or download a new
 hacking tool like Pupy by just selecting from one of the menu options!
 ```
 
-![Ehtools YELLOW](https://user-images.githubusercontent.com/54115104/72455871-a5a6fc00-37d4-11ea-8384-851e88a8d0df.png)
+![ehtools](https://user-images.githubusercontent.com/54115104/79588109-1fa09700-80dc-11ea-959f-65f16d8495bd.png)
 
 ***
 
@@ -486,6 +487,8 @@ be restored and you will have to reinstall ehtools!
 ***
     
 # Ehtools Framework protection
+
+![login](https://user-images.githubusercontent.com/54115104/79588097-1dd6d380-80dc-11ea-9d27-657c3bc57051.png)
 
 * Do this using install.sh.
 
