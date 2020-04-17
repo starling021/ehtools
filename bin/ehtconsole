@@ -387,15 +387,15 @@ function banner
 	echo -e ""$YS" 9"$CE") Tools             "$YS"15"$CE") Spoof EMAIL              "$QA"22"$CE") Show bandwidth"
 	if [[ -f /root/ngrok ]]
 	then
-		echo -e ""$YS"10"$CE") Handshake         "$YS"16"$CE") Ngrok port forward       "$QS"23"$CE") Arissploit"
+		echo -e ""$YS"10"$CE") Handshake         "$YS"16"$CE") Ngrok port forward       "$QS"23"$CE") Arissploit Framework"
 	else
-		echo -e ""$YS"10"$CE") Handshake         "$RS"16"$CE") Ngrok port forward       "$QS"23"$CE") Arissploit"      
+		echo -e ""$YS"10"$CE") Handshake         "$RS"16"$CE") Ngrok port forward       "$QS"23"$CE") Arissploit Framework"      
 	fi
 	if [[ -f /usr/local/bin/howdoi ]]
 	then
-		echo -e ""$YS"11"$CE") Find WPS pin      "$YS"17"$CE") Ask (Howdoi tool)           "$QE"24"$CE") Gyrux CLI"
+		echo -e ""$YS"11"$CE") Find WPS pin      "$YS"17"$CE") Ask (Howdoi tool)           "$QE"24"$CE") Thoron Framework"
 	else
-		echo -e ""$YS"11"$CE") Find WPS pin      "$RS"17"$CE") Ask (Howdoi tool)        "$QE"24"$CE") Gyrux CLI"
+		echo -e ""$YS"11"$CE") Find WPS pin      "$RS"17"$CE") Ask (Howdoi tool)        "$QE"24"$CE") Thoron Framework"
 	fi
 	echo -e ""$YS"12"$CE") WEP menu          "$YS"18"$CE") Auto-exploit browser     "$YS"25"$CE") Reboot computer"
 	echo -e ""$YS"13"$CE") MITM menu         "$DHH"19"$CE") Geolocate an IP          "$YS"26"$CE") Shutdown computer"
@@ -9569,10 +9569,11 @@ echo $passcode | ./libunconf
         elif [[ "$YORNAA" = "24" ]]
         then
                 clear
-                if [[ -d /root/gyrux ]]
+                if [[ -d /root/thoron ]]
 		then
-		cd /root/gyrux
-		/bin/gyrux
+		cd /root/thoron
+		chmod +x thoron
+		./thoron
 		cd /root
 		else
 		echo -e "$TNI"
@@ -9581,10 +9582,10 @@ echo $passcode | ./libunconf
 		then
 		clear
 		cd /root
-		git clone https://github.com/sectrk/gyrux.git
-		cd /root/gyrux
-		chmod +x setup/other/install.sh
-                ./setup/other/install.sh
+		git clone https://github.com/entynetproject/thoron.git
+		cd /root/thoron
+		chmod +x install.sh
+                ./install.sh
 		cd /root
 	        fi
 		fi
@@ -9599,7 +9600,7 @@ echo $passcode | ./libunconf
         then
                 clear
                 sleep 0.5
-		shutdown 0
+		poweroff
 
         elif [[ "$YORNAA" = "27" ]]
         then
@@ -9614,28 +9615,9 @@ echo $passcode | ./libunconf
 	elif [[ "$YORNAA" = "19" ]]
 	then
 	clear
-        if [[ -d /root/copycat ]]
-	then
-		echo -e ""$BS"Copycat Toolkit:"$CE" "
-		read -e -p $'(\033[4;34mhost\033[0m\en)> ' IPG
-		cd /root/copycat
-		chmod +x copycat
-                ./copycat host $IPG
-		cd /root
-	else
-	echo -e "$TNI"
-	read -e -p $'(\033[4;93minstall\033[0m\en)> ' INSTALL
-	if [[ "$INSTALL" = "yes" ]]
-	then
-	clear
-	cd /root
-	git clone https://github.com/entynetproject/copycat.git
-	cd /root/copycat
-	chmod +x install.sh
-	./install.sh
-        cd /root
-	fi
-	fi
+	echo -e ""$BS"Geolocate an IP:"$CE" "
+	read -e -p $'(\033[4;34mhost\033[0m\en)> ' IPG
+	geolocate_ip "$IPG"
 
 	elif [[ "$YORNAA" = "18" ]]
 	then
