@@ -83,9 +83,9 @@ ESRES="$( cat /dev/config/configure.txt | head -n 1 )"
 if [[ "$SERSE" != "$ESRES" ]]
 then
 
-ASESR="$(timeout -s SIGTERM 40 curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')"
+ASESR="$(ping -c 1 -q google.com >&/dev/null; echo $?)"
 
-if [[ "$ASESR" != "" ]]
+if [[ "$ASESR" = 0 ]]
 then 
 
 clear
