@@ -39,7 +39,7 @@ ASESR="$( ping -c 1 -q google.com >&/dev/null; echo $? )"
 if [[ "$ASESR" != 0 ]]
 then 
    sleep 1
-   echo -e ""$RS"[-] "$WHS"No Internet connection!"$CE""
+   echo -e "["$RS"*"$CE"] "$RS"No Internet connection!"$CE""
    sleep 1
    exit
 fi
