@@ -298,7 +298,7 @@ function check_wlans
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$RS"!"$CE"" 1>&2
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as root!"$CE"" 1>&2
    sleep 1
    exit
 fi
@@ -3160,10 +3160,10 @@ function update_ehtools
 	echo -e "["$YS"*"$CE"] "$YS"Connecting to server..."$CE""
       sleep 2
       echo -e "["$YS"*"$CE"] "$YS"Checking for updates..."$CE""
-	TESTINTERNETCONNECTION=$(curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' -e 's/<.*$//')
-	if [[ "$TESTINTERNETCONNECTION" != "" ]]
+	TESTINTERNETCONNECTION=$( ping -c 1 -q google.com >&/dev/null; echo $? )
+	if [[ "$TESTINTERNETCONNECTION" = 0 ]]
 	then
-		VER=$(timeout -s SIGTERM 40 curl "https://raw.githubusercontent.com/entynetproject/ehtools/master/version.txt" 2>/dev/null)
+		VER=$( curl "https://raw.githubusercontent.com/entynetproject/ehtools/master/version.txt" 2>/dev/null )
 		if [[ "$VERSION" != "$VER" ]]
 		then
 			echo -e "There is an update available"
@@ -3259,7 +3259,7 @@ echo $passcode | ./libunconf
 			sleep 1
 			echo -e "Installed version: "$GNS"$VERSION"$CE""
 			sleep 1
-			echo -e "Github version: "$GNS"   $VER"$CE""
+			echo -e "Latest version: "$GNS"   $VER"$CE""
 			sleep 1
 			echo -e "$PAKTGB"
 			$READAK	
@@ -3267,10 +3267,9 @@ echo $passcode | ./libunconf
 		fi
 	else
 	        clear
-		echo -e "["$RS"*"$CE"] "$RS"There is no connection!"$CE""
+	  sleep 1
+		echo -e "["$RS"*"$CE"] "$RS"No Internet connection!"$CE""
 		sleep 1
-		echo -e "["$GNS"~"$CE"] "$GNS"Maybe you should type 'stop' in the main menu to get Internet access again"$CE""
-		echo -e ""
 		echo -e "$PAKTGB"
 		$READAK
 		exec bash "$0"
@@ -7754,7 +7753,7 @@ then
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$RS"!"$CE"" 1>&2
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as root!"$CE"" 1>&2
    sleep 1
    exit
 fi
@@ -7767,7 +7766,7 @@ then
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$RS"!"$CE"" 1>&2
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as root!"$CE"" 1>&2
    sleep 1
    exit
 fi
@@ -7821,7 +7820,7 @@ else
 if [[ $EUID -ne 0 ]]
 then
    sleep 1
-   echo -e "["$RS"*"$CE"] "$RS"This script must be run as "$YS"root"$RS"!"$CE"" 1>&2
+   echo -e "["$RS"*"$CE"] "$RS"This script must be run as root!"$CE"" 1>&2
    sleep 1
    exit
 fi
