@@ -33,6 +33,17 @@ then
    exit
 fi
 
+{
+ASESR="$( ping -c 1 -q google.com >&/dev/null; echo $? )"
+} &> /dev/null
+if [[ "$ASESR" != 0 ]]
+then 
+   sleep 1
+   echo -e "["$RS"*"$CE"] "$RS"No Internet connection!"$CE""
+   sleep 1
+   exit
+fi
+
 clear
 
 if [[ -d /root/ehtools ]]
