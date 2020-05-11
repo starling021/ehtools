@@ -96,7 +96,7 @@ if [[ "$SERSE" != "$ESRES" ]]
 then
 
 {
-ASESR="$( ping -c 1 -q google.com >&/dev/null; echo $? )"
+ASESR="$(ping -c 1 -q www.google.com >&/dev/null; echo $?)"
 KEYEK="$( cat /etc/ehtools/root/service/ehtkey.txt )"
 } &> /dev/null
 
