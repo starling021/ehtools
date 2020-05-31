@@ -5768,12 +5768,13 @@ function settings_menu
 		echo -e ""$YS" 1"$CE") Change logo color"
 		echo -e ""$YS" 2"$CE") Howdoi settings"
 		echo -e ""$YS" 3"$CE") Ehtools Password Protection                  $EPPO"
-                echo -e ""$YS" 4"$CE") Ehtools Password Protection Crypto           $EPPC"
+    echo -e ""$YS" 4"$CE") Ehtools Password Protection Crypto           $EPPC"
 		echo -e ""$YS" 5"$CE") Ignore negative one when deauthing           $IGN"
 		echo -e ""$YS" 6"$CE") MAC to change to, when starting monitor      $STARTMAC"	
 		echo -e ""$YS" 7"$CE") Interface for arp-scan (network scanner)     $ARPIN"
-		echo -e ""$YS" 8"$CE") ALFA AWUS036ACH support                      $ALFA"		
-                echo -e ""$YS" b"$CE") Go back"
+		echo -e ""$YS" 8"$CE") ALFA AWUS036ACH support                      $ALFA"
+		echo -e ""$YS" 9"$CE") Uninstall Ehtools Framework"
+    echo -e ""$YS" b"$CE") Go back"
 		echo -e ""$YS" 0"$CE") Exit"
 		read -e -p $'(\033[4;93msettings\033[0m)> ' SET
 		clear
@@ -5781,6 +5782,11 @@ function settings_menu
 		then
 			BACKL=1
 			break
+	  elif [[ "$SET" = 9 ]]
+	  then
+	    cd /root/ehtools
+	    chmod +x uninstall.sh
+	    ./uninstall.sh
 		elif [[ "$SET" = 0 ]]
 		then
 			cd /root/ehtools/lib
