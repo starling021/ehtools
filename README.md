@@ -51,11 +51,11 @@ a WPA handshake in a matter of seconds. Plus, it's easy to install, set up, and 
 
 ## Ehtools uninstallation
 
-> cd ehtools
+**1.** Start Ehtools Framework.
 
-> chmod +x uninstall.sh
+**2.** Open Ehtools Framework settings.
 
-> ./uninstall.sh
+**3.** Select `Uninstall Ehtools Framework`.
 
 ***
 
