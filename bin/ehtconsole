@@ -9183,10 +9183,10 @@ function settings_menu
 			BACKL=1
 			break
 		elif [[ "$SET" = 10 ]]
-	  then
-	    cd /root/ehtools
-	    chmod +x uninstall.sh
-	    ./uninstall.sh
+	  	then
+	    		cd /root/ehtools
+	    		chmod +x uninstall.sh
+	    		./uninstall.sh
 		elif [[ "$SET" = 0 ]]
 		then
 			cd /root/ehtools/lib
