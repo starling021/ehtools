@@ -111,8 +111,8 @@ it is very complex and you can mess up something and disrupt the framework!
 # Ehtools Framework execution
 
 ```
-To execute Ehtools Framework you 
-should execute the following command.
+To run Ehtools Framework you should 
+execute the following command.
 ```
 
 > ehtools
