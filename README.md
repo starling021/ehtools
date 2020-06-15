@@ -1,5 +1,9 @@
 # `Ehtools v4.0.0 Coming Soon!`
 
+# `What you want us to add to Ehtools?`
+
+# `Answer [here](https://github.com/entynetproject/ehtools/issues/16)`
+
 # Entynet Hacker Tools (Ehtools Framework)
 
 <h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/67109604-8ac6ea80-f1d9-11e9-89c5-ee89ee2fbaa1.png" alt="logo" height="250px"></h3>
