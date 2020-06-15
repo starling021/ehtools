@@ -1,6 +1,6 @@
 # `Ehtools v4.0.0 Coming Soon!`
 
-# `What you want us to add to Ehtools?`
+# `What do you want us to add to Ehtools?`
 
 # `Answer` [here](https://github.com/entynetproject/ehtools/issues/16)
 
