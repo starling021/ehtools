@@ -2,7 +2,7 @@
 
 # `What you want us to add to Ehtools?`
 
-# `Answer [here](https://github.com/entynetproject/ehtools/issues/16)`
+# `Answer` [here](https://github.com/entynetproject/ehtools/issues/16)
 
 # Entynet Hacker Tools (Ehtools Framework)
 
