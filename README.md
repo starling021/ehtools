@@ -23,7 +23,7 @@
  </a>
 </p>
 
-![ehtools-red](https://user-images.githubusercontent.com/54115104/86489856-42069000-bd6e-11ea-8f7b-ff8c4acf5d67.png)
+![ehtools-red](https://user-images.githubusercontent.com/54115104/86491235-e559a400-bd72-11ea-8222-774f220cdd7c.png)
 
 ***
 
@@ -161,8 +161,6 @@ new hacking tool like Pupy by just selecting from one of the menu options.
 ***
 
 # Basic networking tools
-
-![ehtools-yellow](https://user-images.githubusercontent.com/54115104/86489871-48950780-bd6e-11ea-883a-dcd62b4ac465.png)
 
 > (ehtools)> if
 
@@ -334,7 +332,7 @@ from the menu. This means you can grab a network handshake or download a new
 hacking tool like Pupy by just selecting from one of the menu options!
 ```
 
-![ehtools-blue](https://user-images.githubusercontent.com/54115104/86489880-4d59bb80-bd6e-11ea-99cc-4936e783248c.png)
+![ehtools-yellow](https://user-images.githubusercontent.com/54115104/86491238-e7236780-bd72-11ea-9345-5eecfc56277b.png)
 
 ***
 
@@ -488,6 +486,8 @@ be restored and you will have to reinstall ehtools!
 ***
     
 # Ehtools Framework protection
+
+![ehtools-login](https://user-images.githubusercontent.com/54115104/86491218-d541c480-bd72-11ea-977f-28a48cfe1366.png)
 
 * Do this using install.sh.
 
