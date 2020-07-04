@@ -393,7 +393,7 @@ function banner
 	fi
 	echo -e ""$YS"12"$CE") WEP menu          "$YS"18"$CE") Auto-exploit browser     "$YS"25"$CE") Reboot computer"
 	echo -e ""$YS"13"$CE") MITM menu         "$YS"19"$CE") Geolocate an IP          "$YS"26"$CE") Shutdown computer"
-	echo -e ""$YS"14"$CE") Metasploit        "$YS"20"$CE") Bruteforce login         "$YS"27"$CE") Update APT sources"
+	echo -e ""$YS"14"$CE") MetaSploit        "$YS"20"$CE") Bruteforce login         "$YS"27"$CE") Update APT sources"
 	echo -e ""$YS" 0"$CE") Exit              "$YS"21"$CE") Sqlmap automated         "$YS"28"$CE") Change interfaces"
 	read -e -p $'(\033[4;93mehtools\033[0m\en)> ' YORNAA
         echo "$YORNAA" >> /etc/ehtools/.ehtools.log
