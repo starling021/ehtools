@@ -310,7 +310,7 @@ users to configure ehtools application.
 ```
 More than 58 options installed by default 
 you can find in ehtools, this is tools such 
-as MetaSploit, Wireshark and other tools!
+as MetaSploit, Pupy and other tools!
 ```
 
 * Password protection and config encryption.
